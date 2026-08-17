@@ -1,0 +1,1643 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080c20">
+  <meta name="uniprep-version" content="2026.14.0">
+  <meta name="description" content="UniPrep: preparación preuniversitaria inteligente con práctica, simulacros, analítica y biblioteca académica.">
+  <title>UniPrep 2 — Tu ingreso comienza aquí</title>
+  <link rel="manifest" href="manifest.webmanifest">
+
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=2026.12.0">
+  <link rel="stylesheet" href="css/premium.css?v=2026.10.2">
+  <link rel="stylesheet" href="css/practice-center.css?v=2026.13.0">
+  <link rel="stylesheet" href="css/tutor.css">
+  <link rel="stylesheet" href="css/admission-profile.css">
+  <link rel="stylesheet" href="css/study-tools.css?v=2026.9.0">
+  <link rel="stylesheet" href="css/visual-wow.css">
+  <link rel="stylesheet" href="css/vocational.css?v=2026.9.0">
+  <link rel="stylesheet" href="css/celebrations.css?v=2026.9.0">
+  <link rel="stylesheet" href="css/showcase-mode.css?v=2026.14.0">
+</head>
+<body>
+<!-- SIDEBAR -->
+<div class="sidebar">
+  <div class="sidebar-logo">
+    <div class="logo-mark">
+      <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 2L3 7v6l7 5 7-5V7L10 2z" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/>
+        <path d="M10 2v16M3 7l7 5 7-5" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <div class="logo-text">Uni<span>Prep
+    </span></div>
+  </div>
+
+  <nav class="sidebar-nav">
+    <div class="nav-section-label">Principal</div>
+    <div class="nav-item active" onclick="go('home',this)">
+      <svg class="nav-icon" viewBox="0 0 18 18" fill="none"><path d="M2 7.5L9 2l7 5.5V16H12v-4H6v4H2V7.5z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+      Inicio
+    </div>
+    <div class="nav-item" onclick="go('cursos',this)">
+      <svg class="nav-icon" viewBox="0 0 18 18" fill="none"><rect x="2" y="3" width="14" height="12" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="M6 7h6M6 10h4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+      Cursos
+      <span class="nav-badge green">21</span>
+    </div>
+    <div class="nav-item" onclick="go('videoclase',this)">
+      <svg class="nav-icon" viewBox="0 0 18 18" fill="none"><rect x="2" y="4" width="11" height="10" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="M13 7l3-2v6l-3-2V7z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+      Video clases
+    </div>
+    <div class="nav-item" data-screen="ejercicios" onclick="abrirCentroPractica(this)">
+      <svg class="nav-icon" viewBox="0 0 18 18" fill="none"><path d="M9 2L2 5v8l7 3 7-3V5L9 2z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M9 8v4M7 10h4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+      Práctica
+      <span class="nav-badge" id="practice-nav-badge" title="Preguntas disponibles">7.3K</span>
+    </div>
+    <div class="nav-item" onclick="go('formulas',this)">
+      <svg class="nav-icon" viewBox="0 0 18 18" fill="none"><path d="M4 4h10M4 9h6M4 14h8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+      Formulario inteligente
+    </div>
+
+    <div class="nav-section-label">Evaluación</div>
+    <div class="nav-item" onclick="go('exams',this)">
+      <svg class="nav-icon" viewBox="0 0 18 18" fill="none"><rect x="3" y="2" width="12" height="14" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="M6 6h6M6 9h4M6 12h5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+      Simulacros
+    </div>
+    <div class="nav-item" onclick="go('ranking',this)">
+      <svg class="nav-icon" viewBox="0 0 18 18" fill="none"><path d="M9 2l1.8 3.6L15 6.5l-3 2.9.7 4.1L9 11.5l-3.7 1.9.7-4.1L3 6.5l4.2-.9L9 2z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+      Ranking
+    </div>
+    <div class="nav-item" onclick="go('agenda',this)">
+      <svg class="nav-icon" viewBox="0 0 18 18" fill="none"><rect x="2" y="3" width="14" height="13" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="M6 2v2M12 2v2M2 8h14" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+      Agenda
+    </div>
+
+    <div class="nav-section-label">Acompañamiento</div>
+    <div class="nav-item" data-screen="vocacional" onclick="abrirCentroVocacional(this)">
+      <svg class="nav-icon" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="6.5" stroke="currentColor" stroke-width="1.3"/><path d="M11.8 6.2l-1.4 4.2-4.2 1.4 1.4-4.2 4.2-1.4z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+      Orientación vocacional
+      <span class="nav-new vocational-nav-badge">NUEVO</span>
+    </div>
+    <div class="nav-item" data-screen="tutor" onclick="abrirTutorAcademico(this)">
+      <svg class="nav-icon" viewBox="0 0 18 18" fill="none"><path d="M3 4.5h12v8H8l-3.5 2.5v-2.5H3v-8z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M6 7h6M6 9.5h4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+      Tutor académico
+      <span class="nav-new tutor-nav-badge">NUEVO</span>
+    </div>
+
+    <div class="nav-section-label">Personal</div>
+    <div class="nav-item" onclick="go('perfil',this)">
+      <svg class="nav-icon" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="6" r="3" stroke="currentColor" stroke-width="1.4"/><path d="M3 16c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+      Mi perfil
+    </div>
+    <div class="nav-item" onclick="go('notificaciones',this)">
+      <svg class="nav-icon" viewBox="0 0 18 18" fill="none"><path d="M9 2a5 5 0 0 0-5 5v3L2.5 12h13L14 10V7a5 5 0 0 0-5-5zm0 14a1.5 1.5 0 0 0 1.5-1.5h-3A1.5 1.5 0 0 0 9 16z" stroke="currentColor" stroke-width="1.4"/></svg>
+      Notificaciones
+      <span class="nav-badge">3</span>
+    </div>
+  </nav>
+
+  <div class="sidebar-footer">
+    <div class="user-card">
+      <div class="user-avatar">
+        UP
+        <div class="user-avatar-online"></div>
+      </div>
+      <div class="user-info">
+        <div class="user-name">Estudiante UniPrep</div>
+        <div class="user-sub">Preuniversitario</div>
+      </div>
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" style="color:var(--text3);flex-shrink:0">
+        <path d="M5 3l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+  <div class="topbar">
+    <div class="topbar-title" id="topbar-title">Panel de inicio</div>
+    <div class="topbar-search">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" style="color:var(--text3);flex-shrink:0">
+        <circle cx="6" cy="6" r="4" stroke="currentColor" stroke-width="1.3"/>
+        <path d="M9 9l3 3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+      </svg>
+      <input id="global-search" type="search" placeholder="Buscar temas, ejercicios..." aria-label="Buscar cursos y temas" onkeydown="if(event.key==='Enter'){buscarEnUniPrep(this.value)}">
+    </div>
+    <div class="topbar-actions">
+      <button class="icon-btn onboarding-help-btn" type="button" onclick="iniciarTutorialUniPrep({forzar:true})" aria-label="Abrir tutorial de UniPrep" title="Cómo usar UniPrep">?</button>
+      <button class="topbar-install-btn" id="install-app-btn" type="button" onclick="instalarUniPrep()" hidden>＋ Instalar</button>
+      <span class="app-network-status" id="app-network-status" title="Estado de conexión">● En línea</span>
+      <div class="icon-btn" onclick="go('notificaciones',null)">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1.5A4.5 4.5 0 0 0 3.5 6v3.5L2 11h12l-1.5-1.5V6A4.5 4.5 0 0 0 8 1.5zM8 14.5a1.5 1.5 0 0 0 1.5-1.5h-3A1.5 1.5 0 0 0 8 14.5z" stroke="currentColor" stroke-width="1.3" fill="none"/></svg>
+        <div class="dot"></div>
+      </div>
+      <div class="icon-btn" onclick="go('perfil',null)">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="5.5" r="2.5" stroke="currentColor" stroke-width="1.3"/><path d="M3 14c0-2.8 2.2-5 5-5s5 2.2 5 5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+
+    <!-- ── HOME ── -->
+    <div class="screen active" id="home">
+      <div class="welcome-banner">
+        <div class="welcome-left">
+          <div class="welcome-eyebrow" id="dashboard-context">Preparación inteligente · UNAMAD 2026</div>
+          <div class="welcome-title" id="dashboard-greeting">¡Buenas tardes,<br>Estudiante! 👋</div>
+          <div class="welcome-body" id="dashboard-streak-message">Responde una pregunta hoy para iniciar tu racha de estudio.</div>
+          <div style="display:flex;gap:10px">
+            <button class="btn btn-primary" onclick="abrirCentroPractica(null)">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1L1 4.5v5L7 13l6-3.5v-5L7 1z" stroke="#fff" stroke-width="1.3"/></svg>
+              Practicar ahora
+            </button>
+            <button class="btn btn-ghost" onclick="go('agenda',null)">Ver agenda</button>
+          </div>
+          <div class="progress-strip">
+            <div style="flex:1">
+              <div style="display:flex;justify-content:space-between;margin-bottom:6px">
+                <span style="font-size:12px;color:var(--text3)">Cobertura académica</span>
+                <span id="dashboard-cycle-value" style="font-size:12px;color:var(--purple2);font-weight:500">0%</span>
+              </div>
+              <div class="pbar"><div class="pbar-fill" id="dashboard-cycle-bar" style="width:0%;background:var(--purple)"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="welcome-right">
+          <div class="welcome-big-num" id="dashboard-cycle-big">0</div>
+          <div class="welcome-big-label">% completado</div>
+        </div>
+      </div>
+
+      <div class="quick-stats">
+        <div class="qstat">
+          <div class="qstat-icon" style="background:var(--purple-bg)">🎯</div>
+          <div>
+            <div class="qstat-num" id="dashboard-exercises">0</div>
+            <div class="qstat-lbl">Ejercicios resueltos</div>
+            <div class="qstat-delta" id="dashboard-exercises-note">Comienza tu misión de hoy</div>
+          </div>
+        </div>
+        <div class="qstat">
+          <div class="qstat-icon" style="background:var(--green-bg)">📈</div>
+          <div>
+            <div class="qstat-num" id="dashboard-precision">0%</div>
+            <div class="qstat-lbl">Precisión global</div>
+            <div class="qstat-delta" id="dashboard-precision-note">Basada en respuestas reales</div>
+          </div>
+        </div>
+        <div class="qstat" data-open-ranking role="button" tabindex="0" title="Abrir ranking de estudiantes" onclick="go('ranking',null)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();go('ranking',null)}">
+          <div class="qstat-icon" style="background:var(--yellow-bg)">🏆</div>
+          <div>
+            <div class="qstat-num" id="dashboard-ranking">#--</div>
+            <div class="qstat-lbl">Ranking ciclo</div>
+            <div class="qstat-delta" id="dashboard-ranking-note">Ranking por XP</div>
+          </div>
+        </div>
+        <div class="qstat">
+          <div class="qstat-icon" style="background:var(--orange-bg)">🔥</div>
+          <div>
+            <div class="qstat-num" id="dashboard-streak">0</div>
+            <div class="qstat-lbl">Días de racha</div>
+            <div class="qstat-delta" id="dashboard-record">Récord: 0 días</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="dashboard-gamification" class="game-level-card" aria-live="polite">
+        <span class="game-level-orb">✦</span><span class="game-level-copy"><small>TRAYECTORIA UNIPREP</small><b>Nivel 1 · Liga Órbita</b><span class="game-level-track"><span style="width:0%"></span></span></span><span class="game-level-meta"><b>0 XP</b><span>500 XP para subir</span></span>
+      </div>
+
+      <div class="grid g2" style="margin-bottom:24px">
+        <div>
+          <div class="section-label">
+            Continúa aprendiendo
+            <span class="section-label-link" onclick="go('cursos',null)">Ver todos</span>
+          </div>
+          <div id="dashboard-recommendations" style="display:flex;flex-direction:column;gap:8px"><div class="card" style="padding:18px;color:var(--text3)">Preparando una ruta con tus cursos y avances reales…</div></div>
+        </div>
+
+        <div>
+          <div class="section-label">Actividad reciente</div>
+          <div class="card" id="dashboard-activities" style="padding:16px"><div style="padding:14px;color:var(--text3)">Aún no hay actividad. Completa tu primera pregunta para comenzar.</div></div>
+        </div>
+      </div>
+
+      <div class="section-label">Simulacro de admisión <span class="section-label-link" onclick="go('exams',null)">Configurar</span></div>
+      <div class="card" style="background:linear-gradient(135deg,#0f1a2e,#0a1520);border-color:rgba(94,184,255,0.2);display:flex;align-items:center;gap:24px;flex-wrap:wrap">
+        <div style="flex:1;min-width:240px"><div style="font-family:var(--font-display);font-size:18px;font-weight:700;color:var(--text);margin-bottom:4px">Evaluación lista cuando tú estés listo</div><div style="font-size:13px;color:var(--text3)">La cantidad, el tiempo y las áreas se ajustan a tu universidad y carrera seleccionadas.</div></div>
+        <button class="btn btn-primary" onclick="go('exams',null)">Preparar mi simulacro →</button>
+      </div>
+    </div>
+
+    <!-- ── CURSOS ── -->
+    <div class="screen" id="cursos">
+      <div class="page-header">
+        <div>
+          <div class="page-title">Mis cursos</div>
+          <div class="page-subtitle" id="courses-summary">
+            Cargando cursos...
+          </div>
+        </div>
+
+        <button class="btn btn-primary btn-sm" type="button" onclick="abrirPlanEstudios()">
+          ✦ Crear plan inteligente
+        </button>
+      </div>
+
+      <div class="courses-command-center">
+        <div class="courses-command-copy">
+          <span class="courses-command-kicker">RUTA SEGÚN TU UNIVERSIDAD · ADMISIÓN 2026</span>
+          <h2>Todo el examen, organizado para avanzar</h2>
+          <p>Elige tu universidad, área y carrera. UniPrep activará únicamente los cursos de tu grupo y generará una ruta de siete días según tu progreso.</p>
+        </div>
+        <div class="courses-command-stats">
+          <div><b>162</b><span>temas organizados</span></div>
+          <div><b>6,480</b><span>preguntas</span></div>
+          <div><b>21</b><span>cursos</span></div>
+        </div>
+      </div>
+
+      <div class="courses-toolbar">
+        <label class="courses-search"><span>⌕</span><input id="courses-search" type="search" placeholder="Buscar curso o tema..." oninput="filtrarCursos()"></label>
+        <select id="courses-area-filter" onchange="filtrarCursos()" aria-label="Filtrar por área">
+          <option value="todas">Todas las áreas</option>
+          <option value="Matemática">Matemática</option>
+          <option value="Comunicación">Comunicación</option>
+          <option value="Ciencias Sociales">Ciencias Sociales</option>
+          <option value="Ciencia y Tecnología">Ciencia y Tecnología</option>
+          <option value="Ciudadanía y Cívica">Ciudadanía y Cívica</option>
+        </select>
+        <button id="courses-route-label" class="btn btn-ghost btn-sm" type="button" onclick="abrirPlanEstudios()">Ruta UNAMAD P</button>
+      </div>
+
+      <div class="course-grid" id="course-grid"></div>
+
+      <div class="courses-recommended-head"><div><span class="section-label">Tu ruta recomendada para hoy</span><small>Se recalcula con tu avance y el peso del examen.</small></div><button class="btn btn-ghost btn-sm" type="button" onclick="abrirPlanEstudios()">Ajustar ruta</button></div>
+      <div id="courses-recommended" class="courses-recommended"></div>
+    </div>
+
+    <!-- ── VIDEO CLASE ── -->
+    <div class="screen" id="videoclase">
+      <div class="page-header">
+        <div>
+          <div class="page-title" id="lesson-page-title">
+            Selecciona un curso
+          </div>
+          <div class="page-subtitle" id="lesson-page-subtitle">
+            Elige una materia para comenzar
+          </div>
+        </div>
+
+        <div style="display:flex;gap:8px">
+          <button
+            id="lesson-prev-btn"
+            class="btn btn-ghost btn-sm"
+            type="button"
+            onclick="cambiarTemaCurso(-1)"
+          >
+            ← Anterior
+          </button>
+
+          <button
+            id="lesson-next-btn"
+            class="btn btn-primary btn-sm"
+            type="button"
+            onclick="cambiarTemaCurso(1)"
+          >
+            Siguiente →
+          </button>
+        </div>
+      </div>
+
+      <div class="grid g2" style="align-items:start;gap:20px">
+        <div>
+          <div class="video-player">
+            <div class="video-bg">
+              <button
+                id="lesson-play-btn"
+                class="video-play-btn"
+                type="button"
+                onclick="reproducirClaseActual()"
+                aria-label="Reproducir clase"
+              >
+                <svg viewBox="0 0 24 24" fill="white">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+              </button>
+
+              <div class="video-title" id="lesson-video-title">
+                Tema seleccionado
+              </div>
+
+              <div class="video-subtitle" id="lesson-video-subtitle">
+                Selecciona un curso para comenzar
+              </div>
+            </div>
+
+            <div class="video-controls">
+              <button
+                class="video-control-button"
+                type="button"
+                onclick="reproducirClaseActual()"
+                aria-label="Reproducir"
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="white">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+              </button>
+
+              <div class="video-progress">
+                <div
+                  id="lesson-video-progress"
+                  class="video-progress-fill"
+                  style="width:0%"
+                ></div>
+              </div>
+
+              <div class="video-time" id="lesson-video-time">
+                00:00 / 00:00
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="margin-bottom:14px">
+            <div class="card-title">Sobre esta clase</div>
+
+            <div
+              id="lesson-description"
+              style="font-size:14px;color:var(--text2);line-height:1.7"
+            >
+              Selecciona un curso para consultar su contenido.
+            </div>
+
+            <div style="display:flex;gap:8px;margin-top:14px;flex-wrap:wrap">
+              <span
+                class="badge badge-purple"
+                id="lesson-course-badge"
+              >
+                📚 Curso
+              </span>
+
+              <span
+                class="badge"
+                id="lesson-duration"
+                style="background:rgba(255,255,255,0.05);color:var(--text3)"
+              >
+                ⏱ 0 min
+              </span>
+
+              <span
+                class="badge"
+                id="lesson-exercises"
+                style="background:rgba(255,255,255,0.05);color:var(--text3)"
+              >
+                📝 0 ejercicios
+              </span>
+
+              <span class="badge badge-yellow">⭐ 4.9/5.0</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">Temas de la clase</div>
+            <div id="lesson-topics" class="lesson-topics"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="section-label">Ejercicios de la clase</div>
+
+          <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:16px">
+            <div
+              class="card"
+              style="display:flex;align-items:center;gap:12px;padding:12px 16px;cursor:pointer"
+              onclick="go('ejercicios',null)"
+            >
+              <div style="width:32px;height:32px;border-radius:50%;background:var(--green-bg);display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0">
+                1
+              </div>
+
+              <div style="flex:1">
+                <div style="font-size:13px;font-weight:500;color:var(--text)">
+                  Nivel básico
+                </div>
+                <div style="font-size:11px;color:var(--text3)">
+                  Practica los conceptos principales
+                </div>
+              </div>
+
+              <button class="btn btn-ghost btn-sm" type="button">
+                Empezar
+              </button>
+            </div>
+
+            <div
+              class="card"
+              style="display:flex;align-items:center;gap:12px;padding:12px 16px;cursor:pointer;border-color:var(--purple-border)"
+              onclick="go('ejercicios',null)"
+            >
+              <div style="width:32px;height:32px;border-radius:50%;background:var(--purple-bg);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;color:var(--purple2);flex-shrink:0">
+                2
+              </div>
+
+              <div style="flex:1">
+                <div style="font-size:13px;font-weight:500;color:var(--text)">
+                  Nivel intermedio
+                </div>
+                <div style="font-size:11px;color:var(--purple2)">
+                  Aplica lo aprendido en problemas
+                </div>
+              </div>
+
+              <button class="btn btn-primary btn-sm" type="button">
+                Continuar
+              </button>
+            </div>
+
+            <div
+              class="card"
+              style="display:flex;align-items:center;gap:12px;padding:12px 16px;cursor:pointer"
+              onclick="go('ejercicios',null)"
+            >
+              <div style="width:32px;height:32px;border-radius:50%;background:var(--bg4);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;color:var(--text3);flex-shrink:0">
+                3
+              </div>
+
+              <div style="flex:1">
+                <div style="font-size:13px;font-weight:500;color:var(--text)">
+                  Nivel avanzado
+                </div>
+                <div style="font-size:11px;color:var(--text3)">
+                  Desafío preuniversitario
+                </div>
+              </div>
+
+              <button class="btn btn-ghost btn-sm" type="button">
+                Empezar
+              </button>
+            </div>
+
+            <div class="card" style="display:flex;align-items:center;gap:12px;padding:12px 16px;cursor:pointer;border-color:rgba(66,200,255,.38)" onclick="go('ejercicios',null)">
+              <div style="width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,var(--purple),var(--blue));display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#fff;flex-shrink:0">4</div>
+              <div style="flex:1"><div style="font-size:13px;font-weight:500;color:var(--text)">Reto de admisión</div><div style="font-size:11px;color:var(--blue)">Perfil de tu universidad seleccionada</div></div>
+              <button class="btn btn-primary btn-sm" type="button">Entrenar</button>
+            </div>
+          </div>
+
+          <div class="section-label">Clases relacionadas</div>
+          <div id="related-lessons" style="display:flex;flex-direction:column;gap:8px"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ── CENTRO DE PRÁCTICA ── -->
+    <div class="screen" id="ejercicios">
+      <div id="practice-center-root" aria-live="polite">
+        <div class="practice-loading card">
+          <span class="practice-loading-mark">✦</span>
+          <div><strong>Preparando tu centro de práctica</strong><small>Cargando los bancos académicos de UniPrep…</small></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── FORMULARIO ── -->
+    <div class="screen" id="formulas">
+      <div id="formula-center-root" aria-live="polite">
+        <div class="formula-empty">Preparando fórmulas y temas clave de tu ruta…</div>
+      </div>
+    </div>
+
+    <!-- ── SIMULACROS ── -->
+    <div class="screen" id="exams">
+      <div class="page-header">
+        <div>
+          <div class="page-title">Simulacros</div>
+          <div class="page-subtitle">Practica con estructuras UNI 2026-1 y UCSM 2025 adaptadas por UniPrep</div>
+        </div>
+        <button class="btn btn-primary" onclick="iniciarSimulacro()">Simulacro rápido</button>
+      </div>
+
+      <div class="exam-hero">
+        <div style="position:relative;z-index:1">
+          <div style="font-size:12px;font-weight:600;color:var(--blue);letter-spacing:0.5px;margin-bottom:6px">NUEVO EN UNIPREP 2</div>
+          <div style="font-family:var(--font-display);font-size:24px;font-weight:700;color:var(--text);margin-bottom:6px">Simulacros de admisión 2025-2026</div>
+          <div style="font-size:13px;color:var(--text3);margin-bottom:14px">260 preguntas adaptadas · cuatro pruebas · corrección explicada</div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px">
+            <span class="badge badge-blue">Matemática</span>
+            <span class="badge badge-green">Ciencias</span>
+            <span class="badge badge-purple">Lenguaje</span>
+            <span class="badge badge-yellow">Historia</span>
+          </div>
+          <button class="btn btn-primary" onclick="document.getElementById('exam-models').scrollIntoView({behavior:'smooth'})">Elegir examen →</button>
+        </div>
+        <div class="exam-countdown" style="position:relative;z-index:1">
+          <div class="countdown-unit">
+            <div class="countdown-num">06</div>
+            <div class="countdown-lbl">Días</div>
+          </div>
+          <div class="countdown-unit">
+            <div class="countdown-num">14</div>
+            <div class="countdown-lbl">Horas</div>
+          </div>
+          <div class="countdown-unit">
+            <div class="countdown-num" id="cd-min">32</div>
+            <div class="countdown-lbl">Min</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-label" id="exam-models">Exámenes de referencia</div>
+      <p id="exam-route-model-note" class="exam-model-note">Detectando tu universidad…</p>
+      <div class="premium-exam-grid exam-reference-grid">
+        <article class="premium-exam-card general exam-model-card" data-exam-university="uni">
+          <div class="premium-exam-icon">🧠</div><div class="premium-kicker">UNI 2026-1 · PRUEBA 1</div>
+          <h3>Aptitud Académica y Humanidades</h3><p>Razonamiento, comunicación, literatura, historia, ciudadanía, economía, filosofía y psicología.</p>
+          <div class="premium-exam-meta"><span>100 preguntas</span><span>180 min</span><span>Explicaciones</span></div>
+          <button class="btn btn-primary" onclick="iniciarSimulacroTipo('uni_aah')">Iniciar prueba 1 →</button>
+        </article>
+        <article class="premium-exam-card intensive exam-model-card" data-exam-university="uni">
+          <div class="premium-exam-icon">∑</div><div class="premium-kicker">UNI 2026-1 · PRUEBA 2</div>
+          <h3>Matemática</h3><p>Aritmética, Álgebra, Geometría y Trigonometría, con diez preguntas por curso.</p>
+          <div class="premium-exam-meta"><span>40 preguntas</span><span>180 min</span><span>Nivel admisión</span></div>
+          <button class="btn premium-btn-cyan" onclick="iniciarSimulacroTipo('uni_mat')">Iniciar prueba 2 →</button>
+        </article>
+        <article class="premium-exam-card general exam-model-card" data-exam-university="uni">
+          <div class="premium-exam-icon">⚛</div><div class="premium-kicker">UNI 2026-1 · PRUEBA 3</div>
+          <h3>Física y Química</h3><p>Veinte problemas de Física y veinte de Química, sin mezclar otros cursos.</p>
+          <div class="premium-exam-meta"><span>40 preguntas</span><span>180 min</span><span>Nivel admisión</span></div>
+          <button class="btn btn-primary" onclick="iniciarSimulacroTipo('uni_fq')">Iniciar prueba 3 →</button>
+        </article>
+        <article class="premium-exam-card intensive exam-model-card" data-exam-university="ucsm">
+          <div class="premium-exam-icon">🎓</div><div class="premium-kicker">UCSM 2025 · GENERAL</div>
+          <h3>Examen General UCSM</h3><p>Matemática, comunicación, psicología, ciencias, humanidades, economía e inglés.</p>
+          <div class="premium-exam-meta"><span>80 preguntas</span><span>120 min</span><span>10 áreas</span></div>
+          <button class="btn premium-btn-cyan" onclick="iniciarSimulacroTipo('ucsm_general')">Iniciar examen UCSM →</button>
+        </article>
+      </div>
+      <p class="exam-source-disclaimer">Material de entrenamiento elaborado por UniPrep a partir de la estructura temática de los archivos proporcionados. No reproduce ni sustituye un examen oficial.</p>
+
+      <div class="section-label">Modalidades generales de UniPrep</div>
+      <div class="premium-exam-grid">
+        <article class="premium-exam-card general">
+          <div class="premium-exam-icon">🏆</div><div class="premium-kicker">SIMULACRO #1 · COMPLETO</div>
+          <h3>General CEPRE–UNAMAD</h3><p>Examen completo, balanceado por áreas y con corrección detallada.</p>
+          <div class="premium-exam-meta"><span>100 preguntas</span><span>180 min</span><span>+500 XP</span></div>
+          <button class="btn btn-primary" onclick="iniciarSimulacroTipo('general')">Iniciar simulacro completo →</button>
+        </article>
+        <article class="premium-exam-card intensive">
+          <div class="premium-exam-icon">⚡</div><div class="premium-kicker">NUEVO · SIMULACRO #2</div>
+          <h3>Desafío intensivo</h3><p>Una práctica más corta y exigente para medir rapidez y precisión.</p>
+          <div class="premium-exam-meta"><span>50 preguntas</span><span>90 min</span><span>+250 XP</span></div>
+          <button class="btn premium-btn-cyan" onclick="iniciarSimulacroTipo('intensivo')">Comenzar desafío →</button>
+        </article>
+      </div>
+
+      <div class="section-label">Historial de simulacros</div>
+      <div id="exam-history" style="display:flex;flex-direction:column;gap:10px;margin-bottom:24px">
+        <div class="exam-result-card">
+          <div class="exam-score-circle" style="background:rgba(62,207,168,0.15);border:2px solid var(--green);color:var(--green)">81%</div>
+          <div class="exam-info">
+            <div class="exam-name">Simulacro General #4</div>
+            <div class="exam-date">Sábado 12 de abril · 120 preguntas · Posición #5</div>
+            <div class="exam-bars">
+              <div class="exam-bar-item"><div class="exam-bar-label">Matemática</div><div class="mini-pbar"><div class="mini-pbar-fill" style="width:88%;background:var(--purple)"></div></div></div>
+              <div class="exam-bar-item"><div class="exam-bar-label">Física</div><div class="mini-pbar"><div class="mini-pbar-fill" style="width:79%;background:var(--green)"></div></div></div>
+              <div class="exam-bar-item"><div class="exam-bar-label">Química</div><div class="mini-pbar"><div class="mini-pbar-fill" style="width:72%;background:var(--orange)"></div></div></div>
+              <div class="exam-bar-item"><div class="exam-bar-label">Lenguaje</div><div class="mini-pbar"><div class="mini-pbar-fill" style="width:85%;background:var(--blue)"></div></div></div>
+            </div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:6px;flex-shrink:0">
+            <button class="btn btn-ghost btn-sm">Ver corrección</button>
+            <button class="btn btn-ghost btn-sm">Repasar errores</button>
+          </div>
+        </div>
+
+        <div class="exam-result-card">
+          <div class="exam-score-circle" style="background:rgba(255,209,102,0.1);border:2px solid var(--yellow);color:var(--yellow)">75%</div>
+          <div class="exam-info">
+            <div class="exam-name">Simulacro de Ciencias #3</div>
+            <div class="exam-date">Sábado 5 de abril · 80 preguntas · Posición #9</div>
+            <div class="exam-bars">
+              <div class="exam-bar-item"><div class="exam-bar-label">Física</div><div class="mini-pbar"><div class="mini-pbar-fill" style="width:83%;background:var(--green)"></div></div></div>
+              <div class="exam-bar-item"><div class="exam-bar-label">Química</div><div class="mini-pbar"><div class="mini-pbar-fill" style="width:68%;background:var(--orange)"></div></div></div>
+              <div class="exam-bar-item"><div class="exam-bar-label">Biología</div><div class="mini-pbar"><div class="mini-pbar-fill" style="width:74%;background:#3ECFA8"></div></div></div>
+            </div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:6px;flex-shrink:0">
+            <button class="btn btn-ghost btn-sm">Ver corrección</button>
+            <button class="btn btn-ghost btn-sm">Repasar errores</button>
+          </div>
+        </div>
+
+        <div class="exam-result-card">
+          <div class="exam-score-circle" style="background:rgba(62,207,168,0.15);border:2px solid var(--green);color:var(--green)">79%</div>
+          <div class="exam-info">
+            <div class="exam-name">Simulacro de Letras #2</div>
+            <div class="exam-date">Sábado 29 de marzo · 80 preguntas · Posición #4</div>
+            <div class="exam-bars">
+              <div class="exam-bar-item"><div class="exam-bar-label">Lenguaje</div><div class="mini-pbar"><div class="mini-pbar-fill" style="width:91%;background:var(--blue)"></div></div></div>
+              <div class="exam-bar-item"><div class="exam-bar-label">Historia</div><div class="mini-pbar"><div class="mini-pbar-fill" style="width:67%;background:var(--yellow)"></div></div></div>
+            </div>
+          </div>
+          <div style="flex-shrink:0"><button class="btn btn-ghost btn-sm">Ver corrección</button></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── SIMULACRO ACTIVO ── -->
+    <div class="screen" id="exam-active">
+      <div class="sim-header">
+        <button class="btn btn-ghost btn-sm" onclick="salirDelSimulacro()">← Salir</button>
+        <div class="sim-heading">
+          <strong id="exam-active-name">Simulacro General UniPrep</strong>
+          <span id="exam-progress-text">Pregunta 1 de 20</span>
+        </div>
+        <div class="quiz-timer" id="exam-timer">⏱ 30:00</div>
+      </div>
+
+      <div class="pbar sim-progress"><div class="pbar-fill" id="exam-progress-bar" style="width:5%;background:var(--purple)"></div></div>
+
+      <div class="sim-layout">
+        <main>
+          <div class="question-card">
+            <div class="question-subject" id="exam-subject">Matemática</div>
+            <div class="question-text" id="exam-question">Cargando pregunta...</div>
+          </div>
+          <div class="options-grid" id="exam-options"></div>
+          <div id="exam-selection-status" class="exam-selection-status">Selecciona una alternativa. La respuesta correcta se mostrará al finalizar.</div>
+          <div class="sim-actions">
+            <button class="btn btn-ghost" id="exam-prev" onclick="preguntaAnterior()">← Anterior</button>
+            <button class="btn btn-ghost" id="exam-mark" onclick="marcarPregunta()">☆ Marcar para revisar</button>
+            <button class="btn btn-primary" id="exam-next" onclick="preguntaSiguiente()">Siguiente →</button>
+          </div>
+        </main>
+        <aside class="card sim-sidebar">
+          <div class="section-label">Navegación</div>
+          <div id="exam-question-map" class="sim-map"></div>
+          <div class="sim-legend"><span><i class="answered"></i>Respondida</span><span><i class="marked"></i>Marcada</span><span><i></i>Sin responder</span></div>
+          <button class="btn btn-primary sim-finish" onclick="finalizarSimulacro(false)">Finalizar simulacro</button>
+        </aside>
+      </div>
+    </div>
+
+    <!-- ── RESULTADO DEL SIMULACRO ── -->
+    <div class="screen" id="exam-result">
+      <div class="result-hero card">
+        <div class="result-score" id="exam-final-score">0%</div>
+        <div>
+          <div class="page-title" id="exam-result-title">Resultado del simulacro</div>
+          <div class="page-subtitle" id="exam-result-summary"></div>
+        </div>
+      </div>
+      <div class="grid g4 result-stats">
+        <div class="card"><strong id="result-correct">0</strong><span>Correctas</span></div>
+        <div class="card"><strong id="result-wrong">0</strong><span>Incorrectas</span></div>
+        <div class="card"><strong id="result-blank">0</strong><span>En blanco</span></div>
+        <div class="card"><strong id="result-time">00:00</strong><span>Tiempo usado</span></div>
+      </div>
+      <div class="section-label">Rendimiento por área</div>
+      <div class="card" id="result-areas"></div>
+      <div class="review-toolbar">
+        <div class="section-label">Corrección de preguntas</div>
+        <div class="review-filters">
+          <button class="btn btn-primary btn-sm" id="filter-all" onclick="filtrarCorreccion('todas')">Todas</button>
+          <button class="btn btn-ghost btn-sm" id="filter-wrong" onclick="filtrarCorreccion('incorrectas')">Solo incorrectas</button>
+        </div>
+      </div>
+      <div id="exam-review" class="exam-review"></div>
+      <div class="result-buttons">
+        <button class="btn btn-ghost" onclick="go('exams',null)">Ver historial</button>
+        <button class="btn btn-primary" onclick="iniciarSimulacro(true)">Intentar de nuevo</button>
+      </div>
+    </div>
+
+    <!-- ── RANKING ── -->
+    <div class="screen" id="ranking">
+      <div class="page-header">
+        <div>
+          <div class="page-title">Ranking</div>
+          <div class="page-subtitle">Sección tarde · Ciclo Anual 2025 · 248 estudiantes</div>
+        </div>
+        <div style="display:flex;gap:6px">
+          <button class="btn btn-primary btn-sm">Esta semana</button>
+          <button class="btn btn-ghost btn-sm">Este ciclo</button>
+          <button class="btn btn-ghost btn-sm">Por curso</button>
+        </div>
+      </div>
+
+      <div class="grid g4" style="margin-bottom:24px">
+        <div class="card" style="text-align:center">
+          <div style="font-family:var(--font-display);font-size:28px;font-weight:700;color:var(--purple)">#7</div>
+          <div style="font-size:12px;color:var(--text3);margin-top:4px">Tu posición</div>
+        </div>
+        <div class="card" style="text-align:center">
+          <div style="font-family:var(--font-display);font-size:28px;font-weight:700;color:var(--text)">1,840</div>
+          <div style="font-size:12px;color:var(--text3);margin-top:4px">Tus puntos</div>
+        </div>
+        <div class="card" style="text-align:center">
+          <div style="font-family:var(--font-display);font-size:28px;font-weight:700;color:var(--green)">+2</div>
+          <div style="font-size:12px;color:var(--text3);margin-top:4px">Posiciones ganadas</div>
+        </div>
+        <div class="card" style="text-align:center">
+          <div style="font-family:var(--font-display);font-size:28px;font-weight:700;color:var(--yellow)">500</div>
+          <div style="font-size:12px;color:var(--text3);margin-top:4px">Pts para el #6</div>
+        </div>
+      </div>
+
+      <div class="podium">
+        <div class="podium-item podium-2nd">
+          <div class="podium-emoji">🥈</div>
+          <div class="podium-avatar" style="background:rgba(148,146,174,0.2)">CM</div>
+          <div class="podium-name">Carlos M.</div>
+          <div class="podium-pts">2,180 pts</div>
+          <div class="podium-bar">2</div>
+        </div>
+        <div class="podium-item podium-1st">
+          <div class="podium-emoji">🥇</div>
+          <div class="podium-avatar" style="background:rgba(255,209,102,0.15)">AL</div>
+          <div class="podium-name">Alejandra L.</div>
+          <div class="podium-pts">2,340 pts</div>
+          <div class="podium-bar">1</div>
+        </div>
+        <div class="podium-item podium-3rd">
+          <div class="podium-emoji">🥉</div>
+          <div class="podium-avatar" style="background:rgba(255,123,84,0.15)">SR</div>
+          <div class="podium-name">Sofía R.</div>
+          <div class="podium-pts">2,050 pts</div>
+          <div class="podium-bar">3</div>
+        </div>
+      </div>
+
+      <div class="card" style="padding:8px 12px">
+        <div class="rank-row"><div class="rank-num">4</div><div class="rank-avatar" style="background:rgba(255,94,135,0.15);color:var(--pink)">MV</div><div><div class="rank-name">Miguel Vargas</div><div class="rank-name-sub">↑1 esta semana</div></div><div style="flex:1"></div><div style="text-align:right"><div class="rank-score">1,990</div><div class="rank-delta">+120 pts</div></div></div>
+        <div class="rank-row"><div class="rank-num">5</div><div class="rank-avatar" style="background:rgba(62,207,168,0.15);color:var(--green)">LF</div><div><div class="rank-name">Lucía Flores</div><div class="rank-name-sub">= esta semana</div></div><div style="flex:1"></div><div style="text-align:right"><div class="rank-score">1,960</div><div class="rank-delta">+95 pts</div></div></div>
+        <div class="rank-row"><div class="rank-num">6</div><div class="rank-avatar" style="background:rgba(255,123,84,0.15);color:var(--orange)">DP</div><div><div class="rank-name">Diego Paredes</div><div class="rank-name-sub">↓2 esta semana</div></div><div style="flex:1"></div><div style="text-align:right"><div class="rank-score">1,910</div><div class="rank-delta" style="color:var(--pink)">−30 pts</div></div></div>
+        <div class="rank-row me"><div class="rank-num" style="color:var(--purple2);font-weight:600">7</div><div class="rank-avatar" style="background:var(--purple)">KT</div><div><div class="rank-name" style="color:var(--purple2);font-weight:500">Kevin Torres (tú)</div><div class="rank-name-sub" style="color:var(--purple)">↑2 esta semana</div></div><div style="flex:1"></div><div style="text-align:right"><div class="rank-score" style="color:var(--purple2)">1,840</div><div class="rank-delta">+210 pts</div></div></div>
+        <div class="rank-row"><div class="rank-num">8</div><div class="rank-avatar" style="background:rgba(255,94,135,0.12);color:var(--pink)">AG</div><div><div class="rank-name">Ana García</div><div class="rank-name-sub">↑1 esta semana</div></div><div style="flex:1"></div><div style="text-align:right"><div class="rank-score">1,790</div><div class="rank-delta">+180 pts</div></div></div>
+        <div class="rank-row"><div class="rank-num">9</div><div class="rank-avatar" style="background:var(--purple-bg);color:var(--purple2)">PH</div><div><div class="rank-name">Pedro Huamán</div><div class="rank-name-sub">↓1 esta semana</div></div><div style="flex:1"></div><div style="text-align:right"><div class="rank-score">1,730</div><div class="rank-delta" style="color:var(--pink)">−20 pts</div></div></div>
+        <div class="rank-row"><div class="rank-num">10</div><div class="rank-avatar" style="background:rgba(62,207,168,0.12);color:var(--green)">VC</div><div><div class="rank-name">Valeria Castillo</div><div class="rank-name-sub">= esta semana</div></div><div style="flex:1"></div><div style="text-align:right"><div class="rank-score">1,700</div><div class="rank-delta">+60 pts</div></div></div>
+      </div>
+    </div>
+
+    <!-- ── AGENDA ── -->
+    <div class="screen" id="agenda">
+      <div class="page-header">
+        <div>
+          <div class="page-title">Agenda</div>
+          <div class="page-subtitle">Semana del 21 al 27 de abril, 2025</div>
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <button class="btn btn-ghost btn-sm" type="button" onclick="abrirHorarioPersonalizado()">▦ Mi horario semanal</button>
+          <button class="btn btn-primary btn-sm" type="button">+ Añadir evento</button>
+        </div>
+      </div>
+
+      <div class="grid g2" style="gap:20px;align-items:start">
+        <div>
+          <div class="calendar-wrapper">
+            <div class="cal-header">
+              <div class="cal-month">Abril 2025</div>
+              <div class="cal-nav">
+                <div class="cal-nav-btn">‹</div>
+                <div class="cal-nav-btn">›</div>
+              </div>
+            </div>
+            <div class="cal-days-header" id="cal-days"></div>
+            <div class="cal-grid" id="cal-grid"></div>
+          </div>
+
+          <div class="card">
+            <div class="card-title" style="margin-bottom:12px">Leyenda</div>
+            <div style="display:flex;flex-direction:column;gap:8px">
+              <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text2)"><div style="width:10px;height:10px;border-radius:50%;background:var(--purple)"></div>Clases en vivo</div>
+              <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text2)"><div style="width:10px;height:10px;border-radius:50%;background:var(--orange)"></div>Simulacros y exámenes</div>
+              <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text2)"><div style="width:10px;height:10px;border-radius:50%;background:var(--pink)"></div>Entregas y deadlines</div>
+              <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text2)"><div style="width:10px;height:10px;border-radius:50%;background:var(--purple);border:2px solid var(--text)"></div>Hoy</div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="section-label">Eventos de esta semana</div>
+          <div class="event-timeline">
+            <div class="event-row">
+              <div class="event-time-col"><div class="event-time-start">7:00 PM</div><div class="event-time-end">8:30 PM</div><div style="font-size:10px;color:var(--text3);margin-top:4px;font-weight:600">LUN 21</div></div>
+              <div class="event-bar" style="background:var(--purple)"></div>
+              <div class="event-content">
+                <div class="event-title">Clase en vivo — Trigonometría</div>
+                <div class="event-subtitle">Prof. Marcelo Quispe · Zoom · 90 min</div>
+                <div class="event-tags"><span class="badge badge-purple">En vivo</span><span class="badge" style="background:rgba(255,255,255,0.05);color:var(--text3)">45 inscritos</span></div>
+              </div>
+            </div>
+            <div class="event-row">
+              <div class="event-time-col"><div class="event-time-start">6:00 PM</div><div class="event-time-end">7:00 PM</div><div style="font-size:10px;color:var(--text3);margin-top:4px;font-weight:600">MIÉ 23</div></div>
+              <div class="event-bar" style="background:var(--green)"></div>
+              <div class="event-content">
+                <div class="event-title">Práctica dirigida — Física</div>
+                <div class="event-subtitle">Plan personal de estudio · 60 min</div>
+                <div class="event-tags"><span class="badge badge-green">Práctica</span><span class="badge" style="background:rgba(255,255,255,0.05);color:var(--text3)">Obligatorio</span></div>
+              </div>
+            </div>
+            <div class="event-row" style="border-color:rgba(255,94,135,0.2)">
+              <div class="event-time-col"><div class="event-time-start">11:59 PM</div><div class="event-time-end">Deadline</div><div style="font-size:10px;color:var(--text3);margin-top:4px;font-weight:600">JUE 24</div></div>
+              <div class="event-bar" style="background:var(--pink)"></div>
+              <div class="event-content">
+                <div class="event-title">Entrega Trabajo — Química Orgánica</div>
+                <div class="event-subtitle">Nomenclatura IUPAC · 5 páginas mín.</div>
+                <div class="event-tags"><span class="badge badge-pink">Urgente</span></div>
+              </div>
+            </div>
+            <div class="event-row" style="border-color:rgba(255,123,84,0.2)">
+              <div class="event-time-col"><div class="event-time-start">9:00 AM</div><div class="event-time-end">12:00 PM</div><div style="font-size:10px;color:var(--orange);margin-top:4px;font-weight:600">SÁB 26</div></div>
+              <div class="event-bar" style="background:var(--orange)"></div>
+              <div class="event-content">
+                <div class="event-title">Simulacro General #5</div>
+                <div class="event-subtitle">5 áreas · 120 preguntas · Presencial + Virtual</div>
+                <div class="event-tags"><span class="badge badge-orange">Examen</span><span class="badge badge-yellow">Alta importancia</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── PERFIL ── -->
+    <div class="screen" id="perfil">
+
+      <div class="profile-cover"></div>
+
+      <div class="profile-card-body">
+        <div class="profile-avatar-wrap" id="profile-avatar">PU</div>
+
+        <div class="profile-name" id="profile-name">
+          Estudiante UniPrep
+        </div>
+
+        <div class="profile-sub" id="profile-sub">
+          Preuniversitario
+        </div>
+
+        <div class="profile-goal" id="profile-goal">
+          🎯 Meta académica por definir
+        </div>
+
+        <div class="profile-actions">
+          <button
+            id="profile-tutorial-btn"
+            class="btn btn-ghost"
+            type="button"
+            onclick="iniciarTutorialUniPrep({forzar:true})"
+          >
+            🎮 Repetir tutorial
+          </button>
+
+          <button
+            class="btn btn-primary"
+            type="button"
+            onclick="abrirEditarPerfil()"
+          >
+            ✏️ Editar perfil
+          </button>
+
+          <button
+            class="btn-logout"
+            type="button"
+            onclick="cerrarSesion()"
+          >
+            🚪 Cerrar sesión
+          </button>
+        </div>
+
+        <div class="profile-stats">
+          <div class="pstat">
+            <div class="pstat-num" id="profile-exercises">0</div>
+            <div class="pstat-lbl">Ejercicios</div>
+          </div>
+
+          <div class="pstat">
+            <div class="pstat-num" id="profile-precision">0%</div>
+            <div class="pstat-lbl">Precisión</div>
+          </div>
+
+          <div class="pstat">
+            <div class="pstat-num" id="profile-streak">0</div>
+            <div class="pstat-lbl">Racha días</div>
+          </div>
+
+          <div class="pstat">
+            <div class="pstat-num" id="profile-ranking">#--</div>
+            <div class="pstat-lbl">Ranking</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="streak-banner">
+        <div class="streak-fire">🔥</div>
+
+        <div class="streak-info">
+          <div class="streak-num" id="streak-days">0 días</div>
+
+          <div class="streak-lbl" id="streak-description">
+            Empieza tu primera racha de estudio
+          </div>
+
+          <div id="streak-dots" class="streak-dots"></div>
+        </div>
+
+        <div class="streak-xp">
+          <small>XP acumulados</small>
+          <strong id="profile-xp">0</strong>
+        </div>
+      </div>
+
+      <div class="profile-section">
+        <div class="profile-intelligence-head">
+          <div><div class="section-label">Analítica académica real</div><p>Calculada con tus respuestas y el progreso guardado.</p></div>
+          <span id="profile-cloud-status" class="profile-cloud-status">● Verificando sincronización</span>
+        </div>
+
+        <div class="profile-readiness-grid">
+          <article class="profile-readiness-main">
+            <div class="readiness-ring" id="profile-readiness-ring" style="--readiness:0"><span><b id="profile-readiness">0%</b><small>preparación</small></span></div>
+            <div><span class="analysis-kicker">ÍNDICE DE PREPARACIÓN</span><h3 id="profile-readiness-title">Comienza tu diagnóstico</h3><p id="profile-readiness-copy">Responde preguntas para generar una lectura académica confiable.</p></div>
+          </article>
+          <article class="analysis-mini-card"><span>✓</span><b id="analysis-answered">0</b><small>respuestas analizadas</small></article>
+          <article class="analysis-mini-card"><span>◎</span><b id="analysis-accuracy">0%</b><small>precisión global</small></article>
+          <article class="analysis-mini-card"><span>↻</span><b id="analysis-errors">0</b><small>errores pendientes</small></article>
+        </div>
+
+        <div class="profile-analysis-grid">
+          <div class="card progress-card">
+            <div class="analysis-card-head"><div><span>COBERTURA REAL</span><h3>Progreso por curso</h3></div><b id="analysis-courses-started">0/21</b></div>
+            <div id="profile-course-progress" class="profile-course-progress"></div>
+          </div>
+
+          <div class="card strengths-card">
+            <div class="analysis-card-head"><div><span>DIAGNÓSTICO ADAPTATIVO</span><h3>Fortalezas y prioridades</h3></div><b>EN VIVO</b></div>
+            <div id="profile-strengths" class="profile-strengths"></div>
+            <button id="profile-next-action" class="profile-next-action" type="button" onclick="abrirCentroPractica(null)"><span>PRÓXIMA ACCIÓN</span><b id="profile-next-action-title">Realizar práctica diagnóstica</b><small id="profile-next-action-copy">Necesitamos respuestas reales para detectar tu prioridad.</small><em>Entrenar ahora →</em></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile-section">
+        <div class="section-label">Logros</div>
+
+        <div class="achievement-grid">
+          <div id="achievement-streak-7" class="ach-card locked">
+            <div class="ach-emoji">🔥</div>
+            <div class="ach-name">Racha 7 días</div>
+            <div class="ach-desc">Estudia 7 días seguidos</div>
+          </div>
+
+          <div id="achievement-perfect" class="ach-card locked">
+            <div class="ach-emoji">🎯</div>
+            <div class="ach-name">Tiro perfecto</div>
+            <div class="ach-desc">100% en un tema</div>
+          </div>
+
+          <div id="achievement-top-10" class="ach-card locked">
+            <div class="ach-emoji">🏆</div>
+            <div class="ach-name">Top 10</div>
+            <div class="ach-desc">Entra al ranking top</div>
+          </div>
+
+          <div id="achievement-500" class="ach-card locked">
+            <div class="ach-emoji">📚</div>
+            <div class="ach-name">500 ejercicios</div>
+            <div class="ach-desc">Completa 500 prácticas</div>
+          </div>
+
+          <div id="achievement-speed" class="ach-card locked">
+            <div class="ach-emoji">⚡</div>
+            <div class="ach-name">Velocidad</div>
+            <div class="ach-desc">Responde en menos de 30 s</div>
+          </div>
+
+          <div id="achievement-streak-30" class="ach-card locked">
+            <div class="ach-emoji">🌟</div>
+            <div class="ach-name">Racha 30 días</div>
+            <div class="ach-desc">Mantén una racha de 30 días</div>
+          </div>
+
+          <div id="achievement-top-3" class="ach-card locked">
+            <div class="ach-emoji">👑</div>
+            <div class="ach-name">Top 3</div>
+            <div class="ach-desc">Llega al podio del ranking</div>
+          </div>
+
+          <div id="achievement-1000" class="ach-card locked">
+            <div class="ach-emoji">🎓</div>
+            <div class="ach-name">1000 ejercicios</div>
+            <div class="ach-desc">Completa 1000 prácticas</div>
+          </div>
+
+          <div id="achievement-perfection" class="ach-card locked">
+            <div class="ach-emoji">💎</div>
+            <div class="ach-name">Perfección</div>
+            <div class="ach-desc">90% o más en todas las áreas</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ── ORIENTACIÓN VOCACIONAL ── -->
+    <div class="screen" id="vocacional">
+      <div id="vocational-root"></div>
+    </div>
+
+    <!-- ── TUTOR ACADÉMICO ── -->
+    <div class="screen" id="tutor">
+      <div id="tutor-academic-root"></div>
+    </div>
+
+    <!-- ── NOTIFICACIONES ── -->
+    <div class="screen" id="notificaciones">
+      <div class="page-header">
+        <div>
+          <div class="page-title">Notificaciones</div>
+          <div class="page-subtitle">3 nuevas notificaciones</div>
+        </div>
+        <button class="btn btn-ghost btn-sm">Marcar todo como leído</button>
+      </div>
+
+      <div class="notif-item unread">
+        <div class="notif-icon-wrap" style="background:var(--orange-bg)">🏆</div>
+        <div class="notif-content">
+          <div class="notif-title">¡Subiste al puesto #7 en el ranking!</div>
+          <div class="notif-body">Superaste a Diego Paredes después de completar 3 simulacros esta semana. Sigue así para llegar al top 5.</div>
+          <div class="notif-time">Hace 2 horas</div>
+        </div>
+        <div class="notif-unread-dot"></div>
+      </div>
+
+      <div class="notif-item unread">
+        <div class="notif-icon-wrap" style="background:var(--purple-bg)">📝</div>
+        <div class="notif-content">
+          <div class="notif-title">Nueva clase disponible: Trigonometría</div>
+          <div class="notif-body">El Prof. Marcelo Quispe publicó el video de la clase de trigonometría. Incluye 40 ejercicios nuevos.</div>
+          <div class="notif-time">Hace 5 horas</div>
+        </div>
+        <div class="notif-unread-dot"></div>
+      </div>
+
+      <div class="notif-item unread">
+        <div class="notif-icon-wrap" style="background:var(--pink-bg)">⏰</div>
+        <div class="notif-content">
+          <div class="notif-title">Deadline mañana: Trabajo de Química</div>
+          <div class="notif-body">No olvides entregar tu trabajo de Nomenclatura IUPAC antes de las 11:59 PM del jueves 24.</div>
+          <div class="notif-time">Hace 8 horas</div>
+        </div>
+        <div class="notif-unread-dot"></div>
+      </div>
+
+      <div style="height:1px;background:var(--border);margin:16px 0"></div>
+
+      <div class="notif-item">
+        <div class="notif-icon-wrap" style="background:var(--green-bg)">✅</div>
+        <div class="notif-content">
+          <div class="notif-title">Completaste Ecuaciones cuadráticas con 91%</div>
+          <div class="notif-body">¡Excelente resultado! Has ganado 85 XP y desbloqueado el tema "Funciones y graficación".</div>
+          <div class="notif-time">Ayer, 3:45 PM</div>
+        </div>
+      </div>
+
+      <div class="notif-item">
+        <div class="notif-icon-wrap" style="background:var(--yellow-bg)">🔥</div>
+        <div class="notif-content">
+          <div class="notif-title" id="streak-notification-title">Aún no tienes una racha activa</div>
+          <div class="notif-body" id="streak-notification-body">Responde una pregunta para comenzar tu primera racha de estudio.</div>
+          <div class="notif-time">Ayer, 8:00 AM</div>
+        </div>
+      </div>
+
+      <div class="notif-item">
+        <div class="notif-icon-wrap" style="background:var(--blue-bg)">📊</div>
+        <div class="notif-content">
+          <div class="notif-title">Resultados del Simulacro #4 disponibles</div>
+          <div class="notif-body">Tu puntaje final fue 81%. Posición #5 de 248 estudiantes. Revisa el análisis detallado.</div>
+          <div class="notif-time">Hace 2 días</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="auth-screen" class="auth-screen">
+
+  <!-- FONDO DECORATIVO -->
+  <div class="auth-stars" aria-hidden="true"></div>
+  <div class="auth-glow auth-glow-one" aria-hidden="true"></div>
+  <div class="auth-glow auth-glow-two" aria-hidden="true"></div>
+
+  <!-- LADO IZQUIERDO -->
+  <div class="auth-presentation">
+
+    <a href="#" class="auth-brand">
+      <span class="auth-brand-icon">
+        <svg viewBox="0 0 24 24" fill="none">
+          <path
+            d="M12 3L4 7.5V16.5L12 21L20 16.5V7.5L12 3Z"
+            stroke="currentColor"
+            stroke-width="1.7"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M12 3V21M4 7.5L12 12L20 7.5"
+            stroke="currentColor"
+            stroke-width="1.7"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </span>
+
+      <span>Uni<span>Prep</span></span>
+    </a>
+
+    <div class="auth-chaside-corner">
+      <div class="auth-vocational-kicker"><span>NUEVO</span><b>¿Todavía no sabes qué carrera elegir?</b></div>
+      <button class="auth-vocational-button" type="button" onclick="abrirOrientacionVocacional('test')" aria-label="Comenzar Test CHASIDE de 98 preguntas">
+        <span>◎</span><div><b>Haz el Test CHASIDE</b><small>98 preguntas · Sí o No · Resultado completo</small></div><em>EMPEZAR →</em>
+      </button>
+    </div>
+
+    <div class="auth-orbit orbit-one"></div>
+    <div class="auth-orbit orbit-two"></div>
+    <div class="auth-planet planet-one"></div>
+    <div class="auth-planet planet-two"></div>
+
+    <div class="auth-hero-content">
+      <div class="auth-eyebrow">
+        <span></span>
+        Prepárate. Practica. Ingresa.
+      </div>
+
+      <h1>
+        Cada tema que dominas es
+        <strong>otra órbita</strong>
+        más cerca de la universidad.
+      </h1>
+
+      <p>
+        Aprende Matemática, Física, Química, Comunicación y más.
+        Completa retos, mejora tu nivel y compite en el ranking.
+      </p>
+
+      <div class="auth-vocational-actions">
+        <button class="auth-vocational-button secondary" type="button" onclick="abrirOrientacionVocacional('explorar')">
+          <span>⌖</span><div><b>Explora carreras y universidades</b><small>Encuentra dónde estudiar en todo el Perú</small></div><em>VER →</em>
+        </button>
+      </div>
+
+      <div class="auth-benefits">
+        <div class="auth-benefit">
+          <span>01</span>
+          <div>
+            <strong>Práctica personalizada</strong>
+            <small>Ejercicios según tu progreso.</small>
+          </div>
+        </div>
+
+        <div class="auth-benefit">
+          <span>02</span>
+          <div>
+            <strong>Simulacros completos</strong>
+            <small>Prepárate para el examen real.</small>
+          </div>
+        </div>
+
+        <div class="auth-benefit">
+          <span>03</span>
+          <div>
+            <strong>Progreso y ranking</strong>
+            <small>Sube de nivel mientras aprendes.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="auth-presentation-footer">
+      <span>© 2026 UniPrep</span>
+      <span>Tu camino hacia la universidad</span>
+    </div>
+  </div>
+
+  <!-- LADO DERECHO -->
+  <div class="auth-access">
+
+    <div class="auth-access-inner">
+
+      <div class="auth-mobile-brand">
+        <span class="auth-brand-icon">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path
+              d="M12 3L4 7.5V16.5L12 21L20 16.5V7.5L12 3Z"
+              stroke="currentColor"
+              stroke-width="1.7"
+            />
+            <path
+              d="M12 3V21M4 7.5L12 12L20 7.5"
+              stroke="currentColor"
+              stroke-width="1.7"
+            />
+          </svg>
+        </span>
+
+        <span>Uni<span>Prep</span></span>
+      </div>
+
+      <div class="auth-card">
+
+        <div class="auth-card-heading">
+          <span class="auth-card-label">Bienvenido a bordo</span>
+          <h2 id="auth-title">Continúa tu preparación</h2>
+          <p id="auth-subtitle">
+            Inicia sesión para volver a tu panel de estudios.
+          </p>
+        </div>
+
+        <!-- PESTAÑAS -->
+        <div class="auth-tabs">
+          <button
+            id="login-tab"
+            class="auth-tab active"
+            type="button"
+            onclick="mostrarLogin()"
+          >
+            Ingresar
+          </button>
+
+          <button
+            id="register-tab"
+            class="auth-tab"
+            type="button"
+            onclick="mostrarRegistro()"
+          >
+            Crear cuenta
+          </button>
+        </div>
+
+        <!-- FORMULARIO LOGIN -->
+        <form id="login-form" class="auth-form">
+
+          <div class="auth-field">
+            <label for="login-correo">Correo electrónico</label>
+
+            <div class="auth-input-wrapper">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M4 6H20V18H4V6Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M4 7L12 13L20 7"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                />
+              </svg>
+
+              <input
+                id="login-correo"
+                type="email"
+                autocomplete="email"
+                placeholder="tu_correo@ejemplo.com"
+                required
+              >
+            </div>
+          </div>
+
+          <div class="auth-field">
+            <div class="auth-label-row">
+              <label for="login-password">Contraseña</label>
+              <button
+                class="auth-text-button"
+                type="button"
+                onclick="mostrarRecuperacion()"
+              >
+                ¿La olvidaste?
+              </button>
+            </div>
+
+            <div class="auth-input-wrapper">
+              <svg viewBox="0 0 24 24" fill="none">
+                <rect
+                  x="5"
+                  y="10"
+                  width="14"
+                  height="10"
+                  rx="2"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M8 10V7C8 4.8 9.8 3 12 3C14.2 3 16 4.8 16 7V10"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                />
+              </svg>
+
+              <input
+                id="login-password"
+                type="password"
+                autocomplete="current-password"
+                placeholder="Ingresa tu contraseña"
+                minlength="6"
+                required
+              >
+
+              <button
+                class="auth-password-button"
+                type="button"
+                onclick="alternarPassword('login-password', this)"
+                aria-label="Mostrar contraseña"
+              >
+                👁
+              </button>
+            </div>
+          </div>
+
+          <label class="auth-check">
+            <input id="remember-session" type="checkbox" checked>
+            <span></span>
+            Mantener mi sesión iniciada
+          </label>
+
+          <div id="login-error" class="auth-message error" role="alert"></div>
+
+          <button class="auth-submit" type="submit">
+            <span>Entrar a mi órbita</span>
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M5 12H19M14 7L19 12L14 17"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+
+          <p class="auth-switch-text">
+            ¿Primera vez aquí?
+            <button type="button" onclick="mostrarRegistro()">
+              Crea tu cuenta
+            </button>
+          </p>
+
+        </form>
+
+        <!-- SOLICITAR RECUPERACIÓN -->
+        <form id="recovery-request-form" class="auth-form hidden">
+          <div class="auth-recovery-intro">
+            <span class="auth-recovery-icon">✉</span>
+            <p>Escribe el correo con el que creaste tu cuenta. Te enviaremos un enlace seguro para cambiar la contraseña.</p>
+          </div>
+
+          <div class="auth-field">
+            <label for="recovery-email">Correo de tu cuenta</label>
+            <div class="auth-input-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4 6H20V18H4V6Z" stroke="currentColor" stroke-width="1.5" />
+                <path d="M4 7L12 13L20 7" stroke="currentColor" stroke-width="1.5" />
+              </svg>
+              <input id="recovery-email" type="email" autocomplete="email" placeholder="tu_correo@ejemplo.com" required>
+            </div>
+          </div>
+
+          <div id="recovery-request-message" class="auth-message error" role="status" aria-live="polite"></div>
+
+          <button class="auth-submit" type="submit">
+            <span>Enviar enlace seguro</span>
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M5 12H19M14 7L19 12L14 17" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+
+          <p class="auth-switch-text"><button type="button" onclick="mostrarLogin()">← Volver al inicio de sesión</button></p>
+          <p class="auth-password-privacy">🔒 UniPrep y sus administradores nunca pueden ver tu contraseña.</p>
+        </form>
+
+        <!-- ESTABLECER NUEVA CONTRASEÑA -->
+        <form id="recovery-update-form" class="auth-form hidden">
+          <div class="auth-recovery-intro">
+            <span class="auth-recovery-icon">✓</span>
+            <p>El enlace fue validado. Crea una contraseña nueva y diferente para proteger tu cuenta.</p>
+          </div>
+
+          <div class="auth-field">
+            <label for="recovery-new-password">Nueva contraseña</label>
+            <div class="auth-input-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect x="5" y="10" width="14" height="10" rx="2" stroke="currentColor" stroke-width="1.5" />
+                <path d="M8 10V7C8 4.8 9.8 3 12 3C14.2 3 16 4.8 16 7V10" stroke="currentColor" stroke-width="1.5" />
+              </svg>
+              <input id="recovery-new-password" type="password" autocomplete="new-password" minlength="8" placeholder="Mínimo 8 caracteres" required>
+              <button class="auth-password-button" type="button" onclick="alternarPassword('recovery-new-password', this)" aria-label="Mostrar contraseña">👁</button>
+            </div>
+          </div>
+
+          <div class="auth-field">
+            <label for="recovery-confirm-password">Confirma la nueva contraseña</label>
+            <div class="auth-input-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M8 12L11 15L17 9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M12 3L20 7V12C20 17 16.6 20 12 21C7.4 20 4 17 4 12V7L12 3Z" stroke="currentColor" stroke-width="1.5" />
+              </svg>
+              <input id="recovery-confirm-password" type="password" autocomplete="new-password" minlength="8" placeholder="Repítela exactamente" required>
+              <button class="auth-password-button" type="button" onclick="alternarPassword('recovery-confirm-password', this)" aria-label="Mostrar contraseña">👁</button>
+            </div>
+          </div>
+
+          <ul class="auth-password-rules" aria-label="Requisitos de contraseña">
+            <li>8 caracteres como mínimo</li><li>Una mayúscula</li><li>Una minúscula</li><li>Un número</li>
+          </ul>
+
+          <div id="recovery-update-message" class="auth-message error" role="status" aria-live="polite"></div>
+
+          <button class="auth-submit" type="submit">
+            <span>Guardar nueva contraseña</span>
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M5 12H19M14 7L19 12L14 17" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+
+          <p class="auth-password-privacy">El enlace es temporal y solo permite cambiar la contraseña de tu propia cuenta.</p>
+        </form>
+
+        <!-- FORMULARIO REGISTRO -->
+        <form id="register-form" class="auth-form hidden">
+
+          <div class="auth-form-grid">
+
+            <div class="auth-field auth-full-field">
+              <label for="reg-nombre">Nombre completo</label>
+
+              <div class="auth-input-wrapper">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.5" />
+                  <path d="M5 21C5 17.1 8.1 14 12 14C15.9 14 19 17.1 19 21" stroke="currentColor" stroke-width="1.5" />
+                </svg>
+                <input id="reg-nombre" type="text" autocomplete="name" placeholder="Tu nombre y apellido" required>
+              </div>
+            </div>
+
+            <div class="auth-field auth-full-field">
+              <label for="reg-correo">Correo electrónico</label>
+              <div class="auth-input-wrapper">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M4 6H20V18H4V6Z" stroke="currentColor" stroke-width="1.5" />
+                  <path d="M4 7L12 13L20 7" stroke="currentColor" stroke-width="1.5" />
+                </svg>
+                <input id="reg-correo" type="email" autocomplete="email" placeholder="tu_correo@ejemplo.com" required>
+              </div>
+            </div>
+
+            <div class="auth-field auth-full-field">
+              <label for="reg-universidad">Universidad a la que postulas</label>
+              <div class="auth-input-wrapper">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M4 21V9H20V21" stroke="currentColor" stroke-width="1.5" />
+                  <path d="M2 9L12 3L22 9" stroke="currentColor" stroke-width="1.5" />
+                  <path d="M8 13V18M12 13V18M16 13V18" stroke="currentColor" stroke-width="1.5" />
+                </svg>
+                <select id="reg-universidad" required aria-describedby="reg-route-note">
+                  <option value="">Cargando universidades…</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="auth-field auth-full-field">
+              <label for="reg-carrera">Carrera objetivo</label>
+              <div class="auth-input-wrapper">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M3 9L12 4L21 9L12 14L3 9Z" stroke="currentColor" stroke-width="1.5" />
+                  <path d="M6 11V16L12 20L18 16V11" stroke="currentColor" stroke-width="1.5" />
+                </svg>
+                <select id="reg-carrera" required disabled>
+                  <option value="">Primero elige universidad</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="auth-field">
+              <label for="reg-grupo-admision">Área detectada automáticamente</label>
+              <div class="auth-input-wrapper">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M12 3L20 8L12 13L4 8L12 3Z" stroke="currentColor" stroke-width="1.5" />
+                  <path d="M6 11V16L12 20L18 16V11" stroke="currentColor" stroke-width="1.5" />
+                </svg>
+                <select id="reg-grupo-admision" required disabled>
+                  <option value="">Elige una carrera</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="auth-field">
+              <label for="reg-procedencia">Departamento desde donde estudias</label>
+              <div class="auth-input-wrapper">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M12 21C16 16.8 18 13.5 18 10A6 6 0 1 0 6 10C6 13.5 8 16.8 12 21Z" stroke="currentColor" stroke-width="1.5" />
+                  <circle cx="12" cy="10" r="2" stroke="currentColor" stroke-width="1.5" />
+                </svg>
+                <select id="reg-procedencia" required>
+                  <option value="">Cargando departamentos…</option>
+                </select>
+              </div>
+            </div>
+
+            <div id="reg-route-note" class="auth-route-note auth-full-field" aria-live="polite"></div>
+
+            <div class="auth-field auth-full-field">
+              <label for="reg-password">Contraseña</label>
+              <div class="auth-input-wrapper">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <rect x="5" y="10" width="14" height="10" rx="2" stroke="currentColor" stroke-width="1.5" />
+                  <path d="M8 10V7C8 4.8 9.8 3 12 3C14.2 3 16 4.8 16 7V10" stroke="currentColor" stroke-width="1.5" />
+                </svg>
+                <input id="reg-password" type="password" autocomplete="new-password" placeholder="Mínimo 6 caracteres" minlength="6" required oninput="actualizarSeguridadPassword(this.value)">
+                <button class="auth-password-button" type="button" onclick="alternarPassword('reg-password', this)" aria-label="Mostrar contraseña">👁</button>
+              </div>
+              <div class="password-strength">
+                <div class="password-strength-bar"><span id="password-strength-fill"></span></div>
+                <small id="password-strength-text">Usa mínimo 6 caracteres.</small>
+              </div>
+            </div>
+
+          </div>
+
+          <label class="auth-check">
+            <input id="accept-terms" type="checkbox" required>
+            <span></span>
+            Acepto los <a href="terms.html" target="_blank" rel="noopener">términos</a> y la <a href="privacy.html" target="_blank" rel="noopener">política de privacidad</a>.
+          </label>
+
+          <div id="register-error" class="auth-message error" role="alert"></div>
+
+          <button class="auth-submit" type="submit">
+            <span>Comenzar mi misión</span>
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M5 12H19M14 7L19 12L14 17" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+
+          <p class="auth-switch-text">
+            ¿Ya tienes una cuenta?
+            <button type="button" onclick="mostrarLogin()">Inicia sesión</button>
+          </p>
+
+        </form>
+
+      </div>
+
+      <p class="auth-security">🔒 Tu cuenta y progreso se guardan de forma segura en Supabase; tus preferencias locales se separan por usuario. <a href="privacy.html" target="_blank" rel="noopener">Privacidad</a></p>
+      <p id="exam-source-note" class="exam-source-note"></p>
+
+    </div>
+  </div>
+
+</section>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase.js?v=2026.15.0"></script>
+<script src="js/db.js"></script>
+<script src="js/user-storage.js?v=2026.15.0"></script>
+<script src="js/admission-profile.js?v=2026.10.2"></script>
+<script src="js/university-syllabus.js?v=2026.13.0"></script>
+<script src="js/vocational.js?v=2026.9.0"></script>
+<script src="js/auth.js?v=2026.12.0"></script>
+<script src="js/navigation.js"></script>
+<script src="js/streak.js"></script>
+<script src="js/syllabus-unamad.js?v=2026.9.0"></script>
+<script src="js/courses.js?v=2026.15.0"></script>
+<script src="js/learning-content.js?v=2026.15.0"></script>
+<script src="js/dashboard.js"></script>
+<script src="js/notifications.js"></script>
+<script src="js/calendar.js"></script>
+<script src="js/schedule.js"></script>
+<script src="js/formula-center.js?v=2026.9.0"></script>
+<script src="js/profile.js"></script>
+<script src="js/account-settings.js?v=2026.15.0"></script>
+<script src="js/onboarding.js?v=2026.12.0"></script>
+<script src="js/quiz.js"></script>
+<script src="js/questions-cepre.js"></script>
+<script src="js/questions-exams-2026.js?v=2026.11.0"></script>
+<script src="js/celebrations.js?v=2026.9.0"></script>
+<script src="js/practice-center.js?v=2026.13.0"></script>
+<script src="js/exam.js?v=2026.11.0"></script>
+<script src="js/timer.js"></script>
+<script src="js/ranking.js"></script>
+<script src="js/academic-report.js"></script>
+<script src="js/tutor.js"></script>
+<script src="js/pwa.js?v=2026.15.0"></script>
+<script src="js/app.js?v=2026.15.0"></script>
+<script src="js/premium.js?v=2026.10.2"></script>
+<script src="js/showcase-mode.js?v=2026.14.0"></script>
+
+</body>
+</html>

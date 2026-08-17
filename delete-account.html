@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#080c20">
+  <title>Eliminar cuenta — UniPrep</title>
+  <style>
+    body{margin:0;background:#070b1c;color:#dce5ff;font:16px/1.6 system-ui,sans-serif}
+    main{max-width:620px;margin:auto;padding:48px 22px}
+    .box{padding:25px;border:1px solid #33436f;border-radius:20px;background:#0e1630}
+    label{display:grid;gap:7px;margin:14px 0}
+    input{padding:13px;border:1px solid #3c4c77;border-radius:11px;background:#0a1025;color:#fff}
+    button{width:100%;padding:14px;border:0;border-radius:12px;background:#e84f79;color:#fff;font-weight:800;cursor:pointer}
+    button:disabled{cursor:wait;opacity:.65}
+    a{color:#67dcff}
+    .msg{min-height:24px;margin-top:12px;color:#ff9db6}
+  </style>
+</head>
+<body>
+  <main>
+    <a href="./">← Volver a UniPrep</a>
+    <h1>Eliminar mi cuenta</h1>
+    <div class="box">
+      <p>Al confirmar se eliminarán permanentemente tu cuenta, perfil, progreso, puntajes, agenda sincronizada y datos asociados.</p>
+      <form id="delete-form">
+        <label>Correo de la cuenta<input id="email" type="email" required autocomplete="email"></label>
+        <label>Contraseña<input id="password" type="password" required autocomplete="current-password"></label>
+        <button id="delete-submit" type="submit">Eliminar definitivamente</button>
+        <div class="msg" id="msg" role="alert" aria-live="polite"></div>
+      </form>
+    </div>
+    <p>Si no puedes ingresar, utiliza el canal de soporte publicado junto al enlace oficial de UniPrep.</p>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/supabase.js?v=2026.15.0"></script>
+  <script src="js/user-storage.js?v=2026.15.0"></script>
+  <script>
+    document.getElementById("delete-form").addEventListener("submit", async event => {
+      event.preventDefault();
+
+      const mensaje = document.getElementById("msg");
+      const boton = document.getElementById("delete-submit");
+      const correo = document.getElementById("email").value.trim().toLowerCase();
+      const password = document.getElementById("password").value;
+
+      mensaje.style.color = "#ff9db6";
+      mensaje.textContent = "Verificando…";
+      boton.disabled = true;
+
+      try {
+        if (!window.supabaseClient) {
+          throw new Error("Supabase no está disponible.");
+        }
+
+        const {data, error} = await window.supabaseClient.auth.signInWithPassword({
+          email: correo,
+          password
+        });
+
+        if (error || !data?.user) {
+          throw error || new Error("No se pudo verificar la cuenta.");
+        }
+
+        const ambito = data.user.id;
+        const resultado = await window.supabaseClient.rpc("eliminar_mi_cuenta_uniprep");
+
+        if (resultado.error || resultado.data !== true) {
+          throw resultado.error || new Error("El servidor no confirmó la eliminación.");
+        }
+
+        await window.supabaseClient.auth.signOut({scope:"local"}).catch(() => {});
+        window.uniprepStorage?.limpiarCuenta?.(ambito);
+        mensaje.style.color = "#67f5cf";
+        mensaje.textContent = "Cuenta eliminada correctamente. Ya puedes cerrar esta página.";
+        document.getElementById("delete-form").reset();
+      } catch (error) {
+        console.error("No se pudo eliminar la cuenta:", error?.message || error);
+        mensaje.textContent = "No se pudo eliminar. Verifica tus datos y que la migración de Supabase esté instalada.";
+        boton.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>

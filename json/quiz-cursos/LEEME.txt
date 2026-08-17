@@ -1,0 +1,20 @@
+CARPETA DE PREGUNTAS POR CURSO
+
+1. Cada curso usa un archivo JSON con el mismo id definido en js/courses.js:
+   rm.json, aritmetica.json, algebra.json, fisica.json, quimica.json, etc.
+
+2. Copia PLANTILLA_CURSO.json y cámbiale el nombre.
+
+3. Cada tema debe tener el mismo título que aparece en js/courses.js.
+
+4. Cada pregunta contiene:
+   - pregunta: enunciado.
+   - alternativas: cuatro opciones.
+   - respuesta: 0=A, 1=B, 2=C, 3=D.
+   - solucion: procedimiento paso a paso.
+   - explicacion: concepto que justifica la solución.
+
+5. Separa las preguntas con coma y valida que el JSON no tenga comentarios.
+
+6. Abre el proyecto con Live Server o publícalo en Vercel. Si abres index.html
+   con doble clic, el navegador puede bloquear la lectura de los archivos JSON.

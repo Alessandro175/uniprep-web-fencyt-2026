@@ -1,0 +1,51 @@
+UNIPREP 2 — PAQUETE WEB
+
+ANTES DE PUBLICAR
+- Sigue PUBLICAR_UNIPREP_PASO_A_PASO.txt.
+- Ejecuta supabase/UNIPREP_CONFIGURAR_SUPABASE.sql en el SQL Editor de Supabase.
+- El archivo vercel.json ya incluye las cabeceras necesarias para producción.
+
+Este paquete contiene solamente la versión web de UniPrep.
+No incluye Android, Gradle, Capacitor ni archivos para Play Store.
+
+CÓMO ABRIRLO PARA UNA DEMOSTRACIÓN
+1. Abre esta carpeta en Visual Studio Code.
+2. Abre index.html con la extensión Live Server.
+3. No abras index.html con doble clic: algunas funciones que leen archivos JSON
+   pueden ser bloqueadas por el navegador cuando no hay un servidor local.
+
+QUÉ NECESITA INTERNET
+- Inicio de sesión, registro, puntajes y ranking usan Supabase.
+- Los materiales enlazados de Google Drive necesitan conexión.
+- Tutor IA necesita que la variable OPENAI_API_KEY esté configurada en el servidor.
+
+La aplicación web conserva preguntas, simulacros, cursos, biblioteca, calendario,
+orientación vocacional, perfiles UNI/UNMSM y las demás funciones de UniPrep.
+
+NUEVOS SIMULACROS DE UNIPREP 2
+- UNI 2026-1: Aptitud Académica y Humanidades (100 preguntas).
+- UNI 2026-1: Matemática (40 preguntas).
+- UNI 2026-1: Física y Química (40 preguntas).
+- UCSM 2025: Examen General (80 preguntas).
+
+Las 260 preguntas fueron adaptadas como material de entrenamiento a partir de
+la estructura temática de los cuatro archivos proporcionados. Cada una incluye
+clave y explicación; no son reproducciones oficiales.
+
+RECUPERACIÓN DE CONTRASEÑA
+- En la pantalla de ingreso pulsa «¿La olvidaste?».
+- Escribe el correo de la cuenta y abre el enlace que llegará a ese correo.
+- UniPrep mostrará una pantalla para crear y confirmar una contraseña nueva.
+- Lee CONFIGURAR_RECUPERACION_SUPABASE.txt antes de hacer la demostración.
+- Supabase almacena hashes de las contraseñas: ningún administrador puede verlas.
+
+TUTORIAL DE PRIMER INGRESO
+- Las cuentas nuevas reciben automáticamente la misión guiada de siete pasos.
+- La pantalla se oscurece y resalta la función que se está explicando.
+- El recorrido presenta panel, ruta universitaria, cursos, simulacros, biblioteca,
+  agenda/racha y ranking/progreso.
+- El estado se guarda por cuenta. Omitir o finalizar evita que aparezca de nuevo.
+- Puede repetirse con el botón «?» de la barra superior o «Repetir tutorial»
+  desde Mi perfil.
+- Si no hay conexión al guardar el estado, el tutorial no bloquea el registro ni
+  el uso de la aplicación.

@@ -1,0 +1,114 @@
+{
+  "version": "2026.13",
+  "actualizado": "2026-08-16",
+  "aviso": "Los temarios y estructuras se contrastaron con publicaciones institucionales. Las preguntas de UniPrep son ejercicios de entrenamiento elaborados por la plataforma; no son preguntas oficiales ni garantizan la composición de una convocatoria futura.",
+  "perfiles": {
+    "UNAMAD": {
+      "universidadId": "unamad",
+      "formato": "Temario y distribución por grupos P, Q, R y S; la carrera elegida determina los cursos y su prioridad.",
+      "tipoPreguntas": ["selección múltiple", "razonamiento y conocimientos", "énfasis distinto por grupo"],
+      "nivelPredeterminado": "admision",
+      "ritmo": "medio",
+      "fuentes": [
+        "https://admision.unamad.edu.pe/documentos/temarios",
+        "https://admision.unamad.edu.pe/documentos/prospectos"
+      ]
+    },
+    "UNSAAC": {
+      "universidadId": "unsaac",
+      "formato": "80 preguntas. Las áreas A, B, C y D cambian las asignaturas y el número de preguntas por curso.",
+      "tipoPreguntas": ["selección múltiple", "competencia lingüística", "conocimientos por área"],
+      "nivelPredeterminado": "admision",
+      "ritmo": "medio",
+      "fuentes": ["https://admision.unsaac.edu.pe/temario/"]
+    },
+    "UNMSM": {
+      "universidadId": "unmsm",
+      "formato": "100 preguntas en 3 horas: competencia actitudinal, habilidades y conocimientos con ponderación diferente para las áreas A-E.",
+      "tipoPreguntas": ["habilidad verbal", "habilidad lógico-matemática", "análisis de casos", "conocimientos por área"],
+      "nivelPredeterminado": "exigente",
+      "ritmo": "medio-alto",
+      "fuentes": [
+        "https://admision.unmsm.edu.pe/portal/admision2026-ii/",
+        "https://www.unmsm.edu.pe/formacion-academica/admision"
+      ]
+    },
+    "UNSA": {
+      "universidadId": "unsa",
+      "formato": "80 preguntas según la matriz 2027. La ponderación cambia entre Ingenierías, Biomédicas y Sociales e incluye idioma extranjero.",
+      "tipoPreguntas": ["razonamiento", "aplicación de conocimientos", "distribución por área", "gestión del tiempo"],
+      "nivelPredeterminado": "exigente",
+      "ritmo": "medio-alto",
+      "fuentes": [
+        "https://admision.unsa.edu.pe/temario-y-matriz-de-evaluacion-2027/",
+        "https://admision.unsa.edu.pe/wp-content/uploads/2026/03/RCU-0028-Aprobacion-de-TEMARIO-y-MATRIZ-ADMISION-2027.pdf"
+      ]
+    },
+    "UNI": {
+      "universidadId": "uni",
+      "formato": "Tres pruebas presenciales: Aptitud Académica y Humanidades; Matemática; y Física y Química. Arquitectura añade aptitud vocacional.",
+      "tipoPreguntas": ["resolución multietapa", "modelación matemática", "integración de condiciones", "alta exigencia y precisión"],
+      "nivelPredeterminado": "exigente",
+      "ritmo": "alto",
+      "fuentes": ["https://admision.uni.edu.pe/admision2026-2/"]
+    },
+    "PUCP": {
+      "universidadId": "pucp",
+      "formato": "Comprensión de lectura: 28 preguntas. Matemática: 48 para Ciencias y Educación, y 40 para las demás carreras. Duración máxima: 2 h 30 min.",
+      "tipoPreguntas": ["comprensión explícita e implícita", "inferencia y síntesis", "problemas contextualizados", "interpretación del resultado"],
+      "nivelPredeterminado": "exigente",
+      "ritmo": "medio-alto",
+      "fuentes": [
+        "https://admision.pucp.edu.pe/guia-del-postulante/modalidades-de-admision/evaluacion-del-talento-r",
+        "https://admision.pucp.net/temas-priorizados/"
+      ],
+      "reglasTemario": {
+        "rm": {
+          "incluir": [
+            "Organización y orden de la información",
+            "Razonamiento lógico",
+            "Conteo de figuras",
+            "Análisis combinatorio",
+            "Sucesiones",
+            "Planteo y resolución mediante ecuaciones",
+            "Áreas y perímetros"
+          ]
+        },
+        "algebra": {
+          "excluir": [
+            "Números complejos",
+            "División de polinomios y teorema del resto",
+            "Factorización, MCD y MCM de polinomios",
+            "Matrices y determinantes"
+          ]
+        },
+        "geometria": {"excluir": ["Secciones cónicas"]},
+        "trigonometria": {
+          "excluir": [
+            "Funciones trigonométricas",
+            "Ecuaciones e inecuaciones trigonométricas"
+          ]
+        }
+      }
+    },
+    "UCSM": {
+      "universidadId": "ucsm",
+      "formato": "Temario oficial 2027 organizado por competencias de secundaria; UniPrep prioriza los cursos según la familia de carrera seleccionada.",
+      "tipoPreguntas": ["selección múltiple", "aplicación contextual", "razonamiento", "conocimientos disciplinares"],
+      "nivelPredeterminado": "admision",
+      "ritmo": "medio",
+      "fuentes": [
+        "https://ucsm.edu.pe/admision-pregrado/",
+        "https://ucsm.edu.pe/wp-content/uploads/2026/05/TEMARIO-DE-ADMISION-2027.pdf"
+      ]
+    },
+    "GENERAL": {
+      "universidadId": "otra",
+      "formato": "Ruta general de preparación preuniversitaria. Configura una universidad para aplicar un temario y un estilo específicos.",
+      "tipoPreguntas": ["razonamiento", "conocimientos generales", "dificultad adaptativa"],
+      "nivelPredeterminado": "todos",
+      "ritmo": "adaptativo",
+      "fuentes": []
+    }
+  }
+}

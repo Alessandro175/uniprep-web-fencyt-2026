@@ -1,0 +1,35 @@
+UNIPREP 2 - ACTIVAR RECUPERACIÓN DE CONTRASEÑA EN SUPABASE
+
+La aplicación ya incluye el flujo completo:
+1. El alumno solicita el enlace con su correo.
+2. Supabase envía un correo temporal.
+3. El enlace regresa a UniPrep.
+4. El alumno crea y confirma su contraseña nueva.
+
+CONFIGURACIÓN NECESARIA EN EL PANEL DE SUPABASE
+
+1. Abre el proyecto de Supabase utilizado por UniPrep.
+2. Entra a Authentication > URL Configuration.
+3. En Site URL coloca la dirección pública definitiva de UniPrep cuando exista.
+4. En Redirect URLs agrega las direcciones desde las que probarás la aplicación.
+
+Para Visual Studio Code con Live Server, agrega como mínimo:
+http://127.0.0.1:5500/**
+http://localhost:5500/**
+
+Si Live Server abre otro puerto, agrega también ese puerto. Para la web
+publicada, agrega su dirección HTTPS exacta, por ejemplo:
+https://tu-dominio.com/**
+
+5. Verifica en Authentication > Email Templates que esté habilitada la plantilla
+   «Reset Password». No coloques contraseñas dentro de la plantilla.
+6. Haz una prueba con una cuenta cuyo correo puedas revisar.
+
+SEGURIDAD IMPORTANTE
+
+Supabase almacena únicamente hashes bcrypt con sal, no las contraseñas originales.
+Por ese motivo ni el creador de UniPrep ni un administrador pueden leerlas. Eso es
+lo correcto y evita que una filtración revele las claves de los estudiantes.
+
+No crees columnas como password, contraseña o clave en la tabla profiles y no
+guardes contraseñas en localStorage, JavaScript, JSON, Excel o registros de consola.

@@ -1,0 +1,867 @@
+{
+  "courseId": "comprension_lectora",
+  "nombre": "Comprensión Lectora",
+  "version": "2026.9-cuatro-niveles-universidad",
+  "descripcion": "Banco original UniPrep organizado uno a uno con cada tema visible. Cada sesión temática conserva su subárea y no mezcla preguntas de otros temas.",
+  "universidadesReferencia": [
+    "UNAMAD",
+    "UNSAAC",
+    "UNMSM",
+    "UNSA",
+    "UNI",
+    "PUCP",
+    "UCSM",
+    "GENERAL"
+  ],
+  "distribucion": {
+    "basico": 10,
+    "intermedio": 10,
+    "avanzado": 10,
+    "admision": 10,
+    "total": 40
+  },
+  "distribucionPorTema": {
+    "basico": 10,
+    "intermedio": 10,
+    "avanzado": 10,
+    "admision": 10,
+    "total": 40
+  },
+  "criteriosDificultad": {
+    "basico": "Fundamento o procedimiento directo",
+    "intermedio": "Aplicación contextual de dos etapas",
+    "avanzado": "Análisis, contraste o modelación de tres o más relaciones"
+  },
+  "temas": [
+    {
+      "id": "comprension_lectora-1",
+      "titulo": "Comprensión lectora",
+      "subarea": "Comprensión Lectora",
+      "duracion": "47 min",
+      "teoria": "Comprensión, normativa y análisis del lenguaje aplicados al examen de admisión.",
+      "puntos": [
+        "Conceptos esenciales de Comprensión lectora",
+        "Procedimientos, propiedades y casos frecuentes",
+        "Aplicación en preguntas tipo admisión UNAMAD"
+      ],
+      "distribucion": {
+        "basico": 10,
+        "intermedio": 10,
+        "avanzado": 10,
+        "admision": 10,
+        "total": 40
+      },
+      "niveles": {
+        "basico": [
+          {
+            "id": "CL-01-B-01",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "basico",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Ejecuta un procedimiento directo",
+            "pregunta": "[Básico · 1/10] Tema Comprensión lectora. Lee: «Una ciudad instaló más contenedores, pero el reciclaje apenas aumentó. Una encuesta mostró que muchos vecinos no distinguían los residuos. La municipalidad concluyó que la infraestructura debía acompañarse de educación ambiental.» ¿Cuál es la idea principal?",
+            "alternativas": [
+              "La información influye en el uso correcto de los contenedores",
+              "El texto rechaza completamente el tema tratado",
+              "El texto presenta únicamente una definición",
+              "La infraestructura sin orientación no garantiza el reciclaje"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Comprensión lectora. La idea que integra todas las oraciones es: La infraestructura sin orientación no garantiza el reciclaje.",
+            "explicacion": "Se identifica información global explícita. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora».",
+            "pasosMinimos": 1,
+            "alineacionUniversitaria": "Competencias generales de admisión preuniversitaria"
+          },
+          {
+            "id": "CL-01-B-02",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "basico",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Ejecuta un procedimiento directo",
+            "pregunta": "[Básico · 2/10] Tema Comprensión lectora. Lee: «El estudio virtual permite repetir una explicación y adaptar el horario. Sin embargo, exige autonomía: cuando no hay planificación, la flexibilidad se convierte en postergación.» ¿Cuál es la idea principal?",
+            "alternativas": [
+              "El texto rechaza completamente el tema tratado",
+              "El texto presenta únicamente una definición",
+              "La flexibilidad virtual requiere autorregulación",
+              "Un horario personal puede mejorar el aprovechamiento"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Comprensión lectora. La idea que integra todas las oraciones es: La flexibilidad virtual requiere autorregulación.",
+            "explicacion": "Se identifica información global explícita. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora».",
+            "pasosMinimos": 1,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNAMAD; no es una pregunta oficial"
+          },
+          {
+            "id": "CL-01-B-03",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "basico",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Ejecuta un procedimiento directo",
+            "pregunta": "[Básico · 3/10] Tema Comprensión lectora. Lee: «Los bosques amazónicos almacenan carbono y regulan el agua. Su pérdida no solo reduce especies; también altera lluvias y actividades económicas que dependen de los ríos.» ¿Cuál es la idea principal?",
+            "alternativas": [
+              "El texto presenta únicamente una definición",
+              "La deforestación produce efectos ecológicos y económicos conectados",
+              "Conservar bosques beneficia a poblaciones humanas",
+              "El texto rechaza completamente el tema tratado"
+            ],
+            "respuesta": 1,
+            "solucion": "Aplicación específica de Comprensión lectora. La idea que integra todas las oraciones es: La deforestación produce efectos ecológicos y económicos conectados.",
+            "explicacion": "Se identifica información global explícita. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora».",
+            "pasosMinimos": 1,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSAAC; no es una pregunta oficial"
+          },
+          {
+            "id": "CL-01-B-04",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "basico",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Ejecuta un procedimiento directo",
+            "pregunta": "[Básico · 4/10] Tema Comprensión lectora. Lee: «Un simulacro no predice por sí solo el ingreso. Su valor aparece cuando el estudiante analiza cada error, identifica el concepto fallado y modifica su estrategia de estudio.» ¿Cuál es la idea principal?",
+            "alternativas": [
+              "La revisión de errores convierte el simulacro en aprendizaje",
+              "Repetir pruebas sin retroalimentación tiene utilidad limitada",
+              "El texto rechaza completamente el tema tratado",
+              "El texto presenta únicamente una definición"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Comprensión lectora. La idea que integra todas las oraciones es: La revisión de errores convierte el simulacro en aprendizaje.",
+            "explicacion": "Se identifica información global explícita. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora».",
+            "pasosMinimos": 1,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNMSM; no es una pregunta oficial"
+          },
+          {
+            "id": "CL-01-B-05",
+            "universidadReferencia": "UNSA",
+            "dificultad": "basico",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Ejecuta un procedimiento directo",
+            "pregunta": "[Básico · 5/10] Tema Comprensión lectora. Lee: «La ciencia no avanza acumulando certezas intocables. Formula explicaciones, las somete a pruebas y las corrige cuando surge evidencia más sólida.» ¿Cuál es la idea principal?",
+            "alternativas": [
+              "Corregir una teoría puede representar progreso",
+              "El texto rechaza completamente el tema tratado",
+              "El texto presenta únicamente una definición",
+              "El conocimiento científico es revisable y basado en evidencia"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Comprensión lectora. La idea que integra todas las oraciones es: El conocimiento científico es revisable y basado en evidencia.",
+            "explicacion": "Se identifica información global explícita. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora».",
+            "pasosMinimos": 1,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSA; no es una pregunta oficial"
+          },
+          {
+            "id": "CL-01-B-06",
+            "universidadReferencia": "UNI",
+            "dificultad": "basico",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Ejecuta un procedimiento directo",
+            "pregunta": "[Básico · 6/10] Tema Comprensión lectora. Lee: «Una biblioteca digital amplía el acceso a materiales, pero no sustituye la selección crítica. Cuando todo aparece al mismo nivel, distinguir una fuente rigurosa de una opinión se vuelve parte esencial del aprendizaje.» ¿Cuál es la idea principal?",
+            "alternativas": [
+              "El texto rechaza completamente el tema tratado",
+              "El texto presenta únicamente una definición",
+              "El acceso digital necesita evaluación crítica de fuentes",
+              "Disponer de más información no asegura comprender mejor"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Comprensión lectora. La idea que integra todas las oraciones es: El acceso digital necesita evaluación crítica de fuentes.",
+            "explicacion": "Se identifica información global explícita. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora».",
+            "pasosMinimos": 1,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNI; no es una pregunta oficial"
+          },
+          {
+            "id": "CL-01-B-07",
+            "universidadReferencia": "PUCP",
+            "dificultad": "basico",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Ejecuta un procedimiento directo",
+            "pregunta": "[Básico · 7/10] Tema Comprensión lectora. Lee: «La memoria mejora cuando el repaso se distribuye en varios días. Concentrar todo en una noche puede producir familiaridad momentánea, pero el recuerdo se debilita con rapidez.» ¿Cuál es la idea principal?",
+            "alternativas": [
+              "El texto presenta únicamente una definición",
+              "El repaso espaciado favorece una retención más duradera",
+              "La sensación inmediata de dominio puede ser engañosa",
+              "El texto rechaza completamente el tema tratado"
+            ],
+            "respuesta": 1,
+            "solucion": "Aplicación específica de Comprensión lectora. La idea que integra todas las oraciones es: El repaso espaciado favorece una retención más duradera.",
+            "explicacion": "Se identifica información global explícita. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora».",
+            "pasosMinimos": 1,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de PUCP; no es una pregunta oficial"
+          },
+          {
+            "id": "CL-01-B-08",
+            "universidadReferencia": "UCSM",
+            "dificultad": "basico",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Ejecuta un procedimiento directo",
+            "pregunta": "[Básico · 8/10] Tema Comprensión lectora. Lee: «El transporte público eficiente reduce tiempo y contaminación solo si conecta las zonas donde las personas viven y trabajan. Una ruta técnicamente rápida puede fracasar si ignora esos desplazamientos reales.» ¿Cuál es la idea principal?",
+            "alternativas": [
+              "La eficiencia del transporte depende de responder a trayectos reales",
+              "Diseñar rutas requiere estudiar patrones de movilidad",
+              "El texto rechaza completamente el tema tratado",
+              "El texto presenta únicamente una definición"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Comprensión lectora. La idea que integra todas las oraciones es: La eficiencia del transporte depende de responder a trayectos reales.",
+            "explicacion": "Se identifica información global explícita. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora».",
+            "pasosMinimos": 1,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UCSM; no es una pregunta oficial"
+          },
+          {
+            "id": "CL-01-B-09",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "basico",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Ejecuta un procedimiento directo",
+            "pregunta": "[Básico · 9/10] Tema Comprensión lectora. Lee: «Una aplicación educativa puede mostrar puntos, niveles y rachas. Estos recursos motivan cuando reconocen un avance verdadero; si premian acciones vacías, desplazan la atención y pierden valor pedagógico.» ¿Cuál es la idea principal?",
+            "alternativas": [
+              "Una recompensa sin evidencia puede perjudicar el objetivo educativo",
+              "El texto rechaza completamente el tema tratado",
+              "El texto presenta únicamente una definición",
+              "La gamificación debe vincular recompensas con aprendizaje real"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Comprensión lectora. La idea que integra todas las oraciones es: La gamificación debe vincular recompensas con aprendizaje real.",
+            "explicacion": "Se identifica información global explícita. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora».",
+            "pasosMinimos": 1,
+            "alineacionUniversitaria": "Competencias generales de admisión preuniversitaria"
+          },
+          {
+            "id": "CL-01-B-10",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "basico",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Ejecuta un procedimiento directo",
+            "pregunta": "[Básico · 10/10] Tema Comprensión lectora. Lee: «El crecimiento económico eleva la producción, pero no describe por sí solo cómo se distribuyen los beneficios. Para evaluar bienestar también deben observarse salud, educación y desigualdad.» ¿Cuál es la idea principal?",
+            "alternativas": [
+              "El texto rechaza completamente el tema tratado",
+              "El texto presenta únicamente una definición",
+              "La producción es insuficiente para medir integralmente el bienestar",
+              "Dos países con igual producción pueden tener condiciones sociales distintas"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Comprensión lectora. La idea que integra todas las oraciones es: La producción es insuficiente para medir integralmente el bienestar.",
+            "explicacion": "Se identifica información global explícita. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora».",
+            "pasosMinimos": 1,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNAMAD; no es una pregunta oficial"
+          }
+        ],
+        "intermedio": [
+          {
+            "id": "CL-01-I-01",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "intermedio",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Relaciona datos en dos etapas",
+            "pregunta": "[Intermedio · 1/10] Tema Comprensión lectora. Lee: «Una ciudad instaló más contenedores, pero el reciclaje apenas aumentó. Una encuesta mostró que muchos vecinos no distinguían los residuos. La municipalidad concluyó que la infraestructura debía acompañarse de educación ambiental.» ¿Qué inferencia está mejor sustentada por el texto?",
+            "alternativas": [
+              "No existe relación entre las ideas del texto",
+              "El autor aporta datos que contradicen su conclusión",
+              "La información influye en el uso correcto de los contenedores",
+              "La infraestructura sin orientación no garantiza el reciclaje"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Comprensión lectora. La inferencia compatible con las premisas es: La información influye en el uso correcto de los contenedores.",
+            "explicacion": "Se deriva una conclusión sin exceder la información disponible. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora».",
+            "pasosMinimos": 2,
+            "alineacionUniversitaria": "Competencias generales de admisión preuniversitaria"
+          },
+          {
+            "id": "CL-01-I-02",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "intermedio",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Relaciona datos en dos etapas",
+            "pregunta": "[Intermedio · 2/10] Tema Comprensión lectora. Lee: «El estudio virtual permite repetir una explicación y adaptar el horario. Sin embargo, exige autonomía: cuando no hay planificación, la flexibilidad se convierte en postergación.» ¿Qué inferencia está mejor sustentada por el texto?",
+            "alternativas": [
+              "El autor aporta datos que contradicen su conclusión",
+              "Un horario personal puede mejorar el aprovechamiento",
+              "La flexibilidad virtual requiere autorregulación",
+              "No existe relación entre las ideas del texto"
+            ],
+            "respuesta": 1,
+            "solucion": "Aplicación específica de Comprensión lectora. La inferencia compatible con las premisas es: Un horario personal puede mejorar el aprovechamiento.",
+            "explicacion": "Se deriva una conclusión sin exceder la información disponible. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora».",
+            "pasosMinimos": 2,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNAMAD; no es una pregunta oficial"
+          },
+          {
+            "id": "CL-01-I-03",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "intermedio",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Relaciona datos en dos etapas",
+            "pregunta": "[Intermedio · 3/10] Tema Comprensión lectora. Lee: «Los bosques amazónicos almacenan carbono y regulan el agua. Su pérdida no solo reduce especies; también altera lluvias y actividades económicas que dependen de los ríos.» ¿Qué inferencia está mejor sustentada por el texto?",
+            "alternativas": [
+              "Conservar bosques beneficia a poblaciones humanas",
+              "La deforestación produce efectos ecológicos y económicos conectados",
+              "No existe relación entre las ideas del texto",
+              "El autor aporta datos que contradicen su conclusión"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Comprensión lectora. La inferencia compatible con las premisas es: Conservar bosques beneficia a poblaciones humanas.",
+            "explicacion": "Se deriva una conclusión sin exceder la información disponible. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora».",
+            "pasosMinimos": 2,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSAAC; no es una pregunta oficial"
+          },
+          {
+            "id": "CL-01-I-04",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "intermedio",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Relaciona datos en dos etapas",
+            "pregunta": "[Intermedio · 4/10] Tema Comprensión lectora. Lee: «Un simulacro no predice por sí solo el ingreso. Su valor aparece cuando el estudiante analiza cada error, identifica el concepto fallado y modifica su estrategia de estudio.» ¿Qué inferencia está mejor sustentada por el texto?",
+            "alternativas": [
+              "La revisión de errores convierte el simulacro en aprendizaje",
+              "No existe relación entre las ideas del texto",
+              "El autor aporta datos que contradicen su conclusión",
+              "Repetir pruebas sin retroalimentación tiene utilidad limitada"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Comprensión lectora. La inferencia compatible con las premisas es: Repetir pruebas sin retroalimentación tiene utilidad limitada.",
+            "explicacion": "Se deriva una conclusión sin exceder la información disponible. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora».",
+            "pasosMinimos": 2,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNMSM; no es una pregunta oficial"
+          },
+          {
+            "id": "CL-01-I-05",
+            "universidadReferencia": "UNSA",
+            "dificultad": "intermedio",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Relaciona datos en dos etapas",
+            "pregunta": "[Intermedio · 5/10] Tema Comprensión lectora. Lee: «La ciencia no avanza acumulando certezas intocables. Formula explicaciones, las somete a pruebas y las corrige cuando surge evidencia más sólida.» ¿Qué inferencia está mejor sustentada por el texto?",
+            "alternativas": [
+              "No existe relación entre las ideas del texto",
+              "El autor aporta datos que contradicen su conclusión",
+              "Corregir una teoría puede representar progreso",
+              "El conocimiento científico es revisable y basado en evidencia"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Comprensión lectora. La inferencia compatible con las premisas es: Corregir una teoría puede representar progreso.",
+            "explicacion": "Se deriva una conclusión sin exceder la información disponible. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora».",
+            "pasosMinimos": 2,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSA; no es una pregunta oficial"
+          },
+          {
+            "id": "CL-01-I-06",
+            "universidadReferencia": "UNI",
+            "dificultad": "intermedio",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Relaciona datos en dos etapas",
+            "pregunta": "[Intermedio · 6/10] Tema Comprensión lectora. Lee: «Una biblioteca digital amplía el acceso a materiales, pero no sustituye la selección crítica. Cuando todo aparece al mismo nivel, distinguir una fuente rigurosa de una opinión se vuelve parte esencial del aprendizaje.» ¿Qué inferencia está mejor sustentada por el texto?",
+            "alternativas": [
+              "El autor aporta datos que contradicen su conclusión",
+              "Disponer de más información no asegura comprender mejor",
+              "El acceso digital necesita evaluación crítica de fuentes",
+              "No existe relación entre las ideas del texto"
+            ],
+            "respuesta": 1,
+            "solucion": "Aplicación específica de Comprensión lectora. La inferencia compatible con las premisas es: Disponer de más información no asegura comprender mejor.",
+            "explicacion": "Se deriva una conclusión sin exceder la información disponible. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora».",
+            "pasosMinimos": 2,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNI; no es una pregunta oficial"
+          },
+          {
+            "id": "CL-01-I-07",
+            "universidadReferencia": "PUCP",
+            "dificultad": "intermedio",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Relaciona datos en dos etapas",
+            "pregunta": "[Intermedio · 7/10] Tema Comprensión lectora. Lee: «La memoria mejora cuando el repaso se distribuye en varios días. Concentrar todo en una noche puede producir familiaridad momentánea, pero el recuerdo se debilita con rapidez.» ¿Qué inferencia está mejor sustentada por el texto?",
+            "alternativas": [
+              "La sensación inmediata de dominio puede ser engañosa",
+              "El repaso espaciado favorece una retención más duradera",
+              "No existe relación entre las ideas del texto",
+              "El autor aporta datos que contradicen su conclusión"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Comprensión lectora. La inferencia compatible con las premisas es: La sensación inmediata de dominio puede ser engañosa.",
+            "explicacion": "Se deriva una conclusión sin exceder la información disponible. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora».",
+            "pasosMinimos": 2,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de PUCP; no es una pregunta oficial"
+          },
+          {
+            "id": "CL-01-I-08",
+            "universidadReferencia": "UCSM",
+            "dificultad": "intermedio",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Relaciona datos en dos etapas",
+            "pregunta": "[Intermedio · 8/10] Tema Comprensión lectora. Lee: «El transporte público eficiente reduce tiempo y contaminación solo si conecta las zonas donde las personas viven y trabajan. Una ruta técnicamente rápida puede fracasar si ignora esos desplazamientos reales.» ¿Qué inferencia está mejor sustentada por el texto?",
+            "alternativas": [
+              "La eficiencia del transporte depende de responder a trayectos reales",
+              "No existe relación entre las ideas del texto",
+              "El autor aporta datos que contradicen su conclusión",
+              "Diseñar rutas requiere estudiar patrones de movilidad"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Comprensión lectora. La inferencia compatible con las premisas es: Diseñar rutas requiere estudiar patrones de movilidad.",
+            "explicacion": "Se deriva una conclusión sin exceder la información disponible. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora».",
+            "pasosMinimos": 2,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UCSM; no es una pregunta oficial"
+          },
+          {
+            "id": "CL-01-I-09",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "intermedio",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Relaciona datos en dos etapas",
+            "pregunta": "[Intermedio · 9/10] Tema Comprensión lectora. Lee: «Una aplicación educativa puede mostrar puntos, niveles y rachas. Estos recursos motivan cuando reconocen un avance verdadero; si premian acciones vacías, desplazan la atención y pierden valor pedagógico.» ¿Qué inferencia está mejor sustentada por el texto?",
+            "alternativas": [
+              "No existe relación entre las ideas del texto",
+              "El autor aporta datos que contradicen su conclusión",
+              "Una recompensa sin evidencia puede perjudicar el objetivo educativo",
+              "La gamificación debe vincular recompensas con aprendizaje real"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Comprensión lectora. La inferencia compatible con las premisas es: Una recompensa sin evidencia puede perjudicar el objetivo educativo.",
+            "explicacion": "Se deriva una conclusión sin exceder la información disponible. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora».",
+            "pasosMinimos": 2,
+            "alineacionUniversitaria": "Competencias generales de admisión preuniversitaria"
+          },
+          {
+            "id": "CL-01-I-10",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "intermedio",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Relaciona datos en dos etapas",
+            "pregunta": "[Intermedio · 10/10] Tema Comprensión lectora. Lee: «El crecimiento económico eleva la producción, pero no describe por sí solo cómo se distribuyen los beneficios. Para evaluar bienestar también deben observarse salud, educación y desigualdad.» ¿Qué inferencia está mejor sustentada por el texto?",
+            "alternativas": [
+              "El autor aporta datos que contradicen su conclusión",
+              "Dos países con igual producción pueden tener condiciones sociales distintas",
+              "La producción es insuficiente para medir integralmente el bienestar",
+              "No existe relación entre las ideas del texto"
+            ],
+            "respuesta": 1,
+            "solucion": "Aplicación específica de Comprensión lectora. La inferencia compatible con las premisas es: Dos países con igual producción pueden tener condiciones sociales distintas.",
+            "explicacion": "Se deriva una conclusión sin exceder la información disponible. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora».",
+            "pasosMinimos": 2,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNAMAD; no es una pregunta oficial"
+          }
+        ],
+        "avanzado": [
+          {
+            "id": "CL-01-A-01",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "avanzado",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Modela, contrasta y justifica una estrategia",
+            "pregunta": "[Avanzado · 1/10] Tema Comprensión lectora. Lee: «Una ciudad instaló más contenedores, pero el reciclaje apenas aumentó. Una encuesta mostró que muchos vecinos no distinguían los residuos. La municipalidad concluyó que la infraestructura debía acompañarse de educación ambiental.» Evalúa: I) La idea central es «La infraestructura sin orientación no garantiza el reciclaje». II) Se puede inferir que «La información influye en el uso correcto de los contenedores». ¿Qué opción es correcta?",
+            "alternativas": [
+              "I y II son incorrectas",
+              "I y II son correctas",
+              "Solo I es correcta",
+              "Solo II es correcta"
+            ],
+            "respuesta": 1,
+            "solucion": "Aplicación específica de Comprensión lectora. I sintetiza el texto sin reducirlo a un detalle. II deriva razonablemente de sus premisas. Por tanto, ambas son correctas.",
+            "explicacion": "Se comprueban por separado una síntesis global y una inferencia implícita. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora».",
+            "pasosMinimos": 3,
+            "alineacionUniversitaria": "Competencias generales de admisión preuniversitaria"
+          },
+          {
+            "id": "CL-01-A-02",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "avanzado",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Modela, contrasta y justifica una estrategia",
+            "pregunta": "[Avanzado · 2/10] Tema Comprensión lectora. Lee: «El estudio virtual permite repetir una explicación y adaptar el horario. Sin embargo, exige autonomía: cuando no hay planificación, la flexibilidad se convierte en postergación.» Evalúa: I) La idea central es «La flexibilidad virtual requiere autorregulación». II) Se puede inferir que «Un horario personal puede mejorar el aprovechamiento». ¿Qué opción es correcta?",
+            "alternativas": [
+              "I y II son correctas",
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son incorrectas"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Comprensión lectora. I sintetiza el texto sin reducirlo a un detalle. II deriva razonablemente de sus premisas. Por tanto, ambas son correctas.",
+            "explicacion": "Se comprueban por separado una síntesis global y una inferencia implícita. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora».",
+            "pasosMinimos": 3,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNAMAD; no es una pregunta oficial"
+          },
+          {
+            "id": "CL-01-A-03",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "avanzado",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Modela, contrasta y justifica una estrategia",
+            "pregunta": "[Avanzado · 3/10] Tema Comprensión lectora. Lee: «Los bosques amazónicos almacenan carbono y regulan el agua. Su pérdida no solo reduce especies; también altera lluvias y actividades económicas que dependen de los ríos.» Evalúa: I) La idea central es «La deforestación produce efectos ecológicos y económicos conectados». II) Se puede inferir que «Conservar bosques beneficia a poblaciones humanas». ¿Qué opción es correcta?",
+            "alternativas": [
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son incorrectas",
+              "I y II son correctas"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Comprensión lectora. I sintetiza el texto sin reducirlo a un detalle. II deriva razonablemente de sus premisas. Por tanto, ambas son correctas.",
+            "explicacion": "Se comprueban por separado una síntesis global y una inferencia implícita. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora».",
+            "pasosMinimos": 3,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSAAC; no es una pregunta oficial"
+          },
+          {
+            "id": "CL-01-A-04",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "avanzado",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Modela, contrasta y justifica una estrategia",
+            "pregunta": "[Avanzado · 4/10] Tema Comprensión lectora. Lee: «Un simulacro no predice por sí solo el ingreso. Su valor aparece cuando el estudiante analiza cada error, identifica el concepto fallado y modifica su estrategia de estudio.» Evalúa: I) La idea central es «La revisión de errores convierte el simulacro en aprendizaje». II) Se puede inferir que «Repetir pruebas sin retroalimentación tiene utilidad limitada». ¿Qué opción es correcta?",
+            "alternativas": [
+              "Solo II es correcta",
+              "I y II son incorrectas",
+              "I y II son correctas",
+              "Solo I es correcta"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Comprensión lectora. I sintetiza el texto sin reducirlo a un detalle. II deriva razonablemente de sus premisas. Por tanto, ambas son correctas.",
+            "explicacion": "Se comprueban por separado una síntesis global y una inferencia implícita. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora».",
+            "pasosMinimos": 3,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNMSM; no es una pregunta oficial"
+          },
+          {
+            "id": "CL-01-A-05",
+            "universidadReferencia": "UNSA",
+            "dificultad": "avanzado",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Modela, contrasta y justifica una estrategia",
+            "pregunta": "[Avanzado · 5/10] Tema Comprensión lectora. Lee: «La ciencia no avanza acumulando certezas intocables. Formula explicaciones, las somete a pruebas y las corrige cuando surge evidencia más sólida.» Evalúa: I) La idea central es «El conocimiento científico es revisable y basado en evidencia». II) Se puede inferir que «Corregir una teoría puede representar progreso». ¿Qué opción es correcta?",
+            "alternativas": [
+              "I y II son incorrectas",
+              "I y II son correctas",
+              "Solo I es correcta",
+              "Solo II es correcta"
+            ],
+            "respuesta": 1,
+            "solucion": "Aplicación específica de Comprensión lectora. I sintetiza el texto sin reducirlo a un detalle. II deriva razonablemente de sus premisas. Por tanto, ambas son correctas.",
+            "explicacion": "Se comprueban por separado una síntesis global y una inferencia implícita. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora».",
+            "pasosMinimos": 3,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSA; no es una pregunta oficial"
+          },
+          {
+            "id": "CL-01-A-06",
+            "universidadReferencia": "UNI",
+            "dificultad": "avanzado",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Modela, contrasta y justifica una estrategia",
+            "pregunta": "[Avanzado · 6/10] Tema Comprensión lectora. Lee: «Una biblioteca digital amplía el acceso a materiales, pero no sustituye la selección crítica. Cuando todo aparece al mismo nivel, distinguir una fuente rigurosa de una opinión se vuelve parte esencial del aprendizaje.» Evalúa: I) La idea central es «El acceso digital necesita evaluación crítica de fuentes». II) Se puede inferir que «Disponer de más información no asegura comprender mejor». ¿Qué opción es correcta?",
+            "alternativas": [
+              "I y II son correctas",
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son incorrectas"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Comprensión lectora. I sintetiza el texto sin reducirlo a un detalle. II deriva razonablemente de sus premisas. Por tanto, ambas son correctas.",
+            "explicacion": "Se comprueban por separado una síntesis global y una inferencia implícita. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora».",
+            "pasosMinimos": 3,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNI; no es una pregunta oficial"
+          },
+          {
+            "id": "CL-01-A-07",
+            "universidadReferencia": "PUCP",
+            "dificultad": "avanzado",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Modela, contrasta y justifica una estrategia",
+            "pregunta": "[Avanzado · 7/10] Tema Comprensión lectora. Lee: «La memoria mejora cuando el repaso se distribuye en varios días. Concentrar todo en una noche puede producir familiaridad momentánea, pero el recuerdo se debilita con rapidez.» Evalúa: I) La idea central es «El repaso espaciado favorece una retención más duradera». II) Se puede inferir que «La sensación inmediata de dominio puede ser engañosa». ¿Qué opción es correcta?",
+            "alternativas": [
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son incorrectas",
+              "I y II son correctas"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Comprensión lectora. I sintetiza el texto sin reducirlo a un detalle. II deriva razonablemente de sus premisas. Por tanto, ambas son correctas.",
+            "explicacion": "Se comprueban por separado una síntesis global y una inferencia implícita. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora».",
+            "pasosMinimos": 3,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de PUCP; no es una pregunta oficial"
+          },
+          {
+            "id": "CL-01-A-08",
+            "universidadReferencia": "UCSM",
+            "dificultad": "avanzado",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Modela, contrasta y justifica una estrategia",
+            "pregunta": "[Avanzado · 8/10] Tema Comprensión lectora. Lee: «El transporte público eficiente reduce tiempo y contaminación solo si conecta las zonas donde las personas viven y trabajan. Una ruta técnicamente rápida puede fracasar si ignora esos desplazamientos reales.» Evalúa: I) La idea central es «La eficiencia del transporte depende de responder a trayectos reales». II) Se puede inferir que «Diseñar rutas requiere estudiar patrones de movilidad». ¿Qué opción es correcta?",
+            "alternativas": [
+              "Solo II es correcta",
+              "I y II son incorrectas",
+              "I y II son correctas",
+              "Solo I es correcta"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Comprensión lectora. I sintetiza el texto sin reducirlo a un detalle. II deriva razonablemente de sus premisas. Por tanto, ambas son correctas.",
+            "explicacion": "Se comprueban por separado una síntesis global y una inferencia implícita. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora».",
+            "pasosMinimos": 3,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UCSM; no es una pregunta oficial"
+          },
+          {
+            "id": "CL-01-A-09",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "avanzado",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Modela, contrasta y justifica una estrategia",
+            "pregunta": "[Avanzado · 9/10] Tema Comprensión lectora. Lee: «Una aplicación educativa puede mostrar puntos, niveles y rachas. Estos recursos motivan cuando reconocen un avance verdadero; si premian acciones vacías, desplazan la atención y pierden valor pedagógico.» Evalúa: I) La idea central es «La gamificación debe vincular recompensas con aprendizaje real». II) Se puede inferir que «Una recompensa sin evidencia puede perjudicar el objetivo educativo». ¿Qué opción es correcta?",
+            "alternativas": [
+              "I y II son incorrectas",
+              "I y II son correctas",
+              "Solo I es correcta",
+              "Solo II es correcta"
+            ],
+            "respuesta": 1,
+            "solucion": "Aplicación específica de Comprensión lectora. I sintetiza el texto sin reducirlo a un detalle. II deriva razonablemente de sus premisas. Por tanto, ambas son correctas.",
+            "explicacion": "Se comprueban por separado una síntesis global y una inferencia implícita. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora».",
+            "pasosMinimos": 3,
+            "alineacionUniversitaria": "Competencias generales de admisión preuniversitaria"
+          },
+          {
+            "id": "CL-01-A-10",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "avanzado",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Modela, contrasta y justifica una estrategia",
+            "pregunta": "[Avanzado · 10/10] Tema Comprensión lectora. Lee: «El crecimiento económico eleva la producción, pero no describe por sí solo cómo se distribuyen los beneficios. Para evaluar bienestar también deben observarse salud, educación y desigualdad.» Evalúa: I) La idea central es «La producción es insuficiente para medir integralmente el bienestar». II) Se puede inferir que «Dos países con igual producción pueden tener condiciones sociales distintas». ¿Qué opción es correcta?",
+            "alternativas": [
+              "I y II son correctas",
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son incorrectas"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Comprensión lectora. I sintetiza el texto sin reducirlo a un detalle. II deriva razonablemente de sus premisas. Por tanto, ambas son correctas.",
+            "explicacion": "Se comprueban por separado una síntesis global y una inferencia implícita. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora».",
+            "pasosMinimos": 3,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNAMAD; no es una pregunta oficial"
+          }
+        ],
+        "admision": [
+          {
+            "id": "CL-01-R-01",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
+            "pregunta": "[Reto de admisión · perfil GENERAL · 1/10] Tema Comprensión lectora. Lee: «Los mapas simplifican el territorio para hacerlo legible. Toda proyección conserva ciertas propiedades y distorsiona otras; por ello, elegir un mapa depende del propósito del análisis.» ¿Qué inferencia está mejor sustentada por el texto?",
+            "alternativas": [
+              "La proyección adecuada cambia según lo que se desea comparar",
+              "Ningún mapa representa todas las propiedades sin distorsión",
+              "No existe relación entre las ideas del texto",
+              "El autor aporta datos que contradicen su conclusión"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Comprensión lectora. La inferencia compatible con las premisas es: La proyección adecuada cambia según lo que se desea comparar.",
+            "explicacion": "Se deriva una conclusión sin exceder la información disponible. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora». Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial.",
+            "pasosMinimos": 4,
+            "alineacionUniversitaria": "Competencias generales de admisión preuniversitaria"
+          },
+          {
+            "id": "CL-01-R-02",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
+            "pregunta": "[Reto de admisión · perfil UNAMAD · 2/10] Tema Comprensión lectora. Lee: «Una norma es legítima no solo porque fue aprobada formalmente. También debe respetar derechos y permitir que las decisiones públicas sean examinadas y cuestionadas.» ¿Qué inferencia está mejor sustentada por el texto?",
+            "alternativas": [
+              "La legitimidad combina procedimiento, derechos y control público",
+              "No existe relación entre las ideas del texto",
+              "El autor aporta datos que contradicen su conclusión",
+              "Cumplir una formalidad no basta para justificar cualquier decisión"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Comprensión lectora. La inferencia compatible con las premisas es: Cumplir una formalidad no basta para justificar cualquier decisión.",
+            "explicacion": "Se deriva una conclusión sin exceder la información disponible. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora». Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial.",
+            "pasosMinimos": 4,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNAMAD; no es una pregunta oficial"
+          },
+          {
+            "id": "CL-01-R-03",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
+            "pregunta": "[Reto de admisión · perfil UNSAAC · 3/10] Tema Comprensión lectora. Lee: «En un experimento, repetir una medición reduce el efecto de errores accidentales, pero no corrige un instrumento mal calibrado. La precisión y la exactitud, por tanto, responden a problemas diferentes.» ¿Qué inferencia está mejor sustentada por el texto?",
+            "alternativas": [
+              "No existe relación entre las ideas del texto",
+              "El autor aporta datos que contradicen su conclusión",
+              "Muchas mediciones precisas pueden seguir alejadas del valor real",
+              "Repetición y calibración corrigen tipos distintos de error"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Comprensión lectora. La inferencia compatible con las premisas es: Muchas mediciones precisas pueden seguir alejadas del valor real.",
+            "explicacion": "Se deriva una conclusión sin exceder la información disponible. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora». Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial.",
+            "pasosMinimos": 4,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSAAC; no es una pregunta oficial"
+          },
+          {
+            "id": "CL-01-R-04",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
+            "pregunta": "[Reto de admisión · perfil UNMSM · 4/10] Tema Comprensión lectora. Lee: «Una herramienta de inteligencia artificial puede proponer respuestas en segundos, pero también producir datos falsos con apariencia convincente. Su utilidad académica depende de contrastar resultados y comprender el procedimiento.» ¿Qué inferencia está mejor sustentada por el texto?",
+            "alternativas": [
+              "El autor aporta datos que contradicen su conclusión",
+              "La rapidez de una respuesta no garantiza su exactitud",
+              "La inteligencia artificial requiere verificación y comprensión crítica",
+              "No existe relación entre las ideas del texto"
+            ],
+            "respuesta": 1,
+            "solucion": "Aplicación específica de Comprensión lectora. La inferencia compatible con las premisas es: La rapidez de una respuesta no garantiza su exactitud.",
+            "explicacion": "Se deriva una conclusión sin exceder la información disponible. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora». Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial.",
+            "pasosMinimos": 4,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNMSM; no es una pregunta oficial"
+          },
+          {
+            "id": "CL-01-R-05",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
+            "pregunta": "[Reto de admisión · perfil UNSA · 5/10] Tema Comprensión lectora. Lee: «La diversidad genética permite que una población responda de maneras distintas ante una enfermedad o un cambio ambiental. Cuando esa variación disminuye, una sola amenaza puede afectar a casi todos los individuos.» ¿Qué inferencia está mejor sustentada por el texto?",
+            "alternativas": [
+              "Poblaciones muy uniformes pueden ser más vulnerables",
+              "La diversidad genética aumenta la capacidad de respuesta poblacional",
+              "No existe relación entre las ideas del texto",
+              "El autor aporta datos que contradicen su conclusión"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Comprensión lectora. La inferencia compatible con las premisas es: Poblaciones muy uniformes pueden ser más vulnerables.",
+            "explicacion": "Se deriva una conclusión sin exceder la información disponible. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora». Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial.",
+            "pasosMinimos": 4,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSA; no es una pregunta oficial"
+          },
+          {
+            "id": "CL-01-R-06",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
+            "pregunta": "[Reto de admisión · perfil UNI · 6/10] Tema Comprensión lectora. Lee: «Los mapas simplifican el territorio para hacerlo legible. Toda proyección conserva ciertas propiedades y distorsiona otras; por ello, elegir un mapa depende del propósito del análisis.» Evalúa: I) La idea central es «Ningún mapa representa todas las propiedades sin distorsión». II) Se puede inferir que «La proyección adecuada cambia según lo que se desea comparar». ¿Qué opción es correcta?",
+            "alternativas": [
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son incorrectas",
+              "I y II son correctas"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Comprensión lectora. I sintetiza el texto sin reducirlo a un detalle. II deriva razonablemente de sus premisas. Por tanto, ambas son correctas.",
+            "explicacion": "Se comprueban por separado una síntesis global y una inferencia implícita. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora». Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial.",
+            "pasosMinimos": 4,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNI; no es una pregunta oficial"
+          },
+          {
+            "id": "CL-01-R-07",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
+            "pregunta": "[Reto de admisión · perfil PUCP · 7/10] Tema Comprensión lectora. Lee: «Una norma es legítima no solo porque fue aprobada formalmente. También debe respetar derechos y permitir que las decisiones públicas sean examinadas y cuestionadas.» Evalúa: I) La idea central es «La legitimidad combina procedimiento, derechos y control público». II) Se puede inferir que «Cumplir una formalidad no basta para justificar cualquier decisión». ¿Qué opción es correcta?",
+            "alternativas": [
+              "Solo II es correcta",
+              "I y II son incorrectas",
+              "I y II son correctas",
+              "Solo I es correcta"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Comprensión lectora. I sintetiza el texto sin reducirlo a un detalle. II deriva razonablemente de sus premisas. Por tanto, ambas son correctas.",
+            "explicacion": "Se comprueban por separado una síntesis global y una inferencia implícita. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora». Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial.",
+            "pasosMinimos": 4,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de PUCP; no es una pregunta oficial"
+          },
+          {
+            "id": "CL-01-R-08",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
+            "pregunta": "[Reto de admisión · perfil UCSM · 8/10] Tema Comprensión lectora. Lee: «En un experimento, repetir una medición reduce el efecto de errores accidentales, pero no corrige un instrumento mal calibrado. La precisión y la exactitud, por tanto, responden a problemas diferentes.» Evalúa: I) La idea central es «Repetición y calibración corrigen tipos distintos de error». II) Se puede inferir que «Muchas mediciones precisas pueden seguir alejadas del valor real». ¿Qué opción es correcta?",
+            "alternativas": [
+              "I y II son incorrectas",
+              "I y II son correctas",
+              "Solo I es correcta",
+              "Solo II es correcta"
+            ],
+            "respuesta": 1,
+            "solucion": "Aplicación específica de Comprensión lectora. I sintetiza el texto sin reducirlo a un detalle. II deriva razonablemente de sus premisas. Por tanto, ambas son correctas.",
+            "explicacion": "Se comprueban por separado una síntesis global y una inferencia implícita. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora». Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial.",
+            "pasosMinimos": 4,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UCSM; no es una pregunta oficial"
+          },
+          {
+            "id": "CL-01-R-09",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
+            "pregunta": "[Reto de admisión · perfil GENERAL · 9/10] Tema Comprensión lectora. Lee: «Una herramienta de inteligencia artificial puede proponer respuestas en segundos, pero también producir datos falsos con apariencia convincente. Su utilidad académica depende de contrastar resultados y comprender el procedimiento.» Evalúa: I) La idea central es «La inteligencia artificial requiere verificación y comprensión crítica». II) Se puede inferir que «La rapidez de una respuesta no garantiza su exactitud». ¿Qué opción es correcta?",
+            "alternativas": [
+              "I y II son correctas",
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son incorrectas"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Comprensión lectora. I sintetiza el texto sin reducirlo a un detalle. II deriva razonablemente de sus premisas. Por tanto, ambas son correctas.",
+            "explicacion": "Se comprueban por separado una síntesis global y una inferencia implícita. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora». Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial.",
+            "pasosMinimos": 4,
+            "alineacionUniversitaria": "Competencias generales de admisión preuniversitaria"
+          },
+          {
+            "id": "CL-01-R-10",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
+            "pregunta": "[Reto de admisión · perfil UNAMAD · 10/10] Tema Comprensión lectora. Lee: «La diversidad genética permite que una población responda de maneras distintas ante una enfermedad o un cambio ambiental. Cuando esa variación disminuye, una sola amenaza puede afectar a casi todos los individuos.» Evalúa: I) La idea central es «La diversidad genética aumenta la capacidad de respuesta poblacional». II) Se puede inferir que «Poblaciones muy uniformes pueden ser más vulnerables». ¿Qué opción es correcta?",
+            "alternativas": [
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son incorrectas",
+              "I y II son correctas"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Comprensión lectora. I sintetiza el texto sin reducirlo a un detalle. II deriva razonablemente de sus premisas. Por tanto, ambas son correctas.",
+            "explicacion": "Se comprueban por separado una síntesis global y una inferencia implícita. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora». Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial.",
+            "pasosMinimos": 4,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNAMAD; no es una pregunta oficial"
+          }
+        ]
+      }
+    }
+  ],
+  "total": 40
+}

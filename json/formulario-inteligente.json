@@ -1,0 +1,258 @@
+{
+  "version": "2026.08",
+  "aviso": "Los contenidos fijos proceden del temario de la ruta activa. Los patrones recurrentes orientan el estudio, pero no garantizan que una pregunta exacta aparezca en el examen.",
+  "cursos": {
+    "rm": {
+      "resumen": "Métodos para ordenar información, reconocer patrones y modelar problemas.",
+      "formulas": [
+        {"nombre":"Permutaciones y combinaciones","expresion":"P(n)=n!  ·  C(n,r)=n!/[r!(n−r)!]","uso":"Ordena cuando importa la posición; combina cuando solo importa elegir."},
+        {"nombre":"Conteo por inclusión y exclusión","expresion":"n(A∪B)=n(A)+n(B)−n(A∩B)","uso":"Evita contar dos veces los elementos que pertenecen a ambos conjuntos."}
+      ],
+      "recurrentes": [
+        {"tema":"Organización y orden de información","patron":"Ubicar personas, objetos o fechas usando varias condiciones.","clave":"Construye una tabla o una línea antes de probar alternativas."},
+        {"tema":"Sucesiones y distribuciones","patron":"Descubrir la regla que relaciona números, letras o figuras.","clave":"Compara diferencias, cocientes y posiciones alternadas."},
+        {"tema":"Operadores y planteo de ecuaciones","patron":"Traducir una operación inventada o un enunciado a símbolos.","clave":"Resuelve primero la definición del operador y recién sustituye."}
+      ]
+    },
+    "aritmetica": {
+      "resumen": "Números, divisibilidad, proporcionalidad, porcentajes y estadística.",
+      "formulas": [
+        {"nombre":"Variación porcentual","expresion":"Variación % = (final−inicial)/inicial × 100","uso":"Mide aumentos, descuentos y cambios sucesivos."},
+        {"nombre":"Interés simple y compuesto","expresion":"M=C(1+rt)  ·  M=C(1+i)ⁿ","uso":"Usa la primera para interés lineal y la segunda para capitalización."}
+      ],
+      "recurrentes": [
+        {"tema":"Divisibilidad, MCD y MCM","patron":"Determinar restos, múltiplos o coincidencias periódicas.","clave":"Factoriza en primos y distingue si piden repartir o coincidir."},
+        {"tema":"Razones y proporcionalidad","patron":"Relacionar magnitudes directas, inversas o compuestas.","clave":"Verifica primero qué magnitud aumenta y cuál disminuye."},
+        {"tema":"Porcentajes y regla de tres","patron":"Aplicar descuentos, ganancias, mezclas o variaciones sucesivas.","clave":"Los porcentajes sucesivos no se suman: se multiplican factores."}
+      ]
+    },
+    "algebra": {
+      "resumen": "Expresiones, ecuaciones, sistemas, matrices y funciones.",
+      "formulas": [
+        {"nombre":"Fórmula cuadrática","expresion":"x=(−b±√(b²−4ac))/2a","uso":"Resuelve ax²+bx+c=0 y usa Δ=b²−4ac para clasificar raíces."},
+        {"nombre":"Productos notables","expresion":"(a±b)²=a²±2ab+b²  ·  (a+b)(a−b)=a²−b²","uso":"Simplifica desarrollos y reconoce factorizaciones inmediatas."}
+      ],
+      "recurrentes": [
+        {"tema":"Polinomios y factorización","patron":"Hallar factores, residuos, grado o valor de una expresión.","clave":"Busca factor común y productos notables antes de usar aspa."},
+        {"tema":"Ecuaciones e inecuaciones","patron":"Resolver y comprobar conjuntos solución.","clave":"En inecuaciones, cambia el sentido al multiplicar por un negativo."},
+        {"tema":"Funciones","patron":"Calcular dominio, rango, composición o gráfica.","clave":"Revisa denominadores, radicales y logaritmos para el dominio."}
+      ]
+    },
+    "geometria": {
+      "resumen": "Figuras planas, semejanza, relaciones métricas y geometría espacial.",
+      "formulas": [
+        {"nombre":"Área de triángulo","expresion":"A=bh/2  ·  A=√[s(s−a)(s−b)(s−c)]","uso":"Usa Herón cuando conoces los tres lados y s es el semiperímetro."},
+        {"nombre":"Circunferencia y círculo","expresion":"L=2πr  ·  A=πr²  ·  arco=(θ/360°)2πr","uso":"Distingue longitud, área y medida de arco."}
+      ],
+      "recurrentes": [
+        {"tema":"Triángulos y cuadriláteros","patron":"Calcular ángulos, lados, áreas o congruencias.","clave":"Marca propiedades y ángulos iguales directamente en la figura."},
+        {"tema":"Semejanza y relaciones métricas","patron":"Usar proporciones en triángulos y circunferencias.","clave":"Identifica primero los lados homólogos."},
+        {"tema":"Áreas y sólidos","patron":"Comparar regiones o hallar volumen y superficie.","clave":"Separa la figura compuesta en partes conocidas."}
+      ]
+    },
+    "trigonometria": {
+      "resumen": "Razones, identidades, ecuaciones y resolución de triángulos.",
+      "formulas": [
+        {"nombre":"Identidades fundamentales","expresion":"sen²x+cos²x=1  ·  1+tan²x=sec²x","uso":"Convierte expresiones a una misma razón antes de simplificar."},
+        {"nombre":"Leyes de senos y cosenos","expresion":"a/sen A=b/sen B=c/sen C  ·  c²=a²+b²−2ab cos C","uso":"Resuelve triángulos oblicuángulos según los datos disponibles."}
+      ],
+      "recurrentes": [
+        {"tema":"Razones trigonométricas","patron":"Hallar razones desde triángulos notables o coordenadas.","clave":"Ubica el cuadrante para asignar el signo correcto."},
+        {"tema":"Identidades y reducción","patron":"Simplificar expresiones o demostrar equivalencias.","clave":"Transforma secante, cosecante y cotangente a seno y coseno."},
+        {"tema":"Resolución de triángulos","patron":"Calcular lados, ángulos, alturas o distancias.","clave":"Dibuja la situación y decide entre Pitágoras, senos o cosenos."}
+      ]
+    },
+    "fisica": {
+      "resumen": "Movimiento, fuerzas, energía, fluidos, electricidad y calor.",
+      "formulas": [
+        {"nombre":"Movimiento rectilíneo","expresion":"MRU: d=vt  ·  MRUV: v=v₀+at; d=v₀t+at²/2","uso":"Comprueba unidades y define un sentido positivo antes de operar."},
+        {"nombre":"Dinámica y energía","expresion":"F=ma  ·  W=Fd cosθ  ·  Ec=mv²/2  ·  Ep=mgh","uso":"Relaciona fuerzas con movimiento y energía con cambios de estado."}
+      ],
+      "recurrentes": [
+        {"tema":"Cinemática","patron":"Interpretar gráficos o encontrar encuentro, alcance y caída.","clave":"Separa los datos de posición, velocidad y aceleración."},
+        {"tema":"Leyes de Newton","patron":"Calcular fuerza, tensión, normal, rozamiento o aceleración.","clave":"Empieza siempre con el diagrama de cuerpo libre."},
+        {"tema":"Trabajo y energía","patron":"Relacionar velocidad, altura, potencia o conservación.","clave":"Si no piden tiempo, energía suele ser el camino más corto."}
+      ]
+    },
+    "quimica": {
+      "resumen": "Estructura atómica, periodicidad, enlaces, reacciones y química orgánica.",
+      "formulas": [
+        {"nombre":"Partículas del átomo","expresion":"A=Z+N  ·  átomo neutro: p⁺=e⁻","uso":"Z identifica protones; A suma protones y neutrones."},
+        {"nombre":"Mol y estequiometría","expresion":"n=m/M  ·  N=n·6,022×10²³","uso":"Balancea la reacción antes de usar proporciones molares."}
+      ],
+      "recurrentes": [
+        {"tema":"Átomo y tabla periódica","patron":"Determinar partículas, grupo, periodo o propiedades periódicas.","clave":"La configuración electrónica conecta átomo, grupo y periodo."},
+        {"tema":"Enlaces y fuerzas intermoleculares","patron":"Clasificar enlace, polaridad, geometría o propiedad.","clave":"Observa diferencia de electronegatividad y tipo de elementos."},
+        {"tema":"Reacciones y estequiometría","patron":"Balancear y calcular masa, mol, volumen o reactivo limitante.","clave":"Convierte todo a moles antes de comparar reactivos."}
+      ]
+    },
+    "biologia": {
+      "resumen": "Célula, bioquímica, genética, reproducción e inmunidad.",
+      "formulas": [
+        {"nombre":"Probabilidad genética","expresion":"P(A y B)=P(A)·P(B)  ·  P(A o B)=P(A)+P(B)","uso":"Aplica producto a sucesos simultáneos excluyentes por cruce."},
+        {"nombre":"Aumento microscópico","expresion":"Aumento total=ocular×objetivo","uso":"Relaciona el aumento de cada lente con el tamaño observado."}
+      ],
+      "recurrentes": [
+        {"tema":"Biología celular","patron":"Relacionar organelos, transporte y metabolismo con funciones.","clave":"Asocia estructura, ubicación y función; no memorices aislado."},
+        {"tema":"Genética y reproducción","patron":"Resolver cruces o reconocer mecanismos de continuidad de la vida.","clave":"Define genotipo y fenotipo antes de construir el cuadro."},
+        {"tema":"Clasificación e inmunidad","patron":"Relacionar taxones, microorganismos, defensas y enfermedades.","clave":"Diferencia barreras, respuesta innata y respuesta adaptativa."}
+      ]
+    },
+    "medio_ambiente": {
+      "resumen": "Ecología, recursos naturales, sostenibilidad y problemas ambientales.",
+      "formulas": [
+        {"nombre":"Densidad poblacional","expresion":"D=N/área","uso":"Relaciona el número de organismos con el espacio disponible."},
+        {"nombre":"Cambio poblacional","expresion":"ΔN=(natalidad+inmigración)−(mortalidad+emigración)","uso":"Determina si una población crece, disminuye o se mantiene."}
+      ],
+      "recurrentes": [
+        {"tema":"Ecología y cadenas tróficas","patron":"Identificar niveles, flujo de energía y relaciones interespecíficas.","clave":"Sigue la transferencia desde productores hasta consumidores."},
+        {"tema":"Problemas ambientales","patron":"Relacionar causa, impacto y medida de mitigación.","clave":"Distingue prevención, mitigación, adaptación y restauración."},
+        {"tema":"Recursos y sostenibilidad","patron":"Evaluar uso sostenible, conservación y gestión ambiental.","clave":"Compara capacidad de renovación con ritmo de extracción."}
+      ]
+    },
+    "anatomia": {
+      "resumen": "Organización y funcionamiento de los sistemas del cuerpo humano.",
+      "formulas": [
+        {"nombre":"Gasto cardíaco","expresion":"GC=frecuencia cardíaca×volumen sistólico","uso":"Relaciona el bombeo del corazón con el flujo sanguíneo por minuto."},
+        {"nombre":"Ventilación minuto","expresion":"V̇E=frecuencia respiratoria×volumen corriente","uso":"Estima el volumen de aire movilizado en un minuto."}
+      ],
+      "recurrentes": [
+        {"tema":"Digestivo, respiratorio y circulatorio","patron":"Seguir el recorrido de nutrientes, gases o sangre.","clave":"Ordena órganos y conecta cada etapa con su función."},
+        {"tema":"Excretor, endocrino y nervioso","patron":"Relacionar regulación, señal y órgano efector.","clave":"Identifica estímulo, centro de control y respuesta."},
+        {"tema":"Locomotor, reproducción y salud","patron":"Reconocer estructuras, funciones, prevención y alteraciones.","clave":"Vincula tejido→órgano→sistema antes de evaluar el caso."}
+      ]
+    },
+    "psicologia": {
+      "resumen": "Conducta, procesos psicológicos, aprendizaje, desarrollo y personalidad.",
+      "formulas": [
+        {"nombre":"Condicionamiento clásico","expresion":"EN+EI→RI; luego EC→RC","uso":"Distingue el estímulo inicialmente neutro de la respuesta aprendida."},
+        {"nombre":"Condicionamiento operante","expresion":"conducta→consecuencia→cambio de probabilidad","uso":"El refuerzo aumenta y el castigo reduce la probabilidad de la conducta."}
+      ],
+      "recurrentes": [
+        {"tema":"Procesos psicológicos","patron":"Diferenciar sensación, percepción, atención, memoria y pensamiento.","clave":"Ubica qué proceso recibe, selecciona, almacena o interpreta información."},
+        {"tema":"Aprendizaje","patron":"Reconocer condicionamiento clásico, operante u observacional.","clave":"Identifica si se asocian estímulos, consecuencias o modelos."},
+        {"tema":"Desarrollo y personalidad","patron":"Analizar identidad, rasgos, afectividad y motivación en un caso.","clave":"Separa estabilidad relativa, contexto y etapa del desarrollo."}
+      ]
+    },
+    "comprension_lectora": {
+      "resumen": "Estructura textual, ideas, inferencias, intención y lectura crítica.",
+      "formulas": [
+        {"nombre":"Jerarquía textual","expresion":"tema → idea principal → ideas secundarias","uso":"Resume primero de qué trata el texto y luego qué afirma sobre ese tema."},
+        {"nombre":"Inferencia válida","expresion":"información explícita + contexto → conclusión sustentada","uso":"La respuesta debe derivarse del texto sin añadir datos externos."}
+      ],
+      "recurrentes": [
+        {"tema":"Estructura del texto","patron":"Identificar tema, idea principal, ideas secundarias y superestructura.","clave":"Distingue el asunto general de la afirmación central del autor."},
+        {"tema":"Niveles de comprensión","patron":"Resolver preguntas literales, inferenciales y críticas.","clave":"Ubica evidencia textual antes de evaluar cualquier alternativa."},
+        {"tema":"Vocabulario e intención","patron":"Inferir significados, propósito, tono o postura del autor.","clave":"Sustituye la palabra en su contexto y comprueba que conserve el sentido."}
+      ]
+    },
+    "lenguaje": {
+      "resumen": "Comunicación, fonología, gramática, oración y ortografía.",
+      "formulas": [
+        {"nombre":"Estructura de la oración","expresion":"Oración bimembre = sujeto + predicado","uso":"Ubica primero el verbo principal y pregunta quién realiza la acción."},
+        {"nombre":"Tildación general","expresion":"Aguda: última · Grave: penúltima · Esdrújula: antepenúltima","uso":"Separa en sílabas, ubica la fuerza de voz y luego aplica la regla."}
+      ],
+      "recurrentes": [
+        {"tema":"Comunicación y realidad lingüística","patron":"Reconocer elementos, funciones, barreras, lengua, habla o dialecto.","clave":"Ubica emisor, receptor, mensaje, código, canal y contexto."},
+        {"tema":"Fonología y palabra","patron":"Analizar fonemas, sílabas, secuencias vocálicas y clases de palabras.","clave":"Separa primero la estructura sonora y luego la función gramatical."},
+        {"tema":"Oración y ortografía","patron":"Identificar estructura oracional, concordancia, tildación o puntuación.","clave":"Localiza el verbo y aplica la regla ortográfica al contexto completo."}
+      ]
+    },
+    "literatura": {
+      "resumen": "Conceptos literarios, autores y obras peruanas y universales.",
+      "formulas": [
+        {"nombre":"Análisis literario","expresion":"obra = contexto + género + tema + recursos","uso":"Relaciona la obra con su época, forma de expresión y sentido central."},
+        {"nombre":"Géneros literarios","expresion":"narrativo: relata · lírico: expresa · dramático: representa","uso":"Reconoce la voz, estructura y finalidad predominante del texto."}
+      ],
+      "recurrentes": [
+        {"tema":"Conceptos y figuras","patron":"Distinguir texto literario, género, prosa, verso o figura literaria.","clave":"Observa cómo está construido el mensaje, no solo de qué habla."},
+        {"tema":"Literatura peruana","patron":"Relacionar autor, obra, periodo y característica.","clave":"Organiza una línea temporal desde la tradición oral hasta la narrativa contemporánea."},
+        {"tema":"Literatura universal","patron":"Reconocer autor, obra, género o movimiento internacional.","clave":"Asocia cada obra con su época y conflicto principal."}
+      ]
+    },
+    "rv": {
+      "resumen": "Vocabulario, relaciones semánticas, conectores y organización textual.",
+      "formulas": [
+        {"nombre":"Relación analógica","expresion":"A : B :: C : D","uso":"Formula en palabras la relación del primer par y repítela exactamente."},
+        {"nombre":"Coherencia textual","expresion":"Idea central → ideas de apoyo → conclusión","uso":"Ordena por definición, explicación, ejemplo y consecuencia."}
+      ],
+      "recurrentes": [
+        {"tema":"Sinonimia, antonimia y término excluido","patron":"Elegir significado según contexto o separar el elemento ajeno.","clave":"Comprueba campo semántico y categoría gramatical."},
+        {"tema":"Analogías","patron":"Completar una relación lógica entre dos pares.","clave":"La relación debe mantener dirección y grado de intensidad."},
+        {"tema":"Conectores y plan de redacción","patron":"Unir ideas o reconstruir el orden lógico de un texto.","clave":"Busca referencias, causa-consecuencia y continuidad temática."}
+      ]
+    },
+    "historia": {
+      "resumen": "Civilizaciones y procesos de la historia universal.",
+      "formulas": [
+        {"nombre":"Lectura histórica","expresion":"causa → proceso → consecuencia","uso":"Distingue detonante inmediato de causas estructurales."},
+        {"nombre":"Análisis de fuente","expresion":"origen + propósito + contexto + contraste","uso":"Evalúa alcance y sesgo antes de usar una fuente como evidencia."}
+      ],
+      "recurrentes": [
+        {"tema":"Civilizaciones y Edad Media","patron":"Relacionar organización, aportes, sociedad y cambios de época.","clave":"Compara espacio, periodo, instituciones y legado cultural."},
+        {"tema":"Revoluciones e industrialización","patron":"Vincular causas, actores y consecuencias de cambios políticos y económicos.","clave":"Separa causas estructurales del detonante inmediato."},
+        {"tema":"Fuentes y cronología","patron":"Contrastar testimonios, periodizar y distinguir cambio de continuidad.","clave":"Pregunta quién produjo la fuente, cuándo y con qué propósito."}
+      ]
+    },
+    "historia_peru": {
+      "resumen": "Procesos del Perú desde el poblamiento americano hasta el siglo XXI.",
+      "formulas": [
+        {"nombre":"Secuencia histórica","expresion":"antecedente → proceso → consecuencia","uso":"Ubica cada hecho en su periodo y relaciónalo con el proceso siguiente."},
+        {"nombre":"Análisis político-social","expresion":"actor + interés + decisión + impacto","uso":"Compara proyectos políticos y sus consecuencias sociales y económicas."}
+      ],
+      "recurrentes": [
+        {"tema":"Perú prehispánico","patron":"Ordenar periodos, culturas y organización del Tahuantinsuyo.","clave":"Relaciona horizonte o periodo con espacio, economía y manifestación cultural."},
+        {"tema":"Virreinato e independencia","patron":"Vincular instituciones coloniales, rebeliones y proyectos independentistas.","clave":"Distingue reforma, rebelión, campaña militar y formación republicana."},
+        {"tema":"República y Perú contemporáneo","patron":"Analizar gobiernos, conflictos, reformas y crisis políticas.","clave":"Ubica cada gobierno en su cronología y reconoce su principal proceso."}
+      ]
+    },
+    "geografia": {
+      "resumen": "Espacio geográfico, territorio peruano, cartografía y gestión de riesgos.",
+      "formulas": [
+        {"nombre":"Escala cartográfica","expresion":"E=distancia en mapa/distancia real","uso":"Convierte ambas distancias a la misma unidad antes de dividir."},
+        {"nombre":"Densidad poblacional","expresion":"D=población/superficie","uso":"Compara concentración demográfica entre territorios de distinto tamaño."}
+      ],
+      "recurrentes": [
+        {"tema":"Espacio y cartografía","patron":"Interpretar coordenadas, escalas, mapas y relaciones territoriales.","clave":"Verifica orientación, leyenda, escala y fuente del mapa."},
+        {"tema":"Territorio peruano","patron":"Relacionar relieve, clima, cuencas y actividades humanas.","clave":"Ubica primero región natural, altitud y vertiente."},
+        {"tema":"Ambiente y riesgos","patron":"Analizar amenaza, vulnerabilidad, exposición y prevención.","clave":"El riesgo depende tanto del fenómeno como de la vulnerabilidad social."}
+      ]
+    },
+    "filosofia": {
+      "resumen": "Problemas filosóficos, ética, conocimiento, lógica y argumentación.",
+      "formulas": [
+        {"nombre":"Implicación lógica","expresion":"p→q ≡ ¬p∨q","uso":"Una implicación solo es falsa cuando p es verdadera y q es falsa."},
+        {"nombre":"Leyes de De Morgan","expresion":"¬(p∧q)≡¬p∨¬q  ·  ¬(p∨q)≡¬p∧¬q","uso":"Niega cada proposición y cambia el conector."}
+      ],
+      "recurrentes": [
+        {"tema":"Historia de la filosofía","patron":"Relacionar autor, corriente, problema y tesis.","clave":"Ubica época y pregunta central antes de elegir una doctrina."},
+        {"tema":"Ética y política","patron":"Evaluar deber, virtud, consecuencias, justicia o poder.","clave":"Identifica el criterio moral usado en el argumento."},
+        {"tema":"Conocimiento y lógica","patron":"Distinguir validez, verdad, falacia y justificación.","clave":"Separa la forma del argumento del contenido de sus premisas."}
+      ]
+    },
+    "economia": {
+      "resumen": "Producción, mercado, precios, moneda y macroeconomía.",
+      "formulas": [
+        {"nombre":"Producto Bruto Interno","expresion":"PBI=C+I+G+(X−M)","uso":"Suma consumo, inversión, gasto público y exportaciones netas."},
+        {"nombre":"Elasticidad-precio","expresion":"E=%Δ cantidad demandada / %Δ precio","uso":"Mide cuánto responde la demanda ante un cambio del precio."}
+      ],
+      "recurrentes": [
+        {"tema":"Oferta, demanda y mercado","patron":"Predecir cambios de precio y cantidad de equilibrio.","clave":"Distingue movimiento sobre la curva de desplazamiento completo."},
+        {"tema":"Producción y costos","patron":"Clasificar factores, sectores, costos o productividad.","clave":"Separa corto plazo de largo plazo."},
+        {"tema":"PBI, inflación y política económica","patron":"Interpretar indicadores o medidas fiscales y monetarias.","clave":"Identifica quién decide la medida y qué variable quiere cambiar."}
+      ]
+    },
+    "civica": {
+      "resumen": "Constitución, derechos, ciudadanía, democracia y Estado.",
+      "formulas": [
+        {"nombre":"Jerarquía normativa","expresion":"Constitución → ley → reglamento → norma administrativa","uso":"Una norma inferior no puede contradecir a una superior."},
+        {"nombre":"Organización del Estado","expresion":"Legislativo: legisla · Ejecutivo: gobierna · Judicial: administra justicia","uso":"Relaciona cada poder con su función y órganos principales."}
+      ],
+      "recurrentes": [
+        {"tema":"Constitución y derechos","patron":"Identificar derecho, garantía o mecanismo constitucional.","clave":"Diferencia hábeas corpus, amparo y hábeas data por el derecho protegido."},
+        {"tema":"Estado y poderes públicos","patron":"Relacionar institución, competencia y autoridad.","clave":"No confundas funciones nacionales, regionales y municipales."},
+        {"tema":"Ciudadanía y democracia","patron":"Analizar participación, elecciones, deberes o convivencia.","clave":"Distingue derecho ciudadano de deber y de valor democrático."}
+      ]
+    }
+  }
+}

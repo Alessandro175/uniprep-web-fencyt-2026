@@ -1,0 +1,145 @@
+/* =====================================================
+   UNIPREP - PERFIL DE ADMISIÓN
+   ===================================================== */
+
+.auth-input-wrapper select {
+  width: 100%;
+  height: 49px;
+  padding: 0 40px 0 42px;
+  border: 1px solid #2d2545;
+  border-radius: 11px;
+  outline: none;
+  color: #edeaff;
+  background-color: #161027;
+  background-image: linear-gradient(45deg,transparent 50%,#887ca7 50%),linear-gradient(135deg,#887ca7 50%,transparent 50%);
+  background-position: calc(100% - 17px) 21px,calc(100% - 12px) 21px;
+  background-repeat: no-repeat;
+  background-size: 5px 5px,5px 5px;
+  font-family: var(--font-body);
+  font-size: 12px;
+  appearance: none;
+  cursor: pointer;
+  transition: border-color .2s,background-color .2s,box-shadow .2s;
+}
+
+.auth-input-wrapper select:hover:not(:disabled) { border-color:#3d315e; }
+.auth-input-wrapper select:focus { border-color:#765df7;background-color:#19122d;box-shadow:0 0 0 3px rgba(124,109,255,.1); }
+.auth-input-wrapper select:disabled { color:#655f78;cursor:not-allowed;opacity:.72; }
+.auth-input-wrapper select option { color:#edeaff;background:#161027; }
+.auth-input-wrapper select optgroup { color:#aa94ff;background:#110c20;font-weight:800; }
+#reg-grupo-admision:disabled { border-color:rgba(74,223,145,.24);color:#bff8d8;background-color:rgba(74,223,145,.05);opacity:1; }
+
+.auth-route-note {
+  display:none;
+  grid-template-columns:auto 1fr;
+  gap:2px 9px;
+  padding:10px 12px;
+  border:1px solid rgba(66,200,255,.2);
+  border-radius:11px;
+  color:#b8b4ca;
+  background:rgba(66,200,255,.055);
+  font-size:10px;
+}
+.auth-route-note.visible { display:grid; }
+.auth-route-note::before { content:"✓";grid-row:1/3;color:#42d8c5;font-weight:900; }
+.auth-route-note b { color:#e9e6ff;font-size:11px; }
+.auth-route-note span { line-height:1.45; }
+
+.admission-active-route {
+  display:grid;
+  grid-template-columns:auto 1fr auto;
+  gap:13px;
+  align-items:center;
+  margin:-5px 0 16px;
+  padding:12px 14px;
+  border:1px solid rgba(124,92,255,.25);
+  border-radius:16px;
+  background:linear-gradient(110deg,rgba(124,92,255,.13),rgba(66,200,255,.06));
+}
+.admission-route-icon { display:grid;place-items:center;width:42px;height:42px;border:1px solid rgba(124,92,255,.28);border-radius:12px;background:rgba(124,92,255,.12);font-size:20px; }
+.admission-active-route > span:nth-child(2) { display:grid;gap:2px;min-width:0; }
+.admission-active-route small { color:var(--green);font-size:8px;font-weight:900;letter-spacing:1.1px; }
+.admission-active-route b { overflow:hidden;color:#fff;font-size:12px;text-overflow:ellipsis;white-space:nowrap; }
+.admission-active-route em { overflow:hidden;color:var(--text3);font-size:10px;font-style:normal;text-overflow:ellipsis;white-space:nowrap; }
+.admission-active-route button { padding:8px 11px;border:1px solid rgba(124,92,255,.32);border-radius:10px;color:var(--purple2);background:rgba(124,92,255,.1);font:700 10px var(--font-body);cursor:pointer; }
+.admission-active-route button:hover { border-color:var(--purple2);color:#fff; }
+
+.admission-profile-modal {
+  position:fixed;
+  inset:0;
+  z-index:16000;
+  display:none;
+  place-items:center;
+  padding:18px;
+  background:rgba(2,4,14,.86);
+  backdrop-filter:blur(16px);
+}
+.admission-profile-modal.open { display:grid; }
+.admission-profile-dialog {
+  width:min(720px,100%);
+  max-height:94vh;
+  overflow:auto;
+  padding:25px;
+  border:1px solid rgba(124,92,255,.36);
+  border-radius:25px;
+  background:linear-gradient(145deg,#151a38,#090d21);
+  box-shadow:0 40px 120px rgba(0,0,0,.64);
+}
+.admission-profile-dialog header { display:flex;justify-content:space-between;gap:20px; }
+.admission-profile-dialog header small { color:var(--green);font-size:9px;font-weight:900;letter-spacing:1.2px; }
+.admission-profile-dialog header h2 { margin:5px 0;color:#fff;font:700 24px var(--font-display); }
+.admission-profile-dialog header p { max-width:560px;color:var(--text3);font-size:11px;line-height:1.55; }
+.admission-profile-dialog header > button { flex:0 0 38px;width:38px;height:38px;border:0;border-radius:50%;color:#fff;background:rgba(255,255,255,.06);font-size:25px;cursor:pointer; }
+
+.admission-form-grid { display:grid;grid-template-columns:1fr 1fr;gap:14px 11px;margin-top:22px; }
+.admission-field { display:grid;gap:7px;color:#b8b4ca;font-size:10px;font-weight:700; }
+.admission-full { grid-column:1/-1; }
+.admission-select { position:relative;display:block; }
+.admission-select i { position:absolute;z-index:1;top:50%;left:13px;transform:translateY(-50%);color:#766a98;font-size:14px;font-style:normal;pointer-events:none; }
+.admission-select select {
+  width:100%;
+  min-height:48px;
+  padding:0 39px 0 39px;
+  border:1px solid #2e3159;
+  border-radius:11px;
+  outline:0;
+  color:#f0edff;
+  background:#0e142d;
+  font:500 11px var(--font-body);
+  appearance:none;
+  cursor:pointer;
+}
+.admission-select::after { content:"⌄";position:absolute;top:50%;right:14px;transform:translateY(-55%);color:#847ba2;pointer-events:none; }
+.admission-select select:focus { border-color:var(--purple);box-shadow:0 0 0 3px rgba(124,92,255,.1); }
+.admission-select select:disabled { color:#625d79;cursor:not-allowed; }
+.admission-select select option { color:#efecff;background:#10162f; }
+.admission-select select optgroup { color:#9f8cff;background:#0e142d;font-weight:800; }
+.admission-detected select:disabled { border-color:rgba(74,223,145,.28);color:#bff8d8;background:rgba(74,223,145,.055);opacity:1; }
+.admission-detected i { color:var(--green); }
+
+.admission-route-note { display:none;gap:3px;margin-top:13px;padding:12px 13px;border:1px solid rgba(66,200,255,.22);border-radius:12px;background:rgba(66,200,255,.065); }
+.admission-route-note.visible { display:grid; }
+.admission-route-note b { color:#dffaff;font-size:11px; }
+.admission-route-note span { color:var(--text3);font-size:10px;line-height:1.45; }
+.admission-route-note.error { border-color:rgba(255,95,143,.32);background:rgba(255,95,143,.08); }
+.admission-route-note.error b { color:#ff91b2; }
+
+.admission-privacy { display:flex;gap:10px;margin-top:13px;padding:11px 12px;border-radius:12px;background:rgba(74,223,145,.06);color:var(--text3); }
+.admission-privacy > span { color:var(--green); }
+.admission-privacy p { margin:0;font-size:9px;line-height:1.5; }
+.admission-privacy b { color:#c8f7dd; }
+.admission-actions { display:flex;justify-content:flex-end;gap:9px;margin-top:19px; }
+
+@media(max-width:760px) {
+  .admission-active-route { grid-template-columns:auto 1fr; }
+  .admission-active-route button { grid-column:1/-1;width:100%; }
+  .admission-form-grid { grid-template-columns:1fr; }
+  .admission-full { grid-column:auto; }
+}
+
+@media(max-width:520px) {
+  .admission-profile-dialog { padding:18px;border-radius:20px; }
+  .admission-profile-dialog header h2 { font-size:20px; }
+  .admission-actions { flex-direction:column-reverse; }
+  .admission-actions button { width:100%; }
+}

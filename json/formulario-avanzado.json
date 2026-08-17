@@ -1,0 +1,230 @@
+{
+  "version": "2026.08.5",
+  "descripcion": "Formulario maestro plegable de UniPrep: fórmulas, reglas y estructuras sin ejercicios de ejemplo.",
+  "cursos": {
+    "rm": [
+      {"tipo":"Fórmula","nombre":"Factorial","expresion":"n! = n(n−1)(n−2)…1","variables":"n: número natural · 0! = 1","condicion":"Base del análisis combinatorio."},
+      {"tipo":"Fórmula","nombre":"Permutación lineal","expresion":"Pₙ = n!","variables":"n: elementos diferentes","condicion":"Se ordenan todos los elementos y el orden importa."},
+      {"tipo":"Fórmula","nombre":"Permutación con repetición","expresion":"PR = n!/(a!b!c!…)","variables":"n: total · a,b,c: cantidades repetidas","condicion":"El orden importa y existen elementos iguales."},
+      {"tipo":"Fórmula","nombre":"Variación sin repetición","expresion":"V(n,r) = n!/(n−r)!","variables":"n: total · r: posiciones elegidas","condicion":"Se eligen algunos elementos y el orden importa."},
+      {"tipo":"Fórmula","nombre":"Combinación","expresion":"C(n,r) = n!/[r!(n−r)!]","variables":"n: total · r: elementos elegidos","condicion":"El orden no importa."},
+      {"tipo":"Fórmula","nombre":"Inclusión y exclusión","expresion":"n(A∪B) = n(A)+n(B)−n(A∩B)","variables":"A,B: conjuntos","condicion":"Evita contar dos veces la intersección."},
+      {"tipo":"Fórmula","nombre":"Sucesión aritmética","expresion":"aₙ = a₁+(n−1)r","variables":"a₁: primer término · r: razón aditiva","condicion":"La diferencia entre términos es constante."},
+      {"tipo":"Fórmula","nombre":"Sucesión geométrica","expresion":"aₙ = a₁·qⁿ⁻¹","variables":"a₁: primer término · q: razón multiplicativa","condicion":"El cociente entre términos es constante."}
+    ],
+    "aritmetica": [
+      {"tipo":"Fórmula","nombre":"Suma y resta de fracciones","expresion":"a/b ± c/d = (ad ± bc)/bd","variables":"b,d ≠ 0","condicion":"Simplificar el resultado final."},
+      {"tipo":"Propiedad","nombre":"Relación entre MCD y MCM","expresion":"MCD(a,b)·MCM(a,b) = a·b","variables":"a,b: enteros positivos","condicion":"Válida para dos números."},
+      {"tipo":"Fórmula","nombre":"Porcentaje de una cantidad","expresion":"Parte = Total·p/100","variables":"p: porcentaje","condicion":"Total representa el 100 %."},
+      {"tipo":"Fórmula","nombre":"Variaciones sucesivas","expresion":"V = (1±p₁/100)(1±p₂/100)…","variables":"p₁,p₂: variaciones porcentuales","condicion":"Los porcentajes sucesivos se multiplican, no se suman."},
+      {"tipo":"Fórmula","nombre":"Proporcionalidad directa","expresion":"y = kx","variables":"k: constante de proporcionalidad","condicion":"El cociente y/x permanece constante."},
+      {"tipo":"Fórmula","nombre":"Proporcionalidad inversa","expresion":"xy = k","variables":"k: constante","condicion":"Al aumentar una magnitud, la otra disminuye proporcionalmente."},
+      {"tipo":"Fórmula","nombre":"Interés simple","expresion":"I = C·i·t  ·  M = C(1+it)","variables":"C: capital · i: tasa · t: tiempo · M: monto","condicion":"Tasa y tiempo deben usar el mismo periodo."},
+      {"tipo":"Fórmula","nombre":"Interés compuesto","expresion":"M = C(1+i)ⁿ","variables":"C: capital · i: tasa por periodo · n: periodos","condicion":"Los intereses se incorporan al capital."}
+    ],
+    "algebra": [
+      {"tipo":"Identidad","nombre":"Cuadrado de un binomio","expresion":"(a±b)² = a²±2ab+b²","variables":"a,b: expresiones algebraicas","condicion":"El término central es el doble producto."},
+      {"tipo":"Identidad","nombre":"Diferencia de cuadrados","expresion":"a²−b² = (a−b)(a+b)","variables":"a,b: expresiones","condicion":"Factorización inmediata por conjugados."},
+      {"tipo":"Identidad","nombre":"Suma y diferencia de cubos","expresion":"a³±b³ = (a±b)(a²∓ab+b²)","variables":"a,b: expresiones","condicion":"El signo central del trinomio cambia."},
+      {"tipo":"Fórmula","nombre":"Ecuación cuadrática","expresion":"x = [−b±√(b²−4ac)]/(2a)","variables":"a≠0 · ax²+bx+c=0","condicion":"Resuelve cualquier ecuación de segundo grado."},
+      {"tipo":"Fórmula","nombre":"Discriminante","expresion":"Δ = b²−4ac","variables":"a,b,c: coeficientes","condicion":"Δ>0: dos raíces · Δ=0: una doble · Δ<0: no reales."},
+      {"tipo":"Propiedad","nombre":"Relaciones de Viète","expresion":"x₁+x₂ = −b/a  ·  x₁x₂ = c/a","variables":"x₁,x₂: raíces","condicion":"Para ax²+bx+c=0."},
+      {"tipo":"Teorema","nombre":"Teorema del residuo","expresion":"Residuo de P(x)/(x−a) = P(a)","variables":"P(x): polinomio · a: constante","condicion":"No requiere efectuar toda la división."},
+      {"tipo":"Teorema","nombre":"Teorema del factor","expresion":"(x−a) es factor de P(x) ⇔ P(a)=0","variables":"a: raíz del polinomio","condicion":"Permite comprobar factores lineales."},
+      {"tipo":"Fórmula","nombre":"Logaritmo de un producto","expresion":"log_b(xy) = log_bx + log_by","variables":"b>0, b≠1 · x,y>0","condicion":"El producto se transforma en suma."},
+      {"tipo":"Fórmula","nombre":"Cambio de base logarítmica","expresion":"log_bx = log_ax/log_ab","variables":"a,b>0 · a,b≠1 · x>0","condicion":"Permite trabajar con cualquier base disponible."}
+    ],
+    "geometria": [
+      {"tipo":"Fórmula","nombre":"Área de un triángulo","expresion":"A = b·h/2","variables":"b: base · h: altura perpendicular","condicion":"La altura debe corresponder a la base elegida."},
+      {"tipo":"Fórmula","nombre":"Fórmula de Herón","expresion":"A = √[s(s−a)(s−b)(s−c)]","variables":"s=(a+b+c)/2","condicion":"Se conocen los tres lados."},
+      {"tipo":"Teorema","nombre":"Teorema de Pitágoras","expresion":"c² = a²+b²","variables":"c: hipotenusa · a,b: catetos","condicion":"Solo para triángulos rectángulos."},
+      {"tipo":"Fórmula","nombre":"Suma de ángulos interiores","expresion":"S = 180°(n−2)","variables":"n: número de lados","condicion":"Polígono simple."},
+      {"tipo":"Fórmula","nombre":"Área de polígono regular","expresion":"A = P·ap/2","variables":"P: perímetro · ap: apotema","condicion":"Todos los lados y ángulos son iguales."},
+      {"tipo":"Fórmula","nombre":"Circunferencia y círculo","expresion":"L = 2πr  ·  A = πr²","variables":"r: radio","condicion":"L es longitud; A es superficie."},
+      {"tipo":"Fórmula","nombre":"Sector circular","expresion":"Aₛ = (θ/360°)πr²","variables":"θ: ángulo central · r: radio","condicion":"θ expresado en grados sexagesimales."},
+      {"tipo":"Fórmula","nombre":"Volumen de prisma o cilindro","expresion":"V = Aᵦ·h","variables":"Aᵦ: área de base · h: altura","condicion":"Las bases son paralelas e iguales."}
+    ],
+    "trigonometria": [
+      {"tipo":"Conversión","nombre":"Grados y radianes","expresion":"180° = π rad","variables":"π≈3,1416","condicion":"Regla base para convertir sistemas angulares."},
+      {"tipo":"Razones","nombre":"Razones trigonométricas","expresion":"senθ=CO/H · cosθ=CA/H · tanθ=CO/CA","variables":"CO: cateto opuesto · CA: adyacente · H: hipotenusa","condicion":"Triángulo rectángulo."},
+      {"tipo":"Identidad","nombre":"Identidad pitagórica","expresion":"sen²θ+cos²θ = 1","variables":"θ: ángulo","condicion":"Válida para todo ángulo definido."},
+      {"tipo":"Identidad","nombre":"Identidades de tangente y secante","expresion":"tanθ=senθ/cosθ  ·  1+tan²θ=sec²θ","variables":"cosθ≠0","condicion":"Convierte razones a seno y coseno para simplificar."},
+      {"tipo":"Identidad","nombre":"Seno de suma y diferencia","expresion":"sen(A±B)=senA cosB±cosA senB","variables":"A,B: ángulos","condicion":"Conserva el signo de la operación."},
+      {"tipo":"Identidad","nombre":"Coseno de suma y diferencia","expresion":"cos(A±B)=cosA cosB∓senA senB","variables":"A,B: ángulos","condicion":"El signo central se invierte."},
+      {"tipo":"Fórmula","nombre":"Ley de senos","expresion":"a/senA = b/senB = c/senC","variables":"a,b,c opuestos a A,B,C","condicion":"Triángulos oblicuángulos con pares lado–ángulo."},
+      {"tipo":"Fórmula","nombre":"Ley de cosenos","expresion":"c² = a²+b²−2ab·cosC","variables":"C: ángulo entre a y b","condicion":"Útil con dos lados y el ángulo comprendido."}
+    ],
+    "fisica": [
+      {"tipo":"Cinemática","nombre":"Movimiento rectilíneo uniforme","expresion":"x = x₀+v·t","variables":"x: posición final · x₀: inicial · v: velocidad · t: tiempo","condicion":"Velocidad constante; aceleración nula."},
+      {"tipo":"Cinemática","nombre":"MRUV — velocidad","expresion":"v = v₀+a·t","variables":"v: velocidad final · v₀: inicial · a: aceleración","condicion":"Aceleración constante."},
+      {"tipo":"Cinemática","nombre":"MRUV — posición","expresion":"x = x₀+v₀t+½at²","variables":"x,x₀: posiciones · v₀: velocidad inicial · a: aceleración","condicion":"Aceleración constante."},
+      {"tipo":"Cinemática","nombre":"Ecuación de Torricelli","expresion":"v² = v₀²+2a(x−x₀)","variables":"v,v₀: velocidades · a: aceleración","condicion":"Relaciona velocidades y desplazamiento sin usar tiempo."},
+      {"tipo":"Caída libre","nombre":"Caída libre — posición vertical","expresion":"y = y₀+v₀t−½gt²","variables":"y,y₀: posiciones · v₀: velocidad inicial · g≈9,8 m/s² · t: tiempo","condicion":"Eje positivo hacia arriba; la gravedad apunta hacia abajo."},
+      {"tipo":"Caída libre","nombre":"Caída libre — velocidad","expresion":"v = v₀−g·t","variables":"v,v₀: velocidades verticales · g: gravedad","condicion":"Eje positivo hacia arriba."},
+      {"tipo":"Dinámica","nombre":"Segunda ley de Newton","expresion":"ΣF = m·a","variables":"ΣF: fuerza neta · m: masa · a: aceleración","condicion":"Aplicar por cada eje del diagrama de cuerpo libre."},
+      {"tipo":"Dinámica","nombre":"Fuerza de rozamiento","expresion":"f = μN","variables":"μ: coeficiente · N: fuerza normal","condicion":"μₛ para límite estático; μₖ para movimiento."},
+      {"tipo":"Energía","nombre":"Trabajo mecánico","expresion":"W = F·d·cosθ","variables":"F: fuerza · d: desplazamiento · θ: ángulo","condicion":"Fuerza constante."},
+      {"tipo":"Energía","nombre":"Energía cinética","expresion":"E꜀ = ½mv²","variables":"m: masa · v: rapidez","condicion":"Depende del cuadrado de la rapidez."},
+      {"tipo":"Energía","nombre":"Energía potencial gravitatoria","expresion":"Eₚ = mgh","variables":"m: masa · g: gravedad · h: altura","condicion":"Cerca de la superficie terrestre."},
+      {"tipo":"Potencia","nombre":"Potencia mecánica","expresion":"P = W/t","variables":"W: trabajo · t: tiempo","condicion":"Unidad SI: watt (W)."},
+      {"tipo":"Fluidos","nombre":"Presión","expresion":"p = F/A","variables":"F: fuerza normal · A: área","condicion":"Unidad SI: pascal (Pa)."},
+      {"tipo":"Fluidos","nombre":"Presión hidrostática","expresion":"p = ρgh","variables":"ρ: densidad · g: gravedad · h: profundidad","condicion":"Líquido en reposo."},
+      {"tipo":"Calor","nombre":"Calor sensible","expresion":"Q = m·c·ΔT","variables":"m: masa · c: calor específico · ΔT: cambio térmico","condicion":"No existe cambio de fase."},
+      {"tipo":"Electricidad","nombre":"Ley de Ohm","expresion":"V = I·R","variables":"V: voltaje · I: corriente · R: resistencia","condicion":"Conductor óhmico a temperatura constante."}
+    ],
+    "quimica": [
+      {"tipo":"Átomo","nombre":"Número másico","expresion":"A = Z+N","variables":"A: número másico · Z: protones · N: neutrones","condicion":"Z identifica al elemento."},
+      {"tipo":"Mol","nombre":"Cantidad de sustancia","expresion":"n = m/M","variables":"n: moles · m: masa · M: masa molar","condicion":"m y M deben usar unidades compatibles."},
+      {"tipo":"Mol","nombre":"Número de partículas","expresion":"N = n·Nₐ","variables":"Nₐ=6,022×10²³ mol⁻¹","condicion":"Partículas pueden ser átomos, moléculas o iones."},
+      {"tipo":"Soluciones","nombre":"Molaridad","expresion":"M = n/V","variables":"n: moles de soluto · V: litros de solución","condicion":"El volumen debe expresarse en litros."},
+      {"tipo":"Soluciones","nombre":"Dilución","expresion":"M₁V₁ = M₂V₂","variables":"M: concentración · V: volumen","condicion":"Los moles de soluto se conservan."},
+      {"tipo":"Gases","nombre":"Ecuación del gas ideal","expresion":"PV = nRT","variables":"P: presión · V: volumen · n: moles · T: kelvin","condicion":"Usar R compatible con las unidades."},
+      {"tipo":"Materia","nombre":"Densidad","expresion":"ρ = m/V","variables":"m: masa · V: volumen","condicion":"Mantener unidades coherentes."},
+      {"tipo":"Soluciones","nombre":"Porcentaje en masa","expresion":"%m/m = mₛ/mₜ ·100","variables":"mₛ: masa de soluto · mₜ: masa total","condicion":"Ambas masas en la misma unidad."},
+      {"tipo":"Estequiometría","nombre":"Rendimiento porcentual","expresion":"%R = real/teórico ·100","variables":"real: producto obtenido · teórico: producto calculado","condicion":"Comparar la misma sustancia y unidad."},
+      {"tipo":"Ácido-base","nombre":"Potencial de hidrógeno","expresion":"pH = −log[H⁺]","variables":"[H⁺]: concentración molar","condicion":"A 25 °C: pH+pOH=14."}
+    ],
+    "biologia": [
+      {"tipo":"Microscopía","nombre":"Aumento total","expresion":"Aₜ = A ocular × A objetivo","variables":"A: aumento de cada lente","condicion":"El resultado se expresa en veces (×)."},
+      {"tipo":"Genética","nombre":"Probabilidad conjunta","expresion":"P(A∩B) = P(A)·P(B)","variables":"A,B: sucesos independientes","condicion":"Se aplica cuando ambos sucesos deben ocurrir."},
+      {"tipo":"Genética","nombre":"Probabilidad alternativa","expresion":"P(A∪B) = P(A)+P(B)","variables":"A,B: sucesos mutuamente excluyentes","condicion":"Se aplica cuando puede ocurrir uno u otro."},
+      {"tipo":"Poblaciones","nombre":"Equilibrio de Hardy-Weinberg","expresion":"p²+2pq+q² = 1","variables":"p,q: frecuencias alélicas · p+q=1","condicion":"Población ideal sin fuerzas evolutivas."},
+      {"tipo":"Poblaciones","nombre":"Crecimiento exponencial","expresion":"Nₜ = N₀·eʳᵗ","variables":"N₀: población inicial · r: tasa · t: tiempo","condicion":"Recursos ilimitados."},
+      {"tipo":"Metabolismo","nombre":"Fotosíntesis","expresion":"6CO₂+6H₂O+energía → C₆H₁₂O₆+6O₂","variables":"CO₂: dióxido de carbono · H₂O: agua","condicion":"Proceso anabólico en organismos fotosintéticos."},
+      {"tipo":"Metabolismo","nombre":"Respiración celular","expresion":"C₆H₁₂O₆+6O₂ → 6CO₂+6H₂O+ATP","variables":"ATP: energía utilizable","condicion":"Ecuación global aeróbica."},
+      {"tipo":"Ecología","nombre":"Eficiencia trófica","expresion":"E = energía nivel superior/energía nivel inferior ·100","variables":"E: porcentaje transferido","condicion":"Compara niveles tróficos consecutivos."}
+    ],
+    "medio_ambiente": [
+      {"tipo":"Ecología","nombre":"Densidad poblacional","expresion":"D = N/A","variables":"N: individuos · A: área","condicion":"También puede usarse volumen en ambientes acuáticos."},
+      {"tipo":"Poblaciones","nombre":"Cambio poblacional","expresion":"ΔN = (B+I)−(D+E)","variables":"B: nacimientos · I: inmigración · D: muertes · E: emigración","condicion":"Balance para un periodo definido."},
+      {"tipo":"Poblaciones","nombre":"Tasa de crecimiento","expresion":"r = (Nf−Ni)/Ni ·100","variables":"Ni: población inicial · Nf: final","condicion":"Resultado porcentual del periodo."},
+      {"tipo":"Ecología","nombre":"Productividad neta","expresion":"PN = PB−R","variables":"PB: productividad bruta · R: respiración","condicion":"Energía disponible después del gasto metabólico."},
+      {"tipo":"Energía","nombre":"Eficiencia ecológica","expresion":"E = energía transferida/energía disponible ·100","variables":"E: eficiencia porcentual","condicion":"Entre niveles tróficos."},
+      {"tipo":"Gestión","nombre":"Tasa de reciclaje","expresion":"TR = material reciclado/residuo total ·100","variables":"Masas en la misma unidad","condicion":"Periodo y sistema definidos."},
+      {"tipo":"Riesgo","nombre":"Riesgo ambiental","expresion":"R = Amenaza × Vulnerabilidad × Exposición","variables":"Factores relativos del territorio","condicion":"Modelo conceptual de gestión del riesgo."},
+      {"tipo":"Agua","nombre":"Balance hídrico","expresion":"ΔS = P−ET−Q","variables":"P: precipitación · ET: evapotranspiración · Q: escorrentía","condicion":"ΔS representa cambio de almacenamiento."}
+    ],
+    "anatomia": [
+      {"tipo":"Cardiovascular","nombre":"Gasto cardíaco","expresion":"GC = FC·VS","variables":"FC: frecuencia cardíaca · VS: volumen sistólico","condicion":"Volumen bombeado por minuto."},
+      {"tipo":"Cardiovascular","nombre":"Presión arterial media","expresion":"PAM ≈ PAD+(PAS−PAD)/3","variables":"PAS: sistólica · PAD: diastólica","condicion":"Aproximación para frecuencia cardíaca normal."},
+      {"tipo":"Respiratorio","nombre":"Ventilación minuto","expresion":"V̇E = VC·FR","variables":"VC: volumen corriente · FR: respiraciones/min","condicion":"Volumen movilizado por minuto."},
+      {"tipo":"Respiratorio","nombre":"Ventilación alveolar","expresion":"V̇A = (VC−VD)·FR","variables":"VD: espacio muerto","condicion":"Volumen de aire que alcanza alvéolos por minuto."},
+      {"tipo":"Renal","nombre":"Depuración renal","expresion":"C = U·V/P","variables":"U: concentración urinaria · V: flujo urinario · P: concentración plasmática","condicion":"Sustancia y tiempo definidos."},
+      {"tipo":"Nutrición","nombre":"Índice de masa corporal","expresion":"IMC = masa/altura²","variables":"masa en kg · altura en m","condicion":"Indicador general; no constituye diagnóstico individual."},
+      {"tipo":"Sangre","nombre":"Contenido arterial de oxígeno","expresion":"CaO₂ ≈ 1,34·Hb·SaO₂ + 0,003·PaO₂","variables":"Hb: hemoglobina · SaO₂: saturación","condicion":"Estimación fisiológica."},
+      {"tipo":"Equilibrio","nombre":"Agua corporal total referencial","expresion":"ACT ≈ masa·factor corporal","variables":"factor depende de edad, sexo y composición","condicion":"Estimación; no usar como diagnóstico clínico."}
+    ],
+    "psicologia": [
+      {"tipo":"Esquema","nombre":"Condicionamiento clásico","expresion":"EN+EI → RI  ⇒  EC → RC","variables":"EN: estímulo neutro · EI: incondicionado · EC: condicionado","condicion":"Aprendizaje por asociación de estímulos."},
+      {"tipo":"Esquema","nombre":"Condicionamiento operante","expresion":"Conducta → Consecuencia → cambio de probabilidad","variables":"Consecuencia reforzante o punitiva","condicion":"Aprendizaje por consecuencias."},
+      {"tipo":"Regla","nombre":"Refuerzo y castigo","expresion":"Refuerzo ↑ conducta · Castigo ↓ conducta","variables":"Positivo: añade · Negativo: retira","condicion":"Positivo/negativo no significan bueno/malo."},
+      {"tipo":"Proceso","nombre":"Memoria","expresion":"Codificación → Almacenamiento → Recuperación","variables":"Tres procesos básicos","condicion":"Una falla puede ocurrir en cualquier etapa."},
+      {"tipo":"Etapas","nombre":"Desarrollo cognitivo de Piaget","expresion":"Sensoriomotor → Preoperacional → Concreto → Formal","variables":"0–2 · 2–7 · 7–11 · 11+ años","condicion":"Edades aproximadas."},
+      {"tipo":"Estructura","nombre":"Modelo psíquico freudiano","expresion":"Ello ↔ Yo ↔ Superyó","variables":"impulso · realidad · norma moral","condicion":"Modelo teórico psicoanalítico."},
+      {"tipo":"Jerarquía","nombre":"Necesidades de Maslow","expresion":"Fisiología → Seguridad → Afiliación → Estima → Autorrealización","variables":"Niveles motivacionales","condicion":"Modelo humanista."},
+      {"tipo":"Proceso","nombre":"Aprendizaje observacional","expresion":"Atención → Retención → Reproducción → Motivación","variables":"Procesos del modelado de Bandura","condicion":"Aprender observando a un modelo."}
+    ],
+    "comprension_lectora": [
+      {"tipo":"Estructura","nombre":"Tema central","expresion":"Tema = asunto general del texto","variables":"Se expresa como frase nominal","condicion":"No afirma todavía una idea completa."},
+      {"tipo":"Estructura","nombre":"Idea principal","expresion":"Idea principal = tema + afirmación central","variables":"Síntesis del mensaje del autor","condicion":"Debe abarcar el texto sin añadir información."},
+      {"tipo":"Estructura","nombre":"Texto argumentativo","expresion":"Tesis → argumentos → conclusión","variables":"Tesis: postura · argumentos: sustento","condicion":"Distinguir hechos de opiniones."},
+      {"tipo":"Inferencia","nombre":"Inferencia válida","expresion":"Información textual + relación lógica ⇒ conclusión necesaria","variables":"La conclusión no contradice el texto","condicion":"No usar conocimientos externos innecesarios."},
+      {"tipo":"Síntesis","nombre":"Resumen","expresion":"Ideas esenciales − ejemplos − repeticiones","variables":"Conserva orden y sentido global","condicion":"No incluir opiniones personales."},
+      {"tipo":"Reformulación","nombre":"Paráfrasis","expresion":"Mismo significado + redacción diferente","variables":"Conserva relaciones lógicas","condicion":"No reducir ni ampliar indebidamente."},
+      {"tipo":"Cohesión","nombre":"Referencia textual","expresion":"Pronombre o sustituto → antecedente","variables":"Antecedente: elemento recuperado","condicion":"Verificar concordancia y sentido."},
+      {"tipo":"Conectores","nombre":"Relación lógica","expresion":"causa→porque · consecuencia→por tanto · contraste→sin embargo","variables":"El conector expresa vínculo entre ideas","condicion":"Leer ambas proposiciones antes de elegir."}
+    ],
+    "lenguaje": [
+      {"tipo":"Estructura","nombre":"Oración bimembre","expresion":"Oración = Sujeto + Predicado","variables":"Sujeto: de quién se habla · Predicado: lo que se dice","condicion":"Puede existir sujeto tácito."},
+      {"tipo":"Estructura","nombre":"Sintagma nominal","expresion":"SN = Determinante + Núcleo + Modificadores","variables":"Núcleo usual: sustantivo o pronombre","condicion":"Los elementos concuerdan en género y número."},
+      {"tipo":"Estructura","nombre":"Sintagma verbal","expresion":"SV = Verbo + Complementos","variables":"Verbo: núcleo del predicado","condicion":"Identificar primero el verbo conjugado."},
+      {"tipo":"Regla","nombre":"Concordancia","expresion":"Sujeto ↔ verbo: persona y número","variables":"Núcleo del sujeto determina concordancia","condicion":"No dejarse engañar por complementos cercanos."},
+      {"tipo":"Tildación","nombre":"Palabras agudas","expresion":"Tilde si terminan en vocal, n o s","variables":"Sílaba tónica: última","condicion":"Considerar excepciones por hiato."},
+      {"tipo":"Tildación","nombre":"Palabras graves","expresion":"Tilde si NO terminan en vocal, n o s","variables":"Sílaba tónica: penúltima","condicion":"Considerar excepciones por hiato."},
+      {"tipo":"Tildación","nombre":"Esdrújulas y sobresdrújulas","expresion":"Siempre llevan tilde","variables":"Tónica: antepenúltima o anterior","condicion":"Regla general sin excepción ortográfica común."},
+      {"tipo":"Regla","nombre":"Diptongo e hiato","expresion":"Diptongo: misma sílaba · Hiato: sílabas distintas","variables":"Vocal abierta: a,e,o · cerrada: i,u","condicion":"Cerrada tónica con tilde rompe diptongo."}
+    ],
+    "literatura": [
+      {"tipo":"Estructura","nombre":"Texto narrativo","expresion":"Narrador + personajes + acciones + tiempo + espacio","variables":"Elementos del mundo narrado","condicion":"Distinguir autor real de narrador."},
+      {"tipo":"Estructura","nombre":"Secuencia narrativa","expresion":"Inicio → conflicto → desarrollo → desenlace","variables":"Momentos del relato","condicion":"El orden del discurso puede alterar la cronología."},
+      {"tipo":"Estructura","nombre":"Texto lírico","expresion":"Hablante + motivo + objeto + actitud lírica","variables":"Elementos de la comunicación poética","condicion":"El hablante no es necesariamente el autor."},
+      {"tipo":"Estructura","nombre":"Texto dramático","expresion":"Actos → escenas → diálogo/acotaciones","variables":"Texto destinado a representación","condicion":"Las acotaciones orientan la puesta en escena."},
+      {"tipo":"Métrica","nombre":"Cómputo silábico","expresion":"Sílabas métricas = gramaticales ± licencias","variables":"Sinalefa, hiato, diéresis, sinéresis","condicion":"Ajustar según palabra final del verso."},
+      {"tipo":"Métrica","nombre":"Ley del acento final","expresion":"Aguda +1 · Grave 0 · Esdrújula −1","variables":"Tipo de última palabra","condicion":"Se aplica al total del verso."},
+      {"tipo":"Figura","nombre":"Metáfora","expresion":"Elemento real ≈ elemento imaginado","variables":"Semejanza implícita","condicion":"No usa nexo comparativo explícito."},
+      {"tipo":"Figura","nombre":"Hipérbaton","expresion":"Orden lógico alterado","variables":"Cambio sintáctico con finalidad expresiva","condicion":"Reconstruir el orden habitual para interpretar."}
+    ],
+    "rv": [
+      {"tipo":"Relación","nombre":"Analogía verbal","expresion":"A : B :: C : D","variables":"La relación A–B debe repetirse en C–D","condicion":"Nombrar la relación antes de revisar alternativas."},
+      {"tipo":"Semántica","nombre":"Sinonimia","expresion":"A ≈ B en significado contextual","variables":"La equivalencia depende del contexto","condicion":"No basta una semejanza general."},
+      {"tipo":"Semántica","nombre":"Antonimia","expresion":"A ↔ B por oposición semántica","variables":"Complementarios, graduales o recíprocos","condicion":"Identificar el tipo de oposición."},
+      {"tipo":"Conjunto","nombre":"Término excluido","expresion":"Campo semántico común − elemento ajeno","variables":"Comparar categoría y nivel de generalidad","condicion":"Todos menos uno comparten relación precisa."},
+      {"tipo":"Coherencia","nombre":"Eliminación de oración","expresion":"Unidad temática − redundancia − contradicción","variables":"Cada oración debe aportar al tema","condicion":"Eliminar lo irrelevante o repetido."},
+      {"tipo":"Conectores","nombre":"Conector lógico","expresion":"Ideas + relación semántica → conector","variables":"Causa, consecuencia, contraste, adición, concesión","condicion":"Determinar primero la relación, luego la palabra."},
+      {"tipo":"Orden","nombre":"Plan de redacción","expresion":"Presentación → desarrollo → cierre","variables":"General antes que particular · causa antes que efecto","condicion":"Respetar referencias y conectores."},
+      {"tipo":"Inferencia","nombre":"Implicación textual","expresion":"Premisas del texto ⇒ conclusión compatible","variables":"Conclusión sustentada, no imaginada","condicion":"Descartar extremos y datos externos."}
+    ],
+    "historia": [
+      {"tipo":"Método","nombre":"Análisis histórico","expresion":"Causa → proceso → consecuencia","variables":"Relaciones temporales y explicativas","condicion":"Distinguir causa profunda de detonante."},
+      {"tipo":"Fuente","nombre":"Análisis de fuente","expresion":"Autor + fecha + propósito + contexto + contenido","variables":"Origen y finalidad de la fuente","condicion":"Evaluar perspectiva y limitaciones."},
+      {"tipo":"Tiempo","nombre":"Periodización","expresion":"Continuidad + cambio + acontecimiento","variables":"Corta, media y larga duración","condicion":"Una fecha por sí sola no explica un proceso."},
+      {"tipo":"Proceso","nombre":"Revolución política","expresion":"Crisis del orden → movilización → ruptura → nuevo orden","variables":"Actores, ideas e instituciones","condicion":"Comparar objetivos con resultados."},
+      {"tipo":"Proceso","nombre":"Industrialización","expresion":"Innovación + capital + fábrica → producción masiva","variables":"Trabajo, mercado y urbanización","condicion":"Relacionar cambio técnico y social."},
+      {"tipo":"Proceso","nombre":"Imperialismo","expresion":"Potencia + expansión + control territorial/económico","variables":"Metrópoli y territorio dominado","condicion":"Distinguir imperialismo de colonialismo formal."},
+      {"tipo":"Proceso","nombre":"Guerra mundial","expresion":"Causas estructurales + detonante + alianzas → conflicto","variables":"Frentes, fases y consecuencias","condicion":"Separar Primera y Segunda Guerra Mundial."},
+      {"tipo":"Proceso","nombre":"Guerra Fría","expresion":"Bipolaridad → bloques → competencia → conflictos indirectos","variables":"EE. UU. y URSS","condicion":"No hubo guerra directa total entre superpotencias."}
+    ],
+    "historia_peru": [
+      {"tipo":"Método","nombre":"Lectura del proceso peruano","expresion":"Periodo + actores + conflicto + transformación","variables":"Dimensión política, social y económica","condicion":"Ubicar primero la etapa histórica."},
+      {"tipo":"Periodo","nombre":"Horizontes e intermedios","expresion":"Horizonte = integración · Intermedio = regionalización","variables":"Temprano, Medio y Tardío","condicion":"Relacionar cultura, espacio y periodo."},
+      {"tipo":"Sistema","nombre":"Organización del Tahuantinsuyo","expresion":"Ayllu → curaca → administración inca","variables":"Reciprocidad, redistribución y mita","condicion":"No confundir mita incaica con colonial."},
+      {"tipo":"Sistema","nombre":"Orden virreinal","expresion":"Corona → virrey → audiencias/corregimientos → cabildos","variables":"Instituciones coloniales","condicion":"Reconocer función y nivel de autoridad."},
+      {"tipo":"Proceso","nombre":"Independencia","expresion":"Crisis colonial + rebeliones + campañas → República","variables":"Factores internos y externos","condicion":"Distinguir emancipación política de cambio social completo."},
+      {"tipo":"Proceso","nombre":"Era del guano","expresion":"Renta guanera → expansión fiscal → endeudamiento","variables":"Estado, consignatarios y acreedores","condicion":"Relacionar bonanza con dependencia."},
+      {"tipo":"Proceso","nombre":"República Aristocrática","expresion":"Oligarquía + exportación + exclusión política","variables":"1895–1919","condicion":"Identificar economía y grupos de poder."},
+      {"tipo":"Proceso","nombre":"Perú contemporáneo","expresion":"Gobierno + reforma/crisis + actores + impacto","variables":"Cronología del siglo XX–XXI","condicion":"Asociar cada medida con su gobierno."}
+    ],
+    "geografia": [
+      {"tipo":"Cartografía","nombre":"Escala numérica","expresion":"E = d/D","variables":"d: distancia en mapa · D: distancia real","condicion":"Ambas distancias en la misma unidad."},
+      {"tipo":"Cartografía","nombre":"Distancia real","expresion":"D = d/E","variables":"E expresada como fracción 1/n","condicion":"Convertir el resultado a la unidad solicitada."},
+      {"tipo":"Población","nombre":"Densidad poblacional","expresion":"D = P/S","variables":"P: población · S: superficie","condicion":"Habitantes por unidad de superficie."},
+      {"tipo":"Población","nombre":"Crecimiento natural","expresion":"CN = Natalidad−Mortalidad","variables":"Tasas del mismo periodo","condicion":"No incluye migración."},
+      {"tipo":"Población","nombre":"Saldo migratorio","expresion":"SM = Inmigración−Emigración","variables":"Flujos del mismo periodo","condicion":"Positivo implica ganancia migratoria."},
+      {"tipo":"Tiempo","nombre":"Husos horarios","expresion":"Δt = Δlongitud/15°","variables":"15° equivalen a una hora","condicion":"Este suma horas; oeste resta, respecto al referente."},
+      {"tipo":"Relieve","nombre":"Gradiente altitudinal de temperatura","expresion":"ΔT ≈ −0,6 °C por cada 100 m","variables":"Valor medio referencial","condicion":"La variación real depende de condiciones atmosféricas."},
+      {"tipo":"Riesgo","nombre":"Riesgo de desastre","expresion":"R = Amenaza × Vulnerabilidad × Exposición","variables":"Factores territoriales y sociales","condicion":"La prevención reduce vulnerabilidad y exposición."}
+    ],
+    "filosofia": [
+      {"tipo":"Lógica","nombre":"Negación","expresion":"Negación de p = ¬p","variables":"¬ invierte el valor de verdad de p","condicion":"No confundir negación con proposición contraria."},
+      {"tipo":"Lógica","nombre":"Conjunción","expresion":"p∧q es verdadera solo si p y q son verdaderas","variables":"∧: y","condicion":"Basta una proposición falsa para que sea falsa."},
+      {"tipo":"Lógica","nombre":"Disyunción inclusiva","expresion":"p∨q es falsa solo si p y q son falsas","variables":"∨: o inclusiva","condicion":"Puede cumplirse una o ambas."},
+      {"tipo":"Lógica","nombre":"Implicación","expresion":"p→q ≡ ¬p∨q","variables":"p: antecedente · q: consecuente","condicion":"Solo es falsa cuando p es verdadera y q falsa."},
+      {"tipo":"Lógica","nombre":"Bicondicional","expresion":"p↔q ≡ (p→q)∧(q→p)","variables":"↔: si y solo si","condicion":"Verdadera cuando ambas tienen igual valor."},
+      {"tipo":"Lógica","nombre":"Leyes de De Morgan","expresion":"¬(p∧q)≡¬p∨¬q · ¬(p∨q)≡¬p∧¬q","variables":"Negar cada parte y cambiar el conector","condicion":"Equivalencias lógicas."},
+      {"tipo":"Argumentación","nombre":"Estructura del argumento","expresion":"Premisas ⇒ conclusión","variables":"Premisas: razones · conclusión: tesis derivada","condicion":"Validez depende de la forma inferencial."},
+      {"tipo":"Conocimiento","nombre":"Justificación epistémica","expresion":"Creencia + verdad + justificación","variables":"Modelo clásico del conocimiento","condicion":"Esquema filosófico sujeto a objeciones contemporáneas."}
+    ],
+    "economia": [
+      {"tipo":"Macroeconomía","nombre":"Producto Bruto Interno","expresion":"PBI = C+I+G+(X−M)","variables":"C: consumo · I: inversión · G: gasto · X−M: exportación neta","condicion":"Método del gasto."},
+      {"tipo":"Macroeconomía","nombre":"PBI per cápita","expresion":"PBIpc = PBI/Población","variables":"PBI del periodo · población correspondiente","condicion":"Promedio; no mide distribución del ingreso."},
+      {"tipo":"Precios","nombre":"Tasa de inflación","expresion":"π = (IPC₁−IPC₀)/IPC₀ ·100","variables":"IPC: índice de precios","condicion":"Comparar periodos equivalentes."},
+      {"tipo":"Ingreso","nombre":"Salario real","expresion":"Salario real = salario nominal/índice de precios","variables":"Índice expresado como factor","condicion":"Mide poder adquisitivo."},
+      {"tipo":"Mercado","nombre":"Elasticidad-precio de demanda","expresion":"Eᵈ = %ΔQᵈ/%ΔP","variables":"Qᵈ: cantidad demandada · P: precio","condicion":"Se interpreta normalmente en valor absoluto."},
+      {"tipo":"Empresa","nombre":"Ingreso total","expresion":"IT = P·Q","variables":"P: precio · Q: cantidad vendida","condicion":"Precio unitario constante para el cálculo directo."},
+      {"tipo":"Empresa","nombre":"Costo total","expresion":"CT = CF+CV","variables":"CF: costo fijo · CV: costo variable","condicion":"Para un nivel de producción definido."},
+      {"tipo":"Empresa","nombre":"Beneficio económico","expresion":"B = IT−CT","variables":"IT: ingreso total · CT: costo total","condicion":"B puede ser positivo, cero o negativo."},
+      {"tipo":"Producción","nombre":"Productividad laboral","expresion":"Productividad = producción/horas de trabajo","variables":"Producción y trabajo del mismo periodo","condicion":"Indicador medio."},
+      {"tipo":"Moneda","nombre":"Multiplicador monetario simple","expresion":"m = 1/rr","variables":"rr: coeficiente de reservas","condicion":"Modelo simplificado sin fugas de efectivo."}
+    ],
+    "civica": [
+      {"tipo":"Jerarquía","nombre":"Jerarquía normativa","expresion":"Constitución → ley → reglamento → norma administrativa","variables":"Cada nivel se subordina al superior","condicion":"Una norma inferior no puede contradecir a otra superior."},
+      {"tipo":"Estado","nombre":"Separación de poderes","expresion":"Legislativo + Ejecutivo + Judicial","variables":"Legisla · gobierna · administra justicia","condicion":"Existen organismos constitucionalmente autónomos."},
+      {"tipo":"Garantía","nombre":"Hábeas corpus","expresion":"Protege libertad individual y derechos conexos","variables":"Ante amenaza o vulneración","condicion":"Proceso constitucional."},
+      {"tipo":"Garantía","nombre":"Acción de amparo","expresion":"Protege derechos constitucionales distintos de libertad y datos","variables":"Derecho amenazado o vulnerado","condicion":"No reemplaza al hábeas corpus ni hábeas data."},
+      {"tipo":"Garantía","nombre":"Hábeas data","expresion":"Protege acceso, control y rectificación de información personal","variables":"Datos en registros públicos o privados","condicion":"También tutela acceso a información pública."},
+      {"tipo":"Ciudadanía","nombre":"Participación ciudadana","expresion":"Elegir + fiscalizar + proponer + decidir","variables":"Derechos y mecanismos democráticos","condicion":"Se ejerce dentro del marco constitucional."},
+      {"tipo":"Gobierno","nombre":"Descentralización","expresion":"Gobierno nacional ↔ regional ↔ local","variables":"Competencias y autonomía por nivel","condicion":"Autonomía no significa soberanía."},
+      {"tipo":"Derechos","nombre":"Estructura de un derecho","expresion":"Titular + contenido + obligación + garantía","variables":"Quién, qué protege, quién debe respetar, cómo se defiende","condicion":"Permite distinguir derecho, deber y mecanismo de protección."}
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+UNIPREP 2 - INFORME DE REVISIÓN TÉCNICA
+Fecha: 17 de agosto de 2026
+
+RESULTADO
+El paquete quedó preparado para publicarse como aplicación web estática en
+Vercel, con Supabase como servicio de autenticación y datos, y una función
+privada opcional para el Tutor IA.
+
+CONTENIDO CONSERVADO
+- 21 bancos académicos activos.
+- 162 temas.
+- 6480 preguntas organizadas por curso, tema y dificultad.
+- 100 preguntas CEPRE-UNAMAD.
+- 260 preguntas en cuatro simulacros de referencia.
+- Biblioteca, videos, formulario, orientación vocacional, agenda, perfil,
+  racha, XP, estadísticas, ranking, PWA y Tutor académico.
+
+CORRECCIONES REALIZADAS
+1. La Biblioteca, teoría, videos y evaluaciones ahora cargan mediante un script
+   explícito y determinista, sin depender de una inyección tardía.
+2. El reproductor ahora acepta YouTube, Drive y videos directos .mp4, .webm y
+   .ogg, tal como indica json/videos-cursos.json.
+3. Los accesos rápidos de la PWA inicializan correctamente Práctica, Tutor y
+   Orientación vocacional.
+4. El service worker ya no puede guardar privacy.html, terms.html o
+   delete-account.html como si fueran la página principal.
+5. Se actualizó la versión de caché para evitar que los usuarios reciban una
+   versión antigua después del despliegue.
+6. La conexión a Supabase falla de forma controlada si la librería externa no
+   carga, en lugar de detener el resto del JavaScript.
+7. La búsqueda superior ahora filtra cursos y temas al presionar Enter.
+8. La eliminación de cuenta ya no depende de variables globales creadas por
+   IDs del HTML y no borra las preferencias locales de otras cuentas.
+9. La función /api/tutor controla también cuerpos JSON inválidos.
+10. Se agregó vercel.json con cabeceras de producción y caché correcta.
+11. Se agregó una migración completa de Supabase con tablas, disparador de
+    perfiles, RLS, ranking privado y eliminación segura de cuenta.
+12. Se agregó PUBLICAR_UNIPREP_PASO_A_PASO.txt.
+
+PRUEBAS SUPERADAS
+- Sintaxis válida en todos los archivos JavaScript.
+- JSON y manifest válidos.
+- Sin IDs duplicados en los HTML.
+- Sin rutas locales inexistentes.
+- 107 recursos principales respondieron correctamente mediante servidor HTTP.
+- 6480 preguntas JSON verificadas: respuesta dentro del rango, pregunta no
+  vacía, explicación o solución disponible e IDs únicos.
+- Tutor API: método inválido 405, configuración ausente 503, JSON inválido 400
+  y respuesta simulada correcta 200.
+- Clave de Supabase expuesta en el navegador: solamente sb_publishable_.
+- No se encontró service_role, sb_secret_ ni OPENAI_API_KEY escrita en el
+  frontend.
+
+ACCIONES MANUALES OBLIGATORIAS
+1. Ejecutar supabase/UNIPREP_CONFIGURAR_SUPABASE.sql en Supabase SQL Editor.
+2. Publicar en Vercel y configurar Site URL y Redirect URLs en Supabase.
+3. Agregar las variables del Tutor en Vercel si se desea activar la IA.
+4. Publicar un correo real de soporte junto al enlace oficial.
+5. Verificar que cada carpeta de Google Drive sea visible para lectores.
+
+CONTENIDO PENDIENTE, NO ERROR
+json/videos-cursos.json contiene 71 ubicaciones: 31 tienen enlace y 40 muestran
+“Videoclase en preparación”. Esas entradas pueden completarse después sin
+modificar la programación de UniPrep.

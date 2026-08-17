@@ -1,0 +1,240 @@
+{
+  "version": "2026.8.3-chaside-98",
+  "nombre": "CHASIDE 98 — adaptación digital UniPrep",
+  "descripcion": "Cuestionario orientativo de 98 respuestas dicotómicas basado en la estructura de siete áreas CHASIDE.",
+  "estructura": {
+    "total": 98,
+    "respuesta": "Si/No",
+    "interesesPorArea": 10,
+    "aptitudesPorArea": 4,
+    "areas": 7
+  },
+  "aviso": "Esta es una adaptación digital orientativa con ítems redactados por UniPrep. Conserva la estructura CHASIDE de 98 preguntas, pero no sustituye la aplicación ni la interpretación de un profesional de psicología u orientación vocacional.",
+  "fuenteEstructura": {
+    "nombre": "Facultad de Ciencias de la Administración — UNER",
+    "url": "https://www.fcad.uner.edu.ar/extension/test-de-orientacion-vocacional-chaside/",
+    "uso": "Referencia universitaria sobre el cuestionario CHASIDE de 98 preguntas"
+  },
+  "areas": {
+    "C": {
+      "nombre": "Administrativas y Contables",
+      "icono": "▦",
+      "color": "#7c8dff",
+      "resumen": "Te atraen la organización, los negocios, las finanzas, la planificación y el uso responsable de recursos.",
+      "fortalezas": ["Organización", "Cálculo", "Supervisión", "Toma de decisiones"]
+    },
+    "H": {
+      "nombre": "Humanísticas, Sociales y Jurídicas",
+      "icono": "§",
+      "color": "#ff9f6e",
+      "resumen": "Te interesan las personas, la sociedad, la comunicación, la educación, la justicia y el análisis de problemas humanos.",
+      "fortalezas": ["Comunicación", "Argumentación", "Empatía", "Conciliación"]
+    },
+    "A": {
+      "nombre": "Artísticas",
+      "icono": "✦",
+      "color": "#c084fc",
+      "resumen": "Buscas crear, expresar ideas y producir experiencias mediante recursos visuales, sonoros, escénicos o narrativos.",
+      "fortalezas": ["Creatividad", "Sensibilidad estética", "Imaginación", "Expresión"]
+    },
+    "S": {
+      "nombre": "Medicina y Ciencias de la Salud",
+      "icono": "+",
+      "color": "#ff6f9f",
+      "resumen": "Te motiva proteger la vida, comprender el organismo, prevenir problemas y acompañar la recuperación de personas o animales.",
+      "fortalezas": ["Servicio", "Observación clínica", "Paciencia", "Precisión"]
+    },
+    "I": {
+      "nombre": "Ingeniería y Computación",
+      "icono": "⚙",
+      "color": "#45d6d0",
+      "resumen": "Disfrutas diseñar, construir, programar y mejorar sistemas mediante lógica, matemáticas, tecnología y soluciones prácticas.",
+      "fortalezas": ["Lógica", "Diseño técnico", "Resolución de problemas", "Innovación"]
+    },
+    "D": {
+      "nombre": "Defensa y Seguridad",
+      "icono": "◇",
+      "color": "#ffd166",
+      "resumen": "Te interesa prevenir riesgos, responder a emergencias, proteger a la población y actuar con disciplina y responsabilidad.",
+      "fortalezas": ["Disciplina", "Decisión", "Autocontrol", "Trabajo coordinado"]
+    },
+    "E": {
+      "nombre": "Ciencias Exactas y Agrarias",
+      "icono": "⌬",
+      "color": "#55d58a",
+      "resumen": "Te atrae investigar la naturaleza mediante matemáticas y experimentación, así como trabajar con ambiente, agricultura y recursos vivos.",
+      "fortalezas": ["Investigación", "Análisis científico", "Precisión", "Curiosidad"]
+    }
+  },
+  "bloques": {
+    "C": {
+      "intereses": [
+        "¿Te gustaría organizar el presupuesto y los recursos de un proyecto?",
+        "¿Disfrutarías revisar ingresos, gastos y resultados de una organización?",
+        "¿Te interesa coordinar agendas, tareas y responsabilidades de un equipo?",
+        "¿Te imaginarías administrando tu propio negocio o emprendimiento?",
+        "¿Te agrada clasificar documentos o datos para encontrarlos con rapidez?",
+        "¿Te gustaría planificar metas comerciales y comprobar si se cumplieron?",
+        "¿Te interesa comparar precios, costos y beneficios antes de decidir?",
+        "¿Disfrutarías supervisar que un proceso se realice en orden y a tiempo?",
+        "¿Te gustaría aprender contabilidad, finanzas o gestión empresarial?",
+        "¿Te atrae negociar acuerdos que beneficien a distintas personas?"
+      ],
+      "aptitudes": [
+        "¿Sueles organizar varias tareas sin olvidar los plazos importantes?",
+        "¿Trabajas con números y registros manteniendo buena precisión?",
+        "¿Las personas confían en ti para cuidar dinero, materiales o información?",
+        "¿Puedes decidir cómo distribuir recursos cuando son limitados?"
+      ]
+    },
+    "H": {
+      "intereses": [
+        "¿Te interesa comprender cómo la historia influye en la sociedad actual?",
+        "¿Disfrutas debatir sobre derechos, justicia y convivencia ciudadana?",
+        "¿Te gustaría escribir artículos, discursos o textos para informar a otros?",
+        "¿Te atrae enseñar, orientar o explicar ideas a diferentes personas?",
+        "¿Investigarías las causas de un problema social de tu comunidad?",
+        "¿Te interesa aprender idiomas y mejorar tu manera de comunicarte?",
+        "¿Te gustaría ayudar a resolver conflictos mediante el diálogo?",
+        "¿Disfrutas conocer culturas, costumbres y formas distintas de pensar?",
+        "¿Te atrae defender una posición utilizando argumentos y evidencias?",
+        "¿Participarías en proyectos educativos o de desarrollo comunitario?"
+      ],
+      "aptitudes": [
+        "¿Puedes expresar una idea compleja con claridad al hablar o escribir?",
+        "¿Escuchas con atención y comprendes puntos de vista diferentes al tuyo?",
+        "¿Relacionas con facilidad hechos históricos, sociales y políticos?",
+        "¿Sueles conciliar a personas cuando existe un desacuerdo?"
+      ]
+    },
+    "A": {
+      "intereses": [
+        "¿Te gustaría crear dibujos, identidades visuales o piezas de diseño?",
+        "¿Disfrutarías aprender música, canto o producción de sonido?",
+        "¿Te atrae contar historias mediante fotografía, video o cine?",
+        "¿Participarías en teatro, danza u otra forma de expresión escénica?",
+        "¿Te gustaría escribir relatos, poesía, guiones o contenido creativo?",
+        "¿Disfrutas combinar colores, formas y espacios para producir armonía?",
+        "¿Te interesa crear contenido digital que emocione o comunique una idea?",
+        "¿Te atrae elaborar objetos artísticos o artesanales con tus manos?",
+        "¿Sueles analizar qué hace atractiva una imagen, canción o presentación?",
+        "¿Te gustaría desarrollar propuestas originales sin una única respuesta correcta?"
+      ],
+      "aptitudes": [
+        "¿Puedes imaginar con facilidad cómo quedará un diseño antes de realizarlo?",
+        "¿Notas detalles de color, sonido, ritmo o composición que otros no perciben?",
+        "¿Sueles proponer ideas originales cuando un grupo necesita crear algo?",
+        "¿Tienes paciencia para perfeccionar una obra hasta lograr el efecto deseado?"
+      ]
+    },
+    "S": {
+      "intereses": [
+        "¿Te gustaría ayudar a una persona enferma o lesionada durante su recuperación?",
+        "¿Te interesa estudiar cómo funcionan los órganos y sistemas del cuerpo?",
+        "¿Participarías en campañas para prevenir enfermedades en tu comunidad?",
+        "¿Te atrae acompañar a niños, adultos mayores o personas vulnerables?",
+        "¿Te gustaría realizar análisis de laboratorio para apoyar un diagnóstico?",
+        "¿Te interesa conocer cómo la alimentación influye en la salud?",
+        "¿Disfrutarías aprender sobre emociones, conducta y bienestar mental?",
+        "¿Te gustaría enseñar hábitos de higiene, prevención y vida saludable?",
+        "¿Te interesa cuidar animales y contribuir a su bienestar sanitario?",
+        "¿Participarías en una investigación para mejorar un tratamiento médico?"
+      ],
+      "aptitudes": [
+        "¿Puedes mantener la calma cuando alguien necesita ayuda inmediata?",
+        "¿Observas pequeños cambios físicos o emocionales en otras personas?",
+        "¿Tienes paciencia y empatía para acompañar procesos de recuperación largos?",
+        "¿Comprendes y recuerdas con facilidad contenidos biológicos o de salud?"
+      ]
+    },
+    "I": {
+      "intereses": [
+        "¿Te gustaría construir, reparar o mejorar una máquina o dispositivo?",
+        "¿Disfrutarías programar una aplicación que resuelva una necesidad real?",
+        "¿Te atraen los problemas de matemática aplicados a situaciones técnicas?",
+        "¿Te interesa conocer cómo funcionan motores, circuitos o estructuras?",
+        "¿Te gustaría diseñar edificios, puentes o sistemas de transporte?",
+        "¿Participarías en un proyecto de robótica, electrónica o automatización?",
+        "¿Disfrutas encontrar la causa de una falla técnica y corregirla?",
+        "¿Te interesa interpretar planos, diagramas o modelos tridimensionales?",
+        "¿Te gustaría experimentar con materiales para aumentar su resistencia?",
+        "¿Te atrae optimizar un proceso para hacerlo más rápido y eficiente?"
+      ],
+      "aptitudes": [
+        "¿Resuelves problemas siguiendo pasos lógicos y comprobando cada resultado?",
+        "¿Puedes imaginar cómo encajan las piezas de un mecanismo o estructura?",
+        "¿Aprendes con facilidad procedimientos matemáticos o tecnológicos?",
+        "¿Mantienes la concentración al trabajar con instrucciones técnicas precisas?"
+      ]
+    },
+    "D": {
+      "intereses": [
+        "¿Te gustaría participar en acciones de rescate o protección civil?",
+        "¿Te interesa aprender protocolos para prevenir accidentes y amenazas?",
+        "¿Investigarías evidencias para esclarecer un delito o incidente?",
+        "¿Te atrae colaborar en la respuesta organizada ante una emergencia?",
+        "¿Te gustaría contribuir al orden y la seguridad de una comunidad?",
+        "¿Te interesa estudiar estrategia, defensa o gestión de riesgos?",
+        "¿Aceptarías una formación física exigente para proteger a otras personas?",
+        "¿Te gustaría aprender técnicas de primeros auxilios y evacuación?",
+        "¿Te interesa conocer las normas que regulan la seguridad pública?",
+        "¿Considerarías trabajar en una institución de servicio uniformado?"
+      ],
+      "aptitudes": [
+        "¿Cumples normas y procedimientos incluso cuando nadie te supervisa?",
+        "¿Puedes tomar decisiones rápidas sin perder el control ante la presión?",
+        "¿Detectas riesgos en un lugar antes de que se conviertan en un problema?",
+        "¿Trabajas coordinadamente y respetas una cadena clara de responsabilidades?"
+      ]
+    },
+    "E": {
+      "intereses": [
+        "¿Te interesa investigar fenómenos de física, química o matemática?",
+        "¿Disfrutarías estudiar plantas, animales y relaciones de los ecosistemas?",
+        "¿Te gustaría mejorar cultivos mediante ciencia y tecnología agraria?",
+        "¿Te atrae buscar soluciones para reducir la contaminación ambiental?",
+        "¿Disfrutas interpretar gráficos, mediciones y datos experimentales?",
+        "¿Te gustaría recoger muestras de suelo, agua o seres vivos en campo?",
+        "¿Te interesa investigar energías renovables y uso sostenible de recursos?",
+        "¿Trabajarías en un laboratorio realizando pruebas cuidadosamente controladas?",
+        "¿Te gustaría comprender el clima, la geología o los cambios del planeta?",
+        "¿Te atrae formular hipótesis y comprobarlas mediante experimentos?"
+      ],
+      "aptitudes": [
+        "¿Puedes explicar un fenómeno natural usando relaciones de causa y efecto?",
+        "¿Realizas mediciones o experimentos respetando detalles y condiciones?",
+        "¿Clasificas información científica y encuentras patrones con facilidad?",
+        "¿Persistes en una investigación aunque el primer intento no resulte?"
+      ]
+    }
+  },
+  "carreras": {
+    "ingenieria-sistemas": { "I": 5, "E": 2, "C": 1 },
+    "ingenieria-software": { "I": 5, "A": 2, "C": 1 },
+    "ingenieria-civil": { "I": 5, "E": 2, "C": 1 },
+    "ingenieria-industrial": { "I": 4, "C": 4, "E": 2 },
+    "ingenieria-mecanica": { "I": 5, "E": 2 },
+    "ingenieria-mecatronica": { "I": 5, "E": 3 },
+    "ingenieria-electronica": { "I": 5, "E": 2 },
+    "ingenieria-biomedica": { "I": 4, "S": 4, "E": 2 },
+    "ingenieria-agroindustrial": { "I": 3, "E": 5, "C": 2 },
+    "medicina": { "S": 5, "E": 2, "H": 1 },
+    "enfermeria": { "S": 5, "H": 2 },
+    "psicologia": { "H": 4, "S": 4 },
+    "veterinaria": { "S": 4, "E": 4 },
+    "derecho": { "H": 5, "D": 2 },
+    "educacion": { "H": 5, "A": 1 },
+    "comunicacion": { "H": 4, "A": 4 },
+    "arquitectura": { "A": 4, "I": 4 },
+    "diseno": { "A": 5, "H": 2, "I": 1 },
+    "administracion": { "C": 5, "H": 2 },
+    "contabilidad": { "C": 5, "E": 2 },
+    "economia": { "C": 5, "E": 4 },
+    "marketing": { "C": 4, "A": 3, "H": 2 },
+    "ingenieria-ambiental": { "E": 5, "I": 3 },
+    "biologia": { "E": 5, "S": 2 },
+    "quimica": { "E": 5, "I": 2 },
+    "agronomia": { "E": 5, "I": 2, "C": 1 },
+    "turismo": { "H": 4, "C": 2, "A": 2 }
+  }
+}

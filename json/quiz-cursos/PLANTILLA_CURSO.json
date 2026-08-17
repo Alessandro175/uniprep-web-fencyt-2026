@@ -1,0 +1,32 @@
+{
+  "courseId": "nombre-del-curso",
+  "courseName": "Nombre del curso",
+  "version": "2026.3-revision-docente",
+  "temas": [
+    {
+      "id": "tema-1",
+      "titulo": "Título del bloque temático",
+      "teoria": "Síntesis teórica del bloque.",
+      "puntos": ["Idea central 1", "Idea central 2"],
+      "niveles": {
+        "basico": [
+          {
+            "id": "CUR-B-001",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "basico",
+            "tema": "Tema específico",
+            "competencia": "Aplicar un procedimiento directo",
+            "pregunta": "Escribe aquí la pregunta.",
+            "alternativas": ["Alternativa A", "Alternativa B", "Alternativa C", "Alternativa D"],
+            "respuesta": 1,
+            "solucion": "Procedimiento paso a paso.",
+            "explicacion": "Concepto utilizado. La respuesta usa 0=A, 1=B, 2=C, 3=D.",
+            "pasosMinimos": 1
+          }
+        ],
+        "intermedio": [],
+        "avanzado": []
+      }
+    }
+  ]
+}

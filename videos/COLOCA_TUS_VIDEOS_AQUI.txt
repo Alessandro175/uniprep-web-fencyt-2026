@@ -1,0 +1,6 @@
+Puedes copiar archivos MP4 dentro de esta carpeta.
+
+Después abre json/videos-cursos.json y usa una ruta como:
+videos/algebra-factorizacion.mp4
+
+También puedes colocar un enlace de YouTube o un enlace público.

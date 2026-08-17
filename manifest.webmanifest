@@ -1,0 +1,61 @@
+{
+  "name": "UniPrep 2 - Preparación inteligente",
+  "short_name": "UniPrep 2",
+  "description": "Práctica, simulacros, analítica y recursos para el ingreso universitario.",
+  "lang": "es-PE",
+  "id": "pe.uniprep.app",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#060817",
+  "theme_color": "#080c20",
+  "categories": ["education", "productivity"],
+  "icons": [
+    {
+      "src": "assets/uniprep-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/uniprep-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/uniprep-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Practicar",
+      "short_name": "Práctica",
+      "url": "./?screen=ejercicios"
+    },
+    {
+      "name": "Simulacros",
+      "short_name": "Examen",
+      "url": "./?screen=exams"
+    },
+    {
+      "name": "Mis cursos",
+      "short_name": "Cursos",
+      "url": "./?screen=cursos"
+    },
+    {
+      "name": "Tutor académico",
+      "short_name": "Tutor",
+      "url": "./?screen=tutor"
+    },
+    {
+      "name": "Orientación vocacional",
+      "short_name": "Mi carrera",
+      "url": "./?screen=vocacional"
+    }
+  ]
+}

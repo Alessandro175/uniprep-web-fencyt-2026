@@ -1,0 +1,98 @@
+UNIPREP 2 - PUBLICACIÓN PASO A PASO EN VERCEL
+Versión revisada: 17/08/2026
+
+IMPORTANTE
+No abras index.html con doble clic. Para probarlo localmente usa Live Server.
+No subas una clave OPENAI_API_KEY dentro de ningún HTML, JavaScript o repositorio.
+
+PASO 1. CONFIGURAR LA BASE DE DATOS
+1. Entra al proyecto de Supabase usado por UniPrep.
+2. Abre SQL Editor.
+3. Abre el archivo supabase/UNIPREP_CONFIGURAR_SUPABASE.sql.
+4. Copia todo su contenido, pégalo en SQL Editor y pulsa Run.
+5. Debe aparecer el mensaje:
+   UniPrep: tablas, perfiles, RLS, ranking y eliminación configurados.
+
+Este script crea o completa:
+- profiles
+- course_progress
+- activities
+- agenda_events
+- perfil automático al registrar una cuenta
+- políticas RLS por usuario
+- ranking sin correos
+- eliminación segura de la propia cuenta
+
+PASO 2. SUBIR LA CARPETA A GITHUB
+1. Abre GitHub Desktop.
+2. Usa File > Add local repository y selecciona esta carpeta.
+3. Si aún no es repositorio, elige Create a repository.
+4. Haz un commit, por ejemplo: UniPrep web lista para publicar.
+5. Pulsa Publish repository.
+
+index.html debe quedar en la raíz del repositorio, junto a vercel.json.
+
+PASO 3. CREAR EL PROYECTO EN VERCEL
+1. Entra a https://vercel.com e inicia sesión con GitHub.
+2. Pulsa Add New > Project.
+3. Importa el repositorio de UniPrep.
+4. Framework Preset: Other.
+5. Root Directory: la carpeta que contiene index.html.
+6. Build Command: vacío.
+7. Output Directory: vacío.
+8. Pulsa Deploy.
+
+PASO 4. CONFIGURAR VARIABLES DEL TUTOR IA
+En Vercel abre Project > Settings > Environment Variables y agrega:
+
+SUPABASE_URL
+https://dpwhcsrbtrcbyqryedfp.supabase.co
+
+SUPABASE_PUBLISHABLE_KEY
+Usa la misma clave sb_publishable_ que aparece en js/supabase.js.
+
+OPENAI_API_KEY
+Tu clave privada de OpenAI. Esta variable es opcional: si no la configuras,
+el Tutor mantiene sus herramientas locales, pero no genera respuestas con IA.
+
+OPENAI_MODEL
+gpt-5.6-luna
+
+Después de agregar o cambiar variables, realiza un Redeploy.
+
+PASO 5. CONFIGURAR LAS URL DE SUPABASE
+1. Copia el dominio entregado por Vercel, por ejemplo:
+   https://uniprep.vercel.app
+2. En Supabase abre Authentication > URL Configuration.
+3. En Site URL coloca el dominio exacto de producción.
+4. En Redirect URLs agrega:
+   https://TU-DOMINIO.vercel.app/**
+   http://127.0.0.1:5500/**
+   http://localhost:5500/**
+
+PASO 6. PRUEBA OBLIGATORIA
+Haz estas pruebas desde una ventana incógnita o desde otro celular:
+1. Crear una cuenta.
+2. Iniciar sesión.
+3. Verificar nombre, universidad, carrera y grupo.
+4. Abrir Biblioteca y un enlace de Drive.
+5. Abrir un curso, teoría, video y práctica por nivel.
+6. Contestar una pregunta correcta y una incorrecta.
+7. Terminar un simulacro y revisar la corrección.
+8. Verificar XP, precisión, racha, progreso y ranking.
+9. Crear un evento en Agenda.
+10. Cerrar sesión e ingresar nuevamente.
+11. Probar Olvidé mi contraseña.
+12. Probar la instalación PWA desde el navegador.
+
+PASO 7. ANTES DE COMPARTIRLO PÚBLICAMENTE
+- Publica un correo real de soporte junto al enlace oficial de UniPrep.
+- Revisa que los archivos de Google Drive estén en modo lector para quienes
+  tengan el enlace.
+- Las entradas vacías de json/videos-cursos.json muestran correctamente
+  Videoclase en preparación. Puedes completarlas después sin cambiar la app.
+- Nunca coloques service_role, sb_secret_ ni OPENAI_API_KEY en el navegador.
+
+ACTUALIZACIONES
+Cuando cambies el proyecto, haz commit y push en GitHub. Vercel volverá a
+publicarlo automáticamente.
