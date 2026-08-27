@@ -296,15 +296,10 @@
   }
 
   function reproducirClaseActual() {
-    const reproductor = document.querySelector(
-      "#lesson-video-container iframe, #lesson-video-container video"
-    );
-    if (reproductor) {
-      reproductor.scrollIntoView({behavior:"smooth",block:"center"});
-      reproductor.focus();
-      if (reproductor.tagName === "VIDEO") {
-        reproductor.play().catch(() => {});
-      }
+    const iframe = document.querySelector("#lesson-video-container iframe");
+    if (iframe) {
+      iframe.scrollIntoView({behavior:"smooth",block:"center"});
+      iframe.focus();
       return;
     }
     mostrarToast("La videoclase aún no tiene enlace. La teoría, el Drive y el banco de práctica sí están disponibles.");
@@ -412,6 +407,14 @@
   window.abrirPlanEstudios = abrirPlanEstudios;
   window.cerrarPlanEstudios = cerrarPlanEstudios;
   window.guardarPlanEstudios = guardarPlanEstudios;
+
+  const moduloAprendizaje = document.createElement("script");
+  moduloAprendizaje.src = "js/learning-content.js?v=2026.13.0";
+  moduloAprendizaje.onload = () => {
+    if (typeof window.inicializarModulosAprendizaje === "function") window.inicializarModulosAprendizaje();
+    cargarUltimoCurso();
+  };
+  document.head.appendChild(moduloAprendizaje);
 
   document.addEventListener("DOMContentLoaded", () => {
     renderizarCursos();

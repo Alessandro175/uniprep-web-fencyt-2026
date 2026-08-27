@@ -16,7 +16,7 @@ const TITULOS_PANTALLAS = {
   ranking: "Ranking",
   agenda: "Agenda",
   vocacional: "Orientación vocacional",
-  tutor: "Tutor académico",
+  tutor: "Tutor con IA",
   perfil: "Mi perfil",
   notificaciones: "Notificaciones"
 };

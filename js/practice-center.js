@@ -50,7 +50,7 @@
   function iniciar() {
     const badge = document.getElementById("practice-nav-badge");
     if (badge) {
-      badge.textContent = "6.5K";
+      badge.textContent = "6,480";
       badge.title = "6,480 preguntas disponibles";
     }
     renderizarInicio();
@@ -503,6 +503,25 @@
     return typeof valor === "string" ? valor : JSON.stringify(valor, null, 2);
   }
 
+  function enunciadoClaro(pregunta) {
+    const original = String(pregunta?.pregunta ?? pregunta?.q ?? "");
+    if (typeof window.UniprepUGEL?.limpiarEnunciado === "function") {
+      return window.UniprepUGEL.limpiarEnunciado(original, pregunta?.tema || "");
+    }
+    const sinNivel = original.replace(/^\s*\[[^\]]+\]\s*/, "").trim();
+    const prefijoTema = `Tema ${pregunta?.tema || ""}.`;
+    return sinNivel.toLowerCase().startsWith(prefijoTema.toLowerCase())
+      ? sinNivel.slice(prefijoTema.length).trim()
+      : sinNivel;
+  }
+
+  function usarOpcionesCompactas(opciones) {
+    if (typeof window.UniprepUGEL?.opcionesCompactas === "function") {
+      return window.UniprepUGEL.opcionesCompactas(opciones);
+    }
+    return Array.isArray(opciones) && opciones.every(opcion => String(opcion).length <= 34);
+  }
+
   function actualizarReloj() {
     const reloj = document.getElementById("practice-clock");
     if (reloj) reloj.textContent = `⏱ ${formatearTiempo(segundosSesion())}`;
@@ -514,6 +533,8 @@
     const pregunta = sesion.preguntas[sesion.indice];
     const nivel = NIVELES[pregunta.nivel] || {corto:pregunta.nivel || "Mixto"};
     const progreso = Math.round((sesion.indice + 1) / sesion.preguntas.length * 100);
+    const enunciado = enunciadoClaro(pregunta);
+    const compactas = usarOpcionesCompactas(pregunta.alternativas || []);
     sesion.respondida = false;
     sesion.inicioPregunta = Date.now();
 
@@ -525,23 +546,28 @@
           <div class="practice-clock" id="practice-clock">⏱ ${formatearTiempo(segundosSesion())}</div>
         </div>
 
-        <article class="practice-question-card">
+        <article class="practice-question-card" tabindex="-1" aria-labelledby="practice-question-title">
           <button class="practice-favorite ${esFavorita(pregunta)?"active":""}" id="practice-favorite-btn" type="button" onclick="alternarFavoritaPractica()" aria-label="Guardar como favorita">${esFavorita(pregunta)?"★":"☆"}</button>
+          <div class="practice-question-heading">
+            <div><span class="practice-question-number">PREGUNTA ${sesion.indice+1}</span><span class="practice-question-guide">Lee con calma y selecciona una sola alternativa.</span></div>
+            <div class="practice-question-tools"><button class="practice-read-button" type="button" onclick="leerPreguntaVisible()">🔊 Leer</button><button class="practice-hint-button" type="button" onclick="consultarTutorPreguntaActual('pista')">✦ Pista con IA</button></div>
+          </div>
           <div class="practice-question-tags"><span class="practice-tag">${escapar(pregunta.curso)}</span><span class="practice-tag">${escapar(pregunta.tema)}</span><span class="practice-tag level">${escapar(nivel.corto)}</span>${pregunta.universidadReferencia?`<span class="practice-tag">Estilo ${escapar(pregunta.universidadReferencia)}</span>`:""}</div>
           ${estimuloPregunta(pregunta) ? `<div class="practice-question-stimulus"><b>Material de lectura</b><p>${escapar(estimuloPregunta(pregunta))}</p></div>` : ""}
-          <p class="practice-question-text">${escapar(pregunta.pregunta)}</p>
+          <p class="practice-question-text" id="practice-question-title">${escapar(enunciado)}</p>
         </article>
 
-        <div class="practice-options" id="practice-options">
-          ${(pregunta.alternativas||[]).map((opcion,indice)=>`<button class="practice-option" type="button" onclick="responderPractica(${indice})"><span class="practice-option-letter">${"ABCDE"[indice]||indice+1}</span><span class="practice-option-text">${escapar(opcion)}</span></button>`).join("")}
+        <div class="practice-options ${compactas?"compact-options":""}" id="practice-options" role="group" aria-label="Alternativas de la pregunta">
+          ${(pregunta.alternativas||[]).map((opcion,indice)=>`<button class="practice-option" type="button" onclick="responderPractica(${indice})" aria-label="Alternativa ${"ABCDE"[indice]||indice+1}: ${escapar(opcion)}"><span class="practice-option-letter">${"ABCDE"[indice]||indice+1}</span><span class="practice-option-text">${escapar(opcion)}</span></button>`).join("")}
         </div>
 
-        <div class="practice-feedback" id="practice-feedback"></div>
+        <div class="practice-feedback" id="practice-feedback" role="status" aria-live="polite"></div>
         <div class="practice-session-actions">
           <div class="practice-session-stats"><span class="practice-mini-stat"><b id="practice-correct-count">${sesion.correctas}</b> correctas</span><span class="practice-mini-stat"><b id="practice-wrong-count">${sesion.incorrectas}</b> errores</span><span class="practice-mini-stat"><b id="practice-xp-count">+${sesion.xp}</b> XP</span></div>
           <button class="practice-main-btn" id="practice-next-btn" type="button" onclick="siguientePreguntaPractica()" disabled>${sesion.indice===sesion.preguntas.length-1?"Ver resultado":"Siguiente pregunta →"}</button>
         </div>
       </div>`;
+    requestAnimationFrame(() => raiz()?.querySelector(".practice-question-card")?.focus({preventScroll:true}));
   }
 
   function responderPractica(indiceSeleccionado) {
@@ -569,7 +595,7 @@
 
     const feedback = document.getElementById("practice-feedback");
     feedback.className = `practice-feedback show ${correcto?"good":"bad"}`;
-    feedback.innerHTML = `<h3>${correcto?`✓ ¡Correcto! +${xp} XP`:`✕ Aún no. La respuesta es ${"ABCDE"[indiceCorrecto]||indiceCorrecto+1}.`}</h3>${pregunta.solucion?`<p><b>Solución:</b> ${escapar(pregunta.solucion)}</p>`:""}<p><b>Explicación:</b> ${escapar(pregunta.explicacion||"Revisa la teoría y vuelve a intentarlo.")}</p><button class="practice-tutor-btn" type="button" onclick="consultarTutorPreguntaActual()">💡 Entender con el Tutor académico</button>`;
+    feedback.innerHTML = `<h3>${correcto?`✓ ¡Correcto! +${xp} XP`:`✕ Aún no. La respuesta es ${"ABCDE"[indiceCorrecto]||indiceCorrecto+1}.`}</h3>${pregunta.solucion?`<p><b>Solución paso a paso:</b> ${escapar(pregunta.solucion)}</p>`:""}<p><b>¿Por qué?</b> ${escapar(pregunta.explicacion||"Revisa la teoría y vuelve a intentarlo.")}</p><button class="practice-tutor-btn" type="button" onclick="consultarTutorPreguntaActual('explica')">✦ Profundizar con el Tutor IA</button>`;
 
     document.getElementById("practice-correct-count").textContent = sesion.correctas;
     document.getElementById("practice-wrong-count").textContent = sesion.incorrectas;
@@ -644,10 +670,14 @@
     renderizarPregunta();
   }
 
-  function consultarTutorPreguntaActual() {
+  function consultarTutorPreguntaActual(modo = "explica") {
     const pregunta = estado.sesion?.preguntas?.[estado.sesion.indice];
     if (!pregunta || typeof window.abrirTutorConContexto !== "function") return;
-    window.abrirTutorConContexto({courseId:pregunta.courseId,tema:pregunta.tema,pregunta:pregunta.pregunta});
+    const enunciado = enunciadoClaro(pregunta);
+    const solicitud = modo === "pista"
+      ? `Dame una pista gradual para resolver esta pregunta sin decirme todavía la alternativa correcta: ${enunciado}`
+      : `Explícame esta pregunta paso a paso y ayúdame a comprobar la respuesta: ${enunciado}`;
+    window.abrirTutorConContexto({courseId:pregunta.courseId,tema:pregunta.tema,pregunta:solicitud,modo});
   }
 
   async function finalizarPractica() {
@@ -673,6 +703,7 @@
     try {
       if (typeof window.actualizarRachaEstudio === "function") await window.actualizarRachaEstudio();
       if (typeof window.registrarActividad === "function") await window.registrarActividad({tipo:"practica",titulo:sesion.titulo,descripcion:`${porcentaje}% · ${sesion.correctas}/${sesion.preguntas.length} correctas`,xpGanado:sesion.xp});
+      if (typeof window.registrarEventoPuntaje === "function") await window.registrarEventoPuntaje({tipo:"practica",puntos:sesion.xp,correctas:sesion.correctas,incorrectas:sesion.preguntas.length-sesion.correctas,total:sesion.preguntas.length,universidadId:window.obtenerSeleccionAdmision?.()?.universidadId||"general"});
       if (typeof window.registrarNotificacion === "function") window.registrarNotificacion({tipo:"practica",titulo:"Práctica completada",cuerpo:`Obtuviste ${porcentaje}% y ganaste ${sesion.xp} XP.`});
     } catch (error) {
       console.warn("La práctica terminó, pero no se pudo registrar una actividad secundaria:", error);
@@ -698,7 +729,7 @@
           <div class="practice-result-stat"><b>+${sesion.xp}</b><span>XP ganados</span></div>
           <div class="practice-result-stat"><b>${formatearTiempo(segundos)}</b><span>Tiempo</span></div>
         </div>
-        ${errores.length?`<div class="practice-section-head"><div><h2>Revisión de errores</h2><p>Estas preguntas ya están en tu ruta de mejora.</p></div><span>${errores.length} preguntas</span></div><div class="practice-review">${errores.map((respuesta,i)=>`<div class="practice-review-item"><strong>${i+1}. ${escapar(respuesta.pregunta.pregunta)}</strong><p><b>Respuesta correcta:</b> ${"ABCDE"[respuesta.pregunta.respuesta]}. ${escapar(respuesta.pregunta.alternativas[respuesta.pregunta.respuesta])}</p><p><b>Explicación:</b> ${escapar(respuesta.pregunta.explicacion||respuesta.pregunta.solucion||"")}</p></div>`).join("")}</div>`:`<div class="practice-empty card" style="margin-top:16px"><div class="practice-empty-icon">🏆</div><h2>Sesión perfecta</h2><p>No tuviste errores en esta práctica.</p></div>`}
+        ${errores.length?`<div class="practice-section-head"><div><h2>Revisión de errores</h2><p>Estas preguntas ya están en tu ruta de mejora.</p></div><span>${errores.length} preguntas</span></div><div class="practice-review">${errores.map((respuesta,i)=>`<div class="practice-review-item"><strong>${i+1}. ${escapar(enunciadoClaro(respuesta.pregunta))}</strong><p><b>Respuesta correcta:</b> ${"ABCDE"[respuesta.pregunta.respuesta]}. ${escapar(respuesta.pregunta.alternativas[respuesta.pregunta.respuesta])}</p><p><b>Explicación:</b> ${escapar(respuesta.pregunta.explicacion||respuesta.pregunta.solucion||"")}</p></div>`).join("")}</div>`:`<div class="practice-empty card" style="margin-top:16px"><div class="practice-empty-icon">🏆</div><h2>Sesión perfecta</h2><p>No tuviste errores en esta práctica.</p></div>`}
         <div class="practice-result-actions"><button class="practice-secondary-btn" type="button" onclick="repetirPractica()">Repetir sesión</button>${errores.length?`<button class="practice-secondary-btn" type="button" onclick="iniciarColeccionPractica('errores')">Repasar errores</button>`:""}<button class="practice-main-btn" type="button" onclick="renderizarCentroPractica()">Volver al centro</button></div>
       </div>`;
   }

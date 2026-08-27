@@ -14,12 +14,11 @@
     if(boton){boton.disabled=true;boton.textContent="Eliminando…"}
     try{
       if(!window.supabaseClient)throw new Error("No hay conexión con el servicio de cuentas.");
-      const ambito=window.uniprepStorage?.ambitoActual?.();
       const {data,error}=await window.supabaseClient.rpc("eliminar_mi_cuenta_uniprep");
       if(error)throw error;
       if(data!==true)throw new Error("El servidor no confirmó la eliminación.");
-      await window.supabaseClient.auth.signOut({scope:"local"}).catch(()=>{});
-      window.uniprepStorage?.limpiarCuenta?.(ambito);
+      localStorage.clear();
+      await window.supabaseClient.auth.signOut();
       location.replace("./");
     }catch(error){
       console.error(error);

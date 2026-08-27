@@ -40,14 +40,9 @@
   document.addEventListener("DOMContentLoaded",()=>{
     actualizarEstado();
     const pantalla=new URLSearchParams(location.search).get("screen");
-    if(pantalla)setTimeout(()=>{
-      if(pantalla==="ejercicios")window.abrirCentroPractica?.(null);
-      else if(pantalla==="tutor")window.abrirTutorAcademico?.(null);
-      else if(pantalla==="vocacional")window.abrirCentroVocacional?.(null);
-      else window.go?.(pantalla,null);
-    },550);
+    if(pantalla)setTimeout(()=>{if(pantalla==="ejercicios")window.abrirCentroPractica?.(null);else window.go?.(pantalla,null)},550);
     if("serviceWorker" in navigator&&/^https?:$/.test(location.protocol)){
-      navigator.serviceWorker.register("sw.js?v=2026.15.0").catch(error=>console.warn("No se pudo registrar el modo instalable:",error));
+      navigator.serviceWorker.register("sw.js?v=2026.20.0").catch(error=>console.warn("No se pudo registrar el modo instalable:",error));
     }
   });
 

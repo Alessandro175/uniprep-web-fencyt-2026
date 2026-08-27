@@ -1,0 +1,2 @@
+tema,dificultad,pregunta,alternativa_a,alternativa_b,alternativa_c,alternativa_d,alternativa_e,respuesta,solucion,universidad,subarea,competencia
+Organización y orden de la información,basico,"En una fila de 12 estudiantes, Ana ocupa el cuarto lugar desde el inicio. ¿Qué lugar ocupa desde el final?",7,8,9,10,,C,"Se usa puesto inicial + puesto final = total + 1. Entonces 4 + x = 13 y x = 9.",GENERAL,Matemática,Organiza información y aplica una relación directa

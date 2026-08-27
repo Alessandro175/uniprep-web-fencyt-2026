@@ -83,25 +83,6 @@
     localStorage.removeItem(clave(base));
   }
 
-  function limpiarCuenta(ambito = ambitoActual()) {
-    const sufijo = `::${seguro(ambito)}`;
-    const eliminarClaves = [];
-
-    for (let indice = 0; indice < localStorage.length; indice += 1) {
-      const nombre = localStorage.key(indice) || "";
-      if (
-        nombre.endsWith(sufijo) ||
-        /^sb-.+-auth-token$/.test(nombre) ||
-        nombre === "usuarioActivo" ||
-        nombre === "preuni_usuario_activo"
-      ) {
-        eliminarClaves.push(nombre);
-      }
-    }
-
-    eliminarClaves.forEach(nombre => localStorage.removeItem(nombre));
-  }
-
   function anunciarCambio() {
     const actual = ambitoActual();
     if (!ultimoAmbito) ultimoAmbito = actual;
@@ -111,7 +92,7 @@
     document.dispatchEvent(new CustomEvent("uniprep:storage-scope-change", {detail:{anterior, actual}}));
   }
 
-  window.uniprepStorage = {ambitoActual, clave, leer, guardar, leerTexto, guardarTexto, eliminar, limpiarCuenta, anunciarCambio};
+  window.uniprepStorage = {ambitoActual, clave, leer, guardar, leerTexto, guardarTexto, eliminar, anunciarCambio};
   document.addEventListener("uniprep:user-ready", anunciarCambio);
   window.addEventListener("storage", anunciarCambio);
 })();

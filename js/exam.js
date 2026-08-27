@@ -6,12 +6,18 @@
   const TIPOS_SIMULACRO = {
     general: {id:"general",nombre:"Simulacro General CEPRE",cantidad:100,duracion:180*60,etiqueta:"100 preguntas · 3 horas"},
     intensivo: {id:"intensivo",nombre:"Simulacro Intensivo #2",cantidad:50,duracion:90*60,etiqueta:"50 preguntas · 90 minutos"},
+    diagnostico_20: {id:"diagnostico_20",nombre:"Diagnóstico UniPrep · 20",cantidad:20,duracion:30*60,etiqueta:"20 preguntas · 30 minutos",bancoGeneral:true,fuente:"Banco multidisciplinario UniPrep",aviso:"Diagnóstico breve de entrenamiento; no es un examen oficial."},
+    reto_30: {id:"reto_30",nombre:"Reto Express · 30",cantidad:30,duracion:45*60,etiqueta:"30 preguntas · 45 minutos",bancoGeneral:true,fuente:"Banco adaptativo UniPrep",aviso:"Práctica de velocidad y precisión."},
+    unamad_100: {id:"unamad_100",nombre:"Ruta UNAMAD · 100",cantidad:100,duracion:180*60,etiqueta:"100 preguntas · 180 minutos",universidadId:"unamad",bancoGeneral:true,fuente:"Banco multidisciplinario UniPrep · Ruta UNAMAD",aviso:"Simulacro referencial elaborado por UniPrep; verifica el prospecto vigente."},
+    unsaac_80: {id:"unsaac_80",nombre:"Ruta UNSAAC · 80",cantidad:80,duracion:120*60,etiqueta:"80 preguntas · 120 minutos",universidadId:"unsaac",bancoGeneral:true,fuente:"Banco multidisciplinario UniPrep · Ruta UNSAAC",aviso:"Simulacro referencial; la distribución oficial varía según el área y la convocatoria."},
+    maraton_100: {id:"maraton_100",nombre:"Maratón Nacional · 100",cantidad:100,duracion:150*60,etiqueta:"100 preguntas · 150 minutos",bancoGeneral:true,fuente:"Banco nacional de entrenamiento UniPrep",aviso:"Modalidad exigente de práctica contrarreloj."},
     uni_aah: {id:"uni_aah",nombre:"UNI - Aptitud Académica y Humanidades",cantidad:100,duracion:180*60,etiqueta:"100 preguntas · 180 minutos",banco:"uni_aah"},
     uni_mat: {id:"uni_mat",nombre:"UNI - Matemática",cantidad:40,duracion:180*60,etiqueta:"40 preguntas · 180 minutos",banco:"uni_mat"},
     uni_fq: {id:"uni_fq",nombre:"UNI - Física y Química",cantidad:40,duracion:180*60,etiqueta:"40 preguntas · 180 minutos",banco:"uni_fq"},
     ucsm_general: {id:"ucsm_general",nombre:"UCSM - Examen General",cantidad:80,duracion:120*60,etiqueta:"80 preguntas · 120 minutos",banco:"ucsm_general"}
   };
   const CLAVE_ACTIVO = "uniprep_simulacro_activo";
+  const CLAVE_HISTORIAL = "uniprep_simulacros_historial_v2";
   let estado = null;
   let intervalo = null;
   let resultadoMostrado = null;
@@ -135,7 +141,7 @@
         alert("No se pudo cargar el banco de este simulacro. Recarga la página e inténtalo nuevamente.");
         return;
       }
-      const bancoActivo=simulacroEspecial?.preguntas || bancoDeRuta();
+      const bancoActivo=simulacroEspecial?.preguntas || (tipo.bancoGeneral ? banco : bancoDeRuta());
       const preguntasSeleccionadas=simulacroEspecial
         ? bancoActivo.slice(0,tipo.cantidad)
         : mezclar(bancoActivo).slice(0,Math.min(tipo.cantidad,bancoActivo.length));
@@ -147,9 +153,9 @@
         duracion: tipo.duracion,
         tipo: tipo.id,
         nombre: tipo.nombre,
-        fuente: simulacroEspecial?.fuente || seleccion?.fuente || "Banco general UniPrep",
-        avisoFuente: simulacroEspecial ? "Preguntas adaptadas para entrenamiento; no corresponden a una reproducción oficial." : "",
-        ruta: seleccion ? {universidad:seleccion.universidadCorta,grupo:seleccion.grupoId,cursos:seleccion.cursos} : null,
+        fuente: simulacroEspecial?.fuente || tipo.fuente || seleccion?.fuente || "Banco general UniPrep",
+        avisoFuente: simulacroEspecial ? "Preguntas adaptadas para entrenamiento; no corresponden a una reproducción oficial." : (tipo.aviso || ""),
+        ruta: seleccion ? {universidadId:tipo.universidadId || seleccion.universidadId,universidad:tipo.universidadId ? tipo.universidadId.toUpperCase() : seleccion.universidadCorta,grupo:seleccion.grupoId,cursos:seleccion.cursos} : (tipo.universidadId ? {universidadId:tipo.universidadId,universidad:tipo.universidadId.toUpperCase(),grupo:"GENERAL",cursos:[]} : null),
         indice: 0,
         preguntas: preguntasSeleccionadas,
         respuestas: Array(preguntasSeleccionadas.length).fill(null),
@@ -173,14 +179,27 @@
     texto("exam-progress-text", `Pregunta ${estado.indice + 1} de ${estado.preguntas.length}`);
     texto("exam-subject", `${pregunta.area} · ${pregunta.tema}`);
     const estimulo = pregunta.estimulo ?? pregunta.texto ?? pregunta.lectura ?? pregunta.caso ?? pregunta.tabla ?? pregunta.grafico ?? "";
-    texto("exam-question", [typeof estimulo === "string" ? estimulo : JSON.stringify(estimulo, null, 2), pregunta.q].filter(Boolean).join("\n\n"));
+    const estimuloTexto = typeof estimulo === "string" ? estimulo : JSON.stringify(estimulo, null, 2);
+    const enunciado = typeof window.UniprepUGEL?.limpiarEnunciado === "function"
+      ? window.UniprepUGEL.limpiarEnunciado(pregunta.q, pregunta.tema)
+      : String(pregunta.q || "").replace(/^\s*\[[^\]]+\]\s*/, "").trim();
+    texto("exam-question", enunciado);
+    const bloqueEstimulo = document.getElementById("exam-stimulus");
+    if (bloqueEstimulo) {
+      bloqueEstimulo.hidden = !estimuloTexto;
+      bloqueEstimulo.textContent = estimuloTexto ? `LECTURA O CASO\n${estimuloTexto}` : "";
+    }
     const barra = document.getElementById("exam-progress-bar");
     if (barra) barra.style.width = `${((estado.indice + 1) / estado.preguntas.length) * 100}%`;
 
     const opciones = document.getElementById("exam-options");
     if (opciones) {
+      const compactas = typeof window.UniprepUGEL?.opcionesCompactas === "function"
+        ? window.UniprepUGEL.opcionesCompactas(pregunta.o)
+        : pregunta.o.every(opcion => String(opcion).length <= 34);
+      opciones.classList.toggle("compact-options", compactas);
       opciones.innerHTML = pregunta.o.map((opcion, indice) => `
-        <button class="option-btn ${estado.respuestas[estado.indice] === indice ? "selected" : ""}" onclick="responderSimulacro(${indice})">
+        <button type="button" class="option-btn ${estado.respuestas[estado.indice] === indice ? "selected" : ""}" onclick="responderSimulacro(${indice})" aria-label="Alternativa ${LETRAS[indice]}: ${escapar(opcion)}">
           <div class="option-letter">${LETRAS[indice]}</div><div class="option-text">${escapar(opcion)}</div>
         </button>`).join("");
     }
@@ -200,6 +219,9 @@
     const marcar = document.getElementById("exam-mark");
     if (marcar) marcar.textContent = estado.marcadas[estado.indice] ? "★ Marcada para revisar" : "☆ Marcar para revisar";
     renderizarMapa();
+    const tarjeta = document.querySelector("#exam-active .question-card");
+    tarjeta?.setAttribute("tabindex", "-1");
+    requestAnimationFrame(() => tarjeta?.focus({preventScroll:true}));
   }
 
   function renderizarMapa() {
@@ -238,6 +260,40 @@
     }
   }
 
+  function calcularPuntajeUniversitario(base) {
+    const {correctas, incorrectas, vacias, total} = base;
+    const universidad = String(base.ruta?.universidadId || (base.tipo?.startsWith("uni_") ? "uni" : base.tipo?.startsWith("ucsm") ? "ucsm" : "general")).toLowerCase();
+    const porcentaje = Math.round((correctas / Math.max(1, total)) * 100);
+    if (universidad === "unmsm") {
+      return {id:"unmsm-2000",nombre:"Escala UNMSM de entrenamiento",valor:Math.max(0,correctas*20-incorrectas*1.125),maximo:total*20,decimales:3,formula:"Correcta: +20 · Incorrecta: −1,125 · En blanco: 0",referencial:true};
+    }
+    if (universidad === "unamad") {
+      return {id:"unamad-5",nombre:"Escala UNAMAD referencial",valor:correctas*5,maximo:total*5,decimales:2,formula:"Correcta: +5 · Incorrecta o en blanco: 0",referencial:true};
+    }
+    if (universidad === "unsaac") {
+      const correcta=20/Math.max(1,total), penalizacion=correcta/5;
+      return {id:"unsaac-20",nombre:"Escala UNSAAC referencial",valor:Math.max(0,correctas*correcta-incorrectas*penalizacion),maximo:20,decimales:2,formula:`Correcta: +${correcta.toFixed(3)} · Incorrecta: −${penalizacion.toFixed(3)} · En blanco: 0`,referencial:true};
+    }
+    if (universidad === "uni") {
+      return {id:"uni-1000",nombre:"Escala UNI referencial",valor:Math.max(0,(correctas-incorrectas*.25)/Math.max(1,total)*1000),maximo:1000,decimales:3,formula:"Puntaje normalizado a 1 000 con penalización referencial de ¼ por error",referencial:true};
+    }
+    if (universidad === "pucp") {
+      const matematicos=new Set(["rm","aritmetica","algebra","geometria","trigonometria"]);
+      const grupos={mat:{bien:0,total:0},lec:{bien:0,total:0}};
+      base.preguntas.forEach((pregunta,indice)=>{const grupo=matematicos.has(cursoDePregunta(pregunta))?grupos.mat:grupos.lec;grupo.total++;if(base.respuestas[indice]===pregunta.r)grupo.bien++;});
+      const ciencias=["C","E"].includes(String(base.ruta?.grupo||"").toUpperCase());
+      const pesoMat = ciencias ? 0.6 : 0.5;
+      const pesoLec = 1 - pesoMat;
+      const proporcion=grupos.mat.total&&grupos.lec.total?(grupos.mat.bien/grupos.mat.total*pesoMat+grupos.lec.bien/grupos.lec.total*pesoLec):(correctas/Math.max(1,total));
+      return {id:"pucp-1000",nombre:"Pruebas PUCP · escala 1 000",valor:proporcion*1000,maximo:1000,decimales:1,formula:`Comprensión ${Math.round(pesoLec*100)}% · Matemática ${Math.round(pesoMat*100)}% (no incluye el componente escolar)`,referencial:true};
+    }
+    return {id:"porcentaje",nombre:universidad==="ucsm"?"Porcentaje UCSM de práctica":universidad==="unsa"?"Porcentaje UNSA de práctica":"Porcentaje UniPrep",valor:porcentaje,maximo:100,decimales:0,formula:"Correctas ÷ total × 100",referencial:true};
+  }
+
+  function formatearPuntaje(puntaje) {
+    return Number(puntaje?.valor||0).toLocaleString("es-PE",{minimumFractionDigits:Number(puntaje?.decimales)||0,maximumFractionDigits:Number(puntaje?.decimales)||0});
+  }
+
   async function finalizarSimulacro(porTiempo) {
     if (!estado || estado.finalizado) return;
     const vacias = estado.respuestas.filter(r => r === null).length;
@@ -256,13 +312,14 @@
       tiempoUsado: Math.min(estado.duracion||180*60, Math.round((Date.now() - estado.inicio) / 1000)),
       fecha: new Date().toISOString()
     };
+    resultado.puntaje = calcularPuntajeUniversitario(resultado);
 
     window.uniprepStorage?.eliminar(CLAVE_ACTIVO);
     const historial = await obtenerHistorial();
     historial.unshift(resultado);
     await guardarHistorial(historial.slice(0, 10));
     await guardarResultadoUsuario(resultado);
-    if(window.registrarNotificacion)window.registrarNotificacion({tipo:"simulacro",titulo:`${resultado.nombre||"Simulacro"} completado`,cuerpo:`Resultado: ${resultado.porcentaje}% · ${resultado.correctas}/${resultado.preguntas.length} correctas.`});
+    if(window.registrarNotificacion)window.registrarNotificacion({tipo:"simulacro",titulo:`${resultado.nombre||"Simulacro"} completado`,cuerpo:`Puntaje: ${formatearPuntaje(resultado.puntaje)} de ${Number(resultado.puntaje.maximo).toLocaleString("es-PE")} · ${resultado.porcentaje}%.`});
     mostrarResultado(resultado, porTiempo);
   }
 
@@ -278,7 +335,8 @@
       usuario.precision = Math.round((usuario.respuestasCorrectas / usuario.respuestasTotales) * 100);
       usuario.xp = (Number(usuario.xp) || 0) + resultado.correctas * 5;
       if (typeof window.actualizarEstadisticasUsuario === "function") await window.actualizarEstadisticasUsuario({simulacros:usuario.simulacros,ejercicios:usuario.ejercicios,respuestasTotales:usuario.respuestasTotales,respuestasCorrectas:usuario.respuestasCorrectas,precision:usuario.precision,xp:usuario.xp,nivel:Math.floor(usuario.xp/500)+1});
-      if (typeof window.registrarActividad === "function") await window.registrarActividad({tipo:"simulacro",titulo:`${resultado.nombre||"Simulacro General"} completado`,descripcion:`Puntaje: ${resultado.porcentaje}% · ${resultado.correctas}/${resultado.preguntas.length} correctas`,xpGanado:resultado.correctas * 5});
+      if (typeof window.registrarActividad === "function") await window.registrarActividad({tipo:"simulacro",titulo:`${resultado.nombre||"Simulacro General"} completado`,descripcion:`Puntaje: ${formatearPuntaje(resultado.puntaje)} · ${resultado.porcentaje}%`,xpGanado:resultado.correctas * 5});
+      if (typeof window.registrarEventoPuntaje === "function") await window.registrarEventoPuntaje({tipo:"simulacro",puntos:resultado.correctas*5,correctas:resultado.correctas,incorrectas:resultado.incorrectas,blancas:resultado.vacias,total:resultado.preguntas.length,puntajeExamen:resultado.puntaje.valor,puntajeMaximo:resultado.puntaje.maximo,porcentajeExamen:resultado.porcentaje,escala:resultado.puntaje.nombre,universidadId:resultado.ruta?.universidadId||"general"});
       if (typeof window.actualizarRachaEstudio === "function") await window.actualizarRachaEstudio();
       if (typeof window.cargarDashboard === "function") await window.cargarDashboard();
     } catch (error) { console.error("No se pudo guardar el resultado del simulacro:", error); }
@@ -286,10 +344,13 @@
 
   function mostrarResultado(resultado, porTiempo = false) {
     resultadoMostrado = resultado;
+    if (!resultado.puntaje) resultado.puntaje = calcularPuntajeUniversitario(resultado);
     window.go("exam-result", null);
-    texto("exam-final-score", `${resultado.porcentaje}%`);
+    texto("exam-final-score", formatearPuntaje(resultado.puntaje));
+    texto("exam-final-scale", `de ${Number(resultado.puntaje.maximo).toLocaleString("es-PE")} · ${resultado.puntaje.nombre} · ${resultado.porcentaje}%`);
     texto("exam-result-title", resultado.porcentaje >= 70 ? "¡Buen trabajo!" : "Sigue practicando");
-    texto("exam-result-summary", porTiempo ? "El tiempo terminó y el examen fue enviado automáticamente." : `Obtuviste ${resultado.correctas} respuestas correctas de ${resultado.preguntas.length}.`);
+    const introduccion = porTiempo ? "El tiempo terminó y el examen fue enviado automáticamente." : `Obtuviste ${resultado.correctas} respuestas correctas de ${resultado.preguntas.length}.`;
+    texto("exam-result-summary", `${introduccion} ${resultado.puntaje.formula}${resultado.puntaje.referencial ? " · Escala de entrenamiento: verifica siempre la convocatoria vigente." : ""}`);
     texto("result-correct", resultado.correctas); texto("result-wrong", resultado.incorrectas); texto("result-blank", resultado.vacias); texto("result-time", formatoTiempo(resultado.tiempoUsado));
 
     const areas = {};
@@ -359,7 +420,7 @@
     if (!contenedor) return;
     const historial = await obtenerHistorial();
     if (!historial.length) { contenedor.innerHTML = '<div class="card" style="padding:18px;color:var(--text3)">Aún no realizaste ningún simulacro. Pulsa “Simulacro rápido” para comenzar.</div>'; return; }
-    contenedor.innerHTML = historial.map((r,i) => `<div class="exam-result-card"><div class="exam-score-circle" style="border:2px solid ${r.porcentaje>=70?'var(--green)':'var(--yellow)'};color:${r.porcentaje>=70?'var(--green)':'var(--yellow)'}">${r.porcentaje}%</div><div class="exam-info"><div class="exam-name">${escapar(r.nombre||"Simulacro General CEPRE")}</div><div class="exam-date">${new Date(r.fecha).toLocaleDateString('es-PE')} · ${r.preguntas.length} preguntas · ${formatoTiempo(r.tiempoUsado)}</div></div><button class="btn btn-ghost btn-sm" onclick="verResultadoGuardado(${i})">Ver corrección</button></div>`).join("");
+    contenedor.innerHTML = historial.map((r,i) => {if(!r.puntaje)r.puntaje=calcularPuntajeUniversitario(r);return `<div class="exam-result-card"><div class="exam-score-circle admission-score" style="border:2px solid ${r.porcentaje>=70?'var(--green)':'var(--yellow)'};color:${r.porcentaje>=70?'var(--green)':'var(--yellow)'}"><b>${formatearPuntaje(r.puntaje)}</b><small>${r.porcentaje}%</small></div><div class="exam-info"><div class="exam-name">${escapar(r.nombre||"Simulacro General CEPRE")}</div><div class="exam-date">${new Date(r.fecha).toLocaleDateString('es-PE')} · ${r.preguntas.length} preguntas · ${formatoTiempo(r.tiempoUsado)} · ${escapar(r.puntaje.nombre)}</div></div><button class="btn btn-ghost btn-sm" onclick="verResultadoGuardado(${i})">Ver corrección</button></div>`;}).join("");
   }
 
   function actualizarSimulacrosPorRuta(seleccion = window.obtenerSeleccionAdmision?.()) {
@@ -377,8 +438,9 @@
   }
 
   async function verResultadoGuardado(indice) { const h = await obtenerHistorial(); if (h[indice]) mostrarResultado(h[indice]); }
-  async function obtenerHistorial() { const id = await idUsuario(); return leerJSON(`uniprep_simulacros_${id}`, []); }
-  async function guardarHistorial(historial) { const id = await idUsuario(); localStorage.setItem(`uniprep_simulacros_${id}`, JSON.stringify(historial)); }
+  function repetirUltimoSimulacro() { iniciarSimulacro(true, resultadoMostrado?.tipo || "general"); }
+  async function obtenerHistorial() { const id = await idUsuario(); const nuevo=window.uniprepStorage?.leer(CLAVE_HISTORIAL,null);if(Array.isArray(nuevo))return nuevo;try{const legado=JSON.parse(localStorage.getItem(`uniprep_simulacros_${id}`)||"[]");return Array.isArray(legado)?legado:[];}catch{return [];} }
+  async function guardarHistorial(historial) { window.uniprepStorage?.guardar(CLAVE_HISTORIAL,historial); }
   async function idUsuario() { try { const u = typeof window.obtenerUsuarioActivo === "function" ? await window.obtenerUsuarioActivo() : null; return u?.id || "local"; } catch { return "local"; } }
 
   function actualizarTemporizador() { if (!estado) return; const restante = Math.max(0, Math.ceil((estado.fin-Date.now())/1000)); texto("exam-timer", `⏱ ${formatoTiempo(restante)}`); if (restante <= 0) finalizarSimulacro(true); }
@@ -390,6 +452,10 @@
   function escapar(valor) { const d=document.createElement("div"); d.textContent=String(valor ?? ""); return d.innerHTML; }
 
   window.iniciarSimulacro=iniciarSimulacro; window.iniciarSimulacroTipo=(tipo)=>iniciarSimulacro(true,tipo); window.responderSimulacro=responderSimulacro; window.preguntaSiguiente=preguntaSiguiente; window.preguntaAnterior=preguntaAnterior; window.irAPregunta=irAPregunta; window.marcarPregunta=marcarPregunta; window.salirDelSimulacro=salirDelSimulacro; window.finalizarSimulacro=finalizarSimulacro; window.verResultadoGuardado=verResultadoGuardado; window.filtrarCorreccion=filtrarCorreccion;
+  window.obtenerHistorialSimulacros=obtenerHistorial;
+  window.calcularPuntajeUniversitario=calcularPuntajeUniversitario;
+  window.formatearPuntajeUniversitario=formatearPuntaje;
+  window.repetirUltimoSimulacro=repetirUltimoSimulacro;
   document.addEventListener("uniprep:admission-ready", event => actualizarSimulacrosPorRuta(event.detail));
   document.addEventListener("uniprep:admission-change", event => actualizarSimulacrosPorRuta(event.detail));
   document.addEventListener("uniprep:syllabus-ready", () => actualizarSimulacrosPorRuta());

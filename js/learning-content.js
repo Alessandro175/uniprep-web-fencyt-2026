@@ -81,11 +81,11 @@
   async function inicializar() {
     if (inicializado) return;
     inicializado = true;
+    await cargarConfiguracionMultimedia();
     reemplazarLogo();
     inyectarNavegacion();
     inyectarTeoria();
     inyectarPantallas();
-    await cargarConfiguracionMultimedia();
     renderizarBiblioteca();
   }
 
@@ -116,7 +116,7 @@
 
   function inyectarPantallas() {
     const content=document.querySelector(".content"); if(!content) return;
-    if(!document.getElementById("course-evaluation")) content.insertAdjacentHTML("beforeend",`<div class="screen" id="course-evaluation"><div class="quiz-header"><button class="btn btn-ghost btn-sm" onclick="salirEvaluacionCurso()">← Volver</button><div style="flex:1;margin:0 16px"><div class="eval-head-line"><span id="course-eval-counter"></span><span id="course-eval-subject"></span></div><div class="pbar"><div class="pbar-fill" id="course-eval-progress" style="background:var(--purple)"></div></div></div><div class="quiz-timer" id="course-eval-score"></div></div><div class="question-card"><div class="question-subject" id="course-eval-topic"></div><div class="question-text" id="course-eval-question"></div></div><div class="options-grid" id="course-eval-options"></div><div class="card eval-feedback" id="course-eval-feedback"></div><div class="eval-actions"><button class="btn btn-primary" id="course-eval-next" onclick="siguientePreguntaCurso()" disabled>Siguiente →</button></div></div>`);
+    if(!document.getElementById("course-evaluation")) content.insertAdjacentHTML("beforeend",`<div class="screen" id="course-evaluation"><div class="quiz-header"><button class="btn btn-ghost btn-sm" onclick="salirEvaluacionCurso()">← Volver</button><div style="flex:1;margin:0 16px"><div class="eval-head-line"><span id="course-eval-counter"></span><span id="course-eval-subject"></span></div><div class="pbar"><div class="pbar-fill" id="course-eval-progress" style="background:var(--purple)"></div></div></div><div class="quiz-timer" id="course-eval-score"></div></div><div class="question-card"><div class="question-readable-head"><div><span class="question-kicker">ENUNCIADO</span><div class="question-subject" id="course-eval-topic"></div></div><button class="question-audio-button" type="button" onclick="leerPreguntaVisible()">🔊 Leer</button></div><div class="question-text" id="course-eval-question"></div><div class="question-instruction">Selecciona una alternativa para recibir la explicación.</div></div><div class="options-grid" id="course-eval-options"></div><div class="card eval-feedback" id="course-eval-feedback" role="status" aria-live="polite"></div><div class="eval-actions"><button class="btn btn-primary" id="course-eval-next" onclick="siguientePreguntaCurso()" disabled>Siguiente →</button></div></div>`);
     if(!document.getElementById("biblioteca")) content.insertAdjacentHTML("beforeend",`<div class="screen" id="biblioteca"><div class="page-header"><div><div class="page-title">Biblioteca UniPrep</div><div class="page-subtitle">Colecciones generales y material exclusivo según tu universidad</div></div><span class="badge badge-green">Solo lectura</span></div><div id="library-route-note" class="library-route-note"></div><div class="library-toolbar"><input id="library-search" type="search" placeholder="Buscar colección, curso o material..." oninput="renderizarBiblioteca()"><span class="library-readonly-label">☁️ Google Drive</span></div><div class="library-help card"><strong>📁 Biblioteca personalizada</strong><span>SuperBiblioteca y Academias aparecen en todas las rutas. Las bibliotecas UNI y San Marcos solo se muestran al estudiante que haya elegido esa universidad.</span></div><div id="library-grid" class="library-grid"></div></div>`);
   }
 
@@ -186,9 +186,9 @@
     const configs=videosJSON.filter(v=>v.courseId===cursoId&&Number(v.temaIndice)===Number(indice)&&String(v.url||"").trim());
     if(!configs.length) {box.innerHTML=`<div class="video-bg"><div class="video-pending-icon">🎬</div><div class="video-title">${esc(tema?.titulo||"Video de la clase")}</div><div class="video-subtitle">Videoclase en preparación</div></div>`;return;}
     const posicion=Math.max(0,Math.min(configs.length-1,Number(seleccion)||0)),config=configs[posicion],url=String(config.url).trim();
-    const yt=convertirYoutube(url),drive=convertirDrive(url),directo=convertirVideoDirecto(url);
+    const yt=convertirYoutube(url),drive=convertirDrive(url);
     const selector=configs.length>1?`<div class="lesson-video-picker" role="group" aria-label="Videoclases del tema">${configs.map((v,i)=>`<button type="button" class="${i===posicion?"active":""}" onclick="seleccionarVideoTema('${esc(cursoId)}',${Number(indice)},${i})">${i+1}. ${esc(v.titulo||`Clase ${i+1}`)}</button>`).join("")}</div>`:"";
-    box.innerHTML=yt||drive?`<iframe src="${esc(yt||drive)}" title="${esc(config.titulo||"Video de clase")}" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>${selector}`:directo?`<video src="${esc(directo)}" title="${esc(config.titulo||"Video de clase")}" controls preload="metadata" playsinline></video>${selector}`:`<div class="video-bg"><div class="video-pending-icon">⚠️</div><div class="video-title">Enlace de video no compatible</div><div class="video-subtitle">Usa YouTube, un archivo público de Drive o una ruta .mp4, .webm o .ogg.</div></div>`;
+    box.innerHTML=yt||drive?`<iframe src="${esc(yt||drive)}" title="${esc(config.titulo||"Video de clase")}" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>${selector}`:`<div class="video-bg"><div class="video-pending-icon">⚠️</div><div class="video-title">Enlace de video no compatible</div><div class="video-subtitle">Revisa json/videos-cursos.json</div></div>`;
   }
 
   function seleccionarVideoTema(cursoId,indice,posicion){
@@ -213,13 +213,6 @@
     }catch(_){return "";}
   }
   function convertirDrive(url){const m=url.match(/drive\.google\.com\/file\/d\/([^/]+)/);return m?`https://drive.google.com/file/d/${m[1]}/preview`:"";}
-  function convertirVideoDirecto(url){
-    try{
-      const u=new URL(url,window.location.href);
-      if(!/^https?:$/.test(u.protocol))return "";
-      return /\.(?:mp4|webm|ogg)$/i.test(u.pathname)?u.href:"";
-    }catch(_){return "";}
-  }
 
   async function iniciarEvaluacionTema(nivel) {
     if(!cursoActual)return alert("Selecciona primero un curso y un tema.");
@@ -238,7 +231,22 @@
     if(!preguntas.length)return alert(`No hay preguntas en este nivel. Agrégalas en json/quiz-cursos/${cursoActual}.json`);
     evaluacion={preguntas,indice:0,correctas:0,respondida:false,tema:temaJSON||temaInterno,nivel};window.go("course-evaluation",null);pintarPregunta();
   }
-  function pintarPregunta(){const e=evaluacion,p=e.preguntas[e.indice];txt("course-eval-counter",`Pregunta ${e.indice+1} de ${e.preguntas.length}`);txt("course-eval-subject",window.CURSOS_PREUNI?.[cursoActual]?.nombre||cursoActual);txt("course-eval-topic",e.tema.titulo);txt("course-eval-question",p.q);txt("course-eval-score",`${e.correctas} correctas`);document.getElementById("course-eval-progress").style.width=`${(e.indice+1)/e.preguntas.length*100}%`;document.getElementById("course-eval-feedback").style.display="none";const next=document.getElementById("course-eval-next");next.disabled=true;next.textContent=e.indice===e.preguntas.length-1?"Ver resultado":"Siguiente →";document.getElementById("course-eval-options").innerHTML=p.o.map((o,i)=>`<button class="option-btn" onclick="responderEvaluacionCurso(this,${i})"><span class="option-letter">${"ABCD"[i]}</span><span class="option-text">${esc(o)}</span></button>`).join("");}
+  function pintarPregunta(){
+    const e=evaluacion,p=e.preguntas[e.indice];
+    const enunciado=typeof window.UniprepUGEL?.limpiarEnunciado==="function"?window.UniprepUGEL.limpiarEnunciado(p.q,e.tema?.titulo||""):String(p.q||"").replace(/^\s*\[[^\]]+\]\s*/,"").trim();
+    txt("course-eval-counter",`Pregunta ${e.indice+1} de ${e.preguntas.length}`);
+    txt("course-eval-subject",CURSOS_PREUNI[cursoActual]?.nombre||cursoActual);
+    txt("course-eval-topic",e.tema.titulo);
+    txt("course-eval-question",enunciado);
+    txt("course-eval-score",`${e.correctas} correctas`);
+    document.getElementById("course-eval-progress").style.width=`${(e.indice+1)/e.preguntas.length*100}%`;
+    document.getElementById("course-eval-feedback").style.display="none";
+    const next=document.getElementById("course-eval-next");next.disabled=true;next.textContent=e.indice===e.preguntas.length-1?"Ver resultado":"Siguiente →";
+    const opciones=document.getElementById("course-eval-options");
+    const compactas=typeof window.UniprepUGEL?.opcionesCompactas==="function"?window.UniprepUGEL.opcionesCompactas(p.o):p.o.every(o=>String(o).length<=34);
+    opciones.classList.toggle("compact-options",compactas);
+    opciones.innerHTML=p.o.map((o,i)=>`<button type="button" class="option-btn" onclick="responderEvaluacionCurso(this,${i})" aria-label="Alternativa ${"ABCD"[i]}: ${esc(o)}"><span class="option-letter">${"ABCD"[i]}</span><span class="option-text">${esc(o)}</span></button>`).join("");
+  }
   function responder(btn,i){if(evaluacion.respondida)return;evaluacion.respondida=true;const p=evaluacion.preguntas[evaluacion.indice],bien=i===p.r;p.seleccion=i;p.correcta=bien;if(bien){evaluacion.correctas++;window.celebrarRespuestaCorrecta?.({xp:5,combo:evaluacion.correctas,nivel:evaluacion.nivel})}document.querySelectorAll("#course-eval-options .option-btn").forEach((b,j)=>{b.disabled=true;if(j===p.r)b.classList.add("correct");else if(j===i)b.classList.add("wrong")});const f=document.getElementById("course-eval-feedback");f.style.display="block";f.className=`card eval-feedback ${bien?"is-correct":"is-wrong"}`;f.innerHTML=`<strong>${bien?"✓ ¡Correcto!":"✕ Incorrecto"}</strong><p><b>Respuesta correcta:</b> ${"ABCD"[p.r]}. ${esc(p.o[p.r])}</p>${p.solucion?`<p><b>Solución:</b> ${esc(p.solucion)}</p>`:""}<p><b>Explicación:</b> ${esc(p.explicacion||p.e||"Revisa la teoría del tema.")}</p>`;document.getElementById("course-eval-next").disabled=false;txt("course-eval-score",`${evaluacion.correctas} correctas`);}
   function siguiente(){if(!evaluacion.respondida)return;if(evaluacion.indice<evaluacion.preguntas.length-1){evaluacion.indice++;evaluacion.respondida=false;pintarPregunta();}else finalizarEvaluacion();}
   async function finalizarEvaluacion(){const e=evaluacion,total=e.preguntas.length,pc=Math.round(e.correctas/total*100);document.getElementById("course-eval-options").innerHTML="";document.getElementById("course-eval-question").innerHTML=`Resultado: ${e.correctas}/${total} (${pc}%)`;const revision=e.preguntas.map((p,i)=>`<div style="padding:12px 0;border-top:1px solid var(--border)"><b>${i+1}. ${esc(p.q)}</b><p>Tu respuesta: ${p.seleccion==null?"Sin responder":`${"ABCD"[p.seleccion]}. ${esc(p.o[p.seleccion])}`} ${p.correcta?"✓":"✕"}</p><p><b>Correcta:</b> ${"ABCD"[p.r]}. ${esc(p.o[p.r])}</p>${p.solucion?`<p><b>Solución:</b> ${esc(p.solucion)}</p>`:""}<p><b>Explicación:</b> ${esc(p.explicacion||p.e||"Revisa la teoría del tema.")}</p></div>`).join("");const f=document.getElementById("course-eval-feedback");f.style.display="block";f.className="card eval-feedback result";f.innerHTML=`<strong>${pc>=70?"🎉 Tema aprobado":"📚 Sigue practicando"}</strong><p>${pc>=70?"Dominaste los conceptos principales.":"Repasa la teoría y vuelve a intentarlo."}</p><h3>Revisión completa</h3>${revision}<button class="btn btn-primary btn-sm" onclick="salirEvaluacionCurso()">Volver a la clase</button>`;document.getElementById("course-eval-next").style.display="none";if(window.registrarNotificacion)registrarNotificacion({tipo:"curso",titulo:`Evaluación completada: ${e.tema.titulo}`,cuerpo:`Obtuviste ${pc}% (${e.correctas}/${total}).`});try{if(window.registrarActividad)await registrarActividad({tipo:"curso",titulo:`Evaluación: ${e.tema.titulo}`,descripcion:`Resultado ${pc}%`,xpGanado:e.correctas*5});if(window.actualizarRachaEstudio)await actualizarRachaEstudio();}catch(err){console.warn(err)}}

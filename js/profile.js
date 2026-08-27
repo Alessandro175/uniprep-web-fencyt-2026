@@ -6,6 +6,7 @@
   "use strict";
 
   const IDS_CURSOS = ["rm","aritmetica","algebra","geometria","trigonometria","fisica","quimica","biologia","medio_ambiente","anatomia","psicologia","rv","comprension_lectora","lenguaje","literatura","historia","historia_peru","geografia","filosofia","economia","civica"];
+  const CLAVE_FOTO = "uniprep_profile_photo_v1";
   const progresoInicial = Object.fromEntries(IDS_CURSOS.map(id => [id,0]));
 
   document.addEventListener("DOMContentLoaded", () => setTimeout(cargarPerfilUsuario, 140));
@@ -20,6 +21,7 @@
       pintarRacha(usuario);
       pintarAnalitica(usuario);
       pintarLogros(usuario);
+      await pintarPuntajes(usuario);
       return true;
     } catch (error) {
       console.error("No se pudo cargar el perfil:", error);
@@ -40,8 +42,9 @@
     const nombre = usuario.nombre || "Estudiante UniPrep";
     const carrera = usuario.carrera || "Carrera por definir";
     const universidad = usuario.universidad || "Universidad por definir";
+    const foto = fotoLocal() || usuario.avatarUrl || "";
     texto("profile-name", nombre);
-    texto("profile-avatar", iniciales(nombre));
+    pintarAvatar(nombre, foto);
     texto("profile-sub", `Preuniversitario · ${carrera}`);
     texto("profile-goal", `🎯 Meta: ${carrera} — ${universidad}`);
     texto("profile-exercises", numero(usuario.ejercicios));
@@ -55,11 +58,7 @@
     const sidebarAvatar = document.querySelector(".user-avatar");
     if (sidebarName) sidebarName.textContent = nombre;
     if (sidebarSub) sidebarSub.textContent = carrera;
-    if (sidebarAvatar) {
-      const online = sidebarAvatar.querySelector(".user-avatar-online");
-      sidebarAvatar.textContent = iniciales(nombre);
-      if (online) sidebarAvatar.appendChild(online);
-    }
+    if (sidebarAvatar) pintarAvatarLateral(sidebarAvatar, nombre, foto);
     const saludo = document.querySelector(".welcome-title");
     if (saludo) saludo.innerHTML = `¡Buenas tardes,<br>${esc(nombre.trim().split(/\s+/)[0])}! 👋`;
   }
@@ -222,6 +221,144 @@
     alert("Nombre actualizado correctamente. Tu universidad, área y carrera se cambian desde «Mi objetivo de admisión».");
   }
 
+  function fotoLocal() {
+    return window.uniprepStorage?.leerTexto?.(CLAVE_FOTO, "") || "";
+  }
+
+  function guardarFotoLocal(valor) {
+    try { window.uniprepStorage?.guardarTexto?.(CLAVE_FOTO, valor || ""); return true; }
+    catch (_) { return false; }
+  }
+
+  function pintarAvatar(nombre, url = "") {
+    const avatar = document.getElementById("profile-avatar");
+    const imagen = document.getElementById("profile-avatar-image");
+    const letras = document.getElementById("profile-avatar-initials");
+    if (!avatar || !imagen || !letras) return;
+    letras.textContent = iniciales(nombre);
+    const mostrarFoto = Boolean(url);
+    letras.hidden = mostrarFoto;
+    imagen.hidden = !mostrarFoto;
+    avatar.classList.toggle("has-photo", mostrarFoto);
+    if (mostrarFoto && imagen.src !== url) imagen.src = url;
+    if (!mostrarFoto) imagen.removeAttribute("src");
+  }
+
+  function pintarAvatarLateral(contenedor, nombre, url = "") {
+    const online = contenedor.querySelector(".user-avatar-online") || document.createElement("div");
+    online.className = "user-avatar-online";
+    contenedor.replaceChildren();
+    if (url) {
+      const imagen = document.createElement("img");
+      imagen.src = url;
+      imagen.alt = "";
+      imagen.className = "user-avatar-photo";
+      contenedor.appendChild(imagen);
+    } else {
+      contenedor.append(document.createTextNode(iniciales(nombre)));
+    }
+    contenedor.appendChild(online);
+  }
+
+  function elegirFotoPerfil() {
+    document.getElementById("profile-photo-input")?.click();
+  }
+
+  async function subirFotoPerfil(input) {
+    const archivo = input?.files?.[0];
+    if (!archivo) return;
+    input.value = "";
+    const estado = document.getElementById("profile-photo-status");
+    if (!/^image\/(?:png|jpeg|webp)$/i.test(archivo.type) || archivo.size > 8 * 1024 * 1024) {
+      if (estado) estado.textContent = "Usa JPG, PNG o WebP de máximo 8 MB.";
+      return;
+    }
+    if (estado) estado.textContent = "Preparando tu foto…";
+    try {
+      const procesada = await procesarFoto(archivo);
+      const usuario = await window.obtenerUsuarioActivo?.();
+      const nombre = usuario?.nombre || "Estudiante UniPrep";
+      guardarFotoLocal(procesada.dataUrl);
+      pintarAvatar(nombre, procesada.dataUrl);
+      const lateral = document.querySelector(".user-avatar");
+      if (lateral) pintarAvatarLateral(lateral, nombre, procesada.dataUrl);
+
+      let urlNube = "";
+      if (usuario?.id && window.supabaseClient?.storage) {
+        const ruta = `${usuario.id}/perfil.webp`;
+        const subida = await window.supabaseClient.storage.from("avatars").upload(ruta, procesada.blob, {upsert:true, contentType:"image/webp", cacheControl:"3600"});
+        if (!subida.error) {
+          urlNube = window.supabaseClient.storage.from("avatars").getPublicUrl(ruta).data?.publicUrl || "";
+          if (urlNube) {
+            await window.supabaseClient.from("profiles").update({avatar_url:urlNube}).eq("id", usuario.id);
+            const auth = await window.supabaseClient.auth.getUser();
+            await window.supabaseClient.auth.updateUser({data:{...(auth.data?.user?.user_metadata || {}), avatar_url:urlNube}});
+            usuario.avatarUrl = urlNube;
+          }
+        }
+      }
+      if (estado) estado.textContent = urlNube ? "✓ Foto guardada en tu cuenta" : "✓ Foto guardada en este dispositivo · activa el módulo Supabase para sincronizarla";
+      window.cargarRanking?.(true);
+    } catch (error) {
+      console.warn("No se pudo procesar la foto de perfil:", error);
+      if (estado) estado.textContent = "No se pudo leer esa imagen. Prueba con otra.";
+    }
+  }
+
+  function procesarFoto(archivo) {
+    return new Promise((resolver, rechazar) => {
+      const imagen = new Image();
+      const url = URL.createObjectURL(archivo);
+      imagen.onload = () => {
+        const lado = Math.min(imagen.width, imagen.height);
+        const x = (imagen.width - lado) / 2;
+        const y = (imagen.height - lado) / 2;
+        const canvas = document.createElement("canvas");
+        canvas.width = 512;
+        canvas.height = 512;
+        canvas.getContext("2d").drawImage(imagen, x, y, lado, lado, 0, 0, 512, 512);
+        URL.revokeObjectURL(url);
+        canvas.toBlob(blob => {
+          if (!blob) return rechazar(new Error("NO_BLOB"));
+          resolver({blob, dataUrl:canvas.toDataURL("image/webp", .82)});
+        }, "image/webp", .82);
+      };
+      imagen.onerror = () => { URL.revokeObjectURL(url); rechazar(new Error("INVALID_IMAGE")); };
+      imagen.src = url;
+    });
+  }
+
+  async function pintarPuntajes(usuario) {
+    texto("profile-score-xp", numero(usuario.xp));
+    let historial = [];
+    try {
+      if (typeof window.obtenerHistorialSimulacros === "function") historial = await window.obtenerHistorialSimulacros();
+      else {
+        const legado = localStorage.getItem(`uniprep_simulacros_${usuario.id || "local"}`);
+        historial = legado ? JSON.parse(legado) : [];
+      }
+    } catch (_) { historial = []; }
+    if (!Array.isArray(historial) || !historial.length) {
+      texto("profile-score-best", "—"); texto("profile-score-average", "—"); texto("profile-score-latest", "—");
+      texto("profile-score-best-scale", "sin intentos todavía"); texto("profile-score-latest-scale", "escala del examen");
+      return;
+    }
+    const ultimo = historial[0];
+    const idEscala = ultimo.puntaje?.id || "porcentaje";
+    const comparables = historial.filter(item => (item.puntaje?.id || "porcentaje") === idEscala);
+    const valor = item => Number(item.puntaje?.valor ?? item.porcentaje ?? 0);
+    const mejor = comparables.reduce((a, b) => valor(b) > valor(a) ? b : a, comparables[0]);
+    const promedio = comparables.reduce((suma, item) => suma + valor(item), 0) / comparables.length;
+    const decimales = Number(ultimo.puntaje?.decimales ?? (idEscala === "porcentaje" ? 0 : 2));
+    const formato = n => Number(n).toLocaleString("es-PE", {minimumFractionDigits:decimales, maximumFractionDigits:decimales});
+    const etiqueta = ultimo.puntaje?.nombre || "Porcentaje UniPrep";
+    texto("profile-score-best", formato(valor(mejor)));
+    texto("profile-score-average", formato(promedio));
+    texto("profile-score-latest", formato(valor(ultimo)));
+    texto("profile-score-best-scale", etiqueta);
+    texto("profile-score-latest-scale", ultimo.puntaje?.maximo ? `de ${formato(ultimo.puntaje.maximo)} · ${etiqueta}` : etiqueta);
+  }
+
   function leerLista(clave) { const datos=window.uniprepStorage?.leer(clave,[]); return Array.isArray(datos)?datos:[]; }
   function calcularPrecision(usuario) { const total=Number(usuario.respuestasTotales)||0, correctas=Number(usuario.respuestasCorrectas)||0; return total?Math.round(correctas/total*100):limitar(usuario.precision); }
   function limitar(valor) { return Math.max(0,Math.min(100,Math.round(Number(valor)||0))); }
@@ -235,6 +372,8 @@
   window.cargarPerfilUsuario = cargarPerfilUsuario;
   window.registrarResultadoEjercicio = registrarResultadoEjercicio;
   window.abrirEditarPerfil = abrirEditarPerfil;
+  window.elegirFotoPerfil = elegirFotoPerfil;
+  window.subirFotoPerfil = subirFotoPerfil;
 
   window.supabaseClient?.auth?.onAuthStateChange(async (evento,sesion) => {
     if (evento === "SIGNED_IN" && sesion?.user) await cargarPerfilUsuario();

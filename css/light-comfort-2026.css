@@ -1,0 +1,849 @@
+/* ======================================================================
+   UNIPREP UGEL · HARMONY COMFORT 2026.21
+   Modo claro completo: suave, coherente, accesible y conectado a la paleta.
+   ====================================================================== */
+
+html[data-color-mode="light"] {
+  color-scheme: light;
+  background: #edf2f8;
+}
+
+html[data-color-mode="light"] body {
+  --comfort-canvas: color-mix(in srgb, var(--bg) 88%, #edf2f8);
+  --comfort-paper: color-mix(in srgb, var(--ugel-panel) 94%, #ffffff);
+  --comfort-paper-solid: color-mix(in srgb, var(--ugel-panel-strong) 96%, #ffffff);
+  --comfort-soft: color-mix(in srgb, var(--bg3) 70%, #f5f8fc);
+  --comfort-soft-2: color-mix(in srgb, var(--bg4) 58%, #eef3f8);
+  --comfort-ink: var(--text);
+  --comfort-muted: var(--text2);
+  --comfort-faint: var(--text3);
+  --comfort-line: color-mix(in srgb, var(--border2) 80%, #b7c2d1);
+  --comfort-line-soft: color-mix(in srgb, var(--border) 78%, #d2d9e3);
+  --comfort-accent-wash: color-mix(in srgb, var(--ugel-accent) 8%, #ffffff);
+  --comfort-accent-wash-2: color-mix(in srgb, var(--ugel-accent-2) 8%, #ffffff);
+  --comfort-shadow-sm: 0 8px 24px rgba(45, 62, 88, .07);
+  --comfort-shadow: 0 18px 48px rgba(45, 62, 88, .095);
+  --comfort-shadow-lg: 0 30px 80px rgba(45, 62, 88, .13);
+  color: var(--comfort-ink);
+  background-color: var(--comfort-canvas);
+  background-image: var(--ugel-wallpaper);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+html[data-color-mode="light"] body::before {
+  color: rgba(46, 66, 97, .09);
+  opacity: min(var(--ugel-pattern-opacity), .25);
+  mix-blend-mode: multiply;
+}
+
+html[data-color-mode="light"] body::selection,
+html[data-color-mode="light"] body *::selection {
+  color: #132039;
+  background: color-mix(in srgb, var(--ugel-accent-2) 24%, #dff5ff);
+}
+
+html[data-color-mode="light"] body,
+html[data-color-mode="light"] body :is(button, input, textarea, select) {
+  color-scheme: light;
+}
+
+/* --------------------------- Navegación --------------------------- */
+html[data-color-mode="light"] body .sidebar {
+  color: var(--comfort-ink);
+  border-right-color: var(--comfort-line-soft) !important;
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb, var(--ugel-panel-strong) 94%, transparent),
+      color-mix(in srgb, var(--ugel-panel) 91%, transparent)) !important;
+  box-shadow: 16px 0 46px rgba(53, 70, 96, .07) !important;
+}
+
+html[data-color-mode="light"] body .topbar {
+  color: var(--comfort-ink);
+  border-bottom-color: var(--comfort-line-soft) !important;
+  background: color-mix(in srgb, var(--ugel-topbar) 91%, transparent) !important;
+  box-shadow: 0 9px 30px rgba(53, 70, 96, .075) !important;
+}
+
+html[data-color-mode="light"] body :is(.logo-text, .topbar-title, .user-name) { color: var(--comfort-ink) !important; }
+html[data-color-mode="light"] body :is(.nav-section-label, .user-sub) { color: var(--comfort-faint) !important; }
+
+html[data-color-mode="light"] body .nav-item {
+  color: var(--comfort-muted);
+  border: 1px solid transparent;
+}
+
+html[data-color-mode="light"] body .nav-item:hover {
+  color: var(--comfort-ink);
+  border-color: color-mix(in srgb, var(--ugel-accent) 11%, transparent);
+  background: color-mix(in srgb, var(--ugel-accent) 6%, #f5f8fc) !important;
+}
+
+html[data-color-mode="light"] body .nav-item.active {
+  color: color-mix(in srgb, var(--ugel-accent) 86%, #17233b);
+  border-color: color-mix(in srgb, var(--ugel-accent) 18%, transparent);
+  background: linear-gradient(90deg,
+    color-mix(in srgb, var(--ugel-accent) 12%, #ffffff),
+    color-mix(in srgb, var(--ugel-accent-2) 5%, #ffffff)) !important;
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ugel-accent) 8%, transparent),
+    0 8px 20px color-mix(in srgb, var(--ugel-accent) 7%, transparent);
+}
+
+html[data-color-mode="light"] body .user-card:hover { background: var(--comfort-soft) !important; }
+html[data-color-mode="light"] body .user-avatar-online { border-color: var(--comfort-paper-solid); }
+
+html[data-color-mode="light"] body :is(.topbar-search, .icon-btn, .hyper-system-trigger) {
+  color: var(--comfort-muted);
+  border-color: var(--comfort-line-soft) !important;
+  background: color-mix(in srgb, var(--comfort-paper-solid) 91%, transparent) !important;
+  box-shadow: inset 0 1px rgba(255,255,255,.88), var(--comfort-shadow-sm);
+}
+
+html[data-color-mode="light"] body :is(.topbar-search, .icon-btn, .hyper-system-trigger):hover {
+  color: var(--comfort-ink);
+  border-color: color-mix(in srgb, var(--ugel-accent-2) 32%, var(--comfort-line));
+  background: #ffffff !important;
+}
+
+html[data-color-mode="light"] body .topbar-search input {
+  color: var(--comfort-ink) !important;
+  background: transparent !important;
+}
+
+html[data-color-mode="light"] body :is(input, textarea)::placeholder { color: color-mix(in srgb, var(--comfort-faint) 80%, transparent); }
+
+html[data-color-mode="light"] body .page-title {
+  background: linear-gradient(110deg, #17233b 18%, color-mix(in srgb, var(--ugel-accent) 74%, #17233b) 58%, color-mix(in srgb, var(--ugel-accent-2) 78%, #173448));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent !important;
+}
+
+/* --------------------- Superficies compartidas --------------------- */
+html[data-color-mode="light"] body :is(
+  .card, .stat-card, .qstat, .profile-card, .profile-card-body, .ach-card,
+  .exam-result-card, .course-card, .course-card-ultra, .formula-card, .formula-course-card,
+  .lesson-card, .lesson-topic-group, .library-card, .library-card-featured,
+  .event-row, .schedule-session, .premium-exam-card, .fixed-question-card,
+  .analysis-mini-card, .profile-readiness-main, .ranking-list-real,
+  .ranking-podium-card, .ranking-user-stats article, .profile-scoreboard article,
+  .courses-command-stats div, .premium-library-stat
+) {
+  color: var(--comfort-ink);
+  border-color: var(--comfort-line-soft) !important;
+  background:
+    radial-gradient(circle at 100% 0, color-mix(in srgb, var(--ugel-accent-2) 4%, transparent), transparent 34%),
+    linear-gradient(145deg, var(--comfort-paper), var(--comfort-paper-solid)) !important;
+  box-shadow: var(--comfort-shadow) !important;
+}
+
+html[data-color-mode="light"] body :is(
+  .card, .stat-card, .qstat, .profile-card, .profile-card-body, .ach-card,
+  .exam-result-card, .course-card, .formula-card, .lesson-card, .library-card,
+  .event-row, .premium-exam-card, .analysis-mini-card, .ranking-podium-card
+) :is(h1, h2, h3, h4, b, strong) {
+  color: var(--comfort-ink);
+}
+
+html[data-color-mode="light"] body :is(
+  .card, .stat-card, .qstat, .profile-card, .profile-card-body, .ach-card,
+  .exam-result-card, .course-card, .formula-card, .lesson-card, .library-card,
+  .event-row, .premium-exam-card, .analysis-mini-card, .ranking-podium-card
+) :is(p, small, em) {
+  color: var(--comfort-muted);
+}
+
+html[data-color-mode="light"] body :is(
+  .course-card, .library-card, .formula-card, .premium-exam-card,
+  .analysis-mini-card, .ranking-podium-card, .exam-evolution-card
+):hover {
+  border-color: color-mix(in srgb, var(--ugel-accent-2) 34%, var(--comfort-line)) !important;
+  box-shadow: 0 22px 54px color-mix(in srgb, var(--ugel-accent) 8%, rgba(44,61,89,.12)) !important;
+}
+
+html[data-color-mode="light"] body :is(.pbar, .mini-pbar, .password-strength-bar, .formula-weight-bar) {
+  background: color-mix(in srgb, var(--comfort-line) 46%, transparent) !important;
+}
+
+/* ---------------------- Banners y zonas clave ---------------------- */
+html[data-color-mode="light"] body :is(
+  .welcome-banner, .exam-hero, .practice-hero, .courses-command-center,
+  .ranking-hero-real, .ranking-command, .formula-smart-hero, .formula-hero,
+  .schedule-hero, .profile-cover, .streak-banner, .tutor-head, .tutor-head-evolution
+) {
+  color: var(--comfort-ink) !important;
+  border-color: color-mix(in srgb, var(--ugel-accent-2) 20%, var(--comfort-line)) !important;
+  background:
+    radial-gradient(circle at 86% 12%, color-mix(in srgb, var(--ugel-accent-2) 15%, transparent), transparent 30%),
+    radial-gradient(circle at 8% 94%, color-mix(in srgb, var(--ugel-accent) 12%, transparent), transparent 36%),
+    linear-gradient(125deg,
+      color-mix(in srgb, var(--ugel-accent) 7%, #fbfcff),
+      color-mix(in srgb, var(--ugel-accent-2) 8%, #eef7fa)) !important;
+  box-shadow: var(--comfort-shadow-lg) !important;
+}
+
+html[data-color-mode="light"] body :is(
+  .welcome-banner, .exam-hero, .practice-hero, .courses-command-center,
+  .ranking-hero-real, .ranking-command, .formula-smart-hero, .formula-hero,
+  .schedule-hero, .profile-cover, .streak-banner, .tutor-head, .tutor-head-evolution
+) :is(h1, h2, h3, .welcome-title, .welcome-big-num, b, strong) {
+  color: var(--comfort-ink) !important;
+}
+
+html[data-color-mode="light"] body :is(
+  .welcome-banner, .exam-hero, .practice-hero, .courses-command-center,
+  .ranking-hero-real, .ranking-command, .formula-smart-hero, .formula-hero,
+  .schedule-hero, .profile-cover, .streak-banner, .tutor-head, .tutor-head-evolution
+) :is(p, .welcome-body, .welcome-big-label, small) {
+  color: var(--comfort-muted) !important;
+}
+
+html[data-color-mode="light"] body :is(.welcome-eyebrow, .tutor-head-copy > small, .practice-hero-copy > span) {
+  color: color-mix(in srgb, var(--ugel-accent-2) 76%, #173448) !important;
+}
+
+html[data-color-mode="light"] body :is(.welcome-stats > div, .formula-smart-stats div, .practice-metric, .practice-hero-panel) {
+  color: var(--comfort-ink);
+  border-color: var(--comfort-line-soft) !important;
+  background: color-mix(in srgb, #ffffff 76%, transparent) !important;
+  box-shadow: inset 0 1px rgba(255,255,255,.9), var(--comfort-shadow-sm);
+}
+
+/* -------------------- Formularios y controles -------------------- */
+html[data-color-mode="light"] body :is(
+  input:not([type="range"]):not([type="checkbox"]):not([type="radio"]):not([type="color"]),
+  textarea, select,
+  .library-toolbar input, .library-toolbar select, .courses-search,
+  .courses-toolbar select, .formula-search, .formula-filter,
+  .schedule-dialog input, .schedule-dialog select, .schedule-dialog textarea,
+  .agenda-dialog input, .agenda-dialog select, .agenda-dialog textarea,
+  .weekly-generator-grid input, .weekly-generator-grid select,
+  .weekly-form-grid input, .weekly-form-grid select,
+  .practice-field select, .practice-quick-picker select,
+  .vocational-explorer-command select, .vocational-explorer-command input
+) {
+  color: var(--comfort-ink) !important;
+  border-color: var(--comfort-line-soft) !important;
+  background: color-mix(in srgb, var(--comfort-paper-solid) 96%, #ffffff) !important;
+  box-shadow: inset 0 1px 2px rgba(39, 55, 79, .025);
+}
+
+html[data-color-mode="light"] body :is(input, textarea, select):focus {
+  border-color: color-mix(in srgb, var(--ugel-accent-2) 58%, var(--comfort-line)) !important;
+  outline: none;
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--ugel-accent-2) 12%, transparent) !important;
+}
+
+html[data-color-mode="light"] body :is(select option, select optgroup) {
+  color: #17233b;
+  background: #ffffff;
+}
+
+html[data-color-mode="light"] body :is(.btn-primary, .auth-submit, .tutor-primary-button, .tutor-send-evolution, .exam-evolution-card button) {
+  color: var(--ugel-on-accent, #ffffff) !important;
+  border-color: transparent !important;
+  background: linear-gradient(120deg, var(--ugel-accent), var(--ugel-accent-2)) !important;
+  box-shadow: 0 10px 26px color-mix(in srgb, var(--ugel-accent) 20%, transparent) !important;
+}
+
+html[data-color-mode="light"] body :is(.btn-secondary, .tutor-secondary-button, .tutor-built-in-button) {
+  color: var(--comfort-ink) !important;
+  border-color: var(--comfort-line) !important;
+  background: var(--comfort-paper-solid) !important;
+}
+
+html[data-color-mode="light"] body :is(.btn-secondary, .tutor-secondary-button, .tutor-built-in-button):hover {
+  border-color: color-mix(in srgb, var(--ugel-accent) 30%, var(--comfort-line)) !important;
+  background: var(--comfort-accent-wash) !important;
+}
+
+/* -------------------------- Prácticas -------------------------- */
+html[data-color-mode="light"] body :is(
+  .practice-action-card, .practice-course-card, .practice-config-card,
+  .practice-result-hero, .practice-result-stat, .practice-review-item,
+  .practice-mini-stat, .practice-session-top, .question-card,
+  .practice-question-card, .exam-readable-card, #course-evaluation .question-card
+) {
+  color: var(--comfort-ink);
+  border-color: var(--comfort-line-soft) !important;
+  background:
+    radial-gradient(circle at 94% 0, color-mix(in srgb, var(--ugel-accent-2) 5%, transparent), transparent 32%),
+    linear-gradient(145deg, var(--comfort-paper), var(--comfort-paper-solid)) !important;
+  box-shadow: var(--comfort-shadow) !important;
+}
+
+html[data-color-mode="light"] body :is(.practice-question-heading, .question-readable-head) {
+  border-bottom-color: var(--comfort-line-soft);
+}
+
+html[data-color-mode="light"] body :is(.practice-question-text, .question-text, #course-eval-question) { color: var(--comfort-ink) !important; }
+html[data-color-mode="light"] body :is(.practice-question-guide, .question-instruction) { color: var(--comfort-muted) !important; }
+
+html[data-color-mode="light"] body :is(.practice-question-stimulus, .question-stimulus) {
+  color: var(--comfort-muted) !important;
+  border-color: color-mix(in srgb, var(--ugel-accent-2) 24%, var(--comfort-line)) !important;
+  border-left-color: var(--ugel-accent-2) !important;
+  background: color-mix(in srgb, var(--ugel-accent-2) 5%, #f8fbfd) !important;
+}
+
+html[data-color-mode="light"] body :is(.practice-option, .option-btn) {
+  color: var(--comfort-ink) !important;
+  border-color: var(--comfort-line-soft) !important;
+  background: color-mix(in srgb, var(--comfort-paper-solid) 97%, #ffffff) !important;
+  box-shadow: 0 9px 26px rgba(47, 63, 88, .055) !important;
+}
+
+html[data-color-mode="light"] body :is(.practice-option, .option-btn):hover:not(:disabled) {
+  border-color: color-mix(in srgb, var(--ugel-accent-2) 48%, var(--comfort-line)) !important;
+  background: linear-gradient(110deg, var(--comfort-accent-wash), var(--comfort-accent-wash-2)) !important;
+  box-shadow: 0 14px 32px color-mix(in srgb, var(--ugel-accent) 8%, rgba(47,63,88,.08)) !important;
+}
+
+html[data-color-mode="light"] body :is(.practice-option-letter, .option-letter) {
+  color: color-mix(in srgb, var(--ugel-accent) 82%, #17233b) !important;
+  background: color-mix(in srgb, var(--ugel-accent) 11%, #ffffff) !important;
+}
+
+html[data-color-mode="light"] body :is(.practice-option.correct, .option-btn.correct) {
+  color: #124d3a !important;
+  border-color: #42b88f !important;
+  background: #edf9f5 !important;
+}
+
+html[data-color-mode="light"] body :is(.practice-option.wrong, .option-btn.wrong) {
+  color: #75233c !important;
+  border-color: #e06a8a !important;
+  background: #fff1f5 !important;
+}
+
+html[data-color-mode="light"] body .practice-feedback {
+  color: var(--comfort-ink);
+  border-color: var(--comfort-line-soft);
+  background: var(--comfort-soft) !important;
+}
+
+html[data-color-mode="light"] body .practice-feedback p { color: var(--comfort-muted) !important; }
+html[data-color-mode="light"] body .practice-collection-courses button {
+  color: var(--comfort-muted);
+  border-color: var(--comfort-line-soft);
+  background: var(--comfort-paper-solid) !important;
+}
+html[data-color-mode="light"] body .practice-collection-courses button:hover,
+html[data-color-mode="light"] body .practice-collection-courses button.active {
+  color: var(--comfort-ink);
+  border-color: color-mix(in srgb, var(--ugel-accent-2) 42%, var(--comfort-line));
+  background: var(--comfort-accent-wash-2) !important;
+}
+
+/* ----------------------------- Tutor IA ----------------------------- */
+html[data-color-mode="light"] body #tutor-academic-root {
+  --tutor-ink: var(--comfort-ink);
+  --tutor-muted: var(--comfort-muted);
+  --tutor-panel: var(--comfort-paper);
+  --tutor-panel-2: var(--comfort-paper-solid);
+  --tutor-line: var(--comfort-line-soft);
+}
+
+html[data-color-mode="light"] body #tutor-academic-root :is(.tutor-head, .tutor-head-evolution) {
+  color: var(--comfort-ink) !important;
+  border-color: color-mix(in srgb, var(--ugel-accent-2) 22%, var(--comfort-line)) !important;
+  background:
+    radial-gradient(circle at 84% 18%, color-mix(in srgb, var(--ugel-accent-2) 15%, transparent), transparent 29%),
+    radial-gradient(circle at 8% 92%, color-mix(in srgb, var(--ugel-accent) 12%, transparent), transparent 38%),
+    linear-gradient(125deg,
+      color-mix(in srgb, var(--ugel-accent) 7%, #fbfcff),
+      color-mix(in srgb, var(--ugel-accent-2) 8%, #eef8fa)) !important;
+  box-shadow: var(--comfort-shadow-lg) !important;
+}
+
+html[data-color-mode="light"] body #tutor-academic-root :is(.tutor-head, .tutor-head-evolution) :is(h1, p, .tutor-head-copy > small) {
+  color: var(--comfort-ink) !important;
+}
+
+html[data-color-mode="light"] body #tutor-academic-root .tutor-head-copy > small {
+  color: color-mix(in srgb, var(--ugel-accent-2) 78%, #173448) !important;
+}
+
+html[data-color-mode="light"] body #tutor-academic-root .tutor-head-badges span {
+  color: var(--comfort-muted) !important;
+  border-color: color-mix(in srgb, var(--ugel-accent-2) 18%, var(--comfort-line)) !important;
+  background: rgba(255,255,255,.66) !important;
+}
+
+html[data-color-mode="light"] body #tutor-academic-root .tutor-head-status {
+  color: #eef7ff !important;
+  border-color: rgba(255,255,255,.18) !important;
+  background: color-mix(in srgb, var(--ugel-accent) 35%, #17233b) !important;
+  box-shadow: 0 13px 30px rgba(35, 53, 83, .18);
+}
+
+html[data-color-mode="light"] body #tutor-academic-root .tutor-head-status :is(b, em) { color: #ffffff !important; }
+
+html[data-color-mode="light"] body #tutor-academic-root :is(
+  .tutor-studio-nav, .tutor-launchpad, .tutor-chat, .tutor-chat-evolution, .tutor-tool,
+  .tutor-wizard, .tutor-next-lesson, .tutor-library, .tutor-history-view,
+  .tutor-module-view, .tutor-ai-loading, .tutor-prep-intro, .tutor-pack-hero,
+  .tutor-pack-card, .tutor-feature-strip article, .tutor-summary-paper,
+  .tutor-audio-lesson, .tutor-quiz-engine, .tutor-quiz-result
+) {
+  color: var(--comfort-ink);
+  border-color: var(--comfort-line-soft) !important;
+  background:
+    radial-gradient(circle at 100% 0, color-mix(in srgb, var(--ugel-accent-2) 4%, transparent), transparent 36%),
+    linear-gradient(145deg, var(--comfort-paper), var(--comfort-paper-solid)) !important;
+  box-shadow: var(--comfort-shadow) !important;
+}
+
+html[data-color-mode="light"] body #tutor-academic-root :is(
+  .tutor-launchpad > div > button, .tutor-scope-switch, .tutor-scope-switch > button,
+  .tutor-compose-evolution, .tutor-compose-shell, .tutor-module-card, .tutor-pack-grid article,
+  .tutor-subject-grid button, .tutor-date-panel, .tutor-goal-panel,
+  .tutor-study-plan article, .tutor-history-list article, .tutor-learning-tabs,
+  .tutor-pack-goals span, .tutor-flashcard, .tutor-local-banner, .tutor-smart-summary,
+  .tutor-concept-list article, .tutor-upload-zone, .tutor-paste-field
+) {
+  color: var(--comfort-ink);
+  border-color: var(--comfort-line-soft) !important;
+  background: color-mix(in srgb, var(--comfort-soft) 82%, #ffffff) !important;
+  box-shadow: inset 0 1px rgba(255,255,255,.85);
+}
+
+html[data-color-mode="light"] body #tutor-academic-root :is(
+  .tutor-launchpad h2, .tutor-empty-pack b, .tutor-pack-card h4, .tutor-wizard h2,
+  .tutor-next-lesson h3, .tutor-module-card b, .tutor-pack-course h2,
+  .tutor-study-plan h4, .tutor-history-list p, .tutor-empty-history h3,
+  .tutor-message-content strong, .tutor-focus h3, .tutor-timer,
+  .tutor-section-title h2, .tutor-summary-paper h3
+) { color: var(--comfort-ink) !important; }
+
+html[data-color-mode="light"] body #tutor-academic-root :is(
+  .tutor-launchpad p, .tutor-empty-pack p, .tutor-wizard p, .tutor-next-lesson p,
+  .tutor-module-card small, .tutor-pack-course p, .tutor-history-list small,
+  .tutor-empty-history p, .tutor-focus p, .tutor-source-note, .tutor-data-note,
+  .tutor-cost-note, .tutor-privacy, .tutor-compose-note
+) { color: var(--comfort-muted) !important; }
+
+html[data-color-mode="light"] body #tutor-academic-root :is(
+  .tutor-context select, .tutor-context-smart select, .tutor-help-config select,
+  .tutor-paste-field textarea, .tutor-date-panel input, .tutor-profile-fields input,
+  .tutor-compose textarea, .tutor-notes textarea
+) {
+  color: var(--comfort-ink) !important;
+  border-color: var(--comfort-line-soft) !important;
+  background: #ffffff !important;
+}
+
+html[data-color-mode="light"] body #tutor-academic-root .tutor-messages {
+  background:
+    radial-gradient(circle at 70% 0, color-mix(in srgb, var(--ugel-accent-2) 6%, transparent), transparent 36%),
+    color-mix(in srgb, var(--comfort-soft) 66%, #ffffff) !important;
+}
+
+html[data-color-mode="light"] body #tutor-academic-root .tutor-message {
+  color: var(--comfort-ink) !important;
+  border-color: var(--comfort-line-soft) !important;
+}
+
+html[data-color-mode="light"] body #tutor-academic-root :is(.tutor-message.ai, .tutor-message.guide) {
+  background: #ffffff !important;
+  box-shadow: 0 9px 28px rgba(44, 61, 86, .075) !important;
+}
+
+html[data-color-mode="light"] body #tutor-academic-root .tutor-message.user {
+  color: var(--ugel-on-accent, #ffffff) !important;
+  border-color: transparent !important;
+  background: linear-gradient(135deg, var(--ugel-accent), var(--ugel-accent-2)) !important;
+}
+
+html[data-color-mode="light"] body #tutor-academic-root .tutor-message.user :is(p, small, strong) { color: inherit !important; }
+html[data-color-mode="light"] body #tutor-academic-root .tutor-message-content code {
+  color: color-mix(in srgb, var(--ugel-accent) 82%, #17233b);
+  border: 1px solid var(--comfort-line-soft);
+  background: var(--comfort-soft) !important;
+}
+
+html[data-color-mode="light"] body #tutor-academic-root :is(.tutor-studio-nav button.active, .tutor-scope-switch button.active, .tutor-learning-tabs button.active) {
+  color: var(--ugel-on-accent, #ffffff) !important;
+  border-color: transparent !important;
+  background: linear-gradient(135deg, var(--ugel-accent), var(--ugel-accent-2)) !important;
+  box-shadow: 0 8px 22px color-mix(in srgb, var(--ugel-accent) 16%, transparent);
+}
+
+/* ---------------------- Orientación vocacional ---------------------- */
+html[data-color-mode="light"] body :is(
+  .vocational-public-shell, .vocational-public-header, .vocational-hero,
+  .vocational-method-grid article, .vocational-question-card,
+  .vocational-profile-panel, .vocational-next-panel, .vocational-career-card,
+  .vocational-seven-days, .vocational-explorer-command, .vocational-university-card,
+  .vocational-career-detail > header, .vocational-detail-columns article,
+  .vocational-career-facts article, .vocational-radar-panel, .vocational-phase-strip,
+  .vocational-result-hero, .vocational-compare-dialog, .vocational-compare-grid article
+) {
+  color: var(--comfort-ink) !important;
+  border-color: var(--comfort-line-soft) !important;
+  background:
+    radial-gradient(circle at 100% 0, color-mix(in srgb, var(--ugel-accent-2) 4%, transparent), transparent 36%),
+    linear-gradient(145deg, var(--comfort-paper), var(--comfort-paper-solid)) !important;
+  box-shadow: var(--comfort-shadow) !important;
+}
+
+html[data-color-mode="light"] body :is(
+  .vocational-public-shell, .vocational-hero, .vocational-method-grid article,
+  .vocational-question-card, .vocational-profile-panel, .vocational-next-panel,
+  .vocational-career-card, .vocational-seven-days, .vocational-explorer-command,
+  .vocational-university-card, .vocational-career-detail, .vocational-compare-dialog
+) :is(h1, h2, h3, h4, b, strong) { color: var(--comfort-ink) !important; }
+
+html[data-color-mode="light"] body :is(
+  .vocational-page-head p, .vocational-hero-copy > p, .vocational-method-grid p,
+  .vocational-career-card > p, .vocational-next-panel ol, .vocational-seven-days p,
+  .vocational-question-card p, .vocational-university-card p
+) { color: var(--comfort-muted) !important; }
+
+html[data-color-mode="light"] body .vocational-phase-strip article b { color: var(--comfort-ink) !important; }
+html[data-color-mode="light"] body .vocational-phase-strip article small { color: var(--comfort-faint) !important; }
+html[data-color-mode="light"] body .vocational-radar .grid :is(polygon, line) { stroke: rgba(52,72,108,.18); }
+html[data-color-mode="light"] body .vocational-radar .labels text { fill: var(--comfort-muted); }
+
+html[data-color-mode="light"] body .vocational-scale button {
+  color: var(--comfort-muted);
+  border-color: var(--comfort-line-soft);
+  background: var(--comfort-paper-solid) !important;
+}
+
+html[data-color-mode="light"] body .vocational-scale button:hover,
+html[data-color-mode="light"] body .vocational-scale button.selected {
+  color: var(--comfort-ink);
+  border-color: color-mix(in srgb, var(--ugel-accent) 42%, var(--comfort-line));
+  background: var(--comfort-accent-wash) !important;
+}
+
+html[data-color-mode="light"] body :is(.vocational-secondary, .vocational-career-card footer button, .vocational-university-card header button, .vocational-official-sources > a) {
+  color: var(--comfort-ink) !important;
+  border-color: var(--comfort-line-soft) !important;
+  background: var(--comfort-soft) !important;
+}
+
+/* ------------------ Cursos, fórmulas, horario y ranking ------------------ */
+html[data-color-mode="light"] body :is(
+  .course-exam-block, .formula-route-priorities, .formula-focus-card,
+  .formula-extra-components, .formula-source-card, .formula-recurrent-card,
+  .formula-sheet-card, .formula-course-accordion, .formula-empty,
+  .weekly-schedule-dialog, .weekly-schedule-stats div, .weekly-day-column,
+  .weekly-session, .agenda-dialog, .study-plan-dialog, .study-plan-insights div,
+  .study-plan-days button, .ranking-metric-tabs button
+) {
+  color: var(--comfort-ink);
+  border-color: var(--comfort-line-soft) !important;
+  background: linear-gradient(145deg, var(--comfort-paper), var(--comfort-paper-solid)) !important;
+  box-shadow: var(--comfort-shadow-sm) !important;
+}
+
+html[data-color-mode="light"] body :is(
+  .course-exam-block, .formula-route-priorities, .formula-focus-card,
+  .formula-recurrent-card, .formula-sheet-card, .formula-course-accordion,
+  .weekly-schedule-dialog, .agenda-dialog, .study-plan-dialog
+) :is(h1, h2, h3, h4, b, strong) { color: var(--comfort-ink) !important; }
+
+html[data-color-mode="light"] body :is(.formula-tabs, .formula-search, .ranking-view-tabs, .ranking-metric-tabs) {
+  border-color: var(--comfort-line-soft) !important;
+  background: color-mix(in srgb, var(--comfort-soft) 82%, #ffffff) !important;
+}
+
+html[data-color-mode="light"] body :is(.formula-tabs button, .formula-course-filter button, .ranking-period-tabs button, .ranking-metric-tabs button) {
+  color: var(--comfort-muted);
+  border-color: var(--comfort-line-soft);
+  background: transparent !important;
+}
+
+html[data-color-mode="light"] body :is(.formula-tabs button.active, .formula-course-filter button.active, .ranking-period-tabs button.active, .ranking-metric-tabs button.active) {
+  color: var(--ugel-on-accent, #ffffff) !important;
+  border-color: transparent !important;
+  background: linear-gradient(120deg, var(--ugel-accent), var(--ugel-accent-2)) !important;
+}
+
+html[data-color-mode="light"] body .course-block-toggle:hover { background: var(--comfort-accent-wash-2) !important; }
+html[data-color-mode="light"] body .course-block-copy b { color: var(--comfort-ink) !important; }
+html[data-color-mode="light"] body .course-block-panel { border-top-color: var(--comfort-line-soft); }
+html[data-color-mode="light"] body .ranking-real-row { border-bottom-color: var(--comfort-line-soft); }
+html[data-color-mode="light"] body .ranking-real-row.me {
+  border-color: color-mix(in srgb, var(--ugel-accent) 22%, var(--comfort-line));
+  background: var(--comfort-accent-wash) !important;
+}
+
+html[data-color-mode="light"] body .hyper-mission-control {
+  background: linear-gradient(120deg,
+    color-mix(in srgb, var(--ugel-accent) 22%, transparent),
+    color-mix(in srgb, var(--ugel-accent-2) 20%, transparent),
+    var(--comfort-line-soft));
+  box-shadow: var(--comfort-shadow);
+}
+
+html[data-color-mode="light"] body .hyper-mission-control article {
+  background: color-mix(in srgb, var(--comfort-paper-solid) 94%, transparent) !important;
+}
+
+/* ------------------------ Ventanas y avisos ------------------------ */
+html[data-color-mode="light"] body :is(.agenda-modal, .weekly-schedule-modal, .admission-profile-modal, .study-plan-modal, .vocational-compare-modal) {
+  background: rgba(35, 48, 70, .38) !important;
+  backdrop-filter: blur(14px) saturate(115%);
+}
+
+html[data-color-mode="light"] body :is(.agenda-dialog, .schedule-dialog, .admission-profile-dialog, .study-plan-dialog, .vocational-compare-dialog) {
+  color: var(--comfort-ink);
+  border-color: var(--comfort-line) !important;
+  background: linear-gradient(145deg, #ffffff, color-mix(in srgb, var(--comfort-soft) 74%, #ffffff)) !important;
+  box-shadow: 0 34px 90px rgba(39, 54, 78, .22) !important;
+}
+
+html[data-color-mode="light"] body :is(.agenda-dialog, .schedule-dialog, .admission-profile-dialog, .study-plan-dialog, .vocational-compare-dialog) :is(h1, h2, h3, b, strong) {
+  color: var(--comfort-ink) !important;
+}
+
+html[data-color-mode="light"] body :is(.agenda-close, .weekly-schedule-head > button, .weekly-panel-head > button, .study-plan-head > button) {
+  color: var(--comfort-ink) !important;
+  border-color: var(--comfort-line-soft) !important;
+  background: var(--comfort-soft) !important;
+}
+
+html[data-color-mode="light"] body :is(.notif-panel, .premium-toast, .ugel-toast) {
+  color: var(--comfort-ink) !important;
+  border-color: color-mix(in srgb, var(--ugel-accent-2) 22%, var(--comfort-line)) !important;
+  background: rgba(255,255,255,.97) !important;
+  box-shadow: 0 22px 58px rgba(40, 57, 82, .18) !important;
+}
+
+/* ----------------------- Panel de apariencia ----------------------- */
+html[data-color-mode="light"] body .ugel-personalizer {
+  background: rgba(36, 49, 70, .43) !important;
+  backdrop-filter: blur(16px) saturate(112%);
+}
+
+html[data-color-mode="light"] body .ugel-personalizer-panel {
+  color: var(--comfort-ink);
+  border-color: rgba(91, 108, 133, .2) !important;
+  background:
+    radial-gradient(circle at 92% 0, color-mix(in srgb, var(--ugel-accent-2) 9%, transparent), transparent 28%),
+    linear-gradient(150deg, #ffffff, color-mix(in srgb, var(--comfort-soft) 78%, #ffffff) 70%) !important;
+  box-shadow: 0 42px 110px rgba(38, 52, 75, .24) !important;
+}
+
+html[data-color-mode="light"] body .ugel-personalizer-head {
+  border-bottom-color: var(--comfort-line-soft);
+  background: color-mix(in srgb, #ffffff 88%, transparent);
+}
+
+html[data-color-mode="light"] body .ugel-personalizer-head small { color: color-mix(in srgb, var(--ugel-accent-2) 78%, #173448); }
+html[data-color-mode="light"] body .ugel-personalizer-head h2 { color: var(--comfort-ink); }
+html[data-color-mode="light"] body .ugel-personalizer-head p { color: var(--comfort-muted); }
+html[data-color-mode="light"] body .ugel-setting-label { color: var(--comfort-ink); }
+
+html[data-color-mode="light"] body .ugel-personalizer-close {
+  color: var(--comfort-ink);
+  border-color: var(--comfort-line-soft);
+  background: var(--comfort-soft) !important;
+}
+
+html[data-color-mode="light"] body :is(
+  .ugel-mode-section, .ugel-setting-card, .ugel-custom-builder,
+  .ugel-builder-section, .ugel-harmony-sync
+) {
+  color: var(--comfort-ink);
+  border-color: var(--comfort-line-soft) !important;
+  background: color-mix(in srgb, var(--comfort-paper-solid) 85%, transparent) !important;
+}
+
+html[data-color-mode="light"] body .ugel-mode-section > div:first-child > small,
+html[data-color-mode="light"] body .ugel-hyperdrive-card > small { color: var(--comfort-muted); }
+
+html[data-color-mode="light"] body .ugel-mode-options {
+  border-color: var(--comfort-line-soft);
+  background: var(--comfort-soft) !important;
+}
+
+html[data-color-mode="light"] body .ugel-mode-options button {
+  color: var(--comfort-muted);
+}
+
+html[data-color-mode="light"] body .ugel-mode-options button.active {
+  color: var(--ugel-on-accent, #ffffff);
+  background: linear-gradient(120deg, var(--ugel-accent), var(--ugel-accent-2)) !important;
+  box-shadow: 0 8px 21px color-mix(in srgb, var(--ugel-accent) 17%, transparent);
+}
+
+html[data-color-mode="light"] body .ugel-custom-toggle {
+  color: var(--comfort-ink);
+  border-color: color-mix(in srgb, var(--ugel-accent-2) 25%, var(--comfort-line));
+  background: linear-gradient(120deg, var(--comfort-accent-wash), var(--comfort-accent-wash-2)) !important;
+}
+
+html[data-color-mode="light"] body .ugel-custom-toggle > span:first-child { background: rgba(255,255,255,.72); }
+html[data-color-mode="light"] body .ugel-custom-toggle small { color: var(--comfort-muted); }
+html[data-color-mode="light"] body .ugel-custom-toggle em { color: color-mix(in srgb, var(--ugel-accent-2) 78%, #173448); }
+
+html[data-color-mode="light"] body .ugel-builder-title b,
+html[data-color-mode="light"] body .ugel-harmony-sync b { color: var(--comfort-ink); }
+html[data-color-mode="light"] body .ugel-builder-title small,
+html[data-color-mode="light"] body .ugel-harmony-sync small { color: var(--comfort-muted); }
+
+html[data-color-mode="light"] body :is(.ugel-harmony-presets button, .ugel-color-field, .ugel-pattern-row button, .ugel-image-upload, .ugel-image-row button, .ugel-position-row button, .ugel-spacing-options button, .ugel-size-options button, .ugel-quality-options button) {
+  color: var(--comfort-muted);
+  border-color: var(--comfort-line-soft);
+  background: color-mix(in srgb, var(--comfort-soft) 72%, #ffffff) !important;
+}
+
+html[data-color-mode="light"] body :is(.ugel-harmony-presets button:hover, .ugel-harmony-presets button.active, .ugel-pattern-row button.active, .ugel-position-row button.active, .ugel-spacing-options button.active, .ugel-size-options button.active, .ugel-quality-options button.active) {
+  color: var(--comfort-ink);
+  border-color: color-mix(in srgb, var(--ugel-accent-2) 46%, var(--comfort-line));
+  background: var(--comfort-accent-wash-2) !important;
+}
+
+html[data-color-mode="light"] body .ugel-color-field > span { color: var(--comfort-ink); }
+html[data-color-mode="light"] body .ugel-color-field output { color: var(--comfort-faint); }
+html[data-color-mode="light"] body :is(.ugel-range-grid label, .ugel-pattern-intensity, .ugel-access-row) { color: var(--comfort-muted); }
+html[data-color-mode="light"] body :is(.ugel-range-grid output, .ugel-pattern-intensity output) { color: color-mix(in srgb, var(--ugel-accent-2) 78%, #173448); }
+html[data-color-mode="light"] body .ugel-access-row + .ugel-access-row { border-top-color: var(--comfort-line-soft); }
+html[data-color-mode="light"] body .ugel-switch { background: #d4dce8; }
+html[data-color-mode="light"] body .ugel-switch.active { background: linear-gradient(120deg, var(--ugel-accent), var(--ugel-accent-2)); }
+
+html[data-color-mode="light"] body .ugel-live-preview {
+  border-block: 1px solid var(--comfort-line-soft);
+  box-shadow: inset 0 18px 45px rgba(62, 80, 108, .06);
+}
+
+html[data-color-mode="light"] body .ugel-live-preview em { color: #257858; }
+html[data-color-mode="light"] body .ugel-live-preview em.warning { color: #9a5e0a; }
+html[data-color-mode="light"] body .ugel-custom-reset,
+html[data-color-mode="light"] body .ugel-reset-button {
+  color: var(--comfort-muted);
+  border-color: var(--comfort-line-soft);
+  background: var(--comfort-soft) !important;
+}
+
+html[data-color-mode="light"] body :is(.ugel-custom-apply, .ugel-done-button) {
+  color: var(--ugel-on-accent, #ffffff);
+  background: linear-gradient(120deg, var(--ugel-accent), var(--ugel-accent-2)) !important;
+}
+
+/* -------------------------- Acceso y cuenta -------------------------- */
+html[data-color-mode="light"] body .auth-screen {
+  color: var(--comfort-ink);
+  background:
+    radial-gradient(circle at 12% 14%, color-mix(in srgb, var(--ugel-accent) 12%, transparent), transparent 27%),
+    radial-gradient(circle at 88% 86%, color-mix(in srgb, var(--ugel-accent-2) 12%, transparent), transparent 29%),
+    linear-gradient(145deg, #eef3f9, #f9fbfd) !important;
+}
+
+html[data-color-mode="light"] body .auth-presentation {
+  color: var(--comfort-ink);
+  background:
+    radial-gradient(circle at 80% 15%, color-mix(in srgb, var(--ugel-accent-2) 12%, transparent), transparent 28%),
+    linear-gradient(145deg, color-mix(in srgb, var(--ugel-accent) 8%, #f8f9ff), color-mix(in srgb, var(--ugel-accent-2) 7%, #edf8fa)) !important;
+}
+
+html[data-color-mode="light"] body .auth-access { background: rgba(255,255,255,.54) !important; }
+html[data-color-mode="light"] body :is(.auth-card, .onboarding-card) {
+  color: var(--comfort-ink);
+  border-color: var(--comfort-line-soft) !important;
+  background: rgba(255,255,255,.94) !important;
+  box-shadow: var(--comfort-shadow-lg) !important;
+}
+
+html[data-color-mode="light"] body :is(.auth-card, .auth-presentation, .onboarding-card) :is(h1, h2, h3, b, strong) { color: var(--comfort-ink) !important; }
+html[data-color-mode="light"] body :is(.auth-card, .auth-presentation, .onboarding-card) :is(p, small) { color: var(--comfort-muted) !important; }
+html[data-color-mode="light"] body .auth-tabs { border-color: var(--comfort-line-soft); background: var(--comfort-soft) !important; }
+html[data-color-mode="light"] body .auth-tab { color: var(--comfort-muted); }
+html[data-color-mode="light"] body .auth-tab.active { color: var(--comfort-ink); background: #ffffff !important; box-shadow: var(--comfort-shadow-sm); }
+html[data-color-mode="light"] body .auth-check > span { border-color: var(--comfort-line); background: #ffffff !important; }
+
+/* -------------------- Centro de comandos y fluidez -------------------- */
+html[data-color-mode="light"] body .hyper-ambient { opacity: .42; }
+html[data-color-mode="light"] body .hyper-ambient::before,
+html[data-color-mode="light"] body .hyper-ambient::after { opacity: .075; filter: blur(110px); }
+
+html[data-color-mode="light"] body .hyper-command-layer,
+html[data-color-mode="light"] body .hyper-focus-layer { background: rgba(35, 48, 70, .38) !important; }
+
+html[data-color-mode="light"] body :is(.hyper-command-panel, .hyper-focus-panel) {
+  color: var(--comfort-ink);
+  border-color: var(--comfort-line) !important;
+  background: linear-gradient(145deg, #ffffff, color-mix(in srgb, var(--comfort-soft) 76%, #ffffff)) !important;
+  box-shadow: 0 36px 100px rgba(37, 52, 77, .24) !important;
+}
+
+html[data-color-mode="light"] body :is(.hyper-command-head, .hyper-command-footer) { border-color: var(--comfort-line-soft); }
+html[data-color-mode="light"] body .hyper-command-search {
+  border-color: var(--comfort-line-soft);
+  background: var(--comfort-soft) !important;
+}
+html[data-color-mode="light"] body .hyper-command-search input { color: var(--comfort-ink) !important; background: transparent !important; }
+html[data-color-mode="light"] body .hyper-command-tabs button { color: var(--comfort-muted); }
+html[data-color-mode="light"] body .hyper-command-tabs button.active {
+  color: var(--ugel-on-accent, #ffffff);
+  background: linear-gradient(120deg, var(--ugel-accent), var(--ugel-accent-2)) !important;
+}
+html[data-color-mode="light"] body .hyper-command-item {
+  color: var(--comfort-ink);
+  border-color: transparent;
+  background: transparent !important;
+}
+html[data-color-mode="light"] body .hyper-command-item:hover,
+html[data-color-mode="light"] body .hyper-command-item.selected {
+  border-color: color-mix(in srgb, var(--ugel-accent-2) 24%, var(--comfort-line));
+  background: var(--comfort-accent-wash-2) !important;
+}
+
+/* La terminal conserva su identidad oscura para que el texto técnico sea cómodo. */
+html[data-color-mode="light"] body .hyper-terminal {
+  border-color: #35445f !important;
+  background: #0c1323 !important;
+  box-shadow: 0 22px 60px rgba(22, 32, 51, .23) !important;
+}
+html[data-color-mode="light"] body .hyper-terminal-input { color: #eaf2ff !important; background: #111a2c !important; }
+
+/* -------------------- Detalles de comodidad visual -------------------- */
+html[data-color-mode="light"] body :focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--ugel-accent-2) 50%, transparent);
+  outline-offset: 3px;
+}
+
+html[data-color-mode="light"] body * {
+  scrollbar-color: color-mix(in srgb, var(--ugel-accent) 38%, #aab5c5) transparent;
+}
+
+html[data-color-mode="light"] body *::-webkit-scrollbar-thumb {
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background: linear-gradient(var(--ugel-accent), var(--ugel-accent-2)) padding-box !important;
+}
+
+html[data-color-mode="light"] body[data-high-contrast="true"] {
+  --comfort-line: color-mix(in srgb, var(--comfort-ink) 42%, transparent);
+  --comfort-line-soft: color-mix(in srgb, var(--comfort-ink) 28%, transparent);
+}
+
+html[data-color-mode="light"] body[data-high-contrast="true"] :is(.card, .question-card, .practice-question-card, input, textarea, select) {
+  box-shadow: none !important;
+}
+
+@media (prefers-contrast: more) {
+  html[data-color-mode="light"] body {
+    --comfort-muted: #3e4b60;
+    --comfort-faint: #58677d;
+    --comfort-line-soft: rgba(35, 52, 77, .25);
+  }
+}
+
+@media (max-width: 760px) {
+  html[data-color-mode="light"] body .topbar { box-shadow: 0 7px 22px rgba(53,70,96,.08) !important; }
+  html[data-color-mode="light"] body .ugel-personalizer-panel { box-shadow: 0 -18px 60px rgba(38,52,75,.22) !important; }
+  html[data-color-mode="light"] body :is(.card, .course-card, .library-card, .practice-question-card) { box-shadow: 0 11px 30px rgba(45,62,88,.075) !important; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html.uniprep-theme-ready body,
+  html.uniprep-theme-ready body :is(.sidebar, .topbar, .card, .course-card, .library-card, .question-card, .tutor-chat, .ugel-personalizer-panel) {
+    transition: color .22s ease, border-color .22s ease, background-color .22s ease, box-shadow .22s ease;
+  }
+}

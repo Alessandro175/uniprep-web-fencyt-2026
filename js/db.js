@@ -104,6 +104,12 @@ function convertirPerfilSupabase(
     universidad:
       perfil.universidad || "",
 
+    procedencia:
+      perfil.procedencia || "",
+
+    avatarUrl:
+      perfil.avatar_url || "",
+
     nivel:
       Number(perfil.nivel ?? 1),
 
@@ -261,6 +267,7 @@ async function crearPerfilFaltante(authUser) {
     carrera: metadata.carrera || "",
     universidad: metadata.universidad || ""
   };
+  const extendido = {procedencia:metadata.procedencia || "", avatar_url:metadata.avatar_url || ""};
 
   try {
     const { data, error } = await window.supabaseClient
@@ -270,6 +277,10 @@ async function crearPerfilFaltante(authUser) {
       .maybeSingle();
 
     if (!error && data) {
+      if (extendido.procedencia || extendido.avatar_url) {
+        const extra = await window.supabaseClient.from("profiles").update(extendido).eq("id", authUser.id);
+        if (!extra.error) Object.assign(data, extendido);
+      }
       console.log("✅ Perfil creado automáticamente:", data.id);
       return data;
     }
@@ -280,7 +291,7 @@ async function crearPerfilFaltante(authUser) {
   }
 
   // Evita bloquear el acceso si la tabla o sus políticas aún no están listas.
-  return fila;
+  return {...fila, ...extendido};
 }
 
 
@@ -535,6 +546,19 @@ async function actualizarUsuario(
         ...usuario,
         ...actualizado
       };
+
+      const seleccion = window.obtenerSeleccionAdmision?.();
+      const cambiosExtendidos = {
+        procedencia: usuario.procedencia || seleccion?.procedencia || undefined,
+        avatar_url: usuario.avatarUrl || undefined
+      };
+      Object.keys(cambiosExtendidos).forEach(clave => cambiosExtendidos[clave] === undefined && delete cambiosExtendidos[clave]);
+      if (Object.keys(cambiosExtendidos).length) {
+        const extendido = await window.supabaseClient.from("profiles").update(cambiosExtendidos).eq("id", usuario.id);
+        if (extendido.error && !/column|schema cache|PGRST/i.test(extendido.error.message || "")) {
+          console.warn("No se pudieron sincronizar los datos extendidos del perfil:", extendido.error.message);
+        }
+      }
     }
 
     return {
@@ -1033,6 +1057,44 @@ async function registrarActividad({
 
 
 // =====================================================
+// REGISTRAR EVENTO NUMÉRICO PARA RANKING POR PERIODO
+// =====================================================
+
+async function registrarEventoPuntaje(evento = {}) {
+  const authUser = await obtenerUsuarioAuth();
+  const filaLocal = {
+    event_type: String(evento.tipo || "practica").slice(0, 40),
+    points: Math.max(0, Number(evento.puntos) || 0),
+    correct_answers: Math.max(0, Number(evento.correctas) || 0),
+    wrong_answers: Math.max(0, Number(evento.incorrectas) || 0),
+    blank_answers: Math.max(0, Number(evento.blancas) || 0),
+    total_answers: Math.max(0, Number(evento.total) || 0),
+    exam_score: evento.puntajeExamen === null || evento.puntajeExamen === undefined ? null : Number(evento.puntajeExamen),
+    exam_max: evento.puntajeMaximo === null || evento.puntajeMaximo === undefined ? null : Number(evento.puntajeMaximo),
+    exam_percent: evento.porcentajeExamen === null || evento.porcentajeExamen === undefined ? null : Math.min(100, Math.max(0, Number(evento.porcentajeExamen) || 0)),
+    exam_scale: String(evento.escala || "").slice(0, 80),
+    university_id: String(evento.universidadId || "general").slice(0, 40),
+    created_at: new Date().toISOString()
+  };
+  try {
+    const locales = window.uniprepStorage?.leer?.("uniprep_score_events_v1", []) || [];
+    window.uniprepStorage?.guardar?.("uniprep_score_events_v1", [filaLocal, ...locales].slice(0, 250));
+  } catch (_) {}
+  if (!authUser?.id || !window.supabaseClient) return {exito:false, local:true};
+  try {
+    const {error} = await window.supabaseClient.from("score_events").insert({user_id:authUser.id, ...filaLocal});
+    if (error) {
+      if (!/relation|column|schema cache|PGRST/i.test(error.message || "")) console.warn("No se pudo registrar el evento de puntaje:", error.message);
+      return {exito:false, local:true, mensaje:error.message};
+    }
+    return {exito:true};
+  } catch (error) {
+    return {exito:false, local:true, mensaje:error?.message || "No se pudo registrar el puntaje."};
+  }
+}
+
+
+// =====================================================
 // OBTENER ACTIVIDADES
 // =====================================================
 
@@ -1417,6 +1479,9 @@ window.obtenerProgresoCurso =
 
 window.registrarActividad =
   registrarActividad;
+
+window.registrarEventoPuntaje =
+  registrarEventoPuntaje;
 
 window.obtenerActividades =
   obtenerActividades;

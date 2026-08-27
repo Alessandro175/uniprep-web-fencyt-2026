@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>UniPrep · Importar banco de preguntas</title>
+  <style>
+    :root{color-scheme:dark;--bg:#070a18;--card:#111934;--line:#2b385f;--text:#f4f7ff;--muted:#aeb9d1;--a:#7e68ff;--b:#48d7ff;--ok:#48dfad;--bad:#ff7095}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 90% 0,#17345a 0,transparent 30%),linear-gradient(145deg,#060817,#101b36);color:var(--text);font:15px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}.wrap{width:min(980px,calc(100% - 28px));margin:38px auto}.hero,.card{border:1px solid var(--line);border-radius:22px;background:rgba(17,25,52,.92);box-shadow:0 24px 70px #0005}.hero{padding:28px;background:radial-gradient(circle at 90% 10%,#48d7ff20,transparent 32%),linear-gradient(130deg,#18194a,#0b243a)}h1{margin:5px 0 8px;font-size:clamp(27px,5vw,43px)}h2{margin:0 0 5px;font-size:20px}.tag{color:var(--ok);font-size:11px;font-weight:900;letter-spacing:1px}.hero p,.muted{color:var(--muted)}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}.card{padding:20px;margin-top:13px}.step{margin:0}.step b{display:grid;place-items:center;width:31px;height:31px;margin-bottom:8px;border-radius:10px;background:#7e68ff25;color:#aa9cff}.upload{display:grid;gap:8px;margin-top:12px;padding:17px;border:1px dashed #52658f;border-radius:15px;background:#ffffff05}.upload input{width:100%;padding:11px;border-radius:10px;background:#080e22;color:#fff}.upload small{color:var(--muted)}button{min-height:45px;padding:0 17px;border:0;border-radius:12px;color:#fff;background:linear-gradient(120deg,var(--a),#398fd5);font-weight:800;cursor:pointer}button:disabled{opacity:.45;cursor:not-allowed}.secondary{border:1px solid var(--line);background:#ffffff07}.actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px}.status{display:grid;gap:10px;margin-top:14px}.status article{padding:14px;border:1px solid var(--line);border-radius:13px;background:#071026}.status .ok{border-color:#48dfad55}.status .bad{border-color:#ff709555}.numbers{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.numbers span{padding:12px;border-radius:11px;background:#ffffff06;color:var(--muted);font-size:12px}.numbers b{display:block;color:#fff;font-size:22px}.errors{max-height:280px;overflow:auto;margin:0;padding-left:22px;color:#ffc2d1}.privacy{margin-top:14px;color:var(--muted);font-size:12px}.privacy b{color:var(--ok)}code{color:#8ee8ff}@media(max-width:700px){.steps,.numbers{grid-template-columns:1fr}.wrap{margin:18px auto}.hero,.card{padding:18px}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <span class="tag">HERRAMIENTA LOCAL · UNIPREP UGEL</span>
+      <h1>Importa tu banco sin romper el sistema.</h1>
+      <p>Combina un curso actual de UniPrep con preguntas compradas en CSV o JSON. La herramienta valida temas, alternativas, respuesta, solución y duplicados antes de crear un archivo nuevo.</p>
+      <div class="steps">
+        <article class="step"><b>1</b>Elige el JSON original del curso.</article>
+        <article class="step"><b>2</b>Elige el banco comprado en CSV o JSON.</article>
+        <article class="step"><b>3</b>Revisa el informe y descarga el resultado.</article>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>1. Curso base</h2>
+      <p class="muted">Ejemplo: <code>json/quiz-cursos/algebra.json</code>. Nunca se modifica el archivo que seleccionas.</p>
+      <label class="upload">JSON actual del curso<input id="base" type="file" accept="application/json,.json"><small id="base-note">Esperando archivo…</small></label>
+    </section>
+
+    <section class="card">
+      <h2>2. Banco nuevo</h2>
+      <p class="muted">CSV recomendado: tema, dificultad, pregunta, alternativa_a, alternativa_b, alternativa_c, alternativa_d, alternativa_e, respuesta, solucion, universidad.</p>
+      <label class="upload">Banco comprado<input id="bank" type="file" accept="application/json,text/csv,.json,.csv"><small id="bank-note">Usa la plantilla incluida en la carpeta <code>plantillas</code>.</small></label>
+      <div class="actions"><button id="process" type="button" disabled>Validar y combinar</button><button class="secondary" type="button" id="reset">Limpiar</button></div>
+      <div id="report" class="status" aria-live="polite"></div>
+    </section>
+
+    <p class="privacy"><b>Privacidad:</b> todo se procesa dentro de tu navegador. Los archivos no se suben a internet. Conserva la licencia y procedencia del banco comprado.</p>
+  </main>
+  <script>
+    (()=>{
+      "use strict";
+      const $=id=>document.getElementById(id);
+      let base=null, banco=null, nombreBase="curso.json";
+      const normalizar=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/\s+/g," ").trim();
+      const limpiar=s=>String(s??"").replace(/^\s*(?:\*\*)?\[[^\]]+\](?:\*\*)?\s*/,"").replace(/\s+/g," ").trim();
+      const html=s=>{const d=document.createElement("div");d.textContent=String(s??"");return d.innerHTML};
+
+      function csv(texto){
+        const filas=[];let fila=[],celda="",comillas=false;
+        for(let i=0;i<texto.length;i++){
+          const c=texto[i],sig=texto[i+1];
+          if(c==='"'&&comillas&&sig==='"'){celda+='"';i++;continue}
+          if(c==='"'){comillas=!comillas;continue}
+          if(c===","&&!comillas){fila.push(celda);celda="";continue}
+          if((c==="\n"||c==="\r")&&!comillas){if(c==="\r"&&sig==="\n")i++;fila.push(celda);if(fila.some(v=>v.trim()))filas.push(fila);fila=[];celda="";continue}
+          celda+=c;
+        }
+        fila.push(celda);if(fila.some(v=>v.trim()))filas.push(fila);
+        if(filas.length<2)throw new Error("El CSV no contiene filas de preguntas.");
+        const cab=filas.shift().map(normalizar).map(x=>x.replace(/[^a-z0-9]+/g,"_"));
+        return filas.map(f=>Object.fromEntries(cab.map((h,i)=>[h,String(f[i]??"").trim()])));
+      }
+
+      function filasBanco(valor){
+        if(Array.isArray(valor))return valor;
+        if(Array.isArray(valor?.preguntas))return valor.preguntas;
+        throw new Error("El JSON del banco debe ser una lista o contener una lista llamada preguntas.");
+      }
+
+      function alternativas(fila){
+        if(Array.isArray(fila.alternativas))return fila.alternativas.map(limpiar).filter(Boolean);
+        return ["a","b","c","d","e"].map(l=>fila[`alternativa_${l}`]??fila[l]).map(limpiar).filter(Boolean);
+      }
+
+      function respuesta(valor,total){
+        const t=String(valor??"").trim().toUpperCase();
+        if(/^[A-E]$/.test(t))return t.charCodeAt(0)-65;
+        if(/^\d+$/.test(t)){const n=Number(t);if(n>=1&&n<=total)return n-1;if(n>=0&&n<total)return n}
+        return -1;
+      }
+
+      function nivel(valor){
+        const n=normalizar(valor);
+        if(["basico","base","facil"].includes(n))return"basico";
+        if(["intermedio","medio"].includes(n))return"intermedio";
+        if(["avanzado","dificil"].includes(n))return"avanzado";
+        if(["admision","reto","universidad"].includes(n))return"admision";
+        return"";
+      }
+
+      function contar(documento){
+        const total={basico:0,intermedio:0,avanzado:0,admision:0,total:0};
+        for(const tema of documento.temas||[]){
+          const d={basico:0,intermedio:0,avanzado:0,admision:0,total:0};
+          tema.niveles=tema.niveles||{};
+          for(const n of ["basico","intermedio","avanzado","admision"]){tema.niveles[n]=Array.isArray(tema.niveles[n])?tema.niveles[n]:[];d[n]=tema.niveles[n].length;total[n]+=d[n];d.total+=d[n];total.total+=d[n]}
+          tema.distribucion=d;
+        }
+        documento.distribucion=total;
+      }
+
+      function combinar(){
+        const salida=structuredClone(base),errores=[],avisos=[];
+        const temas=new Map((salida.temas||[]).map(t=>[normalizar(t.titulo),t]));
+        const vistas=new Set();
+        for(const t of salida.temas||[])for(const n of Object.values(t.niveles||{}))for(const p of Array.isArray(n)?n:[])vistas.add(normalizar(limpiar(p.pregunta)));
+        let agregadas=0,duplicadas=0;
+        filasBanco(banco).forEach((fila,i)=>{
+          const numero=i+2,tema=temas.get(normalizar(fila.tema||fila.topic)),dificultad=nivel(fila.dificultad||fila.nivel),pregunta=limpiar(fila.pregunta||fila.enunciado),opciones=alternativas(fila),correcta=respuesta(fila.respuesta??fila.correcta,opciones.length),solucion=limpiar(fila.solucion||fila.explicacion),clave=normalizar(pregunta);
+          const fallos=[];
+          if(!tema)fallos.push(`tema no coincide con el temario: “${fila.tema||fila.topic||"vacío"}”`);
+          if(!dificultad)fallos.push("dificultad inválida");
+          if(pregunta.length<12)fallos.push("pregunta demasiado corta");
+          if(opciones.length<2||opciones.length>5)fallos.push("debe tener entre 2 y 5 alternativas");
+          if(new Set(opciones.map(normalizar)).size!==opciones.length)fallos.push("hay alternativas repetidas");
+          if(correcta<0||correcta>=opciones.length)fallos.push("respuesta inválida; usa A, B, C, D o E");
+          if(solucion.length<8)fallos.push("falta una solución explicada");
+          if(fallos.length){errores.push(`Fila ${numero}: ${fallos.join("; ")}`);return}
+          if(vistas.has(clave)){duplicadas++;avisos.push(`Fila ${numero}: pregunta duplicada omitida.`);return}
+          vistas.add(clave);
+          const prefijo=String(salida.courseId||"UP").replace(/[^a-z0-9]/gi,"").toUpperCase();
+          const id=`${prefijo}-IMP-${String(Date.now()).slice(-6)}-${String(agregadas+1).padStart(4,"0")}`;
+          tema.niveles=tema.niveles||{};tema.niveles[dificultad]=Array.isArray(tema.niveles[dificultad])?tema.niveles[dificultad]:[];
+          tema.niveles[dificultad].push({id,universidadReferencia:limpiar(fila.universidad||fila.universidad_referencia||"GENERAL").toUpperCase(),dificultad,tema:tema.titulo,subarea:limpiar(fila.subarea||tema.subarea||"General"),competencia:limpiar(fila.competencia||"Resuelve una pregunta de admisión"),pregunta,alternativas:opciones,respuesta:correcta,solucion,explicacion:solucion,pasosMinimos:Math.max(1,Number(fila.pasos_minimos)||1),alineacionUniversitaria:"Pregunta importada de un banco con licencia; revisar autoría y convocatoria."});
+          agregadas++;
+        });
+        contar(salida);salida.version=`${salida.version||"2026"}-importado-${new Date().toISOString().slice(0,10)}`;
+        return{salida,errores,avisos,agregadas,duplicadas,total:filasBanco(banco).length};
+      }
+
+      function descargar(objeto){
+        const blob=new Blob([JSON.stringify(objeto,null,2)+"\n"],{type:"application/json"}),a=document.createElement("a");
+        a.href=URL.createObjectURL(blob);a.download=nombreBase.replace(/\.json$/i,"")+"-CON-BANCO.json";a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);
+      }
+
+      function informe(r){
+        const clase=r.errores.length?"bad":"ok";
+        $("report").innerHTML=`<article class="${clase}"><div class="numbers"><span><b>${r.total}</b>leídas</span><span><b>${r.agregadas}</b>válidas</span><span><b>${r.duplicadas}</b>duplicadas</span><span><b>${r.errores.length}</b>con error</span></div></article>${r.errores.length?`<article class="bad"><b>Corrige estas filas antes de usarlas:</b><ol class="errors">${r.errores.slice(0,100).map(e=>`<li>${html(e)}</li>`).join("")}</ol></article>`:""}${r.agregadas?'<button id="download" type="button">Descargar JSON combinado</button>':""}<p class="muted">El archivo original no fue modificado. Revisa manualmente una muestra antes de reemplazar el curso de producción.</p>`;
+        $("download")?.addEventListener("click",()=>descargar(r.salida));
+      }
+
+      async function leerArchivo(input,tipo){
+        const archivo=input.files?.[0];if(!archivo)return;
+        try{
+          const texto=await archivo.text();
+          if(tipo==="base"){
+            base=JSON.parse(texto);
+            if(!Array.isArray(base.temas))throw new Error("No parece un JSON de curso UniPrep.");
+            nombreBase=archivo.name;
+            $("base-note").textContent=`✓ ${base.nombre||archivo.name} · ${(base.temas||[]).length} temas`;
+          }else{
+            banco=/\.csv$/i.test(archivo.name)?csv(texto):JSON.parse(texto);
+            $("bank-note").textContent=`✓ ${filasBanco(banco).length} filas listas para validar`;
+          }
+          $("process").disabled=!(base&&banco);
+        }catch(e){
+          if(tipo==="base")base=null;else banco=null;
+          $(tipo+"-note").textContent=`Error: ${e.message}`;
+          $("process").disabled=true;
+        }
+      }
+
+      $("base").addEventListener("change",e=>leerArchivo(e.target,"base"));
+      $("bank").addEventListener("change",e=>leerArchivo(e.target,"bank"));
+      $("process").addEventListener("click",()=>{try{informe(combinar())}catch(e){$("report").innerHTML=`<article class="bad">No se pudo procesar: ${html(e.message)}</article>`}});
+      $("reset").addEventListener("click",()=>{base=null;banco=null;$("base").value=$("bank").value="";$("base-note").textContent="Esperando archivo…";$("bank-note").textContent="Usa la plantilla incluida en la carpeta plantillas.";$("report").innerHTML="";$("process").disabled=true});
+    })();
+  </script>
+</body>
+</html>

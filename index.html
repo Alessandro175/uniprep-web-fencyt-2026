@@ -4,22 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#080c20">
-  <meta name="uniprep-version" content="2026.14.0">
+  <meta name="uniprep-version" content="2026.21-harmony-comfort">
   <meta name="description" content="UniPrep: preparación preuniversitaria inteligente con práctica, simulacros, analítica y biblioteca académica.">
-  <title>UniPrep 2 — Tu ingreso comienza aquí</title>
+  <title>UniPrep 2 UGEL Harmony Comfort — Tu ingreso comienza aquí</title>
   <link rel="manifest" href="manifest.webmanifest">
+  <script src="js/theme-bootstrap.js?v=2026.21.0"></script>
 
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css?v=2026.12.0">
   <link rel="stylesheet" href="css/premium.css?v=2026.10.2">
   <link rel="stylesheet" href="css/practice-center.css?v=2026.13.0">
-  <link rel="stylesheet" href="css/tutor.css">
+  <link rel="stylesheet" href="css/tutor.css?v=2026.18.0">
   <link rel="stylesheet" href="css/admission-profile.css">
   <link rel="stylesheet" href="css/study-tools.css?v=2026.9.0">
   <link rel="stylesheet" href="css/visual-wow.css">
-  <link rel="stylesheet" href="css/vocational.css?v=2026.9.0">
+  <link rel="stylesheet" href="css/vocational.css?v=2026.18.0">
   <link rel="stylesheet" href="css/celebrations.css?v=2026.9.0">
-  <link rel="stylesheet" href="css/showcase-mode.css?v=2026.14.0">
+  <link rel="stylesheet" href="css/showcase-mode.css?v=2026.18.0">
+  <link rel="stylesheet" href="css/ugel-2026.css?v=2026.20.0">
+  <link rel="stylesheet" href="css/evolution-2026.css?v=2026.18.0">
+  <link rel="stylesheet" href="css/hyperdrive-2026.css?v=2026.20.1">
+  <link rel="stylesheet" href="css/light-comfort-2026.css?v=2026.21.0">
 </head>
 <body>
 <!-- SIDEBAR -->
@@ -53,7 +58,7 @@
     <div class="nav-item" data-screen="ejercicios" onclick="abrirCentroPractica(this)">
       <svg class="nav-icon" viewBox="0 0 18 18" fill="none"><path d="M9 2L2 5v8l7 3 7-3V5L9 2z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M9 8v4M7 10h4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
       Práctica
-      <span class="nav-badge" id="practice-nav-badge" title="Preguntas disponibles">7.3K</span>
+      <span class="nav-badge" id="practice-nav-badge" title="Preguntas disponibles">6,480</span>
     </div>
     <div class="nav-item" onclick="go('formulas',this)">
       <svg class="nav-icon" viewBox="0 0 18 18" fill="none"><path d="M4 4h10M4 9h6M4 14h8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
@@ -82,8 +87,8 @@
     </div>
     <div class="nav-item" data-screen="tutor" onclick="abrirTutorAcademico(this)">
       <svg class="nav-icon" viewBox="0 0 18 18" fill="none"><path d="M3 4.5h12v8H8l-3.5 2.5v-2.5H3v-8z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M6 7h6M6 9.5h4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
-      Tutor académico
-      <span class="nav-new tutor-nav-badge">NUEVO</span>
+      Tutor con IA
+      <span class="nav-new tutor-nav-badge">IA</span>
     </div>
 
     <div class="nav-section-label">Personal</div>
@@ -124,9 +129,12 @@
         <circle cx="6" cy="6" r="4" stroke="currentColor" stroke-width="1.3"/>
         <path d="M9 9l3 3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
       </svg>
-      <input id="global-search" type="search" placeholder="Buscar temas, ejercicios..." aria-label="Buscar cursos y temas" onkeydown="if(event.key==='Enter'){buscarEnUniPrep(this.value)}">
+      <input type="text" placeholder="Buscar temas, ejercicios...">
     </div>
     <div class="topbar-actions">
+      <button class="visual-settings-button" type="button" onclick="abrirPersonalizacionUniPrep()" aria-label="Personalizar fondo y lectura" title="Personalizar UniPrep">
+        <span aria-hidden="true">✦</span><b>Fondos</b>
+      </button>
       <button class="icon-btn onboarding-help-btn" type="button" onclick="iniciarTutorialUniPrep({forzar:true})" aria-label="Abrir tutorial de UniPrep" title="Cómo usar UniPrep">?</button>
       <button class="topbar-install-btn" id="install-app-btn" type="button" onclick="instalarUniPrep()" hidden>＋ Instalar</button>
       <span class="app-network-status" id="app-network-status" title="Estado de conexión">● En línea</span>
@@ -597,6 +605,16 @@
         </article>
       </div>
 
+      <div class="section-label">Nuevos retos de entrenamiento</div>
+      <p class="exam-model-note">Cinco modalidades para diagnosticar, ganar velocidad o ensayar una ruta universitaria. Todo el contenido es referencial y elaborado para practicar.</p>
+      <div class="exam-evolution-grid">
+        <article class="exam-evolution-card" style="--exam-glow:#54d5ff"><span>🩺</span><small>DIAGNÓSTICO · NUEVO</small><h3>Diagnóstico UniPrep 20</h3><p>Mide tu punto de partida con una muestra breve y multidisciplinaria antes de elegir una ruta.</p><div><i>20 preguntas</i><i>30 min</i><i>Resultado inmediato</i></div><button type="button" onclick="iniciarSimulacroTipo('diagnostico_20')">Iniciar diagnóstico →</button></article>
+        <article class="exam-evolution-card" style="--exam-glow:#ff8d6b"><span>⚡</span><small>VELOCIDAD · NUEVO</small><h3>Reto Express 30</h3><p>Entrena decisiones rápidas, precisión y control del tiempo en una sesión compacta.</p><div><i>30 preguntas</i><i>45 min</i><i>Contrarreloj</i></div><button type="button" onclick="iniciarSimulacroTipo('reto_30')">Aceptar el reto →</button></article>
+        <article class="exam-evolution-card" style="--exam-glow:#54dda9"><span>🌿</span><small>MADRE DE DIOS · REFERENCIAL</small><h3>Ruta UNAMAD 100</h3><p>Simulacro amplio basado en la ruta configurada y los cursos priorizados para tu preparación.</p><div><i>100 preguntas</i><i>180 min</i><i>Escala referencial</i></div><button type="button" onclick="iniciarSimulacroTipo('unamad_100')">Practicar ruta UNAMAD →</button></article>
+        <article class="exam-evolution-card" style="--exam-glow:#a57cff"><span>🏔️</span><small>CUSCO · ESTRUCTURA REFERENCIAL</small><h3>Ruta UNSAAC 80</h3><p>Entrenamiento multidisciplinario de 80 preguntas; la distribución oficial depende del área elegida.</p><div><i>80 preguntas</i><i>120 min</i><i>Escala referencial</i></div><button type="button" onclick="iniciarSimulacroTipo('unsaac_80')">Practicar ruta UNSAAC →</button></article>
+        <article class="exam-evolution-card" style="--exam-glow:#ffd166"><span>🏁</span><small>ALTA EXIGENCIA · NUEVO</small><h3>Maratón Nacional 100</h3><p>Una prueba completa con menos tiempo para fortalecer resistencia, ritmo y estrategia.</p><div><i>100 preguntas</i><i>150 min</i><i>Modo exigente</i></div><button type="button" onclick="iniciarSimulacroTipo('maraton_100')">Comenzar maratón →</button></article>
+      </div>
+
       <div class="section-label">Historial de simulacros</div>
       <div id="exam-history" style="display:flex;flex-direction:column;gap:10px;margin-bottom:24px">
         <div class="exam-result-card">
@@ -664,9 +682,14 @@
 
       <div class="sim-layout">
         <main>
-          <div class="question-card">
-            <div class="question-subject" id="exam-subject">Matemática</div>
+          <div class="question-card exam-readable-card">
+            <div class="question-readable-head">
+              <div><span class="question-kicker">ENUNCIADO</span><div class="question-subject" id="exam-subject">Matemática</div></div>
+              <button class="question-audio-button" type="button" onclick="leerPreguntaVisible()" aria-label="Leer pregunta y alternativas en voz alta">🔊 Leer</button>
+            </div>
+            <div class="question-stimulus" id="exam-stimulus" hidden></div>
             <div class="question-text" id="exam-question">Cargando pregunta...</div>
+            <div class="question-instruction">Selecciona una alternativa. Puedes cambiarla antes de finalizar.</div>
           </div>
           <div class="options-grid" id="exam-options"></div>
           <div id="exam-selection-status" class="exam-selection-status">Selecciona una alternativa. La respuesta correcta se mostrará al finalizar.</div>
@@ -688,7 +711,10 @@
     <!-- ── RESULTADO DEL SIMULACRO ── -->
     <div class="screen" id="exam-result">
       <div class="result-hero card">
-        <div class="result-score" id="exam-final-score">0%</div>
+        <div class="result-score-wrap">
+          <div class="result-score" id="exam-final-score">0</div>
+          <small id="exam-final-scale">Puntaje del simulacro</small>
+        </div>
         <div>
           <div class="page-title" id="exam-result-title">Resultado del simulacro</div>
           <div class="page-subtitle" id="exam-result-summary"></div>
@@ -712,7 +738,7 @@
       <div id="exam-review" class="exam-review"></div>
       <div class="result-buttons">
         <button class="btn btn-ghost" onclick="go('exams',null)">Ver historial</button>
-        <button class="btn btn-primary" onclick="iniciarSimulacro(true)">Intentar de nuevo</button>
+        <button class="btn btn-primary" onclick="repetirUltimoSimulacro()">Intentar de nuevo</button>
       </div>
     </div>
 
@@ -872,7 +898,16 @@
       <div class="profile-cover"></div>
 
       <div class="profile-card-body">
-        <div class="profile-avatar-wrap" id="profile-avatar">PU</div>
+        <div class="profile-photo-shell">
+          <button class="profile-avatar-wrap profile-avatar-button" id="profile-avatar" type="button" onclick="elegirFotoPerfil()" aria-label="Cambiar foto de perfil">
+            <span id="profile-avatar-initials">PU</span>
+            <img id="profile-avatar-image" alt="Foto de perfil" hidden>
+            <i aria-hidden="true">📷</i>
+          </button>
+          <input id="profile-photo-input" type="file" accept="image/png,image/jpeg,image/webp" hidden onchange="subirFotoPerfil(this)">
+          <button class="profile-photo-change" type="button" onclick="elegirFotoPerfil()">Cambiar mi foto</button>
+          <small id="profile-photo-status">JPG, PNG o WebP · máximo 8 MB</small>
+        </div>
 
         <div class="profile-name" id="profile-name">
           Estudiante UniPrep
@@ -933,6 +968,13 @@
             <div class="pstat-num" id="profile-ranking">#--</div>
             <div class="pstat-lbl">Ranking</div>
           </div>
+        </div>
+
+        <div class="profile-scoreboard" aria-label="Resumen numérico de puntajes">
+          <article><span>XP total</span><b id="profile-score-xp">0</b><small>puntos de experiencia</small></article>
+          <article><span>Mejor simulacro</span><b id="profile-score-best">—</b><small id="profile-score-best-scale">sin intentos todavía</small></article>
+          <article><span>Promedio</span><b id="profile-score-average">—</b><small>últimos simulacros</small></article>
+          <article><span>Último puntaje</span><b id="profile-score-latest">—</b><small id="profile-score-latest-scale">escala del examen</small></article>
         </div>
       </div>
 
@@ -1604,40 +1646,43 @@
 
 </section>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script src="js/supabase.js?v=2026.15.0"></script>
-<script src="js/db.js"></script>
-<script src="js/user-storage.js?v=2026.15.0"></script>
+<script src="js/supabase.js"></script>
+<script src="js/db.js?v=2026.16.0"></script>
+<script src="js/user-storage.js?v=2026.9.0"></script>
+<script src="js/cloud-sync.js?v=2026.18.0"></script>
 <script src="js/admission-profile.js?v=2026.10.2"></script>
 <script src="js/university-syllabus.js?v=2026.13.0"></script>
-<script src="js/vocational.js?v=2026.9.0"></script>
+<script src="js/vocational.js?v=2026.18.0"></script>
 <script src="js/auth.js?v=2026.12.0"></script>
 <script src="js/navigation.js"></script>
 <script src="js/streak.js"></script>
 <script src="js/syllabus-unamad.js?v=2026.9.0"></script>
-<script src="js/courses.js?v=2026.15.0"></script>
-<script src="js/learning-content.js?v=2026.15.0"></script>
+<script src="js/courses.js?v=2026.13.0"></script>
 <script src="js/dashboard.js"></script>
 <script src="js/notifications.js"></script>
 <script src="js/calendar.js"></script>
 <script src="js/schedule.js"></script>
 <script src="js/formula-center.js?v=2026.9.0"></script>
-<script src="js/profile.js"></script>
-<script src="js/account-settings.js?v=2026.15.0"></script>
+<script src="js/profile.js?v=2026.16.0"></script>
+<script src="js/account-settings.js?v=2026.9.0"></script>
 <script src="js/onboarding.js?v=2026.12.0"></script>
 <script src="js/quiz.js"></script>
 <script src="js/questions-cepre.js"></script>
 <script src="js/questions-exams-2026.js?v=2026.11.0"></script>
 <script src="js/celebrations.js?v=2026.9.0"></script>
-<script src="js/practice-center.js?v=2026.13.0"></script>
-<script src="js/exam.js?v=2026.11.0"></script>
+<script src="js/practice-center.js?v=2026.16.0"></script>
+<script src="js/exam.js?v=2026.18.0"></script>
 <script src="js/timer.js"></script>
-<script src="js/ranking.js"></script>
+<script src="js/ranking.js?v=2026.16.0"></script>
 <script src="js/academic-report.js"></script>
-<script src="js/tutor.js"></script>
-<script src="js/pwa.js?v=2026.15.0"></script>
-<script src="js/app.js?v=2026.15.0"></script>
+<script src="js/tutor-studio.js?v=2026.18.0"></script>
+<script src="js/tutor.js?v=2026.18.0"></script>
+<script src="js/pwa.js?v=2026.20.0"></script>
+<script src="js/app.js?v=2026.12.0"></script>
 <script src="js/premium.js?v=2026.10.2"></script>
-<script src="js/showcase-mode.js?v=2026.14.0"></script>
+<script src="js/showcase-mode.js?v=2026.18.0"></script>
+<script src="js/ugel-ui.js?v=2026.21.0"></script>
+<script src="js/hyperdrive.js?v=2026.20.1"></script>
 
 </body>
 </html>

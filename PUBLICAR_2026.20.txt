@@ -1,0 +1,39 @@
+UNIPREP 2 UGEL — LISTA CORTA PARA PUBLICAR LA VERSIÓN 2026.20.1 HARMONY CLEAN
+
+CAMBIO SOLICITADO
+[✓] Se retiró por completo la barra flotante negra del centro inferior (Dock rápido).
+[✓] También se retiró su interruptor de Colores y apariencia.
+[✓] Este cambio visual NO requiere tabla, bucket ni variable nueva en Supabase o Vercel.
+
+ANTES DE SUBIR
+[ ] Conserva una copia del despliegue anterior.
+[ ] Ejecuta SUPABASE_UGEL_RANKING_FOTOS.sql si todavía no lo hiciste.
+[ ] Ejecuta SUPABASE_UGEL_EVOLUCION.sql.
+[ ] Verifica en Vercel OPENAI_API_KEY, OPENAI_MODEL=gpt-5.6-luna,
+    SUPABASE_URL y SUPABASE_PUBLISHABLE_KEY.
+
+PUBLICACIÓN
+[ ] Sube el contenido completo de esta carpeta.
+[ ] Vuelve a desplegar para que Vercel lea las variables.
+[ ] Abre /api/tutor y confirma available:true.
+[ ] Recarga dos veces para que el service worker cambie a v56-harmony-clean.
+
+PRUEBA DE COLOR INTEGRAL
+[ ] Abre Colores y apariencia > Personalizar toda la interfaz.
+[ ] Prueba Cósmica, Océano, Amazonía, Aurora, Grafito y Cielo claro.
+[ ] Cambia “Barras y navegación” y confirma que la barra superior se actualiza.
+[ ] Cambia “Banner inicial/final” y confirma que el banner del Tutor se actualiza.
+[ ] Cambia “Tarjetas principales/internas” y revisa las zonas inferiores del Tutor.
+[ ] Activa sincronización automática y cambia los dos colores de fondo.
+[ ] Pulsa “Usar mi diseño” y confirma el aviso de legibilidad protegida.
+[ ] Cierra sesión, vuelve a entrar y comprueba que la paleta se conservó.
+
+PRUEBA FUNCIONAL BREVE
+[ ] Pulsa Ctrl/⌘ + K y abre un curso.
+[ ] Escribe status en la Terminal Hyperdrive.
+[ ] Realiza una consulta de texto y otra con imagen en el Tutor.
+[ ] Abre Diagnóstico 20 y confirma 20 preguntas.
+[ ] Revisa ranking, foto y puntajes numéricos.
+[ ] Comprueba la personalización desde un celular.
+
+Nunca pegues claves privadas en el código, Supabase, capturas o informes.

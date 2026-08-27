@@ -7,14 +7,8 @@ const SUPABASE_URL =
 const SUPABASE_KEY =
   "sb_publishable_-YiBahW4cWbOkn1VCRdltA_Ope8mlnx";
 
-let supabaseClient = null;
-
-if (!window.supabase?.createClient) {
-  console.error(
-    "❌ No se pudo cargar la librería de Supabase. Revisa tu conexión y recarga la página."
-  );
-} else {
-  supabaseClient = window.supabase.createClient(
+const supabaseClient =
+  window.supabase.createClient(
     SUPABASE_URL,
     SUPABASE_KEY,
     {
@@ -26,7 +20,6 @@ if (!window.supabase?.createClient) {
     }
   );
 
-  console.log("✅ Supabase conectado correctamente");
-}
-
 window.supabaseClient = supabaseClient;
+
+console.log("✅ Supabase conectado correctamente");

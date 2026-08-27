@@ -60,7 +60,7 @@
             "tema": "Sistemas de medida angular",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 1/10] Tema Sistemas de medida angular. Calcula sen 0°.",
+            "pregunta": "Tema Sistemas de medida angular. Calcula sen 0°.",
             "alternativas": [
               "1/2",
               "√2/2",
@@ -80,7 +80,7 @@
             "tema": "Sistemas de medida angular",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 2/10] Tema Sistemas de medida angular. Calcula cos 30°.",
+            "pregunta": "Tema Sistemas de medida angular. Calcula cos 30°.",
             "alternativas": [
               "√2/2",
               "1/2",
@@ -100,7 +100,7 @@
             "tema": "Sistemas de medida angular",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 3/10] Tema Sistemas de medida angular. Calcula tan 45°.",
+            "pregunta": "Tema Sistemas de medida angular. Calcula tan 45°.",
             "alternativas": [
               "√3",
               "1",
@@ -120,7 +120,7 @@
             "tema": "Sistemas de medida angular",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 4/10] Tema Sistemas de medida angular. Calcula cot 60°.",
+            "pregunta": "Tema Sistemas de medida angular. Calcula cot 60°.",
             "alternativas": [
               "√3/3",
               "no definida",
@@ -140,7 +140,7 @@
             "tema": "Sistemas de medida angular",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 5/10] Tema Sistemas de medida angular. Calcula sen 90°.",
+            "pregunta": "Tema Sistemas de medida angular. Calcula sen 90°.",
             "alternativas": [
               "0",
               "1/2",
@@ -160,7 +160,7 @@
             "tema": "Sistemas de medida angular",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 6/10] Tema Sistemas de medida angular. Calcula cos 0°.",
+            "pregunta": "Tema Sistemas de medida angular. Calcula cos 0°.",
             "alternativas": [
               "√2/2",
               "1/2",
@@ -180,7 +180,7 @@
             "tema": "Sistemas de medida angular",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 7/10] Tema Sistemas de medida angular. Calcula tan 30°.",
+            "pregunta": "Tema Sistemas de medida angular. Calcula tan 30°.",
             "alternativas": [
               "√3",
               "√3/3",
@@ -200,7 +200,7 @@
             "tema": "Sistemas de medida angular",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 8/10] Tema Sistemas de medida angular. Calcula cot 45°.",
+            "pregunta": "Tema Sistemas de medida angular. Calcula cot 45°.",
             "alternativas": [
               "1",
               "no definida",
@@ -220,7 +220,7 @@
             "tema": "Sistemas de medida angular",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 9/10] Tema Sistemas de medida angular. Calcula sen 60°.",
+            "pregunta": "Tema Sistemas de medida angular. Calcula sen 60°.",
             "alternativas": [
               "0",
               "1/2",
@@ -240,7 +240,7 @@
             "tema": "Sistemas de medida angular",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 10/10] Tema Sistemas de medida angular. Calcula cos 90°.",
+            "pregunta": "Tema Sistemas de medida angular. Calcula cos 90°.",
             "alternativas": [
               "√3/2",
               "√2/2",
@@ -262,7 +262,7 @@
             "tema": "Sistemas de medida angular",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 1/10] Tema Sistemas de medida angular. Reduce al primer cuadrante y calcula sen 120°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Sistemas de medida angular. Reduce al primer cuadrante y calcula sen 120°, indicando el signo según el cuadrante.",
             "alternativas": [
               "0",
               "1",
@@ -282,7 +282,7 @@
             "tema": "Sistemas de medida angular",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 2/10] Tema Sistemas de medida angular. Reduce al primer cuadrante y calcula sen 135°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Sistemas de medida angular. Reduce al primer cuadrante y calcula sen 135°, indicando el signo según el cuadrante.",
             "alternativas": [
               "1",
               "√2/2",
@@ -302,7 +302,7 @@
             "tema": "Sistemas de medida angular",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 3/10] Tema Sistemas de medida angular. Reduce al primer cuadrante y calcula sen 150°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Sistemas de medida angular. Reduce al primer cuadrante y calcula sen 150°, indicando el signo según el cuadrante.",
             "alternativas": [
               "1/2",
               "−1/2",
@@ -322,7 +322,7 @@
             "tema": "Sistemas de medida angular",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 4/10] Tema Sistemas de medida angular. Reduce al primer cuadrante y calcula sen 210°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Sistemas de medida angular. Reduce al primer cuadrante y calcula sen 210°, indicando el signo según el cuadrante.",
             "alternativas": [
               "1/2",
               "0",
@@ -342,7 +342,7 @@
             "tema": "Sistemas de medida angular",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 5/10] Tema Sistemas de medida angular. Reduce al primer cuadrante y calcula sen 225°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Sistemas de medida angular. Reduce al primer cuadrante y calcula sen 225°, indicando el signo según el cuadrante.",
             "alternativas": [
               "0",
               "1",
@@ -362,7 +362,7 @@
             "tema": "Sistemas de medida angular",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 6/10] Tema Sistemas de medida angular. Reduce al primer cuadrante y calcula sen 240°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Sistemas de medida angular. Reduce al primer cuadrante y calcula sen 240°, indicando el signo según el cuadrante.",
             "alternativas": [
               "1",
               "−√3/2",
@@ -382,7 +382,7 @@
             "tema": "Sistemas de medida angular",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 7/10] Tema Sistemas de medida angular. Reduce al primer cuadrante y calcula sen 300°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Sistemas de medida angular. Reduce al primer cuadrante y calcula sen 300°, indicando el signo según el cuadrante.",
             "alternativas": [
               "−√3/2",
               "√3/2",
@@ -402,7 +402,7 @@
             "tema": "Sistemas de medida angular",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 8/10] Tema Sistemas de medida angular. Reduce al primer cuadrante y calcula sen 315°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Sistemas de medida angular. Reduce al primer cuadrante y calcula sen 315°, indicando el signo según el cuadrante.",
             "alternativas": [
               "√2/2",
               "0",
@@ -422,7 +422,7 @@
             "tema": "Sistemas de medida angular",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 9/10] Tema Sistemas de medida angular. Reduce al primer cuadrante y calcula sen 330°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Sistemas de medida angular. Reduce al primer cuadrante y calcula sen 330°, indicando el signo según el cuadrante.",
             "alternativas": [
               "0",
               "1",
@@ -442,7 +442,7 @@
             "tema": "Sistemas de medida angular",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 10/10] Tema Sistemas de medida angular. Reduce al primer cuadrante y calcula sen 390°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Sistemas de medida angular. Reduce al primer cuadrante y calcula sen 390°, indicando el signo según el cuadrante.",
             "alternativas": [
               "1",
               "1/2",
@@ -464,7 +464,7 @@
             "tema": "Sistemas de medida angular",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 1/10] Tema Sistemas de medida angular. Si tan θ=3/4 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Sistemas de medida angular. Si tan θ=3/4 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "1",
               "0,28",
@@ -484,7 +484,7 @@
             "tema": "Sistemas de medida angular",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 2/10] Tema Sistemas de medida angular. Si tan θ=4/5 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Sistemas de medida angular. Si tan θ=4/5 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "0,22",
               "-0,22",
@@ -504,7 +504,7 @@
             "tema": "Sistemas de medida angular",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 3/10] Tema Sistemas de medida angular. Si tan θ=5/6 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Sistemas de medida angular. Si tan θ=5/6 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "-0,18",
               "-0,13",
@@ -524,7 +524,7 @@
             "tema": "Sistemas de medida angular",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 4/10] Tema Sistemas de medida angular. Si tan θ=6/7 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Sistemas de medida angular. Si tan θ=6/7 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "-0,11",
               "1",
@@ -544,7 +544,7 @@
             "tema": "Sistemas de medida angular",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 5/10] Tema Sistemas de medida angular. Si tan θ=7/8 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Sistemas de medida angular. Si tan θ=7/8 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "1",
               "0,13",
@@ -564,7 +564,7 @@
             "tema": "Sistemas de medida angular",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 6/10] Tema Sistemas de medida angular. Si tan θ=8/9 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Sistemas de medida angular. Si tan θ=8/9 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "0,12",
               "-0,12",
@@ -584,7 +584,7 @@
             "tema": "Sistemas de medida angular",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 7/10] Tema Sistemas de medida angular. Si tan θ=9/10 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Sistemas de medida angular. Si tan θ=9/10 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "-0,1",
               "-0,07",
@@ -604,7 +604,7 @@
             "tema": "Sistemas de medida angular",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 8/10] Tema Sistemas de medida angular. Si tan θ=10/11 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Sistemas de medida angular. Si tan θ=10/11 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "-0,07",
               "1",
@@ -624,7 +624,7 @@
             "tema": "Sistemas de medida angular",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 9/10] Tema Sistemas de medida angular. Si tan θ=11/12 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Sistemas de medida angular. Si tan θ=11/12 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "1",
               "0,09",
@@ -644,7 +644,7 @@
             "tema": "Sistemas de medida angular",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 10/10] Tema Sistemas de medida angular. Si tan θ=12/13 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Sistemas de medida angular. Si tan θ=12/13 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "0,08",
               "-0,08",
@@ -666,7 +666,7 @@
             "tema": "Sistemas de medida angular",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UNI · 1/10] Tema Sistemas de medida angular. Reduce al primer cuadrante y calcula sen 420°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Sistemas de medida angular. Reduce al primer cuadrante y calcula sen 420°, indicando el signo según el cuadrante.",
             "alternativas": [
               "√3/2",
               "−√3/2",
@@ -686,7 +686,7 @@
             "tema": "Sistemas de medida angular",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil PUCP · 2/10] Tema Sistemas de medida angular. Reduce al primer cuadrante y calcula sen 450°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Sistemas de medida angular. Reduce al primer cuadrante y calcula sen 450°, indicando el signo según el cuadrante.",
             "alternativas": [
               "−1",
               "0",
@@ -706,7 +706,7 @@
             "tema": "Sistemas de medida angular",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UCSM · 3/10] Tema Sistemas de medida angular. Reduce al primer cuadrante y calcula sen 480°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Sistemas de medida angular. Reduce al primer cuadrante y calcula sen 480°, indicando el signo según el cuadrante.",
             "alternativas": [
               "0",
               "1",
@@ -726,7 +726,7 @@
             "tema": "Sistemas de medida angular",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil GENERAL · 4/10] Tema Sistemas de medida angular. Reduce al primer cuadrante y calcula sen 495°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Sistemas de medida angular. Reduce al primer cuadrante y calcula sen 495°, indicando el signo según el cuadrante.",
             "alternativas": [
               "1",
               "√2/2",
@@ -746,7 +746,7 @@
             "tema": "Sistemas de medida angular",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UNAMAD · 5/10] Tema Sistemas de medida angular. Reduce al primer cuadrante y calcula sen 510°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Sistemas de medida angular. Reduce al primer cuadrante y calcula sen 510°, indicando el signo según el cuadrante.",
             "alternativas": [
               "1/2",
               "−1/2",
@@ -766,7 +766,7 @@
             "tema": "Sistemas de medida angular",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UNSAAC · 6/10] Tema Sistemas de medida angular. Si tan θ=13/14 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Sistemas de medida angular. Si tan θ=13/14 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "-0,07",
               "-0,05",
@@ -786,7 +786,7 @@
             "tema": "Sistemas de medida angular",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UNMSM · 7/10] Tema Sistemas de medida angular. Si tan θ=14/15 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Sistemas de medida angular. Si tan θ=14/15 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "-0,05",
               "1",
@@ -806,7 +806,7 @@
             "tema": "Sistemas de medida angular",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UNSA · 8/10] Tema Sistemas de medida angular. Si tan θ=15/16 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Sistemas de medida angular. Si tan θ=15/16 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "1",
               "0,06",
@@ -826,7 +826,7 @@
             "tema": "Sistemas de medida angular",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UNI · 9/10] Tema Sistemas de medida angular. Si tan θ=16/17 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Sistemas de medida angular. Si tan θ=16/17 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "0,06",
               "-0,06",
@@ -846,7 +846,7 @@
             "tema": "Sistemas de medida angular",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil PUCP · 10/10] Tema Sistemas de medida angular. Si tan θ=17/18 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Sistemas de medida angular. Si tan θ=17/18 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "-0,06",
               "-0,04",
@@ -889,7 +889,7 @@
             "tema": "Razones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 1/10] Tema Razones trigonométricas. Calcula sen 0°.",
+            "pregunta": "Tema Razones trigonométricas. Calcula sen 0°.",
             "alternativas": [
               "0",
               "1/2",
@@ -909,7 +909,7 @@
             "tema": "Razones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 2/10] Tema Razones trigonométricas. Calcula cos 30°.",
+            "pregunta": "Tema Razones trigonométricas. Calcula cos 30°.",
             "alternativas": [
               "1",
               "√2/2",
@@ -929,7 +929,7 @@
             "tema": "Razones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 3/10] Tema Razones trigonométricas. Calcula tan 45°.",
+            "pregunta": "Tema Razones trigonométricas. Calcula tan 45°.",
             "alternativas": [
               "√3/3",
               "√3",
@@ -949,7 +949,7 @@
             "tema": "Razones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 4/10] Tema Razones trigonométricas. Calcula cot 60°.",
+            "pregunta": "Tema Razones trigonométricas. Calcula cot 60°.",
             "alternativas": [
               "1",
               "√3/3",
@@ -969,7 +969,7 @@
             "tema": "Razones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 5/10] Tema Razones trigonométricas. Calcula sen 90°.",
+            "pregunta": "Tema Razones trigonométricas. Calcula sen 90°.",
             "alternativas": [
               "1",
               "0",
@@ -989,7 +989,7 @@
             "tema": "Razones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 6/10] Tema Razones trigonométricas. Calcula cos 0°.",
+            "pregunta": "Tema Razones trigonométricas. Calcula cos 0°.",
             "alternativas": [
               "√3/2",
               "√2/2",
@@ -1009,7 +1009,7 @@
             "tema": "Razones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 7/10] Tema Razones trigonométricas. Calcula tan 30°.",
+            "pregunta": "Tema Razones trigonométricas. Calcula tan 30°.",
             "alternativas": [
               "1",
               "√3",
@@ -1029,7 +1029,7 @@
             "tema": "Razones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 8/10] Tema Razones trigonométricas. Calcula cot 45°.",
+            "pregunta": "Tema Razones trigonométricas. Calcula cot 45°.",
             "alternativas": [
               "√3/3",
               "1",
@@ -1049,7 +1049,7 @@
             "tema": "Razones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 9/10] Tema Razones trigonométricas. Calcula sen 60°.",
+            "pregunta": "Tema Razones trigonométricas. Calcula sen 60°.",
             "alternativas": [
               "√3/2",
               "0",
@@ -1069,7 +1069,7 @@
             "tema": "Razones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 10/10] Tema Razones trigonométricas. Calcula cos 90°.",
+            "pregunta": "Tema Razones trigonométricas. Calcula cos 90°.",
             "alternativas": [
               "1",
               "√3/2",
@@ -1091,7 +1091,7 @@
             "tema": "Razones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 1/10] Tema Razones trigonométricas. Reduce al primer cuadrante y calcula sen 120°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Razones trigonométricas. Reduce al primer cuadrante y calcula sen 120°, indicando el signo según el cuadrante.",
             "alternativas": [
               "−√3/2",
               "0",
@@ -1111,7 +1111,7 @@
             "tema": "Razones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 2/10] Tema Razones trigonométricas. Reduce al primer cuadrante y calcula sen 135°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Razones trigonométricas. Reduce al primer cuadrante y calcula sen 135°, indicando el signo según el cuadrante.",
             "alternativas": [
               "0",
               "1",
@@ -1131,7 +1131,7 @@
             "tema": "Razones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 3/10] Tema Razones trigonométricas. Reduce al primer cuadrante y calcula sen 150°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Razones trigonométricas. Reduce al primer cuadrante y calcula sen 150°, indicando el signo según el cuadrante.",
             "alternativas": [
               "1",
               "1/2",
@@ -1151,7 +1151,7 @@
             "tema": "Razones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 4/10] Tema Razones trigonométricas. Reduce al primer cuadrante y calcula sen 210°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Razones trigonométricas. Reduce al primer cuadrante y calcula sen 210°, indicando el signo según el cuadrante.",
             "alternativas": [
               "−1/2",
               "1/2",
@@ -1171,7 +1171,7 @@
             "tema": "Razones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 5/10] Tema Razones trigonométricas. Reduce al primer cuadrante y calcula sen 225°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Razones trigonométricas. Reduce al primer cuadrante y calcula sen 225°, indicando el signo según el cuadrante.",
             "alternativas": [
               "√2/2",
               "0",
@@ -1191,7 +1191,7 @@
             "tema": "Razones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 6/10] Tema Razones trigonométricas. Reduce al primer cuadrante y calcula sen 240°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Razones trigonométricas. Reduce al primer cuadrante y calcula sen 240°, indicando el signo según el cuadrante.",
             "alternativas": [
               "0",
               "1",
@@ -1211,7 +1211,7 @@
             "tema": "Razones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 7/10] Tema Razones trigonométricas. Reduce al primer cuadrante y calcula sen 300°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Razones trigonométricas. Reduce al primer cuadrante y calcula sen 300°, indicando el signo según el cuadrante.",
             "alternativas": [
               "1",
               "−√3/2",
@@ -1231,7 +1231,7 @@
             "tema": "Razones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 8/10] Tema Razones trigonométricas. Reduce al primer cuadrante y calcula sen 315°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Razones trigonométricas. Reduce al primer cuadrante y calcula sen 315°, indicando el signo según el cuadrante.",
             "alternativas": [
               "−√2/2",
               "√2/2",
@@ -1251,7 +1251,7 @@
             "tema": "Razones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 9/10] Tema Razones trigonométricas. Reduce al primer cuadrante y calcula sen 330°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Razones trigonométricas. Reduce al primer cuadrante y calcula sen 330°, indicando el signo según el cuadrante.",
             "alternativas": [
               "1/2",
               "0",
@@ -1271,7 +1271,7 @@
             "tema": "Razones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 10/10] Tema Razones trigonométricas. Reduce al primer cuadrante y calcula sen 390°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Razones trigonométricas. Reduce al primer cuadrante y calcula sen 390°, indicando el signo según el cuadrante.",
             "alternativas": [
               "0",
               "1",
@@ -1293,7 +1293,7 @@
             "tema": "Razones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 1/10] Tema Razones trigonométricas. Si tan θ=3/4 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Razones trigonométricas. Si tan θ=3/4 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "-0,2",
               "1",
@@ -1313,7 +1313,7 @@
             "tema": "Razones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 2/10] Tema Razones trigonométricas. Si tan θ=4/5 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Razones trigonométricas. Si tan θ=4/5 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "1",
               "0,22",
@@ -1333,7 +1333,7 @@
             "tema": "Razones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 3/10] Tema Razones trigonométricas. Si tan θ=5/6 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Razones trigonométricas. Si tan θ=5/6 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "0,18",
               "-0,18",
@@ -1353,7 +1353,7 @@
             "tema": "Razones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 4/10] Tema Razones trigonométricas. Si tan θ=6/7 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Razones trigonométricas. Si tan θ=6/7 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "-0,15",
               "-0,11",
@@ -1373,7 +1373,7 @@
             "tema": "Razones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 5/10] Tema Razones trigonométricas. Si tan θ=7/8 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Razones trigonométricas. Si tan θ=7/8 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "-0,09",
               "1",
@@ -1393,7 +1393,7 @@
             "tema": "Razones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 6/10] Tema Razones trigonométricas. Si tan θ=8/9 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Razones trigonométricas. Si tan θ=8/9 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "1",
               "0,12",
@@ -1413,7 +1413,7 @@
             "tema": "Razones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 7/10] Tema Razones trigonométricas. Si tan θ=9/10 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Razones trigonométricas. Si tan θ=9/10 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "0,1",
               "-0,1",
@@ -1433,7 +1433,7 @@
             "tema": "Razones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 8/10] Tema Razones trigonométricas. Si tan θ=10/11 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Razones trigonométricas. Si tan θ=10/11 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "-0,1",
               "-0,07",
@@ -1453,7 +1453,7 @@
             "tema": "Razones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 9/10] Tema Razones trigonométricas. Si tan θ=11/12 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Razones trigonométricas. Si tan θ=11/12 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "-0,06",
               "1",
@@ -1473,7 +1473,7 @@
             "tema": "Razones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 10/10] Tema Razones trigonométricas. Si tan θ=12/13 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Razones trigonométricas. Si tan θ=12/13 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "1",
               "0,08",
@@ -1495,7 +1495,7 @@
             "tema": "Razones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UNSAAC · 1/10] Tema Razones trigonométricas. Reduce al primer cuadrante y calcula sen 420°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Razones trigonométricas. Reduce al primer cuadrante y calcula sen 420°, indicando el signo según el cuadrante.",
             "alternativas": [
               "1",
               "√3/2",
@@ -1515,7 +1515,7 @@
             "tema": "Razones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UNMSM · 2/10] Tema Razones trigonométricas. Reduce al primer cuadrante y calcula sen 450°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Razones trigonométricas. Reduce al primer cuadrante y calcula sen 450°, indicando el signo según el cuadrante.",
             "alternativas": [
               "1",
               "−1",
@@ -1535,7 +1535,7 @@
             "tema": "Razones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UNSA · 3/10] Tema Razones trigonométricas. Reduce al primer cuadrante y calcula sen 480°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Razones trigonométricas. Reduce al primer cuadrante y calcula sen 480°, indicando el signo según el cuadrante.",
             "alternativas": [
               "−√3/2",
               "0",
@@ -1555,7 +1555,7 @@
             "tema": "Razones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UNI · 4/10] Tema Razones trigonométricas. Reduce al primer cuadrante y calcula sen 495°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Razones trigonométricas. Reduce al primer cuadrante y calcula sen 495°, indicando el signo según el cuadrante.",
             "alternativas": [
               "0",
               "1",
@@ -1575,7 +1575,7 @@
             "tema": "Razones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil PUCP · 5/10] Tema Razones trigonométricas. Reduce al primer cuadrante y calcula sen 510°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Razones trigonométricas. Reduce al primer cuadrante y calcula sen 510°, indicando el signo según el cuadrante.",
             "alternativas": [
               "1",
               "1/2",
@@ -1595,7 +1595,7 @@
             "tema": "Razones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UCSM · 6/10] Tema Razones trigonométricas. Si tan θ=13/14 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Razones trigonométricas. Si tan θ=13/14 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "0,07",
               "-0,07",
@@ -1615,7 +1615,7 @@
             "tema": "Razones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil GENERAL · 7/10] Tema Razones trigonométricas. Si tan θ=14/15 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Razones trigonométricas. Si tan θ=14/15 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "-0,07",
               "-0,05",
@@ -1635,7 +1635,7 @@
             "tema": "Razones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UNAMAD · 8/10] Tema Razones trigonométricas. Si tan θ=15/16 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Razones trigonométricas. Si tan θ=15/16 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "-0,05",
               "1",
@@ -1655,7 +1655,7 @@
             "tema": "Razones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UNSAAC · 9/10] Tema Razones trigonométricas. Si tan θ=16/17 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Razones trigonométricas. Si tan θ=16/17 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "1",
               "0,06",
@@ -1675,7 +1675,7 @@
             "tema": "Razones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UNMSM · 10/10] Tema Razones trigonométricas. Si tan θ=17/18 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Razones trigonométricas. Si tan θ=17/18 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "0,06",
               "-0,06",
@@ -1718,7 +1718,7 @@
             "tema": "Reducción al primer cuadrante",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 1/10] Tema Reducción al primer cuadrante. Calcula sen 0°.",
+            "pregunta": "Tema Reducción al primer cuadrante. Calcula sen 0°.",
             "alternativas": [
               "√3/2",
               "0",
@@ -1738,7 +1738,7 @@
             "tema": "Reducción al primer cuadrante",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 2/10] Tema Reducción al primer cuadrante. Calcula cos 30°.",
+            "pregunta": "Tema Reducción al primer cuadrante. Calcula cos 30°.",
             "alternativas": [
               "√3/2",
               "1",
@@ -1758,7 +1758,7 @@
             "tema": "Reducción al primer cuadrante",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 3/10] Tema Reducción al primer cuadrante. Calcula tan 45°.",
+            "pregunta": "Tema Reducción al primer cuadrante. Calcula tan 45°.",
             "alternativas": [
               "0",
               "√3/3",
@@ -1778,7 +1778,7 @@
             "tema": "Reducción al primer cuadrante",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 4/10] Tema Reducción al primer cuadrante. Calcula cot 60°.",
+            "pregunta": "Tema Reducción al primer cuadrante. Calcula cot 60°.",
             "alternativas": [
               "√3",
               "1",
@@ -1798,7 +1798,7 @@
             "tema": "Reducción al primer cuadrante",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 5/10] Tema Reducción al primer cuadrante. Calcula sen 90°.",
+            "pregunta": "Tema Reducción al primer cuadrante. Calcula sen 90°.",
             "alternativas": [
               "√2/2",
               "1",
@@ -1818,7 +1818,7 @@
             "tema": "Reducción al primer cuadrante",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 6/10] Tema Reducción al primer cuadrante. Calcula cos 0°.",
+            "pregunta": "Tema Reducción al primer cuadrante. Calcula cos 0°.",
             "alternativas": [
               "1",
               "√3/2",
@@ -1838,7 +1838,7 @@
             "tema": "Reducción al primer cuadrante",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 7/10] Tema Reducción al primer cuadrante. Calcula tan 30°.",
+            "pregunta": "Tema Reducción al primer cuadrante. Calcula tan 30°.",
             "alternativas": [
               "0",
               "1",
@@ -1858,7 +1858,7 @@
             "tema": "Reducción al primer cuadrante",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 8/10] Tema Reducción al primer cuadrante. Calcula cot 45°.",
+            "pregunta": "Tema Reducción al primer cuadrante. Calcula cot 45°.",
             "alternativas": [
               "√3",
               "√3/3",
@@ -1878,7 +1878,7 @@
             "tema": "Reducción al primer cuadrante",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 9/10] Tema Reducción al primer cuadrante. Calcula sen 60°.",
+            "pregunta": "Tema Reducción al primer cuadrante. Calcula sen 60°.",
             "alternativas": [
               "√2/2",
               "√3/2",
@@ -1898,7 +1898,7 @@
             "tema": "Reducción al primer cuadrante",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 10/10] Tema Reducción al primer cuadrante. Calcula cos 90°.",
+            "pregunta": "Tema Reducción al primer cuadrante. Calcula cos 90°.",
             "alternativas": [
               "0",
               "1",
@@ -1920,7 +1920,7 @@
             "tema": "Reducción al primer cuadrante",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 1/10] Tema Reducción al primer cuadrante. Reduce al primer cuadrante y calcula sen 120°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Reducción al primer cuadrante. Reduce al primer cuadrante y calcula sen 120°, indicando el signo según el cuadrante.",
             "alternativas": [
               "√3/2",
               "−√3/2",
@@ -1940,7 +1940,7 @@
             "tema": "Reducción al primer cuadrante",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 2/10] Tema Reducción al primer cuadrante. Reduce al primer cuadrante y calcula sen 135°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Reducción al primer cuadrante. Reduce al primer cuadrante y calcula sen 135°, indicando el signo según el cuadrante.",
             "alternativas": [
               "−√2/2",
               "0",
@@ -1960,7 +1960,7 @@
             "tema": "Reducción al primer cuadrante",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 3/10] Tema Reducción al primer cuadrante. Reduce al primer cuadrante y calcula sen 150°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Reducción al primer cuadrante. Reduce al primer cuadrante y calcula sen 150°, indicando el signo según el cuadrante.",
             "alternativas": [
               "0",
               "1",
@@ -1980,7 +1980,7 @@
             "tema": "Reducción al primer cuadrante",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 4/10] Tema Reducción al primer cuadrante. Reduce al primer cuadrante y calcula sen 210°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Reducción al primer cuadrante. Reduce al primer cuadrante y calcula sen 210°, indicando el signo según el cuadrante.",
             "alternativas": [
               "1",
               "−1/2",
@@ -2000,7 +2000,7 @@
             "tema": "Reducción al primer cuadrante",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 5/10] Tema Reducción al primer cuadrante. Reduce al primer cuadrante y calcula sen 225°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Reducción al primer cuadrante. Reduce al primer cuadrante y calcula sen 225°, indicando el signo según el cuadrante.",
             "alternativas": [
               "−√2/2",
               "√2/2",
@@ -2020,7 +2020,7 @@
             "tema": "Reducción al primer cuadrante",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 6/10] Tema Reducción al primer cuadrante. Reduce al primer cuadrante y calcula sen 240°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Reducción al primer cuadrante. Reduce al primer cuadrante y calcula sen 240°, indicando el signo según el cuadrante.",
             "alternativas": [
               "√3/2",
               "0",
@@ -2040,7 +2040,7 @@
             "tema": "Reducción al primer cuadrante",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 7/10] Tema Reducción al primer cuadrante. Reduce al primer cuadrante y calcula sen 300°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Reducción al primer cuadrante. Reduce al primer cuadrante y calcula sen 300°, indicando el signo según el cuadrante.",
             "alternativas": [
               "0",
               "1",
@@ -2060,7 +2060,7 @@
             "tema": "Reducción al primer cuadrante",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 8/10] Tema Reducción al primer cuadrante. Reduce al primer cuadrante y calcula sen 315°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Reducción al primer cuadrante. Reduce al primer cuadrante y calcula sen 315°, indicando el signo según el cuadrante.",
             "alternativas": [
               "1",
               "−√2/2",
@@ -2080,7 +2080,7 @@
             "tema": "Reducción al primer cuadrante",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 9/10] Tema Reducción al primer cuadrante. Reduce al primer cuadrante y calcula sen 330°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Reducción al primer cuadrante. Reduce al primer cuadrante y calcula sen 330°, indicando el signo según el cuadrante.",
             "alternativas": [
               "−1/2",
               "1/2",
@@ -2100,7 +2100,7 @@
             "tema": "Reducción al primer cuadrante",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 10/10] Tema Reducción al primer cuadrante. Reduce al primer cuadrante y calcula sen 390°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Reducción al primer cuadrante. Reduce al primer cuadrante y calcula sen 390°, indicando el signo según el cuadrante.",
             "alternativas": [
               "−1/2",
               "0",
@@ -2122,7 +2122,7 @@
             "tema": "Reducción al primer cuadrante",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 1/10] Tema Reducción al primer cuadrante. Si tan θ=3/4 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Reducción al primer cuadrante. Si tan θ=3/4 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "-0,28",
               "-0,2",
@@ -2142,7 +2142,7 @@
             "tema": "Reducción al primer cuadrante",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 2/10] Tema Reducción al primer cuadrante. Si tan θ=4/5 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Reducción al primer cuadrante. Si tan θ=4/5 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "-0,16",
               "1",
@@ -2162,7 +2162,7 @@
             "tema": "Reducción al primer cuadrante",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 3/10] Tema Reducción al primer cuadrante. Si tan θ=5/6 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Reducción al primer cuadrante. Si tan θ=5/6 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "1",
               "0,18",
@@ -2182,7 +2182,7 @@
             "tema": "Reducción al primer cuadrante",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 4/10] Tema Reducción al primer cuadrante. Si tan θ=6/7 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Reducción al primer cuadrante. Si tan θ=6/7 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "0,15",
               "-0,15",
@@ -2202,7 +2202,7 @@
             "tema": "Reducción al primer cuadrante",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 5/10] Tema Reducción al primer cuadrante. Si tan θ=7/8 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Reducción al primer cuadrante. Si tan θ=7/8 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "-0,13",
               "-0,09",
@@ -2222,7 +2222,7 @@
             "tema": "Reducción al primer cuadrante",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 6/10] Tema Reducción al primer cuadrante. Si tan θ=8/9 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Reducción al primer cuadrante. Si tan θ=8/9 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "-0,08",
               "1",
@@ -2242,7 +2242,7 @@
             "tema": "Reducción al primer cuadrante",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 7/10] Tema Reducción al primer cuadrante. Si tan θ=9/10 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Reducción al primer cuadrante. Si tan θ=9/10 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "1",
               "0,1",
@@ -2262,7 +2262,7 @@
             "tema": "Reducción al primer cuadrante",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 8/10] Tema Reducción al primer cuadrante. Si tan θ=10/11 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Reducción al primer cuadrante. Si tan θ=10/11 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "0,1",
               "-0,1",
@@ -2282,7 +2282,7 @@
             "tema": "Reducción al primer cuadrante",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 9/10] Tema Reducción al primer cuadrante. Si tan θ=11/12 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Reducción al primer cuadrante. Si tan θ=11/12 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "-0,09",
               "-0,06",
@@ -2302,7 +2302,7 @@
             "tema": "Reducción al primer cuadrante",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 10/10] Tema Reducción al primer cuadrante. Si tan θ=12/13 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Reducción al primer cuadrante. Si tan θ=12/13 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "-0,06",
               "1",
@@ -2324,7 +2324,7 @@
             "tema": "Reducción al primer cuadrante",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UCSM · 1/10] Tema Reducción al primer cuadrante. Reduce al primer cuadrante y calcula sen 420°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Reducción al primer cuadrante. Reduce al primer cuadrante y calcula sen 420°, indicando el signo según el cuadrante.",
             "alternativas": [
               "0",
               "1",
@@ -2344,7 +2344,7 @@
             "tema": "Reducción al primer cuadrante",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil GENERAL · 2/10] Tema Reducción al primer cuadrante. Reduce al primer cuadrante y calcula sen 450°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Reducción al primer cuadrante. Reduce al primer cuadrante y calcula sen 450°, indicando el signo según el cuadrante.",
             "alternativas": [
               "√2/2",
               "1",
@@ -2364,7 +2364,7 @@
             "tema": "Reducción al primer cuadrante",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UNAMAD · 3/10] Tema Reducción al primer cuadrante. Reduce al primer cuadrante y calcula sen 480°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Reducción al primer cuadrante. Reduce al primer cuadrante y calcula sen 480°, indicando el signo según el cuadrante.",
             "alternativas": [
               "√3/2",
               "−√3/2",
@@ -2384,7 +2384,7 @@
             "tema": "Reducción al primer cuadrante",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UNSAAC · 4/10] Tema Reducción al primer cuadrante. Reduce al primer cuadrante y calcula sen 495°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Reducción al primer cuadrante. Reduce al primer cuadrante y calcula sen 495°, indicando el signo según el cuadrante.",
             "alternativas": [
               "−√2/2",
               "0",
@@ -2404,7 +2404,7 @@
             "tema": "Reducción al primer cuadrante",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UNMSM · 5/10] Tema Reducción al primer cuadrante. Reduce al primer cuadrante y calcula sen 510°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Reducción al primer cuadrante. Reduce al primer cuadrante y calcula sen 510°, indicando el signo según el cuadrante.",
             "alternativas": [
               "0",
               "1",
@@ -2424,7 +2424,7 @@
             "tema": "Reducción al primer cuadrante",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UNSA · 6/10] Tema Reducción al primer cuadrante. Si tan θ=13/14 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Reducción al primer cuadrante. Si tan θ=13/14 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "1",
               "0,07",
@@ -2444,7 +2444,7 @@
             "tema": "Reducción al primer cuadrante",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UNI · 7/10] Tema Reducción al primer cuadrante. Si tan θ=14/15 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Reducción al primer cuadrante. Si tan θ=14/15 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "0,07",
               "-0,07",
@@ -2464,7 +2464,7 @@
             "tema": "Reducción al primer cuadrante",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil PUCP · 8/10] Tema Reducción al primer cuadrante. Si tan θ=15/16 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Reducción al primer cuadrante. Si tan θ=15/16 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "-0,06",
               "-0,05",
@@ -2484,7 +2484,7 @@
             "tema": "Reducción al primer cuadrante",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UCSM · 9/10] Tema Reducción al primer cuadrante. Si tan θ=16/17 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Reducción al primer cuadrante. Si tan θ=16/17 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "-0,04",
               "1",
@@ -2504,7 +2504,7 @@
             "tema": "Reducción al primer cuadrante",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil GENERAL · 10/10] Tema Reducción al primer cuadrante. Si tan θ=17/18 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Reducción al primer cuadrante. Si tan θ=17/18 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "1",
               "0,06",
@@ -2547,7 +2547,7 @@
             "tema": "Funciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 1/10] Tema Funciones trigonométricas. Calcula sen 0°.",
+            "pregunta": "Tema Funciones trigonométricas. Calcula sen 0°.",
             "alternativas": [
               "√2/2",
               "√3/2",
@@ -2567,7 +2567,7 @@
             "tema": "Funciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 2/10] Tema Funciones trigonométricas. Calcula cos 30°.",
+            "pregunta": "Tema Funciones trigonométricas. Calcula cos 30°.",
             "alternativas": [
               "1/2",
               "√3/2",
@@ -2587,7 +2587,7 @@
             "tema": "Funciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 3/10] Tema Funciones trigonométricas. Calcula tan 45°.",
+            "pregunta": "Tema Funciones trigonométricas. Calcula tan 45°.",
             "alternativas": [
               "1",
               "0",
@@ -2607,7 +2607,7 @@
             "tema": "Funciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 4/10] Tema Funciones trigonométricas. Calcula cot 60°.",
+            "pregunta": "Tema Funciones trigonométricas. Calcula cot 60°.",
             "alternativas": [
               "no definida",
               "√3",
@@ -2627,7 +2627,7 @@
             "tema": "Funciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 5/10] Tema Funciones trigonométricas. Calcula sen 90°.",
+            "pregunta": "Tema Funciones trigonométricas. Calcula sen 90°.",
             "alternativas": [
               "1/2",
               "√2/2",
@@ -2647,7 +2647,7 @@
             "tema": "Funciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 6/10] Tema Funciones trigonométricas. Calcula cos 0°.",
+            "pregunta": "Tema Funciones trigonométricas. Calcula cos 0°.",
             "alternativas": [
               "1/2",
               "1",
@@ -2667,7 +2667,7 @@
             "tema": "Funciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 7/10] Tema Funciones trigonométricas. Calcula tan 30°.",
+            "pregunta": "Tema Funciones trigonométricas. Calcula tan 30°.",
             "alternativas": [
               "√3/3",
               "0",
@@ -2687,7 +2687,7 @@
             "tema": "Funciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 8/10] Tema Funciones trigonométricas. Calcula cot 45°.",
+            "pregunta": "Tema Funciones trigonométricas. Calcula cot 45°.",
             "alternativas": [
               "no definida",
               "√3",
@@ -2707,7 +2707,7 @@
             "tema": "Funciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 9/10] Tema Funciones trigonométricas. Calcula sen 60°.",
+            "pregunta": "Tema Funciones trigonométricas. Calcula sen 60°.",
             "alternativas": [
               "1/2",
               "√2/2",
@@ -2727,7 +2727,7 @@
             "tema": "Funciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 10/10] Tema Funciones trigonométricas. Calcula cos 90°.",
+            "pregunta": "Tema Funciones trigonométricas. Calcula cos 90°.",
             "alternativas": [
               "√2/2",
               "0",
@@ -2749,7 +2749,7 @@
             "tema": "Funciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 1/10] Tema Funciones trigonométricas. Reduce al primer cuadrante y calcula sen 120°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Funciones trigonométricas. Reduce al primer cuadrante y calcula sen 120°, indicando el signo según el cuadrante.",
             "alternativas": [
               "1",
               "√3/2",
@@ -2769,7 +2769,7 @@
             "tema": "Funciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 2/10] Tema Funciones trigonométricas. Reduce al primer cuadrante y calcula sen 135°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Funciones trigonométricas. Reduce al primer cuadrante y calcula sen 135°, indicando el signo según el cuadrante.",
             "alternativas": [
               "√2/2",
               "−√2/2",
@@ -2789,7 +2789,7 @@
             "tema": "Funciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 3/10] Tema Funciones trigonométricas. Reduce al primer cuadrante y calcula sen 150°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Funciones trigonométricas. Reduce al primer cuadrante y calcula sen 150°, indicando el signo según el cuadrante.",
             "alternativas": [
               "−1/2",
               "0",
@@ -2809,7 +2809,7 @@
             "tema": "Funciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 4/10] Tema Funciones trigonométricas. Reduce al primer cuadrante y calcula sen 210°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Funciones trigonométricas. Reduce al primer cuadrante y calcula sen 210°, indicando el signo según el cuadrante.",
             "alternativas": [
               "0",
               "1",
@@ -2829,7 +2829,7 @@
             "tema": "Funciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 5/10] Tema Funciones trigonométricas. Reduce al primer cuadrante y calcula sen 225°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Funciones trigonométricas. Reduce al primer cuadrante y calcula sen 225°, indicando el signo según el cuadrante.",
             "alternativas": [
               "1",
               "−√2/2",
@@ -2849,7 +2849,7 @@
             "tema": "Funciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 6/10] Tema Funciones trigonométricas. Reduce al primer cuadrante y calcula sen 240°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Funciones trigonométricas. Reduce al primer cuadrante y calcula sen 240°, indicando el signo según el cuadrante.",
             "alternativas": [
               "−√3/2",
               "√3/2",
@@ -2869,7 +2869,7 @@
             "tema": "Funciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 7/10] Tema Funciones trigonométricas. Reduce al primer cuadrante y calcula sen 300°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Funciones trigonométricas. Reduce al primer cuadrante y calcula sen 300°, indicando el signo según el cuadrante.",
             "alternativas": [
               "√3/2",
               "0",
@@ -2889,7 +2889,7 @@
             "tema": "Funciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 8/10] Tema Funciones trigonométricas. Reduce al primer cuadrante y calcula sen 315°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Funciones trigonométricas. Reduce al primer cuadrante y calcula sen 315°, indicando el signo según el cuadrante.",
             "alternativas": [
               "0",
               "1",
@@ -2909,7 +2909,7 @@
             "tema": "Funciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 9/10] Tema Funciones trigonométricas. Reduce al primer cuadrante y calcula sen 330°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Funciones trigonométricas. Reduce al primer cuadrante y calcula sen 330°, indicando el signo según el cuadrante.",
             "alternativas": [
               "1",
               "−1/2",
@@ -2929,7 +2929,7 @@
             "tema": "Funciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 10/10] Tema Funciones trigonométricas. Reduce al primer cuadrante y calcula sen 390°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Funciones trigonométricas. Reduce al primer cuadrante y calcula sen 390°, indicando el signo según el cuadrante.",
             "alternativas": [
               "1/2",
               "−1/2",
@@ -2951,7 +2951,7 @@
             "tema": "Funciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 1/10] Tema Funciones trigonométricas. Si tan θ=3/4 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Funciones trigonométricas. Si tan θ=3/4 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "0,28",
               "-0,28",
@@ -2971,7 +2971,7 @@
             "tema": "Funciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 2/10] Tema Funciones trigonométricas. Si tan θ=4/5 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Funciones trigonométricas. Si tan θ=4/5 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "-0,22",
               "-0,16",
@@ -2991,7 +2991,7 @@
             "tema": "Funciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 3/10] Tema Funciones trigonométricas. Si tan θ=5/6 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Funciones trigonométricas. Si tan θ=5/6 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "-0,13",
               "1",
@@ -3011,7 +3011,7 @@
             "tema": "Funciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 4/10] Tema Funciones trigonométricas. Si tan θ=6/7 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Funciones trigonométricas. Si tan θ=6/7 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "1",
               "0,15",
@@ -3031,7 +3031,7 @@
             "tema": "Funciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 5/10] Tema Funciones trigonométricas. Si tan θ=7/8 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Funciones trigonométricas. Si tan θ=7/8 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "0,13",
               "-0,13",
@@ -3051,7 +3051,7 @@
             "tema": "Funciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 6/10] Tema Funciones trigonométricas. Si tan θ=8/9 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Funciones trigonométricas. Si tan θ=8/9 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "-0,12",
               "-0,08",
@@ -3071,7 +3071,7 @@
             "tema": "Funciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 7/10] Tema Funciones trigonométricas. Si tan θ=9/10 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Funciones trigonométricas. Si tan θ=9/10 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "-0,07",
               "1",
@@ -3091,7 +3091,7 @@
             "tema": "Funciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 8/10] Tema Funciones trigonométricas. Si tan θ=10/11 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Funciones trigonométricas. Si tan θ=10/11 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "1",
               "0,1",
@@ -3111,7 +3111,7 @@
             "tema": "Funciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 9/10] Tema Funciones trigonométricas. Si tan θ=11/12 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Funciones trigonométricas. Si tan θ=11/12 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "0,09",
               "-0,09",
@@ -3131,7 +3131,7 @@
             "tema": "Funciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 10/10] Tema Funciones trigonométricas. Si tan θ=12/13 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Funciones trigonométricas. Si tan θ=12/13 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "-0,08",
               "-0,06",
@@ -3153,7 +3153,7 @@
             "tema": "Funciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UNSA · 1/10] Tema Funciones trigonométricas. Reduce al primer cuadrante y calcula sen 420°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Funciones trigonométricas. Reduce al primer cuadrante y calcula sen 420°, indicando el signo según el cuadrante.",
             "alternativas": [
               "−√3/2",
               "0",
@@ -3173,7 +3173,7 @@
             "tema": "Funciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UNI · 2/10] Tema Funciones trigonométricas. Reduce al primer cuadrante y calcula sen 450°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Funciones trigonométricas. Reduce al primer cuadrante y calcula sen 450°, indicando el signo según el cuadrante.",
             "alternativas": [
               "0",
               "√2/2",
@@ -3193,7 +3193,7 @@
             "tema": "Funciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil PUCP · 3/10] Tema Funciones trigonométricas. Reduce al primer cuadrante y calcula sen 480°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Funciones trigonométricas. Reduce al primer cuadrante y calcula sen 480°, indicando el signo según el cuadrante.",
             "alternativas": [
               "1",
               "√3/2",
@@ -3213,7 +3213,7 @@
             "tema": "Funciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UCSM · 4/10] Tema Funciones trigonométricas. Reduce al primer cuadrante y calcula sen 495°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Funciones trigonométricas. Reduce al primer cuadrante y calcula sen 495°, indicando el signo según el cuadrante.",
             "alternativas": [
               "√2/2",
               "−√2/2",
@@ -3233,7 +3233,7 @@
             "tema": "Funciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil GENERAL · 5/10] Tema Funciones trigonométricas. Reduce al primer cuadrante y calcula sen 510°, indicando el signo según el cuadrante.",
+            "pregunta": "Tema Funciones trigonométricas. Reduce al primer cuadrante y calcula sen 510°, indicando el signo según el cuadrante.",
             "alternativas": [
               "−1/2",
               "0",
@@ -3253,7 +3253,7 @@
             "tema": "Funciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UNAMAD · 6/10] Tema Funciones trigonométricas. Si tan θ=13/14 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Funciones trigonométricas. Si tan θ=13/14 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "-0,05",
               "1",
@@ -3273,7 +3273,7 @@
             "tema": "Funciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UNSAAC · 7/10] Tema Funciones trigonométricas. Si tan θ=14/15 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Funciones trigonométricas. Si tan θ=14/15 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "1",
               "0,07",
@@ -3293,7 +3293,7 @@
             "tema": "Funciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UNMSM · 8/10] Tema Funciones trigonométricas. Si tan θ=15/16 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Funciones trigonométricas. Si tan θ=15/16 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "0,06",
               "-0,06",
@@ -3313,7 +3313,7 @@
             "tema": "Funciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UNSA · 9/10] Tema Funciones trigonométricas. Si tan θ=16/17 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Funciones trigonométricas. Si tan θ=16/17 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "-0,06",
               "-0,04",
@@ -3333,7 +3333,7 @@
             "tema": "Funciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UNI · 10/10] Tema Funciones trigonométricas. Si tan θ=17/18 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
+            "pregunta": "Tema Funciones trigonométricas. Si tan θ=17/18 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ.",
             "alternativas": [
               "-0,04",
               "1",
@@ -3376,7 +3376,7 @@
             "tema": "Identidades trigonométricas",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 1/10] Tema Identidades trigonométricas. Simplifica sen²x+cos²x. Caso 1: identifica la identidad utilizada.",
+            "pregunta": "Tema Identidades trigonométricas. Simplifica sen²x+cos²x. Caso 1: identifica la identidad utilizada.",
             "alternativas": [
               "0",
               "tan x",
@@ -3396,7 +3396,7 @@
             "tema": "Identidades trigonométricas",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 2/10] Tema Identidades trigonométricas. Simplifica sen²x+cos²x. Caso 2: identifica la identidad utilizada.",
+            "pregunta": "Tema Identidades trigonométricas. Simplifica sen²x+cos²x. Caso 2: identifica la identidad utilizada.",
             "alternativas": [
               "tan x",
               "sec²x",
@@ -3416,7 +3416,7 @@
             "tema": "Identidades trigonométricas",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 3/10] Tema Identidades trigonométricas. Simplifica sen²x+cos²x. Caso 3: identifica la identidad utilizada.",
+            "pregunta": "Tema Identidades trigonométricas. Simplifica sen²x+cos²x. Caso 3: identifica la identidad utilizada.",
             "alternativas": [
               "sec²x",
               "1",
@@ -3436,7 +3436,7 @@
             "tema": "Identidades trigonométricas",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 4/10] Tema Identidades trigonométricas. Simplifica sen²x+cos²x. Caso 4: identifica la identidad utilizada.",
+            "pregunta": "Tema Identidades trigonométricas. Simplifica sen²x+cos²x. Caso 4: identifica la identidad utilizada.",
             "alternativas": [
               "1",
               "0",
@@ -3456,7 +3456,7 @@
             "tema": "Identidades trigonométricas",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 5/10] Tema Identidades trigonométricas. Simplifica sen²x+cos²x. Caso 5: identifica la identidad utilizada.",
+            "pregunta": "Tema Identidades trigonométricas. Simplifica sen²x+cos²x. Caso 5: identifica la identidad utilizada.",
             "alternativas": [
               "0",
               "tan x",
@@ -3476,7 +3476,7 @@
             "tema": "Identidades trigonométricas",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 6/10] Tema Identidades trigonométricas. Simplifica sen²x+cos²x. Caso 6: identifica la identidad utilizada.",
+            "pregunta": "Tema Identidades trigonométricas. Simplifica sen²x+cos²x. Caso 6: identifica la identidad utilizada.",
             "alternativas": [
               "tan x",
               "sec²x",
@@ -3496,7 +3496,7 @@
             "tema": "Identidades trigonométricas",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 7/10] Tema Identidades trigonométricas. Simplifica sen²x+cos²x. Caso 7: identifica la identidad utilizada.",
+            "pregunta": "Tema Identidades trigonométricas. Simplifica sen²x+cos²x. Caso 7: identifica la identidad utilizada.",
             "alternativas": [
               "sec²x",
               "1",
@@ -3516,7 +3516,7 @@
             "tema": "Identidades trigonométricas",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 8/10] Tema Identidades trigonométricas. Simplifica sen²x+cos²x. Caso 8: identifica la identidad utilizada.",
+            "pregunta": "Tema Identidades trigonométricas. Simplifica sen²x+cos²x. Caso 8: identifica la identidad utilizada.",
             "alternativas": [
               "1",
               "0",
@@ -3536,7 +3536,7 @@
             "tema": "Identidades trigonométricas",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 9/10] Tema Identidades trigonométricas. Simplifica sen²x+cos²x. Caso 9: identifica la identidad utilizada.",
+            "pregunta": "Tema Identidades trigonométricas. Simplifica sen²x+cos²x. Caso 9: identifica la identidad utilizada.",
             "alternativas": [
               "0",
               "tan x",
@@ -3556,7 +3556,7 @@
             "tema": "Identidades trigonométricas",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 10/10] Tema Identidades trigonométricas. Simplifica sen²x+cos²x. Caso 10: identifica la identidad utilizada.",
+            "pregunta": "Tema Identidades trigonométricas. Simplifica sen²x+cos²x. Caso 10: identifica la identidad utilizada.",
             "alternativas": [
               "tan x",
               "sec²x",
@@ -3578,7 +3578,7 @@
             "tema": "Identidades trigonométricas",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 1/10] Tema Identidades trigonométricas. Si sen x=3/5, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
+            "pregunta": "Tema Identidades trigonométricas. Si sen x=3/5, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
             "alternativas": [
               "0,64",
               "0,75",
@@ -3598,7 +3598,7 @@
             "tema": "Identidades trigonométricas",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 2/10] Tema Identidades trigonométricas. Si sen x=4/7, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
+            "pregunta": "Tema Identidades trigonométricas. Si sen x=4/7, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
             "alternativas": [
               "0,7",
               "0,82",
@@ -3618,7 +3618,7 @@
             "tema": "Identidades trigonométricas",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 3/10] Tema Identidades trigonométricas. Si sen x=5/9, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
+            "pregunta": "Tema Identidades trigonométricas. Si sen x=5/9, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
             "alternativas": [
               "0,83",
               "0,44",
@@ -3638,7 +3638,7 @@
             "tema": "Identidades trigonométricas",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 4/10] Tema Identidades trigonométricas. Si sen x=6/8, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
+            "pregunta": "Tema Identidades trigonométricas. Si sen x=6/8, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
             "alternativas": [
               "0,25",
               "0,44",
@@ -3658,7 +3658,7 @@
             "tema": "Identidades trigonométricas",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 5/10] Tema Identidades trigonométricas. Si sen x=7/10, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
+            "pregunta": "Tema Identidades trigonométricas. Si sen x=7/10, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
             "alternativas": [
               "0,51",
               "0,98",
@@ -3678,7 +3678,7 @@
             "tema": "Identidades trigonométricas",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 6/10] Tema Identidades trigonométricas. Si sen x=8/12, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
+            "pregunta": "Tema Identidades trigonométricas. Si sen x=8/12, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
             "alternativas": [
               "0,89",
               "0,75",
@@ -3698,7 +3698,7 @@
             "tema": "Identidades trigonométricas",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 7/10] Tema Identidades trigonométricas. Si sen x=9/11, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
+            "pregunta": "Tema Identidades trigonométricas. Si sen x=9/11, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
             "alternativas": [
               "0,57",
               "0,18",
@@ -3718,7 +3718,7 @@
             "tema": "Identidades trigonométricas",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 8/10] Tema Identidades trigonométricas. Si sen x=10/13, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
+            "pregunta": "Tema Identidades trigonométricas. Si sen x=10/13, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
             "alternativas": [
               "0,23",
               "0,41",
@@ -3738,7 +3738,7 @@
             "tema": "Identidades trigonométricas",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 9/10] Tema Identidades trigonométricas. Si sen x=11/15, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
+            "pregunta": "Tema Identidades trigonométricas. Si sen x=11/15, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
             "alternativas": [
               "0,46",
               "1,08",
@@ -3758,7 +3758,7 @@
             "tema": "Identidades trigonométricas",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 10/10] Tema Identidades trigonométricas. Si sen x=12/14, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
+            "pregunta": "Tema Identidades trigonométricas. Si sen x=12/14, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
             "alternativas": [
               "1,66",
               "0,52",
@@ -3780,7 +3780,7 @@
             "tema": "Identidades trigonométricas",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 1/10] Tema Identidades trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(2x)=0? Explica el efecto del factor 2.",
+            "pregunta": "Tema Identidades trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(2x)=0? Explica el efecto del factor 2.",
             "alternativas": [
               "8",
               "4",
@@ -3800,7 +3800,7 @@
             "tema": "Identidades trigonométricas",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 2/10] Tema Identidades trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(3x)=0? Explica el efecto del factor 3.",
+            "pregunta": "Tema Identidades trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(3x)=0? Explica el efecto del factor 3.",
             "alternativas": [
               "6",
               "3",
@@ -3820,7 +3820,7 @@
             "tema": "Identidades trigonométricas",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 3/10] Tema Identidades trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(4x)=0? Explica el efecto del factor 4.",
+            "pregunta": "Tema Identidades trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(4x)=0? Explica el efecto del factor 4.",
             "alternativas": [
               "4",
               "5",
@@ -3840,7 +3840,7 @@
             "tema": "Identidades trigonométricas",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 4/10] Tema Identidades trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(5x)=0? Explica el efecto del factor 5.",
+            "pregunta": "Tema Identidades trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(5x)=0? Explica el efecto del factor 5.",
             "alternativas": [
               "6",
               "20",
@@ -3860,7 +3860,7 @@
             "tema": "Identidades trigonométricas",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 5/10] Tema Identidades trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(6x)=0? Explica el efecto del factor 6.",
+            "pregunta": "Tema Identidades trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(6x)=0? Explica el efecto del factor 6.",
             "alternativas": [
               "24",
               "12",
@@ -3880,7 +3880,7 @@
             "tema": "Identidades trigonométricas",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 6/10] Tema Identidades trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(7x)=0? Explica el efecto del factor 7.",
+            "pregunta": "Tema Identidades trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(7x)=0? Explica el efecto del factor 7.",
             "alternativas": [
               "14",
               "7",
@@ -3900,7 +3900,7 @@
             "tema": "Identidades trigonométricas",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 7/10] Tema Identidades trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(8x)=0? Explica el efecto del factor 8.",
+            "pregunta": "Tema Identidades trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(8x)=0? Explica el efecto del factor 8.",
             "alternativas": [
               "8",
               "9",
@@ -3920,7 +3920,7 @@
             "tema": "Identidades trigonométricas",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 8/10] Tema Identidades trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(9x)=0? Explica el efecto del factor 9.",
+            "pregunta": "Tema Identidades trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(9x)=0? Explica el efecto del factor 9.",
             "alternativas": [
               "10",
               "36",
@@ -3940,7 +3940,7 @@
             "tema": "Identidades trigonométricas",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 9/10] Tema Identidades trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(10x)=0? Explica el efecto del factor 10.",
+            "pregunta": "Tema Identidades trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(10x)=0? Explica el efecto del factor 10.",
             "alternativas": [
               "40",
               "20",
@@ -3960,7 +3960,7 @@
             "tema": "Identidades trigonométricas",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 10/10] Tema Identidades trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(11x)=0? Explica el efecto del factor 11.",
+            "pregunta": "Tema Identidades trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(11x)=0? Explica el efecto del factor 11.",
             "alternativas": [
               "22",
               "11",
@@ -3982,7 +3982,7 @@
             "tema": "Identidades trigonométricas",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UNAMAD · 1/10] Tema Identidades trigonométricas. Si sen x=13/16, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
+            "pregunta": "Tema Identidades trigonométricas. Si sen x=13/16, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
             "alternativas": [
               "0,58",
               "0,19",
@@ -4002,7 +4002,7 @@
             "tema": "Identidades trigonométricas",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UNSAAC · 2/10] Tema Identidades trigonométricas. Si sen x=14/18, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
+            "pregunta": "Tema Identidades trigonométricas. Si sen x=14/18, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
             "alternativas": [
               "0,22",
               "0,4",
@@ -4022,7 +4022,7 @@
             "tema": "Identidades trigonométricas",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UNMSM · 3/10] Tema Identidades trigonométricas. Si sen x=15/17, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
+            "pregunta": "Tema Identidades trigonométricas. Si sen x=15/17, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
             "alternativas": [
               "0,22",
               "1,87",
@@ -4042,7 +4042,7 @@
             "tema": "Identidades trigonométricas",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UNSA · 4/10] Tema Identidades trigonométricas. Si sen x=16/19, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
+            "pregunta": "Tema Identidades trigonométricas. Si sen x=16/19, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
             "alternativas": [
               "1,56",
               "0,54",
@@ -4062,7 +4062,7 @@
             "tema": "Identidades trigonométricas",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UNI · 5/10] Tema Identidades trigonométricas. Si sen x=17/21, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
+            "pregunta": "Tema Identidades trigonométricas. Si sen x=17/21, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
             "alternativas": [
               "0,59",
               "0,19",
@@ -4082,7 +4082,7 @@
             "tema": "Identidades trigonométricas",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil PUCP · 6/10] Tema Identidades trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(12x)=0? Explica el efecto del factor 12.",
+            "pregunta": "Tema Identidades trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(12x)=0? Explica el efecto del factor 12.",
             "alternativas": [
               "12",
               "13",
@@ -4102,7 +4102,7 @@
             "tema": "Identidades trigonométricas",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UCSM · 7/10] Tema Identidades trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(13x)=0? Explica el efecto del factor 13.",
+            "pregunta": "Tema Identidades trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(13x)=0? Explica el efecto del factor 13.",
             "alternativas": [
               "14",
               "52",
@@ -4122,7 +4122,7 @@
             "tema": "Identidades trigonométricas",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil GENERAL · 8/10] Tema Identidades trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(14x)=0? Explica el efecto del factor 14.",
+            "pregunta": "Tema Identidades trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(14x)=0? Explica el efecto del factor 14.",
             "alternativas": [
               "56",
               "28",
@@ -4142,7 +4142,7 @@
             "tema": "Identidades trigonométricas",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UNAMAD · 9/10] Tema Identidades trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(15x)=0? Explica el efecto del factor 15.",
+            "pregunta": "Tema Identidades trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(15x)=0? Explica el efecto del factor 15.",
             "alternativas": [
               "30",
               "15",
@@ -4162,7 +4162,7 @@
             "tema": "Identidades trigonométricas",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UNSAAC · 10/10] Tema Identidades trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(16x)=0? Explica el efecto del factor 16.",
+            "pregunta": "Tema Identidades trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(16x)=0? Explica el efecto del factor 16.",
             "alternativas": [
               "16",
               "17",
@@ -4205,7 +4205,7 @@
             "tema": "Ecuaciones e inecuaciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 1/10] Tema Ecuaciones e inecuaciones trigonométricas. Simplifica sen²x+cos²x. Caso 1: identifica la identidad utilizada.",
+            "pregunta": "Tema Ecuaciones e inecuaciones trigonométricas. Simplifica sen²x+cos²x. Caso 1: identifica la identidad utilizada.",
             "alternativas": [
               "1",
               "0",
@@ -4225,7 +4225,7 @@
             "tema": "Ecuaciones e inecuaciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 2/10] Tema Ecuaciones e inecuaciones trigonométricas. Simplifica sen²x+cos²x. Caso 2: identifica la identidad utilizada.",
+            "pregunta": "Tema Ecuaciones e inecuaciones trigonométricas. Simplifica sen²x+cos²x. Caso 2: identifica la identidad utilizada.",
             "alternativas": [
               "0",
               "tan x",
@@ -4245,7 +4245,7 @@
             "tema": "Ecuaciones e inecuaciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 3/10] Tema Ecuaciones e inecuaciones trigonométricas. Simplifica sen²x+cos²x. Caso 3: identifica la identidad utilizada.",
+            "pregunta": "Tema Ecuaciones e inecuaciones trigonométricas. Simplifica sen²x+cos²x. Caso 3: identifica la identidad utilizada.",
             "alternativas": [
               "tan x",
               "sec²x",
@@ -4265,7 +4265,7 @@
             "tema": "Ecuaciones e inecuaciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 4/10] Tema Ecuaciones e inecuaciones trigonométricas. Simplifica sen²x+cos²x. Caso 4: identifica la identidad utilizada.",
+            "pregunta": "Tema Ecuaciones e inecuaciones trigonométricas. Simplifica sen²x+cos²x. Caso 4: identifica la identidad utilizada.",
             "alternativas": [
               "sec²x",
               "1",
@@ -4285,7 +4285,7 @@
             "tema": "Ecuaciones e inecuaciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 5/10] Tema Ecuaciones e inecuaciones trigonométricas. Simplifica sen²x+cos²x. Caso 5: identifica la identidad utilizada.",
+            "pregunta": "Tema Ecuaciones e inecuaciones trigonométricas. Simplifica sen²x+cos²x. Caso 5: identifica la identidad utilizada.",
             "alternativas": [
               "1",
               "0",
@@ -4305,7 +4305,7 @@
             "tema": "Ecuaciones e inecuaciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 6/10] Tema Ecuaciones e inecuaciones trigonométricas. Simplifica sen²x+cos²x. Caso 6: identifica la identidad utilizada.",
+            "pregunta": "Tema Ecuaciones e inecuaciones trigonométricas. Simplifica sen²x+cos²x. Caso 6: identifica la identidad utilizada.",
             "alternativas": [
               "0",
               "tan x",
@@ -4325,7 +4325,7 @@
             "tema": "Ecuaciones e inecuaciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 7/10] Tema Ecuaciones e inecuaciones trigonométricas. Simplifica sen²x+cos²x. Caso 7: identifica la identidad utilizada.",
+            "pregunta": "Tema Ecuaciones e inecuaciones trigonométricas. Simplifica sen²x+cos²x. Caso 7: identifica la identidad utilizada.",
             "alternativas": [
               "tan x",
               "sec²x",
@@ -4345,7 +4345,7 @@
             "tema": "Ecuaciones e inecuaciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 8/10] Tema Ecuaciones e inecuaciones trigonométricas. Simplifica sen²x+cos²x. Caso 8: identifica la identidad utilizada.",
+            "pregunta": "Tema Ecuaciones e inecuaciones trigonométricas. Simplifica sen²x+cos²x. Caso 8: identifica la identidad utilizada.",
             "alternativas": [
               "sec²x",
               "1",
@@ -4365,7 +4365,7 @@
             "tema": "Ecuaciones e inecuaciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 9/10] Tema Ecuaciones e inecuaciones trigonométricas. Simplifica sen²x+cos²x. Caso 9: identifica la identidad utilizada.",
+            "pregunta": "Tema Ecuaciones e inecuaciones trigonométricas. Simplifica sen²x+cos²x. Caso 9: identifica la identidad utilizada.",
             "alternativas": [
               "1",
               "0",
@@ -4385,7 +4385,7 @@
             "tema": "Ecuaciones e inecuaciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 10/10] Tema Ecuaciones e inecuaciones trigonométricas. Simplifica sen²x+cos²x. Caso 10: identifica la identidad utilizada.",
+            "pregunta": "Tema Ecuaciones e inecuaciones trigonométricas. Simplifica sen²x+cos²x. Caso 10: identifica la identidad utilizada.",
             "alternativas": [
               "0",
               "tan x",
@@ -4407,7 +4407,7 @@
             "tema": "Ecuaciones e inecuaciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 1/10] Tema Ecuaciones e inecuaciones trigonométricas. Si sen x=3/5, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
+            "pregunta": "Tema Ecuaciones e inecuaciones trigonométricas. Si sen x=3/5, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
             "alternativas": [
               "0,4",
               "0,64",
@@ -4427,7 +4427,7 @@
             "tema": "Ecuaciones e inecuaciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 2/10] Tema Ecuaciones e inecuaciones trigonométricas. Si sen x=4/7, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
+            "pregunta": "Tema Ecuaciones e inecuaciones trigonométricas. Si sen x=4/7, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
             "alternativas": [
               "0,67",
               "0,7",
@@ -4447,7 +4447,7 @@
             "tema": "Ecuaciones e inecuaciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 3/10] Tema Ecuaciones e inecuaciones trigonométricas. Si sen x=5/9, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
+            "pregunta": "Tema Ecuaciones e inecuaciones trigonométricas. Si sen x=5/9, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
             "alternativas": [
               "0,67",
               "0,83",
@@ -4467,7 +4467,7 @@
             "tema": "Ecuaciones e inecuaciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 4/10] Tema Ecuaciones e inecuaciones trigonométricas. Si sen x=6/8, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
+            "pregunta": "Tema Ecuaciones e inecuaciones trigonométricas. Si sen x=6/8, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
             "alternativas": [
               "0,66",
               "0,25",
@@ -4487,7 +4487,7 @@
             "tema": "Ecuaciones e inecuaciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 5/10] Tema Ecuaciones e inecuaciones trigonométricas. Si sen x=7/10, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
+            "pregunta": "Tema Ecuaciones e inecuaciones trigonométricas. Si sen x=7/10, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
             "alternativas": [
               "0,3",
               "0,51",
@@ -4507,7 +4507,7 @@
             "tema": "Ecuaciones e inecuaciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 6/10] Tema Ecuaciones e inecuaciones trigonométricas. Si sen x=8/12, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
+            "pregunta": "Tema Ecuaciones e inecuaciones trigonométricas. Si sen x=8/12, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
             "alternativas": [
               "0,56",
               "0,89",
@@ -4527,7 +4527,7 @@
             "tema": "Ecuaciones e inecuaciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 7/10] Tema Ecuaciones e inecuaciones trigonométricas. Si sen x=9/11, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
+            "pregunta": "Tema Ecuaciones e inecuaciones trigonométricas. Si sen x=9/11, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
             "alternativas": [
               "1,42",
               "0,57",
@@ -4547,7 +4547,7 @@
             "tema": "Ecuaciones e inecuaciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 8/10] Tema Ecuaciones e inecuaciones trigonométricas. Si sen x=10/13, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
+            "pregunta": "Tema Ecuaciones e inecuaciones trigonométricas. Si sen x=10/13, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
             "alternativas": [
               "0,64",
               "0,23",
@@ -4567,7 +4567,7 @@
             "tema": "Ecuaciones e inecuaciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 9/10] Tema Ecuaciones e inecuaciones trigonométricas. Si sen x=11/15, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
+            "pregunta": "Tema Ecuaciones e inecuaciones trigonométricas. Si sen x=11/15, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
             "alternativas": [
               "0,27",
               "0,46",
@@ -4587,7 +4587,7 @@
             "tema": "Ecuaciones e inecuaciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 10/10] Tema Ecuaciones e inecuaciones trigonométricas. Si sen x=12/14, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
+            "pregunta": "Tema Ecuaciones e inecuaciones trigonométricas. Si sen x=12/14, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
             "alternativas": [
               "0,27",
               "1,66",
@@ -4609,7 +4609,7 @@
             "tema": "Ecuaciones e inecuaciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 1/10] Tema Ecuaciones e inecuaciones trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(2x)=0? Explica el efecto del factor 2.",
+            "pregunta": "Tema Ecuaciones e inecuaciones trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(2x)=0? Explica el efecto del factor 2.",
             "alternativas": [
               "3",
               "8",
@@ -4629,7 +4629,7 @@
             "tema": "Ecuaciones e inecuaciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 2/10] Tema Ecuaciones e inecuaciones trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(3x)=0? Explica el efecto del factor 3.",
+            "pregunta": "Tema Ecuaciones e inecuaciones trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(3x)=0? Explica el efecto del factor 3.",
             "alternativas": [
               "12",
               "6",
@@ -4649,7 +4649,7 @@
             "tema": "Ecuaciones e inecuaciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 3/10] Tema Ecuaciones e inecuaciones trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(4x)=0? Explica el efecto del factor 4.",
+            "pregunta": "Tema Ecuaciones e inecuaciones trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(4x)=0? Explica el efecto del factor 4.",
             "alternativas": [
               "8",
               "4",
@@ -4669,7 +4669,7 @@
             "tema": "Ecuaciones e inecuaciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 4/10] Tema Ecuaciones e inecuaciones trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(5x)=0? Explica el efecto del factor 5.",
+            "pregunta": "Tema Ecuaciones e inecuaciones trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(5x)=0? Explica el efecto del factor 5.",
             "alternativas": [
               "5",
               "6",
@@ -4689,7 +4689,7 @@
             "tema": "Ecuaciones e inecuaciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 5/10] Tema Ecuaciones e inecuaciones trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(6x)=0? Explica el efecto del factor 6.",
+            "pregunta": "Tema Ecuaciones e inecuaciones trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(6x)=0? Explica el efecto del factor 6.",
             "alternativas": [
               "7",
               "24",
@@ -4709,7 +4709,7 @@
             "tema": "Ecuaciones e inecuaciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 6/10] Tema Ecuaciones e inecuaciones trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(7x)=0? Explica el efecto del factor 7.",
+            "pregunta": "Tema Ecuaciones e inecuaciones trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(7x)=0? Explica el efecto del factor 7.",
             "alternativas": [
               "28",
               "14",
@@ -4729,7 +4729,7 @@
             "tema": "Ecuaciones e inecuaciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 7/10] Tema Ecuaciones e inecuaciones trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(8x)=0? Explica el efecto del factor 8.",
+            "pregunta": "Tema Ecuaciones e inecuaciones trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(8x)=0? Explica el efecto del factor 8.",
             "alternativas": [
               "16",
               "8",
@@ -4749,7 +4749,7 @@
             "tema": "Ecuaciones e inecuaciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 8/10] Tema Ecuaciones e inecuaciones trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(9x)=0? Explica el efecto del factor 9.",
+            "pregunta": "Tema Ecuaciones e inecuaciones trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(9x)=0? Explica el efecto del factor 9.",
             "alternativas": [
               "9",
               "10",
@@ -4769,7 +4769,7 @@
             "tema": "Ecuaciones e inecuaciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 9/10] Tema Ecuaciones e inecuaciones trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(10x)=0? Explica el efecto del factor 10.",
+            "pregunta": "Tema Ecuaciones e inecuaciones trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(10x)=0? Explica el efecto del factor 10.",
             "alternativas": [
               "11",
               "40",
@@ -4789,7 +4789,7 @@
             "tema": "Ecuaciones e inecuaciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 10/10] Tema Ecuaciones e inecuaciones trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(11x)=0? Explica el efecto del factor 11.",
+            "pregunta": "Tema Ecuaciones e inecuaciones trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(11x)=0? Explica el efecto del factor 11.",
             "alternativas": [
               "44",
               "22",
@@ -4811,7 +4811,7 @@
             "tema": "Ecuaciones e inecuaciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil PUCP · 1/10] Tema Ecuaciones e inecuaciones trigonométricas. Si sen x=13/16, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
+            "pregunta": "Tema Ecuaciones e inecuaciones trigonométricas. Si sen x=13/16, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
             "alternativas": [
               "1,39",
               "0,58",
@@ -4831,7 +4831,7 @@
             "tema": "Ecuaciones e inecuaciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UCSM · 2/10] Tema Ecuaciones e inecuaciones trigonométricas. Si sen x=14/18, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
+            "pregunta": "Tema Ecuaciones e inecuaciones trigonométricas. Si sen x=14/18, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
             "alternativas": [
               "0,63",
               "0,22",
@@ -4851,7 +4851,7 @@
             "tema": "Ecuaciones e inecuaciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil GENERAL · 3/10] Tema Ecuaciones e inecuaciones trigonométricas. Si sen x=15/17, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
+            "pregunta": "Tema Ecuaciones e inecuaciones trigonométricas. Si sen x=15/17, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
             "alternativas": [
               "0,12",
               "0,22",
@@ -4871,7 +4871,7 @@
             "tema": "Ecuaciones e inecuaciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UNAMAD · 4/10] Tema Ecuaciones e inecuaciones trigonométricas. Si sen x=16/19, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
+            "pregunta": "Tema Ecuaciones e inecuaciones trigonométricas. Si sen x=16/19, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
             "alternativas": [
               "0,29",
               "1,56",
@@ -4891,7 +4891,7 @@
             "tema": "Ecuaciones e inecuaciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UNSAAC · 5/10] Tema Ecuaciones e inecuaciones trigonométricas. Si sen x=17/21, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
+            "pregunta": "Tema Ecuaciones e inecuaciones trigonométricas. Si sen x=17/21, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x.",
             "alternativas": [
               "1,38",
               "0,59",
@@ -4911,7 +4911,7 @@
             "tema": "Ecuaciones e inecuaciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UNMSM · 6/10] Tema Ecuaciones e inecuaciones trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(12x)=0? Explica el efecto del factor 12.",
+            "pregunta": "Tema Ecuaciones e inecuaciones trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(12x)=0? Explica el efecto del factor 12.",
             "alternativas": [
               "24",
               "12",
@@ -4931,7 +4931,7 @@
             "tema": "Ecuaciones e inecuaciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UNSA · 7/10] Tema Ecuaciones e inecuaciones trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(13x)=0? Explica el efecto del factor 13.",
+            "pregunta": "Tema Ecuaciones e inecuaciones trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(13x)=0? Explica el efecto del factor 13.",
             "alternativas": [
               "13",
               "14",
@@ -4951,7 +4951,7 @@
             "tema": "Ecuaciones e inecuaciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UNI · 8/10] Tema Ecuaciones e inecuaciones trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(14x)=0? Explica el efecto del factor 14.",
+            "pregunta": "Tema Ecuaciones e inecuaciones trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(14x)=0? Explica el efecto del factor 14.",
             "alternativas": [
               "15",
               "56",
@@ -4971,7 +4971,7 @@
             "tema": "Ecuaciones e inecuaciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil PUCP · 9/10] Tema Ecuaciones e inecuaciones trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(15x)=0? Explica el efecto del factor 15.",
+            "pregunta": "Tema Ecuaciones e inecuaciones trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(15x)=0? Explica el efecto del factor 15.",
             "alternativas": [
               "60",
               "30",
@@ -4991,7 +4991,7 @@
             "tema": "Ecuaciones e inecuaciones trigonométricas",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UCSM · 10/10] Tema Ecuaciones e inecuaciones trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(16x)=0? Explica el efecto del factor 16.",
+            "pregunta": "Tema Ecuaciones e inecuaciones trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(16x)=0? Explica el efecto del factor 16.",
             "alternativas": [
               "32",
               "16",
@@ -5034,7 +5034,7 @@
             "tema": "Resolución de triángulos oblicuángulos",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 1/10] Tema Resolución de triángulos oblicuángulos. En un triángulo rectángulo con catetos 6 y 8, halla la hipotenusa.",
+            "pregunta": "Tema Resolución de triángulos oblicuángulos. En un triángulo rectángulo con catetos 6 y 8, halla la hipotenusa.",
             "alternativas": [
               "14",
               "10",
@@ -5054,7 +5054,7 @@
             "tema": "Resolución de triángulos oblicuángulos",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 2/10] Tema Resolución de triángulos oblicuángulos. En un triángulo rectángulo con catetos 9 y 12, halla la hipotenusa.",
+            "pregunta": "Tema Resolución de triángulos oblicuángulos. En un triángulo rectángulo con catetos 9 y 12, halla la hipotenusa.",
             "alternativas": [
               "15",
               "12",
@@ -5074,7 +5074,7 @@
             "tema": "Resolución de triángulos oblicuángulos",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 3/10] Tema Resolución de triángulos oblicuángulos. En un triángulo rectángulo con catetos 12 y 16, halla la hipotenusa.",
+            "pregunta": "Tema Resolución de triángulos oblicuángulos. En un triángulo rectángulo con catetos 12 y 16, halla la hipotenusa.",
             "alternativas": [
               "16",
               "24",
@@ -5094,7 +5094,7 @@
             "tema": "Resolución de triángulos oblicuángulos",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 4/10] Tema Resolución de triángulos oblicuángulos. En un triángulo rectángulo con catetos 15 y 20, halla la hipotenusa.",
+            "pregunta": "Tema Resolución de triángulos oblicuángulos. En un triángulo rectángulo con catetos 15 y 20, halla la hipotenusa.",
             "alternativas": [
               "30",
               "35",
@@ -5114,7 +5114,7 @@
             "tema": "Resolución de triángulos oblicuángulos",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 5/10] Tema Resolución de triángulos oblicuángulos. En un triángulo rectángulo con catetos 18 y 24, halla la hipotenusa.",
+            "pregunta": "Tema Resolución de triángulos oblicuángulos. En un triángulo rectángulo con catetos 18 y 24, halla la hipotenusa.",
             "alternativas": [
               "42",
               "30",
@@ -5134,7 +5134,7 @@
             "tema": "Resolución de triángulos oblicuángulos",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 6/10] Tema Resolución de triángulos oblicuángulos. En un triángulo rectángulo con catetos 21 y 28, halla la hipotenusa.",
+            "pregunta": "Tema Resolución de triángulos oblicuángulos. En un triángulo rectángulo con catetos 21 y 28, halla la hipotenusa.",
             "alternativas": [
               "35",
               "28",
@@ -5154,7 +5154,7 @@
             "tema": "Resolución de triángulos oblicuángulos",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 7/10] Tema Resolución de triángulos oblicuángulos. En un triángulo rectángulo con catetos 24 y 32, halla la hipotenusa.",
+            "pregunta": "Tema Resolución de triángulos oblicuángulos. En un triángulo rectángulo con catetos 24 y 32, halla la hipotenusa.",
             "alternativas": [
               "32",
               "48",
@@ -5174,7 +5174,7 @@
             "tema": "Resolución de triángulos oblicuángulos",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 8/10] Tema Resolución de triángulos oblicuángulos. En un triángulo rectángulo con catetos 27 y 36, halla la hipotenusa.",
+            "pregunta": "Tema Resolución de triángulos oblicuángulos. En un triángulo rectángulo con catetos 27 y 36, halla la hipotenusa.",
             "alternativas": [
               "54",
               "63",
@@ -5194,7 +5194,7 @@
             "tema": "Resolución de triángulos oblicuángulos",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 9/10] Tema Resolución de triángulos oblicuángulos. En un triángulo rectángulo con catetos 30 y 40, halla la hipotenusa.",
+            "pregunta": "Tema Resolución de triángulos oblicuángulos. En un triángulo rectángulo con catetos 30 y 40, halla la hipotenusa.",
             "alternativas": [
               "70",
               "50",
@@ -5214,7 +5214,7 @@
             "tema": "Resolución de triángulos oblicuángulos",
             "subarea": "Matemática",
             "competencia": "Ejecuta un procedimiento directo",
-            "pregunta": "[Básico · 10/10] Tema Resolución de triángulos oblicuángulos. En un triángulo rectángulo con catetos 33 y 44, halla la hipotenusa.",
+            "pregunta": "Tema Resolución de triángulos oblicuángulos. En un triángulo rectángulo con catetos 33 y 44, halla la hipotenusa.",
             "alternativas": [
               "55",
               "44",
@@ -5236,7 +5236,7 @@
             "tema": "Resolución de triángulos oblicuángulos",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 1/10] Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 5 y 7, y el ángulo comprendido es 60°. Halla el tercer lado mediante la ley de cosenos.",
+            "pregunta": "Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 5 y 7, y el ángulo comprendido es 60°. Halla el tercer lado mediante la ley de cosenos.",
             "alternativas": [
               "6,24",
               "12",
@@ -5256,7 +5256,7 @@
             "tema": "Resolución de triángulos oblicuángulos",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 2/10] Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 6 y 8, y el ángulo comprendido es 60°. Halla el tercer lado mediante la ley de cosenos.",
+            "pregunta": "Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 6 y 8, y el ángulo comprendido es 60°. Halla el tercer lado mediante la ley de cosenos.",
             "alternativas": [
               "14",
               "10",
@@ -5276,7 +5276,7 @@
             "tema": "Resolución de triángulos oblicuángulos",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 3/10] Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 7 y 9, y el ángulo comprendido es 60°. Halla el tercer lado mediante la ley de cosenos.",
+            "pregunta": "Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 7 y 9, y el ángulo comprendido es 60°. Halla el tercer lado mediante la ley de cosenos.",
             "alternativas": [
               "11,4",
               "2",
@@ -5296,7 +5296,7 @@
             "tema": "Resolución de triángulos oblicuángulos",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 4/10] Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 8 y 10, y el ángulo comprendido es 60°. Halla el tercer lado mediante la ley de cosenos.",
+            "pregunta": "Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 8 y 10, y el ángulo comprendido es 60°. Halla el tercer lado mediante la ley de cosenos.",
             "alternativas": [
               "2",
               "9,17",
@@ -5316,7 +5316,7 @@
             "tema": "Resolución de triángulos oblicuángulos",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 5/10] Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 9 y 11, y el ángulo comprendido es 60°. Halla el tercer lado mediante la ley de cosenos.",
+            "pregunta": "Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 9 y 11, y el ángulo comprendido es 60°. Halla el tercer lado mediante la ley de cosenos.",
             "alternativas": [
               "10,15",
               "20",
@@ -5336,7 +5336,7 @@
             "tema": "Resolución de triángulos oblicuángulos",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 6/10] Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 10 y 12, y el ángulo comprendido es 60°. Halla el tercer lado mediante la ley de cosenos.",
+            "pregunta": "Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 10 y 12, y el ángulo comprendido es 60°. Halla el tercer lado mediante la ley de cosenos.",
             "alternativas": [
               "22",
               "15,62",
@@ -5356,7 +5356,7 @@
             "tema": "Resolución de triángulos oblicuángulos",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 7/10] Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 11 y 13, y el ángulo comprendido es 60°. Halla el tercer lado mediante la ley de cosenos.",
+            "pregunta": "Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 11 y 13, y el ángulo comprendido es 60°. Halla el tercer lado mediante la ley de cosenos.",
             "alternativas": [
               "17,03",
               "2",
@@ -5376,7 +5376,7 @@
             "tema": "Resolución de triángulos oblicuángulos",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 8/10] Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 12 y 14, y el ángulo comprendido es 60°. Halla el tercer lado mediante la ley de cosenos.",
+            "pregunta": "Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 12 y 14, y el ángulo comprendido es 60°. Halla el tercer lado mediante la ley de cosenos.",
             "alternativas": [
               "2",
               "13,11",
@@ -5396,7 +5396,7 @@
             "tema": "Resolución de triángulos oblicuángulos",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 9/10] Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 13 y 15, y el ángulo comprendido es 60°. Halla el tercer lado mediante la ley de cosenos.",
+            "pregunta": "Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 13 y 15, y el ángulo comprendido es 60°. Halla el tercer lado mediante la ley de cosenos.",
             "alternativas": [
               "14,11",
               "28",
@@ -5416,7 +5416,7 @@
             "tema": "Resolución de triángulos oblicuángulos",
             "subarea": "Matemática",
             "competencia": "Relaciona datos en dos etapas",
-            "pregunta": "[Intermedio · 10/10] Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 14 y 16, y el ángulo comprendido es 60°. Halla el tercer lado mediante la ley de cosenos.",
+            "pregunta": "Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 14 y 16, y el ángulo comprendido es 60°. Halla el tercer lado mediante la ley de cosenos.",
             "alternativas": [
               "30",
               "21,26",
@@ -5438,7 +5438,7 @@
             "tema": "Resolución de triángulos oblicuángulos",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 1/10] Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 8 y 10 y forman 30°. Calcula su área y la altura relativa al lado 8.",
+            "pregunta": "Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 8 y 10 y forman 30°. Calcula su área y la altura relativa al lado 8.",
             "alternativas": [
               "40",
               "34,64",
@@ -5458,7 +5458,7 @@
             "tema": "Resolución de triángulos oblicuángulos",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 2/10] Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 9 y 11 y forman 30°. Calcula su área y la altura relativa al lado 9.",
+            "pregunta": "Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 9 y 11 y forman 30°. Calcula su área y la altura relativa al lado 9.",
             "alternativas": [
               "42,87",
               "5,5",
@@ -5478,7 +5478,7 @@
             "tema": "Resolución de triángulos oblicuángulos",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 3/10] Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 10 y 12 y forman 30°. Calcula su área y la altura relativa al lado 10.",
+            "pregunta": "Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 10 y 12 y forman 30°. Calcula su área y la altura relativa al lado 10.",
             "alternativas": [
               "6",
               "30",
@@ -5498,7 +5498,7 @@
             "tema": "Resolución de triángulos oblicuángulos",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 4/10] Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 11 y 13 y forman 30°. Calcula su área y la altura relativa al lado 11.",
+            "pregunta": "Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 11 y 13 y forman 30°. Calcula su área y la altura relativa al lado 11.",
             "alternativas": [
               "35,75",
               "71,5",
@@ -5518,7 +5518,7 @@
             "tema": "Resolución de triángulos oblicuángulos",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 5/10] Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 12 y 14 y forman 30°. Calcula su área y la altura relativa al lado 12.",
+            "pregunta": "Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 12 y 14 y forman 30°. Calcula su área y la altura relativa al lado 12.",
             "alternativas": [
               "84",
               "72,75",
@@ -5538,7 +5538,7 @@
             "tema": "Resolución de triángulos oblicuángulos",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 6/10] Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 13 y 15 y forman 30°. Calcula su área y la altura relativa al lado 13.",
+            "pregunta": "Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 13 y 15 y forman 30°. Calcula su área y la altura relativa al lado 13.",
             "alternativas": [
               "84,44",
               "7,5",
@@ -5558,7 +5558,7 @@
             "tema": "Resolución de triángulos oblicuángulos",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 7/10] Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 14 y 16 y forman 30°. Calcula su área y la altura relativa al lado 14.",
+            "pregunta": "Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 14 y 16 y forman 30°. Calcula su área y la altura relativa al lado 14.",
             "alternativas": [
               "8",
               "56",
@@ -5578,7 +5578,7 @@
             "tema": "Resolución de triángulos oblicuángulos",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 8/10] Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 15 y 17 y forman 30°. Calcula su área y la altura relativa al lado 15.",
+            "pregunta": "Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 15 y 17 y forman 30°. Calcula su área y la altura relativa al lado 15.",
             "alternativas": [
               "63,75",
               "127,5",
@@ -5598,7 +5598,7 @@
             "tema": "Resolución de triángulos oblicuángulos",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 9/10] Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 16 y 18 y forman 30°. Calcula su área y la altura relativa al lado 16.",
+            "pregunta": "Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 16 y 18 y forman 30°. Calcula su área y la altura relativa al lado 16.",
             "alternativas": [
               "144",
               "124,71",
@@ -5618,7 +5618,7 @@
             "tema": "Resolución de triángulos oblicuángulos",
             "subarea": "Matemática",
             "competencia": "Modela, contrasta y justifica una estrategia",
-            "pregunta": "[Avanzado · 10/10] Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 17 y 19 y forman 30°. Calcula su área y la altura relativa al lado 17.",
+            "pregunta": "Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 17 y 19 y forman 30°. Calcula su área y la altura relativa al lado 17.",
             "alternativas": [
               "139,86",
               "9,5",
@@ -5640,7 +5640,7 @@
             "tema": "Resolución de triángulos oblicuángulos",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UNMSM · 1/10] Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 15 y 17, y el ángulo comprendido es 60°. Halla el tercer lado mediante la ley de cosenos.",
+            "pregunta": "Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 15 y 17, y el ángulo comprendido es 60°. Halla el tercer lado mediante la ley de cosenos.",
             "alternativas": [
               "22,67",
               "2",
@@ -5660,7 +5660,7 @@
             "tema": "Resolución de triángulos oblicuángulos",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UNSA · 2/10] Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 16 y 18, y el ángulo comprendido es 60°. Halla el tercer lado mediante la ley de cosenos.",
+            "pregunta": "Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 16 y 18, y el ángulo comprendido es 60°. Halla el tercer lado mediante la ley de cosenos.",
             "alternativas": [
               "2",
               "17,09",
@@ -5680,7 +5680,7 @@
             "tema": "Resolución de triángulos oblicuángulos",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UNI · 3/10] Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 17 y 19, y el ángulo comprendido es 60°. Halla el tercer lado mediante la ley de cosenos.",
+            "pregunta": "Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 17 y 19, y el ángulo comprendido es 60°. Halla el tercer lado mediante la ley de cosenos.",
             "alternativas": [
               "18,08",
               "36",
@@ -5700,7 +5700,7 @@
             "tema": "Resolución de triángulos oblicuángulos",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil PUCP · 4/10] Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 18 y 20, y el ángulo comprendido es 60°. Halla el tercer lado mediante la ley de cosenos.",
+            "pregunta": "Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 18 y 20, y el ángulo comprendido es 60°. Halla el tercer lado mediante la ley de cosenos.",
             "alternativas": [
               "38",
               "26,91",
@@ -5720,7 +5720,7 @@
             "tema": "Resolución de triángulos oblicuángulos",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UCSM · 5/10] Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 19 y 21, y el ángulo comprendido es 60°. Halla el tercer lado mediante la ley de cosenos.",
+            "pregunta": "Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 19 y 21, y el ángulo comprendido es 60°. Halla el tercer lado mediante la ley de cosenos.",
             "alternativas": [
               "28,32",
               "2",
@@ -5740,7 +5740,7 @@
             "tema": "Resolución de triángulos oblicuángulos",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil GENERAL · 6/10] Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 18 y 20 y forman 30°. Calcula su área y la altura relativa al lado 18.",
+            "pregunta": "Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 18 y 20 y forman 30°. Calcula su área y la altura relativa al lado 18.",
             "alternativas": [
               "10",
               "90",
@@ -5760,7 +5760,7 @@
             "tema": "Resolución de triángulos oblicuángulos",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UNAMAD · 7/10] Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 19 y 21 y forman 30°. Calcula su área y la altura relativa al lado 19.",
+            "pregunta": "Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 19 y 21 y forman 30°. Calcula su área y la altura relativa al lado 19.",
             "alternativas": [
               "99,75",
               "199,5",
@@ -5780,7 +5780,7 @@
             "tema": "Resolución de triángulos oblicuángulos",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UNSAAC · 8/10] Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 20 y 22 y forman 30°. Calcula su área y la altura relativa al lado 20.",
+            "pregunta": "Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 20 y 22 y forman 30°. Calcula su área y la altura relativa al lado 20.",
             "alternativas": [
               "220",
               "190,53",
@@ -5800,7 +5800,7 @@
             "tema": "Resolución de triángulos oblicuángulos",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UNMSM · 9/10] Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 21 y 23 y forman 30°. Calcula su área y la altura relativa al lado 21.",
+            "pregunta": "Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 21 y 23 y forman 30°. Calcula su área y la altura relativa al lado 21.",
             "alternativas": [
               "209,15",
               "11,5",
@@ -5820,7 +5820,7 @@
             "tema": "Resolución de triángulos oblicuángulos",
             "subarea": "Matemática",
             "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
-            "pregunta": "[Reto de admisión · perfil UNSA · 10/10] Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 22 y 24 y forman 30°. Calcula su área y la altura relativa al lado 22.",
+            "pregunta": "Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 22 y 24 y forman 30°. Calcula su área y la altura relativa al lado 22.",
             "alternativas": [
               "12",
               "132",

@@ -173,40 +173,6 @@ async function iniciarApp() {
 
 
 // ======================================
-// BÚSQUEDA GLOBAL
-// ======================================
-
-function buscarEnUniPrep(consulta = "") {
-  const texto = String(consulta).trim();
-
-  if (!texto) {
-    return;
-  }
-
-  const buscadorCursos =
-    document.getElementById("courses-search");
-
-  if (buscadorCursos) {
-    buscadorCursos.value = texto;
-  }
-
-  if (typeof window.go === "function") {
-    window.go("cursos", null);
-  }
-
-  if (typeof window.renderizarCursos === "function") {
-    window.renderizarCursos();
-  }
-
-  window.mostrarToastPremium?.(
-    `Resultados para “${texto}”`
-  );
-}
-
-window.buscarEnUniPrep = buscarEnUniPrep;
-
-
-// ======================================
 // MOSTRAR LOGIN
 // ======================================
 

@@ -1,7 +1,7 @@
 {
-  "name": "UniPrep 2 - Preparación inteligente",
+  "name": "UniPrep 2 Harmony Comfort - Preparación inteligente",
   "short_name": "UniPrep 2",
-  "description": "Práctica, simulacros, analítica y recursos para el ingreso universitario.",
+  "description": "Tutor educativo con IA, práctica, simulacros, analítica, personalización y centro de comandos para el ingreso universitario.",
   "lang": "es-PE",
   "id": "pe.uniprep.app",
   "start_url": "./",
@@ -48,8 +48,8 @@
       "url": "./?screen=cursos"
     },
     {
-      "name": "Tutor académico",
-      "short_name": "Tutor",
+      "name": "Tutor con IA",
+      "short_name": "Tutor IA",
       "url": "./?screen=tutor"
     },
     {

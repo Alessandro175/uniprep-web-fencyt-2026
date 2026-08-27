@@ -1,0 +1,38 @@
+UNIPREP 2 UGEL — PUBLICAR 2026.21 HARMONY COMFORT
+
+CAMBIO PRINCIPAL
+[✓] Modo claro reconstruido en todos los módulos.
+[✓] Paletas personalizadas adaptadas automáticamente al modo claro.
+[✓] Inicio sin destello oscuro al recargar.
+[✓] Sin tablas, buckets ni variables nuevas.
+
+ANTES DE SUBIR
+[ ] Conserva una copia del despliegue anterior.
+[ ] Si aún falta, ejecuta SUPABASE_UGEL_RANKING_FOTOS.sql.
+[ ] Después ejecuta SUPABASE_UGEL_EVOLUCION.sql.
+[ ] Verifica en Vercel OPENAI_API_KEY, OPENAI_MODEL,
+    SUPABASE_URL y SUPABASE_PUBLISHABLE_KEY.
+
+PUBLICACIÓN
+[ ] Sube el contenido completo de esta carpeta.
+[ ] Vuelve a desplegar.
+[ ] Recarga dos veces para reemplazar la caché anterior por v57-harmony-comfort.
+
+PRUEBA VISUAL
+[ ] Abre Colores y apariencia y elige Claro.
+[ ] Revisa Inicio, Cursos, Práctica, Simulacros, Ranking, Tutor y Orientación.
+[ ] Prueba Cielo claro y Papel cálido.
+[ ] Abre Personalizar toda la interfaz, cambia acentos y usa tu diseño.
+[ ] Confirma que barra, banner, tarjetas, botones y texto conservan armonía.
+[ ] Cierra sesión, vuelve a entrar y confirma que el tema se mantiene.
+
+PRUEBA FUNCIONAL BREVE
+[ ] Realiza una práctica y revisa estados correcto/incorrecto.
+[ ] Haz una consulta en el Tutor.
+[ ] Abre Ctrl/⌘ + K y navega con teclado.
+[ ] Comprueba un simulacro y el ranking.
+[ ] Revisa la aplicación desde un celular.
+
+IMPORTANTE
+Esta mejora visual no cambia Supabase ni Vercel. Nunca pegues OPENAI_API_KEY
+en HTML, JavaScript público, Supabase, capturas o informes.

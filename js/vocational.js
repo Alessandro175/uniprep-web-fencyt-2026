@@ -22,6 +22,16 @@
 
   const CLAVE_RESULTADO = "uniprep_resultado_chaside_98_v2";
   const CLAVE_FAVORITA = "uniprep_carrera_favorita_v1";
+  const CLAVE_BORRADOR = "uniprep_borrador_chaside_98_v1";
+
+  function borradorGuardado() {
+    const dato = window.uniprepStorage?.leer(CLAVE_BORRADOR, null);
+    return dato && dato.version === 1 && dato.indice >= 0 && dato.indice < 98 && dato.respuestas && typeof dato.respuestas === "object" ? dato : null;
+  }
+
+  function guardarBorrador() {
+    window.uniprepStorage?.guardar(CLAVE_BORRADOR, {version:1, indice:ESTADO.indice, respuestas:ESTADO.respuestas, fecha:new Date().toISOString()});
+  }
 
   function esc(valor = "") {
     const nodo = document.createElement("div");
@@ -167,6 +177,7 @@
   function mostrarInicioVocacional() {
     if (!ESTADO.raiz || !ESTADO.datos) return;
     const guardado = resultadoGuardado();
+    const borrador = borradorGuardado();
     const top = guardado?.carreras?.[0] ? ESTADO.datos.carreras.find(c => c.id === guardado.carreras[0].id) : null;
     const cantidadDepartamentos = new Set(ESTADO.datos.universidades.map(u => u.departamento)).size;
     ESTADO.raiz.innerHTML = `
@@ -182,6 +193,7 @@
               <button class="vocational-secondary" type="button" onclick="mostrarExploradorVocacional()"><span>⌖</span><b>Explorar carreras y universidades</b><small>Busca por carrera, región o gestión</small></button>
             </div>
             ${guardado && top ? `<button class="vocational-saved-result" type="button" onclick="mostrarResultadoVocacional()"><span>✓</span><span><b>Continuar con mi resultado</b><small>${esc(top.nombre)} · ${guardado.carreras[0].afinidad}% · ${fechaCorta(guardado.fecha)}</small></span><em>Ver análisis →</em></button>` : ""}
+            ${borrador ? `<button class="vocational-saved-result vocational-draft-result" type="button" onclick="iniciarTestVocacional(true)"><span>↻</span><span><b>Continuar mi test</b><small>Pregunta ${Number(borrador.indice)+1} de 98 · guardado ${fechaCorta(borrador.fecha)}</small></span><em>Retomar →</em></button>` : ""}
           </div>
           <div class="vocational-orbit-card">
             <div class="vocational-compass"><span>C</span><span>H</span><span>A</span><span>S</span><span>I</span><span>D</span><span>E</span><b>U</b></div>
@@ -198,10 +210,12 @@
       </div>`;
   }
 
-  function iniciarTestVocacional() {
+  function iniciarTestVocacional(reanudar = false) {
     if (!ESTADO.datos || !ESTADO.raiz) return;
-    ESTADO.indice = 0;
-    ESTADO.respuestas = {};
+    const borrador = reanudar ? borradorGuardado() : null;
+    ESTADO.indice = borrador ? Math.min(97, Math.max(0, Number(borrador.indice) || 0)) : 0;
+    ESTADO.respuestas = borrador ? {...borrador.respuestas} : {};
+    if (!reanudar) window.uniprepStorage?.eliminar?.(CLAVE_BORRADOR);
     ESTADO.resultado = null;
     renderizarPreguntaVocacional();
   }
@@ -209,18 +223,22 @@
   function renderizarPreguntaVocacional() {
     const preguntas = ESTADO.datos.preguntas;
     const pregunta = preguntas[ESTADO.indice];
-    const progreso = Math.round((ESTADO.indice / preguntas.length) * 100);
+    const progreso = Math.round(((ESTADO.indice + 1) / preguntas.length) * 100);
+    const faseInteres = pregunta.tipo === "interes";
+    const numeroFase = faseInteres ? ESTADO.indice + 1 : ESTADO.indice - 69;
+    const totalFase = faseInteres ? 70 : 28;
     ESTADO.raiz.innerHTML = `
       <div class="vocational-test-shell">
         <header class="vocational-test-top"><button type="button" onclick="mostrarInicioVocacional()">← Salir</button><div><b>Test CHASIDE · UniPrep</b><small>98 preguntas de Sí o No · responde con sinceridad.</small></div><span>${ESTADO.indice + 1}/${preguntas.length}</span></header>
         <div class="vocational-test-progress"><span style="width:${progreso}%"></span></div>
+        <div class="vocational-phase-strip"><article class="${faseInteres?"active":"done"}"><i>1</i><span><b>Intereses</b><small>Lo que te atrae · 70 preguntas</small></span><em>${faseInteres?`${numeroFase}/70`:"✓"}</em></article><i></i><article class="${faseInteres?"":"active"}"><i>2</i><span><b>Aptitudes</b><small>Lo que reconoces en ti · 28 preguntas</small></span><em>${faseInteres?"Después":`${numeroFase}/${totalFase}`}</em></article><strong>${progreso}%</strong></div>
         <main class="vocational-question-card">
           <span class="vocational-question-kicker">${pregunta.tipo === "interes" ? "INTERESES · LO QUE TE GUSTA" : "APTITUDES · LO QUE RECONOCES EN TI"}</span>
           <h2>${esc(pregunta.texto)}</h2>
           <div class="vocational-binary"><button type="button" class="yes" onclick="responderPreguntaVocacional(true)"><span>✓</span><b>Sí</b><small>Me interesa o me describe</small></button><button type="button" class="no" onclick="responderPreguntaVocacional(false)"><span>×</span><b>No</b><small>No me interesa o no me describe</small></button></div>
-          <div class="vocational-question-help"><span>SÍ</span> Responde con sinceridad y no omitas ninguna pregunta <span>NO</span></div>
+          <div class="vocational-question-help"><span>Tecla S</span> Responde con sinceridad; no existe una opción correcta <span>Tecla N</span></div>
         </main>
-        <footer class="vocational-test-footer"><button type="button" ${ESTADO.indice === 0 ? "disabled" : ""} onclick="retrocederPreguntaVocacional()">← Anterior</button><p>Tu resultado se guarda únicamente al terminar.</p><button type="button" onclick="mostrarExploradorVocacional()">Explorar sin test →</button></footer>
+        <footer class="vocational-test-footer"><button type="button" ${ESTADO.indice === 0 ? "disabled" : ""} onclick="retrocederPreguntaVocacional()">← Anterior</button><p>Progreso guardado automáticamente · ${Object.keys(ESTADO.respuestas).length} respuestas</p><button type="button" onclick="pausarTestVocacional()">Pausar y continuar luego</button></footer>
       </div>`;
   }
 
@@ -229,6 +247,7 @@
     ESTADO.respuestas[pregunta.id] = valor === true;
     if (ESTADO.indice < ESTADO.datos.preguntas.length - 1) {
       ESTADO.indice++;
+      guardarBorrador();
       renderizarPreguntaVocacional();
     } else {
       calcularResultadoVocacional();
@@ -238,7 +257,14 @@
   function retrocederPreguntaVocacional() {
     if (ESTADO.indice <= 0) return;
     ESTADO.indice--;
+    guardarBorrador();
     renderizarPreguntaVocacional();
+  }
+
+  function pausarTestVocacional() {
+    guardarBorrador();
+    mostrarInicioVocacional();
+    window.UniprepUGEL?.mostrarToast?.("Tu avance del test quedó guardado.");
   }
 
   function calcularResultadoVocacional() {
@@ -272,12 +298,56 @@
       carreras
     };
     window.uniprepStorage?.guardar(CLAVE_RESULTADO, ESTADO.resultado);
+    window.uniprepStorage?.eliminar?.(CLAVE_BORRADOR);
+    window.UniPrepCloud?.saveVocationalResult?.(ESTADO.resultado);
     mostrarResultadoVocacional();
   }
 
   function perfilBarra(id, valor, interes, aptitud) {
     const perfil = ESTADO.datos.perfiles[id];
     return `<div class="vocational-profile-bar vocational-profile-dual" style="--profile-color:${perfil.color}"><span>${perfil.icono}</span><div><b>${id} · ${esc(perfil.nombre)}</b><label>Interés <i><em style="width:${interes}%"></em></i><small>${interes}%</small></label><label>Aptitud <i><em style="width:${aptitud}%"></em></i><small>${aptitud}%</small></label></div><strong>${valor}%<small>afinidad</small></strong></div>`;
+  }
+
+  function radarVocacional(resultado) {
+    const ids = Object.keys(ESTADO.datos.perfiles);
+    const centro = 150;
+    const radio = 100;
+    const punto = (indice, escala) => {
+      const angulo = -Math.PI / 2 + indice * Math.PI * 2 / ids.length;
+      return `${(centro + Math.cos(angulo) * radio * escala).toFixed(1)},${(centro + Math.sin(angulo) * radio * escala).toFixed(1)}`;
+    };
+    const poligono = (valores, maximo = 100) => ids.map((id, indice) => punto(indice, Math.max(0, Math.min(1, Number(valores[id] || 0) / maximo)))).join(" ");
+    const rejilla = [1,.75,.5,.25].map(nivel => `<polygon points="${ids.map((_, indice)=>punto(indice,nivel)).join(" ")}"/>`).join("");
+    const ejes = ids.map((id, indice) => `<line x1="${centro}" y1="${centro}" x2="${punto(indice,1).split(",")[0]}" y2="${punto(indice,1).split(",")[1]}"/>`).join("");
+    const etiquetas = ids.map((id, indice) => {
+      const [x,y] = punto(indice,1.22).split(",");
+      return `<text x="${x}" y="${y}" text-anchor="middle" dominant-baseline="middle">${id} · ${resultado.perfiles[id]}%</text>`;
+    }).join("");
+    return `<div class="vocational-radar-wrap"><svg class="vocational-radar" viewBox="0 0 300 300" role="img" aria-label="Gráfico comparativo de intereses, aptitudes y afinidad CHASIDE"><g class="grid">${rejilla}${ejes}</g><polygon class="combined" points="${poligono(resultado.perfiles)}"/><polygon class="interest" points="${poligono(resultado.intereses)}"/><polygon class="aptitude" points="${poligono(resultado.aptitudes)}"/><g class="labels">${etiquetas}</g></svg><div class="vocational-radar-legend"><span><i class="interest"></i>Interés</span><span><i class="aptitude"></i>Aptitud</span><span><i class="combined"></i>Afinidad</span></div></div>`;
+  }
+
+  function lecturaBrecha(resultado) {
+    const diferencias = Object.keys(resultado.perfiles).map(id => ({id, diferencia:Math.abs(Number(resultado.intereses[id]) - Number(resultado.aptitudes[id])), interes:Number(resultado.intereses[id]), aptitud:Number(resultado.aptitudes[id])})).sort((a,b)=>b.diferencia-a.diferencia);
+    const mayor = diferencias[0];
+    const perfil = ESTADO.datos.perfiles[mayor.id];
+    if (mayor.diferencia < 20) return `Tus intereses y aptitudes están bastante equilibrados. Investiga experiencias reales antes de decidir.`;
+    return mayor.interes > mayor.aptitud
+      ? `En ${perfil.nombre} tu interés supera tu aptitud autopercibida. Puedes probar talleres y práctica antes de descartarla.`
+      : `En ${perfil.nombre} reconoces aptitud mayor que interés. Pregúntate si disfrutas sus actividades cotidianas.`;
+  }
+
+  async function compartirResultadoVocacional() {
+    const resultado = ESTADO.resultado || resultadoGuardado();
+    if (!resultado) return;
+    const top = resultado.carreras.slice(0,3).map(item => {
+      const carrera = ESTADO.datos.carreras.find(c => c.id === item.id);
+      return `${carrera?.nombre || item.id} (${item.afinidad}%)`;
+    }).join(", ");
+    const texto = `Mi resultado CHASIDE en UniPrep: perfil ${resultado.codigo}. Carreras para investigar: ${top}. Es una orientación referencial, no una decisión definitiva.`;
+    try {
+      if (navigator.share) await navigator.share({title:"Mi orientación vocacional UniPrep", text:texto});
+      else { await navigator.clipboard.writeText(texto); window.UniprepUGEL?.mostrarToast?.("Resultado copiado para compartir."); }
+    } catch (error) { if (error?.name !== "AbortError") window.UniprepUGEL?.mostrarToast?.("No se pudo compartir el resultado."); }
   }
 
   function tarjetaCarrera(item, indice = 0) {
@@ -301,12 +371,14 @@
     const topCarreras = resultado.carreras.slice(0, 5);
     ESTADO.raiz.innerHTML = `
       <div class="vocational-result-page">
-        ${encabezadoInterno("TU RESULTADO CHASIDE", `Perfil vocacional ${resultado.codigo}`, "Compara las siete áreas, observando por separado tus intereses y aptitudes antes de elegir.", `<button type="button" onclick="iniciarTestVocacional()">Repetir test</button><button type="button" onclick="imprimirResultadoVocacional()">Imprimir resultado</button>`)}
+        ${encabezadoInterno("TU RESULTADO CHASIDE", `Perfil vocacional ${resultado.codigo}`, "Compara las siete áreas, observando por separado tus intereses y aptitudes antes de elegir.", `<button type="button" onclick="compartirResultadoVocacional()">Compartir</button><button type="button" onclick="iniciarTestVocacional()">Repetir test</button><button type="button" onclick="imprimirResultadoVocacional()">Imprimir</button>`)}
         <section class="vocational-result-hero" style="--profile-color:${principal.color}">
           <div class="vocational-result-code"><span>${principal.icono}</span><small>ÁREAS DOMINANTES</small><b>${resultado.codigo}</b><em>${valorPrincipal}% de afinidad combinada</em></div>
           <div><h2>${esc(principal.nombre)}</h2><p>${esc(principal.resumen)}</p><div>${principal.fortalezas.map(f => `<span>${esc(f)}</span>`).join("")}</div></div>
         </section>
+        <section class="vocational-result-insight"><span>LECTURA PERSONALIZADA</span><p>${esc(lecturaBrecha(resultado))}</p><small>Resultado guardado en tu cuenta cuando Supabase está disponible.</small></section>
         <div class="vocational-result-grid">
+          <section class="vocational-radar-panel"><header><span>MAPA VISUAL</span><h3>Interés, aptitud y afinidad</h3></header>${radarVocacional(resultado)}</section>
           <section class="vocational-profile-panel"><header><div><span>LECTURA COMPLETA</span><h3>Tus siete áreas CHASIDE</h3></div><small>Interés: 10 ítems · Aptitud: 4 ítems por área</small></header>${orden.map(([id, valor]) => perfilBarra(id, valor, resultado.intereses[id], resultado.aptitudes[id])).join("")}</section>
           <aside class="vocational-next-panel"><span>PRÓXIMO PASO RECOMENDADO</span><h3>Investiga antes de elegir</h3><ol><li>Compara tu interés y aptitud dominante.</li><li>Revisa las cinco carreras sugeridas.</li><li>Filtra universidades por región.</li><li>Habla con un orientador o profesional.</li></ol><a href="${esc(ESTADO.datos.fuenteChaside.url)}" target="_blank" rel="noopener noreferrer">Referencia universitaria CHASIDE ↗</a></aside>
         </div>
@@ -454,6 +526,17 @@
     ventana.document.close();
   }
 
+  async function sincronizarResultadoVocacionalNube() {
+    const remoto = await window.UniPrepCloud?.loadVocationalResult?.();
+    if (!remoto || remoto.tipo !== "CHASIDE-98" || remoto.version !== 2) return;
+    const local = resultadoGuardado();
+    if (!local || new Date(remoto.fecha || 0) > new Date(local.fecha || 0)) {
+      window.uniprepStorage?.guardar(CLAVE_RESULTADO, remoto);
+      ESTADO.resultado = remoto;
+      if (document.getElementById("vocacional")?.classList.contains("active") && ESTADO.raiz) mostrarInicioVocacional();
+    }
+  }
+
   window.abrirOrientacionVocacional = abrirOrientacionVocacional;
   window.cerrarOrientacionVocacional = cerrarOrientacionVocacional;
   window.abrirCentroVocacional = abrirCentroVocacional;
@@ -461,6 +544,7 @@
   window.iniciarTestVocacional = iniciarTestVocacional;
   window.responderPreguntaVocacional = responderPreguntaVocacional;
   window.retrocederPreguntaVocacional = retrocederPreguntaVocacional;
+  window.pausarTestVocacional = pausarTestVocacional;
   window.mostrarResultadoVocacional = mostrarResultadoVocacional;
   window.mostrarExploradorVocacional = mostrarExploradorVocacional;
   window.actualizarFiltroVocacional = actualizarFiltroVocacional;
@@ -470,10 +554,18 @@
   window.mostrarComparacionUniversidades = mostrarComparacionUniversidades;
   window.cerrarComparacionUniversidades = cerrarComparacionUniversidades;
   window.imprimirResultadoVocacional = imprimirResultadoVocacional;
+  window.compartirResultadoVocacional = compartirResultadoVocacional;
+
+  document.addEventListener("uniprep:user-ready", sincronizarResultadoVocacionalNube);
 
   document.addEventListener("keydown", evento => {
-    if (evento.key !== "Escape") return;
-    if (document.getElementById("vocational-compare-modal")?.classList.contains("open")) cerrarComparacionUniversidades();
-    else if (document.getElementById("vocational-public-modal")?.classList.contains("open")) cerrarOrientacionVocacional();
+    if (evento.key === "Escape") {
+      if (document.getElementById("vocational-compare-modal")?.classList.contains("open")) cerrarComparacionUniversidades();
+      else if (document.getElementById("vocational-public-modal")?.classList.contains("open")) cerrarOrientacionVocacional();
+      return;
+    }
+    if (!ESTADO.raiz?.querySelector?.(".vocational-test-shell") || /INPUT|TEXTAREA|SELECT/.test(evento.target?.tagName || "")) return;
+    if (["s","S","y","Y"].includes(evento.key)) { evento.preventDefault(); responderPreguntaVocacional(true); }
+    if (["n","N"].includes(evento.key)) { evento.preventDefault(); responderPreguntaVocacional(false); }
   });
 })();

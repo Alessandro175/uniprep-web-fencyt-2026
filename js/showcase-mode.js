@@ -26,15 +26,16 @@
   ].join(",");
 
   let introTimer = 0;
+  let introProgressTimer = 0;
   let decorateFrame = 0;
   let canvasState = null;
 
   function introMarkup() {
     return `
       <div class="showcase-intro-scan" aria-hidden="true"></div>
-      <button class="showcase-intro-skip" type="button">Saltar intro</button>
+      <button class="showcase-intro-skip" type="button">Entrar ahora</button>
       <div class="showcase-intro-stage">
-        <div class="showcase-intro-system">Sistema de preparación activado</div>
+        <div class="showcase-intro-system"><i></i><span id="showcase-intro-status">Preparando tu espacio de estudio</span></div>
         <div class="showcase-intro-emblem" aria-hidden="true">
           <div class="showcase-intro-emblem-core">
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -49,19 +50,35 @@
         <div class="showcase-intro-chips" aria-label="Funciones destacadas">
           <span>Retos adaptativos</span><span>Simulacros reales</span><span>Progreso con XP</span><span>Ranking</span><span>Universidades del Perú</span>
         </div>
-        <div class="showcase-intro-loader" aria-hidden="true"><span></span></div>
+        <div class="showcase-intro-loader" aria-hidden="true"><span id="showcase-intro-progress"></span></div>
+        <div class="showcase-intro-loading-meta"><b id="showcase-intro-percent">0%</b><span>Una sola bienvenida. Después entrarás directamente.</span></div>
+        <div class="showcase-intro-steps" aria-hidden="true"><span class="active">Perfil</span><span>Ruta</span><span>IA</span><span>Listo</span></div>
       </div>`;
+  }
+
+  function introSeen() {
+    try {
+      return localStorage.getItem("uniprep_intro_seen_device_v2") === "1" || window.uniprepStorage?.leer?.("uniprep_intro_seen_v2", false) === true;
+    } catch (_) { return false; }
+  }
+
+  function markIntroSeen() {
+    try { localStorage.setItem("uniprep_intro_seen_device_v2", "1"); } catch (_) {}
+    try { window.uniprepStorage?.guardar?.("uniprep_intro_seen_v2", true); } catch (_) {}
+    window.UniPrepCloud?.savePreferencesSoon?.({introSeen:true}, 1000);
   }
 
   function closeIntro(intro) {
     if (!intro || intro.classList.contains("is-closing")) return;
     window.clearTimeout(introTimer);
+    window.clearInterval(introProgressTimer);
     intro.classList.add("is-closing");
     document.body.classList.remove("showcase-intro-open");
     window.setTimeout(() => intro.remove(), reduceMotion ? 320 : 650);
   }
 
   function showIntro() {
+    if (introSeen()) return;
     document.querySelectorAll(".showcase-intro").forEach((item) => item.remove());
     const intro = document.createElement("section");
     intro.className = "showcase-intro";
@@ -70,7 +87,27 @@
     document.body.appendChild(intro);
     document.body.classList.add("showcase-intro-open", "showcase-hyper");
     intro.querySelector(".showcase-intro-skip")?.addEventListener("click", () => closeIntro(intro));
-    introTimer = window.setTimeout(() => closeIntro(intro), reduceMotion ? 1450 : 5150);
+    markIntroSeen();
+    const statuses = ["Preparando tu espacio de estudio", "Cargando tu ruta académica", "Conectando Tutor IA y Supabase", "Todo listo para comenzar"];
+    let value = 4;
+    const startedAt = performance.now();
+    const paint = () => {
+      const progress = intro.querySelector("#showcase-intro-progress");
+      const percent = intro.querySelector("#showcase-intro-percent");
+      const status = intro.querySelector("#showcase-intro-status");
+      const index = Math.min(3, Math.floor(value / 25));
+      if (progress) progress.style.width = `${value}%`;
+      if (percent) percent.textContent = `${value}%`;
+      if (status) status.textContent = statuses[index];
+      intro.querySelectorAll(".showcase-intro-steps span").forEach((step, stepIndex) => step.classList.toggle("active", stepIndex <= index));
+    };
+    paint();
+    introProgressTimer = window.setInterval(() => {
+      value = reduceMotion ? Math.min(100, value + 28) : Math.min(100, Math.max(value + 1, Math.round((performance.now() - startedAt) / 4100 * 100)));
+      paint();
+      if (value >= 100) window.clearInterval(introProgressTimer);
+    }, reduceMotion ? 90 : 260);
+    introTimer = window.setTimeout(() => closeIntro(intro), reduceMotion ? 900 : 5200);
   }
 
   function createAtmosphere() {
@@ -171,19 +208,6 @@
     });
   }
 
-  function addReplayButton() {
-    const actions = document.querySelector(".topbar-actions");
-    if (!actions || actions.querySelector(".showcase-replay")) return;
-    const button = document.createElement("button");
-    button.className = "showcase-replay";
-    button.type = "button";
-    button.title = "Reproducir presentación cinematográfica";
-    button.setAttribute("aria-label", "Reproducir presentación de UniPrep");
-    button.innerHTML = '<span aria-hidden="true">▶</span><span class="showcase-replay-label">Intro</span>';
-    button.addEventListener("click", showIntro);
-    actions.prepend(button);
-  }
-
   function decorateElements() {
     document.querySelectorAll(tiltSelector).forEach((card) => {
       card.classList.add("showcase-tilt");
@@ -209,7 +233,6 @@
     decorateFrame = window.requestAnimationFrame(() => {
       decorateFrame = 0;
       decorateElements();
-      addReplayButton();
     });
   }
 
@@ -276,7 +299,7 @@
       agenda: "Plan de estudio",
       perfil: "Perfil del estudiante",
       vocacional: "Ruta vocacional",
-      tutor: "Tutor académico",
+      tutor: "Tutor con IA",
       notificaciones: "Centro de avisos"
     };
     return labels[id] || "UniPrep · nueva misión";
@@ -308,7 +331,6 @@
   function start() {
     document.documentElement.classList.add("uniprep-showcase");
     createAtmosphere();
-    addReplayButton();
     decorateElements();
     enablePointerEffects();
     enableRipples();
@@ -316,7 +338,7 @@
     const observer = new MutationObserver(scheduleDecoration);
     observer.observe(document.body, { childList: true, subtree: true });
     document.body.classList.add("showcase-ready");
-    showIntro();
+    if (!introSeen()) showIntro();
     window.addEventListener("pagehide", () => {
       observer.disconnect();
       if (canvasState) window.cancelAnimationFrame(canvasState.raf);
@@ -326,5 +348,4 @@
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start, { once: true });
   else start();
 
-  window.reproducirIntroUniPrep = showIntro;
 })();
