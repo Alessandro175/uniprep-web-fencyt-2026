@@ -1,0 +1,269 @@
+/* ==================================================================
+   UNIPREP 2 · DAYLIGHT 2026.23
+   El modo claro es un sistema completo, no un fondo blanco aislado.
+   Este archivo se carga al final para corregir estilos antiguos oscuros.
+   ================================================================== */
+
+html[data-color-mode="light"] body {
+  --day-canvas-1: color-mix(in srgb, var(--bg, #f3f6fb) 88%, #f7f9fc);
+  --day-canvas-2: color-mix(in srgb, var(--bg2, #edf3f8) 84%, #eef4f8);
+  --day-paper: color-mix(in srgb, var(--ugel-panel, #fff) 94%, #fff);
+  --day-paper-solid: color-mix(in srgb, var(--ugel-panel-strong, #fff) 96%, #fff);
+  --day-ink: var(--text, #1b2940);
+  --day-muted: var(--text2, #56677f);
+  --day-faint: var(--text3, #77869a);
+  --day-line: color-mix(in srgb, var(--ugel-border-color, #9aa9bd) 25%, #dce3ec);
+  --day-line-strong: color-mix(in srgb, var(--ugel-border-color, #9aa9bd) 38%, #cbd5e1);
+  --day-wash: color-mix(in srgb, var(--ugel-accent) 6%, #fff);
+  --day-wash-2: color-mix(in srgb, var(--ugel-accent-2) 7%, #fff);
+  --day-shadow-sm: 0 8px 24px rgba(42, 60, 86, .055);
+  --day-shadow: 0 18px 48px rgba(42, 60, 86, .075);
+  --day-shadow-lg: 0 30px 78px rgba(42, 60, 86, .11);
+  color: var(--day-ink) !important;
+  background-color: var(--day-canvas-1) !important;
+  background-image:
+    radial-gradient(circle at 90% 3%, color-mix(in srgb, var(--ugel-accent-2) 8%, transparent), transparent 30%),
+    radial-gradient(circle at 5% 90%, color-mix(in srgb, var(--ugel-accent) 7%, transparent), transparent 34%),
+    linear-gradient(145deg, var(--day-canvas-1), var(--day-canvas-2)) !important;
+}
+
+html[data-color-mode="light"] body[data-uniprep-theme="custom"] {
+  background-image: var(--ugel-wallpaper) !important;
+}
+
+html[data-color-mode="light"] body[data-uniprep-theme="menta"] {
+  --ugel-accent: #237e68;
+  --ugel-accent-2: #1686a0;
+  --ugel-topbar: #ffffff;
+  --ugel-panel: rgba(255,255,255,.94);
+  --ugel-panel-strong: #ffffff;
+  --ugel-hero-1: #e9f8f2;
+  --ugel-hero-2: #def2e9;
+  --bg: #f3fbf8;
+  --bg2: #eaf6f1;
+  --bg3: #eef6f2;
+  --text: #18342d;
+  --text2: #4f6b63;
+  --text3: #71877f;
+}
+
+html[data-color-mode="light"] body[data-uniprep-theme="lavanda"] {
+  --ugel-accent: #6550c7;
+  --ugel-accent-2: #167d9d;
+  --ugel-topbar: #ffffff;
+  --ugel-panel: rgba(255,255,255,.95);
+  --ugel-panel-strong: #ffffff;
+  --ugel-hero-1: #f0edff;
+  --ugel-hero-2: #e8f3fb;
+  --bg: #faf9ff;
+  --bg2: #f0edff;
+  --bg3: #f3f1fb;
+  --text: #28233f;
+  --text2: #625d78;
+  --text3: #817b93;
+}
+
+html[data-color-mode="light"] body[data-uniprep-theme="amanecer"] {
+  --ugel-accent: #ad5261;
+  --ugel-accent-2: #99702b;
+  --ugel-topbar: #ffffff;
+  --ugel-panel: rgba(255,255,255,.95);
+  --ugel-panel-strong: #ffffff;
+  --ugel-hero-1: #fff0e7;
+  --ugel-hero-2: #f8eef8;
+  --bg: #fffaf7;
+  --bg2: #fff0e8;
+  --bg3: #fbf2ed;
+  --text: #3c2928;
+  --text2: #715b58;
+  --text3: #8e7873;
+}
+
+/* El aspecto hacker queda reservado al modo oscuro. */
+html[data-color-mode="light"] body #hyper-matrix,
+html[data-color-mode="light"] body::after,
+html[data-color-mode="light"] body .showcase-grid,
+html[data-color-mode="light"] body .showcase-pointer-aura { display: none !important; }
+
+html[data-color-mode="light"] body .hyper-ambient { opacity: .18 !important; mix-blend-mode: normal; }
+
+html[data-color-mode="light"] body :is(.sidebar, .topbar) {
+  color: var(--day-ink) !important;
+  border-color: var(--day-line) !important;
+  background: color-mix(in srgb, var(--ugel-topbar, #fff) 95%, #fff) !important;
+  box-shadow: var(--day-shadow-sm) !important;
+  backdrop-filter: blur(18px) saturate(118%);
+}
+
+html[data-color-mode="light"] body .sidebar {
+  background: linear-gradient(180deg, color-mix(in srgb, var(--ugel-topbar, #fff) 97%, #fff), color-mix(in srgb, var(--ugel-panel, #fff) 94%, #f2f6fa)) !important;
+}
+
+html[data-color-mode="light"] body :is(.logo-text, .topbar-title, .user-name, .friendly-section-head h2) { color: var(--day-ink) !important; text-shadow: none !important; }
+html[data-color-mode="light"] body :is(.nav-section-label, .topbar-heading > small, .user-sub) { color: var(--day-faint) !important; }
+
+html[data-color-mode="light"] body .nav-item {
+  color: var(--day-muted) !important;
+  background: transparent !important;
+}
+
+html[data-color-mode="light"] body .nav-item:hover {
+  color: var(--day-ink) !important;
+  border-color: var(--day-line) !important;
+  background: var(--day-wash) !important;
+}
+
+html[data-color-mode="light"] body .nav-item.active {
+  color: color-mix(in srgb, var(--ugel-accent) 84%, #17233b) !important;
+  border-color: color-mix(in srgb, var(--ugel-accent) 18%, var(--day-line)) !important;
+  background: linear-gradient(110deg, color-mix(in srgb, var(--ugel-accent) 11%, #fff), color-mix(in srgb, var(--ugel-accent-2) 7%, #fff)) !important;
+  box-shadow: inset 0 1px #fff, 0 8px 20px color-mix(in srgb, var(--ugel-accent) 6%, transparent) !important;
+}
+
+html[data-color-mode="light"] body :is(.topbar-search, .icon-btn, .visual-settings-button, .friendly-top-streak, .user-card) {
+  color: var(--day-muted) !important;
+  border-color: var(--day-line) !important;
+  background: color-mix(in srgb, var(--day-paper-solid) 96%, #fff) !important;
+  box-shadow: inset 0 1px #fff, var(--day-shadow-sm) !important;
+}
+
+html[data-color-mode="light"] body :is(.topbar-search, .icon-btn, .visual-settings-button, .friendly-top-streak, .user-card):hover {
+  color: var(--day-ink) !important;
+  border-color: color-mix(in srgb, var(--ugel-accent-2) 26%, var(--day-line)) !important;
+  background: #fff !important;
+}
+
+html[data-color-mode="light"] body .topbar-search input { color: var(--day-ink) !important; background: transparent !important; }
+html[data-color-mode="light"] body :is(input, textarea)::placeholder { color: color-mix(in srgb, var(--day-faint) 78%, transparent) !important; }
+
+html[data-color-mode="light"] body :is(
+  .friendly-path-card, .friendly-progress-card, .friendly-exam-card,
+  .friendly-activity-disclosure, .friendly-more-panel, .friendly-more-group,
+  .friendly-tool, .friendly-loading-card, .game-level-card, .qstat,
+  .card, .course-card, .course-card-ultra, .lesson-card, .library-card,
+  .practice-question-card, .practice-config-card, .exam-evolution-card,
+  .ranking-list-real, .ranking-podium-card, .profile-card, .tutor-chat-evolution,
+  .tutor-launchpad, .tutor-tool
+) {
+  color: var(--day-ink) !important;
+  border-color: var(--day-line) !important;
+  background: linear-gradient(145deg, color-mix(in srgb, var(--day-paper) 97%, #fff), var(--day-paper-solid)) !important;
+  box-shadow: var(--day-shadow) !important;
+}
+
+html[data-color-mode="light"] body :is(
+  .friendly-path-card, .friendly-progress-card, .friendly-exam-card,
+  .friendly-activity-disclosure, .friendly-more-panel, .friendly-more-group,
+  .friendly-tool, .game-level-card, .qstat, .card, .course-card,
+  .lesson-card, .library-card, .practice-question-card, .exam-evolution-card,
+  .ranking-podium-card, .profile-card, .tutor-chat-evolution, .tutor-launchpad, .tutor-tool
+) :is(h1, h2, h3, h4, b, strong) { color: var(--day-ink) !important; }
+
+html[data-color-mode="light"] body :is(
+  .friendly-path-card, .friendly-progress-card, .friendly-exam-card,
+  .friendly-activity-disclosure, .friendly-more-panel, .friendly-more-group,
+  .friendly-tool, .game-level-card, .qstat, .card, .course-card,
+  .lesson-card, .library-card, .practice-question-card, .exam-evolution-card,
+  .ranking-podium-card, .profile-card, .tutor-chat-evolution, .tutor-launchpad, .tutor-tool
+) :is(p, small, em) { color: var(--day-muted) !important; }
+
+html[data-color-mode="light"] body :is(.welcome-banner, .friendly-welcome, .tutor-head, .tutor-head-evolution, .courses-command-center, .practice-hero, .exam-hero, .ranking-command, .profile-cover) {
+  color: var(--day-ink) !important;
+  border-color: color-mix(in srgb, var(--ugel-accent-2) 17%, var(--day-line)) !important;
+  background:
+    radial-gradient(circle at 87% 12%, color-mix(in srgb, var(--ugel-accent-2) 12%, transparent), transparent 31%),
+    radial-gradient(circle at 6% 96%, color-mix(in srgb, var(--ugel-accent) 9%, transparent), transparent 38%),
+    linear-gradient(130deg, color-mix(in srgb, var(--ugel-hero-1, #f5f4ff) 43%, #fff), color-mix(in srgb, var(--ugel-hero-2, #eaf8f7) 45%, #fff)) !important;
+  box-shadow: var(--day-shadow-lg) !important;
+}
+
+html[data-color-mode="light"] body :is(.welcome-banner, .friendly-welcome, .tutor-head, .tutor-head-evolution, .courses-command-center, .practice-hero, .exam-hero, .ranking-command, .profile-cover) :is(h1, h2, h3, b, strong, .welcome-title) { color: var(--day-ink) !important; text-shadow: none !important; }
+html[data-color-mode="light"] body :is(.welcome-banner, .friendly-welcome, .tutor-head, .tutor-head-evolution, .courses-command-center, .practice-hero, .exam-hero, .ranking-command, .profile-cover) :is(p, small, .welcome-body) { color: var(--day-muted) !important; }
+
+html[data-color-mode="light"] body :is(.friendly-path-step, .tutor-scope-switch, .tutor-help-config, .tutor-chat-tools, .tutor-message, .practice-option, .option-btn) {
+  color: var(--day-ink) !important;
+  border-color: var(--day-line) !important;
+  background: color-mix(in srgb, var(--day-paper-solid) 94%, #f7f9fc) !important;
+}
+
+html[data-color-mode="light"] body :is(.friendly-path-step, .friendly-tool, .practice-option, .option-btn):hover {
+  border-color: color-mix(in srgb, var(--ugel-accent-2) 34%, var(--day-line)) !important;
+  background: var(--day-wash-2) !important;
+}
+
+html[data-color-mode="light"] body :is(
+  input:not([type="range"]):not([type="color"]):not([type="checkbox"]):not([type="radio"]),
+  textarea, select
+) {
+  color: var(--day-ink) !important;
+  border-color: var(--day-line) !important;
+  background: color-mix(in srgb, var(--day-paper-solid) 97%, #fff) !important;
+  box-shadow: inset 0 1px #fff !important;
+}
+
+html[data-color-mode="light"] body :is(.friendly-more-layer, .universe-dialog-layer, .ugel-personalizer) {
+  background: rgba(39, 52, 74, .4) !important;
+  backdrop-filter: blur(16px) saturate(112%);
+}
+
+html[data-color-mode="light"] body :is(.universe-hero, .universe-map-card, .universe-lab, .universe-side-card, .universe-daily-strip, .universe-challenge, .universe-dialog) {
+  --universe-card: color-mix(in srgb, var(--day-paper) 97%, #fff);
+  --universe-card-strong: var(--day-paper-solid);
+  --universe-ink: var(--day-ink);
+  --universe-muted: var(--day-muted);
+  --universe-faint: var(--day-faint);
+  --universe-line: var(--day-line);
+  --universe-shadow: var(--day-shadow);
+}
+
+html[data-color-mode="light"] body .universe-hero {
+  background:
+    radial-gradient(circle at 86% 12%, color-mix(in srgb, var(--ugel-accent-2) 14%, transparent), transparent 29%),
+    radial-gradient(circle at 5% 100%, color-mix(in srgb, var(--ugel-accent) 10%, transparent), transparent 39%),
+    linear-gradient(130deg, color-mix(in srgb, var(--ugel-hero-1, #f2f1ff) 40%, #fff), color-mix(in srgb, var(--ugel-hero-2, #e7f8f6) 42%, #fff)) !important;
+  box-shadow: var(--day-shadow-lg) !important;
+}
+
+html[data-color-mode="light"] body .universe-map {
+  background:
+    linear-gradient(color-mix(in srgb, var(--ugel-accent-2) 9%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in srgb, var(--ugel-accent-2) 9%, transparent) 1px, transparent 1px),
+    radial-gradient(circle at 50% 50%, color-mix(in srgb, var(--ugel-accent) 7%, transparent), transparent 42%),
+    color-mix(in srgb, var(--day-paper-solid) 92%, #f5f8fb) !important;
+  background-size: 48px 48px, 48px 48px, auto, auto !important;
+}
+
+html[data-color-mode="light"] body .ugel-personalizer-panel {
+  color: var(--day-ink) !important;
+  border-color: var(--day-line) !important;
+  background:
+    radial-gradient(circle at 94% 0, color-mix(in srgb, var(--ugel-accent-2) 8%, transparent), transparent 30%),
+    linear-gradient(150deg, #fff, color-mix(in srgb, var(--day-canvas-2) 64%, #fff)) !important;
+  box-shadow: 0 42px 110px rgba(38, 52, 75, .22) !important;
+}
+
+html[data-color-mode="light"] body :is(.ugel-mode-section, .ugel-setting-card, .ugel-custom-builder, .ugel-builder-section, .ugel-harmony-sync) {
+  color: var(--day-ink) !important;
+  border-color: var(--day-line) !important;
+  background: color-mix(in srgb, var(--day-paper-solid) 94%, #f5f8fb) !important;
+}
+
+html[data-color-mode="light"] body :is(.ugel-personalizer-head h2, .ugel-setting-label, .ugel-builder-title b, .ugel-harmony-sync b) { color: var(--day-ink) !important; }
+html[data-color-mode="light"] body :is(.ugel-personalizer-head p, .ugel-builder-title small, .ugel-harmony-sync small, .ugel-access-row) { color: var(--day-muted) !important; }
+
+html[data-color-mode="light"] body .ugel-live-preview {
+  border-color: var(--day-line) !important;
+  background: linear-gradient(145deg, #eef3f8, #fff) !important;
+  box-shadow: inset 0 1px #fff !important;
+}
+
+html[data-color-mode="light"] body[data-high-contrast="true"] {
+  --day-muted: #35445b;
+  --day-faint: #4e5d73;
+  --day-line: rgba(28, 43, 65, .27);
+}
+
+@media (max-width: 760px) {
+  html[data-color-mode="light"] body .sidebar { box-shadow: 0 -8px 26px rgba(42,60,86,.09) !important; }
+  html[data-color-mode="light"] body .topbar { box-shadow: 0 7px 22px rgba(42,60,86,.07) !important; }
+}

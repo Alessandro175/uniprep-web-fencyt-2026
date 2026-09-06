@@ -1,8 +1,8 @@
 {
   "courseId": "lenguaje",
   "nombre": "Lenguaje",
-  "version": "2026.9-cuatro-niveles-universidad",
-  "descripcion": "Banco original UniPrep organizado uno a uno con cada tema visible. Cada sesión temática conserva su subárea y no mezcla preguntas de otros temas.",
+  "version": "2026.31-nacional-7605",
+  "descripcion": "Lenguaje y lingüística: comunicación, fonología, gramática, semántica, oración y ortografía.",
   "universidadesReferencia": [
     "UNAMAD",
     "UNSAAC",
@@ -14,18 +14,18 @@
     "GENERAL"
   ],
   "distribucion": {
-    "basico": 50,
-    "intermedio": 50,
-    "avanzado": 50,
-    "admision": 50,
-    "total": 200
+    "basico": 60,
+    "intermedio": 60,
+    "avanzado": 60,
+    "admision": 90,
+    "total": 270
   },
   "distribucionPorTema": {
     "basico": 10,
     "intermedio": 10,
     "avanzado": 10,
-    "admision": 10,
-    "total": 40
+    "admision": 15,
+    "total": 45
   },
   "criteriosDificultad": {
     "basico": "Fundamento o procedimiento directo",
@@ -48,8 +48,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -858,6 +858,111 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNAMAD; no es una pregunta oficial"
+          },
+          {
+            "id": "LEN-01-R-11",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Comunicación y realidad lingüística",
+            "subarea": "Lenguaje",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Durante el análisis de una revisión académica vinculado con Comunicación y realidad lingüística, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "Las variedades lingüísticas cambian según región, grupo social y situación comunicativa.",
+              "Toda comunidad utiliza exactamente la misma variedad lingüística.",
+              "La variación lingüística es siempre un error gramatical.",
+              "El registro formal depende únicamente de la edad del hablante."
+            ],
+            "respuesta": 0,
+            "solucion": "La alternativa correcta es: Las variedades lingüísticas cambian según región, grupo social y situación comunicativa. La lengua presenta variación geográfica, social y situacional sin perder su carácter sistemático. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "LEN-01-R-12",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Comunicación y realidad lingüística",
+            "subarea": "Lenguaje",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: En una evaluación comparativa de Comunicación y realidad lingüística. Analiza las proposiciones: I) La función referencial solo expresa emociones del emisor. II) Las variedades lingüísticas cambian según región, grupo social y situación comunicativa. ¿Qué alternativa evalúa correctamente ambas? Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "Solo I es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo II es correcta"
+            ],
+            "respuesta": 3,
+            "solucion": "La proposición I es falsa: La intención informativa orienta el mensaje hacia el contexto o referente. La proposición II es verdadera: La lengua presenta variación geográfica, social y situacional sin perder su carácter sistemático. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "LEN-01-R-13",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Comunicación y realidad lingüística",
+            "subarea": "Lenguaje",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: En una evaluación comparativa de Comunicación y realidad lingüística. Analiza las proposiciones: I) Toda comunidad utiliza exactamente la misma variedad lingüística. II) El canal es la intención comunicativa del hablante. ¿Qué alternativa evalúa correctamente ambas? La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "Solo II es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo I es correcta"
+            ],
+            "respuesta": 2,
+            "solucion": "La proposición I es falsa: La lengua presenta variación geográfica, social y situacional sin perder su carácter sistemático. La proposición II es falsa: El proceso comunicativo distingue participantes, mensaje, código, canal y contexto. Por ello, ninguna es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "LEN-01-R-14",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Comunicación y realidad lingüística",
+            "subarea": "Lenguaje",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Al contrastar conceptos esenciales de Comunicación y realidad lingüística. Analiza las proposiciones: I) El emisor codifica un mensaje y lo dirige a un receptor mediante un canal. II) La función referencial predomina cuando el mensaje informa objetivamente sobre una realidad. ¿Qué alternativa evalúa correctamente ambas? Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "Ninguna es correcta",
+              "I y II son correctas",
+              "Solo I es correcta",
+              "Solo II es correcta"
+            ],
+            "respuesta": 1,
+            "solucion": "La proposición I es verdadera: El proceso comunicativo distingue participantes, mensaje, código, canal y contexto. La proposición II es verdadera: La intención informativa orienta el mensaje hacia el contexto o referente. Por ello, i y ii son correctas. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "LEN-01-R-15",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Comunicación y realidad lingüística",
+            "subarea": "Lenguaje",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Al contrastar conceptos esenciales de Comunicación y realidad lingüística. Analiza las proposiciones: I) La función referencial predomina cuando el mensaje informa objetivamente sobre una realidad. II) Toda comunidad utiliza exactamente la misma variedad lingüística. ¿Qué alternativa evalúa correctamente ambas? Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es verdadera: La intención informativa orienta el mensaje hacia el contexto o referente. La proposición II es falsa: La lengua presenta variación geográfica, social y situacional sin perder su carácter sistemático. Por ello, solo i es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -877,8 +982,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -1687,6 +1792,111 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de PUCP; no es una pregunta oficial"
+          },
+          {
+            "id": "LEN-02-R-11",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Fonología de la lengua española",
+            "subarea": "Lenguaje",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: En una evaluación comparativa de Fonología de la lengua española. Analiza las proposiciones: I) La división silábica depende solo de la ortografía extranjera. II) Un diptongo reúne dos vocales pronunciadas dentro de una misma sílaba. ¿Qué alternativa evalúa correctamente ambas? Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "Solo II es correcta",
+              "Solo I es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es falsa: La vocal funciona como núcleo de la organización silábica. La proposición II es verdadera: La combinación de vocal cerrada átona y vocal abierta puede mantenerse en una sola sílaba. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "LEN-02-R-12",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Fonología de la lengua española",
+            "subarea": "Lenguaje",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: En una evaluación comparativa de Fonología de la lengua española. Analiza las proposiciones: I) Todo encuentro de vocales forma hiato. II) Todos los sonidos articulados son palabras completas. ¿Qué alternativa evalúa correctamente ambas? Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 3,
+            "solucion": "La proposición I es falsa: La combinación de vocal cerrada átona y vocal abierta puede mantenerse en una sola sílaba. La proposición II es falsa: La oposición entre fonemas permite diferenciar palabras como «pala» y «bala». Por ello, ninguna es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "LEN-02-R-13",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Fonología de la lengua española",
+            "subarea": "Lenguaje",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Al contrastar conceptos esenciales de Fonología de la lengua española. Analiza las proposiciones: I) El fonema es una unidad sonora abstracta capaz de distinguir significados. II) En español, una sílaba contiene un núcleo vocálico y puede incluir márgenes consonánticos. ¿Qué alternativa evalúa correctamente ambas? Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "Solo II es correcta",
+              "Ninguna es correcta",
+              "I y II son correctas",
+              "Solo I es correcta"
+            ],
+            "respuesta": 2,
+            "solucion": "La proposición I es verdadera: La oposición entre fonemas permite diferenciar palabras como «pala» y «bala». La proposición II es verdadera: La vocal funciona como núcleo de la organización silábica. Por ello, i y ii son correctas. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "LEN-02-R-14",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Fonología de la lengua española",
+            "subarea": "Lenguaje",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Al contrastar conceptos esenciales de Fonología de la lengua española. Analiza las proposiciones: I) En español, una sílaba contiene un núcleo vocálico y puede incluir márgenes consonánticos. II) Todo encuentro de vocales forma hiato. ¿Qué alternativa evalúa correctamente ambas? Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "Ninguna es correcta",
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son correctas"
+            ],
+            "respuesta": 1,
+            "solucion": "La proposición I es verdadera: La vocal funciona como núcleo de la organización silábica. La proposición II es falsa: La combinación de vocal cerrada átona y vocal abierta puede mantenerse en una sola sílaba. Por ello, solo i es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "LEN-02-R-15",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Fonología de la lengua española",
+            "subarea": "Lenguaje",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Al contrastar conceptos esenciales de Fonología de la lengua española. Analiza las proposiciones: I) Todo encuentro de vocales forma hiato. II) El fonema es una unidad sonora abstracta capaz de distinguir significados. ¿Qué alternativa evalúa correctamente ambas? Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "Solo II es correcta",
+              "Solo I es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es falsa: La combinación de vocal cerrada átona y vocal abierta puede mantenerse en una sola sílaba. La proposición II es verdadera: La oposición entre fonemas permite diferenciar palabras como «pala» y «bala». Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -1706,8 +1916,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -2516,6 +2726,1045 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNMSM; no es una pregunta oficial"
+          },
+          {
+            "id": "LEN-03-R-11",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Gramática: la palabra",
+            "subarea": "Lenguaje",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: En una evaluación comparativa de Gramática: la palabra. Analiza las proposiciones: I) El adjetivo reemplaza siempre al verbo principal. II) El sustantivo carece de género y número. ¿Qué alternativa evalúa correctamente ambas? Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "Ninguna es correcta",
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son correctas"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es falsa: La concordancia nominal vincula género y número entre sustantivo y adjetivo. La proposición II es falsa: Su capacidad para nombrar entidades y nuclear grupos nominales lo distingue. Por ello, ninguna es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "LEN-03-R-12",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Gramática: la palabra",
+            "subarea": "Lenguaje",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Al contrastar conceptos esenciales de Gramática: la palabra. Analiza las proposiciones: I) El sustantivo puede funcionar como núcleo de un sintagma nominal. II) El verbo presenta información de persona, número, tiempo, modo y aspecto. ¿Qué alternativa evalúa correctamente ambas? Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "Ninguna es correcta",
+              "I y II son correctas"
+            ],
+            "respuesta": 3,
+            "solucion": "La proposición I es verdadera: Su capacidad para nombrar entidades y nuclear grupos nominales lo distingue. La proposición II es verdadera: La flexión verbal relaciona la acción o estado con participantes y tiempo. Por ello, i y ii son correctas. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "LEN-03-R-13",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Gramática: la palabra",
+            "subarea": "Lenguaje",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: Al contrastar conceptos esenciales de Gramática: la palabra. Analiza las proposiciones: I) El verbo presenta información de persona, número, tiempo, modo y aspecto. II) El adjetivo reemplaza siempre al verbo principal. ¿Qué alternativa evalúa correctamente ambas? Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo I es correcta",
+              "Solo II es correcta"
+            ],
+            "respuesta": 2,
+            "solucion": "La proposición I es verdadera: La flexión verbal relaciona la acción o estado con participantes y tiempo. La proposición II es falsa: La concordancia nominal vincula género y número entre sustantivo y adjetivo. Por ello, solo i es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "LEN-03-R-14",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Gramática: la palabra",
+            "subarea": "Lenguaje",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Al contrastar conceptos esenciales de Gramática: la palabra. Analiza las proposiciones: I) El adjetivo reemplaza siempre al verbo principal. II) El sustantivo puede funcionar como núcleo de un sintagma nominal. ¿Qué alternativa evalúa correctamente ambas? Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "Ninguna es correcta",
+              "Solo II es correcta",
+              "Solo I es correcta",
+              "I y II son correctas"
+            ],
+            "respuesta": 1,
+            "solucion": "La proposición I es falsa: La concordancia nominal vincula género y número entre sustantivo y adjetivo. La proposición II es verdadera: Su capacidad para nombrar entidades y nuclear grupos nominales lo distingue. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "LEN-03-R-15",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Gramática: la palabra",
+            "subarea": "Lenguaje",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Un estudiante utiliza un simulacro de admisión para justificar una relación de Gramática: la palabra. ¿Cuál afirmación conserva una relación conceptual válida? Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "Todo verbo funciona como determinante.",
+              "Los verbos no pueden formar el núcleo del predicado.",
+              "El verbo presenta información de persona, número, tiempo, modo y aspecto.",
+              "El verbo es siempre una palabra invariable."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: El verbo presenta información de persona, número, tiempo, modo y aspecto. La flexión verbal relaciona la acción o estado con participantes y tiempo. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lenguaje-6",
+      "titulo": "Semántica de la palabra",
+      "subarea": "Semántica",
+      "duracion": "51 min",
+      "teoria": "Estudio del significado lingüístico de las palabras: denotación, connotación, polisemia y contexto.",
+      "puntos": [
+        "Significado, significante y referente",
+        "Denotación, connotación, polisemia y contexto",
+        "Aplicación de la semántica en preguntas de admisión"
+      ],
+      "distribucion": {
+        "basico": 10,
+        "intermedio": 10,
+        "avanzado": 10,
+        "admision": 15,
+        "total": 45
+      },
+      "niveles": {
+        "basico": [
+          {
+            "id": "LEN-06-B-01",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "basico",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Reconoce conceptos específicos del tema",
+            "pregunta": "En una ficha de estudio sobre Semántica de la palabra, se evalúa la definición central. ¿Cuál afirmación es académicamente correcta?",
+            "alternativas": [
+              "Toda palabra posee un único significado invariable.",
+              "El contexto solo modifica la ortografía.",
+              "Significante y significado son idénticos.",
+              "El significado de una palabra depende de rasgos semánticos y del contexto de uso."
+            ],
+            "respuesta": 3,
+            "solucion": "La alternativa correcta es: El significado de una palabra depende de rasgos semánticos y del contexto de uso. La polisemia y el uso contextual orientan la interpretación.",
+            "explicacion": "Se reconoce el concepto central y se descartan definiciones incompatibles.",
+            "pasosMinimos": 1,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSAAC; no es una pregunta oficial"
+          },
+          {
+            "id": "LEN-06-B-02",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "basico",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Reconoce conceptos específicos del tema",
+            "pregunta": "En una ficha de estudio sobre Semántica de la palabra, se compara la función o relación principal del contenido. ¿Qué proposición la expresa sin errores?",
+            "alternativas": [
+              "Denotar equivale a rimar.",
+              "La denotación elimina el referente.",
+              "La denotación es el significado básico y compartido de una expresión.",
+              "La denotación es siempre una emoción subjetiva."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: La denotación es el significado básico y compartido de una expresión. Se distingue de asociaciones connotativas.",
+            "explicacion": "Se reconoce el concepto central y se descartan definiciones incompatibles.",
+            "pasosMinimos": 1,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNMSM; no es una pregunta oficial"
+          },
+          {
+            "id": "LEN-06-B-03",
+            "universidadReferencia": "UNSA",
+            "dificultad": "basico",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Reconoce conceptos específicos del tema",
+            "pregunta": "En una ficha de estudio sobre Semántica de la palabra, se revisa el alcance del concepto estudiado. ¿Cuál alternativa lo presenta con precisión?",
+            "alternativas": [
+              "Toda connotación es universal.",
+              "La connotación reúne valores o asociaciones añadidos por contexto y cultura.",
+              "La connotación aparece solo en diccionarios técnicos.",
+              "Connotar significa negar un significado."
+            ],
+            "respuesta": 1,
+            "solucion": "La alternativa correcta es: La connotación reúne valores o asociaciones añadidos por contexto y cultura. Las asociaciones pueden variar entre hablantes y situaciones.",
+            "explicacion": "Se reconoce el concepto central y se descartan definiciones incompatibles.",
+            "pasosMinimos": 1,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSA; no es una pregunta oficial"
+          },
+          {
+            "id": "LEN-06-B-04",
+            "universidadReferencia": "UNI",
+            "dificultad": "basico",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Reconoce conceptos específicos del tema",
+            "pregunta": "En un mapa conceptual sobre Semántica de la palabra, se evalúa la definición central. ¿Cuál afirmación es académicamente correcta?",
+            "alternativas": [
+              "El significado de una palabra depende de rasgos semánticos y del contexto de uso.",
+              "Toda palabra posee un único significado invariable.",
+              "El contexto solo modifica la ortografía.",
+              "Significante y significado son idénticos."
+            ],
+            "respuesta": 0,
+            "solucion": "La alternativa correcta es: El significado de una palabra depende de rasgos semánticos y del contexto de uso. La polisemia y el uso contextual orientan la interpretación.",
+            "explicacion": "Se reconoce el concepto central y se descartan definiciones incompatibles.",
+            "pasosMinimos": 1,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNI; no es una pregunta oficial"
+          },
+          {
+            "id": "LEN-06-B-05",
+            "universidadReferencia": "PUCP",
+            "dificultad": "basico",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Reconoce conceptos específicos del tema",
+            "pregunta": "En un mapa conceptual sobre Semántica de la palabra, se compara la función o relación principal del contenido. ¿Qué proposición la expresa sin errores?",
+            "alternativas": [
+              "La denotación es siempre una emoción subjetiva.",
+              "Denotar equivale a rimar.",
+              "La denotación elimina el referente.",
+              "La denotación es el significado básico y compartido de una expresión."
+            ],
+            "respuesta": 3,
+            "solucion": "La alternativa correcta es: La denotación es el significado básico y compartido de una expresión. Se distingue de asociaciones connotativas.",
+            "explicacion": "Se reconoce el concepto central y se descartan definiciones incompatibles.",
+            "pasosMinimos": 1,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de PUCP; no es una pregunta oficial"
+          },
+          {
+            "id": "LEN-06-B-06",
+            "universidadReferencia": "UCSM",
+            "dificultad": "basico",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Reconoce conceptos específicos del tema",
+            "pregunta": "En un mapa conceptual sobre Semántica de la palabra, se revisa el alcance del concepto estudiado. ¿Cuál alternativa lo presenta con precisión?",
+            "alternativas": [
+              "Connotar significa negar un significado.",
+              "Toda connotación es universal.",
+              "La connotación reúne valores o asociaciones añadidos por contexto y cultura.",
+              "La connotación aparece solo en diccionarios técnicos."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: La connotación reúne valores o asociaciones añadidos por contexto y cultura. Las asociaciones pueden variar entre hablantes y situaciones.",
+            "explicacion": "Se reconoce el concepto central y se descartan definiciones incompatibles.",
+            "pasosMinimos": 1,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UCSM; no es una pregunta oficial"
+          },
+          {
+            "id": "LEN-06-B-07",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "basico",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Reconoce conceptos específicos del tema",
+            "pregunta": "En un informe de clase sobre Semántica de la palabra, se evalúa la definición central. ¿Cuál afirmación es académicamente correcta?",
+            "alternativas": [
+              "Significante y significado son idénticos.",
+              "El significado de una palabra depende de rasgos semánticos y del contexto de uso.",
+              "Toda palabra posee un único significado invariable.",
+              "El contexto solo modifica la ortografía."
+            ],
+            "respuesta": 1,
+            "solucion": "La alternativa correcta es: El significado de una palabra depende de rasgos semánticos y del contexto de uso. La polisemia y el uso contextual orientan la interpretación.",
+            "explicacion": "Se reconoce el concepto central y se descartan definiciones incompatibles.",
+            "pasosMinimos": 1,
+            "alineacionUniversitaria": "Competencias generales de admisión preuniversitaria"
+          },
+          {
+            "id": "LEN-06-B-08",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "basico",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Reconoce conceptos específicos del tema",
+            "pregunta": "En un informe de clase sobre Semántica de la palabra, se compara la función o relación principal del contenido. ¿Qué proposición la expresa sin errores?",
+            "alternativas": [
+              "La denotación es el significado básico y compartido de una expresión.",
+              "La denotación es siempre una emoción subjetiva.",
+              "Denotar equivale a rimar.",
+              "La denotación elimina el referente."
+            ],
+            "respuesta": 0,
+            "solucion": "La alternativa correcta es: La denotación es el significado básico y compartido de una expresión. Se distingue de asociaciones connotativas.",
+            "explicacion": "Se reconoce el concepto central y se descartan definiciones incompatibles.",
+            "pasosMinimos": 1,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNAMAD; no es una pregunta oficial"
+          },
+          {
+            "id": "LEN-06-B-09",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "basico",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Reconoce conceptos específicos del tema",
+            "pregunta": "En un informe de clase sobre Semántica de la palabra, se revisa el alcance del concepto estudiado. ¿Cuál alternativa lo presenta con precisión?",
+            "alternativas": [
+              "La connotación aparece solo en diccionarios técnicos.",
+              "Connotar significa negar un significado.",
+              "Toda connotación es universal.",
+              "La connotación reúne valores o asociaciones añadidos por contexto y cultura."
+            ],
+            "respuesta": 3,
+            "solucion": "La alternativa correcta es: La connotación reúne valores o asociaciones añadidos por contexto y cultura. Las asociaciones pueden variar entre hablantes y situaciones.",
+            "explicacion": "Se reconoce el concepto central y se descartan definiciones incompatibles.",
+            "pasosMinimos": 1,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSAAC; no es una pregunta oficial"
+          },
+          {
+            "id": "LEN-06-B-10",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "basico",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Reconoce conceptos específicos del tema",
+            "pregunta": "En un simulacro de admisión sobre Semántica de la palabra, se evalúa la definición central. ¿Cuál afirmación es académicamente correcta?",
+            "alternativas": [
+              "El contexto solo modifica la ortografía.",
+              "Significante y significado son idénticos.",
+              "El significado de una palabra depende de rasgos semánticos y del contexto de uso.",
+              "Toda palabra posee un único significado invariable."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: El significado de una palabra depende de rasgos semánticos y del contexto de uso. La polisemia y el uso contextual orientan la interpretación.",
+            "explicacion": "Se reconoce el concepto central y se descartan definiciones incompatibles.",
+            "pasosMinimos": 1,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNMSM; no es una pregunta oficial"
+          }
+        ],
+        "intermedio": [
+          {
+            "id": "LEN-06-I-01",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "intermedio",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Aplica conceptos a una situación contextualizada",
+            "pregunta": "Al corregir una ficha de estudio sobre Semántica de la palabra, se debe elegir una explicación compatible con los principios de la materia. ¿Cuál cumple la condición?",
+            "alternativas": [
+              "El contexto solo modifica la ortografía.",
+              "Significante y significado son idénticos.",
+              "El significado de una palabra depende de rasgos semánticos y del contexto de uso.",
+              "Toda palabra posee un único significado invariable."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: El significado de una palabra depende de rasgos semánticos y del contexto de uso. La polisemia y el uso contextual orientan la interpretación.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance.",
+            "pasosMinimos": 2,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSAAC; no es una pregunta oficial"
+          },
+          {
+            "id": "LEN-06-I-02",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "intermedio",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Aplica conceptos a una situación contextualizada",
+            "pregunta": "Un estudiante utiliza una ficha de estudio para justificar una relación de Semántica de la palabra. ¿Cuál afirmación conserva una relación conceptual válida?",
+            "alternativas": [
+              "La denotación elimina el referente.",
+              "La denotación es el significado básico y compartido de una expresión.",
+              "La denotación es siempre una emoción subjetiva.",
+              "Denotar equivale a rimar."
+            ],
+            "respuesta": 1,
+            "solucion": "La alternativa correcta es: La denotación es el significado básico y compartido de una expresión. Se distingue de asociaciones connotativas.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance.",
+            "pasosMinimos": 2,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNMSM; no es una pregunta oficial"
+          },
+          {
+            "id": "LEN-06-I-03",
+            "universidadReferencia": "UNSA",
+            "dificultad": "intermedio",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Aplica conceptos a una situación contextualizada",
+            "pregunta": "Durante el análisis de una ficha de estudio vinculado con Semántica de la palabra, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada?",
+            "alternativas": [
+              "La connotación reúne valores o asociaciones añadidos por contexto y cultura.",
+              "La connotación aparece solo en diccionarios técnicos.",
+              "Connotar significa negar un significado.",
+              "Toda connotación es universal."
+            ],
+            "respuesta": 0,
+            "solucion": "La alternativa correcta es: La connotación reúne valores o asociaciones añadidos por contexto y cultura. Las asociaciones pueden variar entre hablantes y situaciones.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance.",
+            "pasosMinimos": 2,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSA; no es una pregunta oficial"
+          },
+          {
+            "id": "LEN-06-I-04",
+            "universidadReferencia": "UNI",
+            "dificultad": "intermedio",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Aplica conceptos a una situación contextualizada",
+            "pregunta": "Al corregir un mapa conceptual sobre Semántica de la palabra, se debe elegir una explicación compatible con los principios de la materia. ¿Cuál cumple la condición?",
+            "alternativas": [
+              "Toda palabra posee un único significado invariable.",
+              "El contexto solo modifica la ortografía.",
+              "Significante y significado son idénticos.",
+              "El significado de una palabra depende de rasgos semánticos y del contexto de uso."
+            ],
+            "respuesta": 3,
+            "solucion": "La alternativa correcta es: El significado de una palabra depende de rasgos semánticos y del contexto de uso. La polisemia y el uso contextual orientan la interpretación.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance.",
+            "pasosMinimos": 2,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNI; no es una pregunta oficial"
+          },
+          {
+            "id": "LEN-06-I-05",
+            "universidadReferencia": "PUCP",
+            "dificultad": "intermedio",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Aplica conceptos a una situación contextualizada",
+            "pregunta": "Un estudiante utiliza un mapa conceptual para justificar una relación de Semántica de la palabra. ¿Cuál afirmación conserva una relación conceptual válida?",
+            "alternativas": [
+              "Denotar equivale a rimar.",
+              "La denotación elimina el referente.",
+              "La denotación es el significado básico y compartido de una expresión.",
+              "La denotación es siempre una emoción subjetiva."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: La denotación es el significado básico y compartido de una expresión. Se distingue de asociaciones connotativas.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance.",
+            "pasosMinimos": 2,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de PUCP; no es una pregunta oficial"
+          },
+          {
+            "id": "LEN-06-I-06",
+            "universidadReferencia": "UCSM",
+            "dificultad": "intermedio",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Aplica conceptos a una situación contextualizada",
+            "pregunta": "Durante el análisis de un mapa conceptual vinculado con Semántica de la palabra, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada?",
+            "alternativas": [
+              "Toda connotación es universal.",
+              "La connotación reúne valores o asociaciones añadidos por contexto y cultura.",
+              "La connotación aparece solo en diccionarios técnicos.",
+              "Connotar significa negar un significado."
+            ],
+            "respuesta": 1,
+            "solucion": "La alternativa correcta es: La connotación reúne valores o asociaciones añadidos por contexto y cultura. Las asociaciones pueden variar entre hablantes y situaciones.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance.",
+            "pasosMinimos": 2,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UCSM; no es una pregunta oficial"
+          },
+          {
+            "id": "LEN-06-I-07",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "intermedio",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Aplica conceptos a una situación contextualizada",
+            "pregunta": "Al corregir un informe de clase sobre Semántica de la palabra, se debe elegir una explicación compatible con los principios de la materia. ¿Cuál cumple la condición?",
+            "alternativas": [
+              "El significado de una palabra depende de rasgos semánticos y del contexto de uso.",
+              "Toda palabra posee un único significado invariable.",
+              "El contexto solo modifica la ortografía.",
+              "Significante y significado son idénticos."
+            ],
+            "respuesta": 0,
+            "solucion": "La alternativa correcta es: El significado de una palabra depende de rasgos semánticos y del contexto de uso. La polisemia y el uso contextual orientan la interpretación.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance.",
+            "pasosMinimos": 2,
+            "alineacionUniversitaria": "Competencias generales de admisión preuniversitaria"
+          },
+          {
+            "id": "LEN-06-I-08",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "intermedio",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Aplica conceptos a una situación contextualizada",
+            "pregunta": "Un estudiante utiliza un informe de clase para justificar una relación de Semántica de la palabra. ¿Cuál afirmación conserva una relación conceptual válida?",
+            "alternativas": [
+              "La denotación es siempre una emoción subjetiva.",
+              "Denotar equivale a rimar.",
+              "La denotación elimina el referente.",
+              "La denotación es el significado básico y compartido de una expresión."
+            ],
+            "respuesta": 3,
+            "solucion": "La alternativa correcta es: La denotación es el significado básico y compartido de una expresión. Se distingue de asociaciones connotativas.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance.",
+            "pasosMinimos": 2,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNAMAD; no es una pregunta oficial"
+          },
+          {
+            "id": "LEN-06-I-09",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "intermedio",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Aplica conceptos a una situación contextualizada",
+            "pregunta": "Durante el análisis de un informe de clase vinculado con Semántica de la palabra, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada?",
+            "alternativas": [
+              "Connotar significa negar un significado.",
+              "Toda connotación es universal.",
+              "La connotación reúne valores o asociaciones añadidos por contexto y cultura.",
+              "La connotación aparece solo en diccionarios técnicos."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: La connotación reúne valores o asociaciones añadidos por contexto y cultura. Las asociaciones pueden variar entre hablantes y situaciones.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance.",
+            "pasosMinimos": 2,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSAAC; no es una pregunta oficial"
+          },
+          {
+            "id": "LEN-06-I-10",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "intermedio",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Aplica conceptos a una situación contextualizada",
+            "pregunta": "Al corregir un simulacro de admisión sobre Semántica de la palabra, se debe elegir una explicación compatible con los principios de la materia. ¿Cuál cumple la condición?",
+            "alternativas": [
+              "Significante y significado son idénticos.",
+              "El significado de una palabra depende de rasgos semánticos y del contexto de uso.",
+              "Toda palabra posee un único significado invariable.",
+              "El contexto solo modifica la ortografía."
+            ],
+            "respuesta": 1,
+            "solucion": "La alternativa correcta es: El significado de una palabra depende de rasgos semánticos y del contexto de uso. La polisemia y el uso contextual orientan la interpretación.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance.",
+            "pasosMinimos": 2,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNMSM; no es una pregunta oficial"
+          }
+        ],
+        "avanzado": [
+          {
+            "id": "LEN-06-A-01",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "avanzado",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Contrasta proposiciones, detecta errores conceptuales y justifica una conclusión",
+            "pregunta": "En un simulacro sobre Semántica de la palabra. Analiza las proposiciones: I) El significado de una palabra depende de rasgos semánticos y del contexto de uso. II) La denotación es el significado básico y compartido de una expresión. ¿Qué alternativa evalúa correctamente ambas?",
+            "alternativas": [
+              "Ninguna es correcta",
+              "I y II son correctas",
+              "Solo I es correcta",
+              "Solo II es correcta"
+            ],
+            "respuesta": 1,
+            "solucion": "La proposición I es verdadera: La polisemia y el uso contextual orientan la interpretación. La proposición II es verdadera: Se distingue de asociaciones connotativas. Por ello, i y ii son correctas.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida.",
+            "pasosMinimos": 3,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSAAC; no es una pregunta oficial"
+          },
+          {
+            "id": "LEN-06-A-02",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "avanzado",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Contrasta proposiciones, detecta errores conceptuales y justifica una conclusión",
+            "pregunta": "En un simulacro sobre Semántica de la palabra. Analiza las proposiciones: I) La denotación es el significado básico y compartido de una expresión. II) La connotación aparece solo en diccionarios técnicos. ¿Qué alternativa evalúa correctamente ambas?",
+            "alternativas": [
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es verdadera: Se distingue de asociaciones connotativas. La proposición II es falsa: Las asociaciones pueden variar entre hablantes y situaciones. Por ello, solo i es correcta.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida.",
+            "pasosMinimos": 3,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNMSM; no es una pregunta oficial"
+          },
+          {
+            "id": "LEN-06-A-03",
+            "universidadReferencia": "UNSA",
+            "dificultad": "avanzado",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Contrasta proposiciones, detecta errores conceptuales y justifica una conclusión",
+            "pregunta": "En un simulacro sobre Semántica de la palabra. Analiza las proposiciones: I) La connotación aparece solo en diccionarios técnicos. II) El significado de una palabra depende de rasgos semánticos y del contexto de uso. ¿Qué alternativa evalúa correctamente ambas?",
+            "alternativas": [
+              "Solo I es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo II es correcta"
+            ],
+            "respuesta": 3,
+            "solucion": "La proposición I es falsa: Las asociaciones pueden variar entre hablantes y situaciones. La proposición II es verdadera: La polisemia y el uso contextual orientan la interpretación. Por ello, solo ii es correcta.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida.",
+            "pasosMinimos": 3,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSA; no es una pregunta oficial"
+          },
+          {
+            "id": "LEN-06-A-04",
+            "universidadReferencia": "UNI",
+            "dificultad": "avanzado",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Contrasta proposiciones, detecta errores conceptuales y justifica una conclusión",
+            "pregunta": "Durante una revisión crítica de Semántica de la palabra. Analiza las proposiciones: I) El contexto solo modifica la ortografía. II) La denotación elimina el referente. ¿Qué alternativa evalúa correctamente ambas?",
+            "alternativas": [
+              "Solo II es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo I es correcta"
+            ],
+            "respuesta": 2,
+            "solucion": "La proposición I es falsa: La polisemia y el uso contextual orientan la interpretación. La proposición II es falsa: Se distingue de asociaciones connotativas. Por ello, ninguna es correcta.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida.",
+            "pasosMinimos": 3,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNI; no es una pregunta oficial"
+          },
+          {
+            "id": "LEN-06-A-05",
+            "universidadReferencia": "PUCP",
+            "dificultad": "avanzado",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Contrasta proposiciones, detecta errores conceptuales y justifica una conclusión",
+            "pregunta": "Durante una revisión crítica de Semántica de la palabra. Analiza las proposiciones: I) La denotación es el significado básico y compartido de una expresión. II) La connotación reúne valores o asociaciones añadidos por contexto y cultura. ¿Qué alternativa evalúa correctamente ambas?",
+            "alternativas": [
+              "Ninguna es correcta",
+              "I y II son correctas",
+              "Solo I es correcta",
+              "Solo II es correcta"
+            ],
+            "respuesta": 1,
+            "solucion": "La proposición I es verdadera: Se distingue de asociaciones connotativas. La proposición II es verdadera: Las asociaciones pueden variar entre hablantes y situaciones. Por ello, i y ii son correctas.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida.",
+            "pasosMinimos": 3,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de PUCP; no es una pregunta oficial"
+          },
+          {
+            "id": "LEN-06-A-06",
+            "universidadReferencia": "UCSM",
+            "dificultad": "avanzado",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Contrasta proposiciones, detecta errores conceptuales y justifica una conclusión",
+            "pregunta": "Durante una revisión crítica de Semántica de la palabra. Analiza las proposiciones: I) La connotación reúne valores o asociaciones añadidos por contexto y cultura. II) El contexto solo modifica la ortografía. ¿Qué alternativa evalúa correctamente ambas?",
+            "alternativas": [
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es verdadera: Las asociaciones pueden variar entre hablantes y situaciones. La proposición II es falsa: La polisemia y el uso contextual orientan la interpretación. Por ello, solo i es correcta.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida.",
+            "pasosMinimos": 3,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UCSM; no es una pregunta oficial"
+          },
+          {
+            "id": "LEN-06-A-07",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "avanzado",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Contrasta proposiciones, detecta errores conceptuales y justifica una conclusión",
+            "pregunta": "Para resolver una pregunta integradora de Semántica de la palabra. Analiza las proposiciones: I) El contexto solo modifica la ortografía. II) La denotación es el significado básico y compartido de una expresión. ¿Qué alternativa evalúa correctamente ambas?",
+            "alternativas": [
+              "Solo I es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo II es correcta"
+            ],
+            "respuesta": 3,
+            "solucion": "La proposición I es falsa: La polisemia y el uso contextual orientan la interpretación. La proposición II es verdadera: Se distingue de asociaciones connotativas. Por ello, solo ii es correcta.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida.",
+            "pasosMinimos": 3,
+            "alineacionUniversitaria": "Competencias generales de admisión preuniversitaria"
+          },
+          {
+            "id": "LEN-06-A-08",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "avanzado",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Contrasta proposiciones, detecta errores conceptuales y justifica una conclusión",
+            "pregunta": "Para resolver una pregunta integradora de Semántica de la palabra. Analiza las proposiciones: I) La denotación elimina el referente. II) La connotación aparece solo en diccionarios técnicos. ¿Qué alternativa evalúa correctamente ambas?",
+            "alternativas": [
+              "Solo II es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo I es correcta"
+            ],
+            "respuesta": 2,
+            "solucion": "La proposición I es falsa: Se distingue de asociaciones connotativas. La proposición II es falsa: Las asociaciones pueden variar entre hablantes y situaciones. Por ello, ninguna es correcta.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida.",
+            "pasosMinimos": 3,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNAMAD; no es una pregunta oficial"
+          },
+          {
+            "id": "LEN-06-A-09",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "avanzado",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Contrasta proposiciones, detecta errores conceptuales y justifica una conclusión",
+            "pregunta": "Para resolver una pregunta integradora de Semántica de la palabra. Analiza las proposiciones: I) La connotación reúne valores o asociaciones añadidos por contexto y cultura. II) El significado de una palabra depende de rasgos semánticos y del contexto de uso. ¿Qué alternativa evalúa correctamente ambas?",
+            "alternativas": [
+              "Ninguna es correcta",
+              "I y II son correctas",
+              "Solo I es correcta",
+              "Solo II es correcta"
+            ],
+            "respuesta": 1,
+            "solucion": "La proposición I es verdadera: Las asociaciones pueden variar entre hablantes y situaciones. La proposición II es verdadera: La polisemia y el uso contextual orientan la interpretación. Por ello, i y ii son correctas.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida.",
+            "pasosMinimos": 3,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSAAC; no es una pregunta oficial"
+          },
+          {
+            "id": "LEN-06-A-10",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "avanzado",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Contrasta proposiciones, detecta errores conceptuales y justifica una conclusión",
+            "pregunta": "En una evaluación comparativa de Semántica de la palabra. Analiza las proposiciones: I) El significado de una palabra depende de rasgos semánticos y del contexto de uso. II) La denotación elimina el referente. ¿Qué alternativa evalúa correctamente ambas?",
+            "alternativas": [
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es verdadera: La polisemia y el uso contextual orientan la interpretación. La proposición II es falsa: Se distingue de asociaciones connotativas. Por ello, solo i es correcta.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida.",
+            "pasosMinimos": 3,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNMSM; no es una pregunta oficial"
+          }
+        ],
+        "admision": [
+          {
+            "id": "LEN-06-D-01",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
+            "pregunta": "Un estudiante utiliza un simulacro de admisión para justificar una relación de Semántica de la palabra. ¿Cuál afirmación conserva una relación conceptual válida?",
+            "alternativas": [
+              "La denotación es el significado básico y compartido de una expresión.",
+              "La denotación es siempre una emoción subjetiva.",
+              "Denotar equivale a rimar.",
+              "La denotación elimina el referente."
+            ],
+            "respuesta": 0,
+            "solucion": "La alternativa correcta es: La denotación es el significado básico y compartido de una expresión. Se distingue de asociaciones connotativas.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial.",
+            "pasosMinimos": 4,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSAAC; no es una pregunta oficial"
+          },
+          {
+            "id": "LEN-06-D-02",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
+            "pregunta": "Durante el análisis de un simulacro de admisión vinculado con Semántica de la palabra, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada?",
+            "alternativas": [
+              "La connotación aparece solo en diccionarios técnicos.",
+              "Connotar significa negar un significado.",
+              "Toda connotación es universal.",
+              "La connotación reúne valores o asociaciones añadidos por contexto y cultura."
+            ],
+            "respuesta": 3,
+            "solucion": "La alternativa correcta es: La connotación reúne valores o asociaciones añadidos por contexto y cultura. Las asociaciones pueden variar entre hablantes y situaciones.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial.",
+            "pasosMinimos": 4,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNMSM; no es una pregunta oficial"
+          },
+          {
+            "id": "LEN-06-D-03",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
+            "pregunta": "Al corregir una revisión académica sobre Semántica de la palabra, se debe elegir una explicación compatible con los principios de la materia. ¿Cuál cumple la condición?",
+            "alternativas": [
+              "El contexto solo modifica la ortografía.",
+              "Significante y significado son idénticos.",
+              "El significado de una palabra depende de rasgos semánticos y del contexto de uso.",
+              "Toda palabra posee un único significado invariable."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: El significado de una palabra depende de rasgos semánticos y del contexto de uso. La polisemia y el uso contextual orientan la interpretación.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial.",
+            "pasosMinimos": 4,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSA; no es una pregunta oficial"
+          },
+          {
+            "id": "LEN-06-D-04",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
+            "pregunta": "Un estudiante utiliza una revisión académica para justificar una relación de Semántica de la palabra. ¿Cuál afirmación conserva una relación conceptual válida?",
+            "alternativas": [
+              "La denotación elimina el referente.",
+              "La denotación es el significado básico y compartido de una expresión.",
+              "La denotación es siempre una emoción subjetiva.",
+              "Denotar equivale a rimar."
+            ],
+            "respuesta": 1,
+            "solucion": "La alternativa correcta es: La denotación es el significado básico y compartido de una expresión. Se distingue de asociaciones connotativas.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial.",
+            "pasosMinimos": 4,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNI; no es una pregunta oficial"
+          },
+          {
+            "id": "LEN-06-D-05",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
+            "pregunta": "Durante el análisis de una revisión académica vinculado con Semántica de la palabra, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada?",
+            "alternativas": [
+              "La connotación reúne valores o asociaciones añadidos por contexto y cultura.",
+              "La connotación aparece solo en diccionarios técnicos.",
+              "Connotar significa negar un significado.",
+              "Toda connotación es universal."
+            ],
+            "respuesta": 0,
+            "solucion": "La alternativa correcta es: La connotación reúne valores o asociaciones añadidos por contexto y cultura. Las asociaciones pueden variar entre hablantes y situaciones.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial.",
+            "pasosMinimos": 4,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de PUCP; no es una pregunta oficial"
+          },
+          {
+            "id": "LEN-06-D-06",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
+            "pregunta": "En una evaluación comparativa de Semántica de la palabra. Analiza las proposiciones: I) La denotación elimina el referente. II) La connotación reúne valores o asociaciones añadidos por contexto y cultura. ¿Qué alternativa evalúa correctamente ambas?",
+            "alternativas": [
+              "Solo I es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo II es correcta"
+            ],
+            "respuesta": 3,
+            "solucion": "La proposición I es falsa: Se distingue de asociaciones connotativas. La proposición II es verdadera: Las asociaciones pueden variar entre hablantes y situaciones. Por ello, solo ii es correcta.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial.",
+            "pasosMinimos": 4,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UCSM; no es una pregunta oficial"
+          },
+          {
+            "id": "LEN-06-D-07",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
+            "pregunta": "En una evaluación comparativa de Semántica de la palabra. Analiza las proposiciones: I) La connotación aparece solo en diccionarios técnicos. II) El contexto solo modifica la ortografía. ¿Qué alternativa evalúa correctamente ambas?",
+            "alternativas": [
+              "Solo II es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo I es correcta"
+            ],
+            "respuesta": 2,
+            "solucion": "La proposición I es falsa: Las asociaciones pueden variar entre hablantes y situaciones. La proposición II es falsa: La polisemia y el uso contextual orientan la interpretación. Por ello, ninguna es correcta.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial.",
+            "pasosMinimos": 4,
+            "alineacionUniversitaria": "Competencias generales de admisión preuniversitaria"
+          },
+          {
+            "id": "LEN-06-D-08",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
+            "pregunta": "Al contrastar conceptos esenciales de Semántica de la palabra. Analiza las proposiciones: I) El significado de una palabra depende de rasgos semánticos y del contexto de uso. II) La denotación es el significado básico y compartido de una expresión. ¿Qué alternativa evalúa correctamente ambas?",
+            "alternativas": [
+              "Ninguna es correcta",
+              "I y II son correctas",
+              "Solo I es correcta",
+              "Solo II es correcta"
+            ],
+            "respuesta": 1,
+            "solucion": "La proposición I es verdadera: La polisemia y el uso contextual orientan la interpretación. La proposición II es verdadera: Se distingue de asociaciones connotativas. Por ello, i y ii son correctas.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial.",
+            "pasosMinimos": 4,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNAMAD; no es una pregunta oficial"
+          },
+          {
+            "id": "LEN-06-D-09",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
+            "pregunta": "Al contrastar conceptos esenciales de Semántica de la palabra. Analiza las proposiciones: I) La denotación es el significado básico y compartido de una expresión. II) La connotación aparece solo en diccionarios técnicos. ¿Qué alternativa evalúa correctamente ambas?",
+            "alternativas": [
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es verdadera: Se distingue de asociaciones connotativas. La proposición II es falsa: Las asociaciones pueden variar entre hablantes y situaciones. Por ello, solo i es correcta.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial.",
+            "pasosMinimos": 4,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSAAC; no es una pregunta oficial"
+          },
+          {
+            "id": "LEN-06-D-10",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Integra condiciones y decide una estrategia bajo exigencia de admisión",
+            "pregunta": "Al contrastar conceptos esenciales de Semántica de la palabra. Analiza las proposiciones: I) La connotación aparece solo en diccionarios técnicos. II) El significado de una palabra depende de rasgos semánticos y del contexto de uso. ¿Qué alternativa evalúa correctamente ambas?",
+            "alternativas": [
+              "Solo I es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo II es correcta"
+            ],
+            "respuesta": 3,
+            "solucion": "La proposición I es falsa: Las asociaciones pueden variar entre hablantes y situaciones. La proposición II es verdadera: La polisemia y el uso contextual orientan la interpretación. Por ello, solo ii es correcta.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial.",
+            "pasosMinimos": 4,
+            "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNMSM; no es una pregunta oficial"
+          },
+          {
+            "id": "LEN-06-D-08-R-11",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Al contrastar conceptos esenciales de Semántica de la palabra. Analiza las proposiciones: I) El significado de una palabra depende de rasgos semánticos y del contexto de uso. II) La denotación es el significado básico y compartido de una expresión. ¿Qué alternativa evalúa correctamente ambas? Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "Ninguna es correcta",
+              "I y II son correctas",
+              "Solo I es correcta",
+              "Solo II es correcta"
+            ],
+            "respuesta": 1,
+            "solucion": "La proposición I es verdadera: La polisemia y el uso contextual orientan la interpretación. La proposición II es verdadera: Se distingue de asociaciones connotativas. Por ello, i y ii son correctas. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "LEN-06-D-09-R-12",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Al contrastar conceptos esenciales de Semántica de la palabra. Analiza las proposiciones: I) La denotación es el significado básico y compartido de una expresión. II) La connotación aparece solo en diccionarios técnicos. ¿Qué alternativa evalúa correctamente ambas? Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es verdadera: Se distingue de asociaciones connotativas. La proposición II es falsa: Las asociaciones pueden variar entre hablantes y situaciones. Por ello, solo i es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "LEN-06-D-10-R-13",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Al contrastar conceptos esenciales de Semántica de la palabra. Analiza las proposiciones: I) La connotación aparece solo en diccionarios técnicos. II) El significado de una palabra depende de rasgos semánticos y del contexto de uso. ¿Qué alternativa evalúa correctamente ambas? Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "Solo I es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo II es correcta"
+            ],
+            "respuesta": 3,
+            "solucion": "La proposición I es falsa: Las asociaciones pueden variar entre hablantes y situaciones. La proposición II es verdadera: La polisemia y el uso contextual orientan la interpretación. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "LEN-06-D-01-R-14",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Un estudiante utiliza un simulacro de admisión para justificar una relación de Semántica de la palabra. ¿Cuál afirmación conserva una relación conceptual válida? La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "La denotación es el significado básico y compartido de una expresión.",
+              "La denotación es siempre una emoción subjetiva.",
+              "Denotar equivale a rimar.",
+              "La denotación elimina el referente."
+            ],
+            "respuesta": 0,
+            "solucion": "La alternativa correcta es: La denotación es el significado básico y compartido de una expresión. Se distingue de asociaciones connotativas. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "LEN-06-D-02-R-15",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Semántica de la palabra",
+            "subarea": "Semántica",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Durante el análisis de un simulacro de admisión vinculado con Semántica de la palabra, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "La connotación aparece solo en diccionarios técnicos.",
+              "Connotar significa negar un significado.",
+              "Toda connotación es universal.",
+              "La connotación reúne valores o asociaciones añadidos por contexto y cultura."
+            ],
+            "respuesta": 3,
+            "solucion": "La alternativa correcta es: La connotación reúne valores o asociaciones añadidos por contexto y cultura. Las asociaciones pueden variar entre hablantes y situaciones. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -2535,8 +3784,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -3345,6 +4594,111 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Competencias generales de admisión preuniversitaria"
+          },
+          {
+            "id": "LEN-04-R-11",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "La oración gramatical",
+            "subarea": "Lenguaje",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Al contrastar conceptos esenciales de La oración gramatical. Analiza las proposiciones: I) El objeto directo puede sustituirse por los pronombres lo, la, los o las. II) Toda oración extensa es necesariamente compuesta. ¿Qué alternativa evalúa correctamente ambas? La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "Solo II es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo I es correcta"
+            ],
+            "respuesta": 3,
+            "solucion": "La proposición I es verdadera: La sustitución pronominal ayuda a identificar la función sintáctica. La proposición II es falsa: La cantidad de predicaciones, y no la longitud, determina su estructura. Por ello, solo i es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "LEN-04-R-12",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "La oración gramatical",
+            "subarea": "Lenguaje",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Al contrastar conceptos esenciales de La oración gramatical. Analiza las proposiciones: I) Toda oración extensa es necesariamente compuesta. II) El sujeto y el predicado mantienen concordancia de persona y número mediante sus núcleos. ¿Qué alternativa evalúa correctamente ambas? Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo II es correcta",
+              "Solo I es correcta"
+            ],
+            "respuesta": 2,
+            "solucion": "La proposición I es falsa: La cantidad de predicaciones, y no la longitud, determina su estructura. La proposición II es verdadera: La concordancia permite reconocer la relación entre núcleo nominal y núcleo verbal. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "LEN-04-R-13",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "La oración gramatical",
+            "subarea": "Lenguaje",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Un estudiante utiliza un simulacro de admisión para justificar una relación de La oración gramatical. ¿Cuál afirmación conserva una relación conceptual válida? Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "El objeto directo se reconoce únicamente por llevar preposición.",
+              "El objeto directo siempre concuerda en número con el sujeto.",
+              "Todo complemento verbal es objeto directo.",
+              "El objeto directo puede sustituirse por los pronombres lo, la, los o las."
+            ],
+            "respuesta": 3,
+            "solucion": "La alternativa correcta es: El objeto directo puede sustituirse por los pronombres lo, la, los o las. La sustitución pronominal ayuda a identificar la función sintáctica. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "LEN-04-R-14",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "La oración gramatical",
+            "subarea": "Lenguaje",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Durante el análisis de un simulacro de admisión vinculado con La oración gramatical, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "Una oración compuesta carece de nexos.",
+              "Dos sustantivos forman por sí solos una oración compuesta.",
+              "Una oración compuesta contiene más de una proposición o estructura predicativa.",
+              "Toda oración extensa es necesariamente compuesta."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: Una oración compuesta contiene más de una proposición o estructura predicativa. La cantidad de predicaciones, y no la longitud, determina su estructura. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "LEN-04-R-15",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "La oración gramatical",
+            "subarea": "Lenguaje",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Al corregir una revisión académica sobre La oración gramatical, se debe elegir una explicación compatible con los principios de la materia. ¿Cuál cumple la condición? Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "El predicado nominal carece de verbo.",
+              "El sujeto y el predicado mantienen concordancia de persona y número mediante sus núcleos.",
+              "El sujeto siempre aparece al inicio de la oración.",
+              "Toda oración posee un sujeto escrito de manera expresa."
+            ],
+            "respuesta": 1,
+            "solucion": "La alternativa correcta es: El sujeto y el predicado mantienen concordancia de persona y número mediante sus núcleos. La concordancia permite reconocer la relación entre núcleo nominal y núcleo verbal. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -3364,8 +4718,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -4174,10 +5528,115 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNI; no es una pregunta oficial"
+          },
+          {
+            "id": "LEN-05-R-11",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Ortografía",
+            "subarea": "Lenguaje",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Al contrastar conceptos esenciales de Ortografía. Analiza las proposiciones: I) Todos los sustantivos comunes se escriben con mayúscula. II) Todas las palabras esdrújulas llevan tilde. ¿Qué alternativa evalúa correctamente ambas? Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "Solo I es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo II es correcta"
+            ],
+            "respuesta": 3,
+            "solucion": "La proposición I es falsa: La norma distingue nombres propios y posiciones de inicio textual. La proposición II es verdadera: La regla general marca la sílaba antepenúltima tónica con tilde. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "LEN-05-R-12",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Ortografía",
+            "subarea": "Lenguaje",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Un estudiante utiliza un simulacro de admisión para justificar una relación de Ortografía. ¿Cuál afirmación conserva una relación conceptual válida? Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "La coma puede aislar un vocativo dentro de una oración.",
+              "La coma separa siempre el sujeto de su predicado.",
+              "Todo vocativo debe escribirse sin signos de puntuación.",
+              "La coma sustituye cualquier punto final."
+            ],
+            "respuesta": 0,
+            "solucion": "La alternativa correcta es: La coma puede aislar un vocativo dentro de una oración. El vocativo es un elemento extraoracional y se delimita con coma o comas. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "LEN-05-R-13",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Ortografía",
+            "subarea": "Lenguaje",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Durante el análisis de un simulacro de admisión vinculado con Ortografía, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "Todos los sustantivos comunes se escriben con mayúscula.",
+              "Después de cualquier coma se exige mayúscula.",
+              "Los nombres geográficos nunca llevan mayúscula.",
+              "La mayúscula inicial se emplea en nombres propios y al comenzar un enunciado."
+            ],
+            "respuesta": 3,
+            "solucion": "La alternativa correcta es: La mayúscula inicial se emplea en nombres propios y al comenzar un enunciado. La norma distingue nombres propios y posiciones de inicio textual. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "LEN-05-R-14",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Ortografía",
+            "subarea": "Lenguaje",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: Al corregir una revisión académica sobre Ortografía, se debe elegir una explicación compatible con los principios de la materia. ¿Cuál cumple la condición? Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "Ninguna palabra esdrújula lleva tilde.",
+              "La tilde de las esdrújulas depende de que sean nombres propios.",
+              "Todas las palabras esdrújulas llevan tilde.",
+              "Las palabras esdrújulas solo se tildan si terminan en vocal."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: Todas las palabras esdrújulas llevan tilde. La regla general marca la sílaba antepenúltima tónica con tilde. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "LEN-05-R-15",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Ortografía",
+            "subarea": "Lenguaje",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Un estudiante utiliza una revisión académica para justificar una relación de Ortografía. ¿Cuál afirmación conserva una relación conceptual válida? Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "La coma sustituye cualquier punto final.",
+              "La coma puede aislar un vocativo dentro de una oración.",
+              "La coma separa siempre el sujeto de su predicado.",
+              "Todo vocativo debe escribirse sin signos de puntuación."
+            ],
+            "respuesta": 1,
+            "solucion": "La alternativa correcta es: La coma puede aislar un vocativo dentro de una oración. El vocativo es un elemento extraoracional y se delimita con coma o comas. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
     }
   ],
-  "total": 200
+  "total": 270
 }

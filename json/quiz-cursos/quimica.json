@@ -1,7 +1,7 @@
 {
   "courseId": "quimica",
   "nombre": "Química",
-  "version": "2026.9-cuatro-niveles-universidad",
+  "version": "2026.31-nacional-7605",
   "descripcion": "Banco original UniPrep organizado uno a uno con cada tema visible. Cada sesión temática conserva su subárea y no mezcla preguntas de otros temas.",
   "universidadesReferencia": [
     "UNAMAD",
@@ -17,15 +17,15 @@
     "basico": 80,
     "intermedio": 80,
     "avanzado": 80,
-    "admision": 80,
-    "total": 320
+    "admision": 120,
+    "total": 360
   },
   "distribucionPorTema": {
     "basico": 10,
     "intermedio": 10,
     "avanzado": 10,
-    "admision": 10,
-    "total": 40
+    "admision": 15,
+    "total": 45
   },
   "criteriosDificultad": {
     "basico": "Fundamento o procedimiento directo",
@@ -48,8 +48,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -858,6 +858,111 @@
             "explicacion": "Se reconstruye la identidad atómica desde A, N y la carga. El ejercicio queda archivado únicamente en el bloque «Fundamentos de la química y la materia». Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNI; no es una pregunta oficial"
+          },
+          {
+            "id": "QUI-01-R-11",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Fundamentos de la química y la materia",
+            "subarea": "Ciencia y Tecnología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Tema Fundamentos de la química y la materia. La especie X1− tiene Z=26 y A=55. Determina el número de electrones y neutrones; marca la suma de ambos. Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "56",
+              "55",
+              "82",
+              "53"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Fundamentos de la química y la materia. Electrones=26−(-1)=27; neutrones=A−Z=29. La suma es 56. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se interpretan simultáneamente carga iónica y composición nuclear. El ejercicio queda archivado únicamente en el bloque «Fundamentos de la química y la materia». Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "QUI-01-R-12",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Fundamentos de la química y la materia",
+            "subarea": "Ciencia y Tecnología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Tema Fundamentos de la química y la materia. Una especie posee A=55, 36 neutrones y carga neutra. Determina Z y el número de electrones; marca el producto Z·e. Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "684",
+              "397,1",
+              "288,8",
+              "361"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Fundamentos de la química y la materia. Z=A−N=55−36=19. Con carga 0, e=Z−carga=19; por tanto Z·e=361. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se reconstruye la identidad atómica desde A, N y la carga. El ejercicio queda archivado únicamente en el bloque «Fundamentos de la química y la materia». Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "QUI-01-R-13",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Fundamentos de la química y la materia",
+            "subarea": "Ciencia y Tecnología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Tema Fundamentos de la química y la materia. Una especie posee A=57, 37 neutrones y carga 1+. Determina Z y el número de electrones; marca el producto Z·e. La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "703",
+              "420",
+              "380",
+              "740"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Fundamentos de la química y la materia. Z=A−N=57−37=20. Con carga 1, e=Z−carga=19; por tanto Z·e=380. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se reconstruye la identidad atómica desde A, N y la carga. El ejercicio queda archivado únicamente en el bloque «Fundamentos de la química y la materia». Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "QUI-01-R-14",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Fundamentos de la química y la materia",
+            "subarea": "Ciencia y Tecnología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Tema Fundamentos de la química y la materia. Una especie posee A=59, 42 neutrones y carga 1−. Determina Z y el número de electrones; marca el producto Z·e. Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "272",
+              "306",
+              "714",
+              "756"
+            ],
+            "respuesta": 1,
+            "solucion": "Aplicación específica de Fundamentos de la química y la materia. Z=A−N=59−42=17. Con carga -1, e=Z−carga=18; por tanto Z·e=306. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se reconstruye la identidad atómica desde A, N y la carga. El ejercicio queda archivado únicamente en el bloque «Fundamentos de la química y la materia». Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "QUI-01-R-15",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Fundamentos de la química y la materia",
+            "subarea": "Ciencia y Tecnología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Tema Fundamentos de la química y la materia. Una especie posee A=61, 43 neutrones y carga neutra. Determina Z y el número de electrones; marca el producto Z·e. Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "324",
+              "774",
+              "356,4",
+              "259,2"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Fundamentos de la química y la materia. Z=A−N=61−43=18. Con carga 0, e=Z−carga=18; por tanto Z·e=324. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se reconstruye la identidad atómica desde A, N y la carga. El ejercicio queda archivado únicamente en el bloque «Fundamentos de la química y la materia». Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -877,8 +982,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -1687,6 +1792,111 @@
             "explicacion": "Se reconstruye la identidad atómica desde A, N y la carga. El ejercicio queda archivado únicamente en el bloque «Estructura atómica». Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSAAC; no es una pregunta oficial"
+          },
+          {
+            "id": "QUI-02-R-11",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Estructura atómica",
+            "subarea": "Ciencia y Tecnología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Tema Estructura atómica. Una especie posee A=55, 36 neutrones y carga neutra. Determina Z y el número de electrones; marca el producto Z·e. Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "361",
+              "684",
+              "397,1",
+              "288,8"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Estructura atómica. Z=A−N=55−36=19. Con carga 0, e=Z−carga=19; por tanto Z·e=361. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se reconstruye la identidad atómica desde A, N y la carga. El ejercicio queda archivado únicamente en el bloque «Estructura atómica». Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "QUI-02-R-12",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Estructura atómica",
+            "subarea": "Ciencia y Tecnología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Tema Estructura atómica. Una especie posee A=57, 37 neutrones y carga 1+. Determina Z y el número de electrones; marca el producto Z·e. Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "740",
+              "703",
+              "420",
+              "380"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Estructura atómica. Z=A−N=57−37=20. Con carga 1, e=Z−carga=19; por tanto Z·e=380. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se reconstruye la identidad atómica desde A, N y la carga. El ejercicio queda archivado únicamente en el bloque «Estructura atómica». Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "QUI-02-R-13",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Estructura atómica",
+            "subarea": "Ciencia y Tecnología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Tema Estructura atómica. Una especie posee A=59, 42 neutrones y carga 1−. Determina Z y el número de electrones; marca el producto Z·e. Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "756",
+              "272",
+              "306",
+              "714"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Estructura atómica. Z=A−N=59−42=17. Con carga -1, e=Z−carga=18; por tanto Z·e=306. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se reconstruye la identidad atómica desde A, N y la carga. El ejercicio queda archivado únicamente en el bloque «Estructura atómica». Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "QUI-02-R-14",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Estructura atómica",
+            "subarea": "Ciencia y Tecnología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Tema Estructura atómica. Una especie posee A=61, 43 neutrones y carga neutra. Determina Z y el número de electrones; marca el producto Z·e. Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "259,2",
+              "324",
+              "774",
+              "356,4"
+            ],
+            "respuesta": 1,
+            "solucion": "Aplicación específica de Estructura atómica. Z=A−N=61−43=18. Con carga 0, e=Z−carga=18; por tanto Z·e=324. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se reconstruye la identidad atómica desde A, N y la carga. El ejercicio queda archivado únicamente en el bloque «Estructura atómica». Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "QUI-02-R-15",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Estructura atómica",
+            "subarea": "Ciencia y Tecnología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Tema Estructura atómica. Una especie posee A=63, 44 neutrones y carga 1+. Determina Z y el número de electrones; marca el producto Z·e. Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "342",
+              "836",
+              "792",
+              "380"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Estructura atómica. Z=A−N=63−44=19. Con carga 1, e=Z−carga=18; por tanto Z·e=342. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se reconstruye la identidad atómica desde A, N y la carga. El ejercicio queda archivado únicamente en el bloque «Estructura atómica». Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -1706,8 +1916,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -2516,6 +2726,111 @@
             "explicacion": "Se reconstruye la identidad atómica desde A, N y la carga. El ejercicio queda archivado únicamente en el bloque «Tabla periódica». Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UCSM; no es una pregunta oficial"
+          },
+          {
+            "id": "QUI-03-R-11",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Tabla periódica",
+            "subarea": "Ciencia y Tecnología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Tema Tabla periódica. Una especie posee A=57, 37 neutrones y carga 1+. Determina Z y el número de electrones; marca el producto Z·e. Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "380",
+              "740",
+              "703",
+              "420"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Tabla periódica. Z=A−N=57−37=20. Con carga 1, e=Z−carga=19; por tanto Z·e=380. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se reconstruye la identidad atómica desde A, N y la carga. El ejercicio queda archivado únicamente en el bloque «Tabla periódica». Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "QUI-03-R-12",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Tabla periódica",
+            "subarea": "Ciencia y Tecnología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Tema Tabla periódica. Una especie posee A=59, 42 neutrones y carga 1−. Determina Z y el número de electrones; marca el producto Z·e. Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "714",
+              "756",
+              "272",
+              "306"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Tabla periódica. Z=A−N=59−42=17. Con carga -1, e=Z−carga=18; por tanto Z·e=306. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se reconstruye la identidad atómica desde A, N y la carga. El ejercicio queda archivado únicamente en el bloque «Tabla periódica». Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "QUI-03-R-13",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Tabla periódica",
+            "subarea": "Ciencia y Tecnología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: Tema Tabla periódica. Una especie posee A=61, 43 neutrones y carga neutra. Determina Z y el número de electrones; marca el producto Z·e. Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "356,4",
+              "259,2",
+              "324",
+              "774"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Tabla periódica. Z=A−N=61−43=18. Con carga 0, e=Z−carga=18; por tanto Z·e=324. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se reconstruye la identidad atómica desde A, N y la carga. El ejercicio queda archivado únicamente en el bloque «Tabla periódica». Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "QUI-03-R-14",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Tabla periódica",
+            "subarea": "Ciencia y Tecnología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Tema Tabla periódica. Una especie posee A=63, 44 neutrones y carga 1+. Determina Z y el número de electrones; marca el producto Z·e. Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "380",
+              "342",
+              "836",
+              "792"
+            ],
+            "respuesta": 1,
+            "solucion": "Aplicación específica de Tabla periódica. Z=A−N=63−44=19. Con carga 1, e=Z−carga=18; por tanto Z·e=342. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se reconstruye la identidad atómica desde A, N y la carga. El ejercicio queda archivado únicamente en el bloque «Tabla periódica». Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "QUI-03-R-15",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Tabla periódica",
+            "subarea": "Ciencia y Tecnología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Tema Tabla periódica. La especie X1− tiene Z=22 y A=47. Determina el número de electrones y neutrones; marca la suma de ambos. Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "70",
+              "45",
+              "48",
+              "47"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Tabla periódica. Electrones=22−(-1)=23; neutrones=A−Z=25. La suma es 48. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se interpretan simultáneamente carga iónica y composición nuclear. El ejercicio queda archivado únicamente en el bloque «Tabla periódica». Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -2535,8 +2850,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -3345,6 +3660,111 @@
             "explicacion": "Se contrastan simultáneamente estructura, propiedad y función antes de elegir la combinación. El ejercicio queda archivado únicamente en el bloque «Enlace químico y fuerzas intermoleculares». Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSA; no es una pregunta oficial"
+          },
+          {
+            "id": "QUI-04-R-11",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Enlace químico y fuerzas intermoleculares",
+            "subarea": "Ciencia y Tecnología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Tema Enlace químico y fuerzas intermoleculares. Analiza las cuatro proposiciones sobre enlaces, geometría y polaridad y marca cuáles son correctas:\nI. Una sustancia iónica sólida normalmente no conduce hasta fundirse o disolverse.\nII. Un puente de hidrógeno requiere H unido directamente a F, O o N.\nIII. NaCl presenta enlace predominantemente covalente apolar.\nIV. La geometría molecular de CO₂ es lineal. Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "I, II, IV",
+              "I, II, III y IV",
+              "I, II, III",
+              "I, III, IV"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Enlace químico y fuerzas intermoleculares. I es correcta: Los iones están fijos en el sólido y móviles en fundido o solución. II es correcta: Estos átomos pequeños y electronegativos generan alta polarización. III es incorrecta: Na transfiere electrones a Cl. La relación correcta es «iónico». IV es correcta: El carbono central tiene dos regiones electrónicas enlazantes. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan simultáneamente estructura, propiedad y función antes de elegir la combinación. El ejercicio queda archivado únicamente en el bloque «Enlace químico y fuerzas intermoleculares». Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "QUI-04-R-12",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Enlace químico y fuerzas intermoleculares",
+            "subarea": "Ciencia y Tecnología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Tema Enlace químico y fuerzas intermoleculares. Analiza las cuatro proposiciones sobre enlaces, geometría y polaridad y marca cuáles son correctas:\nI. La hibridación del carbono en CH₄ es sp³.\nII. En O₂, el enlace entre átomos es iónico.\nIII. La molécula H₂O es polar porque sus dipolos no se cancelan.\nIV. NH₃ posee geometría molecular plana trigonal. Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "I, II, III y IV",
+              "I, II, III",
+              "I, II, IV",
+              "I, III"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Enlace químico y fuerzas intermoleculares. I es correcta: Cuatro regiones electrónicas producen geometría tetraédrica. II es incorrecta: Los átomos iguales comparten electrones sin diferencia de electronegatividad. La relación correcta es «covalente apolar». III es correcta: Su geometría angular impide cancelar los dipolos. IV es incorrecta: Tiene tres enlaces y un par libre sobre N. La relación correcta es «piramidal trigonal». Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan simultáneamente estructura, propiedad y función antes de elegir la combinación. El ejercicio queda archivado únicamente en el bloque «Enlace químico y fuerzas intermoleculares». Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "QUI-04-R-13",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Enlace químico y fuerzas intermoleculares",
+            "subarea": "Ciencia y Tecnología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Tema Enlace químico y fuerzas intermoleculares. Analiza las cuatro proposiciones sobre enlaces, geometría y polaridad y marca cuáles son correctas:\nI. La geometría molecular de CO₂ es angular.\nII. El enlace metálico se modela como cationes en un mar de electrones.\nIII. Una sustancia iónica sólida normalmente no conduce hasta fundirse o disolverse.\nIV. Un puente de hidrógeno requiere H unido directamente a F, O o N. Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "I, II, III",
+              "I, II, IV",
+              "II, III, IV",
+              "I, II, III y IV"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Enlace químico y fuerzas intermoleculares. I es incorrecta: El carbono central tiene dos regiones electrónicas enlazantes. La relación correcta es «lineal». II es correcta: Los electrones deslocalizados explican conductividad y maleabilidad. III es correcta: Los iones están fijos en el sólido y móviles en fundido o solución. IV es correcta: Estos átomos pequeños y electronegativos generan alta polarización. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan simultáneamente estructura, propiedad y función antes de elegir la combinación. El ejercicio queda archivado únicamente en el bloque «Enlace químico y fuerzas intermoleculares». Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "QUI-04-R-14",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Enlace químico y fuerzas intermoleculares",
+            "subarea": "Ciencia y Tecnología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Tema Enlace químico y fuerzas intermoleculares. Un informe experimental señala que «Na transfiere electrones a Cl.». ¿Qué alternativa permite completar correctamente «NaCl presenta enlace predominantemente» y explicar el resultado? La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "covalente apolar",
+              "metálico",
+              "puente de hidrógeno",
+              "iónico"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Enlace químico y fuerzas intermoleculares. La evidencia apunta a iónico. Na transfiere electrones a Cl. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se aplica un concepto a una situación experimental o funcional. El ejercicio queda archivado únicamente en el bloque «Enlace químico y fuerzas intermoleculares». Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "QUI-04-R-15",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Enlace químico y fuerzas intermoleculares",
+            "subarea": "Ciencia y Tecnología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Tema Enlace químico y fuerzas intermoleculares. Un informe experimental señala que «Los átomos iguales comparten electrones sin diferencia de electronegatividad.». ¿Qué alternativa permite completar correctamente «En O₂, el enlace entre átomos es» y explicar el resultado? Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "metálico",
+              "covalente coordinado",
+              "covalente apolar",
+              "iónico"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Enlace químico y fuerzas intermoleculares. La evidencia apunta a covalente apolar. Los átomos iguales comparten electrones sin diferencia de electronegatividad. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se aplica un concepto a una situación experimental o funcional. El ejercicio queda archivado únicamente en el bloque «Enlace químico y fuerzas intermoleculares». Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -3364,8 +3784,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -4174,6 +4594,111 @@
             "explicacion": "Se contrastan simultáneamente estructura, propiedad y función antes de elegir la combinación. El ejercicio queda archivado únicamente en el bloque «Compuestos inorgánicos y nomenclatura». Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNAMAD; no es una pregunta oficial"
+          },
+          {
+            "id": "QUI-05-R-11",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Compuestos inorgánicos y nomenclatura",
+            "subarea": "Ciencia y Tecnología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Tema Compuestos inorgánicos y nomenclatura. Analiza las cuatro proposiciones sobre enlaces, geometría y polaridad y marca cuáles son correctas:\nI. La hibridación del carbono en CH₄ es sp³.\nII. En O₂, el enlace entre átomos es iónico.\nIII. La molécula H₂O es polar porque sus dipolos no se cancelan.\nIV. NH₃ posee geometría molecular plana trigonal. La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "I, III",
+              "I, II, III y IV",
+              "I, II, III",
+              "I, II, IV"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Compuestos inorgánicos y nomenclatura. I es correcta: Cuatro regiones electrónicas producen geometría tetraédrica. II es incorrecta: Los átomos iguales comparten electrones sin diferencia de electronegatividad. La relación correcta es «covalente apolar». III es correcta: Su geometría angular impide cancelar los dipolos. IV es incorrecta: Tiene tres enlaces y un par libre sobre N. La relación correcta es «piramidal trigonal». Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan simultáneamente estructura, propiedad y función antes de elegir la combinación. El ejercicio queda archivado únicamente en el bloque «Compuestos inorgánicos y nomenclatura». Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "QUI-05-R-12",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Compuestos inorgánicos y nomenclatura",
+            "subarea": "Ciencia y Tecnología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Tema Compuestos inorgánicos y nomenclatura. Analiza las cuatro proposiciones sobre enlaces, geometría y polaridad y marca cuáles son correctas:\nI. La geometría molecular de CO₂ es angular.\nII. El enlace metálico se modela como cationes en un mar de electrones.\nIII. Una sustancia iónica sólida normalmente no conduce hasta fundirse o disolverse.\nIV. Un puente de hidrógeno requiere H unido directamente a F, O o N. Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "I, II, III y IV",
+              "I, II, III",
+              "I, II, IV",
+              "II, III, IV"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Compuestos inorgánicos y nomenclatura. I es incorrecta: El carbono central tiene dos regiones electrónicas enlazantes. La relación correcta es «lineal». II es correcta: Los electrones deslocalizados explican conductividad y maleabilidad. III es correcta: Los iones están fijos en el sólido y móviles en fundido o solución. IV es correcta: Estos átomos pequeños y electronegativos generan alta polarización. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan simultáneamente estructura, propiedad y función antes de elegir la combinación. El ejercicio queda archivado únicamente en el bloque «Compuestos inorgánicos y nomenclatura». Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "QUI-05-R-13",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Compuestos inorgánicos y nomenclatura",
+            "subarea": "Ciencia y Tecnología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Tema Compuestos inorgánicos y nomenclatura. Un informe experimental señala que «Na transfiere electrones a Cl.». ¿Qué alternativa permite completar correctamente «NaCl presenta enlace predominantemente» y explicar el resultado? Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "iónico",
+              "covalente apolar",
+              "metálico",
+              "puente de hidrógeno"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Compuestos inorgánicos y nomenclatura. La evidencia apunta a iónico. Na transfiere electrones a Cl. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se aplica un concepto a una situación experimental o funcional. El ejercicio queda archivado únicamente en el bloque «Compuestos inorgánicos y nomenclatura». Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "QUI-05-R-14",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Compuestos inorgánicos y nomenclatura",
+            "subarea": "Ciencia y Tecnología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Tema Compuestos inorgánicos y nomenclatura. Un informe experimental señala que «Los átomos iguales comparten electrones sin diferencia de electronegatividad.». ¿Qué alternativa permite completar correctamente «En O₂, el enlace entre átomos es» y explicar el resultado? Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "iónico",
+              "metálico",
+              "covalente coordinado",
+              "covalente apolar"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Compuestos inorgánicos y nomenclatura. La evidencia apunta a covalente apolar. Los átomos iguales comparten electrones sin diferencia de electronegatividad. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se aplica un concepto a una situación experimental o funcional. El ejercicio queda archivado únicamente en el bloque «Compuestos inorgánicos y nomenclatura». Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "QUI-05-R-15",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Compuestos inorgánicos y nomenclatura",
+            "subarea": "Ciencia y Tecnología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Tema Compuestos inorgánicos y nomenclatura. Un informe experimental señala que «El carbono central tiene dos regiones electrónicas enlazantes.». ¿Qué alternativa permite completar correctamente «La geometría molecular de CO₂ es» y explicar el resultado? Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "tetraédrica",
+              "piramidal",
+              "lineal",
+              "angular"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Compuestos inorgánicos y nomenclatura. La evidencia apunta a lineal. El carbono central tiene dos regiones electrónicas enlazantes. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se aplica un concepto a una situación experimental o funcional. El ejercicio queda archivado únicamente en el bloque «Compuestos inorgánicos y nomenclatura». Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -4193,8 +4718,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -5003,6 +5528,111 @@
             "explicacion": "Se aplican consecutivamente pureza, relación estequiométrica y rendimiento. El ejercicio queda archivado únicamente en el bloque «Reacciones químicas y estequiometría». Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de PUCP; no es una pregunta oficial"
+          },
+          {
+            "id": "QUI-06-R-11",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Reacciones químicas y estequiometría",
+            "subarea": "Ciencia y Tecnología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Tema Reacciones químicas y estequiometría. Una muestra de 240 g tiene 78% de pureza. El reactivo puro produciría 0,7 g de producto por cada gramo y el rendimiento es 84%. ¿Qué masa real de producto se obtiene? Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "110,07 g",
+              "168 g",
+              "131,04 g",
+              "201,6 g"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Reacciones químicas y estequiometría. Masa pura=240·0.78=187,2 g. Rendimiento teórico=131,04 g. Masa real=teórico·0.84=110,07 g. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se aplican consecutivamente pureza, relación estequiométrica y rendimiento. El ejercicio queda archivado únicamente en el bloque «Reacciones químicas y estequiometría». Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "QUI-06-R-12",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Reacciones químicas y estequiometría",
+            "subarea": "Ciencia y Tecnología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Tema Reacciones químicas y estequiometría. En la reacción balanceada 3A → 5B, reaccionan 12 mol de A en exceso de los demás reactivos. ¿Cuántos moles de B se forman? Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "22 mol",
+              "20 mol",
+              "7,2 mol",
+              "60 mol"
+            ],
+            "respuesta": 1,
+            "solucion": "Aplicación específica de Reacciones químicas y estequiometría. La proporción es 3 mol A : 5 mol B. Entonces n(B)=12·5/3=20 mol. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se usa la razón de coeficientes de la ecuación balanceada. El ejercicio queda archivado únicamente en el bloque «Reacciones químicas y estequiometría». Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "QUI-06-R-13",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Reacciones químicas y estequiometría",
+            "subarea": "Ciencia y Tecnología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Tema Reacciones químicas y estequiometría. En la reacción balanceada 4A → 6B, reaccionan 13 mol de A en exceso de los demás reactivos. ¿Cuántos moles de B se forman? Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "19,5 mol",
+              "8,67 mol",
+              "23 mol",
+              "78 mol"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Reacciones químicas y estequiometría. La proporción es 4 mol A : 6 mol B. Entonces n(B)=13·6/4=19,5 mol. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se usa la razón de coeficientes de la ecuación balanceada. El ejercicio queda archivado únicamente en el bloque «Reacciones químicas y estequiometría». Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "QUI-06-R-14",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Reacciones químicas y estequiometría",
+            "subarea": "Ciencia y Tecnología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: Tema Reacciones químicas y estequiometría. En la reacción balanceada 2A → 3B, reaccionan 14 mol de A en exceso de los demás reactivos. ¿Cuántos moles de B se forman? Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "9,33 mol",
+              "19 mol",
+              "42 mol",
+              "21 mol"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Reacciones químicas y estequiometría. La proporción es 2 mol A : 3 mol B. Entonces n(B)=14·3/2=21 mol. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se usa la razón de coeficientes de la ecuación balanceada. El ejercicio queda archivado únicamente en el bloque «Reacciones químicas y estequiometría». Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "QUI-06-R-15",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Reacciones químicas y estequiometría",
+            "subarea": "Ciencia y Tecnología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Tema Reacciones químicas y estequiometría. En la reacción balanceada 3A → 4B, reaccionan 15 mol de A en exceso de los demás reactivos. ¿Cuántos moles de B se forman? Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "22 mol",
+              "60 mol",
+              "20 mol",
+              "11,25 mol"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Reacciones químicas y estequiometría. La proporción es 3 mol A : 4 mol B. Entonces n(B)=15·4/3=20 mol. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se usa la razón de coeficientes de la ecuación balanceada. El ejercicio queda archivado únicamente en el bloque «Reacciones químicas y estequiometría». Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -5022,8 +5652,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -5832,6 +6462,111 @@
             "explicacion": "Se contrastan simultáneamente estructura, propiedad y función antes de elegir la combinación. El ejercicio queda archivado únicamente en el bloque «Estados de la materia». Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNMSM; no es una pregunta oficial"
+          },
+          {
+            "id": "QUI-07-R-11",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Estados de la materia",
+            "subarea": "Ciencia y Tecnología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: Tema Estados de la materia. Un informe experimental señala que «Na transfiere electrones a Cl.». ¿Qué alternativa permite completar correctamente «NaCl presenta enlace predominantemente» y explicar el resultado? Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "metálico",
+              "puente de hidrógeno",
+              "iónico",
+              "covalente apolar"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Estados de la materia. La evidencia apunta a iónico. Na transfiere electrones a Cl. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se aplica un concepto a una situación experimental o funcional. El ejercicio queda archivado únicamente en el bloque «Estados de la materia». Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "QUI-07-R-12",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Estados de la materia",
+            "subarea": "Ciencia y Tecnología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Tema Estados de la materia. Un informe experimental señala que «Los átomos iguales comparten electrones sin diferencia de electronegatividad.». ¿Qué alternativa permite completar correctamente «En O₂, el enlace entre átomos es» y explicar el resultado? Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "covalente coordinado",
+              "covalente apolar",
+              "iónico",
+              "metálico"
+            ],
+            "respuesta": 1,
+            "solucion": "Aplicación específica de Estados de la materia. La evidencia apunta a covalente apolar. Los átomos iguales comparten electrones sin diferencia de electronegatividad. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se aplica un concepto a una situación experimental o funcional. El ejercicio queda archivado únicamente en el bloque «Estados de la materia». Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "QUI-07-R-13",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Estados de la materia",
+            "subarea": "Ciencia y Tecnología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Tema Estados de la materia. Un informe experimental señala que «El carbono central tiene dos regiones electrónicas enlazantes.». ¿Qué alternativa permite completar correctamente «La geometría molecular de CO₂ es» y explicar el resultado? Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "lineal",
+              "angular",
+              "tetraédrica",
+              "piramidal"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Estados de la materia. La evidencia apunta a lineal. El carbono central tiene dos regiones electrónicas enlazantes. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se aplica un concepto a una situación experimental o funcional. El ejercicio queda archivado únicamente en el bloque «Estados de la materia». Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "QUI-07-R-14",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Estados de la materia",
+            "subarea": "Ciencia y Tecnología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Tema Estados de la materia. Un informe experimental señala que «Su geometría angular impide cancelar los dipolos.». ¿Qué alternativa permite completar correctamente «La molécula H₂O es polar porque» y explicar el resultado? Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "es lineal",
+              "no tiene pares libres",
+              "posee enlace metálico",
+              "sus dipolos no se cancelan"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Estados de la materia. La evidencia apunta a sus dipolos no se cancelan. Su geometría angular impide cancelar los dipolos. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se aplica un concepto a una situación experimental o funcional. El ejercicio queda archivado únicamente en el bloque «Estados de la materia». Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "QUI-07-R-15",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Estados de la materia",
+            "subarea": "Ciencia y Tecnología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Tema Estados de la materia. Un informe experimental señala que «Los electrones deslocalizados explican conductividad y maleabilidad.». ¿Qué alternativa permite completar correctamente «El enlace metálico se modela como» y explicar el resultado? La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "aniones compartiendo protones",
+              "pares libres localizados",
+              "cationes en un mar de electrones",
+              "moléculas aisladas"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Estados de la materia. La evidencia apunta a cationes en un mar de electrones. Los electrones deslocalizados explican conductividad y maleabilidad. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se aplica un concepto a una situación experimental o funcional. El ejercicio queda archivado únicamente en el bloque «Estados de la materia». Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -5851,8 +6586,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -6661,10 +7396,115 @@
             "explicacion": "Se contrastan simultáneamente estructura, propiedad y función antes de elegir la combinación. El ejercicio queda archivado únicamente en el bloque «Química orgánica». Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Competencias generales de admisión preuniversitaria"
+          },
+          {
+            "id": "QUI-08-R-11",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Química orgánica",
+            "subarea": "Ciencia y Tecnología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Tema Química orgánica. Un informe experimental señala que «Los átomos iguales comparten electrones sin diferencia de electronegatividad.». ¿Qué alternativa permite completar correctamente «En O₂, el enlace entre átomos es» y explicar el resultado? Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "metálico",
+              "covalente coordinado",
+              "covalente apolar",
+              "iónico"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Química orgánica. La evidencia apunta a covalente apolar. Los átomos iguales comparten electrones sin diferencia de electronegatividad. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se aplica un concepto a una situación experimental o funcional. El ejercicio queda archivado únicamente en el bloque «Química orgánica». Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "QUI-08-R-12",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Química orgánica",
+            "subarea": "Ciencia y Tecnología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Tema Química orgánica. Un informe experimental señala que «El carbono central tiene dos regiones electrónicas enlazantes.». ¿Qué alternativa permite completar correctamente «La geometría molecular de CO₂ es» y explicar el resultado? La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "piramidal",
+              "lineal",
+              "angular",
+              "tetraédrica"
+            ],
+            "respuesta": 1,
+            "solucion": "Aplicación específica de Química orgánica. La evidencia apunta a lineal. El carbono central tiene dos regiones electrónicas enlazantes. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se aplica un concepto a una situación experimental o funcional. El ejercicio queda archivado únicamente en el bloque «Química orgánica». Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "QUI-08-R-13",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Química orgánica",
+            "subarea": "Ciencia y Tecnología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Tema Química orgánica. Un informe experimental señala que «Su geometría angular impide cancelar los dipolos.». ¿Qué alternativa permite completar correctamente «La molécula H₂O es polar porque» y explicar el resultado? Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "sus dipolos no se cancelan",
+              "es lineal",
+              "no tiene pares libres",
+              "posee enlace metálico"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Química orgánica. La evidencia apunta a sus dipolos no se cancelan. Su geometría angular impide cancelar los dipolos. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se aplica un concepto a una situación experimental o funcional. El ejercicio queda archivado únicamente en el bloque «Química orgánica». Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "QUI-08-R-14",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Química orgánica",
+            "subarea": "Ciencia y Tecnología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Tema Química orgánica. Un informe experimental señala que «Los electrones deslocalizados explican conductividad y maleabilidad.». ¿Qué alternativa permite completar correctamente «El enlace metálico se modela como» y explicar el resultado? Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "moléculas aisladas",
+              "aniones compartiendo protones",
+              "pares libres localizados",
+              "cationes en un mar de electrones"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Química orgánica. La evidencia apunta a cationes en un mar de electrones. Los electrones deslocalizados explican conductividad y maleabilidad. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se aplica un concepto a una situación experimental o funcional. El ejercicio queda archivado únicamente en el bloque «Química orgánica». Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "QUI-08-R-15",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Química orgánica",
+            "subarea": "Ciencia y Tecnología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Tema Química orgánica. Analiza las cuatro proposiciones sobre enlaces, geometría y polaridad y marca cuáles son correctas:\nI. NaCl presenta enlace predominantemente covalente apolar.\nII. La geometría molecular de CO₂ es lineal.\nIII. El enlace metálico se modela como cationes en un mar de electrones.\nIV. Una sustancia iónica sólida normalmente no conduce hasta fundirse o disolverse. Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "I, II, III",
+              "I, II, IV",
+              "II, III, IV",
+              "I, II, III y IV"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Química orgánica. I es incorrecta: Na transfiere electrones a Cl. La relación correcta es «iónico». II es correcta: El carbono central tiene dos regiones electrónicas enlazantes. III es correcta: Los electrones deslocalizados explican conductividad y maleabilidad. IV es correcta: Los iones están fijos en el sólido y móviles en fundido o solución. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan simultáneamente estructura, propiedad y función antes de elegir la combinación. El ejercicio queda archivado únicamente en el bloque «Química orgánica». Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
     }
   ],
-  "total": 320
+  "total": 360
 }

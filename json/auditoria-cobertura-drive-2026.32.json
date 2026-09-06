@@ -1,0 +1,22 @@
+{
+  "version": "2026.32",
+  "fuentesDrive": [
+    "05 Cronometría - Relojes.pdf",
+    "02 Inductivo - Deductivo.pdf",
+    "04 Circunferencia trigonométrica.pdf",
+    "08 Transformaciones trigonométricas.pdf",
+    "09 Funciones trigonométricas directas.pdf",
+    "UNMSM Preguntas de Admisión RV por temas.pdf"
+  ],
+  "coberturaNueva": [
+    "Sinonimia directa",
+    "Antonimia directa",
+    "Definiciones",
+    "Cronometría con reloj visual",
+    "Inductivo y sucesiones",
+    "Circunferencia trigonométrica",
+    "Gráficas trigonométricas"
+  ],
+  "preguntasNuevas": 315,
+  "criterio": "Ejercicios originales con solución verificable; las fuentes se usan para cobertura y exigencia, no para copia literal."
+}

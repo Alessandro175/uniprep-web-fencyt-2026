@@ -11,6 +11,14 @@
   const PERIODOS = {dia:"Hoy",semana:"Esta semana",mes:"Este mes",total:"Histórico"};
   const estado = {perfiles:[], periodo:"semana", alcance:"nacional", vista:"estudiantes", metrica:"puntos", cargando:false, ultimaCarga:0, esquemaCompleto:true, error:null};
 
+  function conLimite(operacion, tiempo = 10000) {
+    let temporizador;
+    const limite = new Promise((_, rechazar) => {
+      temporizador = setTimeout(() => rechazar(new Error("RANKING_TIMEOUT")), tiempo);
+    });
+    return Promise.race([Promise.resolve(operacion), limite]).finally(() => clearTimeout(temporizador));
+  }
+
   function esc(valor){const d=document.createElement("div");d.textContent=String(valor??"");return d.innerHTML}
   function numero(valor){return Number(valor||0).toLocaleString("es-PE")}
   function valor(perfil){return Number(perfil?.[METRICAS[estado.metrica].campo])||0}
@@ -25,18 +33,19 @@
     construirEstructura(pantalla);
     if(!forzar&&estado.perfiles.length&&Date.now()-estado.ultimaCarga<45000){renderizar();return}
     estado.cargando=true; estadoCarga("Calculando el ranking con resultados reales…");
-    const usuario=typeof window.obtenerUsuarioActivo==="function"?await window.obtenerUsuarioActivo():null;
+    let usuario=null;
+    try { usuario=typeof window.obtenerUsuarioActivo==="function"?await conLimite(window.obtenerUsuarioActivo(),7000):null; } catch (_) { usuario=null; }
     const regionFiltro=estado.alcance==="nacional"?null:estado.alcance==="mi_region"?regionUsuario(usuario):estado.alcance;
     let perfiles=[]; let errorConsulta=null; estado.esquemaCompleto=true;
     try{
       if(!window.supabaseClient)throw new Error("Supabase no está disponible");
-      const respuesta=await window.supabaseClient.rpc("obtener_ranking_uniprep_v2",{p_periodo:estado.periodo,p_region:regionFiltro||null});
+      const respuesta=await conLimite(window.supabaseClient.rpc("obtener_ranking_uniprep_v2",{p_periodo:estado.periodo,p_region:regionFiltro||null}),12000);
       if(respuesta.error)throw respuesta.error;
       perfiles=Array.isArray(respuesta.data)?respuesta.data.filter(p=>p?.id):[];
     }catch(error){
       errorConsulta=error; estado.esquemaCompleto=false;
       try{
-        const respaldo=await window.supabaseClient?.from("profiles").select("id,nombre,carrera,xp,racha,ejercicios,respuestas_correctas,respuestas_totales,procedencia,avatar_url").limit(200);
+        const respaldo=await conLimite(window.supabaseClient?.from("profiles").select("id,nombre,carrera,xp,racha,ejercicios,respuestas_correctas,respuestas_totales,procedencia,avatar_url").limit(200),9000);
         if(respaldo?.error)throw respaldo.error;
         perfiles=(respaldo?.data||[]).map(p=>({
           ...p,puntos_periodo:Number(p.xp)||0,preguntas_periodo:Number(p.respuestas_totales)||0,
@@ -74,7 +83,8 @@
   function estadoCarga(texto){const c=document.getElementById("ranking-status");if(c)c.innerHTML=`<div class="ranking-loading"><span></span>${esc(texto)}</div>`}
 
   async function renderizar(){
-    const usuario=typeof window.obtenerUsuarioActivo==="function"?await window.obtenerUsuarioActivo():null;
+    let usuario=null;
+    try { usuario=typeof window.obtenerUsuarioActivo==="function"?await conLimite(window.obtenerUsuarioActivo(),7000):null; } catch (_) { usuario=null; }
     document.querySelectorAll("[data-ranking-period]").forEach(b=>b.classList.toggle("active",b.dataset.rankingPeriod===estado.periodo));
     document.querySelectorAll("[data-ranking-view]").forEach(b=>b.classList.toggle("active",b.dataset.rankingView===estado.vista));
     const regionSelect=document.getElementById("ranking-region-select"); if(regionSelect)regionSelect.value=estado.alcance;
@@ -87,7 +97,13 @@
     const subt=document.getElementById("ranking-subtitle");
     if(subt)subt.textContent=`${PERIODOS[estado.periodo]} · ${alcanceTexto()} · ${orden.length} estudiante${orden.length===1?"":"s"}`;
     const status=document.getElementById("ranking-status");
-    if(status)status.innerHTML=estado.esquemaCompleto?"":'<div class="ranking-private-note">⚙️ Vista compatible activa. Ejecuta <b>SUPABASE_UGEL_RANKING_FOTOS.sql</b> para habilitar los periodos diarios, semanales, mensuales y regionales con precisión completa.</div>';
+    if(status){
+      const detalle=String(estado.error?.message||estado.error||"");
+      const problemaConexion=/timeout|network|fetch|supabase no está disponible/i.test(detalle)||!navigator.onLine;
+      status.innerHTML=estado.esquemaCompleto?"":problemaConexion
+        ? '<div class="ranking-private-note">☁️ No pudimos sincronizar el ranking ahora. Tu progreso no se perdió; revisa internet y pulsa <b>Actualizar</b>.</div>'
+        : '<div class="ranking-private-note">⚙️ Vista compatible activa. Ejecuta <b>SUPABASE_UNIPREP_COMPLETO_2026.sql</b> para habilitar periodos y regiones con precisión completa.</div>';
+    }
     pintarStats(posicion,propio,orden.length,regionUsuario(usuario));
     const podio=document.getElementById("ranking-podium-real"); if(podio)podio.innerHTML=orden.slice(0,3).map((p,i)=>tarjetaPodio(p,i,config,usuario?.id)).join("");
     const lista=document.getElementById("ranking-list-real"); if(lista)lista.innerHTML=orden.length?orden.map((p,i)=>filaRanking(p,i,config,usuario?.id)).join(""):'<div class="ranking-empty">Aún no hay resultados en este periodo y alcance.</div>';

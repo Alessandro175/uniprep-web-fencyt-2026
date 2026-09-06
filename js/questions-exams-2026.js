@@ -641,7 +641,7 @@ window.SIMULACROS_2026 = {
       {
         "id": "UNI-AAH-038",
         "area": "Aptitud Académica",
-        "tema": "Razonamiento Verbal",
+        "tema": "Lenguaje",
         "subtemaReferencia": "Semántica de la palabra",
         "q": "Un estudiante utiliza una revisión académica para justificar una relación de Semántica de la palabra. ¿Cuál afirmación conserva una relación conceptual válida?",
         "o": [
@@ -777,7 +777,7 @@ window.SIMULACROS_2026 = {
       {
         "id": "UNI-AAH-046",
         "area": "Aptitud Académica",
-        "tema": "Razonamiento Verbal",
+        "tema": "Lenguaje",
         "subtemaReferencia": "Semántica de la palabra",
         "q": "Un estudiante utiliza un simulacro de admisión para justificar una relación de Semántica de la palabra. ¿Cuál afirmación conserva una relación conceptual válida?",
         "o": [
@@ -3336,7 +3336,7 @@ window.SIMULACROS_2026 = {
       {
         "id": "UCSM-GEN-015",
         "area": "Aptitud Académica",
-        "tema": "Razonamiento Verbal",
+        "tema": "Lenguaje",
         "subtemaReferencia": "Semántica de la palabra",
         "q": "Durante el análisis de un simulacro de admisión vinculado con Semántica de la palabra, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada?",
         "o": [

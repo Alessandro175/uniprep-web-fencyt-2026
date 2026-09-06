@@ -1,5 +1,5 @@
 // =========================================================
-// UNIPREP 2 · HYPERDRIVE HARMONY 2026.20
+// UNIPREP 2 · HYPERDRIVE UNIVERSE 2026.23
 // Centro de comandos, rendimiento adaptativo y modo Hacker.
 // =========================================================
 (function () {
@@ -7,15 +7,17 @@
 
   const DEFAULTS = Object.freeze({quality:"auto", hacker:false, sound:false, cursor:true, hud:true});
   const ROUTES = [
-    {id:"home", icon:"⌂", title:"Inicio", detail:"Panel, racha y misión diaria", keys:"Alt+H"},
-    {id:"cursos", icon:"▦", title:"Cursos", detail:"Temas, teoría y progreso", keys:"Alt+C"},
-    {id:"ejercicios", icon:"◎", title:"Centro de práctica", detail:"6 480 preguntas por nivel", keys:"Alt+P", special:"practice"},
-    {id:"formulas", icon:"ƒ", title:"Formulario inteligente", detail:"Fórmulas y repaso rápido", keys:"Alt+F"},
-    {id:"exams", icon:"◫", title:"Simulacros", detail:"Diagnóstico, rutas y maratones", keys:"Alt+E"},
+    {id:"home", icon:"⌂", title:"Tu ruta de hoy", detail:"Misión, racha y siguiente paso", keys:"Alt+H"},
+    {id:"universo", icon:"✦", title:"Universo UniPrep", detail:"Mundos, misiones y laboratorio de ideas", keys:""},
+    {id:"cursos", icon:"▦", title:"Aprender", detail:"Cursos, temas, teoría y progreso", keys:"Alt+C"},
+    {id:"ejercicios", icon:"◎", title:"Practicar", detail:"Preguntas por curso y nivel", keys:"Alt+P", special:"practice"},
+    {id:"formulas", icon:"ƒ", title:"Fórmulas y repaso", detail:"Consulta rápida antes de practicar", keys:"Alt+F"},
+    {id:"biblioteca", icon:"▤", title:"Biblioteca", detail:"Colecciones y materiales de tu ruta", keys:""},
+    {id:"exams", icon:"◫", title:"Comprueba tu avance", detail:"Diagnósticos, retos y simulacros", keys:"Alt+E"},
     {id:"ranking", icon:"♛", title:"Ranking", detail:"Día, semana, mes, región y Perú", keys:"Alt+R"},
-    {id:"agenda", icon:"□", title:"Agenda", detail:"Planifica bloques de estudio", keys:"Alt+A"},
-    {id:"vocacional", icon:"◇", title:"Orientación vocacional", detail:"CHASIDE visual y carreras", keys:"Alt+V", special:"vocational"},
-    {id:"tutor", icon:"✦", title:"Uni · Tutor IA", detail:"Consulta libre, voz, foto y materiales", keys:"Alt+U", special:"tutor"},
+    {id:"agenda", icon:"□", title:"Organiza tu estudio", detail:"Agenda y horario semanal", keys:"Alt+A"},
+    {id:"vocacional", icon:"◇", title:"Descubre tu carrera", detail:"Orientación, carreras y universidades", keys:"Alt+V", special:"vocational"},
+    {id:"tutor", icon:"✦", title:"Tutor Uni", detail:"Consulta libre, voz, foto y materiales", keys:"Alt+U", special:"tutor"},
     {id:"perfil", icon:"◉", title:"Mi perfil", detail:"Foto, estadísticas y resultados", keys:"Alt+M"},
     {id:"notificaciones", icon:"●", title:"Notificaciones", detail:"Avisos y logros recientes", keys:""}
   ];
@@ -43,7 +45,7 @@
   let lastPointerFrame = 0;
   const focus = {duration:25*60, remaining:25*60, deadline:0, timer:0, running:false};
   const terminalLines = [
-    '<b>UNIPREP NEURAL TERMINAL · 2026.20 HARMONY</b>',
+    '<b>UNIPREP NEURAL TERMINAL · 2026.23 UNIVERSE</b>',
     '<span class="muted">Escribe help para ver los comandos disponibles.</span>'
   ];
 
@@ -91,10 +93,12 @@
     resolvedQuality = deviceQuality();
     if (!document.body) return;
     document.body.dataset.hyperQuality = resolvedQuality;
-    document.body.dataset.hackerMode = String(prefs.hacker);
+    const lightMode = document.documentElement.dataset.colorMode === "light" || document.body.dataset.colorMode === "light";
+    const hackerVisible = prefs.hacker && !lightMode;
+    document.body.dataset.hackerMode = String(hackerVisible);
     document.body.dataset.hyperCursor = String(prefs.cursor);
     document.body.dataset.hyperHud = String(prefs.hud);
-    toggleMatrix(prefs.hacker && !motionReduced);
+    toggleMatrix(hackerVisible && !motionReduced);
     updateSystemUI();
   }
 
@@ -450,8 +454,8 @@
     const input=document.querySelector(".topbar-search input");
     if(!input||input.dataset.hyperConnected)return;
     input.dataset.hyperConnected="1";
-    input.placeholder="Buscar cursos, simulacros o acciones…  Ctrl K";
-    input.setAttribute("aria-label","Abrir el centro de comandos de UniPrep");
+    input.placeholder="Buscar en UniPrep…";
+    input.setAttribute("aria-label","Buscar cursos y herramientas en UniPrep");
     input.addEventListener("focus",()=>openCommandCenter("commands"));
     input.addEventListener("pointerdown",event=>{event.preventDefault();openCommandCenter("commands");});
   }
@@ -459,12 +463,13 @@
   function toast(message) { if(window.UniprepUGEL?.mostrarToast)window.UniprepUGEL.mostrarToast(message);else window.mostrarToastPremium?.(message); }
 
   function initialize() {
-    readPrefs();createAmbient();createSystemTrigger();createMissionControl();createCommandCenter();createFocus();connectTopbarSearch();wrapNavigation();applyPrefs();scheduleDecorate();watchData();updateClock();
+    readPrefs();createAmbient();createCommandCenter();createFocus();connectTopbarSearch();wrapNavigation();applyPrefs();scheduleDecorate();watchData();updateClock();
     setInterval(updateClock,30000);setTimeout(checkAI,900);
     document.addEventListener("pointermove",pointerMove,{passive:true});document.addEventListener("pointerdown",clickFeedback,{passive:true});document.addEventListener("keydown",keyboard);
     window.addEventListener("resize",()=>{resolvedQuality=deviceQuality();document.body.dataset.hyperQuality=resolvedQuality;resizeMatrix();updateSystemUI();},{passive:true});
     window.addEventListener("online",()=>{updateSystemUI();checkAI();});window.addEventListener("offline",updateSystemUI);
     document.addEventListener("uniprep:hyperdrive-change",()=>{applyPrefs();renderCommandContent();});
+    document.addEventListener("uniprep:theme-change",applyPrefs);
     document.addEventListener("uniprep:user-ready",()=>{applyPrefs();checkAI();watchData();});
     document.addEventListener("uniprep:storage-scope-change",applyPrefs);
     const observer=new MutationObserver(()=>{scheduleDecorate();watchData();});observer.observe(document.body,{childList:true,subtree:true});

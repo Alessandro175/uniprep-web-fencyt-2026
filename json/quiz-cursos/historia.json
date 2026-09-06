@@ -1,7 +1,7 @@
 {
   "courseId": "historia",
   "nombre": "Historia Universal",
-  "version": "2026.9-cuatro-niveles-universidad",
+  "version": "2026.31-nacional-7605",
   "descripcion": "Banco original UniPrep organizado uno a uno con cada tema visible. Cada sesión temática conserva su subárea y no mezcla preguntas de otros temas.",
   "universidadesReferencia": [
     "UNAMAD",
@@ -17,15 +17,15 @@
     "basico": 70,
     "intermedio": 70,
     "avanzado": 70,
-    "admision": 70,
-    "total": 280
+    "admision": 105,
+    "total": 315
   },
   "distribucionPorTema": {
     "basico": 10,
     "intermedio": 10,
     "avanzado": 10,
-    "admision": 10,
-    "total": 40
+    "admision": 15,
+    "total": 45
   },
   "criteriosDificultad": {
     "basico": "Fundamento o procedimiento directo",
@@ -48,8 +48,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -858,6 +858,111 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNMSM; no es una pregunta oficial"
+          },
+          {
+            "id": "HUN-01-R-11",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Registro histórico y recreación del pasado",
+            "subarea": "Historia Universal",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Durante el análisis de una revisión académica vinculado con Registro histórico y recreación del pasado, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "Contrastar fuentes permite detectar coincidencias, silencios y sesgos.",
+              "Una sola fuente elimina toda duda.",
+              "El autor no influye en el documento.",
+              "Las fuentes materiales carecen de valor."
+            ],
+            "respuesta": 0,
+            "solucion": "La alternativa correcta es: Contrastar fuentes permite detectar coincidencias, silencios y sesgos. La crítica histórica compara procedencia, propósito y contenido. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HUN-01-R-12",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Registro histórico y recreación del pasado",
+            "subarea": "Historia Universal",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: En una evaluación comparativa de Registro histórico y recreación del pasado. Analiza las proposiciones: I) El contexto no altera decisiones. II) Contrastar fuentes permite detectar coincidencias, silencios y sesgos. ¿Qué alternativa evalúa correctamente ambas? Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "Solo I es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo II es correcta"
+            ],
+            "respuesta": 3,
+            "solucion": "La proposición I es falsa: La interpretación relaciona temporalidad, actores y estructuras. La proposición II es verdadera: La crítica histórica compara procedencia, propósito y contenido. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HUN-01-R-13",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Registro histórico y recreación del pasado",
+            "subarea": "Historia Universal",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: En una evaluación comparativa de Registro histórico y recreación del pasado. Analiza las proposiciones: I) Una sola fuente elimina toda duda. II) Una fuente secundaria nunca usa evidencias. ¿Qué alternativa evalúa correctamente ambas? La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "Solo II es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo I es correcta"
+            ],
+            "respuesta": 2,
+            "solucion": "La proposición I es falsa: La crítica histórica compara procedencia, propósito y contenido. La proposición II es falsa: El origen de la fuente orienta su análisis crítico. Por ello, ninguna es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HUN-01-R-14",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Registro histórico y recreación del pasado",
+            "subarea": "Historia Universal",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Al contrastar conceptos esenciales de Registro histórico y recreación del pasado. Analiza las proposiciones: I) Una fuente primaria fue producida en la época o por participantes del proceso estudiado. II) La cronología ordena hechos, pero la explicación histórica también estudia causas y consecuencias. ¿Qué alternativa evalúa correctamente ambas? Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "Ninguna es correcta",
+              "I y II son correctas",
+              "Solo I es correcta",
+              "Solo II es correcta"
+            ],
+            "respuesta": 1,
+            "solucion": "La proposición I es verdadera: El origen de la fuente orienta su análisis crítico. La proposición II es verdadera: La interpretación relaciona temporalidad, actores y estructuras. Por ello, i y ii son correctas. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HUN-01-R-15",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Registro histórico y recreación del pasado",
+            "subarea": "Historia Universal",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Al contrastar conceptos esenciales de Registro histórico y recreación del pasado. Analiza las proposiciones: I) La cronología ordena hechos, pero la explicación histórica también estudia causas y consecuencias. II) Una sola fuente elimina toda duda. ¿Qué alternativa evalúa correctamente ambas? Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es verdadera: La interpretación relaciona temporalidad, actores y estructuras. La proposición II es falsa: La crítica histórica compara procedencia, propósito y contenido. Por ello, solo i es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -877,8 +982,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -1687,6 +1792,111 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Competencias generales de admisión preuniversitaria"
+          },
+          {
+            "id": "HUN-02-R-11",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Primeras civilizaciones y mundo clásico",
+            "subarea": "Historia Universal",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: En una evaluación comparativa de Primeras civilizaciones y mundo clásico. Analiza las proposiciones: I) La ciudadanía griega incluyó a toda la población sin excepción. II) El derecho romano influyó en tradiciones jurídicas posteriores. ¿Qué alternativa evalúa correctamente ambas? Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "Solo II es correcta",
+              "Solo I es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es falsa: La vida cívica varió entre Atenas, Esparta y otras ciudades. La proposición II es verdadera: Conceptos de persona, propiedad y obligación fueron reelaborados posteriormente. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HUN-02-R-12",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Primeras civilizaciones y mundo clásico",
+            "subarea": "Historia Universal",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: En una evaluación comparativa de Primeras civilizaciones y mundo clásico. Analiza las proposiciones: I) Roma prohibió toda codificación. II) El Estado eliminó la división del trabajo. ¿Qué alternativa evalúa correctamente ambas? Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 3,
+            "solucion": "La proposición I es falsa: Conceptos de persona, propiedad y obligación fueron reelaborados posteriormente. La proposición II es falsa: Los excedentes sostuvieron especialistas y autoridades. Por ello, ninguna es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HUN-02-R-13",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Primeras civilizaciones y mundo clásico",
+            "subarea": "Historia Universal",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Al contrastar conceptos esenciales de Primeras civilizaciones y mundo clásico. Analiza las proposiciones: I) Las primeras civilizaciones urbanas se vincularon con agricultura, excedentes y organización estatal. II) La polis griega fue una comunidad política autónoma con instituciones propias. ¿Qué alternativa evalúa correctamente ambas? Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "Solo II es correcta",
+              "Ninguna es correcta",
+              "I y II son correctas",
+              "Solo I es correcta"
+            ],
+            "respuesta": 2,
+            "solucion": "La proposición I es verdadera: Los excedentes sostuvieron especialistas y autoridades. La proposición II es verdadera: La vida cívica varió entre Atenas, Esparta y otras ciudades. Por ello, i y ii son correctas. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HUN-02-R-14",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Primeras civilizaciones y mundo clásico",
+            "subarea": "Historia Universal",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Al contrastar conceptos esenciales de Primeras civilizaciones y mundo clásico. Analiza las proposiciones: I) La polis griega fue una comunidad política autónoma con instituciones propias. II) Roma prohibió toda codificación. ¿Qué alternativa evalúa correctamente ambas? Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "Ninguna es correcta",
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son correctas"
+            ],
+            "respuesta": 1,
+            "solucion": "La proposición I es verdadera: La vida cívica varió entre Atenas, Esparta y otras ciudades. La proposición II es falsa: Conceptos de persona, propiedad y obligación fueron reelaborados posteriormente. Por ello, solo i es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HUN-02-R-15",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Primeras civilizaciones y mundo clásico",
+            "subarea": "Historia Universal",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Al contrastar conceptos esenciales de Primeras civilizaciones y mundo clásico. Analiza las proposiciones: I) Roma prohibió toda codificación. II) Las primeras civilizaciones urbanas se vincularon con agricultura, excedentes y organización estatal. ¿Qué alternativa evalúa correctamente ambas? Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "Solo II es correcta",
+              "Solo I es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es falsa: Conceptos de persona, propiedad y obligación fueron reelaborados posteriormente. La proposición II es verdadera: Los excedentes sostuvieron especialistas y autoridades. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -1706,8 +1916,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -2516,6 +2726,111 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNI; no es una pregunta oficial"
+          },
+          {
+            "id": "HUN-03-R-11",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Edad Media",
+            "subarea": "Historia Universal",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: En una evaluación comparativa de Edad Media. Analiza las proposiciones: I) Las ciudades desaparecieron por completo después del año 1000. II) Todos los campesinos fueron ciudadanos libres. ¿Qué alternativa evalúa correctamente ambas? Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "Ninguna es correcta",
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son correctas"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es falsa: Ferias, rutas y burgos ampliaron intercambios. La proposición II es falsa: La fragmentación política coexistió con relaciones vasalláticas. Por ello, ninguna es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HUN-03-R-12",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Edad Media",
+            "subarea": "Historia Universal",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Al contrastar conceptos esenciales de Edad Media. Analiza las proposiciones: I) El feudalismo europeo articuló vínculos de dependencia, señoríos y una economía predominantemente agraria. II) La Iglesia tuvo influencia religiosa, cultural y política en la Europa medieval. ¿Qué alternativa evalúa correctamente ambas? Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "Ninguna es correcta",
+              "I y II son correctas"
+            ],
+            "respuesta": 3,
+            "solucion": "La proposición I es verdadera: La fragmentación política coexistió con relaciones vasalláticas. La proposición II es verdadera: Redes eclesiásticas conservaron saberes y organizaron vida social. Por ello, i y ii son correctas. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HUN-03-R-13",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Edad Media",
+            "subarea": "Historia Universal",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: Al contrastar conceptos esenciales de Edad Media. Analiza las proposiciones: I) La Iglesia tuvo influencia religiosa, cultural y política en la Europa medieval. II) Las ciudades desaparecieron por completo después del año 1000. ¿Qué alternativa evalúa correctamente ambas? Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo I es correcta",
+              "Solo II es correcta"
+            ],
+            "respuesta": 2,
+            "solucion": "La proposición I es verdadera: Redes eclesiásticas conservaron saberes y organizaron vida social. La proposición II es falsa: Ferias, rutas y burgos ampliaron intercambios. Por ello, solo i es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HUN-03-R-14",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Edad Media",
+            "subarea": "Historia Universal",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Al contrastar conceptos esenciales de Edad Media. Analiza las proposiciones: I) Las ciudades desaparecieron por completo después del año 1000. II) El feudalismo europeo articuló vínculos de dependencia, señoríos y una economía predominantemente agraria. ¿Qué alternativa evalúa correctamente ambas? Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "Ninguna es correcta",
+              "Solo II es correcta",
+              "Solo I es correcta",
+              "I y II son correctas"
+            ],
+            "respuesta": 1,
+            "solucion": "La proposición I es falsa: Ferias, rutas y burgos ampliaron intercambios. La proposición II es verdadera: La fragmentación política coexistió con relaciones vasalláticas. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HUN-03-R-15",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Edad Media",
+            "subarea": "Historia Universal",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Un estudiante utiliza un simulacro de admisión para justificar una relación de Edad Media. ¿Cuál afirmación conserva una relación conceptual válida? Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "La religión no influyó en legitimidad.",
+              "Los monasterios solo fueron centros militares.",
+              "La Iglesia tuvo influencia religiosa, cultural y política en la Europa medieval.",
+              "La Iglesia careció de tierras e instituciones educativas."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: La Iglesia tuvo influencia religiosa, cultural y política en la Europa medieval. Redes eclesiásticas conservaron saberes y organizaron vida social. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -2535,8 +2850,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -3345,6 +3660,111 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSAAC; no es una pregunta oficial"
+          },
+          {
+            "id": "HUN-04-R-11",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Expansión europea y mundo colonial",
+            "subarea": "Historia Universal",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Al contrastar conceptos esenciales de Expansión europea y mundo colonial. Analiza las proposiciones: I) La expansión europea combinó intereses comerciales, avances náuticos y competencia política. II) El sistema colonial reorganizó trabajo, tributos y recursos en beneficio de las metrópolis. ¿Qué alternativa evalúa correctamente ambas? Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "I y II son correctas",
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es verdadera: Múltiples factores impulsaron rutas y ocupaciones. La proposición II es verdadera: Instituciones coloniales articularon extracción y evangelización. Por ello, i y ii son correctas. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HUN-04-R-12",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Expansión europea y mundo colonial",
+            "subarea": "Historia Universal",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Al contrastar conceptos esenciales de Expansión europea y mundo colonial. Analiza las proposiciones: I) El sistema colonial reorganizó trabajo, tributos y recursos en beneficio de las metrópolis. II) El contacto no produjo cambios demográficos. ¿Qué alternativa evalúa correctamente ambas? Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "Solo II es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo I es correcta"
+            ],
+            "respuesta": 3,
+            "solucion": "La proposición I es verdadera: Instituciones coloniales articularon extracción y evangelización. La proposición II es falsa: Los efectos biológicos y económicos fueron profundos y desiguales. Por ello, solo i es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HUN-04-R-13",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Expansión europea y mundo colonial",
+            "subarea": "Historia Universal",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Al contrastar conceptos esenciales de Expansión europea y mundo colonial. Analiza las proposiciones: I) El contacto no produjo cambios demográficos. II) La expansión europea combinó intereses comerciales, avances náuticos y competencia política. ¿Qué alternativa evalúa correctamente ambas? Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo II es correcta",
+              "Solo I es correcta"
+            ],
+            "respuesta": 2,
+            "solucion": "La proposición I es falsa: Los efectos biológicos y económicos fueron profundos y desiguales. La proposición II es verdadera: Múltiples factores impulsaron rutas y ocupaciones. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HUN-04-R-14",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Expansión europea y mundo colonial",
+            "subarea": "Historia Universal",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Un estudiante utiliza un simulacro de admisión para justificar una relación de Expansión europea y mundo colonial. ¿Cuál afirmación conserva una relación conceptual válida? La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "La colonia mantuvo intactas todas las estructuras previas.",
+              "No existió coerción laboral.",
+              "Las metrópolis no regularon el comercio.",
+              "El sistema colonial reorganizó trabajo, tributos y recursos en beneficio de las metrópolis."
+            ],
+            "respuesta": 3,
+            "solucion": "La alternativa correcta es: El sistema colonial reorganizó trabajo, tributos y recursos en beneficio de las metrópolis. Instituciones coloniales articularon extracción y evangelización. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HUN-04-R-15",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Expansión europea y mundo colonial",
+            "subarea": "Historia Universal",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Durante el análisis de un simulacro de admisión vinculado con Expansión europea y mundo colonial, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "Ninguna especie cruzó el Atlántico.",
+              "Las epidemias fortalecieron siempre a poblaciones originarias.",
+              "El intercambio colombino trasladó especies, cultivos, enfermedades y poblaciones entre continentes.",
+              "El contacto no produjo cambios demográficos."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: El intercambio colombino trasladó especies, cultivos, enfermedades y poblaciones entre continentes. Los efectos biológicos y económicos fueron profundos y desiguales. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -3364,8 +3784,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -4174,6 +4594,111 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UCSM; no es una pregunta oficial"
+          },
+          {
+            "id": "HUN-05-R-11",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Absolutismo y era de las revoluciones",
+            "subarea": "Historia Universal",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Al contrastar conceptos esenciales de Absolutismo y era de las revoluciones. Analiza las proposiciones: I) La Ilustración defendió razón, crítica y derechos frente a autoridades tradicionales. II) Las revoluciones restauraron intacto el feudalismo. ¿Qué alternativa evalúa correctamente ambas? La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es verdadera: Sus ideas alimentaron debates sobre soberanía y ciudadanía. La proposición II es falsa: Transformaron instituciones aunque con límites y exclusiones. Por ello, solo i es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HUN-05-R-12",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Absolutismo y era de las revoluciones",
+            "subarea": "Historia Universal",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Al contrastar conceptos esenciales de Absolutismo y era de las revoluciones. Analiza las proposiciones: I) Las revoluciones restauraron intacto el feudalismo. II) El absolutismo concentró atribuciones en la monarquía y buscó reducir poderes rivales. ¿Qué alternativa evalúa correctamente ambas? Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "Solo I es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo II es correcta"
+            ],
+            "respuesta": 3,
+            "solucion": "La proposición I es falsa: Transformaron instituciones aunque con límites y exclusiones. La proposición II es verdadera: Ejército, impuestos y administración reforzaron la Corona. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HUN-05-R-13",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Absolutismo y era de las revoluciones",
+            "subarea": "Historia Universal",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Un estudiante utiliza un simulacro de admisión para justificar una relación de Absolutismo y era de las revoluciones. ¿Cuál afirmación conserva una relación conceptual válida? Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "La Ilustración defendió razón, crítica y derechos frente a autoridades tradicionales.",
+              "La Ilustración rechazó toda ciencia.",
+              "Los ilustrados sostuvieron una única doctrina política.",
+              "La razón justificó privilegios sin crítica."
+            ],
+            "respuesta": 0,
+            "solucion": "La alternativa correcta es: La Ilustración defendió razón, crítica y derechos frente a autoridades tradicionales. Sus ideas alimentaron debates sobre soberanía y ciudadanía. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HUN-05-R-14",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Absolutismo y era de las revoluciones",
+            "subarea": "Historia Universal",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Durante el análisis de un simulacro de admisión vinculado con Absolutismo y era de las revoluciones, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "Las revoluciones restauraron intacto el feudalismo.",
+              "La ciudadanía no fue discutida.",
+              "No existieron declaraciones de derechos.",
+              "Las revoluciones atlánticas cuestionaron el orden estamental y la soberanía monárquica."
+            ],
+            "respuesta": 3,
+            "solucion": "La alternativa correcta es: Las revoluciones atlánticas cuestionaron el orden estamental y la soberanía monárquica. Transformaron instituciones aunque con límites y exclusiones. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HUN-05-R-15",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Absolutismo y era de las revoluciones",
+            "subarea": "Historia Universal",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Al corregir una revisión académica sobre Absolutismo y era de las revoluciones, se debe elegir una explicación compatible con los principios de la materia. ¿Cuál cumple la condición? Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "El rey quedó subordinado a parlamentos democráticos en todos los casos.",
+              "La burocracia desapareció.",
+              "El absolutismo concentró atribuciones en la monarquía y buscó reducir poderes rivales.",
+              "El absolutismo estableció sufragio universal."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: El absolutismo concentró atribuciones en la monarquía y buscó reducir poderes rivales. Ejército, impuestos y administración reforzaron la Corona. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -4193,8 +4718,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -5003,6 +5528,111 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSA; no es una pregunta oficial"
+          },
+          {
+            "id": "HUN-06-R-11",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Revolución Industrial, imperialismo y Primera Guerra Mundial",
+            "subarea": "Historia Universal",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Al contrastar conceptos esenciales de Revolución Industrial, imperialismo y Primera Guerra Mundial. Analiza las proposiciones: I) El atentado de Sarajevo fue la única causa aislada. II) La Revolución Industrial mecanizó producción y concentró trabajo en fábricas. ¿Qué alternativa evalúa correctamente ambas? Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "Solo II es correcta",
+              "Solo I es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es falsa: La movilización convirtió una crisis balcánica en guerra general. La proposición II es verdadera: Nuevas fuentes de energía elevaron productividad y cambiaron relaciones laborales. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HUN-06-R-12",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Revolución Industrial, imperialismo y Primera Guerra Mundial",
+            "subarea": "Historia Universal",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Un estudiante utiliza un simulacro de admisión para justificar una relación de Revolución Industrial, imperialismo y Primera Guerra Mundial. ¿Cuál afirmación conserva una relación conceptual válida? Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "La expansión no usó argumentos raciales.",
+              "El imperialismo del siglo XIX vinculó expansión territorial con competencia económica y estratégica.",
+              "El imperialismo concedió igualdad política inmediata a colonias.",
+              "Las potencias renunciaron a materias primas."
+            ],
+            "respuesta": 1,
+            "solucion": "La alternativa correcta es: El imperialismo del siglo XIX vinculó expansión territorial con competencia económica y estratégica. Dominación y rivalidad reordenaron África y Asia. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HUN-06-R-13",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Revolución Industrial, imperialismo y Primera Guerra Mundial",
+            "subarea": "Historia Universal",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Durante el análisis de un simulacro de admisión vinculado con Revolución Industrial, imperialismo y Primera Guerra Mundial, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "La Primera Guerra Mundial resultó de tensiones acumuladas, alianzas y una crisis desencadenante.",
+              "El atentado de Sarajevo fue la única causa aislada.",
+              "Las alianzas impidieron ampliar el conflicto.",
+              "La guerra no afectó imperios."
+            ],
+            "respuesta": 0,
+            "solucion": "La alternativa correcta es: La Primera Guerra Mundial resultó de tensiones acumuladas, alianzas y una crisis desencadenante. La movilización convirtió una crisis balcánica en guerra general. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HUN-06-R-14",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Revolución Industrial, imperialismo y Primera Guerra Mundial",
+            "subarea": "Historia Universal",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: Al corregir una revisión académica sobre Revolución Industrial, imperialismo y Primera Guerra Mundial, se debe elegir una explicación compatible con los principios de la materia. ¿Cuál cumple la condición? Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "La industrialización eliminó la urbanización.",
+              "Las máquinas redujeron siempre la producción.",
+              "La fábrica fue una institución medieval.",
+              "La Revolución Industrial mecanizó producción y concentró trabajo en fábricas."
+            ],
+            "respuesta": 3,
+            "solucion": "La alternativa correcta es: La Revolución Industrial mecanizó producción y concentró trabajo en fábricas. Nuevas fuentes de energía elevaron productividad y cambiaron relaciones laborales. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HUN-06-R-15",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Revolución Industrial, imperialismo y Primera Guerra Mundial",
+            "subarea": "Historia Universal",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Un estudiante utiliza una revisión académica para justificar una relación de Revolución Industrial, imperialismo y Primera Guerra Mundial. ¿Cuál afirmación conserva una relación conceptual válida? Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "Las potencias renunciaron a materias primas.",
+              "La expansión no usó argumentos raciales.",
+              "El imperialismo del siglo XIX vinculó expansión territorial con competencia económica y estratégica.",
+              "El imperialismo concedió igualdad política inmediata a colonias."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: El imperialismo del siglo XIX vinculó expansión territorial con competencia económica y estratégica. Dominación y rivalidad reordenaron África y Asia. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -5022,8 +5652,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -5832,10 +6462,115 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNAMAD; no es una pregunta oficial"
+          },
+          {
+            "id": "HUN-07-R-11",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Del siglo XX al mundo contemporáneo",
+            "subarea": "Historia Universal",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: Un estudiante utiliza un simulacro de admisión para justificar una relación de Del siglo XX al mundo contemporáneo. ¿Cuál afirmación conserva una relación conceptual válida? Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "Las colonias rechazaron soberanía.",
+              "No hubo movimientos nacionalistas.",
+              "La descolonización creó nuevos Estados y cuestionó imperios europeos.",
+              "La descolonización ocurrió antes de la Primera Guerra Mundial en todos los territorios."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: La descolonización creó nuevos Estados y cuestionó imperios europeos. Procesos diversos se aceleraron tras 1945. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HUN-07-R-12",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Del siglo XX al mundo contemporáneo",
+            "subarea": "Historia Universal",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Durante el análisis de un simulacro de admisión vinculado con Del siglo XX al mundo contemporáneo, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "Todo país obtiene los mismos beneficios.",
+              "La globalización intensifica flujos de capital, información, bienes y personas, pero no elimina desigualdades.",
+              "La globalización vuelve idénticas todas las sociedades.",
+              "Las fronteras dejaron de existir jurídicamente."
+            ],
+            "respuesta": 1,
+            "solucion": "La alternativa correcta es: La globalización intensifica flujos de capital, información, bienes y personas, pero no elimina desigualdades. La interdependencia produce oportunidades y asimetrías. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HUN-07-R-13",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Del siglo XX al mundo contemporáneo",
+            "subarea": "Historia Universal",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Al corregir una revisión académica sobre Del siglo XX al mundo contemporáneo, se debe elegir una explicación compatible con los principios de la materia. ¿Cuál cumple la condición? Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "La Guerra Fría enfrentó bloques liderados por Estados Unidos y la Unión Soviética sin guerra directa total entre ambos.",
+              "La Guerra Fría fue una alianza permanente entre ambos.",
+              "No existieron conflictos periféricos.",
+              "La carrera nuclear careció de importancia."
+            ],
+            "respuesta": 0,
+            "solucion": "La alternativa correcta es: La Guerra Fría enfrentó bloques liderados por Estados Unidos y la Unión Soviética sin guerra directa total entre ambos. Competencia ideológica, militar y tecnológica marcó el periodo. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HUN-07-R-14",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Del siglo XX al mundo contemporáneo",
+            "subarea": "Historia Universal",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Un estudiante utiliza una revisión académica para justificar una relación de Del siglo XX al mundo contemporáneo. ¿Cuál afirmación conserva una relación conceptual válida? Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "La descolonización ocurrió antes de la Primera Guerra Mundial en todos los territorios.",
+              "Las colonias rechazaron soberanía.",
+              "No hubo movimientos nacionalistas.",
+              "La descolonización creó nuevos Estados y cuestionó imperios europeos."
+            ],
+            "respuesta": 3,
+            "solucion": "La alternativa correcta es: La descolonización creó nuevos Estados y cuestionó imperios europeos. Procesos diversos se aceleraron tras 1945. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HUN-07-R-15",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Del siglo XX al mundo contemporáneo",
+            "subarea": "Historia Universal",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Durante el análisis de una revisión académica vinculado con Del siglo XX al mundo contemporáneo, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "Las fronteras dejaron de existir jurídicamente.",
+              "Todo país obtiene los mismos beneficios.",
+              "La globalización intensifica flujos de capital, información, bienes y personas, pero no elimina desigualdades.",
+              "La globalización vuelve idénticas todas las sociedades."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: La globalización intensifica flujos de capital, información, bienes y personas, pero no elimina desigualdades. La interdependencia produce oportunidades y asimetrías. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
     }
   ],
-  "total": 280
+  "total": 315
 }

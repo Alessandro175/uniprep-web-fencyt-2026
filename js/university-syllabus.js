@@ -6,6 +6,7 @@
 
   const UNIVERSIDADES = ["UNAMAD", "UNSAAC", "UNMSM", "UNSA", "UNI", "PUCP", "UCSM"];
   let catalogo = {version:"", actualizado:"", aviso:"", perfiles:{}};
+  let temarioUni = {version:"", cursos:[]};
 
   function normalizar(valor) {
     return String(valor || "")
@@ -62,13 +63,35 @@
   function obtenerCursoRuta(curso) {
     if (!curso) return null;
     const temas = filtrarTemas(curso.id, curso.temas || []);
+    const contarPreguntas = tema => Object.values(tema?.niveles || {})
+      .reduce((total, nivel) => total + (Array.isArray(nivel) ? nivel.length : 0), 0);
+    const oficial = siglaActual() === "UNI" ? temarioUni.cursos?.find(item => item.id === curso.id) : null;
     return {
       ...curso,
       temas,
-      preguntas: temas.length * 40,
+      temarioOficial: oficial?.temas || null,
+      fuenteTemario: oficial ? temarioUni.fuente : null,
+      preguntas: temas.reduce((total, tema) => total + contarPreguntas(tema), 0),
       temasBase: (curso.temas || []).length,
       temarioPersonalizado: temas.length !== (curso.temas || []).length
     };
+  }
+
+  function obtenerCatalogoRuta(cursosBase) {
+    const base = cursosBase || {};
+    if (siglaActual() !== "UNI" || !temarioUni.cursos?.length) return Object.values(base).map(obtenerCursoRuta).filter(Boolean);
+    const estilos = {
+      calculo:{icono:"∫",color:"#5B8CFF",descripcion:"Límites, derivadas, integrales y sus aplicaciones."},
+      actualidad:{icono:"📰",color:"#36C6A3",descripcion:"Hechos nacionales e internacionales verificados."},
+      logica:{icono:"⚙️",color:"#A678FF",descripcion:"Proposiciones, inferencias, tablas de verdad y silogismos."},
+      ingles:{icono:"🇬🇧",color:"#FF8B70",descripcion:"Gramática, vocabulario y comprensión básica."}
+    };
+    return temarioUni.cursos.map(oficial => {
+      const existente = base[oficial.id];
+      if (existente) return {...obtenerCursoRuta(existente),nombre:oficial.nombre,area:oficial.area,temarioOficial:oficial.temas,fuenteTemario:temarioUni.fuente};
+      const estilo = estilos[oficial.id] || {icono:"📘",color:"#6C8CFF",descripcion:"Contenido exclusivo del temario UNI."};
+      return {id:oficial.id,nombre:oficial.nombre,area:oficial.area,...estilo,temas:[],temarioOficial:oficial.temas,fuenteTemario:temarioUni.fuente,preguntas:0,temasBase:0,temarioPersonalizado:true,temarioSoloReferencia:true};
+    });
   }
 
   function neutralizarPregunta(pregunta) {
@@ -114,9 +137,13 @@
 
   async function iniciar() {
     try {
-      const respuesta = await fetch("json/university-exam-profiles.json", {cache:"no-store"});
+      const [respuesta, respuestaUni] = await Promise.all([
+        fetch("json/university-exam-profiles.json", {cache:"no-store"}),
+        fetch("json/syllabus-uni-2026-2.json", {cache:"no-store"})
+      ]);
       if (!respuesta.ok) throw new Error(`HTTP ${respuesta.status}`);
       catalogo = await respuesta.json();
+      if (respuestaUni.ok) temarioUni = await respuestaUni.json();
       window.UNIPREP_EXAM_PROFILES = catalogo;
     } catch (error) {
       console.warn("UniPrep: no se pudo cargar el perfil detallado de exámenes.", error);
@@ -127,6 +154,7 @@
   window.obtenerPerfilPreguntasAdmision = perfilActual;
   window.filtrarTemasAdmision = filtrarTemas;
   window.obtenerCursoTemarioAdmision = obtenerCursoRuta;
+  window.obtenerCatalogoTemarioAdmision = obtenerCatalogoRuta;
   window.filtrarPreguntasAdmision = filtrarPreguntas;
   window.ordenarPreguntasAdmision = ordenarPreguntas;
 

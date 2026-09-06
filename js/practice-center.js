@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  const TOTAL_PREGUNTAS = 6480;
+  const TOTAL_PREGUNTAS = 7920;
   const CLAVES = {
     errores: "uniprep_practice_errors_v1",
     favoritos: "uniprep_practice_favorites_v1",
@@ -50,8 +50,8 @@
   function iniciar() {
     const badge = document.getElementById("practice-nav-badge");
     if (badge) {
-      badge.textContent = "6,480";
-      badge.title = "6,480 preguntas disponibles";
+      badge.textContent = "7,920";
+      badge.title = "7,920 preguntas disponibles";
     }
     renderizarInicio();
   }
@@ -503,6 +503,32 @@
     return typeof valor === "string" ? valor : JSON.stringify(valor, null, 2);
   }
 
+  function figuraPregunta(pregunta) {
+    const figura = pregunta?.figura;
+    if (!figura || typeof figura !== "object") return "";
+    if (figura.tipo === "reloj") {
+      const hora = Math.max(0, Math.min(11, Number(figura.hora) || 0));
+      const minuto = Math.max(0, Math.min(59, Number(figura.minuto) || 0));
+      const giroHora = hora * 30 + minuto * 0.5;
+      const giroMinuto = minuto * 6;
+      return `<div class="question-figure clock-figure" role="img" aria-label="Reloj que marca ${hora}:${String(minuto).padStart(2,"0")}">
+        <div class="clock-face"><span class="clock-number n12">12</span><span class="clock-number n3">3</span><span class="clock-number n6">6</span><span class="clock-number n9">9</span><i class="clock-hand hour" style="transform:translateX(-50%) rotate(${giroHora}deg)"></i><i class="clock-hand minute" style="transform:translateX(-50%) rotate(${giroMinuto}deg)"></i><i class="clock-pin"></i></div>
+        <strong>${hora}:${String(minuto).padStart(2,"0")}</strong></div>`;
+    }
+    if (figura.tipo === "trigonometrica") {
+      const funcion = ["sen","cos"].includes(figura.funcion) ? figura.funcion : "sen";
+      const amplitud = Math.max(1, Math.min(3, Number(figura.amplitud) || 1));
+      const periodo = Math.max(1, Math.min(4, Number(figura.periodoPi) || 2));
+      const points = Array.from({length:49},(_,i)=>{
+        const x=i/48*300, rad=i/48*periodo*Math.PI*2;
+        const y=70-(funcion==="sen"?Math.sin(rad):Math.cos(rad))*amplitud*18;
+        return `${x.toFixed(1)},${y.toFixed(1)}`;
+      }).join(" ");
+      return `<div class="question-figure trig-figure" role="img" aria-label="Gráfica de una función ${funcion}usoidal"><svg viewBox="0 0 300 140" aria-hidden="true"><path d="M0 70H300M20 8V132" class="axis"></path><polyline points="${points}" class="wave"></polyline></svg><span>Gráfica ${funcion}usoidal · amplitud ${amplitud}</span></div>`;
+    }
+    return "";
+  }
+
   function enunciadoClaro(pregunta) {
     const original = String(pregunta?.pregunta ?? pregunta?.q ?? "");
     if (typeof window.UniprepUGEL?.limpiarEnunciado === "function") {
@@ -553,6 +579,7 @@
             <div class="practice-question-tools"><button class="practice-read-button" type="button" onclick="leerPreguntaVisible()">🔊 Leer</button><button class="practice-hint-button" type="button" onclick="consultarTutorPreguntaActual('pista')">✦ Pista con IA</button></div>
           </div>
           <div class="practice-question-tags"><span class="practice-tag">${escapar(pregunta.curso)}</span><span class="practice-tag">${escapar(pregunta.tema)}</span><span class="practice-tag level">${escapar(nivel.corto)}</span>${pregunta.universidadReferencia?`<span class="practice-tag">Estilo ${escapar(pregunta.universidadReferencia)}</span>`:""}</div>
+          ${figuraPregunta(pregunta)}
           ${estimuloPregunta(pregunta) ? `<div class="practice-question-stimulus"><b>Material de lectura</b><p>${escapar(estimuloPregunta(pregunta))}</p></div>` : ""}
           <p class="practice-question-text" id="practice-question-title">${escapar(enunciado)}</p>
         </article>

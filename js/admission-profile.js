@@ -36,8 +36,8 @@
       {id:"sociales-humanidades", nombre:"Ciencias Sociales y Humanidades", descripcion:"Cursos sociales, ciudadanos y humanísticos.", cursos:["historia","historia_peru","geografia","filosofia","economia","civica"]}
     ],
     uni: [
-      {id:"aptitud-humanidades", nombre:"Aptitud Académica y Humanidades", descripcion:"Primera prueba: aptitud académica y formación humanística.", etiqueta:"PRUEBA 1", cursos:["rm","rv","comprension_lectora","lenguaje","literatura","historia","historia_peru","geografia","filosofia","economia","civica"]},
-      {id:"matematica", nombre:"Matemática", descripcion:"Segunda prueba: contenidos matemáticos.", etiqueta:"PRUEBA 2", cursos:["aritmetica","algebra","geometria","trigonometria"]},
+      {id:"aptitud-humanidades", nombre:"Aptitud Académica y Humanidades", descripcion:"Primera prueba: aptitud académica y formación humanística.", etiqueta:"PRUEBA 1", cursos:["rm","rv","lenguaje","literatura","historia","geografia","filosofia","economia","civica","psicologia","logica","actualidad","ingles"]},
+      {id:"matematica", nombre:"Matemática", descripcion:"Segunda prueba: contenidos matemáticos.", etiqueta:"PRUEBA 2", cursos:["aritmetica","algebra","geometria","trigonometria","calculo"]},
       {id:"fisica-quimica", nombre:"Física y Química", descripcion:"Tercera prueba: únicamente Física y Química.", etiqueta:"PRUEBA 3", cursos:["fisica","quimica"]}
     ],
     pucp: [
@@ -58,11 +58,88 @@
     ]
   };
   let catalogo = null;
+  let cargaEnCurso = false;
+  let eventosInstalados = false;
 
   function esc(valor) {
     const nodo = document.createElement("div");
     nodo.textContent = String(valor ?? "");
     return nodo.innerHTML;
+  }
+
+  async function fetchConTiempo(url, opciones = {}, tiempoMaximo = 7000) {
+    const controlador = new AbortController();
+    const temporizador = window.setTimeout(() => controlador.abort(), tiempoMaximo);
+    try {
+      return await fetch(url, {...opciones, signal:controlador.signal});
+    } finally {
+      window.clearTimeout(temporizador);
+    }
+  }
+
+  function mostrarEstadoCargaCatalogo() {
+    const universidad = document.getElementById("reg-universidad");
+    const procedencia = document.getElementById("reg-procedencia");
+    if (universidad) {
+      universidad.disabled = true;
+      universidad.innerHTML = '<option value="">Cargando universidades…</option>';
+    }
+    if (procedencia) {
+      procedencia.disabled = true;
+      procedencia.innerHTML = '<option value="">Cargando departamentos…</option>';
+    }
+  }
+
+  function mostrarErrorCargaCatalogo(error) {
+    const esArchivoLocal = window.location.protocol === "file:";
+    const universidad = document.getElementById("reg-universidad");
+    const procedencia = document.getElementById("reg-procedencia");
+    const nota = document.getElementById("reg-route-note");
+    const mensaje = esArchivoLocal
+      ? "UniPrep necesita abrirse desde Vercel o Live Server; no desde el archivo index.html directamente."
+      : "No pudimos traer el catálogo. Revisa que la carpeta json se haya subido completa y vuelve a intentarlo.";
+
+    if (universidad) {
+      universidad.disabled = true;
+      universidad.innerHTML = '<option value="">Universidades no disponibles</option>';
+    }
+    if (procedencia) {
+      procedencia.disabled = true;
+      procedencia.innerHTML = '<option value="">Departamentos no disponibles</option>';
+    }
+    if (nota) {
+      nota.className = "auth-route-note auth-full-field visible error catalog-error";
+      nota.innerHTML = `<b>No se quedó cargando</b><span>${esc(mensaje)}</span>${esArchivoLocal ? "" : '<button type="button" id="admission-catalog-retry">Reintentar ahora</button>'}`;
+      nota.querySelector("#admission-catalog-retry")?.addEventListener("click", iniciar, {once:true});
+    }
+    console.error("No se pudo cargar el catálogo de admisión:", error);
+  }
+
+  function limpiarErrorCargaCatalogo() {
+    const nota = document.getElementById("reg-route-note");
+    if (nota?.classList.contains("catalog-error")) {
+      nota.className = "auth-route-note auth-full-field";
+      nota.innerHTML = "";
+    }
+    const universidad = document.getElementById("reg-universidad");
+    const procedencia = document.getElementById("reg-procedencia");
+    if (universidad) universidad.disabled = false;
+    if (procedencia) procedencia.disabled = false;
+  }
+
+  async function cargarCatalogo() {
+    if (window.location.protocol === "file:") throw new Error("El protocolo file no permite cargar el catálogo JSON de forma segura");
+    const url = new URL("json/admission-profiles.json", document.baseURI).href;
+    let respuesta;
+    try {
+      respuesta = await fetchConTiempo(url, {cache:"no-store"}, 7000);
+    } catch (primerError) {
+      respuesta = await fetchConTiempo(url, {cache:"force-cache"}, 2500).catch(() => { throw primerError; });
+    }
+    if (!respuesta?.ok) throw new Error(`Catálogo no disponible (${respuesta?.status || "sin respuesta"})`);
+    const datos = await respuesta.json();
+    if (!Array.isArray(datos?.universidades) || !Array.isArray(datos?.departamentos)) throw new Error("El catálogo de admisión no tiene el formato esperado");
+    return datos;
   }
 
   function leerSeleccion() {
@@ -445,33 +522,46 @@
   }
 
   async function iniciar() {
+    if (cargaEnCurso) return;
+    cargaEnCurso = true;
+    mostrarEstadoCargaCatalogo();
     try {
-      const respuesta = await fetch("json/admission-profiles.json", {cache:"no-store"});
-      if (!respuesta.ok) throw new Error("No se pudo cargar el catálogo de admisión");
-      catalogo = await respuesta.json();
+      catalogo = await cargarCatalogo();
     } catch (error) {
-      console.error(error);
+      mostrarErrorCargaCatalogo(error);
+      cargaEnCurso = false;
       return;
     }
+    limpiarErrorCargaCatalogo();
     window.ADMISSION_CATALOG = catalogo;
-    await sincronizarDesdeSesion();
     conectarSelectores("reg", obtenerSeleccion());
     instalarBotonPerfil();
     actualizarIndicadores();
     document.dispatchEvent(new CustomEvent("uniprep:admission-ready", {detail: obtenerSeleccion()}));
 
-    window.supabaseClient?.auth?.onAuthStateChange((evento, sesion) => {
-      if (evento === "SIGNED_OUT") {
-        window.uniprepStorage?.eliminar(CLAVE);
-        reiniciarFormularioRegistro();
-        actualizarIndicadores();
-        document.dispatchEvent(new CustomEvent("uniprep:admission-change", {detail:null}));
-      }
-      if (evento === "SIGNED_IN" && sesion?.user) {
-        const remota = seleccionDesdeMetadata(sesion.user);
-        if (remota) guardarSeleccion(remota);
-      }
-    });
+    // Supabase se sincroniza en segundo plano: nunca vuelve a bloquear los selectores.
+    sincronizarDesdeSesion().then(() => {
+      conectarSelectores("reg", obtenerSeleccion());
+      actualizarIndicadores();
+      document.dispatchEvent(new CustomEvent("uniprep:admission-ready", {detail: obtenerSeleccion()}));
+    }).catch(() => {});
+
+    if (!eventosInstalados) {
+      eventosInstalados = true;
+      window.supabaseClient?.auth?.onAuthStateChange((evento, sesion) => {
+        if (evento === "SIGNED_OUT") {
+          window.uniprepStorage?.eliminar(CLAVE);
+          reiniciarFormularioRegistro();
+          actualizarIndicadores();
+          document.dispatchEvent(new CustomEvent("uniprep:admission-change", {detail:null}));
+        }
+        if (evento === "SIGNED_IN" && sesion?.user) {
+          const remota = seleccionDesdeMetadata(sesion.user);
+          if (remota) guardarSeleccion(remota);
+        }
+      });
+    }
+    cargaEnCurso = false;
   }
 
   window.obtenerSeleccionAdmision = obtenerSeleccion;

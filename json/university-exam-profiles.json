@@ -50,7 +50,8 @@
       "tipoPreguntas": ["resolución multietapa", "modelación matemática", "integración de condiciones", "alta exigencia y precisión"],
       "nivelPredeterminado": "exigente",
       "ritmo": "alto",
-      "fuentes": ["https://admision.uni.edu.pe/admision2026-2/"]
+      "fuentes": ["https://admision.uni.edu.pe/admision2026-2/", "https://universetostudy.com/temario"],
+      "temarioExclusivo": "json/syllabus-uni-2026-2.json"
     },
     "PUCP": {
       "universidadId": "pucp",

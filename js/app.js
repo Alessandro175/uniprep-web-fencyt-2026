@@ -8,6 +8,15 @@ document.addEventListener("DOMContentLoaded", async () => {
   await iniciarApp();
 });
 
+function appConLimite(operacion, tiempo = 12000, codigo = "APP_TIMEOUT") {
+  let temporizador;
+  const limite = new Promise((_, rechazar) => {
+    temporizador = setTimeout(() => rechazar(new Error(codigo)), tiempo);
+  });
+  return Promise.race([Promise.resolve(operacion), limite])
+    .finally(() => clearTimeout(temporizador));
+}
+
 async function iniciarApp() {
   const authScreen =
     document.getElementById("auth-screen");
@@ -30,7 +39,7 @@ async function iniciarApp() {
       data: { user },
       error: authError
     } =
-      await window.supabaseClient.auth.getUser();
+      await appConLimite(window.supabaseClient.auth.getUser(), 12000, "SESSION_TIMEOUT");
 
     if (authError) {
       console.error(
@@ -58,7 +67,7 @@ async function iniciarApp() {
       "function"
     ) {
       usuario =
-        await obtenerUsuarioActivo();
+        await appConLimite(obtenerUsuarioActivo(), 12000, "PROFILE_TIMEOUT");
     }
 
     // Existe usuario en Auth, pero falta el perfil.
@@ -98,12 +107,12 @@ async function iniciarApp() {
         typeof cargarPerfilUsuario ===
         "function"
       ) {
-        await cargarPerfilUsuario();
+        await appConLimite(cargarPerfilUsuario(), 12000, "PROFILE_VIEW_TIMEOUT");
       } else if (
         typeof cargarPerfil ===
         "function"
       ) {
-        await cargarPerfil();
+        await appConLimite(cargarPerfil(), 12000, "PROFILE_VIEW_TIMEOUT");
       }
     } catch (errorPerfil) {
       console.error(
@@ -118,7 +127,7 @@ async function iniciarApp() {
         typeof cargarDashboard ===
         "function"
       ) {
-        await cargarDashboard();
+        await appConLimite(cargarDashboard(), 12000, "DASHBOARD_TIMEOUT");
       }
     } catch (errorDashboard) {
       console.error(

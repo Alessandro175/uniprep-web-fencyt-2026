@@ -10,6 +10,7 @@
   const LOCAL_USAGE_KEY = "uniprep_ai_usage_local_v1";
   const timers = new Map();
   let cloudAvailable = true;
+  let universeAvailable = true;
 
   function storageRead(key, fallback) {
     return window.uniprepStorage?.leer?.(key, fallback) ?? fallback;
@@ -216,6 +217,60 @@
     }), {requests:0,inputTokens:0,outputTokens:0,estimatedUsd:0});
   }
 
+  async function saveUniverseState(input = {}, options = {}) {
+    const active = await user();
+    const safe = input && typeof input === "object" ? JSON.parse(JSON.stringify(input)) : {};
+    if (!active?.id || !window.supabaseClient || !universeAvailable) {
+      if (!options.skipQueue) queue({type:"universe_state", key:"main", payload:safe});
+      return {ok:false, local:true};
+    }
+    try {
+      const row = {user_id:active.id, state:safe, updated_at:new Date().toISOString()};
+      const {error} = await window.supabaseClient.from("universe_profiles").upsert(row, {onConflict:"user_id"});
+      if (error) throw error;
+      announce("synced", {resource:"universe"});
+      return {ok:true, data:row};
+    } catch (error) {
+      if (schemaMissing(error)) universeAvailable = false;
+      if (!options.skipQueue) queue({type:"universe_state", key:"main", payload:safe});
+      return {ok:false, local:true, error:error?.message || "universe_sync_failed"};
+    }
+  }
+
+  async function loadUniverseState() {
+    const active = await user();
+    if (!active?.id || !window.supabaseClient || !universeAvailable) return null;
+    const {data, error} = await window.supabaseClient
+      .from("universe_profiles")
+      .select("state,updated_at")
+      .eq("user_id", active.id)
+      .maybeSingle();
+    if (error) {
+      if (schemaMissing(error)) universeAvailable = false;
+      return null;
+    }
+    return data || null;
+  }
+
+  async function logUniverseEvent(eventType, payload = {}, options = {}) {
+    const active = await user();
+    const safeType = cleanText(eventType || "interaction", 60);
+    const safePayload = payload && typeof payload === "object" ? JSON.parse(JSON.stringify(payload)) : {};
+    if (!active?.id || !window.supabaseClient || !universeAvailable) {
+      if (!options.skipQueue) queue({type:"universe_event", key:`${safeType}_${Date.now()}`, payload:{eventType:safeType,data:safePayload}});
+      return {ok:false, local:true};
+    }
+    try {
+      const {error} = await window.supabaseClient.from("universe_events").insert({user_id:active.id,event_type:safeType,event_data:safePayload});
+      if (error) throw error;
+      return {ok:true};
+    } catch (error) {
+      if (schemaMissing(error)) universeAvailable = false;
+      if (!options.skipQueue) queue({type:"universe_event", key:`${safeType}_${Date.now()}`, payload:{eventType:safeType,data:safePayload}});
+      return {ok:false, local:true, error:error?.message || "universe_event_failed"};
+    }
+  }
+
   async function flushQueue() {
     if (!navigator.onLine) return;
     const items = storageRead(QUEUE_KEY, []);
@@ -227,6 +282,8 @@
       if (item.type === "study_pack") result = await saveStudyPack(item.payload, {skipQueue:true});
       if (item.type === "delete_pack") result = await deleteStudyPack(item.payload?.id, {skipQueue:true});
       if (item.type === "vocational") result = await saveVocationalResult(item.payload, {skipQueue:true});
+      if (item.type === "universe_state") result = await saveUniverseState(item.payload, {skipQueue:true});
+      if (item.type === "universe_event") result = await logUniverseEvent(item.payload?.eventType, item.payload?.data, {skipQueue:true});
       if (!result?.ok) pending.push(item);
     }
     storageWrite(QUEUE_KEY, pending);
@@ -245,6 +302,9 @@
     saveFeedback,
     trackUsage,
     localUsageSummary,
+    saveUniverseState,
+    loadUniverseState,
+    logUniverseEvent,
     flushQueue,
     isConfigured:() => cloudAvailable
   };

@@ -1,7 +1,7 @@
 {
   "courseId": "geometria",
   "nombre": "Geometría",
-  "version": "2026.9-cuatro-niveles-universidad",
+  "version": "2026.31-nacional-7605",
   "descripcion": "Banco original UniPrep organizado uno a uno con cada tema visible. Cada sesión temática conserva su subárea y no mezcla preguntas de otros temas.",
   "universidadesReferencia": [
     "UNAMAD",
@@ -17,15 +17,15 @@
     "basico": 110,
     "intermedio": 110,
     "avanzado": 110,
-    "admision": 110,
-    "total": 440
+    "admision": 165,
+    "total": 495
   },
   "distribucionPorTema": {
     "basico": 10,
     "intermedio": 10,
     "avanzado": 10,
-    "admision": 10,
-    "total": 40
+    "admision": 15,
+    "total": 45
   },
   "criteriosDificultad": {
     "basico": "Fundamento o procedimiento directo",
@@ -48,8 +48,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -858,6 +858,111 @@
             "explicacion": "Se conectan Pitágoras, área y la relación A=rs. El ejercicio queda archivado únicamente en el bloque «Fundamentos de geometría plana». Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Competencias generales de admisión preuniversitaria"
+          },
+          {
+            "id": "GEO-01-R-11",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Fundamentos de geometría plana",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Tema Fundamentos de geometría plana. En el triángulo ABC, la bisectriz interior desde A divide BC en segmentos proporcionales AB:AC=7:8. Si BC=60, ¿cuánto mide el segmento adyacente a AB? Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "28",
+              "32",
+              "60",
+              "4"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Fundamentos de geometría plana. Por el teorema de la bisectriz, BD/DC=7/8. Como BC=60, cada parte de razón vale 4; BD=7·4=28. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se combina una razón geométrica con la longitud total. El ejercicio queda archivado únicamente en el bloque «Fundamentos de geometría plana». Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "GEO-01-R-12",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Fundamentos de geometría plana",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Tema Fundamentos de geometría plana. Un triángulo rectángulo tiene catetos 36 y 48. Determina el radio de su circunferencia inscrita usando área y semiperímetro. Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "30",
+              "6",
+              "13,2",
+              "12"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Fundamentos de geometría plana. La hipotenusa es 60; el área es 864 y el semiperímetro es 72. Como A=rs, r=864/72=12. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se conectan Pitágoras, área y la relación A=rs. El ejercicio queda archivado únicamente en el bloque «Fundamentos de geometría plana». Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "GEO-01-R-13",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Fundamentos de geometría plana",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Tema Fundamentos de geometría plana. Un triángulo rectángulo tiene catetos 39 y 52. Determina el radio de su circunferencia inscrita usando área y semiperímetro. La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "6,5",
+              "14,3",
+              "13",
+              "32,5"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Fundamentos de geometría plana. La hipotenusa es 65; el área es 1014 y el semiperímetro es 78. Como A=rs, r=1014/78=13. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se conectan Pitágoras, área y la relación A=rs. El ejercicio queda archivado únicamente en el bloque «Fundamentos de geometría plana». Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "GEO-01-R-14",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Fundamentos de geometría plana",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Tema Fundamentos de geometría plana. Un triángulo rectángulo tiene catetos 42 y 56. Determina el radio de su circunferencia inscrita usando área y semiperímetro. Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "15,4",
+              "14",
+              "35",
+              "7"
+            ],
+            "respuesta": 1,
+            "solucion": "Aplicación específica de Fundamentos de geometría plana. La hipotenusa es 70; el área es 1176 y el semiperímetro es 84. Como A=rs, r=1176/84=14. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se conectan Pitágoras, área y la relación A=rs. El ejercicio queda archivado únicamente en el bloque «Fundamentos de geometría plana». Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "GEO-01-R-15",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Fundamentos de geometría plana",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Tema Fundamentos de geometría plana. Un triángulo rectángulo tiene catetos 45 y 60. Determina el radio de su circunferencia inscrita usando área y semiperímetro. Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "15",
+              "37,5",
+              "7,5",
+              "16,5"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Fundamentos de geometría plana. La hipotenusa es 75; el área es 1350 y el semiperímetro es 90. Como A=rs, r=1350/90=15. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se conectan Pitágoras, área y la relación A=rs. El ejercicio queda archivado únicamente en el bloque «Fundamentos de geometría plana». Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -877,8 +982,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -1687,6 +1792,111 @@
             "explicacion": "Se conectan Pitágoras, área y la relación A=rs. El ejercicio queda archivado únicamente en el bloque «Ángulos». Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNI; no es una pregunta oficial"
+          },
+          {
+            "id": "GEO-02-R-11",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Ángulos",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Tema Ángulos. Un triángulo rectángulo tiene catetos 36 y 48. Determina el radio de su circunferencia inscrita usando área y semiperímetro. Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "12",
+              "30",
+              "6",
+              "13,2"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Ángulos. La hipotenusa es 60; el área es 864 y el semiperímetro es 72. Como A=rs, r=864/72=12. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se conectan Pitágoras, área y la relación A=rs. El ejercicio queda archivado únicamente en el bloque «Ángulos». Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "GEO-02-R-12",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Ángulos",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Tema Ángulos. Un triángulo rectángulo tiene catetos 39 y 52. Determina el radio de su circunferencia inscrita usando área y semiperímetro. Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "32,5",
+              "6,5",
+              "14,3",
+              "13"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Ángulos. La hipotenusa es 65; el área es 1014 y el semiperímetro es 78. Como A=rs, r=1014/78=13. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se conectan Pitágoras, área y la relación A=rs. El ejercicio queda archivado únicamente en el bloque «Ángulos». Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "GEO-02-R-13",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Ángulos",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Tema Ángulos. Un triángulo rectángulo tiene catetos 42 y 56. Determina el radio de su circunferencia inscrita usando área y semiperímetro. Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "7",
+              "15,4",
+              "14",
+              "35"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Ángulos. La hipotenusa es 70; el área es 1176 y el semiperímetro es 84. Como A=rs, r=1176/84=14. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se conectan Pitágoras, área y la relación A=rs. El ejercicio queda archivado únicamente en el bloque «Ángulos». Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "GEO-02-R-14",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Ángulos",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Tema Ángulos. Un triángulo rectángulo tiene catetos 45 y 60. Determina el radio de su circunferencia inscrita usando área y semiperímetro. Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "16,5",
+              "15",
+              "37,5",
+              "7,5"
+            ],
+            "respuesta": 1,
+            "solucion": "Aplicación específica de Ángulos. La hipotenusa es 75; el área es 1350 y el semiperímetro es 90. Como A=rs, r=1350/90=15. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se conectan Pitágoras, área y la relación A=rs. El ejercicio queda archivado únicamente en el bloque «Ángulos». Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "GEO-02-R-15",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Ángulos",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Tema Ángulos. Un triángulo rectángulo tiene catetos 48 y 64. Determina el radio de su circunferencia inscrita usando área y semiperímetro. Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "16",
+              "40",
+              "8",
+              "17,6"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Ángulos. La hipotenusa es 80; el área es 1536 y el semiperímetro es 96. Como A=rs, r=1536/96=16. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se conectan Pitágoras, área y la relación A=rs. El ejercicio queda archivado únicamente en el bloque «Ángulos». Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -1706,8 +1916,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -2516,6 +2726,111 @@
             "explicacion": "Se conectan Pitágoras, área y la relación A=rs. El ejercicio queda archivado únicamente en el bloque «Triángulos». Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSAAC; no es una pregunta oficial"
+          },
+          {
+            "id": "GEO-03-R-11",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Triángulos",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Tema Triángulos. Un triángulo rectángulo tiene catetos 39 y 52. Determina el radio de su circunferencia inscrita usando área y semiperímetro. Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "13",
+              "32,5",
+              "6,5",
+              "14,3"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Triángulos. La hipotenusa es 65; el área es 1014 y el semiperímetro es 78. Como A=rs, r=1014/78=13. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se conectan Pitágoras, área y la relación A=rs. El ejercicio queda archivado únicamente en el bloque «Triángulos». Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "GEO-03-R-12",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Triángulos",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Tema Triángulos. Un triángulo rectángulo tiene catetos 42 y 56. Determina el radio de su circunferencia inscrita usando área y semiperímetro. Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "35",
+              "7",
+              "15,4",
+              "14"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Triángulos. La hipotenusa es 70; el área es 1176 y el semiperímetro es 84. Como A=rs, r=1176/84=14. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se conectan Pitágoras, área y la relación A=rs. El ejercicio queda archivado únicamente en el bloque «Triángulos». Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "GEO-03-R-13",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Triángulos",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: Tema Triángulos. Un triángulo rectángulo tiene catetos 45 y 60. Determina el radio de su circunferencia inscrita usando área y semiperímetro. Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "7,5",
+              "16,5",
+              "15",
+              "37,5"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Triángulos. La hipotenusa es 75; el área es 1350 y el semiperímetro es 90. Como A=rs, r=1350/90=15. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se conectan Pitágoras, área y la relación A=rs. El ejercicio queda archivado únicamente en el bloque «Triángulos». Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "GEO-03-R-14",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Triángulos",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Tema Triángulos. Un triángulo rectángulo tiene catetos 48 y 64. Determina el radio de su circunferencia inscrita usando área y semiperímetro. Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "17,6",
+              "16",
+              "40",
+              "8"
+            ],
+            "respuesta": 1,
+            "solucion": "Aplicación específica de Triángulos. La hipotenusa es 80; el área es 1536 y el semiperímetro es 96. Como A=rs, r=1536/96=16. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se conectan Pitágoras, área y la relación A=rs. El ejercicio queda archivado únicamente en el bloque «Triángulos». Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "GEO-03-R-15",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Triángulos",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Tema Triángulos. En el triángulo ABC, la bisectriz interior desde A divide BC en segmentos proporcionales AB:AC=3:4. Si BC=28, ¿cuánto mide el segmento adyacente a AB? Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "28",
+              "4",
+              "12",
+              "16"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Triángulos. Por el teorema de la bisectriz, BD/DC=3/4. Como BC=28, cada parte de razón vale 4; BD=3·4=12. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se combina una razón geométrica con la longitud total. El ejercicio queda archivado únicamente en el bloque «Triángulos». Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -2535,8 +2850,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -3345,6 +3660,111 @@
             "explicacion": "Se contrastan dos expresiones equivalentes del área del trapecio. El ejercicio queda archivado únicamente en el bloque «Polígonos». Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UCSM; no es una pregunta oficial"
+          },
+          {
+            "id": "GEO-04-R-11",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Polígonos",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Tema Polígonos. Un trapecio tiene bases 38 y 10. Su mediana mide 24 y la altura 5. Calcula el área y verifica que coincide con «mediana × altura». Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "120",
+              "70",
+              "240",
+              "950"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Polígonos. A=(B+b)h/2=(38+10)·5/2=120. La mediana es 24; al multiplicarla por 5 también resulta 120. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos expresiones equivalentes del área del trapecio. El ejercicio queda archivado únicamente en el bloque «Polígonos». Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "GEO-04-R-12",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Polígonos",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Tema Polígonos. Un trapecio tiene bases 40 y 12. Su mediana mide 26 y la altura 6. Calcula el área y verifica que coincide con «mediana × altura». Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "84",
+              "312",
+              "1440",
+              "156"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Polígonos. A=(B+b)h/2=(40+12)·6/2=156. La mediana es 26; al multiplicarla por 6 también resulta 156. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos expresiones equivalentes del área del trapecio. El ejercicio queda archivado únicamente en el bloque «Polígonos». Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "GEO-04-R-13",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Polígonos",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Tema Polígonos. Un trapecio tiene bases 42 y 14. Su mediana mide 28 y la altura 7. Calcula el área y verifica que coincide con «mediana × altura». Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "392",
+              "2058",
+              "196",
+              "98"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Polígonos. A=(B+b)h/2=(42+14)·7/2=196. La mediana es 28; al multiplicarla por 7 también resulta 196. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos expresiones equivalentes del área del trapecio. El ejercicio queda archivado únicamente en el bloque «Polígonos». Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "GEO-04-R-14",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Polígonos",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Tema Polígonos. Un polígono convexo tiene 16 lados. ¿Cuántas diagonales posee y por qué se divide entre dos en la fórmula? La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "208",
+              "112",
+              "120",
+              "104"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Polígonos. Desde cada vértice salen 13 diagonales: 16(13). Cada diagonal se contó dos veces, así que D=16(13)/2=104. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se realiza un conteo doble y se corrige la duplicación. El ejercicio queda archivado únicamente en el bloque «Polígonos». Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "GEO-04-R-15",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Polígonos",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Tema Polígonos. Un polígono convexo tiene 17 lados. ¿Cuántas diagonales posee y por qué se divide entre dos en la fórmula? Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "127.5",
+              "136",
+              "119",
+              "238"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Polígonos. Desde cada vértice salen 14 diagonales: 17(14). Cada diagonal se contó dos veces, así que D=17(14)/2=119. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se realiza un conteo doble y se corrige la duplicación. El ejercicio queda archivado únicamente en el bloque «Polígonos». Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -3364,8 +3784,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -4174,6 +4594,111 @@
             "explicacion": "Se distingue el segmento externo de la longitud total de la secante. El ejercicio queda archivado únicamente en el bloque «Circunferencias». Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSA; no es una pregunta oficial"
+          },
+          {
+            "id": "GEO-05-R-11",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Circunferencias",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Tema Circunferencias. Desde un punto exterior se traza una secante con segmento externo 16 e interno 6, y una tangente. Halla la longitud de la tangente. La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "18,76",
+              "352",
+              "9,8",
+              "22"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Circunferencias. Por potencia de un punto, T²=16(16+6)=352; por tanto T=√352=18,76. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se distingue el segmento externo de la longitud total de la secante. El ejercicio queda archivado únicamente en el bloque «Circunferencias». Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "GEO-05-R-12",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Circunferencias",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Tema Circunferencias. Desde un punto exterior se traza una secante con segmento externo 17 e interno 7, y una tangente. Halla la longitud de la tangente. Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "408",
+              "10,91",
+              "24",
+              "20,2"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Circunferencias. Por potencia de un punto, T²=17(17+7)=408; por tanto T=√408=20,2. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se distingue el segmento externo de la longitud total de la secante. El ejercicio queda archivado únicamente en el bloque «Circunferencias». Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "GEO-05-R-13",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Circunferencias",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Tema Circunferencias. En una circunferencia de radio 15, una cuerda está a distancia 13 del centro. ¿Cuál es su longitud? Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "14,97",
+              "7,48",
+              "17",
+              "19,85"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Circunferencias. La perpendicular del centro biseca la cuerda. La semicuarda vale √(15²−13²)=7,48; la cuerda mide 14,97. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se forma un triángulo rectángulo con radio, distancia y semicuarda. El ejercicio queda archivado únicamente en el bloque «Circunferencias». Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "GEO-05-R-14",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Circunferencias",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Tema Circunferencias. En una circunferencia de radio 16, una cuerda está a distancia 14 del centro. ¿Cuál es su longitud? Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "7,75",
+              "18",
+              "21,26",
+              "15,49"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Circunferencias. La perpendicular del centro biseca la cuerda. La semicuarda vale √(16²−14²)=7,75; la cuerda mide 15,49. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se forma un triángulo rectángulo con radio, distancia y semicuarda. El ejercicio queda archivado únicamente en el bloque «Circunferencias». Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "GEO-05-R-15",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Circunferencias",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Tema Circunferencias. En una circunferencia de radio 17, una cuerda está a distancia 15 del centro. ¿Cuál es su longitud? Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "19",
+              "22,67",
+              "16",
+              "8"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Circunferencias. La perpendicular del centro biseca la cuerda. La semicuarda vale √(17²−15²)=8; la cuerda mide 16. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se forma un triángulo rectángulo con radio, distancia y semicuarda. El ejercicio queda archivado únicamente en el bloque «Circunferencias». Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -4193,8 +4718,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -5003,6 +5528,111 @@
             "explicacion": "Se conectan Pitágoras, área y la relación A=rs. El ejercicio queda archivado únicamente en el bloque «Proporcionalidad y semejanza». Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNAMAD; no es una pregunta oficial"
+          },
+          {
+            "id": "GEO-06-R-11",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Proporcionalidad y semejanza",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Tema Proporcionalidad y semejanza. Un triángulo rectángulo tiene catetos 48 y 64. Determina el radio de su circunferencia inscrita usando área y semiperímetro. Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "16",
+              "40",
+              "8",
+              "17,6"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Proporcionalidad y semejanza. La hipotenusa es 80; el área es 1536 y el semiperímetro es 96. Como A=rs, r=1536/96=16. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se conectan Pitágoras, área y la relación A=rs. El ejercicio queda archivado únicamente en el bloque «Proporcionalidad y semejanza». Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "GEO-06-R-12",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Proporcionalidad y semejanza",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Tema Proporcionalidad y semejanza. En el triángulo ABC, la bisectriz interior desde A divide BC en segmentos proporcionales AB:AC=3:4. Si BC=28, ¿cuánto mide el segmento adyacente a AB? Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "4",
+              "12",
+              "16",
+              "28"
+            ],
+            "respuesta": 1,
+            "solucion": "Aplicación específica de Proporcionalidad y semejanza. Por el teorema de la bisectriz, BD/DC=3/4. Como BC=28, cada parte de razón vale 4; BD=3·4=12. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se combina una razón geométrica con la longitud total. El ejercicio queda archivado únicamente en el bloque «Proporcionalidad y semejanza». Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "GEO-06-R-13",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Proporcionalidad y semejanza",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Tema Proporcionalidad y semejanza. En el triángulo ABC, la bisectriz interior desde A divide BC en segmentos proporcionales AB:AC=4:5. Si BC=45, ¿cuánto mide el segmento adyacente a AB? Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "20",
+              "25",
+              "45",
+              "5"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Proporcionalidad y semejanza. Por el teorema de la bisectriz, BD/DC=4/5. Como BC=45, cada parte de razón vale 5; BD=4·5=20. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se combina una razón geométrica con la longitud total. El ejercicio queda archivado únicamente en el bloque «Proporcionalidad y semejanza». Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "GEO-06-R-14",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Proporcionalidad y semejanza",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: Tema Proporcionalidad y semejanza. En el triángulo ABC, la bisectriz interior desde A divide BC en segmentos proporcionales AB:AC=5:6. Si BC=22, ¿cuánto mide el segmento adyacente a AB? Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "12",
+              "22",
+              "2",
+              "10"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Proporcionalidad y semejanza. Por el teorema de la bisectriz, BD/DC=5/6. Como BC=22, cada parte de razón vale 2; BD=5·2=10. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se combina una razón geométrica con la longitud total. El ejercicio queda archivado únicamente en el bloque «Proporcionalidad y semejanza». Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "GEO-06-R-15",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Proporcionalidad y semejanza",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Tema Proporcionalidad y semejanza. En el triángulo ABC, la bisectriz interior desde A divide BC en segmentos proporcionales AB:AC=6:7. Si BC=39, ¿cuánto mide el segmento adyacente a AB? Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "39",
+              "3",
+              "18",
+              "21"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Proporcionalidad y semejanza. Por el teorema de la bisectriz, BD/DC=6/7. Como BC=39, cada parte de razón vale 3; BD=6·3=18. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se combina una razón geométrica con la longitud total. El ejercicio queda archivado únicamente en el bloque «Proporcionalidad y semejanza». Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -5022,8 +5652,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -5832,6 +6462,111 @@
             "explicacion": "Se distingue el segmento externo de la longitud total de la secante. El ejercicio queda archivado únicamente en el bloque «Relaciones métricas en triángulos y circunferencias». Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de PUCP; no es una pregunta oficial"
+          },
+          {
+            "id": "GEO-07-R-11",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Relaciones métricas en triángulos y circunferencias",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: Tema Relaciones métricas en triángulos y circunferencias. En una circunferencia de radio 15, una cuerda está a distancia 13 del centro. ¿Cuál es su longitud? Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "17",
+              "19,85",
+              "14,97",
+              "7,48"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Relaciones métricas en triángulos y circunferencias. La perpendicular del centro biseca la cuerda. La semicuarda vale √(15²−13²)=7,48; la cuerda mide 14,97. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se forma un triángulo rectángulo con radio, distancia y semicuarda. El ejercicio queda archivado únicamente en el bloque «Relaciones métricas en triángulos y circunferencias». Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "GEO-07-R-12",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Relaciones métricas en triángulos y circunferencias",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Tema Relaciones métricas en triángulos y circunferencias. En una circunferencia de radio 16, una cuerda está a distancia 14 del centro. ¿Cuál es su longitud? Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "21,26",
+              "15,49",
+              "7,75",
+              "18"
+            ],
+            "respuesta": 1,
+            "solucion": "Aplicación específica de Relaciones métricas en triángulos y circunferencias. La perpendicular del centro biseca la cuerda. La semicuarda vale √(16²−14²)=7,75; la cuerda mide 15,49. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se forma un triángulo rectángulo con radio, distancia y semicuarda. El ejercicio queda archivado únicamente en el bloque «Relaciones métricas en triángulos y circunferencias». Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "GEO-07-R-13",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Relaciones métricas en triángulos y circunferencias",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Tema Relaciones métricas en triángulos y circunferencias. En una circunferencia de radio 17, una cuerda está a distancia 15 del centro. ¿Cuál es su longitud? Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "16",
+              "8",
+              "19",
+              "22,67"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Relaciones métricas en triángulos y circunferencias. La perpendicular del centro biseca la cuerda. La semicuarda vale √(17²−15²)=8; la cuerda mide 16. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se forma un triángulo rectángulo con radio, distancia y semicuarda. El ejercicio queda archivado únicamente en el bloque «Relaciones métricas en triángulos y circunferencias». Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "GEO-07-R-14",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Relaciones métricas en triángulos y circunferencias",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Tema Relaciones métricas en triángulos y circunferencias. En una circunferencia de radio 18, una cuerda está a distancia 16 del centro. ¿Cuál es su longitud? Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "8,25",
+              "20",
+              "24,08",
+              "16,49"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Relaciones métricas en triángulos y circunferencias. La perpendicular del centro biseca la cuerda. La semicuarda vale √(18²−16²)=8,25; la cuerda mide 16,49. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se forma un triángulo rectángulo con radio, distancia y semicuarda. El ejercicio queda archivado únicamente en el bloque «Relaciones métricas en triángulos y circunferencias». Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "GEO-07-R-15",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Relaciones métricas en triángulos y circunferencias",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Tema Relaciones métricas en triángulos y circunferencias. En una circunferencia de radio 19, una cuerda está a distancia 17 del centro. ¿Cuál es su longitud? La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "21",
+              "25,5",
+              "16,97",
+              "8,49"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Relaciones métricas en triángulos y circunferencias. La perpendicular del centro biseca la cuerda. La semicuarda vale √(19²−17²)=8,49; la cuerda mide 16,97. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se forma un triángulo rectángulo con radio, distancia y semicuarda. El ejercicio queda archivado únicamente en el bloque «Relaciones métricas en triángulos y circunferencias». Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -5851,8 +6586,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -6661,6 +7396,111 @@
             "explicacion": "Se contrastan dos expresiones equivalentes del área del trapecio. El ejercicio queda archivado únicamente en el bloque «Áreas de regiones poligonales y circulares». Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNMSM; no es una pregunta oficial"
+          },
+          {
+            "id": "GEO-08-R-11",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Áreas de regiones poligonales y circulares",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Tema Áreas de regiones poligonales y circulares. Un polígono convexo tiene 17 lados. ¿Cuántas diagonales posee y por qué se divide entre dos en la fórmula? Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "127.5",
+              "136",
+              "119",
+              "238"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Áreas de regiones poligonales y circulares. Desde cada vértice salen 14 diagonales: 17(14). Cada diagonal se contó dos veces, así que D=17(14)/2=119. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se realiza un conteo doble y se corrige la duplicación. El ejercicio queda archivado únicamente en el bloque «Áreas de regiones poligonales y circulares». Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "GEO-08-R-12",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Áreas de regiones poligonales y circulares",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Tema Áreas de regiones poligonales y circulares. Un polígono convexo tiene 18 lados. ¿Cuántas diagonales posee y por qué se divide entre dos en la fórmula? La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "153",
+              "135",
+              "270",
+              "144"
+            ],
+            "respuesta": 1,
+            "solucion": "Aplicación específica de Áreas de regiones poligonales y circulares. Desde cada vértice salen 15 diagonales: 18(15). Cada diagonal se contó dos veces, así que D=18(15)/2=135. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se realiza un conteo doble y se corrige la duplicación. El ejercicio queda archivado únicamente en el bloque «Áreas de regiones poligonales y circulares». Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "GEO-08-R-13",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Áreas de regiones poligonales y circulares",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Tema Áreas de regiones poligonales y circulares. Un polígono convexo tiene 19 lados. ¿Cuántas diagonales posee y por qué se divide entre dos en la fórmula? Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "152",
+              "304",
+              "161.5",
+              "171"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Áreas de regiones poligonales y circulares. Desde cada vértice salen 16 diagonales: 19(16). Cada diagonal se contó dos veces, así que D=19(16)/2=152. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se realiza un conteo doble y se corrige la duplicación. El ejercicio queda archivado únicamente en el bloque «Áreas de regiones poligonales y circulares». Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "GEO-08-R-14",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Áreas de regiones poligonales y circulares",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Tema Áreas de regiones poligonales y circulares. Un polígono convexo tiene 20 lados. ¿Cuántas diagonales posee y por qué se divide entre dos en la fórmula? Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "340",
+              "180",
+              "190",
+              "170"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Áreas de regiones poligonales y circulares. Desde cada vértice salen 17 diagonales: 20(17). Cada diagonal se contó dos veces, así que D=20(17)/2=170. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se realiza un conteo doble y se corrige la duplicación. El ejercicio queda archivado únicamente en el bloque «Áreas de regiones poligonales y circulares». Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "GEO-08-R-15",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Áreas de regiones poligonales y circulares",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Tema Áreas de regiones poligonales y circulares. Un trapecio tiene bases 34 y 6. Su mediana mide 20 y la altura 9. Calcula el área y verifica que coincide con «mediana × altura». Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "360",
+              "918",
+              "180",
+              "126"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Áreas de regiones poligonales y circulares. A=(B+b)h/2=(34+6)·9/2=180. La mediana es 20; al multiplicarla por 9 también resulta 180. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos expresiones equivalentes del área del trapecio. El ejercicio queda archivado únicamente en el bloque «Áreas de regiones poligonales y circulares». Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -6680,8 +7520,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -7490,6 +8330,111 @@
             "explicacion": "Primero se analiza el sistema completo y luego un bloque para obtener la tensión. El ejercicio queda archivado únicamente en el bloque «Geometría del espacio». Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Competencias generales de admisión preuniversitaria"
+          },
+          {
+            "id": "GEO-09-R-11",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Geometría del espacio",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Tema Geometría del espacio. Un bloque de 17 kg es jalado horizontalmente con 100 N sobre una superficie con μ=0,2. Usa g=10 m/s². ¿Cuál es su aceleración? Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "2 m/s²",
+              "7,88 m/s²",
+              "3,88 m/s²",
+              "5,88 m/s²"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Geometría del espacio. N=mg=170 N; fr=μN=34 N. La fuerza neta es 66 N y a=Fnet/m=3,88 m/s². Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se calcula primero la fricción y luego la fuerza neta. El ejercicio queda archivado únicamente en el bloque «Geometría del espacio». Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "GEO-09-R-12",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Geometría del espacio",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Tema Geometría del espacio. Un bloque de 18 kg es jalado horizontalmente con 105 N sobre una superficie con μ=0,25. Usa g=10 m/s². ¿Cuál es su aceleración? Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "8,33 m/s²",
+              "3,33 m/s²",
+              "5,83 m/s²",
+              "2,5 m/s²"
+            ],
+            "respuesta": 1,
+            "solucion": "Aplicación específica de Geometría del espacio. N=mg=180 N; fr=μN=45 N. La fuerza neta es 60 N y a=Fnet/m=3,33 m/s². Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se calcula primero la fricción y luego la fuerza neta. El ejercicio queda archivado únicamente en el bloque «Geometría del espacio». Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "GEO-09-R-13",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Geometría del espacio",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Tema Geometría del espacio. Un bloque de 19 kg es jalado horizontalmente con 110 N sobre una superficie con μ=0,3. Usa g=10 m/s². ¿Cuál es su aceleración? Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "2,79 m/s²",
+              "5,79 m/s²",
+              "3 m/s²",
+              "8,79 m/s²"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Geometría del espacio. N=mg=190 N; fr=μN=57 N. La fuerza neta es 53 N y a=Fnet/m=2,79 m/s². Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se calcula primero la fricción y luego la fuerza neta. El ejercicio queda archivado únicamente en el bloque «Geometría del espacio». Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "GEO-09-R-14",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Geometría del espacio",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Tema Geometría del espacio. Dos bloques de 3 kg y 9 kg unidos por una cuerda se jalan con 100 N sobre una mesa, ambos con μ=0.2. Usa g=10. Halla la aceleración del sistema y la tensión sobre el bloque de 3 kg; marca la tensión. Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "100 N",
+              "19 N",
+              "75 N",
+              "25 N"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Geometría del espacio. Para el sistema: fr total=24 N y a=(100−24)/12=6,33 m/s². En el bloque 3: T−6=3(6,33), así que T=25 N. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Primero se analiza el sistema completo y luego un bloque para obtener la tensión. El ejercicio queda archivado únicamente en el bloque «Geometría del espacio». Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "GEO-09-R-15",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Geometría del espacio",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: Tema Geometría del espacio. Dos bloques de 4 kg y 10 kg unidos por una cuerda se jalan con 105 N sobre una mesa, ambos con μ=0.2. Usa g=10. Halla la aceleración del sistema y la tensión sobre el bloque de 4 kg; marca la tensión. Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "22 N",
+              "75 N",
+              "30 N",
+              "105 N"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Geometría del espacio. Para el sistema: fr total=28 N y a=(105−28)/14=5,5 m/s². En el bloque 4: T−8=4(5,5), así que T=30 N. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Primero se analiza el sistema completo y luego un bloque para obtener la tensión. El ejercicio queda archivado únicamente en el bloque «Geometría del espacio». Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -7509,8 +8454,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -8319,6 +9264,111 @@
             "explicacion": "Se distingue el segmento externo de la longitud total de la secante. El ejercicio queda archivado únicamente en el bloque «Secciones cónicas». Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNI; no es una pregunta oficial"
+          },
+          {
+            "id": "GEO-10-R-11",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Secciones cónicas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Tema Secciones cónicas. En una circunferencia de radio 18, una cuerda está a distancia 16 del centro. ¿Cuál es su longitud? Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "20",
+              "24,08",
+              "16,49",
+              "8,25"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Secciones cónicas. La perpendicular del centro biseca la cuerda. La semicuarda vale √(18²−16²)=8,25; la cuerda mide 16,49. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se forma un triángulo rectángulo con radio, distancia y semicuarda. El ejercicio queda archivado únicamente en el bloque «Secciones cónicas». Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "GEO-10-R-12",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Secciones cónicas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: Tema Secciones cónicas. En una circunferencia de radio 19, una cuerda está a distancia 17 del centro. ¿Cuál es su longitud? Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "25,5",
+              "16,97",
+              "8,49",
+              "21"
+            ],
+            "respuesta": 1,
+            "solucion": "Aplicación específica de Secciones cónicas. La perpendicular del centro biseca la cuerda. La semicuarda vale √(19²−17²)=8,49; la cuerda mide 16,97. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se forma un triángulo rectángulo con radio, distancia y semicuarda. El ejercicio queda archivado únicamente en el bloque «Secciones cónicas». Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "GEO-10-R-13",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Secciones cónicas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Tema Secciones cónicas. Desde un punto exterior se traza una secante con segmento externo 13 e interno 9, y una tangente. Halla la longitud de la tangente. Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "16,91",
+              "286",
+              "10,82",
+              "22"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Secciones cónicas. Por potencia de un punto, T²=13(13+9)=286; por tanto T=√286=16,91. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se distingue el segmento externo de la longitud total de la secante. El ejercicio queda archivado únicamente en el bloque «Secciones cónicas». Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "GEO-10-R-14",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Secciones cónicas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Tema Secciones cónicas. Desde un punto exterior se traza una secante con segmento externo 14 e interno 10, y una tangente. Halla la longitud de la tangente. Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "336",
+              "11,83",
+              "24",
+              "18,33"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Secciones cónicas. Por potencia de un punto, T²=14(14+10)=336; por tanto T=√336=18,33. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se distingue el segmento externo de la longitud total de la secante. El ejercicio queda archivado únicamente en el bloque «Secciones cónicas». Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "GEO-10-R-15",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Secciones cónicas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Tema Secciones cónicas. Desde un punto exterior se traza una secante con segmento externo 15 e interno 5, y una tangente. Halla la longitud de la tangente. Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "8,66",
+              "20",
+              "17,32",
+              "300"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Secciones cónicas. Por potencia de un punto, T²=15(15+5)=300; por tanto T=√300=17,32. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se distingue el segmento externo de la longitud total de la secante. El ejercicio queda archivado únicamente en el bloque «Secciones cónicas». Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -8338,8 +9388,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -9148,10 +10198,115 @@
             "explicacion": "Se conectan Pitágoras, área y la relación A=rs. El ejercicio queda archivado únicamente en el bloque «Geometría analítica». Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSAAC; no es una pregunta oficial"
+          },
+          {
+            "id": "GEO-11-R-11",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Geometría analítica",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Tema Geometría analítica. En el triángulo ABC, la bisectriz interior desde A divide BC en segmentos proporcionales AB:AC=7:8. Si BC=60, ¿cuánto mide el segmento adyacente a AB? Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "60",
+              "4",
+              "28",
+              "32"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Geometría analítica. Por el teorema de la bisectriz, BD/DC=7/8. Como BC=60, cada parte de razón vale 4; BD=7·4=28. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se combina una razón geométrica con la longitud total. El ejercicio queda archivado únicamente en el bloque «Geometría analítica». Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "GEO-11-R-12",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Geometría analítica",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Tema Geometría analítica. Un triángulo rectángulo tiene catetos 36 y 48. Determina el radio de su circunferencia inscrita usando área y semiperímetro. Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "13,2",
+              "12",
+              "30",
+              "6"
+            ],
+            "respuesta": 1,
+            "solucion": "Aplicación específica de Geometría analítica. La hipotenusa es 60; el área es 864 y el semiperímetro es 72. Como A=rs, r=864/72=12. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se conectan Pitágoras, área y la relación A=rs. El ejercicio queda archivado únicamente en el bloque «Geometría analítica». Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "GEO-11-R-13",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Geometría analítica",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Tema Geometría analítica. Un triángulo rectángulo tiene catetos 39 y 52. Determina el radio de su circunferencia inscrita usando área y semiperímetro. La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "13",
+              "32,5",
+              "6,5",
+              "14,3"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Geometría analítica. La hipotenusa es 65; el área es 1014 y el semiperímetro es 78. Como A=rs, r=1014/78=13. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se conectan Pitágoras, área y la relación A=rs. El ejercicio queda archivado únicamente en el bloque «Geometría analítica». Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "GEO-11-R-14",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Geometría analítica",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Tema Geometría analítica. Un triángulo rectángulo tiene catetos 42 y 56. Determina el radio de su circunferencia inscrita usando área y semiperímetro. Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "35",
+              "7",
+              "15,4",
+              "14"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Geometría analítica. La hipotenusa es 70; el área es 1176 y el semiperímetro es 84. Como A=rs, r=1176/84=14. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se conectan Pitágoras, área y la relación A=rs. El ejercicio queda archivado únicamente en el bloque «Geometría analítica». Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "GEO-11-R-15",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Geometría analítica",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Tema Geometría analítica. Un triángulo rectángulo tiene catetos 45 y 60. Determina el radio de su circunferencia inscrita usando área y semiperímetro. Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "7,5",
+              "16,5",
+              "15",
+              "37,5"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Geometría analítica. La hipotenusa es 75; el área es 1350 y el semiperímetro es 90. Como A=rs, r=1350/90=15. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se conectan Pitágoras, área y la relación A=rs. El ejercicio queda archivado únicamente en el bloque «Geometría analítica». Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
     }
   ],
-  "total": 440
+  "total": 495
 }

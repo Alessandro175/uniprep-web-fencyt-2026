@@ -1,7 +1,7 @@
 {
   "courseId": "psicologia",
   "nombre": "Psicología",
-  "version": "2026.9-cuatro-niveles-universidad",
+  "version": "2026.31-nacional-7605",
   "descripcion": "Banco original UniPrep organizado uno a uno con cada tema visible. Cada sesión temática conserva su subárea y no mezcla preguntas de otros temas.",
   "universidadesReferencia": [
     "UNAMAD",
@@ -17,15 +17,15 @@
     "basico": 70,
     "intermedio": 70,
     "avanzado": 70,
-    "admision": 70,
-    "total": 280
+    "admision": 105,
+    "total": 315
   },
   "distribucionPorTema": {
     "basico": 10,
     "intermedio": 10,
     "avanzado": 10,
-    "admision": 10,
-    "total": 40
+    "admision": 15,
+    "total": 45
   },
   "criteriosDificultad": {
     "basico": "Fundamento o procedimiento directo",
@@ -48,8 +48,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -858,6 +858,111 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSAAC; no es una pregunta oficial"
+          },
+          {
+            "id": "PSI-01-R-11",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Introducción a la psicología",
+            "subarea": "Psicología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Durante el análisis de una revisión académica vinculado con Introducción a la psicología, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "La correlación entre dos variables no demuestra por sí sola causalidad.",
+              "Toda correlación prueba una causa directa.",
+              "La experimentación no controla variables.",
+              "Una muestra pequeña representa siempre a todos."
+            ],
+            "respuesta": 0,
+            "solucion": "La alternativa correcta es: La correlación entre dos variables no demuestra por sí sola causalidad. La causalidad exige diseños y controles adecuados. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "PSI-01-R-12",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Introducción a la psicología",
+            "subarea": "Psicología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: En una evaluación comparativa de Introducción a la psicología. Analiza las proposiciones: I) La biología excluye el aprendizaje. II) La correlación entre dos variables no demuestra por sí sola causalidad. ¿Qué alternativa evalúa correctamente ambas? Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "Solo I es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo II es correcta"
+            ],
+            "respuesta": 3,
+            "solucion": "La proposición I es falsa: La interacción de niveles explica mejor la conducta compleja. La proposición II es verdadera: La causalidad exige diseños y controles adecuados. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "PSI-01-R-13",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Introducción a la psicología",
+            "subarea": "Psicología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: En una evaluación comparativa de Introducción a la psicología. Analiza las proposiciones: I) Toda correlación prueba una causa directa. II) La psicología no usa métodos de investigación. ¿Qué alternativa evalúa correctamente ambas? La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "Solo II es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo I es correcta"
+            ],
+            "respuesta": 2,
+            "solucion": "La proposición I es falsa: La causalidad exige diseños y controles adecuados. La proposición II es falsa: Integra observación, medición y teorías contrastables. Por ello, ninguna es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "PSI-01-R-14",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Introducción a la psicología",
+            "subarea": "Psicología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Al contrastar conceptos esenciales de Introducción a la psicología. Analiza las proposiciones: I) La psicología estudia científicamente la conducta y los procesos mentales. II) Un enfoque biopsicosocial considera factores biológicos, psicológicos y sociales. ¿Qué alternativa evalúa correctamente ambas? Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "Ninguna es correcta",
+              "I y II son correctas",
+              "Solo I es correcta",
+              "Solo II es correcta"
+            ],
+            "respuesta": 1,
+            "solucion": "La proposición I es verdadera: Integra observación, medición y teorías contrastables. La proposición II es verdadera: La interacción de niveles explica mejor la conducta compleja. Por ello, i y ii son correctas. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "PSI-01-R-15",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Introducción a la psicología",
+            "subarea": "Psicología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Al contrastar conceptos esenciales de Introducción a la psicología. Analiza las proposiciones: I) Un enfoque biopsicosocial considera factores biológicos, psicológicos y sociales. II) Toda correlación prueba una causa directa. ¿Qué alternativa evalúa correctamente ambas? Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es verdadera: La interacción de niveles explica mejor la conducta compleja. La proposición II es falsa: La causalidad exige diseños y controles adecuados. Por ello, solo i es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -877,8 +982,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -1687,6 +1792,111 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UCSM; no es una pregunta oficial"
+          },
+          {
+            "id": "PSI-02-R-11",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Bases biológicas del comportamiento",
+            "subarea": "Psicología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: En una evaluación comparativa de Bases biológicas del comportamiento. Analiza las proposiciones: I) La sinapsis no puede regularse. II) Genes y ambiente interactúan durante el desarrollo del comportamiento. ¿Qué alternativa evalúa correctamente ambas? Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "Solo II es correcta",
+              "Solo I es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es falsa: El efecto depende del receptor y del circuito. La proposición II es verdadera: La expresión genética y la plasticidad responden al contexto. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "PSI-02-R-12",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Bases biológicas del comportamiento",
+            "subarea": "Psicología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: En una evaluación comparativa de Bases biológicas del comportamiento. Analiza las proposiciones: I) Los genes determinan rígidamente toda conducta. II) Todas las áreas cerebrales tienen idéntica función. ¿Qué alternativa evalúa correctamente ambas? Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 3,
+            "solucion": "La proposición I es falsa: La expresión genética y la plasticidad responden al contexto. La proposición II es falsa: La conducta emerge de circuitos distribuidos y plásticos. Por ello, ninguna es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "PSI-02-R-13",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Bases biológicas del comportamiento",
+            "subarea": "Psicología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Al contrastar conceptos esenciales de Bases biológicas del comportamiento. Analiza las proposiciones: I) El cerebro organiza redes especializadas que trabajan de forma integrada. II) Los neurotransmisores modifican la comunicación entre neuronas al unirse a receptores. ¿Qué alternativa evalúa correctamente ambas? Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "Solo II es correcta",
+              "Ninguna es correcta",
+              "I y II son correctas",
+              "Solo I es correcta"
+            ],
+            "respuesta": 2,
+            "solucion": "La proposición I es verdadera: La conducta emerge de circuitos distribuidos y plásticos. La proposición II es verdadera: El efecto depende del receptor y del circuito. Por ello, i y ii son correctas. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "PSI-02-R-14",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Bases biológicas del comportamiento",
+            "subarea": "Psicología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Al contrastar conceptos esenciales de Bases biológicas del comportamiento. Analiza las proposiciones: I) Los neurotransmisores modifican la comunicación entre neuronas al unirse a receptores. II) Los genes determinan rígidamente toda conducta. ¿Qué alternativa evalúa correctamente ambas? Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "Ninguna es correcta",
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son correctas"
+            ],
+            "respuesta": 1,
+            "solucion": "La proposición I es verdadera: El efecto depende del receptor y del circuito. La proposición II es falsa: La expresión genética y la plasticidad responden al contexto. Por ello, solo i es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "PSI-02-R-15",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Bases biológicas del comportamiento",
+            "subarea": "Psicología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Al contrastar conceptos esenciales de Bases biológicas del comportamiento. Analiza las proposiciones: I) Los genes determinan rígidamente toda conducta. II) El cerebro organiza redes especializadas que trabajan de forma integrada. ¿Qué alternativa evalúa correctamente ambas? Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "Solo II es correcta",
+              "Solo I es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es falsa: La expresión genética y la plasticidad responden al contexto. La proposición II es verdadera: La conducta emerge de circuitos distribuidos y plásticos. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -1706,8 +1916,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -2516,6 +2726,111 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSA; no es una pregunta oficial"
+          },
+          {
+            "id": "PSI-03-R-11",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Procesos psicológicos básicos",
+            "subarea": "Psicología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: En una evaluación comparativa de Procesos psicológicos básicos. Analiza las proposiciones: I) La memoria es un depósito único e infalible. II) Percibir es copiar pasivamente la realidad. ¿Qué alternativa evalúa correctamente ambas? Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "Ninguna es correcta",
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son correctas"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es falsa: Distintos sistemas y claves afectan la recuperación. La proposición II es falsa: El sistema nervioso selecciona y estructura señales. Por ello, ninguna es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "PSI-03-R-12",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Procesos psicológicos básicos",
+            "subarea": "Psicología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Al contrastar conceptos esenciales de Procesos psicológicos básicos. Analiza las proposiciones: I) La percepción organiza e interpreta la información sensorial. II) La atención asigna recursos limitados a información relevante. ¿Qué alternativa evalúa correctamente ambas? Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "Ninguna es correcta",
+              "I y II son correctas"
+            ],
+            "respuesta": 3,
+            "solucion": "La proposición I es verdadera: El sistema nervioso selecciona y estructura señales. La proposición II es verdadera: La selección atencional facilita unas tareas y deja otras fuera. Por ello, i y ii son correctas. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "PSI-03-R-13",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Procesos psicológicos básicos",
+            "subarea": "Psicología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: Al contrastar conceptos esenciales de Procesos psicológicos básicos. Analiza las proposiciones: I) La atención asigna recursos limitados a información relevante. II) La memoria es un depósito único e infalible. ¿Qué alternativa evalúa correctamente ambas? Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo I es correcta",
+              "Solo II es correcta"
+            ],
+            "respuesta": 2,
+            "solucion": "La proposición I es verdadera: La selección atencional facilita unas tareas y deja otras fuera. La proposición II es falsa: Distintos sistemas y claves afectan la recuperación. Por ello, solo i es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "PSI-03-R-14",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Procesos psicológicos básicos",
+            "subarea": "Psicología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Al contrastar conceptos esenciales de Procesos psicológicos básicos. Analiza las proposiciones: I) La memoria es un depósito único e infalible. II) La percepción organiza e interpreta la información sensorial. ¿Qué alternativa evalúa correctamente ambas? Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "Ninguna es correcta",
+              "Solo II es correcta",
+              "Solo I es correcta",
+              "I y II son correctas"
+            ],
+            "respuesta": 1,
+            "solucion": "La proposición I es falsa: Distintos sistemas y claves afectan la recuperación. La proposición II es verdadera: El sistema nervioso selecciona y estructura señales. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "PSI-03-R-15",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Procesos psicológicos básicos",
+            "subarea": "Psicología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Un estudiante utiliza un simulacro de admisión para justificar una relación de Procesos psicológicos básicos. ¿Cuál afirmación conserva una relación conceptual válida? Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "Atender no cambia el rendimiento.",
+              "La atención solo existe durante el sueño.",
+              "La atención asigna recursos limitados a información relevante.",
+              "La atención procesa todo con igual profundidad."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: La atención asigna recursos limitados a información relevante. La selección atencional facilita unas tareas y deja otras fuera. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -2535,8 +2850,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -3345,6 +3660,111 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNAMAD; no es una pregunta oficial"
+          },
+          {
+            "id": "PSI-04-R-11",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Aprendizaje",
+            "subarea": "Psicología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Al contrastar conceptos esenciales de Aprendizaje. Analiza las proposiciones: I) En el condicionamiento clásico se asocian estímulos. II) En el condicionamiento operante, las consecuencias modifican la probabilidad de una conducta. ¿Qué alternativa evalúa correctamente ambas? Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "I y II son correctas",
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es verdadera: Una señal inicialmente neutra puede anticipar otra. La proposición II es verdadera: El refuerzo incrementa y el castigo reduce la probabilidad conductual. Por ello, i y ii son correctas. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "PSI-04-R-12",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Aprendizaje",
+            "subarea": "Psicología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Al contrastar conceptos esenciales de Aprendizaje. Analiza las proposiciones: I) En el condicionamiento operante, las consecuencias modifican la probabilidad de una conducta. II) Solo se aprende mediante ensayo directo. ¿Qué alternativa evalúa correctamente ambas? Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "Solo II es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo I es correcta"
+            ],
+            "respuesta": 3,
+            "solucion": "La proposición I es verdadera: El refuerzo incrementa y el castigo reduce la probabilidad conductual. La proposición II es falsa: Atención, retención y motivación intervienen en la imitación. Por ello, solo i es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "PSI-04-R-13",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Aprendizaje",
+            "subarea": "Psicología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Al contrastar conceptos esenciales de Aprendizaje. Analiza las proposiciones: I) Solo se aprende mediante ensayo directo. II) En el condicionamiento clásico se asocian estímulos. ¿Qué alternativa evalúa correctamente ambas? Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo II es correcta",
+              "Solo I es correcta"
+            ],
+            "respuesta": 2,
+            "solucion": "La proposición I es falsa: Atención, retención y motivación intervienen en la imitación. La proposición II es verdadera: Una señal inicialmente neutra puede anticipar otra. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "PSI-04-R-14",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Aprendizaje",
+            "subarea": "Psicología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Un estudiante utiliza un simulacro de admisión para justificar una relación de Aprendizaje. ¿Cuál afirmación conserva una relación conceptual válida? La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "El refuerzo siempre disminuye conducta.",
+              "Castigo y refuerzo son sinónimos.",
+              "Las consecuencias no influyen en repetir acciones.",
+              "En el condicionamiento operante, las consecuencias modifican la probabilidad de una conducta."
+            ],
+            "respuesta": 3,
+            "solucion": "La alternativa correcta es: En el condicionamiento operante, las consecuencias modifican la probabilidad de una conducta. El refuerzo incrementa y el castigo reduce la probabilidad conductual. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "PSI-04-R-15",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Aprendizaje",
+            "subarea": "Psicología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Durante el análisis de un simulacro de admisión vinculado con Aprendizaje, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "Observar nunca cambia conductas.",
+              "Un modelo no influye en expectativas.",
+              "El aprendizaje observacional puede ocurrir al atender e imitar modelos.",
+              "Solo se aprende mediante ensayo directo."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: El aprendizaje observacional puede ocurrir al atender e imitar modelos. Atención, retención y motivación intervienen en la imitación. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -3364,8 +3784,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -4174,6 +4594,111 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de PUCP; no es una pregunta oficial"
+          },
+          {
+            "id": "PSI-05-R-11",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Desarrollo humano",
+            "subarea": "Psicología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Al contrastar conceptos esenciales de Desarrollo humano. Analiza las proposiciones: I) La maduración biológica interactúa con aprendizaje y contexto. II) Cada etapa comienza el mismo día para todos. ¿Qué alternativa evalúa correctamente ambas? La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es verdadera: El resultado depende de oportunidades y condiciones individuales. La proposición II es falsa: Existe diversidad de ritmos y experiencias. Por ello, solo i es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "PSI-05-R-12",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Desarrollo humano",
+            "subarea": "Psicología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Al contrastar conceptos esenciales de Desarrollo humano. Analiza las proposiciones: I) Cada etapa comienza el mismo día para todos. II) El desarrollo humano comprende cambios físicos, cognitivos y socioemocionales durante toda la vida. ¿Qué alternativa evalúa correctamente ambas? Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "Solo I es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo II es correcta"
+            ],
+            "respuesta": 3,
+            "solucion": "La proposición I es falsa: Existe diversidad de ritmos y experiencias. La proposición II es verdadera: Las trayectorias combinan continuidad y cambio. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "PSI-05-R-13",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Desarrollo humano",
+            "subarea": "Psicología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Un estudiante utiliza un simulacro de admisión para justificar una relación de Desarrollo humano. ¿Cuál afirmación conserva una relación conceptual válida? Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "La maduración biológica interactúa con aprendizaje y contexto.",
+              "La maduración explica sola toda habilidad.",
+              "La cultura no afecta el desarrollo.",
+              "Aprender elimina límites biológicos."
+            ],
+            "respuesta": 0,
+            "solucion": "La alternativa correcta es: La maduración biológica interactúa con aprendizaje y contexto. El resultado depende de oportunidades y condiciones individuales. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "PSI-05-R-14",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Desarrollo humano",
+            "subarea": "Psicología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Durante el análisis de un simulacro de admisión vinculado con Desarrollo humano, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "Cada etapa comienza el mismo día para todos.",
+              "Una etapa impide variación individual.",
+              "El desarrollo siempre es lineal e irreversible.",
+              "Las etapas del desarrollo son orientaciones, no fronteras idénticas para todas las personas."
+            ],
+            "respuesta": 3,
+            "solucion": "La alternativa correcta es: Las etapas del desarrollo son orientaciones, no fronteras idénticas para todas las personas. Existe diversidad de ritmos y experiencias. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "PSI-05-R-15",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Desarrollo humano",
+            "subarea": "Psicología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Al corregir una revisión académica sobre Desarrollo humano, se debe elegir una explicación compatible con los principios de la materia. ¿Cuál cumple la condición? Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "Todas las personas cambian al mismo ritmo.",
+              "La vejez carece de adaptación.",
+              "El desarrollo humano comprende cambios físicos, cognitivos y socioemocionales durante toda la vida.",
+              "El desarrollo termina en la infancia."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: El desarrollo humano comprende cambios físicos, cognitivos y socioemocionales durante toda la vida. Las trayectorias combinan continuidad y cambio. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -4193,8 +4718,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -5003,6 +5528,111 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNMSM; no es una pregunta oficial"
+          },
+          {
+            "id": "PSI-06-R-11",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Personalidad e identidad",
+            "subarea": "Psicología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Al contrastar conceptos esenciales de Personalidad e identidad. Analiza las proposiciones: I) Autoconcepto y autoestima son idénticos siempre. II) La personalidad describe patrones relativamente estables de pensar, sentir y actuar. ¿Qué alternativa evalúa correctamente ambas? Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "Solo II es correcta",
+              "Solo I es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es falsa: Las evaluaciones personales pueden variar entre ámbitos. La proposición II es verdadera: Los rasgos muestran estabilidad relativa y variación situacional. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "PSI-06-R-12",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Personalidad e identidad",
+            "subarea": "Psicología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Un estudiante utiliza un simulacro de admisión para justificar una relación de Personalidad e identidad. ¿Cuál afirmación conserva una relación conceptual válida? Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "El entorno social no participa.",
+              "La identidad se construye y reorganiza mediante experiencias, vínculos y pertenencias.",
+              "La identidad nace terminada e inmutable.",
+              "La identidad equivale únicamente al nombre legal."
+            ],
+            "respuesta": 1,
+            "solucion": "La alternativa correcta es: La identidad se construye y reorganiza mediante experiencias, vínculos y pertenencias. La autobiografía y los grupos aportan significados. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "PSI-06-R-13",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Personalidad e identidad",
+            "subarea": "Psicología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Durante el análisis de un simulacro de admisión vinculado con Personalidad e identidad, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "El autoconcepto reúne creencias que una persona tiene sobre sí misma.",
+              "Autoconcepto y autoestima son idénticos siempre.",
+              "El autoconcepto no puede diferenciar áreas.",
+              "Solo otros forman el autoconcepto."
+            ],
+            "respuesta": 0,
+            "solucion": "La alternativa correcta es: El autoconcepto reúne creencias que una persona tiene sobre sí misma. Las evaluaciones personales pueden variar entre ámbitos. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "PSI-06-R-14",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Personalidad e identidad",
+            "subarea": "Psicología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: Al corregir una revisión académica sobre Personalidad e identidad, se debe elegir una explicación compatible con los principios de la materia. ¿Cuál cumple la condición? Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "La personalidad cambia por completo cada minuto.",
+              "La personalidad es solo apariencia física.",
+              "Un rasgo determina toda conducta sin contexto.",
+              "La personalidad describe patrones relativamente estables de pensar, sentir y actuar."
+            ],
+            "respuesta": 3,
+            "solucion": "La alternativa correcta es: La personalidad describe patrones relativamente estables de pensar, sentir y actuar. Los rasgos muestran estabilidad relativa y variación situacional. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "PSI-06-R-15",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Personalidad e identidad",
+            "subarea": "Psicología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Un estudiante utiliza una revisión académica para justificar una relación de Personalidad e identidad. ¿Cuál afirmación conserva una relación conceptual válida? Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "La identidad equivale únicamente al nombre legal.",
+              "El entorno social no participa.",
+              "La identidad se construye y reorganiza mediante experiencias, vínculos y pertenencias.",
+              "La identidad nace terminada e inmutable."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: La identidad se construye y reorganiza mediante experiencias, vínculos y pertenencias. La autobiografía y los grupos aportan significados. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -5022,8 +5652,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -5832,10 +6462,115 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Competencias generales de admisión preuniversitaria"
+          },
+          {
+            "id": "PSI-07-R-11",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Afectividad y motivación",
+            "subarea": "Psicología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: Un estudiante utiliza un simulacro de admisión para justificar una relación de Afectividad y motivación. ¿Cuál afirmación conserva una relación conceptual válida? Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "Todo premio aumenta interés a largo plazo.",
+              "La motivación no orienta metas.",
+              "La motivación intrínseca surge del interés o satisfacción de realizar la actividad.",
+              "La motivación intrínseca depende siempre de dinero."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: La motivación intrínseca surge del interés o satisfacción de realizar la actividad. El valor de la tarea puede sostener el esfuerzo. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "PSI-07-R-12",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Afectividad y motivación",
+            "subarea": "Psicología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Durante el análisis de un simulacro de admisión vinculado con Afectividad y motivación, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "Las metas no influyen en persistencia.",
+              "La motivación extrínseca se relaciona con recompensas o consecuencias externas.",
+              "La motivación extrínseca nunca modifica conducta.",
+              "Una nota es siempre motivación intrínseca."
+            ],
+            "respuesta": 1,
+            "solucion": "La alternativa correcta es: La motivación extrínseca se relaciona con recompensas o consecuencias externas. Los incentivos externos pueden iniciar o dirigir acciones. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "PSI-07-R-13",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Afectividad y motivación",
+            "subarea": "Psicología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Al corregir una revisión académica sobre Afectividad y motivación, se debe elegir una explicación compatible con los principios de la materia. ¿Cuál cumple la condición? Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "La emoción integra cambios fisiológicos, valoración, expresión y tendencia a actuar.",
+              "Una emoción es solo un pensamiento sin cuerpo.",
+              "Todas las culturas expresan emociones de modo idéntico.",
+              "Emoción y motivación son la misma cosa."
+            ],
+            "respuesta": 0,
+            "solucion": "La alternativa correcta es: La emoción integra cambios fisiológicos, valoración, expresión y tendencia a actuar. Componentes múltiples producen una respuesta afectiva. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "PSI-07-R-14",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Afectividad y motivación",
+            "subarea": "Psicología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Un estudiante utiliza una revisión académica para justificar una relación de Afectividad y motivación. ¿Cuál afirmación conserva una relación conceptual válida? Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "La motivación intrínseca depende siempre de dinero.",
+              "Todo premio aumenta interés a largo plazo.",
+              "La motivación no orienta metas.",
+              "La motivación intrínseca surge del interés o satisfacción de realizar la actividad."
+            ],
+            "respuesta": 3,
+            "solucion": "La alternativa correcta es: La motivación intrínseca surge del interés o satisfacción de realizar la actividad. El valor de la tarea puede sostener el esfuerzo. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "PSI-07-R-15",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Afectividad y motivación",
+            "subarea": "Psicología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Durante el análisis de una revisión académica vinculado con Afectividad y motivación, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "Una nota es siempre motivación intrínseca.",
+              "Las metas no influyen en persistencia.",
+              "La motivación extrínseca se relaciona con recompensas o consecuencias externas.",
+              "La motivación extrínseca nunca modifica conducta."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: La motivación extrínseca se relaciona con recompensas o consecuencias externas. Los incentivos externos pueden iniciar o dirigir acciones. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
     }
   ],
-  "total": 280
+  "total": 315
 }

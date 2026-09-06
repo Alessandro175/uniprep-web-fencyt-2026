@@ -1,7 +1,7 @@
 {
   "courseId": "anatomia",
   "nombre": "Anatomía",
-  "version": "2026.9-cuatro-niveles-universidad",
+  "version": "2026.31-nacional-7605",
   "descripcion": "Banco original UniPrep organizado uno a uno con cada tema visible. Cada sesión temática conserva su subárea y no mezcla preguntas de otros temas.",
   "universidadesReferencia": [
     "UNAMAD",
@@ -17,15 +17,15 @@
     "basico": 100,
     "intermedio": 100,
     "avanzado": 100,
-    "admision": 100,
-    "total": 400
+    "admision": 150,
+    "total": 450
   },
   "distribucionPorTema": {
     "basico": 10,
     "intermedio": 10,
     "avanzado": 10,
-    "admision": 10,
-    "total": 40
+    "admision": 15,
+    "total": 45
   },
   "criteriosDificultad": {
     "basico": "Fundamento o procedimiento directo",
@@ -48,8 +48,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -858,6 +858,111 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNI; no es una pregunta oficial"
+          },
+          {
+            "id": "ANA-01-R-11",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Generalidades de anatomía",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Durante el análisis de una revisión académica vinculado con Generalidades de anatomía, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "La homeostasis corporal depende de sensores, centros de control y efectores.",
+              "La homeostasis elimina la necesidad de regulación.",
+              "Un efector solo detecta el cambio.",
+              "Todo cambio interno se amplifica."
+            ],
+            "respuesta": 0,
+            "solucion": "La alternativa correcta es: La homeostasis corporal depende de sensores, centros de control y efectores. Los circuitos reguladores corrigen desviaciones. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ANA-01-R-12",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Generalidades de anatomía",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: En una evaluación comparativa de Generalidades de anatomía. Analiza las proposiciones: I) Todos los tejidos tienen idéntica función. II) La homeostasis corporal depende de sensores, centros de control y efectores. ¿Qué alternativa evalúa correctamente ambas? Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "Solo I es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo II es correcta"
+            ],
+            "respuesta": 3,
+            "solucion": "La proposición I es falsa: La integración de niveles permite funciones complejas. La proposición II es verdadera: Los circuitos reguladores corrigen desviaciones. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ANA-01-R-13",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Generalidades de anatomía",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: En una evaluación comparativa de Generalidades de anatomía. Analiza las proposiciones: I) La homeostasis elimina la necesidad de regulación. II) En posición anatómica las palmas miran atrás. ¿Qué alternativa evalúa correctamente ambas? La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "Solo II es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo I es correcta"
+            ],
+            "respuesta": 2,
+            "solucion": "La proposición I es falsa: Los circuitos reguladores corrigen desviaciones. La proposición II es falsa: El estándar evita ambigüedad al describir regiones y movimientos. Por ello, ninguna es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ANA-01-R-14",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Generalidades de anatomía",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Al contrastar conceptos esenciales de Generalidades de anatomía. Analiza las proposiciones: I) La posición anatómica estandariza la descripción del cuerpo erguido, mirada al frente y palmas hacia adelante. II) Los niveles de organización incluyen células, tejidos, órganos y sistemas. ¿Qué alternativa evalúa correctamente ambas? Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "Ninguna es correcta",
+              "I y II son correctas",
+              "Solo I es correcta",
+              "Solo II es correcta"
+            ],
+            "respuesta": 1,
+            "solucion": "La proposición I es verdadera: El estándar evita ambigüedad al describir regiones y movimientos. La proposición II es verdadera: La integración de niveles permite funciones complejas. Por ello, i y ii son correctas. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ANA-01-R-15",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Generalidades de anatomía",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Al contrastar conceptos esenciales de Generalidades de anatomía. Analiza las proposiciones: I) Los niveles de organización incluyen células, tejidos, órganos y sistemas. II) La homeostasis elimina la necesidad de regulación. ¿Qué alternativa evalúa correctamente ambas? Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es verdadera: La integración de niveles permite funciones complejas. La proposición II es falsa: Los circuitos reguladores corrigen desviaciones. Por ello, solo i es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -877,8 +982,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -1687,6 +1792,111 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSAAC; no es una pregunta oficial"
+          },
+          {
+            "id": "ANA-02-R-11",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Sistema locomotor",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: En una evaluación comparativa de Sistema locomotor. Analiza las proposiciones: I) Un ligamento une músculo con hueso. II) El esqueleto protege órganos, almacena minerales y participa en hematopoyesis. ¿Qué alternativa evalúa correctamente ambas? Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "Solo II es correcta",
+              "Solo I es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es falsa: La alternancia de contracción coordina flexión y extensión. La proposición II es verdadera: El tejido óseo cumple funciones mecánicas y metabólicas. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ANA-02-R-12",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Sistema locomotor",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: En una evaluación comparativa de Sistema locomotor. Analiza las proposiciones: I) El hueso es tejido muerto sin remodelación. II) Las articulaciones producen hormonas tiroideas. ¿Qué alternativa evalúa correctamente ambas? Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 3,
+            "solucion": "La proposición I es falsa: El tejido óseo cumple funciones mecánicas y metabólicas. La proposición II es falsa: La interacción de sus componentes permite sostén y movimiento. Por ello, ninguna es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ANA-02-R-13",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Sistema locomotor",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Al contrastar conceptos esenciales de Sistema locomotor. Analiza las proposiciones: I) El sistema locomotor integra huesos, articulaciones y músculos esqueléticos. II) Los músculos antagonistas producen movimientos opuestos alrededor de una articulación. ¿Qué alternativa evalúa correctamente ambas? Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "Solo II es correcta",
+              "Ninguna es correcta",
+              "I y II son correctas",
+              "Solo I es correcta"
+            ],
+            "respuesta": 2,
+            "solucion": "La proposición I es verdadera: La interacción de sus componentes permite sostén y movimiento. La proposición II es verdadera: La alternancia de contracción coordina flexión y extensión. Por ello, i y ii son correctas. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ANA-02-R-14",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Sistema locomotor",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Al contrastar conceptos esenciales de Sistema locomotor. Analiza las proposiciones: I) Los músculos antagonistas producen movimientos opuestos alrededor de una articulación. II) El hueso es tejido muerto sin remodelación. ¿Qué alternativa evalúa correctamente ambas? Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "Ninguna es correcta",
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son correctas"
+            ],
+            "respuesta": 1,
+            "solucion": "La proposición I es verdadera: La alternancia de contracción coordina flexión y extensión. La proposición II es falsa: El tejido óseo cumple funciones mecánicas y metabólicas. Por ello, solo i es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ANA-02-R-15",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Sistema locomotor",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Al contrastar conceptos esenciales de Sistema locomotor. Analiza las proposiciones: I) El hueso es tejido muerto sin remodelación. II) El sistema locomotor integra huesos, articulaciones y músculos esqueléticos. ¿Qué alternativa evalúa correctamente ambas? Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "Solo II es correcta",
+              "Solo I es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es falsa: El tejido óseo cumple funciones mecánicas y metabólicas. La proposición II es verdadera: La interacción de sus componentes permite sostén y movimiento. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -1706,8 +1916,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -2516,6 +2726,111 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UCSM; no es una pregunta oficial"
+          },
+          {
+            "id": "ANA-03-R-11",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Sistema digestivo",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: En una evaluación comparativa de Sistema digestivo. Analiza las proposiciones: I) El peristaltismo ocurre solo en huesos. II) Las vellosidades reducen el área de absorción. ¿Qué alternativa evalúa correctamente ambas? Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "Ninguna es correcta",
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son correctas"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es falsa: Ondas musculares desplazan el bolo y el quimo. La proposición II es falsa: La superficie intestinal facilita el paso de productos digeridos. Por ello, ninguna es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ANA-03-R-12",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Sistema digestivo",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Al contrastar conceptos esenciales de Sistema digestivo. Analiza las proposiciones: I) La mayor absorción de nutrientes ocurre en el intestino delgado gracias a vellosidades. II) La bilis emulsiona grasas y es producida por el hígado. ¿Qué alternativa evalúa correctamente ambas? Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "Ninguna es correcta",
+              "I y II son correctas"
+            ],
+            "respuesta": 3,
+            "solucion": "La proposición I es verdadera: La superficie intestinal facilita el paso de productos digeridos. La proposición II es verdadera: La emulsificación aumenta el área para la acción de lipasas. Por ello, i y ii son correctas. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ANA-03-R-13",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Sistema digestivo",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: Al contrastar conceptos esenciales de Sistema digestivo. Analiza las proposiciones: I) La bilis emulsiona grasas y es producida por el hígado. II) El peristaltismo ocurre solo en huesos. ¿Qué alternativa evalúa correctamente ambas? Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo I es correcta",
+              "Solo II es correcta"
+            ],
+            "respuesta": 2,
+            "solucion": "La proposición I es verdadera: La emulsificación aumenta el área para la acción de lipasas. La proposición II es falsa: Ondas musculares desplazan el bolo y el quimo. Por ello, solo i es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ANA-03-R-14",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Sistema digestivo",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Al contrastar conceptos esenciales de Sistema digestivo. Analiza las proposiciones: I) El peristaltismo ocurre solo en huesos. II) La mayor absorción de nutrientes ocurre en el intestino delgado gracias a vellosidades. ¿Qué alternativa evalúa correctamente ambas? Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "Ninguna es correcta",
+              "Solo II es correcta",
+              "Solo I es correcta",
+              "I y II son correctas"
+            ],
+            "respuesta": 1,
+            "solucion": "La proposición I es falsa: Ondas musculares desplazan el bolo y el quimo. La proposición II es verdadera: La superficie intestinal facilita el paso de productos digeridos. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ANA-03-R-15",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Sistema digestivo",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Un estudiante utiliza un simulacro de admisión para justificar una relación de Sistema digestivo. ¿Cuál afirmación conserva una relación conceptual válida? Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "La bilis se produce en el páncreas endocrino.",
+              "La bilis convierte glucosa en ADN.",
+              "La bilis emulsiona grasas y es producida por el hígado.",
+              "La bilis contiene enzimas que digieren proteínas."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: La bilis emulsiona grasas y es producida por el hígado. La emulsificación aumenta el área para la acción de lipasas. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -2535,8 +2850,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -3345,6 +3660,111 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSA; no es una pregunta oficial"
+          },
+          {
+            "id": "ANA-04-R-11",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Sistema respiratorio",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Al contrastar conceptos esenciales de Sistema respiratorio. Analiza las proposiciones: I) Los alvéolos ofrecen una superficie delgada y amplia para el intercambio gaseoso. II) Al contraerse, el diafragma desciende y favorece la inspiración. ¿Qué alternativa evalúa correctamente ambas? Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "I y II son correctas",
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es verdadera: La difusión conecta aire y capilares. La proposición II es verdadera: El aumento del volumen disminuye la presión intrapulmonar. Por ello, i y ii son correctas. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ANA-04-R-12",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Sistema respiratorio",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Al contrastar conceptos esenciales de Sistema respiratorio. Analiza las proposiciones: I) Al contraerse, el diafragma desciende y favorece la inspiración. II) El oxígeno viaja solo unido a plaquetas. ¿Qué alternativa evalúa correctamente ambas? Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "Solo II es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo I es correcta"
+            ],
+            "respuesta": 3,
+            "solucion": "La proposición I es verdadera: El aumento del volumen disminuye la presión intrapulmonar. La proposición II es falsa: Su grupo hemo se une reversiblemente al oxígeno. Por ello, solo i es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ANA-04-R-13",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Sistema respiratorio",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Al contrastar conceptos esenciales de Sistema respiratorio. Analiza las proposiciones: I) El oxígeno viaja solo unido a plaquetas. II) Los alvéolos ofrecen una superficie delgada y amplia para el intercambio gaseoso. ¿Qué alternativa evalúa correctamente ambas? Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo II es correcta",
+              "Solo I es correcta"
+            ],
+            "respuesta": 2,
+            "solucion": "La proposición I es falsa: Su grupo hemo se une reversiblemente al oxígeno. La proposición II es verdadera: La difusión conecta aire y capilares. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ANA-04-R-14",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Sistema respiratorio",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Un estudiante utiliza un simulacro de admisión para justificar una relación de Sistema respiratorio. ¿Cuál afirmación conserva una relación conceptual válida? La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "El diafragma asciende al contraerse e inspira.",
+              "La inspiración reduce siempre el volumen torácico.",
+              "El diafragma produce oxígeno.",
+              "Al contraerse, el diafragma desciende y favorece la inspiración."
+            ],
+            "respuesta": 3,
+            "solucion": "La alternativa correcta es: Al contraerse, el diafragma desciende y favorece la inspiración. El aumento del volumen disminuye la presión intrapulmonar. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ANA-04-R-15",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Sistema respiratorio",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Durante el análisis de un simulacro de admisión vinculado con Sistema respiratorio, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "La hemoglobina se encuentra en el plasma sin eritrocitos.",
+              "La hemoglobina digiere lípidos.",
+              "La hemoglobina transporta la mayor parte del oxígeno en la sangre.",
+              "El oxígeno viaja solo unido a plaquetas."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: La hemoglobina transporta la mayor parte del oxígeno en la sangre. Su grupo hemo se une reversiblemente al oxígeno. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -3364,8 +3784,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -4174,6 +4594,111 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNAMAD; no es una pregunta oficial"
+          },
+          {
+            "id": "ANA-05-R-11",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Sistema circulatorio",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Al contrastar conceptos esenciales de Sistema circulatorio. Analiza las proposiciones: I) Las arterias llevan sangre desde el corazón, independientemente de su oxigenación. II) Los capilares transportan huesos. ¿Qué alternativa evalúa correctamente ambas? La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es verdadera: La dirección respecto del corazón define arterias y venas. La proposición II es falsa: Sus paredes finas y gran área favorecen intercambio. Por ello, solo i es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ANA-05-R-12",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Sistema circulatorio",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Al contrastar conceptos esenciales de Sistema circulatorio. Analiza las proposiciones: I) Los capilares transportan huesos. II) El corazón humano posee cuatro cavidades que separan circuitos pulmonar y sistémico. ¿Qué alternativa evalúa correctamente ambas? Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "Solo I es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo II es correcta"
+            ],
+            "respuesta": 3,
+            "solucion": "La proposición I es falsa: Sus paredes finas y gran área favorecen intercambio. La proposición II es verdadera: La separación permite doble circulación eficiente. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ANA-05-R-13",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Sistema circulatorio",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Un estudiante utiliza un simulacro de admisión para justificar una relación de Sistema circulatorio. ¿Cuál afirmación conserva una relación conceptual válida? Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "Las arterias llevan sangre desde el corazón, independientemente de su oxigenación.",
+              "Toda arteria lleva sangre oxigenada.",
+              "Las venas siempre salen del corazón.",
+              "Los capilares tienen paredes musculares gruesas."
+            ],
+            "respuesta": 0,
+            "solucion": "La alternativa correcta es: Las arterias llevan sangre desde el corazón, independientemente de su oxigenación. La dirección respecto del corazón define arterias y venas. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ANA-05-R-14",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Sistema circulatorio",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Durante el análisis de un simulacro de admisión vinculado con Sistema circulatorio, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "Los capilares transportan huesos.",
+              "Los capilares impiden toda difusión.",
+              "Los capilares poseen válvulas cardíacas.",
+              "Los capilares permiten intercambio de gases, nutrientes y desechos con tejidos."
+            ],
+            "respuesta": 3,
+            "solucion": "La alternativa correcta es: Los capilares permiten intercambio de gases, nutrientes y desechos con tejidos. Sus paredes finas y gran área favorecen intercambio. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ANA-05-R-15",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Sistema circulatorio",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Al corregir una revisión académica sobre Sistema circulatorio, se debe elegir una explicación compatible con los principios de la materia. ¿Cuál cumple la condición? Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "Las aurículas bombean directamente a todo el cuerpo sin ventrículos.",
+              "La sangre oxigenada y desoxigenada siempre se mezclan por completo.",
+              "El corazón humano posee cuatro cavidades que separan circuitos pulmonar y sistémico.",
+              "El corazón humano posee una sola cavidad."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: El corazón humano posee cuatro cavidades que separan circuitos pulmonar y sistémico. La separación permite doble circulación eficiente. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -4193,8 +4718,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -5003,6 +5528,111 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de PUCP; no es una pregunta oficial"
+          },
+          {
+            "id": "ANA-06-R-11",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Sistema excretor",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Al contrastar conceptos esenciales de Sistema excretor. Analiza las proposiciones: I) La ADH bloquea toda reabsorción de agua. II) La nefrona es la unidad funcional del riñón. ¿Qué alternativa evalúa correctamente ambas? Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "Solo II es correcta",
+              "Solo I es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es falsa: Modifica la permeabilidad de conductos colectores. La proposición II es verdadera: En ella ocurren filtración, reabsorción y secreción. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ANA-06-R-12",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Sistema excretor",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Un estudiante utiliza un simulacro de admisión para justificar una relación de Sistema excretor. ¿Cuál afirmación conserva una relación conceptual válida? Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "La filtración ocurre en la vejiga.",
+              "La filtración glomerular origina un ultrafiltrado a partir del plasma sanguíneo.",
+              "El glomérulo reabsorbe toda glucosa directamente.",
+              "La filtración añade células sanguíneas normales a la orina."
+            ],
+            "respuesta": 1,
+            "solucion": "La alternativa correcta es: La filtración glomerular origina un ultrafiltrado a partir del plasma sanguíneo. La presión capilar impulsa agua y solutos pequeños hacia la cápsula. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ANA-06-R-13",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Sistema excretor",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Durante el análisis de un simulacro de admisión vinculado con Sistema excretor, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "La ADH aumenta la reabsorción de agua y puede concentrar la orina.",
+              "La ADH bloquea toda reabsorción de agua.",
+              "La ADH se produce en el riñón como enzima digestiva.",
+              "La ADH diluye siempre la sangre eliminando agua."
+            ],
+            "respuesta": 0,
+            "solucion": "La alternativa correcta es: La ADH aumenta la reabsorción de agua y puede concentrar la orina. Modifica la permeabilidad de conductos colectores. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ANA-06-R-14",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Sistema excretor",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: Al corregir una revisión académica sobre Sistema excretor, se debe elegir una explicación compatible con los principios de la materia. ¿Cuál cumple la condición? Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "La nefrona es una cavidad del corazón.",
+              "La nefrona produce bilis.",
+              "La nefrona forma impulsos motores.",
+              "La nefrona es la unidad funcional del riñón."
+            ],
+            "respuesta": 3,
+            "solucion": "La alternativa correcta es: La nefrona es la unidad funcional del riñón. En ella ocurren filtración, reabsorción y secreción. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ANA-06-R-15",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Sistema excretor",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Un estudiante utiliza una revisión académica para justificar una relación de Sistema excretor. ¿Cuál afirmación conserva una relación conceptual válida? Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "La filtración añade células sanguíneas normales a la orina.",
+              "La filtración ocurre en la vejiga.",
+              "La filtración glomerular origina un ultrafiltrado a partir del plasma sanguíneo.",
+              "El glomérulo reabsorbe toda glucosa directamente."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: La filtración glomerular origina un ultrafiltrado a partir del plasma sanguíneo. La presión capilar impulsa agua y solutos pequeños hacia la cápsula. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -5022,8 +5652,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -5832,6 +6462,111 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNMSM; no es una pregunta oficial"
+          },
+          {
+            "id": "ANA-07-R-11",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Sistema reproductor",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: Un estudiante utiliza un simulacro de admisión para justificar una relación de Sistema reproductor. ¿Cuál afirmación conserva una relación conceptual válida? Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "La ovulación es la implantación del embrión.",
+              "La ovulación produce espermatozoides.",
+              "La ovulación libera un ovocito desde el ovario.",
+              "La ovulación ocurre en el útero."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: La ovulación libera un ovocito desde el ovario. El ciclo ovárico regula maduración y liberación. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ANA-07-R-12",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Sistema reproductor",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Durante el análisis de un simulacro de admisión vinculado con Sistema reproductor, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "El cigoto se forma antes de fusionarse los gametos.",
+              "La fecundación humana suele ocurrir en la trompa uterina.",
+              "La fecundación ocurre normalmente en la vejiga.",
+              "La implantación precede a la fecundación."
+            ],
+            "respuesta": 1,
+            "solucion": "La alternativa correcta es: La fecundación humana suele ocurrir en la trompa uterina. La unión de gametos precede al tránsito hacia el útero. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ANA-07-R-13",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Sistema reproductor",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Al corregir una revisión académica sobre Sistema reproductor, se debe elegir una explicación compatible con los principios de la materia. ¿Cuál cumple la condición? Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "Las gónadas producen gametos y hormonas sexuales.",
+              "Las gónadas solo almacenan orina.",
+              "Los gametos son siempre diploides.",
+              "Las hormonas sexuales se producen únicamente en huesos."
+            ],
+            "respuesta": 0,
+            "solucion": "La alternativa correcta es: Las gónadas producen gametos y hormonas sexuales. Ovarios y testículos participan en reproducción y regulación endocrina. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ANA-07-R-14",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Sistema reproductor",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Un estudiante utiliza una revisión académica para justificar una relación de Sistema reproductor. ¿Cuál afirmación conserva una relación conceptual válida? Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "La ovulación ocurre en el útero.",
+              "La ovulación es la implantación del embrión.",
+              "La ovulación produce espermatozoides.",
+              "La ovulación libera un ovocito desde el ovario."
+            ],
+            "respuesta": 3,
+            "solucion": "La alternativa correcta es: La ovulación libera un ovocito desde el ovario. El ciclo ovárico regula maduración y liberación. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ANA-07-R-15",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Sistema reproductor",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Durante el análisis de una revisión académica vinculado con Sistema reproductor, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "La implantación precede a la fecundación.",
+              "El cigoto se forma antes de fusionarse los gametos.",
+              "La fecundación humana suele ocurrir en la trompa uterina.",
+              "La fecundación ocurre normalmente en la vejiga."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: La fecundación humana suele ocurrir en la trompa uterina. La unión de gametos precede al tránsito hacia el útero. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -5851,8 +6586,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -6661,6 +7396,111 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Competencias generales de admisión preuniversitaria"
+          },
+          {
+            "id": "ANA-08-R-11",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Sistema endocrino",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Durante el análisis de un simulacro de admisión vinculado con Sistema endocrino, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "La tiroxina es un anticuerpo.",
+              "La tiroides no requiere regulación hipofisaria.",
+              "Las hormonas tiroideas influyen en metabolismo y desarrollo.",
+              "La tiroides controla únicamente el color de ojos."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: Las hormonas tiroideas influyen en metabolismo y desarrollo. El eje hipotálamo-hipófisis-tiroides usa retroalimentación. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ANA-08-R-12",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Sistema endocrino",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Al corregir una revisión académica sobre Sistema endocrino, se debe elegir una explicación compatible con los principios de la materia. ¿Cuál cumple la condición? La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "La hipófisis es una articulación.",
+              "La hipófisis regula varias glándulas mediante hormonas tróficas.",
+              "La hipófisis filtra la sangre para formar orina.",
+              "La hipófisis produce bilis."
+            ],
+            "respuesta": 1,
+            "solucion": "La alternativa correcta es: La hipófisis regula varias glándulas mediante hormonas tróficas. Su conexión con el hipotálamo integra señales nerviosas y hormonales. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ANA-08-R-13",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Sistema endocrino",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Un estudiante utiliza una revisión académica para justificar una relación de Sistema endocrino. ¿Cuál afirmación conserva una relación conceptual válida? Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "La insulina disminuye la glucemia al favorecer captación y almacenamiento de glucosa.",
+              "La insulina eleva siempre la glucemia.",
+              "La insulina es una enzima salival.",
+              "La insulina se produce en la tiroides."
+            ],
+            "respuesta": 0,
+            "solucion": "La alternativa correcta es: La insulina disminuye la glucemia al favorecer captación y almacenamiento de glucosa. Las células beta pancreáticas responden al aumento de glucosa. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ANA-08-R-14",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Sistema endocrino",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Durante el análisis de una revisión académica vinculado con Sistema endocrino, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "La tiroides controla únicamente el color de ojos.",
+              "La tiroxina es un anticuerpo.",
+              "La tiroides no requiere regulación hipofisaria.",
+              "Las hormonas tiroideas influyen en metabolismo y desarrollo."
+            ],
+            "respuesta": 3,
+            "solucion": "La alternativa correcta es: Las hormonas tiroideas influyen en metabolismo y desarrollo. El eje hipotálamo-hipófisis-tiroides usa retroalimentación. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ANA-08-R-15",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Sistema endocrino",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: En una evaluación comparativa de Sistema endocrino. Analiza las proposiciones: I) La insulina se produce en la tiroides. II) Las hormonas tiroideas influyen en metabolismo y desarrollo. ¿Qué alternativa evalúa correctamente ambas? Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo II es correcta",
+              "Solo I es correcta"
+            ],
+            "respuesta": 2,
+            "solucion": "La proposición I es falsa: Las células beta pancreáticas responden al aumento de glucosa. La proposición II es verdadera: El eje hipotálamo-hipófisis-tiroides usa retroalimentación. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -6680,8 +7520,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -7490,6 +8330,111 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNI; no es una pregunta oficial"
+          },
+          {
+            "id": "ANA-09-R-11",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Sistema nervioso",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Al corregir una revisión académica sobre Sistema nervioso, se debe elegir una explicación compatible con los principios de la materia. ¿Cuál cumple la condición? Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "Toda neurona se divide continuamente.",
+              "La neurona forma esmalte dental.",
+              "La neurona recibe, integra y transmite información mediante señales eléctricas y químicas.",
+              "La neurona transporta oxígeno como función principal."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: La neurona recibe, integra y transmite información mediante señales eléctricas y químicas. Dendritas, soma y axón cumplen funciones especializadas. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ANA-09-R-12",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Sistema nervioso",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Un estudiante utiliza una revisión académica para justificar una relación de Sistema nervioso. ¿Cuál afirmación conserva una relación conceptual válida? Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "El encéfalo está fuera del cráneo.",
+              "El sistema nervioso central comprende encéfalo y médula espinal.",
+              "El SNC incluye solo nervios periféricos.",
+              "La médula espinal pertenece al sistema digestivo."
+            ],
+            "respuesta": 1,
+            "solucion": "La alternativa correcta es: El sistema nervioso central comprende encéfalo y médula espinal. Integra información y coordina respuestas. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ANA-09-R-13",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Sistema nervioso",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Durante el análisis de una revisión académica vinculado con Sistema nervioso, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "En una sinapsis química, neurotransmisores cruzan el espacio sináptico y se unen a receptores.",
+              "Las neuronas se fusionan para siempre en cada sinapsis.",
+              "Los neurotransmisores son huesos microscópicos.",
+              "Toda sinapsis transmite en ambas direcciones con igual facilidad."
+            ],
+            "respuesta": 0,
+            "solucion": "La alternativa correcta es: En una sinapsis química, neurotransmisores cruzan el espacio sináptico y se unen a receptores. La liberación presináptica modifica la célula postsináptica. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ANA-09-R-14",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Sistema nervioso",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: En una evaluación comparativa de Sistema nervioso. Analiza las proposiciones: I) El encéfalo está fuera del cráneo. II) En una sinapsis química, neurotransmisores cruzan el espacio sináptico y se unen a receptores. ¿Qué alternativa evalúa correctamente ambas? Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "Solo I es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo II es correcta"
+            ],
+            "respuesta": 3,
+            "solucion": "La proposición I es falsa: Integra información y coordina respuestas. La proposición II es verdadera: La liberación presináptica modifica la célula postsináptica. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ANA-09-R-15",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Sistema nervioso",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: En una evaluación comparativa de Sistema nervioso. Analiza las proposiciones: I) Las neuronas se fusionan para siempre en cada sinapsis. II) Toda neurona se divide continuamente. ¿Qué alternativa evalúa correctamente ambas? Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "Solo II es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo I es correcta"
+            ],
+            "respuesta": 2,
+            "solucion": "La proposición I es falsa: La liberación presináptica modifica la célula postsináptica. La proposición II es falsa: Dendritas, soma y axón cumplen funciones especializadas. Por ello, ninguna es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -7509,8 +8454,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -8319,10 +9264,115 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSAAC; no es una pregunta oficial"
+          },
+          {
+            "id": "ANA-10-R-11",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Promoción de la salud",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Un estudiante utiliza una revisión académica para justificar una relación de Promoción de la salud. ¿Cuál afirmación conserva una relación conceptual válida? Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "La salud depende únicamente de genética.",
+              "La educación sanitaria reemplaza políticas públicas.",
+              "La promoción de la salud fortalece capacidades y condiciones para decisiones saludables.",
+              "Promover salud consiste solo en tratar hospitales."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: La promoción de la salud fortalece capacidades y condiciones para decisiones saludables. Participación, entornos y políticas influyen en bienestar. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ANA-10-R-12",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Promoción de la salud",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: Durante el análisis de una revisión académica vinculado con Promoción de la salud, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "Todos los riesgos dependen de voluntad individual.",
+              "Los determinantes sociales incluyen educación, ingreso, vivienda y acceso a servicios.",
+              "La salud no se relaciona con condiciones sociales.",
+              "El ambiente laboral nunca afecta bienestar."
+            ],
+            "respuesta": 1,
+            "solucion": "La alternativa correcta es: Los determinantes sociales incluyen educación, ingreso, vivienda y acceso a servicios. Las oportunidades y exposiciones se distribuyen de manera desigual. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ANA-10-R-13",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Promoción de la salud",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: En una evaluación comparativa de Promoción de la salud. Analiza las proposiciones: I) La educación sanitaria reemplaza políticas públicas. II) Los determinantes sociales incluyen educación, ingreso, vivienda y acceso a servicios. ¿Qué alternativa evalúa correctamente ambas? Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "Solo II es correcta",
+              "Solo I es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es falsa: Participación, entornos y políticas influyen en bienestar. La proposición II es verdadera: Las oportunidades y exposiciones se distribuyen de manera desigual. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ANA-10-R-14",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Promoción de la salud",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: En una evaluación comparativa de Promoción de la salud. Analiza las proposiciones: I) La salud no se relaciona con condiciones sociales. II) La prevención primaria solo diagnostica. ¿Qué alternativa evalúa correctamente ambas? Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 3,
+            "solucion": "La proposición I es falsa: Las oportunidades y exposiciones se distribuyen de manera desigual. La proposición II es falsa: Vacunación y hábitos saludables reducen incidencia. Por ello, ninguna es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ANA-10-R-15",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Promoción de la salud",
+            "subarea": "Anatomía",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Al contrastar conceptos esenciales de Promoción de la salud. Analiza las proposiciones: I) La prevención primaria busca evitar que la enfermedad aparezca. II) La promoción de la salud fortalece capacidades y condiciones para decisiones saludables. ¿Qué alternativa evalúa correctamente ambas? Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "Solo II es correcta",
+              "Ninguna es correcta",
+              "I y II son correctas",
+              "Solo I es correcta"
+            ],
+            "respuesta": 2,
+            "solucion": "La proposición I es verdadera: Vacunación y hábitos saludables reducen incidencia. La proposición II es verdadera: Participación, entornos y políticas influyen en bienestar. Por ello, i y ii son correctas. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
     }
   ],
-  "total": 400
+  "total": 450
 }

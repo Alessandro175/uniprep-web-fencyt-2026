@@ -3,20 +3,21 @@
 // =====================================================
 
 const TITULOS_PANTALLAS = {
-  home: "Panel de inicio",
-  cursos: "Mis cursos",
-  videoclase: "Video clases",
-  ejercicios: "Centro de práctica",
-  formulas: "Formulario inteligente",
+  home: "Tu ruta de hoy",
+  universo: "Universo UniPrep",
+  cursos: "Aprender",
+  videoclase: "Lección",
+  ejercicios: "Practicar",
+  formulas: "Fórmulas y repaso",
   biblioteca: "Biblioteca",
   "course-evaluation": "Evaluación del curso",
-  exams: "Simulacros",
+  exams: "Comprueba tu avance",
   "exam-active": "Simulacro en curso",
   "exam-result": "Resultado del simulacro",
   ranking: "Ranking",
-  agenda: "Agenda",
-  vocacional: "Orientación vocacional",
-  tutor: "Tutor con IA",
+  agenda: "Organiza tu estudio",
+  vocacional: "Descubre tu carrera",
+  tutor: "Tutor Uni",
   perfil: "Mi perfil",
   notificaciones: "Notificaciones"
 };

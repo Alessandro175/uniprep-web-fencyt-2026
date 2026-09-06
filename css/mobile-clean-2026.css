@@ -1,0 +1,123 @@
+/* UniPrep 2026.29.1 · interfaz móvil limpia, táctil y sin desbordes */
+html, body { max-width: 100%; }
+
+@media (max-width: 760px) {
+  html { overflow-x: hidden; }
+  body { overflow-x: clip; }
+
+  .main { width: 100%; max-width: 100vw; }
+  .content {
+    width: 100%;
+    max-width: 100vw;
+    padding: 14px 12px calc(94px + env(safe-area-inset-bottom));
+    overflow-x: clip;
+  }
+
+  .screen, .friendly-home-shell, .friendly-dashboard-layout,
+  .friendly-path-column, .friendly-summary-column {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .topbar {
+    min-height: 58px;
+    height: auto;
+    padding: 8px 12px;
+    gap: 8px;
+  }
+
+  .flow-history-controls { display: flex; flex: 0 0 auto; gap: 4px; }
+  .flow-history-controls button { width: 40px; height: 40px; border-radius: 12px; }
+  .topbar-heading { min-width: 0; flex: 1; }
+  .topbar-heading small { display: none; }
+  .topbar-title { font-size: 15px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .topbar-search, .friendly-top-streak, .topbar-actions .visual-settings-button,
+  .topbar-actions .onboarding-help-btn, .topbar-actions .app-network-status { display: none !important; }
+  .topbar-actions { gap: 5px; }
+  .topbar-actions .icon-btn { width: 40px; height: 40px; border-radius: 12px; }
+
+  .flow-context-bar { display: none; }
+
+  .friendly-home-shell { gap: 14px; }
+  .friendly-welcome.welcome-banner {
+    display: block !important;
+    min-height: 0;
+    padding: 22px 18px !important;
+    border-radius: 22px !important;
+  }
+  .friendly-welcome .welcome-eyebrow { font-size: 12px; line-height: 1.35; }
+  .friendly-welcome .welcome-title {
+    margin: 8px 0 10px;
+    font-size: clamp(29px, 9vw, 38px);
+    line-height: 1.02;
+    letter-spacing: -1.4px;
+    overflow-wrap: anywhere;
+  }
+  .friendly-welcome .welcome-body { font-size: 15px; line-height: 1.5; }
+  .friendly-welcome-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-top: 17px; }
+  .friendly-welcome-actions .btn {
+    width: 100%; min-height: 48px; padding: 11px 12px;
+    border-radius: 14px; white-space: normal; line-height: 1.2;
+  }
+  .friendly-welcome-actions .friendly-primary-action { grid-column: 1 / -1; }
+
+  .friendly-dashboard-layout { display: flex !important; flex-direction: column; gap: 14px; }
+  .friendly-path-card, .friendly-progress-card, .friendly-exam-card,
+  .friendly-activity-disclosure, .game-level-card {
+    border-radius: 18px !important;
+  }
+  .friendly-path-card { padding: 17px 14px !important; }
+  .friendly-section-head { align-items: flex-start; gap: 10px; }
+  .friendly-section-head h2 { font-size: 23px; line-height: 1.1; }
+  .friendly-section-head p { font-size: 14px; line-height: 1.45; }
+  .friendly-section-head > button { min-height: 42px; padding: 8px 11px; flex: 0 0 auto; }
+
+  .friendly-learning-path { gap: 10px; }
+  .friendly-path-step {
+    grid-template-columns: 46px minmax(0, 1fr) !important;
+    min-height: 78px !important;
+    padding: 12px 12px 12px 8px !important;
+    border-radius: 16px !important;
+  }
+  .friendly-step-node { width: 46px !important; height: 46px !important; border-width: 3px !important; border-radius: 14px !important; }
+  .friendly-step-copy { min-width: 0; }
+  .friendly-step-copy small { font-size: 11px !important; }
+  .friendly-step-copy b { font-size: 16px !important; line-height: 1.25; overflow-wrap: anywhere; }
+  .friendly-step-copy em { font-size: 13px !important; line-height: 1.35; }
+  .friendly-step-action { grid-column: 2; justify-self: start; min-height: 36px; padding: 7px 11px; margin-top: 4px; }
+
+  .friendly-summary-column { display: grid; gap: 12px; }
+  .friendly-quick-stats { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 10px; }
+  .friendly-quick-stats .qstat { min-width: 0; min-height: 98px; padding: 12px !important; border-radius: 16px !important; }
+  .qstat-num { font-size: 22px !important; }
+  .qstat-lbl, .qstat-delta { white-space: normal !important; }
+
+  .friendly-recommendations .card, #dashboard-recommendations > * { max-width: 100%; }
+  .friendly-exam-card { display: grid; grid-template-columns: 42px 1fr; gap: 10px; padding: 15px !important; }
+  .friendly-exam-card button { grid-column: 1 / -1; width: 100%; min-height: 44px; }
+
+  .sidebar { padding-bottom: env(safe-area-inset-bottom); }
+  .sidebar-nav { height: 72px; min-height: 72px; padding: 6px 5px; gap: 2px; }
+  .sidebar-nav .nav-item {
+    min-width: 0; min-height: 58px; padding: 6px 3px !important;
+    border-radius: 13px !important; gap: 3px !important;
+  }
+  .sidebar-nav .nav-icon, .sidebar-nav .nav-symbol { width: 22px; height: 22px; }
+  .sidebar-nav .nav-item > span:not(.nav-badge):not(.nav-new):not(.nav-symbol) {
+    max-width: 100%; font-size: 11px !important; line-height: 1.1; text-align: center;
+  }
+  .sidebar-nav .nav-badge, .sidebar-nav .nav-new { display: none; }
+
+  button, [role="button"], .nav-item { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
+}
+
+@media (max-width: 390px) {
+  .content { padding-inline: 9px; }
+  .topbar { padding-inline: 8px; }
+  .topbar-actions .icon-btn:last-child { display: none; }
+  .friendly-welcome-actions { grid-template-columns: 1fr; }
+  .friendly-welcome-actions .friendly-primary-action { grid-column: auto; }
+  .friendly-section-head { display: grid; grid-template-columns: minmax(0, 1fr) auto; }
+}
+

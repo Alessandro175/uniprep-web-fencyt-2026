@@ -1,7 +1,7 @@
 {
   "courseId": "economia",
   "nombre": "Economía",
-  "version": "2026.9-cuatro-niveles-universidad",
+  "version": "2026.31-nacional-7605",
   "descripcion": "Banco de Economía reconstruido con ejercicios contextualizados y solucionados del material CEPRE UNMSM proporcionado, clasificados en los temas visibles de UniPrep sin mezclar contenidos.",
   "universidadesReferencia": [
     "UNAMAD",
@@ -17,15 +17,15 @@
     "basico": 80,
     "intermedio": 80,
     "avanzado": 80,
-    "admision": 80,
-    "total": 320
+    "admision": 120,
+    "total": 360
   },
   "distribucionPorTema": {
     "basico": 10,
     "intermedio": 10,
     "avanzado": 10,
-    "admision": 10,
-    "total": 40
+    "admision": 15,
+    "total": 45
   },
   "criteriosDificultad": {
     "basico": "Fundamento o procedimiento directo",
@@ -49,8 +49,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -1139,6 +1139,146 @@
               "paginaPdf": 18,
               "numero": 9
             }
+          },
+          {
+            "id": "EC-01-R-11",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Fundamentos de la economía",
+            "subarea": "Ciencias Sociales",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: De acuerdo con las acciones de un gobierno dentro de un sistema de economía mixta, determine la verdad (V) o falsedad de los siguientes enunciados: I. Aumento del IGV e ISC. II. Sustitución de la propiedad privada por la colectiva. III. Transferencia a gobiernos locales y regionales. IV. Consignador de recursos. Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "FFVV",
+              "FFVF",
+              "VFVF",
+              "VVVF"
+            ],
+            "respuesta": 2,
+            "solucion": "En una economía mixta el Estado es un agente activo en la economía, en la distribución (a través de los tributos), en la redistribución (a través de las transferencias diversas); en una economía centralizada se busca la equidad entre los miembros de la sociedad de allí el papel del Estado en ser consignador de los recursos y la búsqueda de la propiedad colectiva. Respuesta correcta: C. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Resolución basada en el manual de prácticas de Economía del CEPRE UNMSM, semana 1, ciclo 2020-I. El ejercicio se conserva en Fundamentos de la economía para evitar mezclar materias. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "documento": "Copia de 9 Economía.pdf",
+              "semana": 1,
+              "ciclo": "2020-I",
+              "paginaPdf": 13,
+              "numero": 4
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "EC-01-R-12",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Fundamentos de la economía",
+            "subarea": "Ciencias Sociales",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: De acuerdo con la división de la economía, indique los enunciados que no corresponden con la economía positiva. I. Exportaciones de cobre cayeron 7.5 % en enero. II. Analistas esperan que el BCR mantenga tasas de interés. III. MEF, transfiere S/ 421,7 millones a gobiernos subnacionales. IV. Facturación en turismo caería 15 % en Semana Santa por efecto del coronavirus. Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "I y III",
+              "II y IV",
+              "I y IV",
+              "Solo IV"
+            ],
+            "respuesta": 2,
+            "solucion": "Los siguientes enunciados no corresponden a la economía positiva ya que dan juicios de valor de lo que debería ser o pasar en la economía en un momento dado. II. Analistas esperan que el BCR mantenga tasas de interés. IV. Facturación en turismo caería 15% en Semana Santa por efecto del coronavirus. Respuesta correcta: C. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Resolución basada en el manual de prácticas de Economía del CEPRE UNMSM, semana 1, ciclo 2020-I. El ejercicio se conserva en Fundamentos de la economía para evitar mezclar materias. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "documento": "Copia de 9 Economía.pdf",
+              "semana": 1,
+              "ciclo": "2020-I",
+              "paginaPdf": 14,
+              "numero": 7
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "EC-01-R-13",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Fundamentos de la economía",
+            "subarea": "Ciencias Sociales",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Relacione según corresponda: I) PNN a) Es el total de los bienes y servicios producidos por las empresas nacionales y extranjeras dentro del país. II) PNB b) El ingreso total de los residentes y no residentes nacionales, considerados a Nivel de los factores de la producción. III) PBI c) Es la diferencia entre el Producto Nacional Bruto y la depreciación. IV) YN d) Es el valor de la actividad económica de los nacionales de un país, sin considerar si se genera dentro o fuera del territorio del país. La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "Ic, IId, IIIa, IVb",
+              "Id, IIc, IIIa, IVb",
+              "Id, IIc, IIIb, IVa",
+              "Ia, IIb, IIId, IVc"
+            ],
+            "respuesta": 0,
+            "solucion": "La alternativa seria (Ic, IId, IIIa, IVb) Respuesta correcta: A. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Resolución basada en el manual de prácticas de Economía del CEPRE UNMSM, semana 16, ciclo 2020-I. El ejercicio se conserva en Fundamentos de la economía para evitar mezclar materias. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "documento": "Copia de 9 Economía.pdf",
+              "semana": 16,
+              "ciclo": "2020-I",
+              "paginaPdf": 337,
+              "numero": 5
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "EC-01-R-14",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Fundamentos de la economía",
+            "subarea": "Ciencias Sociales",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: De acuerdo a doctrina socialista y sus planteamientos, determine la verdad (V) o falsedad (F) de los siguientes enunciados: I. La clase capitalista se apropia de la riqueza generada por los terratenientes. II. Plantean la teoría del valor subjetivo basada en la utilidad y la escasez. III. Los obreros deben dirigir la producción y distribución en un estado socialista. IV. Defienden la propiedad privada de los medios de producción Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "FFVF",
+              "VVVV",
+              "FFVV",
+              "FVVV"
+            ],
+            "respuesta": 0,
+            "solucion": "I. Falso. Para los socialistas es la clase trabajadora. II. Falso. Plantean la teoría de la plusvalía que se basa en la teoría del valor. III. Verdadero. La clase trabajadora debe dirigir la economía socialista. IV. Falso. Defiende la propiedad social de los medios de producción. Respuesta correcta: A. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Resolución basada en el manual de prácticas de Economía del CEPRE UNMSM, semana 1, ciclo 2019-II. El ejercicio se conserva en Fundamentos de la economía para evitar mezclar materias. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "documento": "Copia de 9 Economía.pdf",
+              "semana": 1,
+              "ciclo": "2019-II",
+              "paginaPdf": 17,
+              "numero": 7
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "EC-01-R-15",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Fundamentos de la economía",
+            "subarea": "Ciencias Sociales",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: De acuerdo a los problemas económicos, determine la verdad (V) o falsedad (F) de los siguientes enunciados: I. Las economías de planificación central permiten el funcionamiento de pequeños mercados de bienes de primera necesidad. II. Las economías mixtas permiten el funcionamiento de mercados de productos de primera necesidad. III. La pregunta de ¿cómo producir? se resuelve dependiendo del desarrollo tecnológico del país. IV. En una economía mixta el Estado puede intervenir decidiendo para quién producir, con el objetivo de mejorar el resultado del mercado. Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "FFVV",
+              "VVVV",
+              "FFFV",
+              "FVVV"
+            ],
+            "respuesta": 3,
+            "solucion": "En las economías de planificación central el Estado decide la distribución de bienes a través de la distribución directa o publicando una lista de precios. Respuesta correcta: D. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Resolución basada en el manual de prácticas de Economía del CEPRE UNMSM, semana 1, ciclo 2018-II. El ejercicio se conserva en Fundamentos de la economía para evitar mezclar materias. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "documento": "Copia de 9 Economía.pdf",
+              "semana": 1,
+              "ciclo": "2018-II",
+              "paginaPdf": 26,
+              "numero": 10
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -1158,8 +1298,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -2248,6 +2388,146 @@
               "paginaPdf": 41,
               "numero": 7
             }
+          },
+          {
+            "id": "EC-02-R-11",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Necesidades, bienes y recursos",
+            "subarea": "Ciencias Sociales",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Alexander Alvares es quizás el único peruano en la provincia surcoreana Gyeongsang del Norte. A sus 25 años el joven estudiante de Puno dejó todo para ir a estudiar a la universidad Han Dong Global University en donde el 25% de alumnos es extranjero. el joven expresó que busca ser más competitivo por lo que tiene que esforzarse más. Han Dong Global University brinda becas a estudiantes de intercambio y convenios con 193 universidades entre ellas peruanas. Parte de la beca incluye alimentación y hospedaje. El estudiante al aceptar esta beca quiere cubrir una necesidad Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "terciaria.",
+              "primaria.",
+              "secundaria.",
+              "suntuaria."
+            ],
+            "respuesta": 2,
+            "solucion": "La persona quiere mejor su calidad de vida a través de la educación y esta es una necesidad secundaria. Respuesta correcta: C. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Resolución basada en el manual de prácticas de Economía del CEPRE UNMSM, semana 2, ciclo 2018-II. El ejercicio se conserva en Necesidades, bienes y recursos para evitar mezclar materias. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "documento": "Copia de 9 Economía.pdf",
+              "semana": 2,
+              "ciclo": "2018-II",
+              "paginaPdf": 46,
+              "numero": 2
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "EC-02-R-12",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Necesidades, bienes y recursos",
+            "subarea": "Ciencias Sociales",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Un grupo de estudiantes con el apoyo de la Incubadora de empresas 1551 de la Universidad Nacional Mayor de San Marcos (UNMSM) han creado el aplicativo “Inka Doctor” para atenciones médicas en zonas rurales a través de consultas por chat y videollamadas (en tiempo real) para conocer qué medicinas adquirir y así evitar la automedicación. De esta manera se busca dar otra opción a muchas personas alejadas de centros médicos o postas en las zonas alejadas del país. Este aplicativo desarrollará sus funcionalidades dentro del sector económico denominado: Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "manufactura.",
+              "primario.",
+              "terciario.",
+              "secundario."
+            ],
+            "respuesta": 2,
+            "solucion": "Se busca con esta aplicación acercar a las personas de lugares alejados a los servicios de salud utilizando la tecnología. Respuesta correcta: C. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Resolución basada en el manual de prácticas de Economía del CEPRE UNMSM, semana 2, ciclo 2019-II. El ejercicio se conserva en Necesidades, bienes y recursos para evitar mezclar materias. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "documento": "Copia de 9 Economía.pdf",
+              "semana": 2,
+              "ciclo": "2019-II",
+              "paginaPdf": 41,
+              "numero": 4
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "EC-02-R-13",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Necesidades, bienes y recursos",
+            "subarea": "Ciencias Sociales",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: El fondo de estabilización de precios de los combustibles (FEPC) es un monto de recursos monetarios utilizados por el Estado peruano para evitar que la alta volatilidad (variaciones inesperadas e intensas) de los precios de los combustibles se traslade a los consumidores del mercado interno. El Costo fiscal para mantener este fondo, que se aplica a través de un subido al precio de los combustibles, desde su creación en 2014 a la fecha asciende a 8905 millones de soles, por dicha razón hay sectores que piden que se reestructure para hacerlo más eficiente. Este fondo se aplica en la etapa del proceso económico denominada Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "producción.",
+              "inversión.",
+              "consumo.",
+              "circulación."
+            ],
+            "respuesta": 3,
+            "solucion": "La medida es una forma de contener el alza de los precios que se determinan en la circulación. Respuesta correcta: D. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Resolución basada en el manual de prácticas de Economía del CEPRE UNMSM, semana 2, ciclo 2018-II. El ejercicio se conserva en Necesidades, bienes y recursos para evitar mezclar materias. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "documento": "Copia de 9 Economía.pdf",
+              "semana": 2,
+              "ciclo": "2018-II",
+              "paginaPdf": 48,
+              "numero": 6
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "EC-02-R-14",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Necesidades, bienes y recursos",
+            "subarea": "Ciencias Sociales",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: La empresa PICOS SA encargada de producir diseños de moda urbana con estampados innovadores (pantalones, polos, poleras, etc) ha decido competir en los mercados internacionales. Por dicha razón ha solicitado un préstamo de una entidad crediticia que le permita financiar la ampliación de su planta de producción y tiendas propias que le permitan comercializar sus diseños. De acuerdo a lo anterior señale la veracidad (V) o falsedad (F) de los siguientes enunciados: I. El préstamo obtenido de la entidad financiera constituye recursos que serán destinado a la inversión. II. El dinero destinado a la compra de lana y telas para la producción son ejemplos de costos variables. III. La competencia en el mercado internacional se dará en la etapa del proceso económico denominado distribución. IV. Si la empresa contrata a vigilantes para cuidar su nueva planta este sería un costo fijo. Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "VVVV",
+              "VFFV",
+              "FVFV",
+              "VVFV"
+            ],
+            "respuesta": 3,
+            "solucion": "El incremento del stock de capital es la inversión. Un ejemplo de costos fijos son los gastos administrativos como el sueldo de un vigilante. Los insumos se consideran como costos variables. La competencia y los mercados se dan en la circulación. Respuesta correcta: D. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Resolución basada en el manual de prácticas de Economía del CEPRE UNMSM, semana 2, ciclo 2018-II. El ejercicio se conserva en Necesidades, bienes y recursos para evitar mezclar materias. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "documento": "Copia de 9 Economía.pdf",
+              "semana": 2,
+              "ciclo": "2018-II",
+              "paginaPdf": 47,
+              "numero": 4
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "EC-02-R-15",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Necesidades, bienes y recursos",
+            "subarea": "Ciencias Sociales",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: La empresa textil Estilos S.A. elabora ropa urbana con estampados variados en polos, poleras, pantalones, camisas, casacas. Dentro de su proceso de internacionalización ha decidido iniciar operaciones en el mercado colombiano; esta iniciativa involucra abrir una tienda en la Ciudad de Cali en donde se exponga y venda la variedad de prendas de la marca para lo cual se solicitará un préstamo a una entidad bancaria para ampliar la planta de producción en Lima y así hacer frente a las proyecciones futuras de demanda. De acuerdo a lo anterior señale la veracidad o falsedad de los siguientes enunciados: I. El dinero obtenido por el préstamo bancario se empleará dentro del proceso de inversión de la empresa. II. La devolución del préstamo representa un costo fijo dentro del proceso productivo. III. La competencia en el mercado internacional se dará en la etapa del proceso económico denominado distribución. IV. De elaborar nuevos productos: gorras, buzos; la empresa incurrirá en nuevos costos variables. Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "VVVV",
+              "VVFV",
+              "FVFV",
+              "FFFV"
+            ],
+            "respuesta": 1,
+            "solucion": "“B”. El dinero se utilizará como una inversión para ampliar la planta de producción, EJ: compra de máquinas; la devolución del préstamo es un costo fijo; la competencia internacional se dará dentro de la circulación (venta de los productos en la tienda); al aumentar el número de productos se empleará un mayor número de factores productivos. En este caso los costos se incrementan con el nivel de producción. Respuesta correcta: B. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Resolución basada en el manual de prácticas de Economía del CEPRE UNMSM, semana 2, ciclo 2019-II. El ejercicio se conserva en Necesidades, bienes y recursos para evitar mezclar materias. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "documento": "Copia de 9 Economía.pdf",
+              "semana": 2,
+              "ciclo": "2019-II",
+              "paginaPdf": 41,
+              "numero": 7
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -2267,8 +2547,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -3357,6 +3637,146 @@
               "paginaPdf": 60,
               "numero": 1
             }
+          },
+          {
+            "id": "EC-03-R-11",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Proceso económico y producción",
+            "subarea": "Ciencias Sociales",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: La minera Macusani Yellowcake, filial de la canadiense Plateau Energy, halló un yacimiento de litio y uranio en un lago prehistórico cubierto de lava en la región de Puno. Con estos descubrimientos Macusani puede llegar a ser la mina de litio más grande del mundo, con mayor producción que las existentes en Chile, Bolivia y Argentina juntas. ¿Qué clase de recurso natural extrae dicha empresa? Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "Renovables",
+              "Mercantil",
+              "Económico",
+              "No renovables"
+            ],
+            "respuesta": 3,
+            "solucion": "Se clasifican como recursos no renovables a todos aquellos no se pueden reponer en la naturaleza como el oro, la plata, el carbón y el gas. Respuesta correcta: D. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Resolución basada en el manual de prácticas de Economía del CEPRE UNMSM, semana 3, ciclo 2019-I. El ejercicio se conserva en Proceso económico y producción para evitar mezclar materias. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "documento": "Copia de 9 Economía.pdf",
+              "semana": 3,
+              "ciclo": "2019-I",
+              "paginaPdf": 64,
+              "numero": 6
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "EC-03-R-12",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Proceso económico y producción",
+            "subarea": "Ciencias Sociales",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Betsabé es una mujer de cuarenta años que vive en la misma calle en la que funciona un taller textil que da empleo a 20 personas. Betsabe está buscando trabajo y se presenta ante la empresa. Sin embargo, le proponen entregarle a domicilio unos 500 polos blancos semanales para empaquetarlos con una maquina a cambio de S/. 500 soles por cada encargo. De acuerdo a las formas atípicas del trabajo, María desarrolla una forma de empleo denominada Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "encubierto.",
+              "temporal.",
+              "multipartita.",
+              "a tiempo parcial."
+            ],
+            "respuesta": 0,
+            "solucion": "El empleo encubierto es una forma de trabajo atípica en la que el trabajador presta servicios a una empresa bajo un contrato diferente a las labores que realiza, o trabaja por cuenta propia, pero recibe instrucciones directas sobre cómo ha de realizar las tareas de parte de una empresa. Respuesta correcta: A. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Resolución basada en el manual de prácticas de Economía del CEPRE UNMSM, semana 3, ciclo 2019-II. El ejercicio se conserva en Proceso económico y producción para evitar mezclar materias. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "documento": "Copia de 9 Economía.pdf",
+              "semana": 3,
+              "ciclo": "2019-II",
+              "paginaPdf": 62,
+              "numero": 8
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "EC-03-R-13",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Proceso económico y producción",
+            "subarea": "Ciencias Sociales",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: La Productividad Total de Factores de la economía peruana disminuyó en 7.8% entre 2011 y 2014. Este indicador mide la capacidad de un país de emplear de manera eficiente y óptima sus factores de producción para impulsar así el crecimiento económico. Por ello, para que el Perú mejore la productividad es necesario que el sector privado alcance una mayor eficiencia en sus organizaciones e invierta en innovación y tecnología. El país requiere un gobierno que aplique reformas en materia institucional, tributaria y laboral, así como un trabajo con el sector privado para reducir brechas en educación, salud e infraestructura. De acuerdo al texto, señale la respuesta correcta. Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "La productividad cayo en su primer año un 4.5%.",
+              "La contracción de la productividad es la mayor caída en la región.",
+              "La productividad requiere la acción del gobierno para operar.",
+              "La productividad mide la capacidad de emplear óptimamente sus factores."
+            ],
+            "respuesta": 3,
+            "solucion": "La productividad es administrar de la mejor forma los factores en la producción, producir más con menos recursos. Respuesta correcta: D. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Resolución basada en el manual de prácticas de Economía del CEPRE UNMSM, semana 3, ciclo 2019-I. El ejercicio se conserva en Proceso económico y producción para evitar mezclar materias. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "documento": "Copia de 9 Economía.pdf",
+              "semana": 3,
+              "ciclo": "2019-I",
+              "paginaPdf": 65,
+              "numero": 8
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "EC-03-R-14",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Proceso económico y producción",
+            "subarea": "Ciencias Sociales",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Según el Instituto Nacional de Estadísticas e Informática (INEI) el 75% de los trabajadores de la Población Económicamente Activa (PEA) que se encuentra ocupada se desempeña en un empleo informal. Esta situación se agrava si se considera que en el caso de los más jóvenes y de las personas mayores de 65 años, nueve de cada diez trabaja de manera informal. Para revertir estas cifras, los especialistas proponen incrementar la inversión en educación de calidad, tecnología e infraestructura. Por ejemplo, Singapur se posicionó en el segundo lugar en competitividad a nivel mundial debido a que este país apostó por destinar más del 40% de su PBI a la inversión e introdujo un esquema que incluye beneficios tributarios e incentivos económicos para promover la innovación en el sector privado. De acuerdo al texto, marque la alternativa más relacionada a la PEA. Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "La inversión privada incrementa la competitividad del empleo.",
+              "El sector informal adsorbe el 61% de la población económicamente activa.",
+              "La cantidad de empleados y subempleados depende de la inversión e innovación.",
+              "Singapur tiene un nivel de inversión que garantiza un alto ranking de competitividad."
+            ],
+            "respuesta": 2,
+            "solucion": "La PEA se encuentra dividida entre adecuadamente empleado, subempleado y desempleado. En ese sentido, la cantidad de empleo formal e informal depende de inversión en educación, tecnología e infraestructura, que mejora los niveles de innovación y emprendimiento. Respuesta correcta: C. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Resolución basada en el manual de prácticas de Economía del CEPRE UNMSM, semana 3, ciclo 2019-II. El ejercicio se conserva en Proceso económico y producción para evitar mezclar materias. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "documento": "Copia de 9 Economía.pdf",
+              "semana": 3,
+              "ciclo": "2019-II",
+              "paginaPdf": 60,
+              "numero": 1
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "EC-03-R-15",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Proceso económico y producción",
+            "subarea": "Ciencias Sociales",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Juan es un productor de papa, que tiene un puesto en el mercado de Jesús María, dada su ventaja muchas veces tiene mejores precios que sus demás competidores. Si él es un productor lleva el producto al mercado y llega al consumidor final con bajo precio de mercado. Podemos afirmar que se encuentra en la fase de Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "circulación.",
+              "consumo.",
+              "inversión.",
+              "venta."
+            ],
+            "respuesta": 0,
+            "solucion": "La fase es circulación ya que es un productor lleva el producto al mercado y termina con la venta del bien. Respuesta correcta: A. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Resolución basada en el manual de prácticas de Economía del CEPRE UNMSM, semana 6, ciclo 2020-I. El ejercicio se conserva en Proceso económico y producción para evitar mezclar materias. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "documento": "Copia de 9 Economía.pdf",
+              "semana": 6,
+              "ciclo": "2020-I",
+              "paginaPdf": 119,
+              "numero": 1
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -3376,8 +3796,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -4466,6 +4886,146 @@
               "paginaPdf": 90,
               "numero": 3
             }
+          },
+          {
+            "id": "EC-04-R-11",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "La empresa y el mercado",
+            "subarea": "Ciencias Sociales",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Relacione las siguientes organizaciones empresariales con sus respectivos casos: I. Cártel a. La empresa cementera UNACEM invierte en constituir la compañía eléctrica El Platanal y la concretera UNICON relacionadas a su rubro. II. Trust b. InRetail Perú dueña de InkaFarma compra la mayoría accionaria de Mifarma, Fasa, BTL. III. Holding c. Indecopi sanciona a 7 ejecutivos de las empresas de distribuidoras de GLP Solgas, Lima Gas, Zeta Gas por concentar el precio del balón de gas. Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "Ia, IIb, IIIc",
+              "Ib, IIa, IIIc",
+              "Ib, IIc, IIIa",
+              "Ic, IIb, IIIa"
+            ],
+            "respuesta": 3,
+            "solucion": "(Ic) concertar precios es una práctica del cartel, (IIb) Una empresa compra a otras empresas del mismo rubro es un trust, (IIIa) Una empresa que es propietaria de otras empresas de rubros diferentes pero que fortalecen el negocio del grupo es un holding. Respuesta correcta: D. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Resolución basada en el manual de prácticas de Economía del CEPRE UNMSM, semana 4, ciclo 2020-I. El ejercicio se conserva en La empresa y el mercado para evitar mezclar materias. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "documento": "Copia de 9 Economía.pdf",
+              "semana": 4,
+              "ciclo": "2020-I",
+              "paginaPdf": 77,
+              "numero": 2
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "EC-04-R-12",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "La empresa y el mercado",
+            "subarea": "Ciencias Sociales",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Respecto a las estructuras de los mercados, señale la verdad (V) o falsedad (F) de los siguientes enunciados: I. La homogeneidad de los productos vendidos favorece que los oferentes acumulen poder de mercado. II. El Joint Ventura están sujetos a la nueva ley de fusiones porque incrementa el valor de las ventas brutas totales de las empresas involucradas. III. En competencia monopolística las empresas ignoran los efectos que tienen sus precios en el precio que cobran los rivales. IV. Los productos de aseo se encuentran en un mercado con características de competencia monopolística. Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "VFFF",
+              "FFFF",
+              "VVVV",
+              "FVVF"
+            ],
+            "respuesta": 3,
+            "solucion": "(I) Los productos homogéneos son característica de competencia perfecta y evita la acumulación de poder de mercado. (II) El joint Venture está considerado en la nueva de ley de control de fusiones porque significa que dos o más empresas forman tercera empresa más grande. (III) En competencia monopolística cada empresa fija el precio de su producto y toma como dato el precio de los rivales. (IV) Los productos de asea son homogéneos y sus insumos son de acceso libre y abundante. Respuesta correcta: D. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Resolución basada en el manual de prácticas de Economía del CEPRE UNMSM, semana 4, ciclo 2020-I. El ejercicio se conserva en La empresa y el mercado para evitar mezclar materias. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "documento": "Copia de 9 Economía.pdf",
+              "semana": 4,
+              "ciclo": "2020-I",
+              "paginaPdf": 80,
+              "numero": 9
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "EC-04-R-13",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "La empresa y el mercado",
+            "subarea": "Ciencias Sociales",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: La situación que se vive en Venezuela ha hecho que grandes cantidades de venezolanos emigren hacia nuestro país. A muchos de ellos los vemos en las calles o en los buses ofertando diversos productos como: aguas, gaseosas, galletas, caramelos, etc. Estos son vendidos en cantidades mínimas o por unidad. De acuerdo al texto, determine las alternativas correctas: I. La venta de los diferentes productos se da dentro de un mercado intermitente. II. Se vende bienes económicos dentro de una estructura de competencia perfecta. III. Los vendedores representan a los comerciantes en el mercado. IV. Al comprar a mayoristas los comerciantes maximizarán sus ganancias. V. Oferta y demanda actúan como precio dictante. Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "I, II, III",
+              "II, III, V",
+              "I, II, IV",
+              "II, III, IV"
+            ],
+            "respuesta": 3,
+            "solucion": "II. Se vende bienes económicos dentro de una estructura de competencia perfecta. III. Los vendedores representan a los comerciantes en el mercado. IV. Al comprar a mayoristas los comerciantes maximizarán sus ganancias. Respuesta correcta: D. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Resolución basada en el manual de prácticas de Economía del CEPRE UNMSM, semana 4, ciclo 2018-II. El ejercicio se conserva en La empresa y el mercado para evitar mezclar materias. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "documento": "Copia de 9 Economía.pdf",
+              "semana": 4,
+              "ciclo": "2018-II",
+              "paginaPdf": 90,
+              "numero": 3
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "EC-04-R-14",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "La empresa y el mercado",
+            "subarea": "Ciencias Sociales",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: A mediados del mes de septiembre el club deportivo rimence Sporting Cristal fue vendido por AB InBev (propietaria de Backus), traspasando el 100% de las acciones a la multinacional peruana Innova Sports SAC, pagando la cifra aproximada de 5 millones de dólares. Se puede afirmar, de los nuevos dueños que I. la emisión de sus acciones está inscrita en el mercado de valores. II. cuentan con un mínimo de 2 socios y no mayor de 20 accionistas. III. los socios solo responderán con sus aportes. La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "I y II",
+              "Solo II",
+              "I, II y III",
+              "II y III"
+            ],
+            "respuesta": 3,
+            "solucion": "En las SAC La representación del capital social es mediante acciones, el número mínimo de socios es dos y el máximo veinte, los socios sólo responderán por sus aportes, es decir, tienen responsabilidad limitada; y no puede inscribir sus acciones en el Registro Público del Mercado de Valores. Respuesta correcta: D. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Resolución basada en el manual de prácticas de Economía del CEPRE UNMSM, semana 5, ciclo 2019-II. El ejercicio se conserva en La empresa y el mercado para evitar mezclar materias. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "documento": "Copia de 9 Economía.pdf",
+              "semana": 5,
+              "ciclo": "2019-II",
+              "paginaPdf": 103,
+              "numero": 3
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "EC-04-R-15",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "La empresa y el mercado",
+            "subarea": "Ciencias Sociales",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Trujillo, la capital de la Marinera, ha iniciado un proceso de reordenamiento del comercio; a través de diferentes inspecciones preventivas, personal de la municipalidad, ha realizado visitas y reuniones con ambulantes en las principales zonas de la ciudad: avenida España, avenida Eguren, avenida Los Incas. Este proceso contempla la salida y reubicación de puestos que estaban establecidos en área pública. De esta manera la municipalidad está intentando controlar el crecimiento exponencial que ha tenido esta actividad en la ciudad durante los últimos años, tanto en el número de vendedores como en el de compradores. De acuerdo al texto, podemos inferir que los consumidores de productos en estos puestos, realizan sus compras dentro de un mercado ______________ y los vendedores tienen como principal factor determinante del precio, ______________________________. Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "abierto – el cálculo de utilidades",
+              "de bienes reales – las comisiones",
+              "informal – la oferta y demanda",
+              "mayorista – la competencia"
+            ],
+            "respuesta": 2,
+            "solucion": "Los consumidores realizan sus compras en un mercado informal, pues adquieren diferentes productos y mercancías en las calles a través del comercio ambulatorio; los vendedores tienen como principal factor determinante de precios, la oferta y demanda, pues esta ha crecido exponencialmente durante los últimos años. Respuesta correcta: C. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Resolución basada en el manual de prácticas de Economía del CEPRE UNMSM, semana 4, ciclo 2019-I. El ejercicio se conserva en La empresa y el mercado para evitar mezclar materias. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "documento": "Copia de 9 Economía.pdf",
+              "semana": 4,
+              "ciclo": "2019-I",
+              "paginaPdf": 86,
+              "numero": 1
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -4485,8 +5045,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -5575,6 +6135,146 @@
               "paginaPdf": 189,
               "numero": 4
             }
+          },
+          {
+            "id": "EC-05-R-11",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Los precios",
+            "subarea": "Ciencias Sociales",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Relacione los eventos que afectan las curvas de oferta y demanda, según corresponda: I. Incremento de la tasa IGV a. Disminución de la cantidad II. Exoneración del pago del impuesto a la demandada renta b. Disminución de la oferta III. Incremento de los salarios c. Aumento de la oferta La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "Ia, IIb, IIIc",
+              "Ia, IIc, IIIb",
+              "Ic, IIb, IIIa",
+              "Ic, IIa, IIIb"
+            ],
+            "respuesta": 1,
+            "solucion": "El IGV es un impuesto que grava a las ventas de productos y viene incluido en el precio de los mismos, de tal manera que su incremento se verá reflejado en el incremento del precio del bien, afectando a la cantidad demandada. Una exoneración del pago del impuesto a la renta alienta la producción (oferta). El incremento de los salarios, para los productores representa un incremento en los costos, en consecuencia, disminuye la oferta. Respuesta correcta: B. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Resolución basada en el manual de prácticas de Economía del CEPRE UNMSM, semana 7, ciclo 2020-I. El ejercicio se conserva en Los precios para evitar mezclar materias. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "documento": "Copia de 9 Economía.pdf",
+              "semana": 7,
+              "ciclo": "2020-I",
+              "paginaPdf": 143,
+              "numero": 7
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "EC-05-R-12",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Los precios",
+            "subarea": "Ciencias Sociales",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: La clasificación del seleccionado peruano al mundial de Rusia 2018, desató una fiebre por la compra de vestuario, accesorios y artículos del equipo, por parte de los hinchas; siendo las camisetas de nuestros colores, en sus diferentes presentaciones, la más vendida. Por ejemplo, la marca Umbro llego a récords de venta de más de 1 millón de camisetas oficiales a un precio de 199 soles, antes y durante el mundial. A casi un años después, dichas camisetas bordean los 69 soles. Los factores que cobran mayor relevancia al determinar en el precio es el (la) I. demanda del mercado. II. oferta del mercado. III. margen de ganancia. IV. costo de producción. Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "III y IV",
+              "I, II y IV",
+              "Solo II y IV",
+              "Solo I y III"
+            ],
+            "respuesta": 3,
+            "solucion": "Después del partido del Perú – Colombia, que nos abrió la puerta para el partido de repechaje, las expectativas de los hinchas eran cada vez más a favor del seleccionado patrio de cumplir el sueño de vestir los colores blanquirroja en los colosos de Rusia. La demanda de las camisetas que eran galopantes marcaba a su vez el inicio del incremento en el precio de las camisetas de diversos diseños y marcas. Hoy, la empresa Umbro y las demás, determinan un precio tal que, buscan conservar modestos márgenes de ganancias del stock restante. Respuesta correcta: D. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Resolución basada en el manual de prácticas de Economía del CEPRE UNMSM, semana 9, ciclo 2019-I. El ejercicio se conserva en Los precios para evitar mezclar materias. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "documento": "Copia de 9 Economía.pdf",
+              "semana": 9,
+              "ciclo": "2019-I",
+              "paginaPdf": 189,
+              "numero": 4
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "EC-05-R-13",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Los precios",
+            "subarea": "Ciencias Sociales",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: En el año 2015 una empresa norteamericana farmacéutica adquirió los derechos de venta del Daraprim, un fármaco utilizado por los enfermos de sida para combatir infecciones causadas por parásitos. la empresa elevó el precio de 13.5 dólares la píldora a 750 dólares, un aumento del 5555 %. El dueño de esta empresa Martin Shkreli se convirtió en la persona más odiada en EEUU. Por lo descrito se puede afirmar que el factor que más influye en la determinación del precio es el (la) Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "margen de ganancia.",
+              "costos de producción.",
+              "demanda.",
+              "teoría de la utilidad."
+            ],
+            "respuesta": 0,
+            "solucion": "En este caso el aumento del precio solo se justica en la búsqueda de aumentar el margen de ganancia, no se hace referencia ni a los costos ni a la demanda. Respuesta correcta: A. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Resolución basada en el manual de prácticas de Economía del CEPRE UNMSM, semana 9, ciclo 2020-I. El ejercicio se conserva en Los precios para evitar mezclar materias. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "documento": "Copia de 9 Economía.pdf",
+              "semana": 9,
+              "ciclo": "2020-I",
+              "paginaPdf": 181,
+              "numero": 2
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "EC-05-R-14",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Los precios",
+            "subarea": "Ciencias Sociales",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Con respecto a la teoría de la Oferta y de la demanda, señale los enunciados correctos. I. Los consumidores bajan el precio y por ende aumenta la cantidad demandada. II. La curva de la oferta tiene pendiente positiva, ya que a un precio mayor los productores están dispuestos a ofrecer más de este bien. III. Los movimientos a lo largo de la curva de oferta ocurrirán si existe un cambio en el precio del bien. Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "II y III",
+              "Solo I",
+              "I y III",
+              "I, II, III"
+            ],
+            "respuesta": 0,
+            "solucion": "I. Los consumidores no bajan el precio, es en el mercado. II. La curva de la oferta tiene pendiente positiva, ya que a un precio mayor los productores están dispuestos a ofrecer más de este bien. III. Los movimientos a lo largo de la curva de oferta ocurrirán si existe un cambio en el precio del bien. Respuesta correcta: A. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Resolución basada en el manual de prácticas de Economía del CEPRE UNMSM, semana 7, ciclo 2020-I. El ejercicio se conserva en Los precios para evitar mezclar materias. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "documento": "Copia de 9 Economía.pdf",
+              "semana": 7,
+              "ciclo": "2020-I",
+              "paginaPdf": 142,
+              "numero": 1
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "EC-05-R-15",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Los precios",
+            "subarea": "Ciencias Sociales",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Las 85 personas más ricas del mundo acumulan una riqueza equivalente a la de las 3.500 millones más pobres, según un informe de Oxfam. La pobreza se debe a: I. Sistemas fiscales injustos. II. Corrupción y flujos ilícitos de capitales. III. Distribución injusta de la inversión y el gasto público. IV. Distribución injusta de la tierra. Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "II, III y IV son verdaderas.",
+              "I y II son falsas.",
+              "Solo III es verdadera.",
+              "todas son verdaderas."
+            ],
+            "respuesta": 3,
+            "solucion": "A nivel mundial las cuatro son verdaderas. Respuesta correcta: D. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Resolución basada en el manual de prácticas de Economía del CEPRE UNMSM, semana 9, ciclo 2018-II. El ejercicio se conserva en Los precios para evitar mezclar materias. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "documento": "Copia de 9 Economía.pdf",
+              "semana": 9,
+              "ciclo": "2018-II",
+              "paginaPdf": 194,
+              "numero": 7
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -5594,8 +6294,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -6684,6 +7384,146 @@
               "paginaPdf": 250,
               "numero": 9
             }
+          },
+          {
+            "id": "EC-06-R-11",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "La moneda",
+            "subarea": "Ciencias Sociales",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Según una encuesta realizada a los economistas más destacados de Venelandia, en cinco años, la inflación de su país pasará de galopante a hiperinflación. Esta posibilidad ha generado que I. bajen los salarios y pensiones solo de los trabajadores del sector público. II. los dueños de los grandes capitales sopesen la posibilidad de dejar de invertir en el país. III. los bancos y cajas de ahorro piensen elevar sus tasas de interés. Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "I-II-III",
+              "II-III",
+              "I-III",
+              "I-II"
+            ],
+            "respuesta": 1,
+            "solucion": "Si la inflación de un país pasara de galopante a hiperinflación, los resultados necesariamente serían fuga de capitales y aumento de las tasas de interés. Respuesta correcta: B. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Resolución basada en el manual de prácticas de Economía del CEPRE UNMSM, semana 12, ciclo 2019-II. El ejercicio se conserva en La moneda para evitar mezclar materias. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "documento": "Copia de 9 Economía.pdf",
+              "semana": 12,
+              "ciclo": "2019-II",
+              "paginaPdf": 250,
+              "numero": 9
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "EC-06-R-12",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "La moneda",
+            "subarea": "Ciencias Sociales",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: El presidente del Banco Central de Reserva (BCR) anunció que, por la magnitud de la crisis, el ente emisor inyectará por primera vez en su historia cerca de 30 mil millones de soles vía préstamos garantizados por el Ministerio de Economía y Finanzas (MEF). Esta medida se da con el objetivo de apoyar a las empresas, y sostener así la cadena de pagos. Con esta medida, el Estado está cumpliendo su rol de Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "promover la estabilidad económica.",
+              "corregir las fallas del mercado.",
+              "regular el sistema económico.",
+              "brindar bienes y servicios."
+            ],
+            "respuesta": 0,
+            "solucion": "El Estado tiene como rol en la economía promover la estabilidad económica. Respuesta correcta: A. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Resolución basada en el manual de prácticas de Economía del CEPRE UNMSM, semana 12, ciclo 2020-I. El ejercicio se conserva en La moneda para evitar mezclar materias. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "documento": "Copia de 9 Economía.pdf",
+              "semana": 12,
+              "ciclo": "2020-I",
+              "paginaPdf": 246,
+              "numero": 7
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "EC-06-R-13",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "La moneda",
+            "subarea": "Ciencias Sociales",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Uchucanchis es un pueblo de cien habitantes rodeado de montañas y carece de electricidad. Ninguna de las empresas eléctricas desea cubrir la necesidad de este pueblo, pues no solo su acceso es difícil, sino que el costo no se recuperaría con tan pocos habitantes. Debido a esto, el Estado ha decidido implementar una red eléctrica en Uchucanchis. Con esta medida, el Estado está cumpliendo su rol de Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "promover la estabilidad económica.",
+              "corregir las fallas del mercado.",
+              "regular el sistema económico.",
+              "brindar bienes y servicios."
+            ],
+            "respuesta": 3,
+            "solucion": "El Estado tiene como rol en la economía brindar aquellos bienes y servicios que el sector privado no puede o no quiere brindar. Respuesta correcta: D. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Resolución basada en el manual de prácticas de Economía del CEPRE UNMSM, semana 12, ciclo 2019-II. El ejercicio se conserva en La moneda para evitar mezclar materias. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "documento": "Copia de 9 Economía.pdf",
+              "semana": 12,
+              "ciclo": "2019-II",
+              "paginaPdf": 249,
+              "numero": 7
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "EC-06-R-14",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "La moneda",
+            "subarea": "Ciencias Sociales",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: La actual guerra comercial entre Estados Unidos y China tiene como una de sus principales causas el enorme ___________ comercial que la economía norteamericana mantiene respecto a la economía china. Pues una de las prácticas comerciales de las autoridades chinas es ___________ el yuan frente al dólar norteamericano para que sus exportaciones sean más____________. Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "volumen – depreciar – competitivas",
+              "superávit – revaluar – productivas",
+              "flujo – apreciar – rentables",
+              "déficit – devaluar – competitivas"
+            ],
+            "respuesta": 3,
+            "solucion": "La actual disputa comercial entre las dos más grandes economías del mundo es por la disputa de mercados en el exterior. La gestión de D. Trump quién viene adoptando medidas proteccionistas para frenar el avance de la economía china en sus propios mercados, entre otras razones es por la práctica un tanto desleal de las autoridades chinas de devaluar su moneda el yuan para ganar mercados en el mundo. Respuesta correcta: D. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Resolución basada en el manual de prácticas de Economía del CEPRE UNMSM, semana 12, ciclo 2018-II. El ejercicio se conserva en La moneda para evitar mezclar materias. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "documento": "Copia de 9 Economía.pdf",
+              "semana": 12,
+              "ciclo": "2018-II",
+              "paginaPdf": 257,
+              "numero": 7
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "EC-06-R-15",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "La moneda",
+            "subarea": "Ciencias Sociales",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Superintendencia Nacional de Administración Tributaria (Sunat) ya no multará a pequeñas empresas que no presenten declaraciones. La Sunat anunció que desde el 28 de enero de este año ya no sanciona con multas a las pequeñas empresas que no presenten o entreguen fuera de plazo sus declaraciones. De acuerdo al enunciado ¿Qué función es la que cumple esta institución? Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "Controlar y fiscalizar el tráfico de mercancías.",
+              "Prevenir, perseguir y denunciar al contrabando.",
+              "Desarrollar programas de información, divulgación y capacitación.",
+              "Administrar los procesos de recaudación y fiscalización."
+            ],
+            "respuesta": 3,
+            "solucion": "La SUNAT administra los procesos de recaudación y fiscalización de los tributos internos del Gobierno Central. Respuesta correcta: D. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Resolución basada en el manual de prácticas de Economía del CEPRE UNMSM, semana 14, ciclo 2020-I. El ejercicio se conserva en La moneda para evitar mezclar materias. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "documento": "Copia de 9 Economía.pdf",
+              "semana": 14,
+              "ciclo": "2020-I",
+              "paginaPdf": 290,
+              "numero": 1
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -6703,8 +7543,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -7793,6 +8633,146 @@
               "paginaPdf": 271,
               "numero": 6
             }
+          },
+          {
+            "id": "EC-07-R-11",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "El sistema financiero",
+            "subarea": "Ciencias Sociales",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: En el sistema financiero peruano existen 16 bancos privados, pero son cuatro los que captan alrededor del 80 % de los ahorros del público, por eso se les puede considerar un oligopolio. Estos bancos operan en la intermediación financiera _________________ y cualquier sanción, clausura o autorización para un nuevo banco que se quiera constituir. Además de las fusiones que se podría dar entre ellos tiene que ser autorizado por la _________________. Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "indirecta – SBS",
+              "indirecta – SMV",
+              "indirecta – BCR",
+              "directa – SBS"
+            ],
+            "respuesta": 0,
+            "solucion": "Los bancos operan en la intermediación financiera indirecta. La característica de esta intermediación es que los agentes económicos superavitarios (ahorristas) no tiene contacto con el agente económico deficitario (prestatario). El encargado del traslado de los recursos son los bancos o intermediarios financieros, estos también asumen el riesgo de la las operaciones. Estas empresas son supervisadas por la SBS. Respuesta correcta: A. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Resolución basada en el manual de prácticas de Economía del CEPRE UNMSM, semana 13, ciclo 2019-II. El ejercicio se conserva en El sistema financiero para evitar mezclar materias. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "documento": "Copia de 9 Economía.pdf",
+              "semana": 13,
+              "ciclo": "2019-II",
+              "paginaPdf": 275,
+              "numero": 6
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "EC-07-R-12",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "El sistema financiero",
+            "subarea": "Ciencias Sociales",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Se tiene una empresa financiera que anuncia ser líder en el otorgamiento de préstamos prendarios con base en joyas, automóviles y en todo tipo de artículos, como artefactos electrodomésticos y otros. Ofrece, además, las mejores tasas de interés del mercado. Entonces la clase de crédito que esta empresa oferta es de acuerdo a la Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "duración.",
+              "garantía exigida.",
+              "actividad productiva.",
+              "presencia de un aval."
+            ],
+            "respuesta": 1,
+            "solucion": "Esta empresa financiera al pedir a los potenciales clientes la entrega de un bien mueble como respaldo para otorgar el crédito, lo que está haciendo es exigir una prenda. Por ello lo que se concluye que el tipo de crédito que otorga es de acuerdo a la garantía exigida al deudor. Respuesta correcta: B. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Resolución basada en el manual de prácticas de Economía del CEPRE UNMSM, semana 13, ciclo 2020-I. El ejercicio se conserva en El sistema financiero para evitar mezclar materias. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "documento": "Copia de 9 Economía.pdf",
+              "semana": 13,
+              "ciclo": "2020-I",
+              "paginaPdf": 268,
+              "numero": 7
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "EC-07-R-13",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "El sistema financiero",
+            "subarea": "Ciencias Sociales",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Los Chávez son un grupo de hermanos que emigró de Venezuela al Perú, debido a la fuerte crisis económica que su país atraviesa. Todos ellos son profesionales, pero no pueden trabajar debido a falta de documentos. Quieren solicitar un préstamo para realizar un negocio que consiste en vender desayunos en un mercado del cono norte. Debido también a la falta de documentos tampoco podrían obtener el crédito, acudiendo al sistema financiero informal. El crédito que solicitan es del tipo Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "hipotecario.",
+              "personal.",
+              "productivo.",
+              "de consumo. ."
+            ],
+            "respuesta": 2,
+            "solucion": "Los hermanos han constituido una empresa. Al solicitar recursos para financiar sus actividades está solicitando un crédito productivo. Respuesta correcta: C. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Resolución basada en el manual de prácticas de Economía del CEPRE UNMSM, semana 13, ciclo 2019-II. El ejercicio se conserva en El sistema financiero para evitar mezclar materias. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "documento": "Copia de 9 Economía.pdf",
+              "semana": 13,
+              "ciclo": "2019-II",
+              "paginaPdf": 272,
+              "numero": 7
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "EC-07-R-14",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "El sistema financiero",
+            "subarea": "Ciencias Sociales",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Según información de la SBS, En el último trimestre del 2018, la tasa de interés de los créditos de consumo ha caído en promedio del 44% al 40%. De acuerdo al ente supervisor, esto responde a varios factores, uno de ellos es que el índice de morosidad o cartera pesada ha disminuido, otro factor podría ser Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "la menor competencia que hay en el mercado bancario.",
+              "el menor riesgo que generan los créditos a las familias.",
+              "el incremento de la inflación y el precio de la divisa.",
+              "el mayor riesgo de las familias por falta de garantías."
+            ],
+            "respuesta": 1,
+            "solucion": "Existe una relación directa entre el riesgo y la tasa de interés que se cobra por los préstamos. Si el riesgo de prestar dinero disminuye la tasa de interés también. Esto es lo que ocurre, las familias están pagando mejor sus deudas y tienen mayor poder adquisitivo, por esas razones su riesgo es menor. Respuesta correcta: B. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Resolución basada en el manual de prácticas de Economía del CEPRE UNMSM, semana 13, ciclo 2019-II. El ejercicio se conserva en El sistema financiero para evitar mezclar materias. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "documento": "Copia de 9 Economía.pdf",
+              "semana": 13,
+              "ciclo": "2019-II",
+              "paginaPdf": 276,
+              "numero": 8
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "EC-07-R-15",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "El sistema financiero",
+            "subarea": "Ciencias Sociales",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: La inclusión financiera en un país mide la proporción de los ciudadanos que utilizan los servicios financieros de su economía, a través de los depósitos y créditos. El problema actual originado por la pandemia del nuevo coronavirus ha desnudado una serie de problemas. Uno de ellos es la baja inclusión financiera de la población, que ha limitado tremendamente la adecuada ayuda social que el gobierno ha querido otorgar a las familias en niveles de pobreza y pobreza extrema. La operación __________ que facilita recibir este tipo de ayuda es una __________. La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "activa – cuenta de ahorros",
+              "pasiva – cuenta de ahorros",
+              "activa – cuenta corriente",
+              "pasiva – línea de crédito"
+            ],
+            "respuesta": 1,
+            "solucion": "Los depósitos que captan los intermediarios financieros del público, son operaciones pasivas. Las colocaciones que realizan se denominan activas. Por lo tanto, una cuenta de ahorros es una operación pasiva, la apertura de esta cuenta facilita que el titular pueda recibir depósitos como por ejemplo los bonos otorgados por el gobierno. Respuesta correcta: B. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Resolución basada en el manual de prácticas de Economía del CEPRE UNMSM, semana 13, ciclo 2020-I. El ejercicio se conserva en El sistema financiero para evitar mezclar materias. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "documento": "Copia de 9 Economía.pdf",
+              "semana": 13,
+              "ciclo": "2020-I",
+              "paginaPdf": 267,
+              "numero": 4
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -7812,8 +8792,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -8902,12 +9882,152 @@
               "paginaPdf": 344,
               "numero": 2
             }
+          },
+          {
+            "id": "EC-08-R-11",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Dinámica demográfica y desarrollo económico del Perú",
+            "subarea": "Ciencias Sociales",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: De los siguientes enunciados, señale aquellos que guardan relación con la medición del PBI. I. En una economía cerrada el PBI es igual al PNB. II. Un incremento del superávit comercial contribuye al aumento del PBI. III. La inversión es un factor, por el método del ingreso. Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "II y III",
+              "I, II, III",
+              "I y II.",
+              "Solo II"
+            ],
+            "respuesta": 2,
+            "solucion": "I. En una economía cerrada el PBI es igual al PNB debido a que no tiene relaciones comerciales con el resto del mundo, es decir SNFE. II. Un incremento del superávit comercial contribuye al aumento del PBI, en una economía abierta y si los otros factores se mantienen constantes III. La inversión es un factor, por el método del gasto. Respuesta correcta: C. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Resolución basada en el manual de prácticas de Economía del CEPRE UNMSM, semana 16, ciclo 2019-I. El ejercicio se conserva en Dinámica demográfica y desarrollo económico del Perú para evitar mezclar materias. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "documento": "Copia de 9 Economía.pdf",
+              "semana": 16,
+              "ciclo": "2019-I",
+              "paginaPdf": 345,
+              "numero": 5
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "EC-08-R-12",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Dinámica demográfica y desarrollo económico del Perú",
+            "subarea": "Ciencias Sociales",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: La Alianza del Pacífico, busca alcanzar la libre circulación de bienes, servicios, capitales y personas e impulsar un mayor crecimiento, desarrollo y competitividad de las economías de las Partes. Nació como iniciativa del Perú, quien en 2010 invitó a Colombia, Chile, Ecuador y Panamá a conformarla, con miras a convertir este espacio en un modelo de integración para la región, consolidando además una plataforma económica común con proyección a otras partes del mundo, especialmente, el Asia. México se sumó a la iniciativa conformada por Colombia, Chile y Perú, mientras que Panamá y Ecuador se incorporaron como Estados Observadores, y hoy en día este último es Candidato a Estado Asociado a la Alianza del Pacífico. Este acuerdo se puede relacionar con el concepto de La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "globalización.",
+              "mundialización.",
+              "internacionalización.",
+              "integración."
+            ],
+            "respuesta": 3,
+            "solucion": "La Alianza se constituye un área de integración profunda. Respuesta correcta: D. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Resolución basada en el manual de prácticas de Economía del CEPRE UNMSM, semana 17, ciclo 2020-I. El ejercicio se conserva en Dinámica demográfica y desarrollo económico del Perú para evitar mezclar materias. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "documento": "Copia de 9 Economía.pdf",
+              "semana": 17,
+              "ciclo": "2020-I",
+              "paginaPdf": 364,
+              "numero": 10
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "EC-08-R-13",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Dinámica demográfica y desarrollo económico del Perú",
+            "subarea": "Ciencias Sociales",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: De acuerdo a los sectores objetivos del desarrollo sustentable, relaciones los siguientes enunciados. I. Costos y beneficios distribuidos de manera adecuada y equitativa. II. Producción con sustentabilidad ecológica. III. Responsabilidad social de las empresas y la preservación de la biodiversidad. a. ambiental o natural. b. Económico. c. social. Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "Ic, IIa, IIIc",
+              "Ic, IIb, IIIa",
+              "Ib, IIa, IIIc",
+              "Ib, IIc, IIIa"
+            ],
+            "respuesta": 1,
+            "solucion": "Para un desarrollo sustentable se toman en consideración los tres pilares, que son: Social: Los costos y beneficios son distribuidos de manera equitativa (equidad intrageneracional, equidad intergeneracional), Económico: Producción viable con mitigación en impactos medioambientales. Natural: Actividad social de la empresa con preservación de la biodiversidad. Respuesta correcta: B. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Resolución basada en el manual de prácticas de Economía del CEPRE UNMSM, semana 16, ciclo 2019-I. El ejercicio se conserva en Dinámica demográfica y desarrollo económico del Perú para evitar mezclar materias. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "documento": "Copia de 9 Economía.pdf",
+              "semana": 16,
+              "ciclo": "2019-I",
+              "paginaPdf": 344,
+              "numero": 3
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "EC-08-R-14",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Dinámica demográfica y desarrollo económico del Perú",
+            "subarea": "Ciencias Sociales",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Teniendo en cuanta las variables que inciden en el PBI del país, se puede afirmar que el crecimiento económico se lograra a través de: I. Un aumento de la inversión privada en sectores claves. Como construcción, pesca, agricultura y minería. II. Un incremento de la inversión pública de infraestructura de puertos, carreteras, etc. III. Aumento de las planillas del sector público. Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "I y II",
+              "solo II",
+              "I y III",
+              "II y III"
+            ],
+            "respuesta": 0,
+            "solucion": "I. Un aumento de la inversión privada en sectores claves. Como construcción, pesca, agricultura y minería; sectores que dinamizan la economía y que generan puestos de trabajo II. Un incremento de la inversión pública de infraestructura de puertos, carreteras, etc.; gasto del gobierno que permite mejorar la capacidad productiva y en términos de competitividad III. El aumento de las planillas del sector público, que se convierten en sueldos faraónicos sin resultados tangibles, se convierte en un gasto improductivo. Respuesta correcta: A. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Resolución basada en el manual de prácticas de Economía del CEPRE UNMSM, semana 16, ciclo 2019-I. El ejercicio se conserva en Dinámica demográfica y desarrollo económico del Perú para evitar mezclar materias. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "documento": "Copia de 9 Economía.pdf",
+              "semana": 16,
+              "ciclo": "2019-I",
+              "paginaPdf": 346,
+              "numero": 7
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "EC-08-R-15",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Dinámica demográfica y desarrollo económico del Perú",
+            "subarea": "Ciencias Sociales",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Para las autoridades de gobierno, una medida que estimulará el crecimiento económico del país, ante la disminución de la inversión privada y las compras de nuestros productos en el exterior en comparación a la década anterior, será un (una). I. Reducción del déficit fiscal II. Incrementos en el gasto de capital. III. Aumento en el gasto corriente. IV. Incremento en el déficit fiscal. V. Política monetaria expansiva. Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "Solo II.",
+              "II y V",
+              "I, II y V.",
+              "II, IV y V"
+            ],
+            "respuesta": 3,
+            "solucion": "II. Incrementos en el gasto de capital, obras de infraestructura. IV. Incremento en el déficit fiscal, destinado a gasto productivo. V. Política monetaria expansiva, responsable y prudente para estimular la economía con estabilidad monetaria. Respuesta correcta: D. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Resolución basada en el manual de prácticas de Economía del CEPRE UNMSM, semana 16, ciclo 2019-I. El ejercicio se conserva en Dinámica demográfica y desarrollo económico del Perú para evitar mezclar materias. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "documento": "Copia de 9 Economía.pdf",
+              "semana": 16,
+              "ciclo": "2019-I",
+              "paginaPdf": 347,
+              "numero": 10
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
     }
   ],
-  "total": 320,
+  "total": 360,
   "fuentes": [
     {
       "documento": "Copia de 9 Economía.pdf",

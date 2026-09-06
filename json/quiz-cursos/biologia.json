@@ -1,7 +1,7 @@
 {
   "courseId": "biologia",
   "nombre": "Biología",
-  "version": "2026.9-cuatro-niveles-universidad",
+  "version": "2026.31-nacional-7605",
   "descripcion": "Banco original UniPrep organizado uno a uno con cada tema visible. Cada sesión temática conserva su subárea y no mezcla preguntas de otros temas.",
   "universidadesReferencia": [
     "UNAMAD",
@@ -17,15 +17,15 @@
     "basico": 120,
     "intermedio": 120,
     "avanzado": 120,
-    "admision": 120,
-    "total": 480
+    "admision": 180,
+    "total": 540
   },
   "distribucionPorTema": {
     "basico": 10,
     "intermedio": 10,
     "avanzado": 10,
-    "admision": 10,
-    "total": 40
+    "admision": 15,
+    "total": 45
   },
   "criteriosDificultad": {
     "basico": "Fundamento o procedimiento directo",
@@ -48,8 +48,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -858,6 +858,111 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNMSM; no es una pregunta oficial"
+          },
+          {
+            "id": "BIO-01-R-11",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Fundamentos de la biología",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Durante el análisis de una revisión académica vinculado con Fundamentos de la biología, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "Una hipótesis científica debe ser contrastable mediante observaciones o experimentos.",
+              "Una hipótesis es verdadera por autoridad.",
+              "Una hipótesis no admite evidencia en contra.",
+              "Una hipótesis reemplaza la medición."
+            ],
+            "respuesta": 0,
+            "solucion": "La alternativa correcta es: Una hipótesis científica debe ser contrastable mediante observaciones o experimentos. La contrastación permite aceptar provisionalmente o rechazar explicaciones. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-01-R-12",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Fundamentos de la biología",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: En una evaluación comparativa de Fundamentos de la biología. Analiza las proposiciones: I) La homeostasis equivale a reproducción sexual. II) Una hipótesis científica debe ser contrastable mediante observaciones o experimentos. ¿Qué alternativa evalúa correctamente ambas? Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "Solo I es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo II es correcta"
+            ],
+            "respuesta": 3,
+            "solucion": "La proposición I es falsa: Los sistemas de regulación compensan cambios del medio interno. La proposición II es verdadera: La contrastación permite aceptar provisionalmente o rechazar explicaciones. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-01-R-13",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Fundamentos de la biología",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: En una evaluación comparativa de Fundamentos de la biología. Analiza las proposiciones: I) Una hipótesis es verdadera por autoridad. II) Los tejidos son la unidad mínima de herencia. ¿Qué alternativa evalúa correctamente ambas? La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "Solo II es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo I es correcta"
+            ],
+            "respuesta": 2,
+            "solucion": "La proposición I es falsa: La contrastación permite aceptar provisionalmente o rechazar explicaciones. La proposición II es falsa: La teoría celular relaciona estructura, función y continuidad de la vida. Por ello, ninguna es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-01-R-14",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Fundamentos de la biología",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Al contrastar conceptos esenciales de Fundamentos de la biología. Analiza las proposiciones: I) La célula es la unidad estructural y funcional básica de los seres vivos. II) La homeostasis mantiene variables internas dentro de rangos compatibles con la vida. ¿Qué alternativa evalúa correctamente ambas? Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "Ninguna es correcta",
+              "I y II son correctas",
+              "Solo I es correcta",
+              "Solo II es correcta"
+            ],
+            "respuesta": 1,
+            "solucion": "La proposición I es verdadera: La teoría celular relaciona estructura, función y continuidad de la vida. La proposición II es verdadera: Los sistemas de regulación compensan cambios del medio interno. Por ello, i y ii son correctas. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-01-R-15",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Fundamentos de la biología",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Al contrastar conceptos esenciales de Fundamentos de la biología. Analiza las proposiciones: I) La homeostasis mantiene variables internas dentro de rangos compatibles con la vida. II) Una hipótesis es verdadera por autoridad. ¿Qué alternativa evalúa correctamente ambas? Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es verdadera: Los sistemas de regulación compensan cambios del medio interno. La proposición II es falsa: La contrastación permite aceptar provisionalmente o rechazar explicaciones. Por ello, solo i es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -877,8 +982,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -1687,6 +1792,111 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Competencias generales de admisión preuniversitaria"
+          },
+          {
+            "id": "BIO-02-R-11",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Clasificación de los seres vivos",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: En una evaluación comparativa de Clasificación de los seres vivos. Analiza las proposiciones: I) Cada país asigna un nombre científico distinto. II) Bacteria, Archaea y Eukarya son los tres dominios reconocidos ampliamente. ¿Qué alternativa evalúa correctamente ambas? Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "Solo II es correcta",
+              "Solo I es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es falsa: El sistema binomial proporciona una denominación universal. La proposición II es verdadera: Los dominios consideran diferencias celulares y moleculares profundas. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-02-R-12",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Clasificación de los seres vivos",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: En una evaluación comparativa de Clasificación de los seres vivos. Analiza las proposiciones: I) Los dominios son Animalia y Plantae únicamente. II) Una especie incluye organismos de cualquier linaje. ¿Qué alternativa evalúa correctamente ambas? Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 3,
+            "solucion": "La proposición I es falsa: Los dominios consideran diferencias celulares y moleculares profundas. La proposición II es falsa: La clasificación facilita comparar diversidad y parentesco. Por ello, ninguna es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-02-R-13",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Clasificación de los seres vivos",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Al contrastar conceptos esenciales de Clasificación de los seres vivos. Analiza las proposiciones: I) La taxonomía organiza organismos en categorías jerárquicas según caracteres compartidos. II) En la nomenclatura binomial se escribe género y epíteto específico. ¿Qué alternativa evalúa correctamente ambas? Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "Solo II es correcta",
+              "Ninguna es correcta",
+              "I y II son correctas",
+              "Solo I es correcta"
+            ],
+            "respuesta": 2,
+            "solucion": "La proposición I es verdadera: La clasificación facilita comparar diversidad y parentesco. La proposición II es verdadera: El sistema binomial proporciona una denominación universal. Por ello, i y ii son correctas. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-02-R-14",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Clasificación de los seres vivos",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Al contrastar conceptos esenciales de Clasificación de los seres vivos. Analiza las proposiciones: I) En la nomenclatura binomial se escribe género y epíteto específico. II) Los dominios son Animalia y Plantae únicamente. ¿Qué alternativa evalúa correctamente ambas? Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "Ninguna es correcta",
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son correctas"
+            ],
+            "respuesta": 1,
+            "solucion": "La proposición I es verdadera: El sistema binomial proporciona una denominación universal. La proposición II es falsa: Los dominios consideran diferencias celulares y moleculares profundas. Por ello, solo i es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-02-R-15",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Clasificación de los seres vivos",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Al contrastar conceptos esenciales de Clasificación de los seres vivos. Analiza las proposiciones: I) Los dominios son Animalia y Plantae únicamente. II) La taxonomía organiza organismos en categorías jerárquicas según caracteres compartidos. ¿Qué alternativa evalúa correctamente ambas? Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "Solo II es correcta",
+              "Solo I es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es falsa: Los dominios consideran diferencias celulares y moleculares profundas. La proposición II es verdadera: La clasificación facilita comparar diversidad y parentesco. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -1706,8 +1916,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -2516,6 +2726,111 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNI; no es una pregunta oficial"
+          },
+          {
+            "id": "BIO-03-R-11",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Bioquímica",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: En una evaluación comparativa de Bioquímica. Analiza las proposiciones: I) El ATP almacena la información hereditaria principal. II) Toda enzima está formada por lípidos. ¿Qué alternativa evalúa correctamente ambas? Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "Ninguna es correcta",
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son correctas"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es falsa: La hidrólisis de sus enlaces fosfato acopla procesos endergónicos. La proposición II es falsa: La catálisis modifica la velocidad, no la energía libre del equilibrio. Por ello, ninguna es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-03-R-12",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Bioquímica",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Al contrastar conceptos esenciales de Bioquímica. Analiza las proposiciones: I) Las enzimas aceleran reacciones al disminuir la energía de activación sin consumirse. II) Los aminoácidos son monómeros que forman proteínas. ¿Qué alternativa evalúa correctamente ambas? Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "Ninguna es correcta",
+              "I y II son correctas"
+            ],
+            "respuesta": 3,
+            "solucion": "La proposición I es verdadera: La catálisis modifica la velocidad, no la energía libre del equilibrio. La proposición II es verdadera: Los enlaces peptídicos unen aminoácidos en cadenas. Por ello, i y ii son correctas. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-03-R-13",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Bioquímica",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: Al contrastar conceptos esenciales de Bioquímica. Analiza las proposiciones: I) Los aminoácidos son monómeros que forman proteínas. II) El ATP almacena la información hereditaria principal. ¿Qué alternativa evalúa correctamente ambas? Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo I es correcta",
+              "Solo II es correcta"
+            ],
+            "respuesta": 2,
+            "solucion": "La proposición I es verdadera: Los enlaces peptídicos unen aminoácidos en cadenas. La proposición II es falsa: La hidrólisis de sus enlaces fosfato acopla procesos endergónicos. Por ello, solo i es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-03-R-14",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Bioquímica",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Al contrastar conceptos esenciales de Bioquímica. Analiza las proposiciones: I) El ATP almacena la información hereditaria principal. II) Las enzimas aceleran reacciones al disminuir la energía de activación sin consumirse. ¿Qué alternativa evalúa correctamente ambas? Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "Ninguna es correcta",
+              "Solo II es correcta",
+              "Solo I es correcta",
+              "I y II son correctas"
+            ],
+            "respuesta": 1,
+            "solucion": "La proposición I es falsa: La hidrólisis de sus enlaces fosfato acopla procesos endergónicos. La proposición II es verdadera: La catálisis modifica la velocidad, no la energía libre del equilibrio. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-03-R-15",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Bioquímica",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Un estudiante utiliza un simulacro de admisión para justificar una relación de Bioquímica. ¿Cuál afirmación conserva una relación conceptual válida? Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "Los nucleótidos forman triglicéridos.",
+              "Los ácidos grasos forman proteínas sin enlaces peptídicos.",
+              "Los aminoácidos son monómeros que forman proteínas.",
+              "Los monosacáridos forman directamente ADN."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: Los aminoácidos son monómeros que forman proteínas. Los enlaces peptídicos unen aminoácidos en cadenas. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -2535,8 +2850,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -3345,6 +3660,111 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSAAC; no es una pregunta oficial"
+          },
+          {
+            "id": "BIO-04-R-11",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Célula",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Al contrastar conceptos esenciales de Célula. Analiza las proposiciones: I) La membrana plasmática regula selectivamente el intercambio con el medio. II) La mitocondria participa en la respiración celular aeróbica y la producción de ATP. ¿Qué alternativa evalúa correctamente ambas? Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "I y II son correctas",
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es verdadera: Su bicapa y proteínas participan en transporte y comunicación. La proposición II es verdadera: En sus membranas ocurre gran parte de la fosforilación oxidativa. Por ello, i y ii son correctas. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-04-R-12",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Célula",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Al contrastar conceptos esenciales de Célula. Analiza las proposiciones: I) La mitocondria participa en la respiración celular aeróbica y la producción de ATP. II) Los ribosomas duplican directamente el ADN nuclear. ¿Qué alternativa evalúa correctamente ambas? Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "Solo II es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo I es correcta"
+            ],
+            "respuesta": 3,
+            "solucion": "La proposición I es verdadera: En sus membranas ocurre gran parte de la fosforilación oxidativa. La proposición II es falsa: Traducen la secuencia de codones en una cadena polipeptídica. Por ello, solo i es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-04-R-13",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Célula",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Al contrastar conceptos esenciales de Célula. Analiza las proposiciones: I) Los ribosomas duplican directamente el ADN nuclear. II) La membrana plasmática regula selectivamente el intercambio con el medio. ¿Qué alternativa evalúa correctamente ambas? Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo II es correcta",
+              "Solo I es correcta"
+            ],
+            "respuesta": 2,
+            "solucion": "La proposición I es falsa: Traducen la secuencia de codones en una cadena polipeptídica. La proposición II es verdadera: Su bicapa y proteínas participan en transporte y comunicación. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-04-R-14",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Célula",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Un estudiante utiliza un simulacro de admisión para justificar una relación de Célula. ¿Cuál afirmación conserva una relación conceptual válida? La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "La mitocondria sintetiza la pared bacteriana.",
+              "La mitocondria almacena bilis.",
+              "La mitocondria reemplaza al núcleo.",
+              "La mitocondria participa en la respiración celular aeróbica y la producción de ATP."
+            ],
+            "respuesta": 3,
+            "solucion": "La alternativa correcta es: La mitocondria participa en la respiración celular aeróbica y la producción de ATP. En sus membranas ocurre gran parte de la fosforilación oxidativa. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-04-R-15",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Célula",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Durante el análisis de un simulacro de admisión vinculado con Célula, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "Los ribosomas degradan todos los lípidos.",
+              "Los ribosomas producen glucosa por fotosíntesis.",
+              "Los ribosomas realizan la síntesis de proteínas a partir del ARN mensajero.",
+              "Los ribosomas duplican directamente el ADN nuclear."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: Los ribosomas realizan la síntesis de proteínas a partir del ARN mensajero. Traducen la secuencia de codones en una cadena polipeptídica. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -3364,8 +3784,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -4174,6 +4594,111 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UCSM; no es una pregunta oficial"
+          },
+          {
+            "id": "BIO-05-R-11",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Histología animal",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Al contrastar conceptos esenciales de Histología animal. Analiza las proposiciones: I) El tejido conectivo se caracteriza por células inmersas en una matriz extracelular variable. II) El músculo produce anticuerpos como función central. ¿Qué alternativa evalúa correctamente ambas? La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es verdadera: La matriz explica funciones de unión, defensa, reserva y sostén. La proposición II es falsa: Actina y miosina permiten generar fuerza. Por ello, solo i es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-05-R-12",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Histología animal",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Al contrastar conceptos esenciales de Histología animal. Analiza las proposiciones: I) El músculo produce anticuerpos como función central. II) El tejido epitelial recubre superficies y forma glándulas. ¿Qué alternativa evalúa correctamente ambas? Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "Solo I es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo II es correcta"
+            ],
+            "respuesta": 3,
+            "solucion": "La proposición I es falsa: Actina y miosina permiten generar fuerza. La proposición II es verdadera: Sus células unidas forman barreras de protección, absorción o secreción. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-05-R-13",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Histología animal",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Un estudiante utiliza un simulacro de admisión para justificar una relación de Histología animal. ¿Cuál afirmación conserva una relación conceptual válida? Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "El tejido conectivo se caracteriza por células inmersas en una matriz extracelular variable.",
+              "El conectivo carece siempre de matriz.",
+              "El conectivo forma únicamente neuronas.",
+              "El conectivo no cumple soporte ni transporte."
+            ],
+            "respuesta": 0,
+            "solucion": "La alternativa correcta es: El tejido conectivo se caracteriza por células inmersas en una matriz extracelular variable. La matriz explica funciones de unión, defensa, reserva y sostén. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-05-R-14",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Histología animal",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Durante el análisis de un simulacro de admisión vinculado con Histología animal, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "El músculo produce anticuerpos como función central.",
+              "El músculo reemplaza el tejido nervioso.",
+              "El músculo carece de proteínas contráctiles.",
+              "El tejido muscular transforma energía química en contracción y movimiento."
+            ],
+            "respuesta": 3,
+            "solucion": "La alternativa correcta es: El tejido muscular transforma energía química en contracción y movimiento. Actina y miosina permiten generar fuerza. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-05-R-15",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Histología animal",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Al corregir una revisión académica sobre Histología animal, se debe elegir una explicación compatible con los principios de la materia. ¿Cuál cumple la condición? Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "El epitelio posee abundante matriz mineralizada.",
+              "El epitelio solo aparece en huesos.",
+              "El tejido epitelial recubre superficies y forma glándulas.",
+              "El tejido epitelial conduce impulsos como función exclusiva."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: El tejido epitelial recubre superficies y forma glándulas. Sus células unidas forman barreras de protección, absorción o secreción. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -4193,8 +4718,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -5003,6 +5528,111 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSA; no es una pregunta oficial"
+          },
+          {
+            "id": "BIO-06-R-11",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Histología vegetal",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Al contrastar conceptos esenciales de Histología vegetal. Analiza las proposiciones: I) Los meristemos están formados solo por células muertas. II) El xilema conduce principalmente agua y sales minerales desde la raíz. ¿Qué alternativa evalúa correctamente ambas? Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "Solo II es correcta",
+              "Solo I es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es falsa: Originan crecimiento primario o secundario de la planta. La proposición II es verdadera: Sus vasos participan en el transporte ascendente de savia bruta. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-06-R-12",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Histología vegetal",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Un estudiante utiliza un simulacro de admisión para justificar una relación de Histología vegetal. ¿Cuál afirmación conserva una relación conceptual válida? Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "El floema reemplaza los estomas.",
+              "El floema distribuye azúcares y otras sustancias orgánicas.",
+              "El floema conduce únicamente oxígeno atmosférico.",
+              "El floema forma la cutícula animal."
+            ],
+            "respuesta": 1,
+            "solucion": "La alternativa correcta es: El floema distribuye azúcares y otras sustancias orgánicas. Transporta productos de la fotosíntesis entre órganos fuente y sumidero. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-06-R-13",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Histología vegetal",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Durante el análisis de un simulacro de admisión vinculado con Histología vegetal, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "Los meristemos contienen células con alta capacidad de división.",
+              "Los meristemos están formados solo por células muertas.",
+              "Los meristemos impiden el crecimiento.",
+              "Los meristemos son exclusivos de semillas secas."
+            ],
+            "respuesta": 0,
+            "solucion": "La alternativa correcta es: Los meristemos contienen células con alta capacidad de división. Originan crecimiento primario o secundario de la planta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-06-R-14",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Histología vegetal",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: Al corregir una revisión académica sobre Histología vegetal, se debe elegir una explicación compatible con los principios de la materia. ¿Cuál cumple la condición? Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "El xilema transporta azúcares desde las hojas como función principal.",
+              "El xilema produce gametos.",
+              "El xilema solo existe en flores.",
+              "El xilema conduce principalmente agua y sales minerales desde la raíz."
+            ],
+            "respuesta": 3,
+            "solucion": "La alternativa correcta es: El xilema conduce principalmente agua y sales minerales desde la raíz. Sus vasos participan en el transporte ascendente de savia bruta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-06-R-15",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Histología vegetal",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Un estudiante utiliza una revisión académica para justificar una relación de Histología vegetal. ¿Cuál afirmación conserva una relación conceptual válida? Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "El floema forma la cutícula animal.",
+              "El floema reemplaza los estomas.",
+              "El floema distribuye azúcares y otras sustancias orgánicas.",
+              "El floema conduce únicamente oxígeno atmosférico."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: El floema distribuye azúcares y otras sustancias orgánicas. Transporta productos de la fotosíntesis entre órganos fuente y sumidero. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -5022,8 +5652,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -5832,6 +6462,111 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNAMAD; no es una pregunta oficial"
+          },
+          {
+            "id": "BIO-07-R-11",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Nutrición y metabolismo",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: Un estudiante utiliza un simulacro de admisión para justificar una relación de Nutrición y metabolismo. ¿Cuál afirmación conserva una relación conceptual válida? Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "El anabolismo no usa enzimas.",
+              "El anabolismo solo sucede durante el sueño.",
+              "El anabolismo construye moléculas complejas y requiere aporte energético.",
+              "El anabolismo destruye exclusivamente proteínas."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: El anabolismo construye moléculas complejas y requiere aporte energético. La biosíntesis se acopla al consumo de ATP y poder reductor. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-07-R-12",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Nutrición y metabolismo",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Durante el análisis de un simulacro de admisión vinculado con Nutrición y metabolismo, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "Todas las personas necesitan idéntica cantidad de energía.",
+              "Una dieta equilibrada aporta macronutrientes, micronutrientes, agua y energía según necesidad.",
+              "Una dieta equilibrada elimina todo carbohidrato.",
+              "Las vitaminas sustituyen completamente a las proteínas."
+            ],
+            "respuesta": 1,
+            "solucion": "La alternativa correcta es: Una dieta equilibrada aporta macronutrientes, micronutrientes, agua y energía según necesidad. Los requerimientos varían con edad, actividad y condición fisiológica. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-07-R-13",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Nutrición y metabolismo",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Al corregir una revisión académica sobre Nutrición y metabolismo, se debe elegir una explicación compatible con los principios de la materia. ¿Cuál cumple la condición? Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "El catabolismo degrada moléculas y puede liberar energía.",
+              "El catabolismo sintetiza siempre macromoléculas consumiendo ATP.",
+              "El catabolismo equivale a mitosis.",
+              "El catabolismo ocurre solo en el núcleo."
+            ],
+            "respuesta": 0,
+            "solucion": "La alternativa correcta es: El catabolismo degrada moléculas y puede liberar energía. Las rutas degradativas generan energía y precursores. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-07-R-14",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Nutrición y metabolismo",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Un estudiante utiliza una revisión académica para justificar una relación de Nutrición y metabolismo. ¿Cuál afirmación conserva una relación conceptual válida? Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "El anabolismo destruye exclusivamente proteínas.",
+              "El anabolismo no usa enzimas.",
+              "El anabolismo solo sucede durante el sueño.",
+              "El anabolismo construye moléculas complejas y requiere aporte energético."
+            ],
+            "respuesta": 3,
+            "solucion": "La alternativa correcta es: El anabolismo construye moléculas complejas y requiere aporte energético. La biosíntesis se acopla al consumo de ATP y poder reductor. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-07-R-15",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Nutrición y metabolismo",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Durante el análisis de una revisión académica vinculado con Nutrición y metabolismo, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "Las vitaminas sustituyen completamente a las proteínas.",
+              "Todas las personas necesitan idéntica cantidad de energía.",
+              "Una dieta equilibrada aporta macronutrientes, micronutrientes, agua y energía según necesidad.",
+              "Una dieta equilibrada elimina todo carbohidrato."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: Una dieta equilibrada aporta macronutrientes, micronutrientes, agua y energía según necesidad. Los requerimientos varían con edad, actividad y condición fisiológica. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -5851,8 +6586,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -6661,6 +7396,111 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de PUCP; no es una pregunta oficial"
+          },
+          {
+            "id": "BIO-08-R-11",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Sistemas biológicos en plantas y animales",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Durante el análisis de un simulacro de admisión vinculado con Sistemas biológicos en plantas y animales, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "Solo las raíces animales intercambian gases.",
+              "Los estomas bombean sangre.",
+              "El intercambio gaseoso requiere superficies que favorezcan difusión y gradientes.",
+              "El intercambio gaseoso ocurre sin diferencias de concentración."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: El intercambio gaseoso requiere superficies que favorezcan difusión y gradientes. La forma de la superficie se relaciona con el ambiente y la demanda metabólica. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-08-R-12",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Sistemas biológicos en plantas y animales",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Al corregir una revisión académica sobre Sistemas biológicos en plantas y animales, se debe elegir una explicación compatible con los principios de la materia. ¿Cuál cumple la condición? La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "La circulación no participa en la homeostasis.",
+              "Los sistemas de transporte distribuyen sustancias y conectan órganos especializados.",
+              "Todo organismo multicelular depende solo de difusión a larga distancia.",
+              "Las plantas carecen de transporte interno."
+            ],
+            "respuesta": 1,
+            "solucion": "La alternativa correcta es: Los sistemas de transporte distribuyen sustancias y conectan órganos especializados. La integración permite abastecimiento y eliminación de desechos. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-08-R-13",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Sistemas biológicos en plantas y animales",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Un estudiante utiliza una revisión académica para justificar una relación de Sistemas biológicos en plantas y animales. ¿Cuál afirmación conserva una relación conceptual válida? Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "Plantas y animales coordinan respuestas mediante señales químicas; los animales además usan redes nerviosas.",
+              "Las plantas poseen cerebro y médula espinal.",
+              "Los animales carecen de mensajeros químicos.",
+              "Toda respuesta biológica es instantánea."
+            ],
+            "respuesta": 0,
+            "solucion": "La alternativa correcta es: Plantas y animales coordinan respuestas mediante señales químicas; los animales además usan redes nerviosas. Distintos sistemas de señalización ajustan crecimiento y conducta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-08-R-14",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Sistemas biológicos en plantas y animales",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Durante el análisis de una revisión académica vinculado con Sistemas biológicos en plantas y animales, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "El intercambio gaseoso ocurre sin diferencias de concentración.",
+              "Solo las raíces animales intercambian gases.",
+              "Los estomas bombean sangre.",
+              "El intercambio gaseoso requiere superficies que favorezcan difusión y gradientes."
+            ],
+            "respuesta": 3,
+            "solucion": "La alternativa correcta es: El intercambio gaseoso requiere superficies que favorezcan difusión y gradientes. La forma de la superficie se relaciona con el ambiente y la demanda metabólica. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-08-R-15",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Sistemas biológicos en plantas y animales",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: En una evaluación comparativa de Sistemas biológicos en plantas y animales. Analiza las proposiciones: I) Toda respuesta biológica es instantánea. II) El intercambio gaseoso requiere superficies que favorezcan difusión y gradientes. ¿Qué alternativa evalúa correctamente ambas? Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo II es correcta",
+              "Solo I es correcta"
+            ],
+            "respuesta": 2,
+            "solucion": "La proposición I es falsa: Distintos sistemas de señalización ajustan crecimiento y conducta. La proposición II es verdadera: La forma de la superficie se relaciona con el ambiente y la demanda metabólica. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -6680,8 +7520,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -7490,6 +8330,111 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNMSM; no es una pregunta oficial"
+          },
+          {
+            "id": "BIO-09-R-11",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Sistema endocrino y nervioso",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Al corregir una revisión académica sobre Sistema endocrino y nervioso, se debe elegir una explicación compatible con los principios de la materia. ¿Cuál cumple la condición? Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "Las neuronas no se comunican.",
+              "Toda respuesta nerviosa tarda días.",
+              "El sistema nervioso transmite señales rápidas mediante impulsos y neurotransmisores.",
+              "El sistema nervioso actúa únicamente por hormonas sanguíneas."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: El sistema nervioso transmite señales rápidas mediante impulsos y neurotransmisores. La señal eléctrica y sináptica permite coordinación veloz. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-09-R-12",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Sistema endocrino y nervioso",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Un estudiante utiliza una revisión académica para justificar una relación de Sistema endocrino y nervioso. ¿Cuál afirmación conserva una relación conceptual válida? Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "El sistema endocrino carece de retroalimentación.",
+              "El sistema endocrino usa hormonas que viajan hacia células con receptores específicos.",
+              "Toda célula responde igual a cualquier hormona.",
+              "Las hormonas circulan solo por axones."
+            ],
+            "respuesta": 1,
+            "solucion": "La alternativa correcta es: El sistema endocrino usa hormonas que viajan hacia células con receptores específicos. La especificidad depende de receptores y circuitos de regulación. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-09-R-13",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Sistema endocrino y nervioso",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Durante el análisis de una revisión académica vinculado con Sistema endocrino y nervioso, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "La retroalimentación negativa contrarresta desviaciones y estabiliza variables fisiológicas.",
+              "La retroalimentación negativa amplifica siempre el cambio.",
+              "La regulación hormonal no depende de niveles previos.",
+              "La homeostasis exige valores infinitos."
+            ],
+            "respuesta": 0,
+            "solucion": "La alternativa correcta es: La retroalimentación negativa contrarresta desviaciones y estabiliza variables fisiológicas. El producto final puede reducir la señal que inició la vía. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-09-R-14",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Sistema endocrino y nervioso",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: En una evaluación comparativa de Sistema endocrino y nervioso. Analiza las proposiciones: I) El sistema endocrino carece de retroalimentación. II) La retroalimentación negativa contrarresta desviaciones y estabiliza variables fisiológicas. ¿Qué alternativa evalúa correctamente ambas? Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "Solo I es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo II es correcta"
+            ],
+            "respuesta": 3,
+            "solucion": "La proposición I es falsa: La especificidad depende de receptores y circuitos de regulación. La proposición II es verdadera: El producto final puede reducir la señal que inició la vía. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-09-R-15",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Sistema endocrino y nervioso",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: En una evaluación comparativa de Sistema endocrino y nervioso. Analiza las proposiciones: I) La retroalimentación negativa amplifica siempre el cambio. II) Las neuronas no se comunican. ¿Qué alternativa evalúa correctamente ambas? Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "Solo II es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo I es correcta"
+            ],
+            "respuesta": 2,
+            "solucion": "La proposición I es falsa: El producto final puede reducir la señal que inició la vía. La proposición II es falsa: La señal eléctrica y sináptica permite coordinación veloz. Por ello, ninguna es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -7509,8 +8454,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -8319,6 +9264,111 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Competencias generales de admisión preuniversitaria"
+          },
+          {
+            "id": "BIO-10-R-11",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Reproducción",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Un estudiante utiliza una revisión académica para justificar una relación de Reproducción. ¿Cuál afirmación conserva una relación conceptual válida? Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "La fecundación produce células siempre haploides.",
+              "La fecundación impide la variabilidad.",
+              "La fecundación fusiona gametos y restablece el número diploide.",
+              "La fecundación es una división mitótica sin gametos."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: La fecundación fusiona gametos y restablece el número diploide. El cigoto recibe material genético de ambos progenitores. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-10-R-12",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Reproducción",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: Durante el análisis de una revisión académica vinculado con Reproducción, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "La reproducción asexual genera cuatro gametos.",
+              "La reproducción asexual puede producir descendencia genéticamente muy similar al progenitor.",
+              "La reproducción asexual requiere siempre meiosis y fecundación.",
+              "La reproducción asexual solo ocurre en mamíferos."
+            ],
+            "respuesta": 1,
+            "solucion": "La alternativa correcta es: La reproducción asexual puede producir descendencia genéticamente muy similar al progenitor. Un solo progenitor puede originar copias salvo mutaciones. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-10-R-13",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Reproducción",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: En una evaluación comparativa de Reproducción. Analiza las proposiciones: I) La fecundación impide la variabilidad. II) La reproducción asexual puede producir descendencia genéticamente muy similar al progenitor. ¿Qué alternativa evalúa correctamente ambas? Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "Solo II es correcta",
+              "Solo I es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es falsa: El cigoto recibe material genético de ambos progenitores. La proposición II es verdadera: Un solo progenitor puede originar copias salvo mutaciones. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-10-R-14",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Reproducción",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: En una evaluación comparativa de Reproducción. Analiza las proposiciones: I) La reproducción asexual requiere siempre meiosis y fecundación. II) La meiosis ocurre solo en bacterias. ¿Qué alternativa evalúa correctamente ambas? Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 3,
+            "solucion": "La proposición I es falsa: Un solo progenitor puede originar copias salvo mutaciones. La proposición II es falsa: Segregación y recombinación originan gametos haploides diversos. Por ello, ninguna es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-10-R-15",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Reproducción",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Al contrastar conceptos esenciales de Reproducción. Analiza las proposiciones: I) La meiosis reduce el número cromosómico y genera variabilidad genética. II) La fecundación fusiona gametos y restablece el número diploide. ¿Qué alternativa evalúa correctamente ambas? Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "Solo II es correcta",
+              "Ninguna es correcta",
+              "I y II son correctas",
+              "Solo I es correcta"
+            ],
+            "respuesta": 2,
+            "solucion": "La proposición I es verdadera: Segregación y recombinación originan gametos haploides diversos. La proposición II es verdadera: El cigoto recibe material genético de ambos progenitores. Por ello, i y ii son correctas. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -8338,8 +9388,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -9148,6 +10198,111 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNI; no es una pregunta oficial"
+          },
+          {
+            "id": "BIO-11-R-11",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Genética y continuidad de la vida",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Durante el análisis de una revisión académica vinculado con Genética y continuidad de la vida, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "El ambiente nunca influye en un rasgo.",
+              "El genotipo es solo la apariencia externa.",
+              "El fenotipo surge de la expresión del genotipo en interacción con el ambiente.",
+              "Fenotipo y genotipo son siempre idénticos."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: El fenotipo surge de la expresión del genotipo en interacción con el ambiente. La expresión de los genes puede variar según condiciones. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-11-R-12",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Genética y continuidad de la vida",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: En una evaluación comparativa de Genética y continuidad de la vida. Analiza las proposiciones: I) Un gameto normal recibe cuatro alelos de cada gen. II) El fenotipo surge de la expresión del genotipo en interacción con el ambiente. ¿Qué alternativa evalúa correctamente ambas? Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "Ninguna es correcta",
+              "Solo II es correcta",
+              "Solo I es correcta",
+              "I y II son correctas"
+            ],
+            "respuesta": 1,
+            "solucion": "La proposición I es falsa: La separación meiótica explica proporciones mendelianas. La proposición II es verdadera: La expresión de los genes puede variar según condiciones. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-11-R-13",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Genética y continuidad de la vida",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: En una evaluación comparativa de Genética y continuidad de la vida. Analiza las proposiciones: I) Fenotipo y genotipo son siempre idénticos. II) El ADN solo se encuentra fuera de las células. ¿Qué alternativa evalúa correctamente ambas? La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "Ninguna es correcta",
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son correctas"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es falsa: La expresión de los genes puede variar según condiciones. La proposición II es falsa: Su secuencia puede copiarse y expresarse. Por ello, ninguna es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-11-R-14",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Genética y continuidad de la vida",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Al contrastar conceptos esenciales de Genética y continuidad de la vida. Analiza las proposiciones: I) El ADN almacena información hereditaria en secuencias de nucleótidos. II) La ley de segregación indica que los alelos de un gen se separan al formarse gametos. ¿Qué alternativa evalúa correctamente ambas? Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "Ninguna es correcta",
+              "I y II son correctas"
+            ],
+            "respuesta": 3,
+            "solucion": "La proposición I es verdadera: Su secuencia puede copiarse y expresarse. La proposición II es verdadera: La separación meiótica explica proporciones mendelianas. Por ello, i y ii son correctas. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-11-R-15",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Genética y continuidad de la vida",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Al contrastar conceptos esenciales de Genética y continuidad de la vida. Analiza las proposiciones: I) La ley de segregación indica que los alelos de un gen se separan al formarse gametos. II) Fenotipo y genotipo son siempre idénticos. ¿Qué alternativa evalúa correctamente ambas? Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo I es correcta",
+              "Solo II es correcta"
+            ],
+            "respuesta": 2,
+            "solucion": "La proposición I es verdadera: La separación meiótica explica proporciones mendelianas. La proposición II es falsa: La expresión de los genes puede variar según condiciones. Por ello, solo i es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -9167,8 +10322,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -9977,10 +11132,115 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSAAC; no es una pregunta oficial"
+          },
+          {
+            "id": "BIO-12-R-11",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Sistema inmunitario y enfermedades",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: En una evaluación comparativa de Sistema inmunitario y enfermedades. Analiza las proposiciones: I) Los linfocitos B forman hueso. II) Las vacunas buscan generar memoria inmunológica sin causar la enfermedad grave. ¿Qué alternativa evalúa correctamente ambas? Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo II es correcta",
+              "Solo I es correcta"
+            ],
+            "respuesta": 2,
+            "solucion": "La proposición I es falsa: La respuesta humoral reconoce antígenos mediante inmunoglobulinas. La proposición II es verdadera: La exposición segura a antígenos prepara una respuesta posterior. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-12-R-12",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Sistema inmunitario y enfermedades",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: En una evaluación comparativa de Sistema inmunitario y enfermedades. Analiza las proposiciones: I) Las vacunas reemplazan toda higiene. II) La inmunidad innata depende exclusivamente de anticuerpos específicos. ¿Qué alternativa evalúa correctamente ambas? Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo I es correcta",
+              "Solo II es correcta"
+            ],
+            "respuesta": 1,
+            "solucion": "La proposición I es falsa: La exposición segura a antígenos prepara una respuesta posterior. La proposición II es falsa: Es la primera línea de protección frente a múltiples agentes. Por ello, ninguna es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-12-R-13",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Sistema inmunitario y enfermedades",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Al contrastar conceptos esenciales de Sistema inmunitario y enfermedades. Analiza las proposiciones: I) La inmunidad innata responde rápidamente mediante barreras, células y moléculas no específicas. II) Los linfocitos B pueden diferenciarse en células que producen anticuerpos. ¿Qué alternativa evalúa correctamente ambas? Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "I y II son correctas",
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es verdadera: Es la primera línea de protección frente a múltiples agentes. La proposición II es verdadera: La respuesta humoral reconoce antígenos mediante inmunoglobulinas. Por ello, i y ii son correctas. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-12-R-14",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Sistema inmunitario y enfermedades",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Al contrastar conceptos esenciales de Sistema inmunitario y enfermedades. Analiza las proposiciones: I) Los linfocitos B pueden diferenciarse en células que producen anticuerpos. II) Las vacunas reemplazan toda higiene. ¿Qué alternativa evalúa correctamente ambas? Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "Solo II es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo I es correcta"
+            ],
+            "respuesta": 3,
+            "solucion": "La proposición I es verdadera: La respuesta humoral reconoce antígenos mediante inmunoglobulinas. La proposición II es falsa: La exposición segura a antígenos prepara una respuesta posterior. Por ello, solo i es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "BIO-12-R-15",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Sistema inmunitario y enfermedades",
+            "subarea": "Biología",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Al contrastar conceptos esenciales de Sistema inmunitario y enfermedades. Analiza las proposiciones: I) Las vacunas reemplazan toda higiene. II) La inmunidad innata responde rápidamente mediante barreras, células y moléculas no específicas. ¿Qué alternativa evalúa correctamente ambas? Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo II es correcta",
+              "Solo I es correcta"
+            ],
+            "respuesta": 2,
+            "solucion": "La proposición I es falsa: La exposición segura a antígenos prepara una respuesta posterior. La proposición II es verdadera: Es la primera línea de protección frente a múltiples agentes. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
     }
   ],
-  "total": 480
+  "total": 540
 }

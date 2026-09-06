@@ -93,9 +93,13 @@
     try{const [r,v]=await Promise.all([fetch("json/recursos-biblioteca.json",{cache:"no-store"}),fetch("json/videos-cursos.json",{cache:"no-store"})]);if(r.ok){const data=await r.json();recursosJSON=Array.isArray(data.recursos)?data.recursos:[]}if(v.ok){const data=await v.json();videosJSON=Array.isArray(data.videos)?data.videos:[]}}catch(error){console.warn("No se pudo cargar la configuración multimedia; se usarán los recursos locales.",error)}
   }
 
+  function obtenerVideoTema(courseId, temaIndice){
+    return videosJSON.find(item=>item.courseId===courseId&&Number(item.temaIndice)===Number(temaIndice)&&String(item.url||"").trim())||null;
+  }
+
   function reemplazarLogo() {
     const logo=document.querySelector(".sidebar-logo");
-    if(logo) logo.innerHTML='<img class="sidebar-brand-image" src="assets/uniprep-logo.png" alt="UniPrep">';
+    if(logo) logo.setAttribute("aria-label", "UniPrep");
   }
 
   function inyectarNavegacion() {
@@ -261,7 +265,7 @@
   function abrirRecurso(i){const r=recursos()[i],url=String(r?.url||"").trim();if(!enlaceDriveValido(url))return alert("Este material todavía no está disponible.");window.open(url,"_blank","noopener,noreferrer");}
   function txt(id,v){const e=document.getElementById(id);if(e)e.textContent=v} function esc(v){const d=document.createElement("div");d.textContent=String(v??"");return d.innerHTML}
 
-  window.inicializarModulosAprendizaje=inicializar;window.renderizarContenidoAprendizaje=renderizarContenido;window.seleccionarVideoTema=seleccionarVideoTema;window.iniciarEvaluacionTema=iniciarEvaluacionTema;window.responderEvaluacionCurso=responder;window.siguientePreguntaCurso=siguiente;window.salirEvaluacionCurso=salirEvaluacion;window.renderizarBiblioteca=renderizarBiblioteca;window.abrirRecursoBiblioteca=abrirRecurso;
+  window.inicializarModulosAprendizaje=inicializar;window.renderizarContenidoAprendizaje=renderizarContenido;window.obtenerVideoTemaUniPrep=obtenerVideoTema;window.seleccionarVideoTema=seleccionarVideoTema;window.iniciarEvaluacionTema=iniciarEvaluacionTema;window.responderEvaluacionCurso=responder;window.siguientePreguntaCurso=siguiente;window.salirEvaluacionCurso=salirEvaluacion;window.renderizarBiblioteca=renderizarBiblioteca;window.abrirRecursoBiblioteca=abrirRecurso;
   document.addEventListener("uniprep:admission-change",renderizarBiblioteca);
   document.addEventListener("uniprep:admission-ready",renderizarBiblioteca);
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",inicializar);else inicializar();

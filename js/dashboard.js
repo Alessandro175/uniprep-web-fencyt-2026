@@ -41,7 +41,7 @@ function pintarGamificacionDashboard(usuario) {
   const progreso = Math.round(tramo / 500 * 100);
   const ligas = ["Órbita", "Cometa", "Nova", "Galaxia", "Élite UniPrep"];
   const liga = ligas[Math.min(ligas.length - 1, Math.floor((nivel - 1) / 3))];
-  contenedor.innerHTML = `<span class="game-level-orb">${nivel >= 10 ? "🏆" : "✦"}</span><span class="game-level-copy"><small>TRAYECTORIA UNIPREP · RACHA ${Math.max(0,Number(usuario.racha)||0)} DÍAS</small><b>Nivel ${nivel} · Liga ${liga}</b><span class="game-level-track"><span style="width:${progreso}%"></span></span></span><span class="game-level-meta"><b>${xp.toLocaleString("es-PE")} XP</b><span>${500-tramo} XP para nivel ${nivel+1}</span></span>`;
+  contenedor.innerHTML = `<span class="game-level-orb">${nivel >= 10 ? "🏆" : "✦"}</span><span class="game-level-copy"><small>TU NIVEL · RACHA ${Math.max(0,Number(usuario.racha)||0)} DÍAS</small><b>Nivel ${nivel} · Liga ${liga}</b><span class="game-level-track"><span style="width:${progreso}%"></span></span></span><span class="game-level-meta"><b>${xp.toLocaleString("es-PE")} XP</b><span>${500-tramo} XP para subir</span></span>`;
 }
 
 function pintarCoberturaAcademica(usuario) {

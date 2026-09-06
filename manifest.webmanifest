@@ -1,7 +1,7 @@
 {
-  "name": "UniPrep 2 Harmony Comfort - Preparación inteligente",
+  "name": "UniPrep 2 University Route - Preparación personalizada",
   "short_name": "UniPrep 2",
-  "description": "Tutor educativo con IA, práctica, simulacros, analítica, personalización y centro de comandos para el ingreso universitario.",
+  "description": "Plataforma preuniversitaria con cursos y temas personalizados por universidad, carrera y área de admisión.",
   "lang": "es-PE",
   "id": "pe.uniprep.app",
   "start_url": "./",
@@ -43,17 +43,22 @@
       "url": "./?screen=exams"
     },
     {
-      "name": "Mis cursos",
-      "short_name": "Cursos",
+      "name": "Aprender",
+      "short_name": "Aprender",
       "url": "./?screen=cursos"
     },
     {
-      "name": "Tutor con IA",
-      "short_name": "Tutor IA",
+      "name": "Tutor Uni",
+      "short_name": "Tutor Uni",
       "url": "./?screen=tutor"
     },
     {
-      "name": "Orientación vocacional",
+      "name": "Universo UniPrep",
+      "short_name": "Universo",
+      "url": "./?screen=universo"
+    },
+    {
+      "name": "Descubre tu carrera",
       "short_name": "Mi carrera",
       "url": "./?screen=vocacional"
     }

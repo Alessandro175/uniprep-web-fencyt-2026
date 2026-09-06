@@ -1,7 +1,7 @@
 {
   "courseId": "algebra",
   "nombre": "Álgebra",
-  "version": "2026.9-cuatro-niveles-universidad",
+  "version": "2026.31-nacional-7605",
   "descripcion": "Banco UniPrep organizado por tema y nivel, reforzado con preguntas adaptadas de las bibliotecas Drive UNI y San Marcos y con soluciones verificadas.",
   "universidadesReferencia": [
     "UNAMAD",
@@ -17,15 +17,15 @@
     "basico": 140,
     "intermedio": 140,
     "avanzado": 140,
-    "admision": 140,
-    "total": 560
+    "admision": 210,
+    "total": 630
   },
   "distribucionPorTema": {
     "basico": 10,
     "intermedio": 10,
     "avanzado": 10,
-    "admision": 10,
-    "total": 40
+    "admision": 15,
+    "total": 45
   },
   "criteriosDificultad": {
     "basico": "Fundamento o procedimiento directo",
@@ -48,8 +48,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -858,6 +858,111 @@
             "explicacion": "Se combinan diferencia de cuadrados, raíz principal y operaciones en ℝ. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSAAC; no es una pregunta oficial"
+          },
+          {
+            "id": "ALG-01-R-11",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Números reales y sus operaciones",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Tema Números reales y sus operaciones. Opera y reduce a fracción irreducible: 7/4+3/8. Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "17/8",
+              "5/6",
+              "11/8",
+              "21/8"
+            ],
+            "respuesta": 0,
+            "solucion": "El denominador común es 8: 7/4=14/8. Por tanto, (14+3)/8=17/8. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se transforma a denominador común y se simplifica el resultado. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-01-R-12",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Números reales y sus operaciones",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Tema Números reales y sus operaciones. Sin aproximar, simplifica ((19²−3²)/(19−3))−√(4²). Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "12",
+              "26",
+              "53",
+              "18"
+            ],
+            "respuesta": 3,
+            "solucion": "(19²−3²)/(19−3)=19+3 y √(4²)=4; el resultado es 19+3−4=18. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se combinan diferencia de cuadrados, raíz principal y operaciones en ℝ. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-01-R-13",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Números reales y sus operaciones",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Tema Números reales y sus operaciones. Sin aproximar, simplifica ((20²−4²)/(20−4))−√(5²). La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "29",
+              "75",
+              "19",
+              "11"
+            ],
+            "respuesta": 2,
+            "solucion": "(20²−4²)/(20−4)=20+4 y √(5²)=5; el resultado es 20+4−5=19. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se combinan diferencia de cuadrados, raíz principal y operaciones en ℝ. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-01-R-14",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Números reales y sus operaciones",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Tema Números reales y sus operaciones. Sin aproximar, simplifica ((21²−5²)/(21−5))−√(2²). Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "103",
+              "24",
+              "14",
+              "28"
+            ],
+            "respuesta": 1,
+            "solucion": "(21²−5²)/(21−5)=21+5 y √(2²)=2; el resultado es 21+5−2=24. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se combinan diferencia de cuadrados, raíz principal y operaciones en ℝ. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-01-R-15",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Números reales y sus operaciones",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Tema Números reales y sus operaciones. Sin aproximar, simplifica ((22²−6²)/(22−6))−√(3²). Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "25",
+              "13",
+              "31",
+              "129"
+            ],
+            "respuesta": 0,
+            "solucion": "(22²−6²)/(22−6)=22+6 y √(3²)=3; el resultado es 22+6−3=25. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se combinan diferencia de cuadrados, raíz principal y operaciones en ℝ. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -877,8 +982,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -1687,6 +1792,111 @@
             "explicacion": "Se transforma el valor absoluto en una desigualdad doble conservando los extremos. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UCSM; no es una pregunta oficial"
+          },
+          {
+            "id": "ALG-02-R-11",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Intervalos y valor absoluto",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Tema Intervalos y valor absoluto. Resuelve |2x−24|≤4 y expresa la solución como intervalo cerrado. Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "[10, 14]",
+              "(10, 14)",
+              "(−∞, 10]∪[14, ∞)",
+              "[-14, -10]"
+            ],
+            "respuesta": 0,
+            "solucion": "−4≤2x−24≤4; al sumar 24 y dividir entre 2 se obtiene 10≤x≤14. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se transforma el valor absoluto en una desigualdad doble conservando los extremos. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-02-R-12",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Intervalos y valor absoluto",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Tema Intervalos y valor absoluto. Resuelve |2x−26|≤6 y expresa la solución como intervalo cerrado. Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "(10, 16)",
+              "(−∞, 10]∪[16, ∞)",
+              "[-16, -10]",
+              "[10, 16]"
+            ],
+            "respuesta": 3,
+            "solucion": "−6≤2x−26≤6; al sumar 26 y dividir entre 2 se obtiene 10≤x≤16. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se transforma el valor absoluto en una desigualdad doble conservando los extremos. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-02-R-13",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Intervalos y valor absoluto",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Tema Intervalos y valor absoluto. Resuelve |2x−28|≤2 y expresa la solución como intervalo cerrado. Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "(−∞, 13]∪[15, ∞)",
+              "[-15, -13]",
+              "[13, 15]",
+              "(13, 15)"
+            ],
+            "respuesta": 2,
+            "solucion": "−2≤2x−28≤2; al sumar 28 y dividir entre 2 se obtiene 13≤x≤15. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se transforma el valor absoluto en una desigualdad doble conservando los extremos. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-02-R-14",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Intervalos y valor absoluto",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Tema Intervalos y valor absoluto. Resuelve |2x−30|≤4 y expresa la solución como intervalo cerrado. Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "[-17, -13]",
+              "[13, 17]",
+              "(13, 17)",
+              "(−∞, 13]∪[17, ∞)"
+            ],
+            "respuesta": 1,
+            "solucion": "−4≤2x−30≤4; al sumar 30 y dividir entre 2 se obtiene 13≤x≤17. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se transforma el valor absoluto en una desigualdad doble conservando los extremos. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-02-R-15",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Intervalos y valor absoluto",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Tema Intervalos y valor absoluto. Resuelve |2x−32|≤6 y expresa la solución como intervalo cerrado. Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "[13, 19]",
+              "(13, 19)",
+              "(−∞, 13]∪[19, ∞)",
+              "[-19, -13]"
+            ],
+            "respuesta": 0,
+            "solucion": "−6≤2x−32≤6; al sumar 32 y dividir entre 2 se obtiene 13≤x≤19. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se transforma el valor absoluto en una desigualdad doble conservando los extremos. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -1706,8 +1916,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -2516,6 +2726,111 @@
             "explicacion": "El producto por el conjugado elimina la parte imaginaria. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSA; no es una pregunta oficial"
+          },
+          {
+            "id": "ALG-03-R-11",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Números complejos",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Tema Números complejos. Sea z=3+4i. Calcula z·z̄ y relaciona el resultado con |z|². Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "25",
+              "-7",
+              "24",
+              "7"
+            ],
+            "respuesta": 0,
+            "solucion": "z̄=3−4i. Entonces (3+4i)(3−4i)=3²+4²=25=|z|². Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "El producto por el conjugado elimina la parte imaginaria. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-03-R-12",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Números complejos",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Tema Números complejos. Sea z=4+1i. Calcula z·z̄ y relaciona el resultado con |z|². Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "15",
+              "8",
+              "5",
+              "17"
+            ],
+            "respuesta": 3,
+            "solucion": "z̄=4−1i. Entonces (4+1i)(4−1i)=4²+1²=17=|z|². Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "El producto por el conjugado elimina la parte imaginaria. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-03-R-13",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Números complejos",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: Tema Números complejos. Sea z=5+2i. Calcula z·z̄ y relaciona el resultado con |z|². Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "20",
+              "7",
+              "29",
+              "21"
+            ],
+            "respuesta": 2,
+            "solucion": "z̄=5−2i. Entonces (5+2i)(5−2i)=5²+2²=29=|z|². Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "El producto por el conjugado elimina la parte imaginaria. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-03-R-14",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Números complejos",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Tema Números complejos. Sea z=6+3i. Calcula z·z̄ y relaciona el resultado con |z|². Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "9",
+              "45",
+              "27",
+              "36"
+            ],
+            "respuesta": 1,
+            "solucion": "z̄=6−3i. Entonces (6+3i)(6−3i)=6²+3²=45=|z|². Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "El producto por el conjugado elimina la parte imaginaria. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-03-R-15",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Números complejos",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Tema Números complejos. Suma (12+3i)+(3−3i) y expresa el resultado en forma a+bi. Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "15+6i",
+              "36+9i",
+              "15+0i",
+              "9+6i"
+            ],
+            "respuesta": 2,
+            "solucion": "Se agrupan partes reales e imaginarias: (12+3)+(3−3)i=15+0i. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "La suma de complejos se realiza componente a componente. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -2535,8 +2850,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -3345,6 +3660,111 @@
             "explicacion": "Se expresan ambos miembros con la misma base y se igualan exponentes. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. En esta versión se exige verificar o descartar, no solo obtener el resultado.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNAMAD; no es una pregunta oficial"
+          },
+          {
+            "id": "ALG-04-R-11",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Potencias y expresiones algebraicas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: En una práctica cronometrada de perfil UCSM, resuelve sin calculadora y comprueba el resultado. Tema Potencias y expresiones algebraicas. Resuelve 2^(x+2)=8^(x−2) y verifica el valor obtenido. Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "4",
+              "2",
+              "8",
+              "5"
+            ],
+            "respuesta": 0,
+            "solucion": "8=2³, por lo que x+2=3(x−2). Así, 2x=8 y x=4. Comprobación solicitada: la alternativa elegida satisface el enunciado y las demás contradicen al menos una condición. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se expresan ambos miembros con la misma base y se igualan exponentes. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. En esta versión se exige verificar o descartar, no solo obtener el resultado. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-04-R-12",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Potencias y expresiones algebraicas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: En una práctica cronometrada de perfil GENERAL, resuelve sin calculadora y comprueba el resultado. Tema Potencias y expresiones algebraicas. Resuelve 2^(x+4)=8^(x−4) y verifica el valor obtenido. Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "4",
+              "16",
+              "9",
+              "8"
+            ],
+            "respuesta": 3,
+            "solucion": "8=2³, por lo que x+4=3(x−4). Así, 2x=16 y x=8. Comprobación solicitada: la alternativa elegida satisface el enunciado y las demás contradicen al menos una condición. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se expresan ambos miembros con la misma base y se igualan exponentes. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. En esta versión se exige verificar o descartar, no solo obtener el resultado. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-04-R-13",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Potencias y expresiones algebraicas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: En una práctica cronometrada de perfil UNAMAD, resuelve sin calculadora y comprueba el resultado. Tema Potencias y expresiones algebraicas. Resuelve 2^(x+6)=8^(x−6) y verifica el valor obtenido. Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "24",
+              "13,2",
+              "12",
+              "6"
+            ],
+            "respuesta": 2,
+            "solucion": "8=2³, por lo que x+6=3(x−6). Así, 2x=24 y x=12. Comprobación solicitada: la alternativa elegida satisface el enunciado y las demás contradicen al menos una condición. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se expresan ambos miembros con la misma base y se igualan exponentes. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. En esta versión se exige verificar o descartar, no solo obtener el resultado. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-04-R-14",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Potencias y expresiones algebraicas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Tema Potencias y expresiones algebraicas. Expresa como potencia de 2 y calcula: (2^4·4^3)/8^1. La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "64",
+              "2048",
+              "7",
+              "128"
+            ],
+            "respuesta": 3,
+            "solucion": "4^3=2^6 y 8^1=2^3; queda 2^(4+6−3)=2^7=128. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se unifican las bases antes de operar exponentes. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-04-R-15",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Potencias y expresiones algebraicas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Tema Potencias y expresiones algebraicas. Expresa como potencia de 2 y calcula: (2^5·4^4)/8^2. Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "7",
+              "140,8",
+              "128",
+              "32768"
+            ],
+            "respuesta": 2,
+            "solucion": "4^4=2^8 y 8^2=2^6; queda 2^(5+8−6)=2^7=128. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se unifican las bases antes de operar exponentes. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -3364,8 +3784,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -4174,6 +4594,111 @@
             "explicacion": "Se usa el patrón del cubo de un binomio y se identifica el término solicitado. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. En esta versión se exige verificar o descartar, no solo obtener el resultado.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de PUCP; no es una pregunta oficial"
+          },
+          {
+            "id": "ALG-05-R-11",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Productos y cocientes notables",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Como parte de una revisión de admisión UNI, identifica primero la condición decisiva y luego responde. Tema Productos y cocientes notables. Sin desarrollar completamente, determina el coeficiente de x en (x+3)³. La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "27",
+              "9",
+              "54",
+              "29,7"
+            ],
+            "respuesta": 0,
+            "solucion": "(x+a)³=x³+3ax²+3a²x+a³; por tanto, el coeficiente pedido es 3(3)²=27. Comprobación solicitada: la alternativa elegida satisface el enunciado y las demás contradicen al menos una condición. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se usa el patrón del cubo de un binomio y se identifica el término solicitado. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. En esta versión se exige verificar o descartar, no solo obtener el resultado. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-05-R-12",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Productos y cocientes notables",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Como parte de una revisión de admisión PUCP, identifica primero la condición decisiva y luego responde. Tema Productos y cocientes notables. Sin desarrollar completamente, determina el coeficiente de x en (x+4)³. Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "12",
+              "64",
+              "96",
+              "48"
+            ],
+            "respuesta": 3,
+            "solucion": "(x+a)³=x³+3ax²+3a²x+a³; por tanto, el coeficiente pedido es 3(4)²=48. Comprobación solicitada: la alternativa elegida satisface el enunciado y las demás contradicen al menos una condición. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se usa el patrón del cubo de un binomio y se identifica el término solicitado. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. En esta versión se exige verificar o descartar, no solo obtener el resultado. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-05-R-13",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Productos y cocientes notables",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Tema Productos y cocientes notables. Evalúa el cociente notable (x³−8)/(x−2) para x=5. Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "39",
+              "19",
+              "7",
+              "117"
+            ],
+            "respuesta": 0,
+            "solucion": "(x³−2³)/(x−2)=x²+2x+4. Al sustituir x=5: 25+10+4=39. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se reconoce una diferencia de cubos antes de evaluar. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-05-R-14",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Productos y cocientes notables",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Tema Productos y cocientes notables. Evalúa el cociente notable (x³−27)/(x−3) para x=6. Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "27",
+              "9",
+              "189",
+              "63"
+            ],
+            "respuesta": 3,
+            "solucion": "(x³−3³)/(x−3)=x²+3x+9. Al sustituir x=6: 36+18+9=63. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se reconoce una diferencia de cubos antes de evaluar. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-05-R-15",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Productos y cocientes notables",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Tema Productos y cocientes notables. Evalúa el cociente notable (x³−64)/(x−4) para x=3. Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "7",
+              "-37",
+              "37",
+              "13"
+            ],
+            "respuesta": 2,
+            "solucion": "(x³−4³)/(x−4)=x²+4x+16. Al sustituir x=3: 9+12+16=37. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se reconoce una diferencia de cubos antes de evaluar. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -4193,8 +4718,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -5003,6 +5528,111 @@
             "explicacion": "Se combinan el teorema del factor y el teorema del residuo en un sistema. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNMSM; no es una pregunta oficial"
+          },
+          {
+            "id": "ALG-06-R-11",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "División de polinomios y teorema del resto",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Tema División de polinomios y teorema del resto. El polinomio P(x)=x²+mx+n es divisible por x−4 y al dividirlo entre x−8 deja residuo 76. Determina m. Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "7",
+              "8",
+              "6",
+              "-7"
+            ],
+            "respuesta": 0,
+            "solucion": "P(4)=0 implica n=−16−4m. Además P(8)=76: 64+8m−16−4m=76. De aquí m=7. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se combinan el teorema del factor y el teorema del residuo en un sistema. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-06-R-12",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "División de polinomios y teorema del resto",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: En una práctica cronometrada de perfil UNSAAC, resuelve sin calculadora y comprueba el resultado. Tema División de polinomios y teorema del resto. Al dividir x³−216 entre x−6 se obtiene un polinomio Q(x). Calcula Q(1). Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "47,3",
+              "43",
+              "31",
+              "215"
+            ],
+            "respuesta": 1,
+            "solucion": "Q(x)=x²+6x+36; entonces Q(1)=1+6+36=43. Comprobación solicitada: la alternativa elegida satisface el enunciado y las demás contradicen al menos una condición. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se efectúa la división mediante el cociente notable y luego se evalúa. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. En esta versión se exige verificar o descartar, no solo obtener el resultado. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-06-R-13",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "División de polinomios y teorema del resto",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: En una práctica cronometrada de perfil UNMSM, resuelve sin calculadora y comprueba el resultado. Tema División de polinomios y teorema del resto. Al dividir x³−343 entre x−7 se obtiene un polinomio Q(x). Calcula Q(1). Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "57",
+              "43",
+              "342",
+              "62,7"
+            ],
+            "respuesta": 0,
+            "solucion": "Q(x)=x²+7x+49; entonces Q(1)=1+7+49=57. Comprobación solicitada: la alternativa elegida satisface el enunciado y las demás contradicen al menos una condición. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se efectúa la división mediante el cociente notable y luego se evalúa. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. En esta versión se exige verificar o descartar, no solo obtener el resultado. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-06-R-14",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "División de polinomios y teorema del resto",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: Como parte de una revisión de admisión UNSA, identifica primero la condición decisiva y luego responde. Tema División de polinomios y teorema del resto. Al dividir x³−8 entre x−2 se obtiene un polinomio Q(x). Calcula Q(1). Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "3",
+              "8",
+              "5",
+              "7"
+            ],
+            "respuesta": 3,
+            "solucion": "Q(x)=x²+2x+4; entonces Q(1)=1+2+4=7. Comprobación solicitada: la alternativa elegida satisface el enunciado y las demás contradicen al menos una condición. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se efectúa la división mediante el cociente notable y luego se evalúa. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. En esta versión se exige verificar o descartar, no solo obtener el resultado. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-06-R-15",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "División de polinomios y teorema del resto",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Como parte de una revisión de admisión UNI, identifica primero la condición decisiva y luego responde. Tema División de polinomios y teorema del resto. Al dividir x³−27 entre x−3 se obtiene un polinomio Q(x). Calcula Q(1). Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "26",
+              "14,3",
+              "13",
+              "7"
+            ],
+            "respuesta": 2,
+            "solucion": "Q(x)=x²+3x+9; entonces Q(1)=1+3+9=13. Comprobación solicitada: la alternativa elegida satisface el enunciado y las demás contradicen al menos una condición. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se efectúa la división mediante el cociente notable y luego se evalúa. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. En esta versión se exige verificar o descartar, no solo obtener el resultado. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -5022,8 +5652,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -5832,6 +6462,111 @@
             "explicacion": "Se reúnen todos los factores irreducibles sin repetir innecesariamente el factor común. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. En esta versión se exige verificar o descartar, no solo obtener el resultado.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Competencias generales de admisión preuniversitaria"
+          },
+          {
+            "id": "ALG-07-R-11",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Factorización, MCD y MCM de polinomios",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: Como parte de una revisión de admisión UCSM, identifica primero la condición decisiva y luego responde. Tema Factorización, MCD y MCM de polinomios. Halla el MCD de (x−2)(x−4) y (x−2)(x−6). Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "x−4",
+              "1",
+              "x−2",
+              "(x−2)(x−4)(x−6)"
+            ],
+            "respuesta": 2,
+            "solucion": "El único factor común con el menor exponente es x−2; por ello, ese es el MCD. Comprobación solicitada: la alternativa elegida satisface el enunciado y las demás contradicen al menos una condición. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "El MCD polinómico conserva solo factores comunes. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. En esta versión se exige verificar o descartar, no solo obtener el resultado. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-07-R-12",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Factorización, MCD y MCM de polinomios",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Como parte de una revisión de admisión GENERAL, identifica primero la condición decisiva y luego responde. Tema Factorización, MCD y MCM de polinomios. Halla el MCD de (x−3)(x−5) y (x−3)(x−7). Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "1",
+              "x−3",
+              "(x−3)(x−5)(x−7)",
+              "x−5"
+            ],
+            "respuesta": 1,
+            "solucion": "El único factor común con el menor exponente es x−3; por ello, ese es el MCD. Comprobación solicitada: la alternativa elegida satisface el enunciado y las demás contradicen al menos una condición. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "El MCD polinómico conserva solo factores comunes. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. En esta versión se exige verificar o descartar, no solo obtener el resultado. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-07-R-13",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Factorización, MCD y MCM de polinomios",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Como parte de una revisión de admisión UNAMAD, identifica primero la condición decisiva y luego responde. Tema Factorización, MCD y MCM de polinomios. Halla el MCD de (x−4)(x−6) y (x−4)(x−8). Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "x−4",
+              "(x−4)(x−6)(x−8)",
+              "x−6",
+              "1"
+            ],
+            "respuesta": 0,
+            "solucion": "El único factor común con el menor exponente es x−4; por ello, ese es el MCD. Comprobación solicitada: la alternativa elegida satisface el enunciado y las demás contradicen al menos una condición. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "El MCD polinómico conserva solo factores comunes. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. En esta versión se exige verificar o descartar, no solo obtener el resultado. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-07-R-14",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Factorización, MCD y MCM de polinomios",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Como parte de una revisión de admisión UNSAAC, identifica primero la condición decisiva y luego responde. Tema Factorización, MCD y MCM de polinomios. Halla el MCD de (x−5)(x−7) y (x−5)(x−9). Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "(x−5)(x−7)(x−9)",
+              "x−7",
+              "1",
+              "x−5"
+            ],
+            "respuesta": 3,
+            "solucion": "El único factor común con el menor exponente es x−5; por ello, ese es el MCD. Comprobación solicitada: la alternativa elegida satisface el enunciado y las demás contradicen al menos una condición. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "El MCD polinómico conserva solo factores comunes. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. En esta versión se exige verificar o descartar, no solo obtener el resultado. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-07-R-15",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Factorización, MCD y MCM de polinomios",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Como parte de una revisión de admisión UNMSM, identifica primero la condición decisiva y luego responde. Tema Factorización, MCD y MCM de polinomios. Halla el MCD de (x−6)(x−8) y (x−6)(x−10). La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "x−8",
+              "1",
+              "x−6",
+              "(x−6)(x−8)(x−10)"
+            ],
+            "respuesta": 2,
+            "solucion": "El único factor común con el menor exponente es x−6; por ello, ese es el MCD. Comprobación solicitada: la alternativa elegida satisface el enunciado y las demás contradicen al menos una condición. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "El MCD polinómico conserva solo factores comunes. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. En esta versión se exige verificar o descartar, no solo obtener el resultado. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -5851,8 +6586,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -6661,6 +7396,111 @@
             "explicacion": "Se reconoce el cuadrado de una suma de radicales. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. En esta versión se exige verificar o descartar, no solo obtener el resultado.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNI; no es una pregunta oficial"
+          },
+          {
+            "id": "ALG-08-R-11",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Radicales y racionalización",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Como parte de una revisión de admisión UNI, identifica primero la condición decisiva y luego responde. Tema Radicales y racionalización. Racionaliza y simplifica 3/√3. Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "1/√3",
+              "3",
+              "√3",
+              "3√3"
+            ],
+            "respuesta": 2,
+            "solucion": "(3/√3)(√3/√3)=3√3/3=√3. Comprobación solicitada: la alternativa elegida satisface el enunciado y las demás contradicen al menos una condición. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se multiplica por el radical adecuado para eliminarlo del denominador. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. En esta versión se exige verificar o descartar, no solo obtener el resultado. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-08-R-12",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Radicales y racionalización",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Como parte de una revisión de admisión PUCP, identifica primero la condición decisiva y luego responde. Tema Radicales y racionalización. Racionaliza y simplifica 5/√5. La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "5",
+              "√5",
+              "5√5",
+              "1/√5"
+            ],
+            "respuesta": 1,
+            "solucion": "(5/√5)(√5/√5)=5√5/5=√5. Comprobación solicitada: la alternativa elegida satisface el enunciado y las demás contradicen al menos una condición. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se multiplica por el radical adecuado para eliminarlo del denominador. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. En esta versión se exige verificar o descartar, no solo obtener el resultado. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-08-R-13",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Radicales y racionalización",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Como parte de una revisión de admisión UCSM, identifica primero la condición decisiva y luego responde. Tema Radicales y racionalización. Racionaliza y simplifica 6/√6. Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "√6",
+              "6√6",
+              "1/√6",
+              "6"
+            ],
+            "respuesta": 0,
+            "solucion": "(6/√6)(√6/√6)=6√6/6=√6. Comprobación solicitada: la alternativa elegida satisface el enunciado y las demás contradicen al menos una condición. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se multiplica por el radical adecuado para eliminarlo del denominador. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. En esta versión se exige verificar o descartar, no solo obtener el resultado. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-08-R-14",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Radicales y racionalización",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Como parte de una revisión de admisión GENERAL, identifica primero la condición decisiva y luego responde. Tema Radicales y racionalización. Racionaliza y simplifica 7/√7. Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "7√7",
+              "1/√7",
+              "7",
+              "√7"
+            ],
+            "respuesta": 3,
+            "solucion": "(7/√7)(√7/√7)=7√7/7=√7. Comprobación solicitada: la alternativa elegida satisface el enunciado y las demás contradicen al menos una condición. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se multiplica por el radical adecuado para eliminarlo del denominador. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. En esta versión se exige verificar o descartar, no solo obtener el resultado. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-08-R-15",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Radicales y racionalización",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Tema Radicales y racionalización. Simplifica √(8+2√12) suponiendo la raíz principal positiva. Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "√8+√12",
+              "8",
+              "√6+√2",
+              "√6−√2"
+            ],
+            "respuesta": 2,
+            "solucion": "8+2√12=6+2+2√(6·2)=(√6+√2)². Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se reconoce el cuadrado de una suma de radicales. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -6680,8 +7520,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -7580,6 +8420,138 @@
             "explicacion": "Se aplican las relaciones de Viète a una expresión simétrica. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSAAC; no es una pregunta oficial"
+          },
+          {
+            "id": "ALG-09-R-11",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Ecuaciones polinómicas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Un fabricante vende x almohadas a un precio unitario p=200−x soles. Producirlas cuesta 2800+45x. ¿Cuántas debe producir y vender como mínimo para obtener una utilidad de S/ 3150? Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "32",
+              "65",
+              "70",
+              "90"
+            ],
+            "respuesta": 2,
+            "solucion": "La utilidad es x(200−x)−(2800+45x)=−x²+155x−2800. Al igualarla a 3150 se obtiene x²−155x+5950=0, cuyas raíces son 70 y 85. El mínimo es 70. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se construye la función utilidad como ingreso menos costo y se elige la menor solución válida. Material de UNI adaptado por UniPrep; no corresponde a una pregunta oficial de admisión. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "tipo": "Google Drive",
+              "coleccion": "Biblioteca UNI",
+              "ruta": "MATE FULL DECO / Semana 01 / Álgebra",
+              "documento": "ALG S1.pdf",
+              "urlColeccion": "https://drive.google.com/drive/folders/1fwWqVkDdsorQa4rwy-m53pM9lpWKXNGp",
+              "tratamiento": "Problema adaptado y resolución verificada por UniPrep.",
+              "ejercicioOriginal": 10
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-09-R-12",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Ecuaciones polinómicas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Una asociación tenía cierta cantidad de gatitos. El primer día se adoptaron 2; el segundo, la cuarta parte de los restantes; y el tercero, la mitad de lo que aún quedaba. Si finalmente quedaron 27, ¿cuántos había al inicio? Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "74",
+              "80",
+              "92",
+              "96"
+            ],
+            "respuesta": 0,
+            "solucion": "Después del primer día quedan n−2; luego queda 3(n−2)/4 y finalmente 3(n−2)/8=27. De aquí n−2=72 y n=74. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se reconstruye el proceso con una ecuación a partir de la cantidad final. Material de UNI adaptado por UniPrep; no corresponde a una pregunta oficial de admisión. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "tipo": "Google Drive",
+              "coleccion": "Biblioteca UNI",
+              "ruta": "MATE FULL DECO / Semana 01 / Álgebra",
+              "documento": "ALG S1.pdf",
+              "urlColeccion": "https://drive.google.com/drive/folders/1fwWqVkDdsorQa4rwy-m53pM9lpWKXNGp",
+              "tratamiento": "Problema adaptado y resolución verificada por UniPrep.",
+              "ejercicioOriginal": 12
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-09-R-13",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Ecuaciones polinómicas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: La arista del cubo de Carlos mide 3 cm menos que la del cubo de Daniel. Si la diferencia de sus volúmenes es 657 cm³, ¿cuál es el volumen del cubo de Daniel? Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "125 cm³",
+              "343 cm³",
+              "1000 cm³",
+              "1331 cm³"
+            ],
+            "respuesta": 2,
+            "solucion": "Si x es la arista del cubo de Daniel, x³−(x−3)³=657. Al desarrollar: 9x²−27x+27=657, luego x²−3x−70=0. La raíz positiva es x=10 y el volumen es 10³=1000 cm³. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "La diferencia de volúmenes conduce a una ecuación que permite hallar primero la arista. Material de UNI adaptado por UniPrep; no corresponde a una pregunta oficial de admisión. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "tipo": "Google Drive",
+              "coleccion": "Biblioteca UNI",
+              "ruta": "MATE FULL DECO / Semana 01 / Álgebra",
+              "documento": "ALG S1.pdf",
+              "urlColeccion": "https://drive.google.com/drive/folders/1fwWqVkDdsorQa4rwy-m53pM9lpWKXNGp",
+              "tratamiento": "Problema adaptado y resolución verificada por UniPrep.",
+              "ejercicioOriginal": 15
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-09-R-14",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Ecuaciones polinómicas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Tema Ecuaciones polinómicas. Si α y β son raíces de x²−16x+5=0, calcula α²+β² sin resolver la ecuación. Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "266",
+              "21",
+              "251",
+              "246"
+            ],
+            "respuesta": 3,
+            "solucion": "α+β=16 y αβ=5. Luego α²+β²=(α+β)²−2αβ=256−10=246. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se aplican las relaciones de Viète a una expresión simétrica. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-09-R-15",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Ecuaciones polinómicas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: Tema Ecuaciones polinómicas. Si α y β son raíces de x²−17x+6=0, calcula α²+β² sin resolver la ecuación. Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "23",
+              "283",
+              "277",
+              "301"
+            ],
+            "respuesta": 2,
+            "solucion": "α+β=17 y αβ=6. Luego α²+β²=(α+β)²−2αβ=289−12=277. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se aplican las relaciones de Viète a una expresión simétrica. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -7599,8 +8571,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -8454,6 +9426,129 @@
             "explicacion": "Se intersecta la condición de dominio con la desigualdad obtenida al cuadrar. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UCSM; no es una pregunta oficial"
+          },
+          {
+            "id": "ALG-10-R-11",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Inecuaciones polinómicas, fraccionarias e irracionales",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Una pizarra rectangular tiene un largo que excede al ancho en 2,5 m y su área debe permanecer entre 6 m² y 9 m², inclusive. ¿Entre qué valores varía su perímetro? Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "[6; 8] m",
+              "[8; 12] m",
+              "[11; 15] m",
+              "[11; 13] m"
+            ],
+            "respuesta": 3,
+            "solucion": "Sea x el ancho; el largo es x+2,5. De 6≤x(x+2,5)≤9 y x>0 se obtiene 1,5≤x≤2. El perímetro P=2x+2(x+2,5)=4x+5 varía entre 11 y 13. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Primero se restringe el ancho mediante el área y luego se transforma ese intervalo en uno para el perímetro. Material de UNI adaptado por UniPrep; no corresponde a una pregunta oficial de admisión. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "tipo": "Google Drive",
+              "coleccion": "Biblioteca UNI",
+              "ruta": "MATE FULL DECO / Semana 01 / Álgebra",
+              "documento": "ALG S1.pdf",
+              "urlColeccion": "https://drive.google.com/drive/folders/1fwWqVkDdsorQa4rwy-m53pM9lpWKXNGp",
+              "tratamiento": "Problema adaptado y resolución verificada por UniPrep.",
+              "ejercicioOriginal": 5
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-10-R-12",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Inecuaciones polinómicas, fraccionarias e irracionales",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: Una fábrica vende cada producto a S/ 30, tiene costos fijos mensuales de S/ 4500 y gasta S/ 21 por unidad. ¿Cuántas unidades debe vender como mínimo para obtener una utilidad positiva? Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "402",
+              "421",
+              "500",
+              "501"
+            ],
+            "respuesta": 3,
+            "solucion": "La utilidad es 30x−(4500+21x)=9x−4500. Para que sea positiva: 9x−4500>0, de modo que x>500. El menor entero es 501. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "La expresión 'obtener utilidades' exige superar el punto de equilibrio, no solamente alcanzarlo. Material de UNI adaptado por UniPrep; no corresponde a una pregunta oficial de admisión. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "fuente": {
+              "tipo": "Google Drive",
+              "coleccion": "Biblioteca UNI",
+              "ruta": "MATE FULL DECO / Semana 01 / Álgebra",
+              "documento": "ALG S1.pdf",
+              "urlColeccion": "https://drive.google.com/drive/folders/1fwWqVkDdsorQa4rwy-m53pM9lpWKXNGp",
+              "tratamiento": "Problema adaptado y resolución verificada por UniPrep.",
+              "ejercicioOriginal": 6
+            },
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-10-R-13",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Inecuaciones polinómicas, fraccionarias e irracionales",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Tema Inecuaciones polinómicas, fraccionarias e irracionales. Resuelve √(x−12)≤4 en los números reales. Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "[12, 28]",
+              "(−∞, 28]",
+              "[28, ∞)",
+              "(12, 28)"
+            ],
+            "respuesta": 0,
+            "solucion": "El dominio exige x≥12. Como ambos miembros son no negativos, se eleva al cuadrado: x−12≤16; así, 12≤x≤28. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se intersecta la condición de dominio con la desigualdad obtenida al cuadrar. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-10-R-14",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Inecuaciones polinómicas, fraccionarias e irracionales",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Tema Inecuaciones polinómicas, fraccionarias e irracionales. Resuelve √(x−13)≤5 en los números reales. Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "(−∞, 38]",
+              "[38, ∞)",
+              "(13, 38)",
+              "[13, 38]"
+            ],
+            "respuesta": 3,
+            "solucion": "El dominio exige x≥13. Como ambos miembros son no negativos, se eleva al cuadrado: x−13≤25; así, 13≤x≤38. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se intersecta la condición de dominio con la desigualdad obtenida al cuadrar. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-10-R-15",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Inecuaciones polinómicas, fraccionarias e irracionales",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Tema Inecuaciones polinómicas, fraccionarias e irracionales. Resuelve √(x−14)≤2 en los números reales. Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "[18, ∞)",
+              "(14, 18)",
+              "[14, 18]",
+              "(−∞, 18]"
+            ],
+            "respuesta": 2,
+            "solucion": "El dominio exige x≥14. Como ambos miembros son no negativos, se eleva al cuadrado: x−14≤4; así, 14≤x≤18. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se intersecta la condición de dominio con la desigualdad obtenida al cuadrar. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -8473,8 +9568,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -9283,6 +10378,111 @@
             "explicacion": "Se reduce el sistema de tres variables y luego se aplica eliminación. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSA; no es una pregunta oficial"
+          },
+          {
+            "id": "ALG-11-R-11",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Sistemas de ecuaciones lineales",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Tema Sistemas de ecuaciones lineales. En una librería, 2 cuadernos y 3 lapiceros cuestan S/46. Si un cuaderno cuesta S/17, ¿cuánto cuesta cada lapicero? Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "S/3",
+              "S/12",
+              "S/4",
+              "S/5"
+            ],
+            "respuesta": 2,
+            "solucion": "2(17)+3y=46; entonces 3y=12 y y=4. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se modela la compra mediante una ecuación lineal y se despeja el precio desconocido. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-11-R-12",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Sistemas de ecuaciones lineales",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Tema Sistemas de ecuaciones lineales. En el sistema x+y+z=21, x−y=10 y z=3, determina x. Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "18",
+              "14",
+              "4",
+              "3"
+            ],
+            "respuesta": 1,
+            "solucion": "De la primera ecuación, x+y=18. Junto con x−y=10, al sumar se obtiene 2x=28; por ello x=14. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se reduce el sistema de tres variables y luego se aplica eliminación. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-11-R-13",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Sistemas de ecuaciones lineales",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Tema Sistemas de ecuaciones lineales. En el sistema x+y+z=24, x−y=10 y z=4, determina x. La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "15",
+              "5",
+              "4",
+              "20"
+            ],
+            "respuesta": 0,
+            "solucion": "De la primera ecuación, x+y=20. Junto con x−y=10, al sumar se obtiene 2x=30; por ello x=15. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se reduce el sistema de tres variables y luego se aplica eliminación. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-11-R-14",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Sistemas de ecuaciones lineales",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Tema Sistemas de ecuaciones lineales. En el sistema x+y+z=23, x−y=14 y z=5, determina x. Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "2",
+              "5",
+              "18",
+              "16"
+            ],
+            "respuesta": 3,
+            "solucion": "De la primera ecuación, x+y=18. Junto con x−y=14, al sumar se obtiene 2x=32; por ello x=16. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se reduce el sistema de tres variables y luego se aplica eliminación. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-11-R-15",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Sistemas de ecuaciones lineales",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Tema Sistemas de ecuaciones lineales. En el sistema x+y+z=26, x−y=14 y z=6, determina x. Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "6",
+              "20",
+              "17",
+              "3"
+            ],
+            "respuesta": 2,
+            "solucion": "De la primera ecuación, x+y=20. Junto con x−y=14, al sumar se obtiene 2x=34; por ello x=17. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se reduce el sistema de tres variables y luego se aplica eliminación. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -9302,8 +10502,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -10112,6 +11312,111 @@
             "explicacion": "Una función lineal alcanza su extremo en un vértice de la región factible. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNAMAD; no es una pregunta oficial"
+          },
+          {
+            "id": "ALG-12-R-11",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Sistemas de inecuaciones e interpretación geométrica",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Tema Sistemas de inecuaciones e interpretación geométrica. Maximiza F=3x+2y sujeto a x≥0, y≥0, x+y≤20 y x≤6. Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "60",
+              "18",
+              "46",
+              "40"
+            ],
+            "respuesta": 2,
+            "solucion": "Los vértices relevantes son (0,0), (0,20), (6,0) y (6,14). F alcanza 18+28=46 en (6,14). Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Una función lineal alcanza su extremo en un vértice de la región factible. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-12-R-12",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Sistemas de inecuaciones e interpretación geométrica",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Tema Sistemas de inecuaciones e interpretación geométrica. Maximiza F=3x+2y sujeto a x≥0, y≥0, x+y≤21 y x≤7. Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "21",
+              "49",
+              "42",
+              "63"
+            ],
+            "respuesta": 1,
+            "solucion": "Los vértices relevantes son (0,0), (0,21), (7,0) y (7,14). F alcanza 21+28=49 en (7,14). Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Una función lineal alcanza su extremo en un vértice de la región factible. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-12-R-13",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Sistemas de inecuaciones e interpretación geométrica",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Tema Sistemas de inecuaciones e interpretación geométrica. Maximiza F=3x+2y sujeto a x≥0, y≥0, x+y≤22 y x≤4. Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "48",
+              "44",
+              "66",
+              "12"
+            ],
+            "respuesta": 0,
+            "solucion": "Los vértices relevantes son (0,0), (0,22), (4,0) y (4,18). F alcanza 12+36=48 en (4,18). Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Una función lineal alcanza su extremo en un vértice de la región factible. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-12-R-14",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Sistemas de inecuaciones e interpretación geométrica",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Tema Sistemas de inecuaciones e interpretación geométrica. Maximiza F=3x+2y sujeto a x≥0, y≥0, x+y≤23 y x≤5. Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "46",
+              "69",
+              "15",
+              "51"
+            ],
+            "respuesta": 3,
+            "solucion": "Los vértices relevantes son (0,0), (0,23), (5,0) y (5,18). F alcanza 15+36=51 en (5,18). Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Una función lineal alcanza su extremo en un vértice de la región factible. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-12-R-15",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Sistemas de inecuaciones e interpretación geométrica",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Tema Sistemas de inecuaciones e interpretación geométrica. Maximiza F=3x+2y sujeto a x≥0, y≥0, x+y≤24 y x≤6. Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "72",
+              "18",
+              "54",
+              "48"
+            ],
+            "respuesta": 2,
+            "solucion": "Los vértices relevantes son (0,0), (0,24), (6,0) y (6,18). F alcanza 18+36=54 en (6,18). Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Una función lineal alcanza su extremo en un vértice de la región factible. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -10131,8 +11436,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -10941,6 +12246,111 @@
             "explicacion": "Se expresa el determinante como ecuación lineal en el elemento desconocido. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de PUCP; no es una pregunta oficial"
+          },
+          {
+            "id": "ALG-13-R-11",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Matrices y determinantes",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Tema Matrices y determinantes. Si det([[m, 5], [3, 3]])=27, determina m. Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "13",
+              "27",
+              "14",
+              "15"
+            ],
+            "respuesta": 2,
+            "solucion": "mc−15=27; entonces 3m=42 y m=14. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se expresa el determinante como ecuación lineal en el elemento desconocido. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-13-R-12",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Matrices y determinantes",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Tema Matrices y determinantes. Si det([[m, 2], [1, 4]])=58, determina m. Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "58",
+              "15",
+              "16",
+              "14"
+            ],
+            "respuesta": 1,
+            "solucion": "mc−2=58; entonces 4m=60 y m=15. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se expresa el determinante como ecuación lineal en el elemento desconocido. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-13-R-13",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Matrices y determinantes",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: Tema Matrices y determinantes. Si det([[m, 3], [2, 5]])=74, determina m. Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "16",
+              "17",
+              "15",
+              "74"
+            ],
+            "respuesta": 0,
+            "solucion": "mc−6=74; entonces 5m=80 y m=16. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se expresa el determinante como ecuación lineal en el elemento desconocido. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-13-R-14",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Matrices y determinantes",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Tema Matrices y determinantes. Si det([[m, 4], [3, 6]])=90, determina m. Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "18",
+              "16",
+              "90",
+              "17"
+            ],
+            "respuesta": 3,
+            "solucion": "mc−12=90; entonces 6m=102 y m=17. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se expresa el determinante como ecuación lineal en el elemento desconocido. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-13-R-15",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Matrices y determinantes",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Tema Matrices y determinantes. Sean A=[[4, 2], [1, 2]] y B=[[3, 0], [1, 3]]. Calcula la entrada (1,2) de AB. Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "6",
+              "14",
+              "7",
+              "4"
+            ],
+            "respuesta": 0,
+            "solucion": "La entrada (1,2) es fila 1 de A por columna 2 de B: 4·0+2·3=6. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Cada entrada del producto se obtiene mediante producto fila por columna. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -10960,8 +12370,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -11770,12 +13180,117 @@
             "explicacion": "Se interpreta la composición y se usa la inyectividad de la exponencial. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNMSM; no es una pregunta oficial"
+          },
+          {
+            "id": "ALG-14-R-11",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Funciones, exponenciales y logaritmos",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Tema Funciones, exponenciales y logaritmos. Sean f(x)=2x+3 y g(x)=2^x. Si (g∘f)(x)=2^36, determina x. Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "19,5",
+              "18",
+              "16,5",
+              "33"
+            ],
+            "respuesta": 2,
+            "solucion": "2^(2x+3)=2^36; entonces 2x+3=36 y x=(36−3)/2=16,5. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se interpreta la composición y se usa la inyectividad de la exponencial. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-14-R-12",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Funciones, exponenciales y logaritmos",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Tema Funciones, exponenciales y logaritmos. Sean f(x)=3x+4 y g(x)=2^x. Si (g∘f)(x)=2^38, determina x. Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "12,67",
+              "11,33",
+              "34",
+              "14"
+            ],
+            "respuesta": 1,
+            "solucion": "2^(3x+4)=2^38; entonces 3x+4=38 y x=(38−4)/3=11,33. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se interpreta la composición y se usa la inyectividad de la exponencial. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-14-R-13",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Funciones, exponenciales y logaritmos",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Tema Funciones, exponenciales y logaritmos. Sean f(x)=4x+5 y g(x)=2^x. Si (g∘f)(x)=2^40, determina x. Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "8,75",
+              "35",
+              "11,25",
+              "10"
+            ],
+            "respuesta": 0,
+            "solucion": "2^(4x+5)=2^40; entonces 4x+5=40 y x=(40−5)/4=8,75. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se interpreta la composición y se usa la inyectividad de la exponencial. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-14-R-14",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Funciones, exponenciales y logaritmos",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Tema Funciones, exponenciales y logaritmos. Resuelve la ecuación exponencial 2^(x+4)=2^3. La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "1",
+              "-1",
+              "7",
+              "0.75"
+            ],
+            "respuesta": 1,
+            "solucion": "Como las bases positivas son iguales y distintas de 1, x+4=3; por tanto x=-1. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "La inyectividad de la función exponencial permite igualar exponentes. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ALG-14-R-15",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Funciones, exponenciales y logaritmos",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Tema Funciones, exponenciales y logaritmos. Resuelve la ecuación exponencial 2^(x+5)=2^4. Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "-1",
+              "9",
+              "0.8",
+              "1"
+            ],
+            "respuesta": 0,
+            "solucion": "Como las bases positivas son iguales y distintas de 1, x+5=4; por tanto x=-1. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "La inyectividad de la función exponencial permite igualar exponentes. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
     }
   ],
-  "total": 560,
+  "total": 630,
   "fuentesDrive": [
     {
       "coleccion": "Biblioteca UNI",

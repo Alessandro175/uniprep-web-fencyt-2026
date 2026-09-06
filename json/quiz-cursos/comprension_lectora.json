@@ -1,7 +1,7 @@
 {
   "courseId": "comprension_lectora",
   "nombre": "Comprensión Lectora",
-  "version": "2026.9-cuatro-niveles-universidad",
+  "version": "2026.31-nacional-7605",
   "descripcion": "Banco original UniPrep organizado uno a uno con cada tema visible. Cada sesión temática conserva su subárea y no mezcla preguntas de otros temas.",
   "universidadesReferencia": [
     "UNAMAD",
@@ -17,15 +17,15 @@
     "basico": 10,
     "intermedio": 10,
     "avanzado": 10,
-    "admision": 10,
-    "total": 40
+    "admision": 15,
+    "total": 45
   },
   "distribucionPorTema": {
     "basico": 10,
     "intermedio": 10,
     "avanzado": 10,
-    "admision": 10,
-    "total": 40
+    "admision": 15,
+    "total": 45
   },
   "criteriosDificultad": {
     "basico": "Fundamento o procedimiento directo",
@@ -48,8 +48,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -858,10 +858,115 @@
             "explicacion": "Se comprueban por separado una síntesis global y una inferencia implícita. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora». Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNAMAD; no es una pregunta oficial"
+          },
+          {
+            "id": "CL-01-R-11",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Tema Comprensión lectora. Lee: «La diversidad genética permite que una población responda de maneras distintas ante una enfermedad o un cambio ambiental. Cuando esa variación disminuye, una sola amenaza puede afectar a casi todos los individuos.» ¿Qué inferencia está mejor sustentada por el texto? Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "Poblaciones muy uniformes pueden ser más vulnerables",
+              "La diversidad genética aumenta la capacidad de respuesta poblacional",
+              "No existe relación entre las ideas del texto",
+              "El autor aporta datos que contradicen su conclusión"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Comprensión lectora. La inferencia compatible con las premisas es: Poblaciones muy uniformes pueden ser más vulnerables. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se deriva una conclusión sin exceder la información disponible. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora». Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "CL-01-R-12",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Tema Comprensión lectora. Lee: «Los mapas simplifican el territorio para hacerlo legible. Toda proyección conserva ciertas propiedades y distorsiona otras; por ello, elegir un mapa depende del propósito del análisis.» Evalúa: I) La idea central es «Ningún mapa representa todas las propiedades sin distorsión». II) Se puede inferir que «La proyección adecuada cambia según lo que se desea comparar». ¿Qué opción es correcta? Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son incorrectas",
+              "I y II son correctas"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Comprensión lectora. I sintetiza el texto sin reducirlo a un detalle. II deriva razonablemente de sus premisas. Por tanto, ambas son correctas. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se comprueban por separado una síntesis global y una inferencia implícita. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora». Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "CL-01-R-13",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Tema Comprensión lectora. Lee: «Una norma es legítima no solo porque fue aprobada formalmente. También debe respetar derechos y permitir que las decisiones públicas sean examinadas y cuestionadas.» Evalúa: I) La idea central es «La legitimidad combina procedimiento, derechos y control público». II) Se puede inferir que «Cumplir una formalidad no basta para justificar cualquier decisión». ¿Qué opción es correcta? La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "Solo II es correcta",
+              "I y II son incorrectas",
+              "I y II son correctas",
+              "Solo I es correcta"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Comprensión lectora. I sintetiza el texto sin reducirlo a un detalle. II deriva razonablemente de sus premisas. Por tanto, ambas son correctas. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se comprueban por separado una síntesis global y una inferencia implícita. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora». Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "CL-01-R-14",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Tema Comprensión lectora. Lee: «En un experimento, repetir una medición reduce el efecto de errores accidentales, pero no corrige un instrumento mal calibrado. La precisión y la exactitud, por tanto, responden a problemas diferentes.» Evalúa: I) La idea central es «Repetición y calibración corrigen tipos distintos de error». II) Se puede inferir que «Muchas mediciones precisas pueden seguir alejadas del valor real». ¿Qué opción es correcta? Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "I y II son incorrectas",
+              "I y II son correctas",
+              "Solo I es correcta",
+              "Solo II es correcta"
+            ],
+            "respuesta": 1,
+            "solucion": "Aplicación específica de Comprensión lectora. I sintetiza el texto sin reducirlo a un detalle. II deriva razonablemente de sus premisas. Por tanto, ambas son correctas. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se comprueban por separado una síntesis global y una inferencia implícita. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora». Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "CL-01-R-15",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Comprensión lectora",
+            "subarea": "Comprensión Lectora",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Tema Comprensión lectora. Lee: «Una herramienta de inteligencia artificial puede proponer respuestas en segundos, pero también producir datos falsos con apariencia convincente. Su utilidad académica depende de contrastar resultados y comprender el procedimiento.» Evalúa: I) La idea central es «La inteligencia artificial requiere verificación y comprensión crítica». II) Se puede inferir que «La rapidez de una respuesta no garantiza su exactitud». ¿Qué opción es correcta? Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "I y II son correctas",
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son incorrectas"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Comprensión lectora. I sintetiza el texto sin reducirlo a un detalle. II deriva razonablemente de sus premisas. Por tanto, ambas son correctas. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se comprueban por separado una síntesis global y una inferencia implícita. El ejercicio queda archivado únicamente en el bloque «Comprensión lectora». Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
     }
   ],
-  "total": 40
+  "total": 45
 }

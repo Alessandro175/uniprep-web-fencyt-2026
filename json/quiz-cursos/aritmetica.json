@@ -1,7 +1,7 @@
 {
   "courseId": "aritmetica",
   "nombre": "Aritmética",
-  "version": "2026.9-cuatro-niveles-universidad",
+  "version": "2026.31-nacional-7605",
   "descripcion": "Banco original UniPrep organizado uno a uno con cada tema visible. Cada sesión temática conserva su subárea y no mezcla preguntas de otros temas.",
   "universidadesReferencia": [
     "UNAMAD",
@@ -17,15 +17,15 @@
     "basico": 120,
     "intermedio": 120,
     "avanzado": 120,
-    "admision": 120,
-    "total": 480
+    "admision": 180,
+    "total": 540
   },
   "distribucionPorTema": {
     "basico": 10,
     "intermedio": 10,
     "avanzado": 10,
-    "admision": 10,
-    "total": 40
+    "admision": 15,
+    "total": 45
   },
   "criteriosDificultad": {
     "basico": "Fundamento o procedimiento directo",
@@ -48,8 +48,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -858,6 +858,111 @@
             "explicacion": "Se aplica inclusión-exclusión de tres conjuntos controlando la multiplicidad de cada región. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Competencias generales de admisión preuniversitaria"
+          },
+          {
+            "id": "ARI-01-R-11",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Conjuntos y operaciones con conjuntos",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Tema Conjuntos y operaciones con conjuntos. De 78 postulantes, 38 estudian Álgebra, 27 Aritmética y 12 ambas. ¿Cuántos no estudian ninguna de las dos? Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "25",
+              "13",
+              "53",
+              "12"
+            ],
+            "respuesta": 0,
+            "solucion": "Primero n(A∪B)=38+27−12=53. Luego, ninguno=78−53=25. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se encadenan inclusión-exclusión y complemento. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-01-R-12",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Conjuntos y operaciones con conjuntos",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Tema Conjuntos y operaciones con conjuntos. En tres conjuntos, n(A)=42, n(B)=33, n(C)=27, n(A∩B)=10, n(A∩C)=8, n(B∩C)=7 y n(A∩B∩C)=2. Calcula n(A∪B∪C). Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "77",
+              "89",
+              "86,9",
+              "79"
+            ],
+            "respuesta": 3,
+            "solucion": "Para tres conjuntos: 42+33+27−10−8−7+2=79. La triple intersección se suma porque fue descontada en exceso. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se aplica inclusión-exclusión de tres conjuntos controlando la multiplicidad de cada región. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-01-R-13",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Conjuntos y operaciones con conjuntos",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Tema Conjuntos y operaciones con conjuntos. En tres conjuntos, n(A)=43, n(B)=34, n(C)=28, n(A∩B)=11, n(A∩C)=9, n(B∩C)=8 y n(A∩B∩C)=3. Calcula n(A∪B∪C). La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "91",
+              "88",
+              "80",
+              "77"
+            ],
+            "respuesta": 2,
+            "solucion": "Para tres conjuntos: 43+34+28−11−9−8+3=80. La triple intersección se suma porque fue descontada en exceso. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se aplica inclusión-exclusión de tres conjuntos controlando la multiplicidad de cada región. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-01-R-14",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Conjuntos y operaciones con conjuntos",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Tema Conjuntos y operaciones con conjuntos. En tres conjuntos, n(A)=44, n(B)=29, n(C)=29, n(A∩B)=8, n(A∩C)=7, n(B∩C)=6 y n(A∩B∩C)=2. Calcula n(A∪B∪C). Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "91,3",
+              "83",
+              "81",
+              "91"
+            ],
+            "respuesta": 1,
+            "solucion": "Para tres conjuntos: 44+29+29−8−7−6+2=83. La triple intersección se suma porque fue descontada en exceso. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se aplica inclusión-exclusión de tres conjuntos controlando la multiplicidad de cada región. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-01-R-15",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Conjuntos y operaciones con conjuntos",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Tema Conjuntos y operaciones con conjuntos. En tres conjuntos, n(A)=45, n(B)=30, n(C)=30, n(A∩B)=9, n(A∩C)=8, n(B∩C)=7 y n(A∩B∩C)=3. Calcula n(A∪B∪C). Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "84",
+              "81",
+              "93",
+              "92,4"
+            ],
+            "respuesta": 0,
+            "solucion": "Para tres conjuntos: 45+30+30−9−8−7+3=84. La triple intersección se suma porque fue descontada en exceso. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se aplica inclusión-exclusión de tres conjuntos controlando la multiplicidad de cada región. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -877,8 +982,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -1687,6 +1792,111 @@
             "explicacion": "Se reconstruyen simultáneamente cociente y residuo bajo la condición euclidiana. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNI; no es una pregunta oficial"
+          },
+          {
+            "id": "ARI-02-R-11",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Sistemas numéricos naturales y enteros",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Tema Sistemas numéricos naturales y enteros. Al dividir el entero N=158 entre 7, el algoritmo de Euclides da cociente q y residuo r. Calcula q+r y verifica que 0≤r<7. Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "26",
+              "22",
+              "4",
+              "33"
+            ],
+            "respuesta": 0,
+            "solucion": "158=7·22+4; por tanto q=22, r=4 y q+r=26. Además, 4<7. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se reconstruyen simultáneamente cociente y residuo bajo la condición euclidiana. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-02-R-12",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Sistemas numéricos naturales y enteros",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Tema Sistemas numéricos naturales y enteros. Al dividir el entero N=189 entre 8, el algoritmo de Euclides da cociente q y residuo r. Calcula q+r y verifica que 0≤r<8. Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "23",
+              "5",
+              "36",
+              "28"
+            ],
+            "respuesta": 3,
+            "solucion": "189=8·23+5; por tanto q=23, r=5 y q+r=28. Además, 5<8. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se reconstruyen simultáneamente cociente y residuo bajo la condición euclidiana. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-02-R-13",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Sistemas numéricos naturales y enteros",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Tema Sistemas numéricos naturales y enteros. Al dividir el entero N=218 entre 9, el algoritmo de Euclides da cociente q y residuo r. Calcula q+r y verifica que 0≤r<9. Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "2",
+              "35",
+              "26",
+              "24"
+            ],
+            "respuesta": 2,
+            "solucion": "218=9·24+2; por tanto q=24, r=2 y q+r=26. Además, 2<9. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se reconstruyen simultáneamente cociente y residuo bajo la condición euclidiana. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-02-R-14",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Sistemas numéricos naturales y enteros",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Tema Sistemas numéricos naturales y enteros. Al dividir el entero N=253 entre 10, el algoritmo de Euclides da cociente q y residuo r. Calcula q+r y verifica que 0≤r<10. Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "38",
+              "28",
+              "25",
+              "3"
+            ],
+            "respuesta": 1,
+            "solucion": "253=10·25+3; por tanto q=25, r=3 y q+r=28. Además, 3<10. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se reconstruyen simultáneamente cociente y residuo bajo la condición euclidiana. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-02-R-15",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Sistemas numéricos naturales y enteros",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Tema Sistemas numéricos naturales y enteros. Al dividir el entero N=290 entre 11, el algoritmo de Euclides da cociente q y residuo r. Calcula q+r y verifica que 0≤r<11. Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "30",
+              "26",
+              "4",
+              "41"
+            ],
+            "respuesta": 0,
+            "solucion": "290=11·26+4; por tanto q=26, r=4 y q+r=30. Además, 4<11. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se reconstruyen simultáneamente cociente y residuo bajo la condición euclidiana. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -1706,8 +1916,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -2516,6 +2726,111 @@
             "explicacion": "Se encadenan suma racional, inversión del divisor y simplificación final. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSAAC; no es una pregunta oficial"
+          },
+          {
+            "id": "ARI-03-R-11",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Sistemas numéricos racionales",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Tema Sistemas numéricos racionales. Resuelve la fracción compleja (5/4+3/7) ÷ (3/7) y simplifica completamente. Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "47/12",
+              "141/196",
+              "8/11",
+              "47/28"
+            ],
+            "respuesta": 0,
+            "solucion": "Primero 5/4+3/7=47/28. Dividir por 3/7 equivale a multiplicar por 7/3: 47/12. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se encadenan suma racional, inversión del divisor y simplificación final. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-03-R-12",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Sistemas numéricos racionales",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Tema Sistemas numéricos racionales. Resuelve la fracción compleja (2/5+1/4) ÷ (1/4) y simplifica completamente. Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "13/80",
+              "1/3",
+              "13/20",
+              "13/5"
+            ],
+            "respuesta": 3,
+            "solucion": "Primero 2/5+1/4=13/20. Dividir por 1/4 equivale a multiplicar por 4/1: 13/5. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se encadenan suma racional, inversión del divisor y simplificación final. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-03-R-13",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Sistemas numéricos racionales",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: Tema Sistemas numéricos racionales. Resuelve la fracción compleja (3/6+2/5) ÷ (2/5) y simplifica completamente. Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "5/11",
+              "9/10",
+              "9/4",
+              "9/25"
+            ],
+            "respuesta": 2,
+            "solucion": "Primero 3/6+2/5=9/10. Dividir por 2/5 equivale a multiplicar por 5/2: 9/4. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se encadenan suma racional, inversión del divisor y simplificación final. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-03-R-14",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Sistemas numéricos racionales",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Tema Sistemas numéricos racionales. Resuelve la fracción compleja (4/7+3/6) ÷ (3/6) y simplifica completamente. Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "15/14",
+              "15/7",
+              "15/28",
+              "7/13"
+            ],
+            "respuesta": 1,
+            "solucion": "Primero 4/7+3/6=15/14. Dividir por 3/6 equivale a multiplicar por 6/3: 15/7. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se encadenan suma racional, inversión del divisor y simplificación final. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-03-R-15",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Sistemas numéricos racionales",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Tema Sistemas numéricos racionales. Calcula 2/5+3/5 usando un denominador común y expresa el resultado irreducible. Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "6/25",
+              "-1/5",
+              "1/1",
+              "1/2"
+            ],
+            "respuesta": 2,
+            "solucion": "(2·5+3·5)/(5·5)=25/25=1/1. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se construye el común denominador antes de reducir. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -2535,8 +2850,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -3345,6 +3660,111 @@
             "explicacion": "Se plantea una ecuación posicional y se verifica que x sea un dígito permitido. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UCSM; no es una pregunta oficial"
+          },
+          {
+            "id": "ARI-04-R-11",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Sistema de numeración",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: En una práctica cronometrada de perfil UNI, resuelve sin calculadora y comprueba el resultado. Tema Sistema de numeración. El numeral x1 en base 5 equivale a 11 en decimal. Determina el dígito x y calcula x+1. Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "3",
+              "2",
+              "6",
+              "8"
+            ],
+            "respuesta": 0,
+            "solucion": "x·5+1=11; x=(11−1)/5=2. Entonces x+1=3. Comprobación solicitada: la alternativa elegida satisface el enunciado y las demás contradicen al menos una condición. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se plantea una ecuación posicional y se verifica que x sea un dígito permitido. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. En esta versión se exige verificar o descartar, no solo obtener el resultado. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-04-R-12",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Sistema de numeración",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Tema Sistema de numeración. El numeral x4 en base 6 equivale a 22 en decimal. Determina el dígito x y calcula x+4. Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "3",
+              "16",
+              "13",
+              "7"
+            ],
+            "respuesta": 3,
+            "solucion": "x·6+4=22; x=(22−4)/6=3. Entonces x+4=7. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se plantea una ecuación posicional y se verifica que x sea un dígito permitido. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-04-R-13",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Sistema de numeración",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Tema Sistema de numeración. El numeral x3 en base 7 equivale a 45 en decimal. Determina el dígito x y calcula x+3. Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "38",
+              "16",
+              "9",
+              "6"
+            ],
+            "respuesta": 2,
+            "solucion": "x·7+3=45; x=(45−3)/7=6. Entonces x+3=9. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se plantea una ecuación posicional y se verifica que x sea un dígito permitido. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-04-R-14",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Sistema de numeración",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Tema Sistema de numeración. Expresa el número decimal 60 en base 7. La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "60₍7₎",
+              "124₍7₎",
+              "104₍7₎",
+              "114₍7₎"
+            ],
+            "respuesta": 3,
+            "solucion": "Las divisiones sucesivas entre 7 producen residuos que se leen en orden inverso: 114₍7₎. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se controla la validez de cada cifra en la base indicada. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-04-R-15",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Sistema de numeración",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Tema Sistema de numeración. Expresa el número decimal 63 en base 8. Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "107₍8₎",
+              "67₍8₎",
+              "77₍8₎",
+              "63₍8₎"
+            ],
+            "respuesta": 2,
+            "solucion": "Las divisiones sucesivas entre 8 producen residuos que se leen en orden inverso: 77₍8₎. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se controla la validez de cada cifra en la base indicada. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -3364,8 +3784,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -4174,6 +4594,111 @@
             "explicacion": "Se convierte un sistema de congruencias con igual residuo en un problema de MCM. El ejercicio queda archivado únicamente en el bloque «Divisibilidad». Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSA; no es una pregunta oficial"
+          },
+          {
+            "id": "ARI-05-R-11",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Divisibilidad",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Tema Divisibilidad. Halla el mayor entero x≤480 que deja residuo 3 al dividirse entre 6 y también residuo 3 al dividirse entre 10. La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "453",
+              "423",
+              "483",
+              "477"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Divisibilidad. x−3 debe ser múltiplo común de 6 y 10. Como MCM=30, se toma el mayor 3+k·30 que no exceda 480: x=453. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se convierte un sistema de congruencias con igual residuo en un problema de MCM. El ejercicio queda archivado únicamente en el bloque «Divisibilidad». Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-05-R-12",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Divisibilidad",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Tema Divisibilidad. Halla el mayor entero x≤490 que deja residuo 4 al dividirse entre 7 y también residuo 4 al dividirse entre 11. Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "389",
+              "543",
+              "486",
+              "466"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Divisibilidad. x−4 debe ser múltiplo común de 7 y 11. Como MCM=77, se toma el mayor 4+k·77 que no exceda 490: x=466. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se convierte un sistema de congruencias con igual residuo en un problema de MCM. El ejercicio queda archivado únicamente en el bloque «Divisibilidad». Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-05-R-13",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Divisibilidad",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Tema Divisibilidad. ¿Cuántos divisores positivos tiene 54? Justifica mediante su descomposición canónica. Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "8",
+              "7",
+              "10",
+              "27"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Divisibilidad. Al factorizar 54 y aplicar el producto de «exponente + 1» se obtienen 8 divisores positivos. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "La cantidad de divisores se calcula desde los exponentes primos, no enumerando múltiplos. El ejercicio queda archivado únicamente en el bloque «Divisibilidad». Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-05-R-14",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Divisibilidad",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Tema Divisibilidad. ¿Cuántos divisores positivos tiene 57? Justifica mediante su descomposición canónica. Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "3",
+              "6",
+              "28.5",
+              "4"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Divisibilidad. Al factorizar 57 y aplicar el producto de «exponente + 1» se obtienen 4 divisores positivos. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "La cantidad de divisores se calcula desde los exponentes primos, no enumerando múltiplos. El ejercicio queda archivado únicamente en el bloque «Divisibilidad». Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-05-R-15",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Divisibilidad",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Tema Divisibilidad. ¿Cuántos divisores positivos tiene 60? Justifica mediante su descomposición canónica. Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "14",
+              "30",
+              "12",
+              "11"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Divisibilidad. Al factorizar 60 y aplicar el producto de «exponente + 1» se obtienen 12 divisores positivos. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "La cantidad de divisores se calcula desde los exponentes primos, no enumerando múltiplos. El ejercicio queda archivado únicamente en el bloque «Divisibilidad». Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -4193,8 +4718,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -5003,6 +5528,111 @@
             "explicacion": "Se combinan independientemente las elecciones de exponentes primos. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. En esta versión se exige verificar o descartar, no solo obtener el resultado.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNAMAD; no es una pregunta oficial"
+          },
+          {
+            "id": "ARI-06-R-11",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Números primos",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: En una práctica cronometrada de perfil UNAMAD, resuelve sin calculadora y comprueba el resultado. Tema Números primos. Si N=2^4·3^3, determina cuántos divisores positivos tiene N y justifica la fórmula. Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "20",
+              "7",
+              "12",
+              "19"
+            ],
+            "respuesta": 0,
+            "solucion": "Cada divisor elige exponentes de 0 a 4 para 2 y de 0 a 3 para 3: (4+1)(3+1)=20. Comprobación solicitada: la alternativa elegida satisface el enunciado y las demás contradicen al menos una condición. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se combinan independientemente las elecciones de exponentes primos. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. En esta versión se exige verificar o descartar, no solo obtener el resultado. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-06-R-12",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Números primos",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Tema Números primos. El número 2867 es producto de dos primos distintos. Factorízalo y halla la suma de sus factores primos. Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "14",
+              "108",
+              "2867",
+              "2868"
+            ],
+            "respuesta": 1,
+            "solucion": "2867=47·61; la suma solicitada es 47+61=108. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se usa factorización prima, no suma de divisores. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-06-R-13",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Números primos",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Tema Números primos. El número 3551 es producto de dos primos distintos. Factorízalo y halla la suma de sus factores primos. Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "120",
+              "3551",
+              "3552",
+              "14"
+            ],
+            "respuesta": 0,
+            "solucion": "3551=53·67; la suma solicitada es 53+67=120. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se usa factorización prima, no suma de divisores. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-06-R-14",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Números primos",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: Tema Números primos. El número 649 es producto de dos primos distintos. Factorízalo y halla la suma de sus factores primos. Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "649",
+              "650",
+              "48",
+              "70"
+            ],
+            "respuesta": 3,
+            "solucion": "649=59·11; la suma solicitada es 59+11=70. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se usa factorización prima, no suma de divisores. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-06-R-15",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Números primos",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Tema Números primos. El número 793 es producto de dos primos distintos. Factorízalo y halla la suma de sus factores primos. Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "794",
+              "48",
+              "74",
+              "793"
+            ],
+            "respuesta": 2,
+            "solucion": "793=61·13; la suma solicitada es 61+13=74. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se usa factorización prima, no suma de divisores. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -5022,8 +5652,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -5832,6 +6462,111 @@
             "explicacion": "Se convierte un sistema de congruencias con igual residuo en un problema de MCM. El ejercicio queda archivado únicamente en el bloque «Máximo común divisor y mínimo común múltiplo». Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de PUCP; no es una pregunta oficial"
+          },
+          {
+            "id": "ARI-07-R-11",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Máximo común divisor y mínimo común múltiplo",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: Tema Máximo común divisor y mínimo común múltiplo. ¿Cuántos divisores positivos tiene 54? Justifica mediante su descomposición canónica. Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "10",
+              "27",
+              "8",
+              "7"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Máximo común divisor y mínimo común múltiplo. Al factorizar 54 y aplicar el producto de «exponente + 1» se obtienen 8 divisores positivos. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "La cantidad de divisores se calcula desde los exponentes primos, no enumerando múltiplos. El ejercicio queda archivado únicamente en el bloque «Máximo común divisor y mínimo común múltiplo». Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-07-R-12",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Máximo común divisor y mínimo común múltiplo",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Tema Máximo común divisor y mínimo común múltiplo. ¿Cuántos divisores positivos tiene 57? Justifica mediante su descomposición canónica. Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "28.5",
+              "4",
+              "3",
+              "6"
+            ],
+            "respuesta": 1,
+            "solucion": "Aplicación específica de Máximo común divisor y mínimo común múltiplo. Al factorizar 57 y aplicar el producto de «exponente + 1» se obtienen 4 divisores positivos. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "La cantidad de divisores se calcula desde los exponentes primos, no enumerando múltiplos. El ejercicio queda archivado únicamente en el bloque «Máximo común divisor y mínimo común múltiplo». Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-07-R-13",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Máximo común divisor y mínimo común múltiplo",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Tema Máximo común divisor y mínimo común múltiplo. ¿Cuántos divisores positivos tiene 60? Justifica mediante su descomposición canónica. Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "12",
+              "11",
+              "14",
+              "30"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Máximo común divisor y mínimo común múltiplo. Al factorizar 60 y aplicar el producto de «exponente + 1» se obtienen 12 divisores positivos. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "La cantidad de divisores se calcula desde los exponentes primos, no enumerando múltiplos. El ejercicio queda archivado únicamente en el bloque «Máximo común divisor y mínimo común múltiplo». Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-07-R-14",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Máximo común divisor y mínimo común múltiplo",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Tema Máximo común divisor y mínimo común múltiplo. ¿Cuántos divisores positivos tiene 63? Justifica mediante su descomposición canónica. Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "5",
+              "8",
+              "31.5",
+              "6"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Máximo común divisor y mínimo común múltiplo. Al factorizar 63 y aplicar el producto de «exponente + 1» se obtienen 6 divisores positivos. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "La cantidad de divisores se calcula desde los exponentes primos, no enumerando múltiplos. El ejercicio queda archivado únicamente en el bloque «Máximo común divisor y mínimo común múltiplo». Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-07-R-15",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Máximo común divisor y mínimo común múltiplo",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Tema Máximo común divisor y mínimo común múltiplo. ¿Cuántos divisores positivos tiene 66? Justifica mediante su descomposición canónica. La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "10",
+              "33",
+              "8",
+              "7"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Máximo común divisor y mínimo común múltiplo. Al factorizar 66 y aplicar el producto de «exponente + 1» se obtienen 8 divisores positivos. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "La cantidad de divisores se calcula desde los exponentes primos, no enumerando múltiplos. El ejercicio queda archivado únicamente en el bloque «Máximo común divisor y mínimo común múltiplo». Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -5851,8 +6586,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -6661,6 +7396,111 @@
             "explicacion": "Se combinan reparto proporcional y variación porcentual en etapas. El ejercicio queda archivado únicamente en el bloque «Razones y proporciones». Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNMSM; no es una pregunta oficial"
+          },
+          {
+            "id": "ARI-08-R-11",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Razones y proporciones",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Tema Razones y proporciones. Una máquina completa un lote en 7 h y otra en 7 h. Si trabajan juntas con rendimiento constante, ¿en cuánto tiempo completan un lote? Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "14 h",
+              "3,77 h",
+              "3,5 h",
+              "7 h"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Razones y proporciones. Las tasas son 1/7 y 1/7 lote/h. La tasa conjunta es (14)/49; el tiempo es 49/14=3,5 h. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "En trabajos conjuntos se suman tasas, no tiempos. El ejercicio queda archivado únicamente en el bloque «Razones y proporciones». Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-08-R-12",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Razones y proporciones",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Tema Razones y proporciones. Una máquina completa un lote en 4 h y otra en 8 h. Si trabajan juntas con rendimiento constante, ¿en cuánto tiempo completan un lote? La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "2,91 h",
+              "2,67 h",
+              "6 h",
+              "12 h"
+            ],
+            "respuesta": 1,
+            "solucion": "Aplicación específica de Razones y proporciones. Las tasas son 1/4 y 1/8 lote/h. La tasa conjunta es (12)/32; el tiempo es 32/12=2,67 h. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "En trabajos conjuntos se suman tasas, no tiempos. El ejercicio queda archivado únicamente en el bloque «Razones y proporciones». Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-08-R-13",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Razones y proporciones",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Tema Razones y proporciones. Una máquina completa un lote en 5 h y otra en 9 h. Si trabajan juntas con rendimiento constante, ¿en cuánto tiempo completan un lote? Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "3,21 h",
+              "7 h",
+              "14 h",
+              "3,46 h"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Razones y proporciones. Las tasas son 1/5 y 1/9 lote/h. La tasa conjunta es (14)/45; el tiempo es 45/14=3,21 h. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "En trabajos conjuntos se suman tasas, no tiempos. El ejercicio queda archivado únicamente en el bloque «Razones y proporciones». Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-08-R-14",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Razones y proporciones",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Tema Razones y proporciones. Una máquina completa un lote en 6 h y otra en 10 h. Si trabajan juntas con rendimiento constante, ¿en cuánto tiempo completan un lote? Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "8 h",
+              "16 h",
+              "4 h",
+              "3,75 h"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Razones y proporciones. Las tasas son 1/6 y 1/10 lote/h. La tasa conjunta es (16)/60; el tiempo es 60/16=3,75 h. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "En trabajos conjuntos se suman tasas, no tiempos. El ejercicio queda archivado únicamente en el bloque «Razones y proporciones». Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-08-R-15",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Razones y proporciones",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Tema Razones y proporciones. Una utilidad de S/1200 se reparte en razón 5:5:8. Luego, la primera parte aumenta 20% por un bono. ¿Cuál es el monto final de la primera persona? Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "S/420",
+              "S/65,93",
+              "S/400",
+              "S/333,33"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Razones y proporciones. La primera parte es 5/18×1200=S/333,33. Con el bono: 333,33×1,20=S/400. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se combinan reparto proporcional y variación porcentual en etapas. El ejercicio queda archivado únicamente en el bloque «Razones y proporciones». Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -6680,8 +7520,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -7490,6 +8330,111 @@
             "explicacion": "Se combinan reparto proporcional y variación porcentual en etapas. El ejercicio queda archivado únicamente en el bloque «Magnitudes proporcionales». Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Competencias generales de admisión preuniversitaria"
+          },
+          {
+            "id": "ARI-09-R-11",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Magnitudes proporcionales",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Tema Magnitudes proporcionales. Una máquina completa un lote en 4 h y otra en 8 h. Si trabajan juntas con rendimiento constante, ¿en cuánto tiempo completan un lote? Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "12 h",
+              "2,91 h",
+              "2,67 h",
+              "6 h"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Magnitudes proporcionales. Las tasas son 1/4 y 1/8 lote/h. La tasa conjunta es (12)/32; el tiempo es 32/12=2,67 h. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "En trabajos conjuntos se suman tasas, no tiempos. El ejercicio queda archivado únicamente en el bloque «Magnitudes proporcionales». Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-09-R-12",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Magnitudes proporcionales",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Tema Magnitudes proporcionales. Una máquina completa un lote en 5 h y otra en 9 h. Si trabajan juntas con rendimiento constante, ¿en cuánto tiempo completan un lote? Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "3,46 h",
+              "3,21 h",
+              "7 h",
+              "14 h"
+            ],
+            "respuesta": 1,
+            "solucion": "Aplicación específica de Magnitudes proporcionales. Las tasas son 1/5 y 1/9 lote/h. La tasa conjunta es (14)/45; el tiempo es 45/14=3,21 h. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "En trabajos conjuntos se suman tasas, no tiempos. El ejercicio queda archivado únicamente en el bloque «Magnitudes proporcionales». Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-09-R-13",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Magnitudes proporcionales",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Tema Magnitudes proporcionales. Una máquina completa un lote en 6 h y otra en 10 h. Si trabajan juntas con rendimiento constante, ¿en cuánto tiempo completan un lote? Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "3,75 h",
+              "8 h",
+              "16 h",
+              "4 h"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Magnitudes proporcionales. Las tasas son 1/6 y 1/10 lote/h. La tasa conjunta es (16)/60; el tiempo es 60/16=3,75 h. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "En trabajos conjuntos se suman tasas, no tiempos. El ejercicio queda archivado únicamente en el bloque «Magnitudes proporcionales». Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-09-R-14",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Magnitudes proporcionales",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Tema Magnitudes proporcionales. Una utilidad de S/1200 se reparte en razón 5:5:8. Luego, la primera parte aumenta 20% por un bono. ¿Cuál es el monto final de la primera persona? Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "S/333,33",
+              "S/420",
+              "S/65,93",
+              "S/400"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Magnitudes proporcionales. La primera parte es 5/18×1200=S/333,33. Con el bono: 333,33×1,20=S/400. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se combinan reparto proporcional y variación porcentual en etapas. El ejercicio queda archivado únicamente en el bloque «Magnitudes proporcionales». Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-09-R-15",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Magnitudes proporcionales",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: Tema Magnitudes proporcionales. Una utilidad de S/1260 se reparte en razón 6:6:9. Luego, la primera parte aumenta 20% por un bono. ¿Cuál es el monto final de la primera persona? Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "S/452",
+              "S/59,43",
+              "S/432",
+              "S/360"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Magnitudes proporcionales. La primera parte es 6/21×1260=S/360. Con el bono: 360×1,20=S/432. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se combinan reparto proporcional y variación porcentual en etapas. El ejercicio queda archivado únicamente en el bloque «Magnitudes proporcionales». Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -7509,8 +8454,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -8319,6 +9264,111 @@
             "explicacion": "Se trabaja hacia atrás desde la ganancia neta y luego se revierte el descuento. El ejercicio queda archivado únicamente en el bloque «Regla de tres y porcentajes». Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNI; no es una pregunta oficial"
+          },
+          {
+            "id": "ARI-10-R-11",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Regla de tres y porcentajes",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Tema Regla de tres y porcentajes. Un artículo de S/460 recibe descuentos sucesivos de 15% y 10%. ¿Cuál es el precio final? Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "S/108,1",
+              "S/453,1",
+              "S/351,9",
+              "S/345"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Regla de tres y porcentajes. Se aplican factores sucesivos: 460×0.85×0.9=S/351,9. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Los descuentos sucesivos no se suman directamente. El ejercicio queda archivado únicamente en el bloque «Regla de tres y porcentajes». Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-10-R-12",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Regla de tres y porcentajes",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: Tema Regla de tres y porcentajes. Un artículo de S/480 recibe descuentos sucesivos de 20% y 15%. ¿Cuál es el precio final? Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "S/465,6",
+              "S/326,4",
+              "S/312",
+              "S/153,6"
+            ],
+            "respuesta": 1,
+            "solucion": "Aplicación específica de Regla de tres y porcentajes. Se aplican factores sucesivos: 480×0.8×0.85=S/326,4. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Los descuentos sucesivos no se suman directamente. El ejercicio queda archivado únicamente en el bloque «Regla de tres y porcentajes». Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-10-R-13",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Regla de tres y porcentajes",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Tema Regla de tres y porcentajes. Un comerciante desea ganar 40% sobre un costo de S/300, aun ofreciendo 15% de descuento sobre el precio de lista. ¿Qué precio de lista debe fijar? Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "S/494,12",
+              "S/465",
+              "S/420",
+              "S/352,94"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Regla de tres y porcentajes. El ingreso deseado es 300×1.4=S/420. Si L(1−0.15) produce ese ingreso, L=494,12. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se trabaja hacia atrás desde la ganancia neta y luego se revierte el descuento. El ejercicio queda archivado únicamente en el bloque «Regla de tres y porcentajes». Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-10-R-14",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Regla de tres y porcentajes",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Tema Regla de tres y porcentajes. Un comerciante desea ganar 45% sobre un costo de S/320, aun ofreciendo 20% de descuento sobre el precio de lista. ¿Qué precio de lista debe fijar? Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "S/528",
+              "S/464",
+              "S/400",
+              "S/580"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Regla de tres y porcentajes. El ingreso deseado es 320×1.45=S/464. Si L(1−0.2) produce ese ingreso, L=580. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se trabaja hacia atrás desde la ganancia neta y luego se revierte el descuento. El ejercicio queda archivado únicamente en el bloque «Regla de tres y porcentajes». Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-10-R-15",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Regla de tres y porcentajes",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Tema Regla de tres y porcentajes. Un comerciante desea ganar 30% sobre un costo de S/340, aun ofreciendo 10% de descuento sobre el precio de lista. ¿Qué precio de lista debe fijar? Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "S/442",
+              "S/377,78",
+              "S/491,11",
+              "S/476"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Regla de tres y porcentajes. El ingreso deseado es 340×1.3=S/442. Si L(1−0.1) produce ese ingreso, L=491,11. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se trabaja hacia atrás desde la ganancia neta y luego se revierte el descuento. El ejercicio queda archivado únicamente en el bloque «Regla de tres y porcentajes». Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -8338,8 +9388,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -9148,6 +10198,111 @@
             "explicacion": "Se modelan ambos regímenes con la misma tasa y horizonte antes de compararlos. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSAAC; no es una pregunta oficial"
+          },
+          {
+            "id": "ARI-11-R-11",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Interés simple y compuesto",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Tema Interés simple y compuesto. Un capital de S/2600 se coloca al 9% anual compuesto durante 4 años. Halla el monto final. Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "S/936",
+              "S/2834",
+              "S/3670,11",
+              "S/3536"
+            ],
+            "respuesta": 2,
+            "solucion": "M=C(1+r)^t=2600(1+0.09)^4=S/3670,11. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Cada periodo incorpora el interés al nuevo capital. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-11-R-12",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Interés simple y compuesto",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Tema Interés simple y compuesto. Para S/3000 al 6% anual durante 3 años, compara monto compuesto y monto simple. ¿En cuánto supera el compuesto al simple? Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "S/180",
+              "S/33,05",
+              "S/3573,05",
+              "S/3540"
+            ],
+            "respuesta": 1,
+            "solucion": "Mₛ=3000(1+0.06·3)=S/3540. M꜀=3000(1+0.06)^3=S/3573,05. Diferencia=S/33,05. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se modelan ambos regímenes con la misma tasa y horizonte antes de compararlos. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-11-R-13",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Interés simple y compuesto",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Tema Interés simple y compuesto. Para S/3100 al 7% anual durante 4 años, compara monto compuesto y monto simple. ¿En cuánto supera el compuesto al simple? La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "S/95,47",
+              "S/4063,47",
+              "S/3968",
+              "S/217"
+            ],
+            "respuesta": 0,
+            "solucion": "Mₛ=3100(1+0.07·4)=S/3968. M꜀=3100(1+0.07)^4=S/4063,47. Diferencia=S/95,47. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se modelan ambos regímenes con la misma tasa y horizonte antes de compararlos. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-11-R-14",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Interés simple y compuesto",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Tema Interés simple y compuesto. Para S/3200 al 8% anual durante 2 años, compara monto compuesto y monto simple. ¿En cuánto supera el compuesto al simple? Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "S/3732,48",
+              "S/3712",
+              "S/256",
+              "S/20,48"
+            ],
+            "respuesta": 3,
+            "solucion": "Mₛ=3200(1+0.08·2)=S/3712. M꜀=3200(1+0.08)^2=S/3732,48. Diferencia=S/20,48. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se modelan ambos regímenes con la misma tasa y horizonte antes de compararlos. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-11-R-15",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Interés simple y compuesto",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Tema Interés simple y compuesto. Para S/3300 al 9% anual durante 3 años, compara monto compuesto y monto simple. ¿En cuánto supera el compuesto al simple? Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "S/4191",
+              "S/297",
+              "S/82,6",
+              "S/4273,6"
+            ],
+            "respuesta": 2,
+            "solucion": "Mₛ=3300(1+0.09·3)=S/4191. M꜀=3300(1+0.09)^3=S/4273,6. Diferencia=S/82,6. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se modelan ambos regímenes con la misma tasa y horizonte antes de compararlos. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -9167,8 +10322,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -9977,10 +11132,115 @@
             "explicacion": "Se cuenta un par mixto sin importar el orden y se usa muestreo sin reposición. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UCSM; no es una pregunta oficial"
+          },
+          {
+            "id": "ARI-12-R-11",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Estadística y probabilidad",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Tema Estadística y probabilidad. Una urna contiene 4 bolas rojas y 7 azules. Se extraen dos sin reposición. ¿Cuál es la probabilidad de obtener una de cada color? Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "7/11",
+              "28/121",
+              "28/55",
+              "4/11"
+            ],
+            "respuesta": 2,
+            "solucion": "Casos favorables=4·7=28. Pares posibles=C(11,2)=55. La probabilidad es 28/55. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se cuenta un par mixto sin importar el orden y se usa muestreo sin reposición. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-12-R-12",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Estadística y probabilidad",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Tema Estadística y probabilidad. Una urna contiene 5 bolas rojas y 8 azules. Se extraen dos sin reposición. ¿Cuál es la probabilidad de obtener una de cada color? Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "40/169",
+              "20/39",
+              "5/13",
+              "8/13"
+            ],
+            "respuesta": 1,
+            "solucion": "Casos favorables=5·8=40. Pares posibles=C(13,2)=78. La probabilidad es 20/39. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se cuenta un par mixto sin importar el orden y se usa muestreo sin reposición. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-12-R-13",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Estadística y probabilidad",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Tema Estadística y probabilidad. Una urna contiene 6 bolas rojas y 5 azules. Se extraen dos sin reposición. ¿Cuál es la probabilidad de obtener una de cada color? Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "6/11",
+              "5/11",
+              "30/121",
+              "7/11"
+            ],
+            "respuesta": 0,
+            "solucion": "Casos favorables=6·5=30. Pares posibles=C(11,2)=55. La probabilidad es 6/11. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se cuenta un par mixto sin importar el orden y se usa muestreo sin reposición. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-12-R-14",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Estadística y probabilidad",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Tema Estadística y probabilidad. Una urna contiene 7 bolas rojas y 6 azules. Se extraen dos sin reposición. ¿Cuál es la probabilidad de obtener una de cada color? Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "6/13",
+              "42/169",
+              "8/13",
+              "7/13"
+            ],
+            "respuesta": 3,
+            "solucion": "Casos favorables=7·6=42. Pares posibles=C(13,2)=78. La probabilidad es 7/13. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se cuenta un par mixto sin importar el orden y se usa muestreo sin reposición. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "ARI-12-R-15",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Estadística y probabilidad",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Tema Estadística y probabilidad. Una urna contiene 8 bolas rojas y 7 azules. Se extraen dos sin reposición. ¿Cuál es la probabilidad de obtener una de cada color? Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "56/225",
+              "9/15",
+              "8/15",
+              "7/15"
+            ],
+            "respuesta": 2,
+            "solucion": "Casos favorables=8·7=56. Pares posibles=C(15,2)=105. La probabilidad es 8/15. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se cuenta un par mixto sin importar el orden y se usa muestreo sin reposición. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
     }
   ],
-  "total": 480
+  "total": 540
 }

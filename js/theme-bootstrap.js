@@ -3,7 +3,7 @@
   "use strict";
 
   const CLAVE = "uniprep_visual_preferences_v3";
-  const TEMAS = new Set(["cosmos", "amazonia", "oceano", "aurora", "grafito", "contraste", "luz", "papel", "custom"]);
+  const TEMAS = new Set(["cosmos", "amazonia", "oceano", "aurora", "grafito", "contraste", "luz", "papel", "menta", "lavanda", "amanecer", "custom"]);
 
   function seguro(valor) {
     return String(valor || "invitado")

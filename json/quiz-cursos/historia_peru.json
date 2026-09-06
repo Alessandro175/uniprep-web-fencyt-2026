@@ -1,7 +1,7 @@
 {
   "courseId": "historia_peru",
   "nombre": "Historia del Perú",
-  "version": "2026.9-cuatro-niveles-universidad",
+  "version": "2026.31-nacional-7605",
   "descripcion": "Banco original UniPrep organizado uno a uno con cada tema visible. Cada sesión temática conserva su subárea y no mezcla preguntas de otros temas.",
   "universidadesReferencia": [
     "UNAMAD",
@@ -17,15 +17,15 @@
     "basico": 80,
     "intermedio": 80,
     "avanzado": 80,
-    "admision": 80,
-    "total": 320
+    "admision": 120,
+    "total": 360
   },
   "distribucionPorTema": {
     "basico": 10,
     "intermedio": 10,
     "avanzado": 10,
-    "admision": 10,
-    "total": 40
+    "admision": 15,
+    "total": 45
   },
   "criteriosDificultad": {
     "basico": "Fundamento o procedimiento directo",
@@ -48,8 +48,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -858,6 +858,111 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de PUCP; no es una pregunta oficial"
+          },
+          {
+            "id": "HPE-01-R-11",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Poblamiento de América y surgimiento cultural",
+            "subarea": "Historia del Perú",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Durante el análisis de una revisión académica vinculado con Poblamiento de América y surgimiento cultural, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "La sedentarización se relacionó con manejo de recursos, domesticación y nuevas formas de organización.",
+              "Sedentarizarse significó abandonar la agricultura.",
+              "Las aldeas impidieron especialización.",
+              "El surgimiento cultural no tuvo base material."
+            ],
+            "respuesta": 0,
+            "solucion": "La alternativa correcta es: La sedentarización se relacionó con manejo de recursos, domesticación y nuevas formas de organización. La residencia estable transformó producción y vida colectiva. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HPE-01-R-12",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Poblamiento de América y surgimiento cultural",
+            "subarea": "Historia del Perú",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: En una evaluación comparativa de Poblamiento de América y surgimiento cultural. Analiza las proposiciones: I) La domesticación ocurrió de modo instantáneo. II) La sedentarización se relacionó con manejo de recursos, domesticación y nuevas formas de organización. ¿Qué alternativa evalúa correctamente ambas? Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "Solo I es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo II es correcta"
+            ],
+            "respuesta": 3,
+            "solucion": "La proposición I es falsa: Caza, recolección, pesca y cultivo variaron regionalmente. La proposición II es verdadera: La residencia estable transformó producción y vida colectiva. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HPE-01-R-13",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Poblamiento de América y surgimiento cultural",
+            "subarea": "Historia del Perú",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: En una evaluación comparativa de Poblamiento de América y surgimiento cultural. Analiza las proposiciones: I) Sedentarizarse significó abandonar la agricultura. II) Los primeros pobladores usaron escritura alfabética en todo el continente. ¿Qué alternativa evalúa correctamente ambas? La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "Solo II es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo I es correcta"
+            ],
+            "respuesta": 2,
+            "solucion": "La proposición I es falsa: La residencia estable transformó producción y vida colectiva. La proposición II es falsa: La convergencia de evidencias permite formular rutas y fechas. Por ello, ninguna es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HPE-01-R-14",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Poblamiento de América y surgimiento cultural",
+            "subarea": "Historia del Perú",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Al contrastar conceptos esenciales de Poblamiento de América y surgimiento cultural. Analiza las proposiciones: I) El poblamiento americano se estudia con evidencias arqueológicas, genéticas y ambientales. II) La adaptación a ecosistemas diversos favoreció múltiples estrategias de subsistencia. ¿Qué alternativa evalúa correctamente ambas? Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "Ninguna es correcta",
+              "I y II son correctas",
+              "Solo I es correcta",
+              "Solo II es correcta"
+            ],
+            "respuesta": 1,
+            "solucion": "La proposición I es verdadera: La convergencia de evidencias permite formular rutas y fechas. La proposición II es verdadera: Caza, recolección, pesca y cultivo variaron regionalmente. Por ello, i y ii son correctas. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HPE-01-R-15",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Poblamiento de América y surgimiento cultural",
+            "subarea": "Historia del Perú",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Al contrastar conceptos esenciales de Poblamiento de América y surgimiento cultural. Analiza las proposiciones: I) La adaptación a ecosistemas diversos favoreció múltiples estrategias de subsistencia. II) Sedentarizarse significó abandonar la agricultura. ¿Qué alternativa evalúa correctamente ambas? Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es verdadera: Caza, recolección, pesca y cultivo variaron regionalmente. La proposición II es falsa: La residencia estable transformó producción y vida colectiva. Por ello, solo i es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -877,8 +982,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -1687,6 +1792,111 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNMSM; no es una pregunta oficial"
+          },
+          {
+            "id": "HPE-02-R-11",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Del Formativo a los Estados Regionales",
+            "subarea": "Historia del Perú",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: En una evaluación comparativa de Del Formativo a los Estados Regionales. Analiza las proposiciones: I) Moche fue una colonia española. II) Wari expandió formas administrativas y redes que integraron amplios territorios andinos. ¿Qué alternativa evalúa correctamente ambas? Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "Solo II es correcta",
+              "Solo I es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es falsa: Arquitectura, cerámica y canales evidencian especialización. La proposición II es verdadera: Su organización antecedió y difirió del Tahuantinsuyo. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HPE-02-R-12",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Del Formativo a los Estados Regionales",
+            "subarea": "Historia del Perú",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: En una evaluación comparativa de Del Formativo a los Estados Regionales. Analiza las proposiciones: I) Wari fue una ciudad griega. II) Chavín apareció después del Imperio inca. ¿Qué alternativa evalúa correctamente ambas? Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 3,
+            "solucion": "La proposición I es falsa: Su organización antecedió y difirió del Tahuantinsuyo. La proposición II es falsa: Su centro y estilo reflejan integración cultural temprana. Por ello, ninguna es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HPE-02-R-13",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Del Formativo a los Estados Regionales",
+            "subarea": "Historia del Perú",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Al contrastar conceptos esenciales de Del Formativo a los Estados Regionales. Analiza las proposiciones: I) Chavín articuló influencias religiosas y artísticas durante el Formativo andino. II) Moche desarrolló sociedades complejas en la costa norte con irrigación y poder político regional. ¿Qué alternativa evalúa correctamente ambas? Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "Solo II es correcta",
+              "Ninguna es correcta",
+              "I y II son correctas",
+              "Solo I es correcta"
+            ],
+            "respuesta": 2,
+            "solucion": "La proposición I es verdadera: Su centro y estilo reflejan integración cultural temprana. La proposición II es verdadera: Arquitectura, cerámica y canales evidencian especialización. Por ello, i y ii son correctas. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HPE-02-R-14",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Del Formativo a los Estados Regionales",
+            "subarea": "Historia del Perú",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Al contrastar conceptos esenciales de Del Formativo a los Estados Regionales. Analiza las proposiciones: I) Moche desarrolló sociedades complejas en la costa norte con irrigación y poder político regional. II) Wari fue una ciudad griega. ¿Qué alternativa evalúa correctamente ambas? Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "Ninguna es correcta",
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son correctas"
+            ],
+            "respuesta": 1,
+            "solucion": "La proposición I es verdadera: Arquitectura, cerámica y canales evidencian especialización. La proposición II es falsa: Su organización antecedió y difirió del Tahuantinsuyo. Por ello, solo i es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HPE-02-R-15",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Del Formativo a los Estados Regionales",
+            "subarea": "Historia del Perú",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Al contrastar conceptos esenciales de Del Formativo a los Estados Regionales. Analiza las proposiciones: I) Wari fue una ciudad griega. II) Chavín articuló influencias religiosas y artísticas durante el Formativo andino. ¿Qué alternativa evalúa correctamente ambas? Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "Solo II es correcta",
+              "Solo I es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es falsa: Su organización antecedió y difirió del Tahuantinsuyo. La proposición II es verdadera: Su centro y estilo reflejan integración cultural temprana. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -1706,8 +1916,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -2516,6 +2726,111 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Competencias generales de admisión preuniversitaria"
+          },
+          {
+            "id": "HPE-03-R-11",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "El Tahuantinsuyo",
+            "subarea": "Historia del Perú",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: En una evaluación comparativa de El Tahuantinsuyo. Analiza las proposiciones: I) Los quipus fueron armas de hierro. II) El Cusco estuvo fuera del imperio. ¿Qué alternativa evalúa correctamente ambas? Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "Ninguna es correcta",
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son correctas"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es falsa: Especialistas los usaron para administración y memoria. La proposición II es falsa: La división facilitó control político y redistribución. Por ello, ninguna es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HPE-03-R-12",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "El Tahuantinsuyo",
+            "subarea": "Historia del Perú",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Al contrastar conceptos esenciales de El Tahuantinsuyo. Analiza las proposiciones: I) El Tahuantinsuyo organizó su territorio en cuatro suyos articulados desde el Cusco. II) La reciprocidad y redistribución organizaron trabajo y circulación de bienes. ¿Qué alternativa evalúa correctamente ambas? Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "Ninguna es correcta",
+              "I y II son correctas"
+            ],
+            "respuesta": 3,
+            "solucion": "La proposición I es verdadera: La división facilitó control político y redistribución. La proposición II es verdadera: Prestaciones laborales sostenían obras y reservas. Por ello, i y ii son correctas. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HPE-03-R-13",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "El Tahuantinsuyo",
+            "subarea": "Historia del Perú",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: Al contrastar conceptos esenciales de El Tahuantinsuyo. Analiza las proposiciones: I) La reciprocidad y redistribución organizaron trabajo y circulación de bienes. II) Los quipus fueron armas de hierro. ¿Qué alternativa evalúa correctamente ambas? Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo I es correcta",
+              "Solo II es correcta"
+            ],
+            "respuesta": 2,
+            "solucion": "La proposición I es verdadera: Prestaciones laborales sostenían obras y reservas. La proposición II es falsa: Especialistas los usaron para administración y memoria. Por ello, solo i es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HPE-03-R-14",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "El Tahuantinsuyo",
+            "subarea": "Historia del Perú",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Al contrastar conceptos esenciales de El Tahuantinsuyo. Analiza las proposiciones: I) Los quipus fueron armas de hierro. II) El Tahuantinsuyo organizó su territorio en cuatro suyos articulados desde el Cusco. ¿Qué alternativa evalúa correctamente ambas? Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "Ninguna es correcta",
+              "Solo II es correcta",
+              "Solo I es correcta",
+              "I y II son correctas"
+            ],
+            "respuesta": 1,
+            "solucion": "La proposición I es falsa: Especialistas los usaron para administración y memoria. La proposición II es verdadera: La división facilitó control político y redistribución. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HPE-03-R-15",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "El Tahuantinsuyo",
+            "subarea": "Historia del Perú",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Un estudiante utiliza un simulacro de admisión para justificar una relación de El Tahuantinsuyo. ¿Cuál afirmación conserva una relación conceptual válida? Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "La mita fue trabajo asalariado moderno.",
+              "Los depósitos carecieron de función estatal.",
+              "La reciprocidad y redistribución organizaron trabajo y circulación de bienes.",
+              "Toda producción se vendía con moneda acuñada."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: La reciprocidad y redistribución organizaron trabajo y circulación de bienes. Prestaciones laborales sostenían obras y reservas. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -2535,8 +2850,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -3345,6 +3660,111 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNI; no es una pregunta oficial"
+          },
+          {
+            "id": "HPE-04-R-11",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Establecimiento del orden virreinal",
+            "subarea": "Historia del Perú",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Al contrastar conceptos esenciales de Establecimiento del orden virreinal. Analiza las proposiciones: I) El virreinato consolidó instituciones políticas, fiscales y religiosas de dominio colonial. II) La mita minera movilizó trabajo indígena obligatorio hacia centros como Potosí. ¿Qué alternativa evalúa correctamente ambas? Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "I y II son correctas",
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es verdadera: La administración organizó control y extracción. La proposición II es verdadera: El sistema articuló coerción laboral y producción de plata. Por ello, i y ii son correctas. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HPE-04-R-12",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Establecimiento del orden virreinal",
+            "subarea": "Historia del Perú",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Al contrastar conceptos esenciales de Establecimiento del orden virreinal. Analiza las proposiciones: I) La mita minera movilizó trabajo indígena obligatorio hacia centros como Potosí. II) Las reducciones dispersaron deliberadamente a la población. ¿Qué alternativa evalúa correctamente ambas? Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "Solo II es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo I es correcta"
+            ],
+            "respuesta": 3,
+            "solucion": "La proposición I es verdadera: El sistema articuló coerción laboral y producción de plata. La proposición II es falsa: Reordenaron el espacio y facilitaron control. Por ello, solo i es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HPE-04-R-13",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Establecimiento del orden virreinal",
+            "subarea": "Historia del Perú",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Al contrastar conceptos esenciales de Establecimiento del orden virreinal. Analiza las proposiciones: I) Las reducciones dispersaron deliberadamente a la población. II) El virreinato consolidó instituciones políticas, fiscales y religiosas de dominio colonial. ¿Qué alternativa evalúa correctamente ambas? Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo II es correcta",
+              "Solo I es correcta"
+            ],
+            "respuesta": 2,
+            "solucion": "La proposición I es falsa: Reordenaron el espacio y facilitaron control. La proposición II es verdadera: La administración organizó control y extracción. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HPE-04-R-14",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Establecimiento del orden virreinal",
+            "subarea": "Historia del Perú",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Un estudiante utiliza un simulacro de admisión para justificar una relación de Establecimiento del orden virreinal. ¿Cuál afirmación conserva una relación conceptual válida? La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "La mita fue voluntariado recreativo.",
+              "La minería no influyó en circuitos comerciales.",
+              "Potosí se dedicó solo a agricultura.",
+              "La mita minera movilizó trabajo indígena obligatorio hacia centros como Potosí."
+            ],
+            "respuesta": 3,
+            "solucion": "La alternativa correcta es: La mita minera movilizó trabajo indígena obligatorio hacia centros como Potosí. El sistema articuló coerción laboral y producción de plata. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HPE-04-R-15",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Establecimiento del orden virreinal",
+            "subarea": "Historia del Perú",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Durante el análisis de un simulacro de admisión vinculado con Establecimiento del orden virreinal, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "No tuvieron relación con doctrina religiosa.",
+              "Eliminaron toda autoridad colonial.",
+              "Las reducciones concentraron población indígena para administración, tributo y evangelización.",
+              "Las reducciones dispersaron deliberadamente a la población."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: Las reducciones concentraron población indígena para administración, tributo y evangelización. Reordenaron el espacio y facilitaron control. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -3364,8 +3784,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -4174,6 +4594,111 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSAAC; no es una pregunta oficial"
+          },
+          {
+            "id": "HPE-05-R-11",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Proceso de independencia americana",
+            "subarea": "Historia del Perú",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Al contrastar conceptos esenciales de Proceso de independencia americana. Analiza las proposiciones: I) La proclamación de 1821 no cerró la guerra, que continuó hasta campañas decisivas posteriores. II) Ayacucho inició la conquista española. ¿Qué alternativa evalúa correctamente ambas? La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "Solo I es correcta",
+              "Solo II es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es verdadera: La independencia política requirió consolidación militar. La proposición II es falsa: La capitulación debilitó definitivamente el ejército realista. Por ello, solo i es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HPE-05-R-12",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Proceso de independencia americana",
+            "subarea": "Historia del Perú",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Al contrastar conceptos esenciales de Proceso de independencia americana. Analiza las proposiciones: I) Ayacucho inició la conquista española. II) La independencia americana combinó crisis monárquica, ideas políticas, conflictos sociales e intereses regionales. ¿Qué alternativa evalúa correctamente ambas? Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "Solo I es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo II es correcta"
+            ],
+            "respuesta": 3,
+            "solucion": "La proposición I es falsa: La capitulación debilitó definitivamente el ejército realista. La proposición II es verdadera: Los procesos fueron diversos y disputados. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HPE-05-R-13",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Proceso de independencia americana",
+            "subarea": "Historia del Perú",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Un estudiante utiliza un simulacro de admisión para justificar una relación de Proceso de independencia americana. ¿Cuál afirmación conserva una relación conceptual válida? Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "La proclamación de 1821 no cerró la guerra, que continuó hasta campañas decisivas posteriores.",
+              "La guerra terminó automáticamente con el discurso de Lima.",
+              "Ayacucho ocurrió antes de 1821.",
+              "No participaron ejércitos regionales."
+            ],
+            "respuesta": 0,
+            "solucion": "La alternativa correcta es: La proclamación de 1821 no cerró la guerra, que continuó hasta campañas decisivas posteriores. La independencia política requirió consolidación militar. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HPE-05-R-14",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Proceso de independencia americana",
+            "subarea": "Historia del Perú",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Durante el análisis de un simulacro de admisión vinculado con Proceso de independencia americana, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "Ayacucho inició la conquista española.",
+              "Ayacucho ocurrió durante la Guerra del Pacífico.",
+              "La batalla restauró el virreinato.",
+              "La batalla de Ayacucho en 1824 fue decisiva para el fin del poder militar español en Sudamérica."
+            ],
+            "respuesta": 3,
+            "solucion": "La alternativa correcta es: La batalla de Ayacucho en 1824 fue decisiva para el fin del poder militar español en Sudamérica. La capitulación debilitó definitivamente el ejército realista. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HPE-05-R-15",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Proceso de independencia americana",
+            "subarea": "Historia del Perú",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Al corregir una revisión académica sobre Proceso de independencia americana, se debe elegir una explicación compatible con los principios de la materia. ¿Cuál cumple la condición? Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "La crisis española no tuvo efecto.",
+              "Todos los grupos buscaban el mismo proyecto.",
+              "La independencia americana combinó crisis monárquica, ideas políticas, conflictos sociales e intereses regionales.",
+              "Una sola batalla explicó toda la independencia."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: La independencia americana combinó crisis monárquica, ideas políticas, conflictos sociales e intereses regionales. Los procesos fueron diversos y disputados. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -4193,8 +4718,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -5003,6 +5528,111 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UCSM; no es una pregunta oficial"
+          },
+          {
+            "id": "HPE-06-R-11",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Política, economía y sociedad en Latinoamérica y el Perú",
+            "subarea": "Historia del Perú",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Al contrastar conceptos esenciales de Política, economía y sociedad en Latinoamérica y el Perú. Analiza las proposiciones: I) La guerra enfrentó al Perú con España en el siglo XVI. II) Las repúblicas latinoamericanas enfrentaron caudillismo, débil institucionalidad y economías exportadoras. ¿Qué alternativa evalúa correctamente ambas? Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "Solo II es correcta",
+              "Solo I es correcta",
+              "I y II son correctas",
+              "Ninguna es correcta"
+            ],
+            "respuesta": 0,
+            "solucion": "La proposición I es falsa: El conflicto reconfiguró la región y el Estado peruano. La proposición II es verdadera: La construcción estatal fue prolongada y desigual. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HPE-06-R-12",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Política, economía y sociedad en Latinoamérica y el Perú",
+            "subarea": "Historia del Perú",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Un estudiante utiliza un simulacro de admisión para justificar una relación de Política, economía y sociedad en Latinoamérica y el Perú. ¿Cuál afirmación conserva una relación conceptual válida? Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "Los ingresos se distribuyeron de forma igualitaria.",
+              "El auge del guano dio ingresos fiscales al Perú, pero generó dependencia y uso poco sostenible de la renta.",
+              "El guano careció de valor internacional.",
+              "La renta guanera eliminó la deuda permanentemente."
+            ],
+            "respuesta": 1,
+            "solucion": "La alternativa correcta es: El auge del guano dio ingresos fiscales al Perú, pero generó dependencia y uso poco sostenible de la renta. La bonanza no resolvió debilidades estructurales. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HPE-06-R-13",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Política, economía y sociedad en Latinoamérica y el Perú",
+            "subarea": "Historia del Perú",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Durante el análisis de un simulacro de admisión vinculado con Política, economía y sociedad en Latinoamérica y el Perú, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "La Guerra del Pacífico enfrentó a Chile contra Perú y Bolivia y produjo graves consecuencias territoriales y económicas.",
+              "La guerra enfrentó al Perú con España en el siglo XVI.",
+              "No hubo ocupación de Lima.",
+              "Bolivia fue aliada de Chile."
+            ],
+            "respuesta": 0,
+            "solucion": "La alternativa correcta es: La Guerra del Pacífico enfrentó a Chile contra Perú y Bolivia y produjo graves consecuencias territoriales y económicas. El conflicto reconfiguró la región y el Estado peruano. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HPE-06-R-14",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Política, economía y sociedad en Latinoamérica y el Perú",
+            "subarea": "Historia del Perú",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: Al corregir una revisión académica sobre Política, economía y sociedad en Latinoamérica y el Perú, se debe elegir una explicación compatible con los principios de la materia. ¿Cuál cumple la condición? Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "La independencia creó Estados estables de inmediato.",
+              "El caudillismo eliminó conflictos regionales.",
+              "La economía dejó de depender de mercados externos.",
+              "Las repúblicas latinoamericanas enfrentaron caudillismo, débil institucionalidad y economías exportadoras."
+            ],
+            "respuesta": 3,
+            "solucion": "La alternativa correcta es: Las repúblicas latinoamericanas enfrentaron caudillismo, débil institucionalidad y economías exportadoras. La construcción estatal fue prolongada y desigual. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HPE-06-R-15",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Política, economía y sociedad en Latinoamérica y el Perú",
+            "subarea": "Historia del Perú",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Un estudiante utiliza una revisión académica para justificar una relación de Política, economía y sociedad en Latinoamérica y el Perú. ¿Cuál afirmación conserva una relación conceptual válida? Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "La renta guanera eliminó la deuda permanentemente.",
+              "Los ingresos se distribuyeron de forma igualitaria.",
+              "El auge del guano dio ingresos fiscales al Perú, pero generó dependencia y uso poco sostenible de la renta.",
+              "El guano careció de valor internacional."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: El auge del guano dio ingresos fiscales al Perú, pero generó dependencia y uso poco sostenible de la renta. La bonanza no resolvió debilidades estructurales. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -5022,8 +5652,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -5832,6 +6462,111 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSA; no es una pregunta oficial"
+          },
+          {
+            "id": "HPE-07-R-11",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "El Perú en el siglo XX (1920-1980)",
+            "subarea": "Historia del Perú",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: Un estudiante utiliza un simulacro de admisión para justificar una relación de El Perú en el siglo XX (1920-1980). ¿Cuál afirmación conserva una relación conceptual válida? Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "Lima no recibió migrantes.",
+              "La migración no cambió economía ni cultura.",
+              "La migración interna transformó ciudades peruanas durante el siglo XX.",
+              "La población urbana disminuyó continuamente."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: La migración interna transformó ciudades peruanas durante el siglo XX. Nuevos barrios y mercados expresaron urbanización acelerada. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HPE-07-R-12",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "El Perú en el siglo XX (1920-1980)",
+            "subarea": "Historia del Perú",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Durante el análisis de un simulacro de admisión vinculado con El Perú en el siglo XX (1920-1980), tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "La medida no alteró propiedad rural.",
+              "El gobierno de Velasco impulsó la reforma agraria desde 1969.",
+              "La reforma agraria fue obra del virreinato.",
+              "Velasco privatizó haciendas a favor de gamonales."
+            ],
+            "respuesta": 1,
+            "solucion": "La alternativa correcta es: El gobierno de Velasco impulsó la reforma agraria desde 1969. La expropiación buscó transformar relaciones agrarias. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HPE-07-R-13",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "El Perú en el siglo XX (1920-1980)",
+            "subarea": "Historia del Perú",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Al corregir una revisión académica sobre El Perú en el siglo XX (1920-1980), se debe elegir una explicación compatible con los principios de la materia. ¿Cuál cumple la condición? Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "El Oncenio de Leguía combinó modernización, endeudamiento y autoritarismo.",
+              "El Oncenio duró once meses.",
+              "Leguía gobernó después de 1980.",
+              "No hubo inversión extranjera."
+            ],
+            "respuesta": 0,
+            "solucion": "La alternativa correcta es: El Oncenio de Leguía combinó modernización, endeudamiento y autoritarismo. La Patria Nueva reconfiguró Estado y obras públicas. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HPE-07-R-14",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "El Perú en el siglo XX (1920-1980)",
+            "subarea": "Historia del Perú",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Un estudiante utiliza una revisión académica para justificar una relación de El Perú en el siglo XX (1920-1980). ¿Cuál afirmación conserva una relación conceptual válida? Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "La población urbana disminuyó continuamente.",
+              "Lima no recibió migrantes.",
+              "La migración no cambió economía ni cultura.",
+              "La migración interna transformó ciudades peruanas durante el siglo XX."
+            ],
+            "respuesta": 3,
+            "solucion": "La alternativa correcta es: La migración interna transformó ciudades peruanas durante el siglo XX. Nuevos barrios y mercados expresaron urbanización acelerada. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HPE-07-R-15",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "El Perú en el siglo XX (1920-1980)",
+            "subarea": "Historia del Perú",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Durante el análisis de una revisión académica vinculado con El Perú en el siglo XX (1920-1980), tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "Velasco privatizó haciendas a favor de gamonales.",
+              "La medida no alteró propiedad rural.",
+              "El gobierno de Velasco impulsó la reforma agraria desde 1969.",
+              "La reforma agraria fue obra del virreinato."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: El gobierno de Velasco impulsó la reforma agraria desde 1969. La expropiación buscó transformar relaciones agrarias. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -5851,8 +6586,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -6661,10 +7396,115 @@
             "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNAMAD; no es una pregunta oficial"
+          },
+          {
+            "id": "HPE-08-R-11",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "El Perú de fines del siglo XX al siglo XXI",
+            "subarea": "Historia del Perú",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Durante el análisis de un simulacro de admisión vinculado con El Perú de fines del siglo XX al siglo XXI, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "Toda competencia debe concentrarse en Lima.",
+              "La descentralización no requiere coordinación.",
+              "La descentralización busca distribuir competencias y recursos entre niveles de gobierno.",
+              "Descentralizar significa eliminar gobiernos regionales."
+            ],
+            "respuesta": 2,
+            "solucion": "La alternativa correcta es: La descentralización busca distribuir competencias y recursos entre niveles de gobierno. Su eficacia depende de capacidades, control y articulación. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HPE-08-R-12",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "El Perú de fines del siglo XX al siglo XXI",
+            "subarea": "Historia del Perú",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Al corregir una revisión académica sobre El Perú de fines del siglo XX al siglo XXI, se debe elegir una explicación compatible con los principios de la materia. ¿Cuál cumple la condición? La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "La violencia comenzó en 1821.",
+              "La violencia política de 1980-2000 afectó especialmente a poblaciones rurales andinas.",
+              "El conflicto ocurrió solo fuera del Perú.",
+              "No existieron víctimas civiles."
+            ],
+            "respuesta": 1,
+            "solucion": "La alternativa correcta es: La violencia política de 1980-2000 afectó especialmente a poblaciones rurales andinas. El análisis exige memoria, derechos humanos y contexto regional. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HPE-08-R-13",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "El Perú de fines del siglo XX al siglo XXI",
+            "subarea": "Historia del Perú",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Un estudiante utiliza una revisión académica para justificar una relación de El Perú de fines del siglo XX al siglo XXI. ¿Cuál afirmación conserva una relación conceptual válida? Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "La Constitución de 1993 reconfiguró instituciones y el marco económico peruano.",
+              "La Constitución de 1993 instauró el virreinato.",
+              "Fue promulgada antes de la independencia.",
+              "El texto eliminó elecciones para siempre."
+            ],
+            "respuesta": 0,
+            "solucion": "La alternativa correcta es: La Constitución de 1993 reconfiguró instituciones y el marco económico peruano. Su origen y reformas siguen siendo objeto de debate. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HPE-08-R-14",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "El Perú de fines del siglo XX al siglo XXI",
+            "subarea": "Historia del Perú",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Durante el análisis de una revisión académica vinculado con El Perú de fines del siglo XX al siglo XXI, tres interpretaciones distorsionan el contenido. ¿Cuál está mejor sustentada? Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "Descentralizar significa eliminar gobiernos regionales.",
+              "Toda competencia debe concentrarse en Lima.",
+              "La descentralización no requiere coordinación.",
+              "La descentralización busca distribuir competencias y recursos entre niveles de gobierno."
+            ],
+            "respuesta": 3,
+            "solucion": "La alternativa correcta es: La descentralización busca distribuir competencias y recursos entre niveles de gobierno. Su eficacia depende de capacidades, control y articulación. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se relaciona el concepto con un caso y se comparan los distractores por su alcance. Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "HPE-08-R-15",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "El Perú de fines del siglo XX al siglo XXI",
+            "subarea": "Historia del Perú",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: En una evaluación comparativa de El Perú de fines del siglo XX al siglo XXI. Analiza las proposiciones: I) El texto eliminó elecciones para siempre. II) La descentralización busca distribuir competencias y recursos entre niveles de gobierno. ¿Qué alternativa evalúa correctamente ambas? Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "I y II son correctas",
+              "Ninguna es correcta",
+              "Solo II es correcta",
+              "Solo I es correcta"
+            ],
+            "respuesta": 2,
+            "solucion": "La proposición I es falsa: Su origen y reformas siguen siendo objeto de debate. La proposición II es verdadera: Su eficacia depende de capacidades, control y articulación. Por ello, solo ii es correcta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan dos afirmaciones independientes, se verifica cada una con el marco del tema y recién después se determina la combinación válida. Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
     }
   ],
-  "total": 320
+  "total": 360
 }

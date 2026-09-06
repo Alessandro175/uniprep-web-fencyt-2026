@@ -17,9 +17,9 @@
     medio_ambiente:{nombre:"Medio Ambiente",icono:"🌱",color:"#45D6A7",descripcion:"Ecología, sostenibilidad, recursos y problemática ambiental."},
     anatomia:{nombre:"Anatomía",icono:"🫀",color:"#FF6B86",descripcion:"Sistemas del cuerpo humano y promoción de la salud."},
     psicologia:{nombre:"Psicología",icono:"🧠",color:"#C084FC",descripcion:"Conducta, procesos psicológicos, desarrollo y personalidad."},
-    rv:{nombre:"Razonamiento Verbal",icono:"💬",color:"#D78CFF",descripcion:"Semántica, relaciones verbales, cohesión y coherencia."},
+    rv:{nombre:"Razonamiento Verbal",icono:"💬",color:"#D78CFF",descripcion:"Sinonimia, analogías, series verbales, cohesión y organización textual."},
     comprension_lectora:{nombre:"Comprensión Lectora",icono:"🔎",color:"#53D7FF",descripcion:"Estructura textual, ideas, inferencias, intención y lectura crítica."},
-    lenguaje:{nombre:"Lenguaje",icono:"✍️",color:"#FFBF5B",descripcion:"Comunicación, fonología, gramática, oración y ortografía."},
+    lenguaje:{nombre:"Lenguaje",icono:"✍️",color:"#FFBF5B",descripcion:"Comunicación, fonología, gramática, semántica, oración y ortografía."},
     literatura:{nombre:"Literatura",icono:"📚",color:"#F59EBD",descripcion:"Conceptos literarios, literatura peruana y literatura universal."},
     historia:{nombre:"Historia Universal",icono:"🏛️",color:"#5CC9B4",descripcion:"Civilizaciones, revoluciones y procesos mundiales hasta la actualidad."},
     historia_peru:{nombre:"Historia del Perú",icono:"🇵🇪",color:"#F9737A",descripcion:"Del poblamiento americano al Perú del siglo XXI."},
@@ -89,7 +89,7 @@
   }
 
   function catalogoParaRuta() {
-    return Object.values(CURSOS_PREUNI).map(cursoParaRuta).filter(Boolean);
+    return window.obtenerCatalogoTemarioAdmision?.(CURSOS_PREUNI) || Object.values(CURSOS_PREUNI).map(cursoParaRuta).filter(Boolean);
   }
 
   function cursoPermitido(idCurso) {
@@ -100,6 +100,64 @@
     const seleccion = seleccionAdmision();
     if (seleccion) return Number(window.pesoCursoAdmision?.(idCurso)) || pesoMatriz(seleccion.pesos, idCurso);
     return pesoMatriz(pesosRespaldo, idCurso);
+  }
+
+  function etiquetaPesoRuta(idCurso) {
+    const seleccion = seleccionAdmision();
+    const detalle = window.detallePesoCursoAdmision?.(idCurso);
+    if (!seleccion || !detalle) return "Ruta general";
+    if (seleccion.tipoPeso === "preguntas") return `${detalle.peso} pregunta${detalle.peso === 1 ? "" : "s"}`;
+    return detalle.nombre || detalle.etiqueta || "Curso de la ruta";
+  }
+
+  function renderizarResumenRutaUniversitaria() {
+    const contenedor = document.getElementById("university-route-summary");
+    if (!contenedor) return;
+    const seleccion = seleccionAdmision();
+    if (!seleccion) {
+      contenedor.className = "university-route-summary empty";
+      contenedor.innerHTML = `<div class="route-summary-copy"><span class="route-summary-mark">RUTA</span><div><small>CONFIGURACIÓN PENDIENTE</small><h3>Elige universidad y carrera</h3><p>UniPrep necesita ese objetivo para mostrar los cursos, temas, videos y preguntas que realmente corresponden.</p></div></div><div class="route-summary-action"><b>Evita estudiar contenido innecesario</b><span>La carrera determina automáticamente el área o grupo de admisión.</span><button type="button" onclick="abrirConfiguracionAdmision()">Configurar mi ruta</button></div>`;
+      return;
+    }
+    const cursos = catalogoParaRuta().filter(curso=>cursoPermitido(curso.id));
+    const temas = cursos.reduce((total,curso)=>total+(curso.temarioOficial || curso.temas).length,0);
+    const pruebas = seleccion.bloques?.length || 1;
+    const principales = [...cursos].sort((a,b)=>pesoActivo(b.id)-pesoActivo(a.id)).slice(0,5);
+    contenedor.className = "university-route-summary";
+    contenedor.innerHTML = `<div class="route-summary-copy"><span class="route-summary-mark">${esc(seleccion.universidadCorta)}</span><div><small>RUTA DETECTADA POR CARRERA</small><h3>${esc(seleccion.carrera)} · ${esc(seleccion.grupo)}</h3><p>${esc(seleccion.descripcionGrupo || "Temario organizado según el área de admisión seleccionada.")}</p><div class="route-summary-tags"><span>${cursos.length} cursos</span><span>${temas} temas</span><span>${pruebas} ${pruebas===1?"bloque":"bloques"}</span>${principales.map(curso=>`<span>${esc(curso.nombre)}</span>`).join("")}</div></div></div><div class="route-summary-action"><b>Temario completo y trazable</b><span>Comprueba qué estudiar, el peso de cada curso y todos los temas habilitados antes de grabar tu video.</span><button type="button" onclick="abrirTemarioUniversitario()">Ver cursos y temas</button><button class="secondary" type="button" onclick="abrirConfiguracionAdmision()">Cambiar universidad o carrera</button></div>`;
+  }
+
+  function abrirTemarioUniversitario() {
+    const seleccion = seleccionAdmision();
+    if (!seleccion) return window.abrirConfiguracionAdmision?.();
+    const cursos = catalogoParaRuta().filter(curso=>cursoPermitido(curso.id)).sort((a,b)=>pesoActivo(b.id)-pesoActivo(a.id));
+    const porId = new Map(cursos.map(curso=>[curso.id,curso]));
+    const bloquesBase = seleccion.bloques?.length ? seleccion.bloques : [{id:"ruta",nombre:"Cursos de la ruta",descripcion:seleccion.descripcionGrupo,cursos:cursos.map(curso=>curso.id)}];
+    const totalTemas = cursos.reduce((total,curso)=>total+(curso.temarioOficial || curso.temas).length,0);
+    const totalPreguntas = cursos.reduce((total,curso)=>total+curso.preguntas,0);
+    let modal = document.getElementById("university-syllabus-layer");
+    if (!modal) {
+      modal = document.createElement("div");
+      modal.id = "university-syllabus-layer";
+      modal.className = "university-syllabus-layer";
+      document.body.appendChild(modal);
+      modal.addEventListener("click",evento=>{if(evento.target===modal)cerrarTemarioUniversitario()});
+    }
+    const fuente = seleccion.fuente || seleccion.fuenteMatriz || "";
+    const notaPeso = seleccion.tipoPeso === "preguntas" ? "Las cantidades corresponden a la matriz declarada en el perfil." : "Las prioridades ordenan el estudio; no se presentan como cantidades oficiales de preguntas.";
+    const bloques = bloquesBase.map((bloque,indice)=>{
+      const lista = bloque.cursos.map(id=>porId.get(id)).filter(Boolean);
+      if (!lista.length) return "";
+      return `<section class="university-syllabus-block"><header><span>${esc(bloque.etiqueta || `BLOQUE ${indice+1}`)}</span><div><h3>${esc(bloque.nombre)}</h3><p>${esc(bloque.descripcion || "Cursos correspondientes a esta parte de la evaluación.")}</p></div></header><div class="university-syllabus-courses">${lista.map(curso=>{const temas=curso.temarioOficial || curso.temas.map(tema=>tema.titulo);return `<article class="university-syllabus-course" style="--course-color:${curso.color}"><header><span class="icon">${curso.icono}</span><div><h4>${esc(curso.nombre)}</h4><small>${temas.length} temas UNI · ${curso.preguntas || 0} preguntas vinculadas</small></div><span class="weight">${esc(etiquetaPesoRuta(curso.id))}</span></header><div class="university-topic-list">${temas.map((tema,temaIndice)=>`<div class="university-topic-reference"><b>${String(temaIndice+1).padStart(2,"0")} · ${esc(typeof tema==="string"?tema:tema.titulo)}</b><small>Temario UNI 2026-2</small></div>`).join("")}</div></article>`}).join("")}</div></section>`;
+    }).join("");
+    modal.innerHTML = `<section class="university-syllabus-dialog" role="dialog" aria-modal="true" aria-labelledby="university-syllabus-title"><header class="university-syllabus-head"><div><small>${esc(seleccion.universidadCorta)} · ${esc(seleccion.vigencia || "RUTA VIGENTE")}</small><h2 id="university-syllabus-title">${esc(seleccion.carrera)}</h2><p>${esc(seleccion.grupo)} · cursos y temas habilitados automáticamente</p></div><button type="button" onclick="cerrarTemarioUniversitario()" aria-label="Cerrar">×</button></header><div class="university-syllabus-proof"><div><b>${cursos.length}</b><span>cursos de la ruta</span></div><div><b>${totalTemas}</b><span>temas habilitados</span></div><div><b>${totalPreguntas.toLocaleString("es-PE")}</b><span>preguntas disponibles</span></div><div><b>${bloquesBase.length}</b><span>bloques de evaluación</span></div></div><div class="university-syllabus-note"><b>Cómo leer esta ruta:</b> ${esc(notaPeso)} Los videos son apoyo por tema y las preguntas son ejercicios de entrenamiento elaborados por UniPrep, no preguntas oficiales.${fuente?` <a href="${esc(fuente)}" target="_blank" rel="noopener">Consultar fuente institucional ↗</a>`:""}</div><div class="university-syllabus-blocks">${bloques}</div><footer class="university-syllabus-footer"><span>${esc(seleccion.notaMatriz || seleccion.avisoCarrera || "La ruta se actualiza al cambiar universidad o carrera.")}</span><button type="button" onclick="cerrarTemarioUniversitario();abrirPlanEstudios()">Crear plan con esta ruta</button></footer></section>`;
+    modal.classList.add("open");
+    document.body.style.overflow = "hidden";
+  }
+
+  function cerrarTemarioUniversitario() {
+    document.getElementById("university-syllabus-layer")?.classList.remove("open");
+    document.body.style.overflow = "";
   }
 
   function claveBloques() {
@@ -116,13 +174,15 @@
     const detalle = window.detallePesoCursoAdmision?.(curso.id);
     const prioridad = seleccionAdmision() && detalle ? `<span class="course-route-priority ${detalle.clase}"><b>${esc(detalle.etiqueta)}</b><small>${esc(detalle.nombre)} en tu examen</small></span>` : "";
     const etiquetaTemario = curso.temarioPersonalizado ? "temario específico" : "temario de la ruta";
-    return `<button class="course-card course-card-ultra" style="--course-color:${curso.color}" type="button" onclick="abrirCurso('${curso.id}',0)">
+    const temasRuta = curso.temarioOficial || curso.temas;
+    const accion = curso.temarioSoloReferencia ? "abrirTemarioUniversitario()" : `abrirCurso('${curso.id}',0)`;
+    return `<button class="course-card course-card-ultra" style="--course-color:${curso.color}" type="button" onclick="${accion}">
       <span class="course-card-head"><span class="course-icon">${curso.icono}</span><span class="course-cloud" title="Progreso sincronizado">☁ ${progreso}%</span></span>
       <span class="course-area">${esc(curso.area)}</span>
       <span class="course-name">${esc(curso.nombre)}</span>
       ${prioridad}
       <span class="course-desc">${esc(curso.descripcion)}</span>
-      <span class="course-meta-ultra"><b>${curso.temas.length} temas</b><span>${curso.preguntas} ejercicios · ${etiquetaTemario}</span></span>
+      <span class="course-meta-ultra"><b>${temasRuta.length} temas</b><span>${curso.preguntas} ejercicios · ${curso.temarioSoloReferencia?"banco en preparación":etiquetaTemario}</span></span>
       <span class="pbar"><span class="pbar-fill" style="width:${progreso}%;background:${curso.color}"></span></span>
       <span class="course-card-action">Explorar temario <b>→</b></span>
     </button>`;
@@ -147,6 +207,7 @@
     if (!contenedor) return;
 
     usuarioActual = await obtenerUsuario();
+    renderizarResumenRutaUniversitaria();
     const {texto, area} = filtrosActuales();
     const cursosActivos = catalogoParaRuta()
       .filter(curso => cursoPermitido(curso.id))
@@ -407,9 +468,11 @@
   window.abrirPlanEstudios = abrirPlanEstudios;
   window.cerrarPlanEstudios = cerrarPlanEstudios;
   window.guardarPlanEstudios = guardarPlanEstudios;
+  window.abrirTemarioUniversitario = abrirTemarioUniversitario;
+  window.cerrarTemarioUniversitario = cerrarTemarioUniversitario;
 
   const moduloAprendizaje = document.createElement("script");
-  moduloAprendizaje.src = "js/learning-content.js?v=2026.13.0";
+  moduloAprendizaje.src = "js/learning-content.js?v=2026.28.0";
   moduloAprendizaje.onload = () => {
     if (typeof window.inicializarModulosAprendizaje === "function") window.inicializarModulosAprendizaje();
     cargarUltimoCurso();

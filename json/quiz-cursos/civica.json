@@ -1,7 +1,7 @@
 {
   "courseId": "civica",
   "nombre": "Educación Cívica",
-  "version": "2026.9-cuatro-niveles-universidad",
+  "version": "2026.31-nacional-7605",
   "descripcion": "Banco original UniPrep organizado uno a uno con cada tema visible. Cada sesión temática conserva su subárea y no mezcla preguntas de otros temas.",
   "universidadesReferencia": [
     "UNAMAD",
@@ -17,15 +17,15 @@
     "basico": 60,
     "intermedio": 60,
     "avanzado": 60,
-    "admision": 60,
-    "total": 240
+    "admision": 90,
+    "total": 270
   },
   "distribucionPorTema": {
     "basico": 10,
     "intermedio": 10,
     "avanzado": 10,
-    "admision": 10,
-    "total": 40
+    "admision": 15,
+    "total": 45
   },
   "criteriosDificultad": {
     "basico": "Fundamento o procedimiento directo",
@@ -48,8 +48,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -858,6 +858,111 @@
             "explicacion": "Se contrastan varias relaciones conceptuales antes de seleccionar el patrón. El ejercicio queda archivado únicamente en el bloque «Estado y sistema democrático». Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de PUCP; no es una pregunta oficial"
+          },
+          {
+            "id": "CIV-01-R-11",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Estado y sistema democrático",
+            "subarea": "Ciudadanía y Cívica",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Tema Estado y sistema democrático. Una autoridad debe resolver el caso «Una norma reglamentaria general contradice la ley. Procede». Considerando que «Controla reglamentos y normas administrativas generales.», selecciona la respuesta constitucional más específica. Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "acción popular",
+              "indulto",
+              "hábeas data",
+              "vacancia"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Estado y sistema democrático. Controla reglamentos y normas administrativas generales. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se aplica la norma a un supuesto concreto y se compara competencia. El ejercicio queda archivado únicamente en el bloque «Estado y sistema democrático». Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "CIV-01-R-12",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Estado y sistema democrático",
+            "subarea": "Ciudadanía y Cívica",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Tema Estado y sistema democrático. Evalúa las proposiciones sobre Constitución y derechos:\nI. Una persona es detenida sin orden ni flagrancia. La garantía idónea es: acción popular.\nII. Una autoridad incumple una norma o acto firme. Puede plantearse: acción de cumplimiento.\nIII. Una norma reglamentaria general contradice la ley. Procede: acción popular.\nIV. El amparo protege: derechos constitucionales distintos de los cubiertos por garantías específicas.\n¿Cuáles son correctas? Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "I, II, III y IV",
+              "I, II, III",
+              "I, II, IV",
+              "II, III, IV"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Estado y sistema democrático. I es incorrecta: Protege libertad y derechos conexos. La relación correcta es «hábeas corpus». II es correcta: Busca que la autoridad cumpla un mandato vigente. III es correcta: Controla reglamentos y normas administrativas generales. IV es correcta: Es una garantía residual de protección de derechos. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan varias relaciones conceptuales antes de seleccionar el patrón. El ejercicio queda archivado únicamente en el bloque «Estado y sistema democrático». Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "CIV-01-R-13",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Estado y sistema democrático",
+            "subarea": "Ciudadanía y Cívica",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Tema Estado y sistema democrático. Evalúa las proposiciones sobre Constitución y derechos:\nI. Una norma con rango de ley contradice la Constitución. Corresponde: acción de inconstitucionalidad.\nII. La Constitución Política es: una ordenanza local.\nIII. El debido proceso exige: condena previa.\nIV. La libertad de expresión no protege: amenazas o delitos por el solo hecho de expresarse.\n¿Cuáles son correctas? La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "I, II, III",
+              "I, II, IV",
+              "I, IV",
+              "I, II, III y IV"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Estado y sistema democrático. I es correcta: Controla normas de rango legal. II es incorrecta: Organiza el poder y reconoce derechos fundamentales. La relación correcta es «la norma suprema». III es incorrecta: Limita la arbitrariedad en decisiones que afectan derechos. La relación correcta es «defensa, juez competente y procedimiento regular». IV es correcta: Los derechos admiten responsabilidades y límites constitucionales. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan varias relaciones conceptuales antes de seleccionar el patrón. El ejercicio queda archivado únicamente en el bloque «Estado y sistema democrático». Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "CIV-01-R-14",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Estado y sistema democrático",
+            "subarea": "Ciudadanía y Cívica",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Tema Estado y sistema democrático. Evalúa las proposiciones sobre Constitución y derechos:\nI. El amparo protege: derechos constitucionales distintos de los cubiertos por garantías específicas.\nII. La igualdad ante la ley impide: discriminación injustificada.\nIII. Una persona es detenida sin orden ni flagrancia. La garantía idónea es: acción popular.\nIV. Una autoridad incumple una norma o acto firme. Puede plantearse: acción de cumplimiento.\n¿Cuáles son correctas? Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "I, III, IV",
+              "I, II, IV",
+              "I, II, III y IV",
+              "I, II, III"
+            ],
+            "respuesta": 1,
+            "solucion": "Aplicación específica de Estado y sistema democrático. I es correcta: Es una garantía residual de protección de derechos. II es correcta: Diferencias solo son válidas con justificación objetiva y proporcional. III es incorrecta: Protege libertad y derechos conexos. La relación correcta es «hábeas corpus». IV es correcta: Busca que la autoridad cumpla un mandato vigente. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan varias relaciones conceptuales antes de seleccionar el patrón. El ejercicio queda archivado únicamente en el bloque «Estado y sistema democrático». Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "CIV-01-R-15",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Estado y sistema democrático",
+            "subarea": "Ciudadanía y Cívica",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Tema Estado y sistema democrático. Evalúa las proposiciones sobre Constitución y derechos:\nI. La libertad de expresión no protege: amenazas o delitos por el solo hecho de expresarse.\nII. Una entidad se niega a entregar datos personales al titular. Procede: hábeas corpus.\nIII. Una norma con rango de ley contradice la Constitución. Corresponde: acción de inconstitucionalidad.\nIV. La Constitución Política es: una ordenanza local.\n¿Cuáles son correctas? Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "I, III",
+              "I, II, III y IV",
+              "I, II, III",
+              "I, II, IV"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Estado y sistema democrático. I es correcta: Los derechos admiten responsabilidades y límites constitucionales. II es incorrecta: Protege autodeterminación informativa y acceso a información. La relación correcta es «hábeas data». III es correcta: Controla normas de rango legal. IV es incorrecta: Organiza el poder y reconoce derechos fundamentales. La relación correcta es «la norma suprema». Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan varias relaciones conceptuales antes de seleccionar el patrón. El ejercicio queda archivado únicamente en el bloque «Estado y sistema democrático». Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -877,8 +982,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -1687,6 +1792,111 @@
             "explicacion": "Se contrastan varias relaciones conceptuales antes de seleccionar el patrón. El ejercicio queda archivado únicamente en el bloque «Órganos constitucionales autónomos». Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNMSM; no es una pregunta oficial"
+          },
+          {
+            "id": "CIV-02-R-11",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Órganos constitucionales autónomos",
+            "subarea": "Ciudadanía y Cívica",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Tema Órganos constitucionales autónomos. Evalúa las proposiciones sobre Estado y poderes públicos:\nI. El Congreso ejerce principalmente función: jurisdiccional exclusiva.\nII. El BCRP tiene como finalidad principal: preservar estabilidad monetaria.\nIII. La ONPE organiza: procesos electorales.\nIV. El JNE fiscaliza: legalidad electoral.\n¿Cuáles son correctas? Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "II, III, IV",
+              "I, II, III y IV",
+              "I, II, III",
+              "I, II, IV"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Órganos constitucionales autónomos. I es incorrecta: Aprueba leyes y realiza control político. La relación correcta es «legislativa y de control». II es correcta: Gestiona la política monetaria con autonomía. III es correcta: Planifica y ejecuta elecciones. IV es correcta: Administra justicia electoral. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan varias relaciones conceptuales antes de seleccionar el patrón. El ejercicio queda archivado únicamente en el bloque «Órganos constitucionales autónomos». Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "CIV-02-R-12",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Órganos constitucionales autónomos",
+            "subarea": "Ciudadanía y Cívica",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Tema Órganos constitucionales autónomos. Evalúa las proposiciones sobre Estado y poderes públicos:\nI. La Contraloría supervisa: uso de recursos públicos.\nII. El RENIEC administra: presupuesto público.\nIII. La Defensoría del Pueblo protege derechos frente a: solo empresas extranjeras.\nIV. La separación de poderes busca: evitar concentración y crear controles.\n¿Cuáles son correctas? Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "I, II, III y IV",
+              "I, II, III",
+              "I, II, IV",
+              "I, IV"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Órganos constitucionales autónomos. I es correcta: Encabeza el Sistema Nacional de Control. II es incorrecta: Registra identidad y hechos civiles. La relación correcta es «identificación y registro civil». III es incorrecta: Supervisa deberes estatales y servicios públicos. La relación correcta es «la administración estatal». IV es correcta: Distribuye funciones y establece contrapesos. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan varias relaciones conceptuales antes de seleccionar el patrón. El ejercicio queda archivado únicamente en el bloque «Órganos constitucionales autónomos». Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "CIV-02-R-13",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Órganos constitucionales autónomos",
+            "subarea": "Ciudadanía y Cívica",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Tema Órganos constitucionales autónomos. Evalúa las proposiciones sobre Estado y poderes públicos:\nI. El JNE fiscaliza: legalidad electoral.\nII. El Poder Ejecutivo dirige: política general de gobierno.\nIII. El Congreso ejerce principalmente función: jurisdiccional exclusiva.\nIV. El BCRP tiene como finalidad principal: preservar estabilidad monetaria.\n¿Cuáles son correctas? Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "I, II, III",
+              "I, III, IV",
+              "I, II, IV",
+              "I, II, III y IV"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Órganos constitucionales autónomos. I es correcta: Administra justicia electoral. II es correcta: Presidente y Consejo de Ministros conducen la administración. III es incorrecta: Aprueba leyes y realiza control político. La relación correcta es «legislativa y de control». IV es correcta: Gestiona la política monetaria con autonomía. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan varias relaciones conceptuales antes de seleccionar el patrón. El ejercicio queda archivado únicamente en el bloque «Órganos constitucionales autónomos». Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "CIV-02-R-14",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Órganos constitucionales autónomos",
+            "subarea": "Ciudadanía y Cívica",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Tema Órganos constitucionales autónomos. Evalúa las proposiciones sobre Estado y poderes públicos:\nI. La separación de poderes busca: evitar concentración y crear controles.\nII. El Poder Judicial administra: elecciones.\nIII. La Contraloría supervisa: uso de recursos públicos.\nIV. El RENIEC administra: presupuesto público.\n¿Cuáles son correctas? Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "I, II, IV",
+              "I, III",
+              "I, II, III y IV",
+              "I, II, III"
+            ],
+            "respuesta": 1,
+            "solucion": "Aplicación específica de Órganos constitucionales autónomos. I es correcta: Distribuye funciones y establece contrapesos. II es incorrecta: Ejerce potestad jurisdiccional. La relación correcta es «justicia». III es correcta: Encabeza el Sistema Nacional de Control. IV es incorrecta: Registra identidad y hechos civiles. La relación correcta es «identificación y registro civil». Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan varias relaciones conceptuales antes de seleccionar el patrón. El ejercicio queda archivado únicamente en el bloque «Órganos constitucionales autónomos». Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "CIV-02-R-15",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Órganos constitucionales autónomos",
+            "subarea": "Ciudadanía y Cívica",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Tema Órganos constitucionales autónomos. Evalúa las proposiciones sobre Estado y poderes públicos:\nI. El BCRP tiene como finalidad principal: organizar elecciones.\nII. La ONPE organiza: procesos electorales.\nIII. El JNE fiscaliza: legalidad electoral.\nIV. El Poder Ejecutivo dirige: política general de gobierno.\n¿Cuáles son correctas? Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "II, III, IV",
+              "I, II, III y IV",
+              "I, II, III",
+              "I, II, IV"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Órganos constitucionales autónomos. I es incorrecta: Gestiona la política monetaria con autonomía. La relación correcta es «preservar estabilidad monetaria». II es correcta: Planifica y ejecuta elecciones. III es correcta: Administra justicia electoral. IV es correcta: Presidente y Consejo de Ministros conducen la administración. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan varias relaciones conceptuales antes de seleccionar el patrón. El ejercicio queda archivado únicamente en el bloque «Órganos constitucionales autónomos». Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -1706,8 +1916,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -2516,6 +2726,111 @@
             "explicacion": "Se contrastan varias relaciones conceptuales antes de seleccionar el patrón. El ejercicio queda archivado únicamente en el bloque «Defensa y seguridad nacional». Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Competencias generales de admisión preuniversitaria"
+          },
+          {
+            "id": "CIV-03-R-11",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Defensa y seguridad nacional",
+            "subarea": "Ciudadanía y Cívica",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Tema Defensa y seguridad nacional. Evalúa las proposiciones sobre Estado y poderes públicos:\nI. La Contraloría supervisa: uso de recursos públicos.\nII. El RENIEC administra: presupuesto público.\nIII. La Defensoría del Pueblo protege derechos frente a: solo empresas extranjeras.\nIV. La separación de poderes busca: evitar concentración y crear controles.\n¿Cuáles son correctas? Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "I, IV",
+              "I, II, III y IV",
+              "I, II, III",
+              "I, II, IV"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Defensa y seguridad nacional. I es correcta: Encabeza el Sistema Nacional de Control. II es incorrecta: Registra identidad y hechos civiles. La relación correcta es «identificación y registro civil». III es incorrecta: Supervisa deberes estatales y servicios públicos. La relación correcta es «la administración estatal». IV es correcta: Distribuye funciones y establece contrapesos. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan varias relaciones conceptuales antes de seleccionar el patrón. El ejercicio queda archivado únicamente en el bloque «Defensa y seguridad nacional». Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "CIV-03-R-12",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Defensa y seguridad nacional",
+            "subarea": "Ciudadanía y Cívica",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Tema Defensa y seguridad nacional. Evalúa las proposiciones sobre Estado y poderes públicos:\nI. El JNE fiscaliza: legalidad electoral.\nII. El Poder Ejecutivo dirige: política general de gobierno.\nIII. El Congreso ejerce principalmente función: jurisdiccional exclusiva.\nIV. El BCRP tiene como finalidad principal: preservar estabilidad monetaria.\n¿Cuáles son correctas? Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "I, II, III y IV",
+              "I, II, III",
+              "I, III, IV",
+              "I, II, IV"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Defensa y seguridad nacional. I es correcta: Administra justicia electoral. II es correcta: Presidente y Consejo de Ministros conducen la administración. III es incorrecta: Aprueba leyes y realiza control político. La relación correcta es «legislativa y de control». IV es correcta: Gestiona la política monetaria con autonomía. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan varias relaciones conceptuales antes de seleccionar el patrón. El ejercicio queda archivado únicamente en el bloque «Defensa y seguridad nacional». Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "CIV-03-R-13",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Defensa y seguridad nacional",
+            "subarea": "Ciudadanía y Cívica",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: Tema Defensa y seguridad nacional. Evalúa las proposiciones sobre Estado y poderes públicos:\nI. La separación de poderes busca: evitar concentración y crear controles.\nII. El Poder Judicial administra: elecciones.\nIII. La Contraloría supervisa: uso de recursos públicos.\nIV. El RENIEC administra: presupuesto público.\n¿Cuáles son correctas? Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "I, II, III",
+              "I, II, IV",
+              "I, III",
+              "I, II, III y IV"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Defensa y seguridad nacional. I es correcta: Distribuye funciones y establece contrapesos. II es incorrecta: Ejerce potestad jurisdiccional. La relación correcta es «justicia». III es correcta: Encabeza el Sistema Nacional de Control. IV es incorrecta: Registra identidad y hechos civiles. La relación correcta es «identificación y registro civil». Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan varias relaciones conceptuales antes de seleccionar el patrón. El ejercicio queda archivado únicamente en el bloque «Defensa y seguridad nacional». Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "CIV-03-R-14",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Defensa y seguridad nacional",
+            "subarea": "Ciudadanía y Cívica",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Tema Defensa y seguridad nacional. Evalúa las proposiciones sobre Estado y poderes públicos:\nI. El BCRP tiene como finalidad principal: organizar elecciones.\nII. La ONPE organiza: procesos electorales.\nIII. El JNE fiscaliza: legalidad electoral.\nIV. El Poder Ejecutivo dirige: política general de gobierno.\n¿Cuáles son correctas? Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "I, II, IV",
+              "II, III, IV",
+              "I, II, III y IV",
+              "I, II, III"
+            ],
+            "respuesta": 1,
+            "solucion": "Aplicación específica de Defensa y seguridad nacional. I es incorrecta: Gestiona la política monetaria con autonomía. La relación correcta es «preservar estabilidad monetaria». II es correcta: Planifica y ejecuta elecciones. III es correcta: Administra justicia electoral. IV es correcta: Presidente y Consejo de Ministros conducen la administración. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan varias relaciones conceptuales antes de seleccionar el patrón. El ejercicio queda archivado únicamente en el bloque «Defensa y seguridad nacional». Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "CIV-03-R-15",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Defensa y seguridad nacional",
+            "subarea": "Ciudadanía y Cívica",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Tema Defensa y seguridad nacional. Una autoridad debe resolver el caso «El Congreso ejerce principalmente función». Considerando que «Aprueba leyes y realiza control político.», selecciona la respuesta constitucional más específica. Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "monetaria",
+              "registral",
+              "legislativa y de control",
+              "jurisdiccional exclusiva"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Defensa y seguridad nacional. Aprueba leyes y realiza control político. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se aplica la norma a un supuesto concreto y se compara competencia. El ejercicio queda archivado únicamente en el bloque «Defensa y seguridad nacional». Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -2535,8 +2850,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -3345,6 +3660,111 @@
             "explicacion": "Se contrastan varias relaciones conceptuales antes de seleccionar el patrón. El ejercicio queda archivado únicamente en el bloque «Ciudadanía e identidad nacional». Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNI; no es una pregunta oficial"
+          },
+          {
+            "id": "CIV-04-R-11",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Ciudadanía e identidad nacional",
+            "subarea": "Ciudadanía y Cívica",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Tema Ciudadanía e identidad nacional. Evalúa las proposiciones sobre Ciudadanía y democracia:\nI. La rendición de cuentas fortalece: transparencia y responsabilidad.\nII. La tolerancia democrática exige: respetar derechos aun en el desacuerdo.\nIII. La ciudadanía peruana se ejerce desde: 16 años.\nIV. La democracia representativa opera mediante: autoridades elegidas.\n¿Cuáles son correctas? Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "I, II, IV",
+              "I, II, III y IV",
+              "I, II, III",
+              "I, III, IV"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Ciudadanía e identidad nacional. I es correcta: Permite evaluar decisiones y uso de recursos. II es correcta: El pluralismo admite diferencias dentro del marco constitucional. III es incorrecta: Se adquiere con mayoría de edad, salvo suspensión legal. La relación correcta es «18 años». IV es correcta: La ciudadanía elige representantes. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan varias relaciones conceptuales antes de seleccionar el patrón. El ejercicio queda archivado únicamente en el bloque «Ciudadanía e identidad nacional». Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "CIV-04-R-12",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Ciudadanía e identidad nacional",
+            "subarea": "Ciudadanía y Cívica",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Tema Ciudadanía e identidad nacional. Evalúa las proposiciones sobre Ciudadanía y democracia:\nI. La participación informada requiere: contrastar fuentes y deliberar.\nII. El derecho a elegir y ser elegido es: mercantil.\nIII. El referéndum es un mecanismo de: participación directa.\nIV. El voto en el Perú es secreto porque: impide el conteo.\n¿Cuáles son correctas? Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "I, II, III y IV",
+              "I, II, III",
+              "I, II, IV",
+              "I, III"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Ciudadanía e identidad nacional. I es correcta: La calidad democrática depende de decisiones responsables. II es incorrecta: Permite participar en la formación del poder. La relación correcta es «político». III es correcta: La ciudadanía decide sobre asuntos sometidos a consulta. IV es incorrecta: Evita presión y represalias por la preferencia. La relación correcta es «protege libertad de elección». Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan varias relaciones conceptuales antes de seleccionar el patrón. El ejercicio queda archivado únicamente en el bloque «Ciudadanía e identidad nacional». Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "CIV-04-R-13",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Ciudadanía e identidad nacional",
+            "subarea": "Ciudadanía y Cívica",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Tema Ciudadanía e identidad nacional. Evalúa las proposiciones sobre Ciudadanía y democracia:\nI. La democracia representativa opera mediante: herencia del poder.\nII. La revocatoria permite: retirar determinadas autoridades elegidas.\nIII. La rendición de cuentas fortalece: transparencia y responsabilidad.\nIV. La tolerancia democrática exige: respetar derechos aun en el desacuerdo.\n¿Cuáles son correctas? Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "I, II, III",
+              "I, II, IV",
+              "II, III, IV",
+              "I, II, III y IV"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Ciudadanía e identidad nacional. I es incorrecta: La ciudadanía elige representantes. La relación correcta es «autoridades elegidas». II es correcta: Es un derecho de control ciudadano con requisitos legales. III es correcta: Permite evaluar decisiones y uso de recursos. IV es correcta: El pluralismo admite diferencias dentro del marco constitucional. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan varias relaciones conceptuales antes de seleccionar el patrón. El ejercicio queda archivado únicamente en el bloque «Ciudadanía e identidad nacional». Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "CIV-04-R-14",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Ciudadanía e identidad nacional",
+            "subarea": "Ciudadanía y Cívica",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Tema Ciudadanía e identidad nacional. Una autoridad debe resolver el caso «La ciudadanía peruana se ejerce desde». Considerando que «Se adquiere con mayoría de edad, salvo suspensión legal.», selecciona la respuesta constitucional más específica. La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "16 años",
+              "17 años",
+              "21 años",
+              "18 años"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Ciudadanía e identidad nacional. Se adquiere con mayoría de edad, salvo suspensión legal. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se aplica la norma a un supuesto concreto y se compara competencia. El ejercicio queda archivado únicamente en el bloque «Ciudadanía e identidad nacional». Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "CIV-04-R-15",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Ciudadanía e identidad nacional",
+            "subarea": "Ciudadanía y Cívica",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Tema Ciudadanía e identidad nacional. Una autoridad debe resolver el caso «El derecho a elegir y ser elegido es». Considerando que «Permite participar en la formación del poder.», selecciona la respuesta constitucional más específica. Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "tributario",
+              "posesorio",
+              "político",
+              "mercantil"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Ciudadanía e identidad nacional. Permite participar en la formación del poder. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se aplica la norma a un supuesto concreto y se compara competencia. El ejercicio queda archivado únicamente en el bloque «Ciudadanía e identidad nacional». Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -3364,8 +3784,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -4174,6 +4594,111 @@
             "explicacion": "Se contrastan varias relaciones conceptuales antes de seleccionar el patrón. El ejercicio queda archivado únicamente en el bloque «Convivencia democrática y valores cívicos». Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSAAC; no es una pregunta oficial"
+          },
+          {
+            "id": "CIV-05-R-11",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Convivencia democrática y valores cívicos",
+            "subarea": "Ciudadanía y Cívica",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Tema Convivencia democrática y valores cívicos. Evalúa las proposiciones sobre Ciudadanía y democracia:\nI. La participación informada requiere: contrastar fuentes y deliberar.\nII. El derecho a elegir y ser elegido es: mercantil.\nIII. El referéndum es un mecanismo de: participación directa.\nIV. El voto en el Perú es secreto porque: impide el conteo.\n¿Cuáles son correctas? La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "I, III",
+              "I, II, III y IV",
+              "I, II, III",
+              "I, II, IV"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Convivencia democrática y valores cívicos. I es correcta: La calidad democrática depende de decisiones responsables. II es incorrecta: Permite participar en la formación del poder. La relación correcta es «político». III es correcta: La ciudadanía decide sobre asuntos sometidos a consulta. IV es incorrecta: Evita presión y represalias por la preferencia. La relación correcta es «protege libertad de elección». Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan varias relaciones conceptuales antes de seleccionar el patrón. El ejercicio queda archivado únicamente en el bloque «Convivencia democrática y valores cívicos». Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "CIV-05-R-12",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Convivencia democrática y valores cívicos",
+            "subarea": "Ciudadanía y Cívica",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Tema Convivencia democrática y valores cívicos. Evalúa las proposiciones sobre Ciudadanía y democracia:\nI. La democracia representativa opera mediante: herencia del poder.\nII. La revocatoria permite: retirar determinadas autoridades elegidas.\nIII. La rendición de cuentas fortalece: transparencia y responsabilidad.\nIV. La tolerancia democrática exige: respetar derechos aun en el desacuerdo.\n¿Cuáles son correctas? Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "I, II, III y IV",
+              "I, II, III",
+              "I, II, IV",
+              "II, III, IV"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Convivencia democrática y valores cívicos. I es incorrecta: La ciudadanía elige representantes. La relación correcta es «autoridades elegidas». II es correcta: Es un derecho de control ciudadano con requisitos legales. III es correcta: Permite evaluar decisiones y uso de recursos. IV es correcta: El pluralismo admite diferencias dentro del marco constitucional. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan varias relaciones conceptuales antes de seleccionar el patrón. El ejercicio queda archivado únicamente en el bloque «Convivencia democrática y valores cívicos». Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "CIV-05-R-13",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Convivencia democrática y valores cívicos",
+            "subarea": "Ciudadanía y Cívica",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Tema Convivencia democrática y valores cívicos. Una autoridad debe resolver el caso «La ciudadanía peruana se ejerce desde». Considerando que «Se adquiere con mayoría de edad, salvo suspensión legal.», selecciona la respuesta constitucional más específica. Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "18 años",
+              "16 años",
+              "17 años",
+              "21 años"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Convivencia democrática y valores cívicos. Se adquiere con mayoría de edad, salvo suspensión legal. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se aplica la norma a un supuesto concreto y se compara competencia. El ejercicio queda archivado únicamente en el bloque «Convivencia democrática y valores cívicos». Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "CIV-05-R-14",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Convivencia democrática y valores cívicos",
+            "subarea": "Ciudadanía y Cívica",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Tema Convivencia democrática y valores cívicos. Una autoridad debe resolver el caso «El derecho a elegir y ser elegido es». Considerando que «Permite participar en la formación del poder.», selecciona la respuesta constitucional más específica. Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "mercantil",
+              "tributario",
+              "posesorio",
+              "político"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Convivencia democrática y valores cívicos. Permite participar en la formación del poder. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se aplica la norma a un supuesto concreto y se compara competencia. El ejercicio queda archivado únicamente en el bloque «Convivencia democrática y valores cívicos». Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "CIV-05-R-15",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Convivencia democrática y valores cívicos",
+            "subarea": "Ciudadanía y Cívica",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Tema Convivencia democrática y valores cívicos. Una autoridad debe resolver el caso «La democracia representativa opera mediante». Considerando que «La ciudadanía elige representantes.», selecciona la respuesta constitucional más específica. Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "gobierno militar",
+              "designación vitalicia",
+              "autoridades elegidas",
+              "herencia del poder"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Convivencia democrática y valores cívicos. La ciudadanía elige representantes. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se aplica la norma a un supuesto concreto y se compara competencia. El ejercicio queda archivado únicamente en el bloque «Convivencia democrática y valores cívicos». Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -4193,8 +4718,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -5003,10 +5528,115 @@
             "explicacion": "Se contrastan varias relaciones conceptuales antes de seleccionar el patrón. El ejercicio queda archivado únicamente en el bloque «Desarrollo ciudadano y formación personal». Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UCSM; no es una pregunta oficial"
+          },
+          {
+            "id": "CIV-06-R-11",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Desarrollo ciudadano y formación personal",
+            "subarea": "Ciudadanía y Cívica",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Tema Desarrollo ciudadano y formación personal. Evalúa las proposiciones sobre Ciudadanía y democracia:\nI. La democracia representativa opera mediante: herencia del poder.\nII. La revocatoria permite: retirar determinadas autoridades elegidas.\nIII. La rendición de cuentas fortalece: transparencia y responsabilidad.\nIV. La tolerancia democrática exige: respetar derechos aun en el desacuerdo.\n¿Cuáles son correctas? Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "II, III, IV",
+              "I, II, III y IV",
+              "I, II, III",
+              "I, II, IV"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Desarrollo ciudadano y formación personal. I es incorrecta: La ciudadanía elige representantes. La relación correcta es «autoridades elegidas». II es correcta: Es un derecho de control ciudadano con requisitos legales. III es correcta: Permite evaluar decisiones y uso de recursos. IV es correcta: El pluralismo admite diferencias dentro del marco constitucional. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se contrastan varias relaciones conceptuales antes de seleccionar el patrón. El ejercicio queda archivado únicamente en el bloque «Desarrollo ciudadano y formación personal». Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "CIV-06-R-12",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Desarrollo ciudadano y formación personal",
+            "subarea": "Ciudadanía y Cívica",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Tema Desarrollo ciudadano y formación personal. Una autoridad debe resolver el caso «La ciudadanía peruana se ejerce desde». Considerando que «Se adquiere con mayoría de edad, salvo suspensión legal.», selecciona la respuesta constitucional más específica. Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "21 años",
+              "18 años",
+              "16 años",
+              "17 años"
+            ],
+            "respuesta": 1,
+            "solucion": "Aplicación específica de Desarrollo ciudadano y formación personal. Se adquiere con mayoría de edad, salvo suspensión legal. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se aplica la norma a un supuesto concreto y se compara competencia. El ejercicio queda archivado únicamente en el bloque «Desarrollo ciudadano y formación personal». Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "CIV-06-R-13",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Desarrollo ciudadano y formación personal",
+            "subarea": "Ciudadanía y Cívica",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Tema Desarrollo ciudadano y formación personal. Una autoridad debe resolver el caso «El derecho a elegir y ser elegido es». Considerando que «Permite participar en la formación del poder.», selecciona la respuesta constitucional más específica. Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "político",
+              "mercantil",
+              "tributario",
+              "posesorio"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Desarrollo ciudadano y formación personal. Permite participar en la formación del poder. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se aplica la norma a un supuesto concreto y se compara competencia. El ejercicio queda archivado únicamente en el bloque «Desarrollo ciudadano y formación personal». Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "CIV-06-R-14",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Desarrollo ciudadano y formación personal",
+            "subarea": "Ciudadanía y Cívica",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: Tema Desarrollo ciudadano y formación personal. Una autoridad debe resolver el caso «La democracia representativa opera mediante». Considerando que «La ciudadanía elige representantes.», selecciona la respuesta constitucional más específica. Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "herencia del poder",
+              "gobierno militar",
+              "designación vitalicia",
+              "autoridades elegidas"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Desarrollo ciudadano y formación personal. La ciudadanía elige representantes. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se aplica la norma a un supuesto concreto y se compara competencia. El ejercicio queda archivado únicamente en el bloque «Desarrollo ciudadano y formación personal». Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "CIV-06-R-15",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Desarrollo ciudadano y formación personal",
+            "subarea": "Ciudadanía y Cívica",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Tema Desarrollo ciudadano y formación personal. Una autoridad debe resolver el caso «El referéndum es un mecanismo de». Considerando que «La ciudadanía decide sobre asuntos sometidos a consulta.», selecciona la respuesta constitucional más específica. Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "control monetario",
+              "contratación privada",
+              "participación directa",
+              "jurisdicción penal"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Desarrollo ciudadano y formación personal. La ciudadanía decide sobre asuntos sometidos a consulta. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se aplica la norma a un supuesto concreto y se compara competencia. El ejercicio queda archivado únicamente en el bloque «Desarrollo ciudadano y formación personal». Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
     }
   ],
-  "total": 240
+  "total": 270
 }

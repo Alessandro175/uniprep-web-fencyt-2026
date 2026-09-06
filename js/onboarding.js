@@ -4,7 +4,7 @@
 (function () {
   "use strict";
 
-  const VERSION_TUTORIAL = "2026.12";
+  const VERSION_TUTORIAL = "2026.22";
   const CLAVE_TUTORIAL = "uniprep_tutorial";
   const ESPERA_INICIAL_MS = 850;
 
@@ -17,58 +17,43 @@
   const pasos = [
     {
       pantalla: "home",
-      selector: "#home .welcome-banner",
-      icono: "🚀",
+      selector: "#home .friendly-path-card",
+      respaldo: "#home .welcome-banner",
+      icono: "👋",
       titulo: nombre => `¡Bienvenido a UniPrep, ${nombre}!`,
-      texto: "Este es tu panel de misión. Aquí verás qué estudiar, cuánto avanzaste y cuál es tu siguiente acción para acercarte a tu universidad."
+      texto: "Esta es tu ruta de hoy. UniPrep te muestra una recomendación principal para que sepas exactamente por dónde comenzar."
     },
     {
       pantalla: "cursos",
-      selector: "#admission-active-route",
+      selector: "#course-grid",
       respaldo: "#cursos .courses-command-center",
-      icono: "🎯",
-      titulo: "Tu ruta universitaria",
-      texto: "UniPrep usa la universidad, carrera y grupo que elegiste para priorizar los cursos que realmente vienen en tu examen de admisión."
-    },
-    {
-      pantalla: "cursos",
-      selector: "#course-grid .course-card, #course-grid .course-exam-block",
-      respaldo: "#cursos .courses-toolbar",
       icono: "📚",
-      titulo: "Cursos y ejercicios",
-      texto: "Entra a cada curso para revisar temas, teoría, videos y preguntas. Tu avance queda separado y guardado en tu cuenta."
+      titulo: "Aprende por curso",
+      texto: "Aquí encuentras tus cursos y temas. La ruta se adapta a la universidad y carrera que elegiste, sin mezclar materias innecesarias."
     },
     {
-      pantalla: "exams",
-      selector: "#exams .exam-reference-grid",
-      respaldo: "#exams .page-header",
-      icono: "📝",
-      titulo: "Simulacros según tu examen",
-      texto: "Practica con modelos organizados por universidad. En la UNI verás sus tres pruebas por separado; en otras rutas aparecerá el formato que corresponda."
+      pantalla: "ejercicios",
+      selector: "#practice-center-root",
+      respaldo: "[data-screen='ejercicios']",
+      icono: "🎯",
+      titulo: "Practica sin perderte",
+      texto: "Elige un curso, nivel y cantidad. Tus errores quedan guardados para que luego puedas repasarlos uno por uno."
     },
     {
-      pantalla: "biblioteca",
-      selector: "#biblioteca .library-route-note",
-      respaldo: "[data-screen='biblioteca']",
-      icono: "🗂️",
-      titulo: "Biblioteca personalizada",
-      texto: "SuperBiblioteca y Academias están disponibles para todos. Las colecciones UNI o San Marcos solo aparecen cuando esa es tu universidad elegida."
+      pantalla: "tutor",
+      selector: "#tutor-academic-root",
+      respaldo: "[data-screen='tutor']",
+      icono: "✦",
+      titulo: "Pide ayuda cuando la necesites",
+      texto: "Tutor Uni puede explicar un tema, ayudarte con una tarea o trabajar con tus materiales. Solo responde cuando tú se lo pides."
     },
     {
-      pantalla: "agenda",
-      selector: "#agenda .calendar-wrapper",
-      respaldo: "#agenda .page-header",
-      icono: "🔥",
-      titulo: "Agenda y racha de estudio",
-      texto: "Organiza tu semana y estudia con constancia. Cada día de actividad fortalece tu racha y hace más visible tu disciplina."
-    },
-    {
-      pantalla: "ranking",
-      selector: "#ranking .grid.g4",
-      respaldo: "#ranking .page-header",
-      icono: "🏆",
-      titulo: "Puntaje, progreso y ranking",
-      texto: "Tus resultados reales actualizan el progreso y el ranking. Tu primera misión es simple: resuelve cinco preguntas y descubre tu punto de partida.",
+      pantalla: "home",
+      selector: ".friendly-more-trigger",
+      respaldo: "#home .friendly-exam-card",
+      icono: "•••",
+      titulo: "Todo lo demás está en Más",
+      texto: "Simulacros, ranking, agenda, orientación, fórmulas, diseño y perfil siguen disponibles, pero ordenados para no distraerte.",
       final: true
     }
   ];
@@ -242,7 +227,7 @@
       return;
     }
     await cerrarTutorial(true);
-    if (typeof window.abrirCentroPractica === "function") window.abrirCentroPractica(null);
+    if (typeof window.continuarRutaUniPrep === "function") window.continuarRutaUniPrep();
     else window.go?.("cursos", null);
   }
 

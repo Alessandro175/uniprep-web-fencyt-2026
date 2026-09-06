@@ -1,7 +1,7 @@
 {
   "courseId": "trigonometria",
   "nombre": "Trigonometría",
-  "version": "2026.9-cuatro-niveles-universidad",
+  "version": "2026.32-cobertura-drive",
   "descripcion": "Banco original UniPrep organizado uno a uno con cada tema visible. Cada sesión temática conserva su subárea y no mezcla preguntas de otros temas.",
   "universidadesReferencia": [
     "UNAMAD",
@@ -14,18 +14,18 @@
     "GENERAL"
   ],
   "distribucion": {
-    "basico": 70,
-    "intermedio": 70,
-    "avanzado": 70,
-    "admision": 70,
-    "total": 280
+    "basico": 90,
+    "intermedio": 90,
+    "avanzado": 90,
+    "admision": 135,
+    "total": 405
   },
   "distribucionPorTema": {
     "basico": 10,
     "intermedio": 10,
     "avanzado": 10,
-    "admision": 10,
-    "total": 40
+    "admision": 15,
+    "total": 45
   },
   "criteriosDificultad": {
     "basico": "Fundamento o procedimiento directo",
@@ -48,8 +48,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -858,6 +858,111 @@
             "explicacion": "Se traduce la tangente a razones de lados y se usa una identidad de ángulo doble. El ejercicio queda archivado únicamente en el bloque «Sistemas de medida angular». Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de PUCP; no es una pregunta oficial"
+          },
+          {
+            "id": "TRI-01-R-11",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Sistemas de medida angular",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Tema Sistemas de medida angular. Reduce al primer cuadrante y calcula sen 510°, indicando el signo según el cuadrante. Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "1/2",
+              "−1/2",
+              "0",
+              "1"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Sistemas de medida angular. 510° tiene ángulo de referencia 60°. El signo del seno en su cuadrante produce 1/2. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se combinan reducción angular, cuadrante y valor notable. El ejercicio queda archivado únicamente en el bloque «Sistemas de medida angular». Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "TRI-01-R-12",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Sistemas de medida angular",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Tema Sistemas de medida angular. Si tan θ=13/14 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ. Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "-0,07",
+              "-0,05",
+              "1",
+              "0,07"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Sistemas de medida angular. Se toma un triángulo con cateto opuesto 13 y adyacente 14. Entonces sen²θ=169/365 y cos²θ=196/365; la diferencia es 0,07. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se traduce la tangente a razones de lados y se usa una identidad de ángulo doble. El ejercicio queda archivado únicamente en el bloque «Sistemas de medida angular». Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "TRI-01-R-13",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Sistemas de medida angular",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Tema Sistemas de medida angular. Si tan θ=14/15 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ. La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "-0,05",
+              "1",
+              "0,07",
+              "-0,07"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Sistemas de medida angular. Se toma un triángulo con cateto opuesto 14 y adyacente 15. Entonces sen²θ=196/421 y cos²θ=225/421; la diferencia es 0,07. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se traduce la tangente a razones de lados y se usa una identidad de ángulo doble. El ejercicio queda archivado únicamente en el bloque «Sistemas de medida angular». Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "TRI-01-R-14",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Sistemas de medida angular",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Tema Sistemas de medida angular. Si tan θ=15/16 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ. Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "1",
+              "0,06",
+              "-0,06",
+              "-0,05"
+            ],
+            "respuesta": 1,
+            "solucion": "Aplicación específica de Sistemas de medida angular. Se toma un triángulo con cateto opuesto 15 y adyacente 16. Entonces sen²θ=225/481 y cos²θ=256/481; la diferencia es 0,06. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se traduce la tangente a razones de lados y se usa una identidad de ángulo doble. El ejercicio queda archivado únicamente en el bloque «Sistemas de medida angular». Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "TRI-01-R-15",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Sistemas de medida angular",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Tema Sistemas de medida angular. Si tan θ=16/17 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ. Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "0,06",
+              "-0,06",
+              "-0,04",
+              "1"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Sistemas de medida angular. Se toma un triángulo con cateto opuesto 16 y adyacente 17. Entonces sen²θ=256/545 y cos²θ=289/545; la diferencia es 0,06. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se traduce la tangente a razones de lados y se usa una identidad de ángulo doble. El ejercicio queda archivado únicamente en el bloque «Sistemas de medida angular». Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -877,8 +982,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -1687,6 +1792,111 @@
             "explicacion": "Se traduce la tangente a razones de lados y se usa una identidad de ángulo doble. El ejercicio queda archivado únicamente en el bloque «Razones trigonométricas». Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNMSM; no es una pregunta oficial"
+          },
+          {
+            "id": "TRI-02-R-11",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Razones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Tema Razones trigonométricas. Si tan θ=13/14 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ. Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "0,07",
+              "-0,07",
+              "-0,05",
+              "1"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Razones trigonométricas. Se toma un triángulo con cateto opuesto 13 y adyacente 14. Entonces sen²θ=169/365 y cos²θ=196/365; la diferencia es 0,07. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se traduce la tangente a razones de lados y se usa una identidad de ángulo doble. El ejercicio queda archivado únicamente en el bloque «Razones trigonométricas». Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "TRI-02-R-12",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Razones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Tema Razones trigonométricas. Si tan θ=14/15 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ. Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "-0,07",
+              "-0,05",
+              "1",
+              "0,07"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Razones trigonométricas. Se toma un triángulo con cateto opuesto 14 y adyacente 15. Entonces sen²θ=196/421 y cos²θ=225/421; la diferencia es 0,07. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se traduce la tangente a razones de lados y se usa una identidad de ángulo doble. El ejercicio queda archivado únicamente en el bloque «Razones trigonométricas». Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "TRI-02-R-13",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Razones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Tema Razones trigonométricas. Si tan θ=15/16 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ. Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "-0,05",
+              "1",
+              "0,06",
+              "-0,06"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Razones trigonométricas. Se toma un triángulo con cateto opuesto 15 y adyacente 16. Entonces sen²θ=225/481 y cos²θ=256/481; la diferencia es 0,06. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se traduce la tangente a razones de lados y se usa una identidad de ángulo doble. El ejercicio queda archivado únicamente en el bloque «Razones trigonométricas». Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "TRI-02-R-14",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Razones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Tema Razones trigonométricas. Si tan θ=16/17 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ. Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "1",
+              "0,06",
+              "-0,06",
+              "-0,04"
+            ],
+            "respuesta": 1,
+            "solucion": "Aplicación específica de Razones trigonométricas. Se toma un triángulo con cateto opuesto 16 y adyacente 17. Entonces sen²θ=256/545 y cos²θ=289/545; la diferencia es 0,06. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se traduce la tangente a razones de lados y se usa una identidad de ángulo doble. El ejercicio queda archivado únicamente en el bloque «Razones trigonométricas». Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "TRI-02-R-15",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Razones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Tema Razones trigonométricas. Si tan θ=17/18 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ. Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "0,06",
+              "-0,06",
+              "-0,04",
+              "1"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Razones trigonométricas. Se toma un triángulo con cateto opuesto 17 y adyacente 18. Entonces sen²θ=289/613 y cos²θ=324/613; la diferencia es 0,06. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se traduce la tangente a razones de lados y se usa una identidad de ángulo doble. El ejercicio queda archivado únicamente en el bloque «Razones trigonométricas». Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -1706,8 +1916,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -2516,6 +2726,111 @@
             "explicacion": "Se traduce la tangente a razones de lados y se usa una identidad de ángulo doble. El ejercicio queda archivado únicamente en el bloque «Reducción al primer cuadrante». Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Competencias generales de admisión preuniversitaria"
+          },
+          {
+            "id": "TRI-03-R-11",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Reducción al primer cuadrante",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Tema Reducción al primer cuadrante. Si tan θ=14/15 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ. Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "0,07",
+              "-0,07",
+              "-0,05",
+              "1"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Reducción al primer cuadrante. Se toma un triángulo con cateto opuesto 14 y adyacente 15. Entonces sen²θ=196/421 y cos²θ=225/421; la diferencia es 0,07. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se traduce la tangente a razones de lados y se usa una identidad de ángulo doble. El ejercicio queda archivado únicamente en el bloque «Reducción al primer cuadrante». Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "TRI-03-R-12",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Reducción al primer cuadrante",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Tema Reducción al primer cuadrante. Si tan θ=15/16 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ. Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "-0,06",
+              "-0,05",
+              "1",
+              "0,06"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Reducción al primer cuadrante. Se toma un triángulo con cateto opuesto 15 y adyacente 16. Entonces sen²θ=225/481 y cos²θ=256/481; la diferencia es 0,06. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se traduce la tangente a razones de lados y se usa una identidad de ángulo doble. El ejercicio queda archivado únicamente en el bloque «Reducción al primer cuadrante». Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "TRI-03-R-13",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Reducción al primer cuadrante",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: Tema Reducción al primer cuadrante. Si tan θ=16/17 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ. Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "-0,04",
+              "1",
+              "0,06",
+              "-0,06"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Reducción al primer cuadrante. Se toma un triángulo con cateto opuesto 16 y adyacente 17. Entonces sen²θ=256/545 y cos²θ=289/545; la diferencia es 0,06. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se traduce la tangente a razones de lados y se usa una identidad de ángulo doble. El ejercicio queda archivado únicamente en el bloque «Reducción al primer cuadrante». Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "TRI-03-R-14",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Reducción al primer cuadrante",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Tema Reducción al primer cuadrante. Si tan θ=17/18 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ. Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "1",
+              "0,06",
+              "-0,06",
+              "-0,04"
+            ],
+            "respuesta": 1,
+            "solucion": "Aplicación específica de Reducción al primer cuadrante. Se toma un triángulo con cateto opuesto 17 y adyacente 18. Entonces sen²θ=289/613 y cos²θ=324/613; la diferencia es 0,06. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se traduce la tangente a razones de lados y se usa una identidad de ángulo doble. El ejercicio queda archivado únicamente en el bloque «Reducción al primer cuadrante». Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "TRI-03-R-15",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Reducción al primer cuadrante",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Tema Reducción al primer cuadrante. Reduce al primer cuadrante y calcula sen 420°, indicando el signo según el cuadrante. Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "0",
+              "1",
+              "√3/2",
+              "−√3/2"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Reducción al primer cuadrante. 420° tiene ángulo de referencia 60°. El signo del seno en su cuadrante produce √3/2. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se combinan reducción angular, cuadrante y valor notable. El ejercicio queda archivado únicamente en el bloque «Reducción al primer cuadrante». Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -2535,8 +2850,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -3345,6 +3660,111 @@
             "explicacion": "Se traduce la tangente a razones de lados y se usa una identidad de ángulo doble. El ejercicio queda archivado únicamente en el bloque «Funciones trigonométricas». Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNI; no es una pregunta oficial"
+          },
+          {
+            "id": "TRI-04-R-11",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Funciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Tema Funciones trigonométricas. Si tan θ=15/16 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ. Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "0,06",
+              "-0,06",
+              "-0,05",
+              "1"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Funciones trigonométricas. Se toma un triángulo con cateto opuesto 15 y adyacente 16. Entonces sen²θ=225/481 y cos²θ=256/481; la diferencia es 0,06. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se traduce la tangente a razones de lados y se usa una identidad de ángulo doble. El ejercicio queda archivado únicamente en el bloque «Funciones trigonométricas». Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "TRI-04-R-12",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Funciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Tema Funciones trigonométricas. Si tan θ=16/17 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ. Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "-0,06",
+              "-0,04",
+              "1",
+              "0,06"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Funciones trigonométricas. Se toma un triángulo con cateto opuesto 16 y adyacente 17. Entonces sen²θ=256/545 y cos²θ=289/545; la diferencia es 0,06. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se traduce la tangente a razones de lados y se usa una identidad de ángulo doble. El ejercicio queda archivado únicamente en el bloque «Funciones trigonométricas». Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "TRI-04-R-13",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Funciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Tema Funciones trigonométricas. Si tan θ=17/18 y θ es agudo, calcula cos²θ−sen²θ sin hallar θ. Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "-0,04",
+              "1",
+              "0,06",
+              "-0,06"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Funciones trigonométricas. Se toma un triángulo con cateto opuesto 17 y adyacente 18. Entonces sen²θ=289/613 y cos²θ=324/613; la diferencia es 0,06. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se traduce la tangente a razones de lados y se usa una identidad de ángulo doble. El ejercicio queda archivado únicamente en el bloque «Funciones trigonométricas». Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "TRI-04-R-14",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Funciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Tema Funciones trigonométricas. Reduce al primer cuadrante y calcula sen 420°, indicando el signo según el cuadrante. La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "−√3/2",
+              "0",
+              "1",
+              "√3/2"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Funciones trigonométricas. 420° tiene ángulo de referencia 60°. El signo del seno en su cuadrante produce √3/2. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se combinan reducción angular, cuadrante y valor notable. El ejercicio queda archivado únicamente en el bloque «Funciones trigonométricas». Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "TRI-04-R-15",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Funciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Tema Funciones trigonométricas. Reduce al primer cuadrante y calcula sen 450°, indicando el signo según el cuadrante. Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "0",
+              "√2/2",
+              "1",
+              "−1"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Funciones trigonométricas. 450° tiene ángulo de referencia 90°. El signo del seno en su cuadrante produce 1. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se combinan reducción angular, cuadrante y valor notable. El ejercicio queda archivado únicamente en el bloque «Funciones trigonométricas». Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -3364,8 +3784,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -4174,6 +4594,111 @@
             "explicacion": "Se determina la familia general y luego se cuenta dentro del intervalo. El ejercicio queda archivado únicamente en el bloque «Identidades trigonométricas». Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSAAC; no es una pregunta oficial"
+          },
+          {
+            "id": "TRI-05-R-11",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Identidades trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Tema Identidades trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(15x)=0? Explica el efecto del factor 15. La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "30",
+              "15",
+              "16",
+              "60"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Identidades trigonométricas. sen(15x)=0 cuando 15x=kπ. Entonces x=kπ/15. En [0,2π) se admiten k=0,1,…,29: hay 30 soluciones. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se determina la familia general y luego se cuenta dentro del intervalo. El ejercicio queda archivado únicamente en el bloque «Identidades trigonométricas». Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "TRI-05-R-12",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Identidades trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Sin recurrir al ensayo ciego, desarrolla el siguiente caso: Tema Identidades trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(16x)=0? Explica el efecto del factor 16. Comprueba finalmente la condición más restrictiva.",
+            "alternativas": [
+              "16",
+              "17",
+              "64",
+              "32"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Identidades trigonométricas. sen(16x)=0 cuando 16x=kπ. Entonces x=kπ/16. En [0,2π) se admiten k=0,1,…,31: hay 32 soluciones. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se determina la familia general y luego se cuenta dentro del intervalo. El ejercicio queda archivado únicamente en el bloque «Identidades trigonométricas». Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "TRI-05-R-13",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Identidades trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una práctica cronometrada se presenta: Tema Identidades trigonométricas. Si sen x=13/16, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x. Selecciona la respuesta solo después de verificar el razonamiento.",
+            "alternativas": [
+              "0,58",
+              "0,19",
+              "0,34",
+              "1,39"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Identidades trigonométricas. cos x=√(1−sen²x)=√(1−(13/16)²)=0,58; se toma la raíz positiva porque x es agudo. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se usa la identidad pitagórica y la información del cuadrante. El ejercicio queda archivado únicamente en el bloque «Identidades trigonométricas». Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "TRI-05-R-14",
+            "universidadReferencia": "UNSAAC",
+            "dificultad": "admision",
+            "tema": "Identidades trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Tema Identidades trigonométricas. Si sen x=14/18, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x. Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "0,22",
+              "0,4",
+              "1,24",
+              "0,63"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Identidades trigonométricas. cos x=√(1−sen²x)=√(1−(14/18)²)=0,63; se toma la raíz positiva porque x es agudo. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se usa la identidad pitagórica y la información del cuadrante. El ejercicio queda archivado únicamente en el bloque «Identidades trigonométricas». Referencia de estilo: UNSAAC; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "TRI-05-R-15",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Identidades trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Tema Identidades trigonométricas. Si sen x=15/17, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x. Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "0,22",
+              "1,87",
+              "0,47",
+              "0,12"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Identidades trigonométricas. cos x=√(1−sen²x)=√(1−(15/17)²)=0,47; se toma la raíz positiva porque x es agudo. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se usa la identidad pitagórica y la información del cuadrante. El ejercicio queda archivado únicamente en el bloque «Identidades trigonométricas». Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -4193,8 +4718,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -5003,6 +5528,111 @@
             "explicacion": "Se determina la familia general y luego se cuenta dentro del intervalo. El ejercicio queda archivado únicamente en el bloque «Ecuaciones e inecuaciones trigonométricas». Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UCSM; no es una pregunta oficial"
+          },
+          {
+            "id": "TRI-06-R-11",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Ecuaciones e inecuaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para cerrar una sesión de preparación nacional, resuelve: Tema Ecuaciones e inecuaciones trigonométricas. En el intervalo 0≤x<2π, ¿cuántas soluciones tiene la ecuación sen(16x)=0? Explica el efecto del factor 16. Explica mentalmente por qué las otras opciones no corresponden.",
+            "alternativas": [
+              "32",
+              "16",
+              "17",
+              "64"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Ecuaciones e inecuaciones trigonométricas. sen(16x)=0 cuando 16x=kπ. Entonces x=kπ/16. En [0,2π) se admiten k=0,1,…,31: hay 32 soluciones. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se determina la familia general y luego se cuenta dentro del intervalo. El ejercicio queda archivado únicamente en el bloque «Ecuaciones e inecuaciones trigonométricas». Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "TRI-06-R-12",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Ecuaciones e inecuaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En una evaluación acumulativa, resuelve con precisión: Tema Ecuaciones e inecuaciones trigonométricas. Si sen x=13/16, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x. Verifica el resultado con una propiedad distinta antes de marcar.",
+            "alternativas": [
+              "1,39",
+              "0,58",
+              "0,19",
+              "0,34"
+            ],
+            "respuesta": 1,
+            "solucion": "Aplicación específica de Ecuaciones e inecuaciones trigonométricas. cos x=√(1−sen²x)=√(1−(13/16)²)=0,58; se toma la raíz positiva porque x es agudo. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se usa la identidad pitagórica y la información del cuadrante. El ejercicio queda archivado únicamente en el bloque «Ecuaciones e inecuaciones trigonométricas». Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "TRI-06-R-13",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Ecuaciones e inecuaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Como parte de un simulacro competitivo, analiza: Tema Ecuaciones e inecuaciones trigonométricas. Si sen x=14/18, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x. Descarta primero los distractores que contradicen las condiciones.",
+            "alternativas": [
+              "0,63",
+              "0,22",
+              "0,4",
+              "1,24"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Ecuaciones e inecuaciones trigonométricas. cos x=√(1−sen²x)=√(1−(14/18)²)=0,63; se toma la raíz positiva porque x es agudo. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se usa la identidad pitagórica y la información del cuadrante. El ejercicio queda archivado únicamente en el bloque «Ecuaciones e inecuaciones trigonométricas». Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "TRI-06-R-14",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "admision",
+            "tema": "Ecuaciones e inecuaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: Tema Ecuaciones e inecuaciones trigonométricas. Si sen x=15/17, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x. Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "0,12",
+              "0,22",
+              "1,87",
+              "0,47"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Ecuaciones e inecuaciones trigonométricas. cos x=√(1−sen²x)=√(1−(15/17)²)=0,47; se toma la raíz positiva porque x es agudo. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se usa la identidad pitagórica y la información del cuadrante. El ejercicio queda archivado únicamente en el bloque «Ecuaciones e inecuaciones trigonométricas». Referencia de estilo: GENERAL; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "TRI-06-R-15",
+            "universidadReferencia": "UNAMAD",
+            "dificultad": "admision",
+            "tema": "Ecuaciones e inecuaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Tema Ecuaciones e inecuaciones trigonométricas. Si sen x=16/19, x es agudo y se sabe que sen²x+cos²x=1, calcula cos x. Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "0,29",
+              "1,56",
+              "0,54",
+              "0,16"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Ecuaciones e inecuaciones trigonométricas. cos x=√(1−sen²x)=√(1−(16/19)²)=0,54; se toma la raíz positiva porque x es agudo. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "Se usa la identidad pitagórica y la información del cuadrante. El ejercicio queda archivado únicamente en el bloque «Ecuaciones e inecuaciones trigonométricas». Referencia de estilo: UNAMAD; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
           }
         ]
       }
@@ -5022,8 +5652,8 @@
         "basico": 10,
         "intermedio": 10,
         "avanzado": 10,
-        "admision": 10,
-        "total": 40
+        "admision": 15,
+        "total": 45
       },
       "niveles": {
         "basico": [
@@ -5832,10 +6462,2335 @@
             "explicacion": "Se construye la altura con seno y luego se aplica la fórmula de área. El ejercicio queda archivado únicamente en el bloque «Resolución de triángulos oblicuángulos». Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial.",
             "pasosMinimos": 4,
             "alineacionUniversitaria": "Estilo de competencia alineado al perfil público de UNSA; no es una pregunta oficial"
+          },
+          {
+            "id": "TRI-07-R-11",
+            "universidadReferencia": "UNMSM",
+            "dificultad": "admision",
+            "tema": "Resolución de triángulos oblicuángulos",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Un equipo de estudio debe justificar la alternativa correcta. Determina: Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 15 y 17, y el ángulo comprendido es 60°. Halla el tercer lado mediante la ley de cosenos. Comprueba que la respuesta satisfaga todo el enunciado.",
+            "alternativas": [
+              "22,67",
+              "2",
+              "16,09",
+              "32"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Resolución de triángulos oblicuángulos. c²=15²+17²−2(15)(17)cos60°=259; c=16,09. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "La ley de cosenos incorpora el ángulo comprendido. El ejercicio queda archivado únicamente en el bloque «Resolución de triángulos oblicuángulos». Referencia de estilo: UNMSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "TRI-07-R-12",
+            "universidadReferencia": "UNSA",
+            "dificultad": "admision",
+            "tema": "Resolución de triángulos oblicuángulos",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En la fase final de una práctica preuniversitaria se propone: Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 16 y 18, y el ángulo comprendido es 60°. Halla el tercer lado mediante la ley de cosenos. Prioriza el método más breve que conserve rigor.",
+            "alternativas": [
+              "2",
+              "17,09",
+              "34",
+              "24,08"
+            ],
+            "respuesta": 1,
+            "solucion": "Aplicación específica de Resolución de triángulos oblicuángulos. c²=16²+18²−2(16)(18)cos60°=292; c=17,09. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "La ley de cosenos incorpora el ángulo comprendido. El ejercicio queda archivado únicamente en el bloque «Resolución de triángulos oblicuángulos». Referencia de estilo: UNSA; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "TRI-07-R-13",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Resolución de triángulos oblicuángulos",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Para auditar un procedimiento de admisión, resuelve: Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 17 y 19, y el ángulo comprendido es 60°. Halla el tercer lado mediante la ley de cosenos. Revisa datos, unidades o relaciones antes de elegir.",
+            "alternativas": [
+              "18,08",
+              "36",
+              "25,5",
+              "2"
+            ],
+            "respuesta": 0,
+            "solucion": "Aplicación específica de Resolución de triángulos oblicuángulos. c²=17²+19²−2(17)(19)cos60°=327; c=18,08. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "La ley de cosenos incorpora el ángulo comprendido. El ejercicio queda archivado únicamente en el bloque «Resolución de triángulos oblicuángulos». Referencia de estilo: UNI; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "TRI-07-R-14",
+            "universidadReferencia": "PUCP",
+            "dificultad": "admision",
+            "tema": "Resolución de triángulos oblicuángulos",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "Durante una tutoría de alta exigencia se plantea: Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 18 y 20, y el ángulo comprendido es 60°. Halla el tercer lado mediante la ley de cosenos. Contrasta tu resultado con los límites del problema.",
+            "alternativas": [
+              "38",
+              "26,91",
+              "2",
+              "19,08"
+            ],
+            "respuesta": 3,
+            "solucion": "Aplicación específica de Resolución de triángulos oblicuángulos. c²=18²+20²−2(18)(20)cos60°=364; c=19,08. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "La ley de cosenos incorpora el ángulo comprendido. El ejercicio queda archivado únicamente en el bloque «Resolución de triángulos oblicuángulos». Referencia de estilo: PUCP; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          },
+          {
+            "id": "TRI-07-R-15",
+            "universidadReferencia": "UCSM",
+            "dificultad": "admision",
+            "tema": "Resolución de triángulos oblicuángulos",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones con exigencia de admisión",
+            "pregunta": "En un control de transferencia conceptual, responde: Tema Resolución de triángulos oblicuángulos. Dos lados de un triángulo miden 19 y 21, y el ángulo comprendido es 60°. Halla el tercer lado mediante la ley de cosenos. La alternativa elegida debe ser coherente con el principio central.",
+            "alternativas": [
+              "28,32",
+              "2",
+              "20,07",
+              "40"
+            ],
+            "respuesta": 2,
+            "solucion": "Aplicación específica de Resolución de triángulos oblicuángulos. c²=19²+21²−2(19)(21)cos60°=403; c=20,07. Comprobación de transferencia: la alternativa seleccionada conserva las relaciones y restricciones del caso.",
+            "explicacion": "La ley de cosenos incorpora el ángulo comprendido. El ejercicio queda archivado únicamente en el bloque «Resolución de triángulos oblicuángulos». Referencia de estilo: UCSM; ejercicio elaborado por UniPrep, no oficial. Esta variante evalúa transferencia y control del procedimiento, no memorización literal.",
+            "pasosMinimos": 5,
+            "alineacionUniversitaria": "Ejercicio original de entrenamiento UniPrep; no es una pregunta oficial",
+            "origenAmpliacion": "UniPrep 2026.31 · variante de transferencia validada estructuralmente"
+          }
+        ]
+      }
+    },
+    {
+      "id": "trigonometria-8",
+      "titulo": "Circunferencia trigonométrica y reducción angular",
+      "subarea": "Matemática",
+      "duracion": "45 min",
+      "teoria": "Cobertura reconstruida desde 04 Circunferencia trigonométrica.pdf.",
+      "puntos": [
+        "Cuadrantes",
+        "Signos",
+        "Valores notables"
+      ],
+      "fuenteTematica": "04 Circunferencia trigonométrica.pdf",
+      "distribucion": {
+        "basico": 10,
+        "intermedio": 10,
+        "avanzado": 10,
+        "admision": 15,
+        "total": 45
+      },
+      "niveles": {
+        "basico": [
+          {
+            "id": "TRIGONOMETRIA-8-B-01",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "basico",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "En la circunferencia trigonométrica, determine sen 0°.",
+            "alternativas": [
+              "1",
+              "−0",
+              "−1",
+              "0"
+            ],
+            "respuesta": 3,
+            "solucion": "Se ubica 0° en su cuadrante y se toma la coordenada vertical (seno): 0.",
+            "explicacion": "Se ubica 0° en su cuadrante y se toma la coordenada vertical (seno): 0.",
+            "pasosMinimos": 1,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          },
+          {
+            "id": "TRIGONOMETRIA-8-B-02",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "basico",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "En la circunferencia trigonométrica, determine sen 30°.",
+            "alternativas": [
+              "−1/2",
+              "1",
+              "1/2",
+              "√3/2"
+            ],
+            "respuesta": 2,
+            "solucion": "Se ubica 30° en su cuadrante y se toma la coordenada vertical (seno): 1/2.",
+            "explicacion": "Se ubica 30° en su cuadrante y se toma la coordenada vertical (seno): 1/2.",
+            "pasosMinimos": 1,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          },
+          {
+            "id": "TRIGONOMETRIA-8-B-03",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "basico",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "En la circunferencia trigonométrica, determine sen 45°.",
+            "alternativas": [
+              "0",
+              "√2/2",
+              "−√2/2",
+              "1"
+            ],
+            "respuesta": 1,
+            "solucion": "Se ubica 45° en su cuadrante y se toma la coordenada vertical (seno): √2/2.",
+            "explicacion": "Se ubica 45° en su cuadrante y se toma la coordenada vertical (seno): √2/2.",
+            "pasosMinimos": 1,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          },
+          {
+            "id": "TRIGONOMETRIA-8-B-04",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "basico",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "En la circunferencia trigonométrica, determine sen 60°.",
+            "alternativas": [
+              "√3/2",
+              "1/2",
+              "−√3/2",
+              "1"
+            ],
+            "respuesta": 0,
+            "solucion": "Se ubica 60° en su cuadrante y se toma la coordenada vertical (seno): √3/2.",
+            "explicacion": "Se ubica 60° en su cuadrante y se toma la coordenada vertical (seno): √3/2.",
+            "pasosMinimos": 1,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          },
+          {
+            "id": "TRIGONOMETRIA-8-B-05",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "basico",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "En la circunferencia trigonométrica, determine sen 90°.",
+            "alternativas": [
+              "0",
+              "−1",
+              "2",
+              "1"
+            ],
+            "respuesta": 3,
+            "solucion": "Se ubica 90° en su cuadrante y se toma la coordenada vertical (seno): 1.",
+            "explicacion": "Se ubica 90° en su cuadrante y se toma la coordenada vertical (seno): 1.",
+            "pasosMinimos": 1,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          },
+          {
+            "id": "TRIGONOMETRIA-8-B-06",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "basico",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "En la circunferencia trigonométrica, determine sen 120°.",
+            "alternativas": [
+              "−√3/2",
+              "1",
+              "√3/2",
+              "−1/2"
+            ],
+            "respuesta": 2,
+            "solucion": "Se ubica 120° en su cuadrante y se toma la coordenada vertical (seno): √3/2.",
+            "explicacion": "Se ubica 120° en su cuadrante y se toma la coordenada vertical (seno): √3/2.",
+            "pasosMinimos": 1,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          },
+          {
+            "id": "TRIGONOMETRIA-8-B-07",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "basico",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "En la circunferencia trigonométrica, determine sen 135°.",
+            "alternativas": [
+              "0",
+              "√2/2",
+              "−√2/2",
+              "1"
+            ],
+            "respuesta": 1,
+            "solucion": "Se ubica 135° en su cuadrante y se toma la coordenada vertical (seno): √2/2.",
+            "explicacion": "Se ubica 135° en su cuadrante y se toma la coordenada vertical (seno): √2/2.",
+            "pasosMinimos": 1,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          },
+          {
+            "id": "TRIGONOMETRIA-8-B-08",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "basico",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "En la circunferencia trigonométrica, determine sen 150°.",
+            "alternativas": [
+              "1/2",
+              "−√3/2",
+              "−1/2",
+              "1"
+            ],
+            "respuesta": 0,
+            "solucion": "Se ubica 150° en su cuadrante y se toma la coordenada vertical (seno): 1/2.",
+            "explicacion": "Se ubica 150° en su cuadrante y se toma la coordenada vertical (seno): 1/2.",
+            "pasosMinimos": 1,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          },
+          {
+            "id": "TRIGONOMETRIA-8-B-09",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "basico",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "En la circunferencia trigonométrica, determine sen 180°.",
+            "alternativas": [
+              "−1",
+              "−0",
+              "1",
+              "0"
+            ],
+            "respuesta": 3,
+            "solucion": "Se ubica 180° en su cuadrante y se toma la coordenada vertical (seno): 0.",
+            "explicacion": "Se ubica 180° en su cuadrante y se toma la coordenada vertical (seno): 0.",
+            "pasosMinimos": 1,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          },
+          {
+            "id": "TRIGONOMETRIA-8-B-10",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "basico",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "En la circunferencia trigonométrica, determine sen 210°.",
+            "alternativas": [
+              "1/2",
+              "1",
+              "−1/2",
+              "−√3/2"
+            ],
+            "respuesta": 2,
+            "solucion": "Se ubica 210° en su cuadrante y se toma la coordenada vertical (seno): −1/2.",
+            "explicacion": "Se ubica 210° en su cuadrante y se toma la coordenada vertical (seno): −1/2.",
+            "pasosMinimos": 1,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          }
+        ],
+        "intermedio": [
+          {
+            "id": "TRIGONOMETRIA-8-I-01",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "intermedio",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "En la circunferencia trigonométrica, determine sen 225°.",
+            "alternativas": [
+              "1",
+              "0",
+              "−√2/2",
+              "√2/2"
+            ],
+            "respuesta": 2,
+            "solucion": "Se ubica 225° en su cuadrante y se toma la coordenada vertical (seno): −√2/2.",
+            "explicacion": "Se ubica 225° en su cuadrante y se toma la coordenada vertical (seno): −√2/2.",
+            "pasosMinimos": 2,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          },
+          {
+            "id": "TRIGONOMETRIA-8-I-02",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "intermedio",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "En la circunferencia trigonométrica, determine sen 240°.",
+            "alternativas": [
+              "1",
+              "−√3/2",
+              "−1/2",
+              "√3/2"
+            ],
+            "respuesta": 1,
+            "solucion": "Se ubica 240° en su cuadrante y se toma la coordenada vertical (seno): −√3/2.",
+            "explicacion": "Se ubica 240° en su cuadrante y se toma la coordenada vertical (seno): −√3/2.",
+            "pasosMinimos": 2,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          },
+          {
+            "id": "TRIGONOMETRIA-8-I-03",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "intermedio",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "En la circunferencia trigonométrica, determine sen 270°.",
+            "alternativas": [
+              "−1",
+              "0",
+              "1",
+              "2"
+            ],
+            "respuesta": 0,
+            "solucion": "Se ubica 270° en su cuadrante y se toma la coordenada vertical (seno): −1.",
+            "explicacion": "Se ubica 270° en su cuadrante y se toma la coordenada vertical (seno): −1.",
+            "pasosMinimos": 2,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          },
+          {
+            "id": "TRIGONOMETRIA-8-I-04",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "intermedio",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "En la circunferencia trigonométrica, determine sen 300°.",
+            "alternativas": [
+              "1/2",
+              "√3/2",
+              "1",
+              "−√3/2"
+            ],
+            "respuesta": 3,
+            "solucion": "Se ubica 300° en su cuadrante y se toma la coordenada vertical (seno): −√3/2.",
+            "explicacion": "Se ubica 300° en su cuadrante y se toma la coordenada vertical (seno): −√3/2.",
+            "pasosMinimos": 2,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          },
+          {
+            "id": "TRIGONOMETRIA-8-I-05",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "intermedio",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "En la circunferencia trigonométrica, determine sen 315°.",
+            "alternativas": [
+              "1",
+              "0",
+              "−√2/2",
+              "√2/2"
+            ],
+            "respuesta": 2,
+            "solucion": "Se ubica 315° en su cuadrante y se toma la coordenada vertical (seno): −√2/2.",
+            "explicacion": "Se ubica 315° en su cuadrante y se toma la coordenada vertical (seno): −√2/2.",
+            "pasosMinimos": 2,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          },
+          {
+            "id": "TRIGONOMETRIA-8-I-06",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "intermedio",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "En la circunferencia trigonométrica, determine cos 0°.",
+            "alternativas": [
+              "2",
+              "1",
+              "0",
+              "−1"
+            ],
+            "respuesta": 1,
+            "solucion": "Se ubica 0° en su cuadrante y se toma la coordenada horizontal (coseno): 1.",
+            "explicacion": "Se ubica 0° en su cuadrante y se toma la coordenada horizontal (coseno): 1.",
+            "pasosMinimos": 2,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          },
+          {
+            "id": "TRIGONOMETRIA-8-I-07",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "intermedio",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "En la circunferencia trigonométrica, determine cos 30°.",
+            "alternativas": [
+              "√3/2",
+              "1/2",
+              "−√3/2",
+              "1"
+            ],
+            "respuesta": 0,
+            "solucion": "Se ubica 30° en su cuadrante y se toma la coordenada horizontal (coseno): √3/2.",
+            "explicacion": "Se ubica 30° en su cuadrante y se toma la coordenada horizontal (coseno): √3/2.",
+            "pasosMinimos": 2,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          },
+          {
+            "id": "TRIGONOMETRIA-8-I-08",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "intermedio",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "En la circunferencia trigonométrica, determine cos 45°.",
+            "alternativas": [
+              "−√2/2",
+              "1",
+              "0",
+              "√2/2"
+            ],
+            "respuesta": 3,
+            "solucion": "Se ubica 45° en su cuadrante y se toma la coordenada horizontal (coseno): √2/2.",
+            "explicacion": "Se ubica 45° en su cuadrante y se toma la coordenada horizontal (coseno): √2/2.",
+            "pasosMinimos": 2,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          },
+          {
+            "id": "TRIGONOMETRIA-8-I-09",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "intermedio",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "En la circunferencia trigonométrica, determine cos 60°.",
+            "alternativas": [
+              "−1/2",
+              "1",
+              "1/2",
+              "√3/2"
+            ],
+            "respuesta": 2,
+            "solucion": "Se ubica 60° en su cuadrante y se toma la coordenada horizontal (coseno): 1/2.",
+            "explicacion": "Se ubica 60° en su cuadrante y se toma la coordenada horizontal (coseno): 1/2.",
+            "pasosMinimos": 2,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          },
+          {
+            "id": "TRIGONOMETRIA-8-I-10",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "intermedio",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "En la circunferencia trigonométrica, determine cos 90°.",
+            "alternativas": [
+              "−1",
+              "0",
+              "1",
+              "−0"
+            ],
+            "respuesta": 1,
+            "solucion": "Se ubica 90° en su cuadrante y se toma la coordenada horizontal (coseno): 0.",
+            "explicacion": "Se ubica 90° en su cuadrante y se toma la coordenada horizontal (coseno): 0.",
+            "pasosMinimos": 2,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          }
+        ],
+        "avanzado": [
+          {
+            "id": "TRIGONOMETRIA-8-A-01",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "avanzado",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "En la circunferencia trigonométrica, determine cos 120°.",
+            "alternativas": [
+              "1",
+              "−1/2",
+              "√3/2",
+              "1/2"
+            ],
+            "respuesta": 1,
+            "solucion": "Se ubica 120° en su cuadrante y se toma la coordenada horizontal (coseno): −1/2.",
+            "explicacion": "Se ubica 120° en su cuadrante y se toma la coordenada horizontal (coseno): −1/2.",
+            "pasosMinimos": 3,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          },
+          {
+            "id": "TRIGONOMETRIA-8-A-02",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "avanzado",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "En la circunferencia trigonométrica, determine cos 135°.",
+            "alternativas": [
+              "−√2/2",
+              "√2/2",
+              "1",
+              "0"
+            ],
+            "respuesta": 0,
+            "solucion": "Se ubica 135° en su cuadrante y se toma la coordenada horizontal (coseno): −√2/2.",
+            "explicacion": "Se ubica 135° en su cuadrante y se toma la coordenada horizontal (coseno): −√2/2.",
+            "pasosMinimos": 3,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          },
+          {
+            "id": "TRIGONOMETRIA-8-A-03",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "avanzado",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "En la circunferencia trigonométrica, determine cos 150°.",
+            "alternativas": [
+              "1/2",
+              "√3/2",
+              "1",
+              "−√3/2"
+            ],
+            "respuesta": 3,
+            "solucion": "Se ubica 150° en su cuadrante y se toma la coordenada horizontal (coseno): −√3/2.",
+            "explicacion": "Se ubica 150° en su cuadrante y se toma la coordenada horizontal (coseno): −√3/2.",
+            "pasosMinimos": 3,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          },
+          {
+            "id": "TRIGONOMETRIA-8-A-04",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "avanzado",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "En la circunferencia trigonométrica, determine cos 180°.",
+            "alternativas": [
+              "1",
+              "2",
+              "−1",
+              "0"
+            ],
+            "respuesta": 2,
+            "solucion": "Se ubica 180° en su cuadrante y se toma la coordenada horizontal (coseno): −1.",
+            "explicacion": "Se ubica 180° en su cuadrante y se toma la coordenada horizontal (coseno): −1.",
+            "pasosMinimos": 3,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          },
+          {
+            "id": "TRIGONOMETRIA-8-A-05",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "avanzado",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "En la circunferencia trigonométrica, determine cos 210°.",
+            "alternativas": [
+              "1",
+              "−√3/2",
+              "−1/2",
+              "√3/2"
+            ],
+            "respuesta": 1,
+            "solucion": "Se ubica 210° en su cuadrante y se toma la coordenada horizontal (coseno): −√3/2.",
+            "explicacion": "Se ubica 210° en su cuadrante y se toma la coordenada horizontal (coseno): −√3/2.",
+            "pasosMinimos": 3,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          },
+          {
+            "id": "TRIGONOMETRIA-8-A-06",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "avanzado",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "En la circunferencia trigonométrica, determine cos 225°.",
+            "alternativas": [
+              "−√2/2",
+              "√2/2",
+              "1",
+              "0"
+            ],
+            "respuesta": 0,
+            "solucion": "Se ubica 225° en su cuadrante y se toma la coordenada horizontal (coseno): −√2/2.",
+            "explicacion": "Se ubica 225° en su cuadrante y se toma la coordenada horizontal (coseno): −√2/2.",
+            "pasosMinimos": 3,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          },
+          {
+            "id": "TRIGONOMETRIA-8-A-07",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "avanzado",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "En la circunferencia trigonométrica, determine cos 240°.",
+            "alternativas": [
+              "−√3/2",
+              "1/2",
+              "1",
+              "−1/2"
+            ],
+            "respuesta": 3,
+            "solucion": "Se ubica 240° en su cuadrante y se toma la coordenada horizontal (coseno): −1/2.",
+            "explicacion": "Se ubica 240° en su cuadrante y se toma la coordenada horizontal (coseno): −1/2.",
+            "pasosMinimos": 3,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          },
+          {
+            "id": "TRIGONOMETRIA-8-A-08",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "avanzado",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "En la circunferencia trigonométrica, determine cos 270°.",
+            "alternativas": [
+              "−0",
+              "1",
+              "0",
+              "−1"
+            ],
+            "respuesta": 2,
+            "solucion": "Se ubica 270° en su cuadrante y se toma la coordenada horizontal (coseno): 0.",
+            "explicacion": "Se ubica 270° en su cuadrante y se toma la coordenada horizontal (coseno): 0.",
+            "pasosMinimos": 3,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          },
+          {
+            "id": "TRIGONOMETRIA-8-A-09",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "avanzado",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "En la circunferencia trigonométrica, determine cos 300°.",
+            "alternativas": [
+              "1",
+              "1/2",
+              "−√3/2",
+              "−1/2"
+            ],
+            "respuesta": 1,
+            "solucion": "Se ubica 300° en su cuadrante y se toma la coordenada horizontal (coseno): 1/2.",
+            "explicacion": "Se ubica 300° en su cuadrante y se toma la coordenada horizontal (coseno): 1/2.",
+            "pasosMinimos": 3,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          },
+          {
+            "id": "TRIGONOMETRIA-8-A-10",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "avanzado",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "En la circunferencia trigonométrica, determine cos 315°.",
+            "alternativas": [
+              "√2/2",
+              "−√2/2",
+              "1",
+              "0"
+            ],
+            "respuesta": 0,
+            "solucion": "Se ubica 315° en su cuadrante y se toma la coordenada horizontal (coseno): √2/2.",
+            "explicacion": "Se ubica 315° en su cuadrante y se toma la coordenada horizontal (coseno): √2/2.",
+            "pasosMinimos": 3,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          }
+        ],
+        "admision": [
+          {
+            "id": "TRIGONOMETRIA-8-R-01",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones en formato de admisión",
+            "pregunta": "Para θ=0°, ¿cuál es el signo de senθ·cosθ?",
+            "alternativas": [
+              "cero",
+              "positivo",
+              "negativo",
+              "no definido"
+            ],
+            "respuesta": 0,
+            "solucion": "Los signos del seno y coseno en 0° determinan que el producto sea cero.",
+            "explicacion": "Los signos del seno y coseno en 0° determinan que el producto sea cero.",
+            "pasosMinimos": 4,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          },
+          {
+            "id": "TRIGONOMETRIA-8-R-02",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones en formato de admisión",
+            "pregunta": "Para θ=30°, ¿cuál es el signo de senθ·cosθ?",
+            "alternativas": [
+              "negativo",
+              "cero",
+              "no definido",
+              "positivo"
+            ],
+            "respuesta": 3,
+            "solucion": "Los signos del seno y coseno en 30° determinan que el producto sea positivo.",
+            "explicacion": "Los signos del seno y coseno en 30° determinan que el producto sea positivo.",
+            "pasosMinimos": 4,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          },
+          {
+            "id": "TRIGONOMETRIA-8-R-03",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones en formato de admisión",
+            "pregunta": "Para θ=45°, ¿cuál es el signo de senθ·cosθ?",
+            "alternativas": [
+              "cero",
+              "no definido",
+              "positivo",
+              "negativo"
+            ],
+            "respuesta": 2,
+            "solucion": "Los signos del seno y coseno en 45° determinan que el producto sea positivo.",
+            "explicacion": "Los signos del seno y coseno en 45° determinan que el producto sea positivo.",
+            "pasosMinimos": 4,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          },
+          {
+            "id": "TRIGONOMETRIA-8-R-04",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones en formato de admisión",
+            "pregunta": "Para θ=60°, ¿cuál es el signo de senθ·cosθ?",
+            "alternativas": [
+              "no definido",
+              "positivo",
+              "negativo",
+              "cero"
+            ],
+            "respuesta": 1,
+            "solucion": "Los signos del seno y coseno en 60° determinan que el producto sea positivo.",
+            "explicacion": "Los signos del seno y coseno en 60° determinan que el producto sea positivo.",
+            "pasosMinimos": 4,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          },
+          {
+            "id": "TRIGONOMETRIA-8-R-05",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones en formato de admisión",
+            "pregunta": "Para θ=90°, ¿cuál es el signo de senθ·cosθ?",
+            "alternativas": [
+              "cero",
+              "positivo",
+              "negativo",
+              "no definido"
+            ],
+            "respuesta": 0,
+            "solucion": "Los signos del seno y coseno en 90° determinan que el producto sea cero.",
+            "explicacion": "Los signos del seno y coseno en 90° determinan que el producto sea cero.",
+            "pasosMinimos": 4,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          },
+          {
+            "id": "TRIGONOMETRIA-8-R-06",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones en formato de admisión",
+            "pregunta": "Para θ=120°, ¿cuál es el signo de senθ·cosθ?",
+            "alternativas": [
+              "positivo",
+              "cero",
+              "no definido",
+              "negativo"
+            ],
+            "respuesta": 3,
+            "solucion": "Los signos del seno y coseno en 120° determinan que el producto sea negativo.",
+            "explicacion": "Los signos del seno y coseno en 120° determinan que el producto sea negativo.",
+            "pasosMinimos": 4,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          },
+          {
+            "id": "TRIGONOMETRIA-8-R-07",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones en formato de admisión",
+            "pregunta": "Para θ=135°, ¿cuál es el signo de senθ·cosθ?",
+            "alternativas": [
+              "cero",
+              "no definido",
+              "negativo",
+              "positivo"
+            ],
+            "respuesta": 2,
+            "solucion": "Los signos del seno y coseno en 135° determinan que el producto sea negativo.",
+            "explicacion": "Los signos del seno y coseno en 135° determinan que el producto sea negativo.",
+            "pasosMinimos": 4,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          },
+          {
+            "id": "TRIGONOMETRIA-8-R-08",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones en formato de admisión",
+            "pregunta": "Para θ=150°, ¿cuál es el signo de senθ·cosθ?",
+            "alternativas": [
+              "no definido",
+              "negativo",
+              "positivo",
+              "cero"
+            ],
+            "respuesta": 1,
+            "solucion": "Los signos del seno y coseno en 150° determinan que el producto sea negativo.",
+            "explicacion": "Los signos del seno y coseno en 150° determinan que el producto sea negativo.",
+            "pasosMinimos": 4,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          },
+          {
+            "id": "TRIGONOMETRIA-8-R-09",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones en formato de admisión",
+            "pregunta": "Para θ=180°, ¿cuál es el signo de senθ·cosθ?",
+            "alternativas": [
+              "negativo",
+              "positivo",
+              "cero",
+              "no definido"
+            ],
+            "respuesta": 0,
+            "solucion": "Los signos del seno y coseno en 180° determinan que el producto sea negativo.",
+            "explicacion": "Los signos del seno y coseno en 180° determinan que el producto sea negativo.",
+            "pasosMinimos": 4,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          },
+          {
+            "id": "TRIGONOMETRIA-8-R-10",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones en formato de admisión",
+            "pregunta": "Para θ=210°, ¿cuál es el signo de senθ·cosθ?",
+            "alternativas": [
+              "negativo",
+              "cero",
+              "no definido",
+              "positivo"
+            ],
+            "respuesta": 3,
+            "solucion": "Los signos del seno y coseno en 210° determinan que el producto sea positivo.",
+            "explicacion": "Los signos del seno y coseno en 210° determinan que el producto sea positivo.",
+            "pasosMinimos": 4,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          },
+          {
+            "id": "TRIGONOMETRIA-8-R-11",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones en formato de admisión",
+            "pregunta": "Para θ=225°, ¿cuál es el signo de senθ·cosθ?",
+            "alternativas": [
+              "cero",
+              "no definido",
+              "positivo",
+              "negativo"
+            ],
+            "respuesta": 2,
+            "solucion": "Los signos del seno y coseno en 225° determinan que el producto sea positivo.",
+            "explicacion": "Los signos del seno y coseno en 225° determinan que el producto sea positivo.",
+            "pasosMinimos": 4,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          },
+          {
+            "id": "TRIGONOMETRIA-8-R-12",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones en formato de admisión",
+            "pregunta": "Para θ=240°, ¿cuál es el signo de senθ·cosθ?",
+            "alternativas": [
+              "no definido",
+              "positivo",
+              "negativo",
+              "cero"
+            ],
+            "respuesta": 1,
+            "solucion": "Los signos del seno y coseno en 240° determinan que el producto sea positivo.",
+            "explicacion": "Los signos del seno y coseno en 240° determinan que el producto sea positivo.",
+            "pasosMinimos": 4,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          },
+          {
+            "id": "TRIGONOMETRIA-8-R-13",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones en formato de admisión",
+            "pregunta": "Para θ=270°, ¿cuál es el signo de senθ·cosθ?",
+            "alternativas": [
+              "negativo",
+              "positivo",
+              "cero",
+              "no definido"
+            ],
+            "respuesta": 0,
+            "solucion": "Los signos del seno y coseno en 270° determinan que el producto sea negativo.",
+            "explicacion": "Los signos del seno y coseno en 270° determinan que el producto sea negativo.",
+            "pasosMinimos": 4,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          },
+          {
+            "id": "TRIGONOMETRIA-8-R-14",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones en formato de admisión",
+            "pregunta": "Para θ=300°, ¿cuál es el signo de senθ·cosθ?",
+            "alternativas": [
+              "positivo",
+              "cero",
+              "no definido",
+              "negativo"
+            ],
+            "respuesta": 3,
+            "solucion": "Los signos del seno y coseno en 300° determinan que el producto sea negativo.",
+            "explicacion": "Los signos del seno y coseno en 300° determinan que el producto sea negativo.",
+            "pasosMinimos": 4,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          },
+          {
+            "id": "TRIGONOMETRIA-8-R-15",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Circunferencia trigonométrica y reducción angular",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones en formato de admisión",
+            "pregunta": "Para θ=315°, ¿cuál es el signo de senθ·cosθ?",
+            "alternativas": [
+              "cero",
+              "no definido",
+              "negativo",
+              "positivo"
+            ],
+            "respuesta": 2,
+            "solucion": "Los signos del seno y coseno en 315° determinan que el producto sea negativo.",
+            "explicacion": "Los signos del seno y coseno en 315° determinan que el producto sea negativo.",
+            "pasosMinimos": 4,
+            "fuenteReferencia": "04 Circunferencia trigonométrica.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial"
+          }
+        ]
+      }
+    },
+    {
+      "id": "trigonometria-9",
+      "titulo": "Gráficas y transformaciones trigonométricas",
+      "subarea": "Matemática",
+      "duracion": "45 min",
+      "teoria": "Cobertura reconstruida desde 08 Transformaciones y 09 Funciones trigonométricas directas.pdf.",
+      "puntos": [
+        "Amplitud",
+        "Periodo",
+        "Rango y transformaciones"
+      ],
+      "fuenteTematica": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+      "distribucion": {
+        "basico": 10,
+        "intermedio": 10,
+        "avanzado": 10,
+        "admision": 15,
+        "total": 45
+      },
+      "niveles": {
+        "basico": [
+          {
+            "id": "TRIGONOMETRIA-9-B-01",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "basico",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "Observe la gráfica de y=1sen(2πx/2). ¿Cuál es su amplitud?",
+            "alternativas": [
+              "2",
+              "0",
+              "−1",
+              "1"
+            ],
+            "respuesta": 3,
+            "solucion": "En y=A·sen(Bx), la amplitud es |A|=1.",
+            "explicacion": "En y=A·sen(Bx), la amplitud es |A|=1.",
+            "pasosMinimos": 1,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "sen",
+              "amplitud": 1,
+              "periodoPi": 2
+            }
+          },
+          {
+            "id": "TRIGONOMETRIA-9-B-02",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "basico",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "La función cos representada tiene amplitud 1 y completa un ciclo cada 2π unidades. ¿Cuál es su periodo?",
+            "alternativas": [
+              "π/2",
+              "1π",
+              "2π",
+              "4π"
+            ],
+            "respuesta": 2,
+            "solucion": "El periodo es la longitud horizontal de un ciclo completo: 2π.",
+            "explicacion": "El periodo es la longitud horizontal de un ciclo completo: 2π.",
+            "pasosMinimos": 1,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "cos",
+              "amplitud": 1,
+              "periodoPi": 2
+            }
+          },
+          {
+            "id": "TRIGONOMETRIA-9-B-03",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "basico",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "Según la gráfica de amplitud 1 y periodo 2π, ¿entre qué valores oscila la función?",
+            "alternativas": [
+              "0",
+              "[−1, 1]",
+              "[0, 1]",
+              "[−2, 2]"
+            ],
+            "respuesta": 1,
+            "solucion": "Una función sinusoidal sin traslado vertical y amplitud 1 tiene rango [−1, 1].",
+            "explicacion": "Una función sinusoidal sin traslado vertical y amplitud 1 tiene rango [−1, 1].",
+            "pasosMinimos": 1,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "sen",
+              "amplitud": 1,
+              "periodoPi": 2
+            }
+          },
+          {
+            "id": "TRIGONOMETRIA-9-B-04",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "basico",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "Observe la gráfica de y=2cos(2πx/3). ¿Cuál es su amplitud?",
+            "alternativas": [
+              "2",
+              "3",
+              "4",
+              "0"
+            ],
+            "respuesta": 0,
+            "solucion": "En y=A·cos(Bx), la amplitud es |A|=2.",
+            "explicacion": "En y=A·cos(Bx), la amplitud es |A|=2.",
+            "pasosMinimos": 1,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "cos",
+              "amplitud": 2,
+              "periodoPi": 3
+            }
+          },
+          {
+            "id": "TRIGONOMETRIA-9-B-05",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "basico",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "La función sen representada tiene amplitud 2 y completa un ciclo cada 3π unidades. ¿Cuál es su periodo?",
+            "alternativas": [
+              "6π",
+              "π/3",
+              "2π",
+              "3π"
+            ],
+            "respuesta": 3,
+            "solucion": "El periodo es la longitud horizontal de un ciclo completo: 3π.",
+            "explicacion": "El periodo es la longitud horizontal de un ciclo completo: 3π.",
+            "pasosMinimos": 1,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "sen",
+              "amplitud": 2,
+              "periodoPi": 3
+            }
+          },
+          {
+            "id": "TRIGONOMETRIA-9-B-06",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "basico",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "Según la gráfica de amplitud 2 y periodo 3π, ¿entre qué valores oscila la función?",
+            "alternativas": [
+              "[−3, 3]",
+              "[−4, 4]",
+              "[−2, 2]",
+              "[0, 2]"
+            ],
+            "respuesta": 2,
+            "solucion": "Una función sinusoidal sin traslado vertical y amplitud 2 tiene rango [−2, 2].",
+            "explicacion": "Una función sinusoidal sin traslado vertical y amplitud 2 tiene rango [−2, 2].",
+            "pasosMinimos": 1,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "cos",
+              "amplitud": 2,
+              "periodoPi": 3
+            }
+          },
+          {
+            "id": "TRIGONOMETRIA-9-B-07",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "basico",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "Observe la gráfica de y=3sen(2πx/4). ¿Cuál es su amplitud?",
+            "alternativas": [
+              "0",
+              "3",
+              "4",
+              "6"
+            ],
+            "respuesta": 1,
+            "solucion": "En y=A·sen(Bx), la amplitud es |A|=3.",
+            "explicacion": "En y=A·sen(Bx), la amplitud es |A|=3.",
+            "pasosMinimos": 1,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "sen",
+              "amplitud": 3,
+              "periodoPi": 4
+            }
+          },
+          {
+            "id": "TRIGONOMETRIA-9-B-08",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "basico",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "La función cos representada tiene amplitud 3 y completa un ciclo cada 4π unidades. ¿Cuál es su periodo?",
+            "alternativas": [
+              "4π",
+              "8π",
+              "π/4",
+              "3π"
+            ],
+            "respuesta": 0,
+            "solucion": "El periodo es la longitud horizontal de un ciclo completo: 4π.",
+            "explicacion": "El periodo es la longitud horizontal de un ciclo completo: 4π.",
+            "pasosMinimos": 1,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "cos",
+              "amplitud": 3,
+              "periodoPi": 4
+            }
+          },
+          {
+            "id": "TRIGONOMETRIA-9-B-09",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "basico",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "Según la gráfica de amplitud 3 y periodo 4π, ¿entre qué valores oscila la función?",
+            "alternativas": [
+              "[0, 3]",
+              "[−4, 4]",
+              "[−6, 6]",
+              "[−3, 3]"
+            ],
+            "respuesta": 3,
+            "solucion": "Una función sinusoidal sin traslado vertical y amplitud 3 tiene rango [−3, 3].",
+            "explicacion": "Una función sinusoidal sin traslado vertical y amplitud 3 tiene rango [−3, 3].",
+            "pasosMinimos": 1,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "sen",
+              "amplitud": 3,
+              "periodoPi": 4
+            }
+          },
+          {
+            "id": "TRIGONOMETRIA-9-B-10",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "basico",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "Observe la gráfica de y=4cos(2πx/5). ¿Cuál es su amplitud?",
+            "alternativas": [
+              "8",
+              "0",
+              "4",
+              "5"
+            ],
+            "respuesta": 2,
+            "solucion": "En y=A·cos(Bx), la amplitud es |A|=4.",
+            "explicacion": "En y=A·cos(Bx), la amplitud es |A|=4.",
+            "pasosMinimos": 1,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "cos",
+              "amplitud": 4,
+              "periodoPi": 5
+            }
+          }
+        ],
+        "intermedio": [
+          {
+            "id": "TRIGONOMETRIA-9-I-01",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "intermedio",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "La función sen representada tiene amplitud 4 y completa un ciclo cada 5π unidades. ¿Cuál es su periodo?",
+            "alternativas": [
+              "π/5",
+              "4π",
+              "5π",
+              "10π"
+            ],
+            "respuesta": 2,
+            "solucion": "El periodo es la longitud horizontal de un ciclo completo: 5π.",
+            "explicacion": "El periodo es la longitud horizontal de un ciclo completo: 5π.",
+            "pasosMinimos": 2,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "sen",
+              "amplitud": 4,
+              "periodoPi": 5
+            }
+          },
+          {
+            "id": "TRIGONOMETRIA-9-I-02",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "intermedio",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "Según la gráfica de amplitud 4 y periodo 5π, ¿entre qué valores oscila la función?",
+            "alternativas": [
+              "[−8, 8]",
+              "[−4, 4]",
+              "[0, 4]",
+              "[−5, 5]"
+            ],
+            "respuesta": 1,
+            "solucion": "Una función sinusoidal sin traslado vertical y amplitud 4 tiene rango [−4, 4].",
+            "explicacion": "Una función sinusoidal sin traslado vertical y amplitud 4 tiene rango [−4, 4].",
+            "pasosMinimos": 2,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "cos",
+              "amplitud": 4,
+              "periodoPi": 5
+            }
+          },
+          {
+            "id": "TRIGONOMETRIA-9-I-03",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "intermedio",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "Observe la gráfica de y=5sen(2πx/1). ¿Cuál es su amplitud?",
+            "alternativas": [
+              "5",
+              "6",
+              "1",
+              "10"
+            ],
+            "respuesta": 0,
+            "solucion": "En y=A·sen(Bx), la amplitud es |A|=5.",
+            "explicacion": "En y=A·sen(Bx), la amplitud es |A|=5.",
+            "pasosMinimos": 2,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "sen",
+              "amplitud": 5,
+              "periodoPi": 1
+            }
+          },
+          {
+            "id": "TRIGONOMETRIA-9-I-04",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "intermedio",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "La función cos representada tiene amplitud 5 y completa un ciclo cada 1π unidades. ¿Cuál es su periodo?",
+            "alternativas": [
+              "2π",
+              "π/1",
+              "5π",
+              "1π"
+            ],
+            "respuesta": 3,
+            "solucion": "El periodo es la longitud horizontal de un ciclo completo: 1π.",
+            "explicacion": "El periodo es la longitud horizontal de un ciclo completo: 1π.",
+            "pasosMinimos": 2,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "cos",
+              "amplitud": 5,
+              "periodoPi": 1
+            }
+          },
+          {
+            "id": "TRIGONOMETRIA-9-I-05",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "intermedio",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "Según la gráfica de amplitud 5 y periodo 1π, ¿entre qué valores oscila la función?",
+            "alternativas": [
+              "[−1, 1]",
+              "[−10, 10]",
+              "[−5, 5]",
+              "[0, 5]"
+            ],
+            "respuesta": 2,
+            "solucion": "Una función sinusoidal sin traslado vertical y amplitud 5 tiene rango [−5, 5].",
+            "explicacion": "Una función sinusoidal sin traslado vertical y amplitud 5 tiene rango [−5, 5].",
+            "pasosMinimos": 2,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "sen",
+              "amplitud": 5,
+              "periodoPi": 1
+            }
+          },
+          {
+            "id": "TRIGONOMETRIA-9-I-06",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "intermedio",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "Observe la gráfica de y=6cos(2πx/2). ¿Cuál es su amplitud?",
+            "alternativas": [
+              "12",
+              "6",
+              "7",
+              "2"
+            ],
+            "respuesta": 1,
+            "solucion": "En y=A·cos(Bx), la amplitud es |A|=6.",
+            "explicacion": "En y=A·cos(Bx), la amplitud es |A|=6.",
+            "pasosMinimos": 2,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "cos",
+              "amplitud": 6,
+              "periodoPi": 2
+            }
+          },
+          {
+            "id": "TRIGONOMETRIA-9-I-07",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "intermedio",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "La función sen representada tiene amplitud 6 y completa un ciclo cada 2π unidades. ¿Cuál es su periodo?",
+            "alternativas": [
+              "2π",
+              "4π",
+              "π/2",
+              "6π"
+            ],
+            "respuesta": 0,
+            "solucion": "El periodo es la longitud horizontal de un ciclo completo: 2π.",
+            "explicacion": "El periodo es la longitud horizontal de un ciclo completo: 2π.",
+            "pasosMinimos": 2,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "sen",
+              "amplitud": 6,
+              "periodoPi": 2
+            }
+          },
+          {
+            "id": "TRIGONOMETRIA-9-I-08",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "intermedio",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "Según la gráfica de amplitud 6 y periodo 2π, ¿entre qué valores oscila la función?",
+            "alternativas": [
+              "[0, 6]",
+              "[−2, 2]",
+              "[−12, 12]",
+              "[−6, 6]"
+            ],
+            "respuesta": 3,
+            "solucion": "Una función sinusoidal sin traslado vertical y amplitud 6 tiene rango [−6, 6].",
+            "explicacion": "Una función sinusoidal sin traslado vertical y amplitud 6 tiene rango [−6, 6].",
+            "pasosMinimos": 2,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "cos",
+              "amplitud": 6,
+              "periodoPi": 2
+            }
+          },
+          {
+            "id": "TRIGONOMETRIA-9-I-09",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "intermedio",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "Observe la gráfica de y=7sen(2πx/3). ¿Cuál es su amplitud?",
+            "alternativas": [
+              "3",
+              "14",
+              "7",
+              "8"
+            ],
+            "respuesta": 2,
+            "solucion": "En y=A·sen(Bx), la amplitud es |A|=7.",
+            "explicacion": "En y=A·sen(Bx), la amplitud es |A|=7.",
+            "pasosMinimos": 2,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "sen",
+              "amplitud": 7,
+              "periodoPi": 3
+            }
+          },
+          {
+            "id": "TRIGONOMETRIA-9-I-10",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "intermedio",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "La función cos representada tiene amplitud 7 y completa un ciclo cada 3π unidades. ¿Cuál es su periodo?",
+            "alternativas": [
+              "7π",
+              "3π",
+              "6π",
+              "π/3"
+            ],
+            "respuesta": 1,
+            "solucion": "El periodo es la longitud horizontal de un ciclo completo: 3π.",
+            "explicacion": "El periodo es la longitud horizontal de un ciclo completo: 3π.",
+            "pasosMinimos": 2,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "cos",
+              "amplitud": 7,
+              "periodoPi": 3
+            }
+          }
+        ],
+        "avanzado": [
+          {
+            "id": "TRIGONOMETRIA-9-A-01",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "avanzado",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "Según la gráfica de amplitud 7 y periodo 3π, ¿entre qué valores oscila la función?",
+            "alternativas": [
+              "[−14, 14]",
+              "[−7, 7]",
+              "[0, 7]",
+              "[−3, 3]"
+            ],
+            "respuesta": 1,
+            "solucion": "Una función sinusoidal sin traslado vertical y amplitud 7 tiene rango [−7, 7].",
+            "explicacion": "Una función sinusoidal sin traslado vertical y amplitud 7 tiene rango [−7, 7].",
+            "pasosMinimos": 3,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "sen",
+              "amplitud": 7,
+              "periodoPi": 3
+            }
+          },
+          {
+            "id": "TRIGONOMETRIA-9-A-02",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "avanzado",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "Observe la gráfica de y=8cos(2πx/4). ¿Cuál es su amplitud?",
+            "alternativas": [
+              "8",
+              "9",
+              "4",
+              "16"
+            ],
+            "respuesta": 0,
+            "solucion": "En y=A·cos(Bx), la amplitud es |A|=8.",
+            "explicacion": "En y=A·cos(Bx), la amplitud es |A|=8.",
+            "pasosMinimos": 3,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "cos",
+              "amplitud": 8,
+              "periodoPi": 4
+            }
+          },
+          {
+            "id": "TRIGONOMETRIA-9-A-03",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "avanzado",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "La función sen representada tiene amplitud 8 y completa un ciclo cada 4π unidades. ¿Cuál es su periodo?",
+            "alternativas": [
+              "8π",
+              "π/4",
+              "0",
+              "4π"
+            ],
+            "respuesta": 3,
+            "solucion": "El periodo es la longitud horizontal de un ciclo completo: 4π.",
+            "explicacion": "El periodo es la longitud horizontal de un ciclo completo: 4π.",
+            "pasosMinimos": 3,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "sen",
+              "amplitud": 8,
+              "periodoPi": 4
+            }
+          },
+          {
+            "id": "TRIGONOMETRIA-9-A-04",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "avanzado",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "Según la gráfica de amplitud 8 y periodo 4π, ¿entre qué valores oscila la función?",
+            "alternativas": [
+              "[−4, 4]",
+              "[−16, 16]",
+              "[−8, 8]",
+              "[0, 8]"
+            ],
+            "respuesta": 2,
+            "solucion": "Una función sinusoidal sin traslado vertical y amplitud 8 tiene rango [−8, 8].",
+            "explicacion": "Una función sinusoidal sin traslado vertical y amplitud 8 tiene rango [−8, 8].",
+            "pasosMinimos": 3,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "cos",
+              "amplitud": 8,
+              "periodoPi": 4
+            }
+          },
+          {
+            "id": "TRIGONOMETRIA-9-A-05",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "avanzado",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "Observe la gráfica de y=9sen(2πx/5). ¿Cuál es su amplitud?",
+            "alternativas": [
+              "18",
+              "9",
+              "10",
+              "5"
+            ],
+            "respuesta": 1,
+            "solucion": "En y=A·sen(Bx), la amplitud es |A|=9.",
+            "explicacion": "En y=A·sen(Bx), la amplitud es |A|=9.",
+            "pasosMinimos": 3,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "sen",
+              "amplitud": 9,
+              "periodoPi": 5
+            }
+          },
+          {
+            "id": "TRIGONOMETRIA-9-A-06",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "avanzado",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "La función cos representada tiene amplitud 9 y completa un ciclo cada 5π unidades. ¿Cuál es su periodo?",
+            "alternativas": [
+              "5π",
+              "10π",
+              "π/5",
+              "9π"
+            ],
+            "respuesta": 0,
+            "solucion": "El periodo es la longitud horizontal de un ciclo completo: 5π.",
+            "explicacion": "El periodo es la longitud horizontal de un ciclo completo: 5π.",
+            "pasosMinimos": 3,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "cos",
+              "amplitud": 9,
+              "periodoPi": 5
+            }
+          },
+          {
+            "id": "TRIGONOMETRIA-9-A-07",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "avanzado",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "Según la gráfica de amplitud 9 y periodo 5π, ¿entre qué valores oscila la función?",
+            "alternativas": [
+              "[0, 9]",
+              "[−5, 5]",
+              "[−18, 18]",
+              "[−9, 9]"
+            ],
+            "respuesta": 3,
+            "solucion": "Una función sinusoidal sin traslado vertical y amplitud 9 tiene rango [−9, 9].",
+            "explicacion": "Una función sinusoidal sin traslado vertical y amplitud 9 tiene rango [−9, 9].",
+            "pasosMinimos": 3,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "sen",
+              "amplitud": 9,
+              "periodoPi": 5
+            }
+          },
+          {
+            "id": "TRIGONOMETRIA-9-A-08",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "avanzado",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "Observe la gráfica de y=10cos(2πx/1). ¿Cuál es su amplitud?",
+            "alternativas": [
+              "1",
+              "20",
+              "10",
+              "11"
+            ],
+            "respuesta": 2,
+            "solucion": "En y=A·cos(Bx), la amplitud es |A|=10.",
+            "explicacion": "En y=A·cos(Bx), la amplitud es |A|=10.",
+            "pasosMinimos": 3,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "cos",
+              "amplitud": 10,
+              "periodoPi": 1
+            }
+          },
+          {
+            "id": "TRIGONOMETRIA-9-A-09",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "avanzado",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "La función sen representada tiene amplitud 10 y completa un ciclo cada 1π unidades. ¿Cuál es su periodo?",
+            "alternativas": [
+              "10π",
+              "1π",
+              "2π",
+              "π/1"
+            ],
+            "respuesta": 1,
+            "solucion": "El periodo es la longitud horizontal de un ciclo completo: 1π.",
+            "explicacion": "El periodo es la longitud horizontal de un ciclo completo: 1π.",
+            "pasosMinimos": 3,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "sen",
+              "amplitud": 10,
+              "periodoPi": 1
+            }
+          },
+          {
+            "id": "TRIGONOMETRIA-9-A-10",
+            "universidadReferencia": "GENERAL",
+            "dificultad": "avanzado",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Aplica conceptos y verifica el procedimiento",
+            "pregunta": "Según la gráfica de amplitud 10 y periodo 1π, ¿entre qué valores oscila la función?",
+            "alternativas": [
+              "[−10, 10]",
+              "[0, 10]",
+              "[−1, 1]",
+              "[−20, 20]"
+            ],
+            "respuesta": 0,
+            "solucion": "Una función sinusoidal sin traslado vertical y amplitud 10 tiene rango [−10, 10].",
+            "explicacion": "Una función sinusoidal sin traslado vertical y amplitud 10 tiene rango [−10, 10].",
+            "pasosMinimos": 3,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "cos",
+              "amplitud": 10,
+              "periodoPi": 1
+            }
+          }
+        ],
+        "admision": [
+          {
+            "id": "TRIGONOMETRIA-9-R-01",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones en formato de admisión",
+            "pregunta": "Observe la gráfica de y=11sen(2πx/2). ¿Cuál es su amplitud?",
+            "alternativas": [
+              "11",
+              "12",
+              "2",
+              "22"
+            ],
+            "respuesta": 0,
+            "solucion": "En y=A·sen(Bx), la amplitud es |A|=11.",
+            "explicacion": "En y=A·sen(Bx), la amplitud es |A|=11.",
+            "pasosMinimos": 4,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "sen",
+              "amplitud": 11,
+              "periodoPi": 2
+            }
+          },
+          {
+            "id": "TRIGONOMETRIA-9-R-02",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones en formato de admisión",
+            "pregunta": "La función cos representada tiene amplitud 11 y completa un ciclo cada 2π unidades. ¿Cuál es su periodo?",
+            "alternativas": [
+              "4π",
+              "π/2",
+              "11π",
+              "2π"
+            ],
+            "respuesta": 3,
+            "solucion": "El periodo es la longitud horizontal de un ciclo completo: 2π.",
+            "explicacion": "El periodo es la longitud horizontal de un ciclo completo: 2π.",
+            "pasosMinimos": 4,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "cos",
+              "amplitud": 11,
+              "periodoPi": 2
+            }
+          },
+          {
+            "id": "TRIGONOMETRIA-9-R-03",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones en formato de admisión",
+            "pregunta": "Según la gráfica de amplitud 11 y periodo 2π, ¿entre qué valores oscila la función?",
+            "alternativas": [
+              "[−2, 2]",
+              "[−22, 22]",
+              "[−11, 11]",
+              "[0, 11]"
+            ],
+            "respuesta": 2,
+            "solucion": "Una función sinusoidal sin traslado vertical y amplitud 11 tiene rango [−11, 11].",
+            "explicacion": "Una función sinusoidal sin traslado vertical y amplitud 11 tiene rango [−11, 11].",
+            "pasosMinimos": 4,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "sen",
+              "amplitud": 11,
+              "periodoPi": 2
+            }
+          },
+          {
+            "id": "TRIGONOMETRIA-9-R-04",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones en formato de admisión",
+            "pregunta": "Observe la gráfica de y=12cos(2πx/3). ¿Cuál es su amplitud?",
+            "alternativas": [
+              "24",
+              "12",
+              "13",
+              "3"
+            ],
+            "respuesta": 1,
+            "solucion": "En y=A·cos(Bx), la amplitud es |A|=12.",
+            "explicacion": "En y=A·cos(Bx), la amplitud es |A|=12.",
+            "pasosMinimos": 4,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "cos",
+              "amplitud": 12,
+              "periodoPi": 3
+            }
+          },
+          {
+            "id": "TRIGONOMETRIA-9-R-05",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones en formato de admisión",
+            "pregunta": "La función sen representada tiene amplitud 12 y completa un ciclo cada 3π unidades. ¿Cuál es su periodo?",
+            "alternativas": [
+              "3π",
+              "6π",
+              "π/3",
+              "12π"
+            ],
+            "respuesta": 0,
+            "solucion": "El periodo es la longitud horizontal de un ciclo completo: 3π.",
+            "explicacion": "El periodo es la longitud horizontal de un ciclo completo: 3π.",
+            "pasosMinimos": 4,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "sen",
+              "amplitud": 12,
+              "periodoPi": 3
+            }
+          },
+          {
+            "id": "TRIGONOMETRIA-9-R-06",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones en formato de admisión",
+            "pregunta": "Según la gráfica de amplitud 12 y periodo 3π, ¿entre qué valores oscila la función?",
+            "alternativas": [
+              "[0, 12]",
+              "[−3, 3]",
+              "[−24, 24]",
+              "[−12, 12]"
+            ],
+            "respuesta": 3,
+            "solucion": "Una función sinusoidal sin traslado vertical y amplitud 12 tiene rango [−12, 12].",
+            "explicacion": "Una función sinusoidal sin traslado vertical y amplitud 12 tiene rango [−12, 12].",
+            "pasosMinimos": 4,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "cos",
+              "amplitud": 12,
+              "periodoPi": 3
+            }
+          },
+          {
+            "id": "TRIGONOMETRIA-9-R-07",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones en formato de admisión",
+            "pregunta": "Observe la gráfica de y=13sen(2πx/4). ¿Cuál es su amplitud?",
+            "alternativas": [
+              "4",
+              "26",
+              "13",
+              "14"
+            ],
+            "respuesta": 2,
+            "solucion": "En y=A·sen(Bx), la amplitud es |A|=13.",
+            "explicacion": "En y=A·sen(Bx), la amplitud es |A|=13.",
+            "pasosMinimos": 4,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "sen",
+              "amplitud": 13,
+              "periodoPi": 4
+            }
+          },
+          {
+            "id": "TRIGONOMETRIA-9-R-08",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones en formato de admisión",
+            "pregunta": "La función cos representada tiene amplitud 13 y completa un ciclo cada 4π unidades. ¿Cuál es su periodo?",
+            "alternativas": [
+              "13π",
+              "4π",
+              "8π",
+              "π/4"
+            ],
+            "respuesta": 1,
+            "solucion": "El periodo es la longitud horizontal de un ciclo completo: 4π.",
+            "explicacion": "El periodo es la longitud horizontal de un ciclo completo: 4π.",
+            "pasosMinimos": 4,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "cos",
+              "amplitud": 13,
+              "periodoPi": 4
+            }
+          },
+          {
+            "id": "TRIGONOMETRIA-9-R-09",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones en formato de admisión",
+            "pregunta": "Según la gráfica de amplitud 13 y periodo 4π, ¿entre qué valores oscila la función?",
+            "alternativas": [
+              "[−13, 13]",
+              "[0, 13]",
+              "[−4, 4]",
+              "[−26, 26]"
+            ],
+            "respuesta": 0,
+            "solucion": "Una función sinusoidal sin traslado vertical y amplitud 13 tiene rango [−13, 13].",
+            "explicacion": "Una función sinusoidal sin traslado vertical y amplitud 13 tiene rango [−13, 13].",
+            "pasosMinimos": 4,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "sen",
+              "amplitud": 13,
+              "periodoPi": 4
+            }
+          },
+          {
+            "id": "TRIGONOMETRIA-9-R-10",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones en formato de admisión",
+            "pregunta": "Observe la gráfica de y=14cos(2πx/5). ¿Cuál es su amplitud?",
+            "alternativas": [
+              "15",
+              "5",
+              "28",
+              "14"
+            ],
+            "respuesta": 3,
+            "solucion": "En y=A·cos(Bx), la amplitud es |A|=14.",
+            "explicacion": "En y=A·cos(Bx), la amplitud es |A|=14.",
+            "pasosMinimos": 4,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "cos",
+              "amplitud": 14,
+              "periodoPi": 5
+            }
+          },
+          {
+            "id": "TRIGONOMETRIA-9-R-11",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones en formato de admisión",
+            "pregunta": "La función sen representada tiene amplitud 14 y completa un ciclo cada 5π unidades. ¿Cuál es su periodo?",
+            "alternativas": [
+              "π/5",
+              "14π",
+              "5π",
+              "10π"
+            ],
+            "respuesta": 2,
+            "solucion": "El periodo es la longitud horizontal de un ciclo completo: 5π.",
+            "explicacion": "El periodo es la longitud horizontal de un ciclo completo: 5π.",
+            "pasosMinimos": 4,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "sen",
+              "amplitud": 14,
+              "periodoPi": 5
+            }
+          },
+          {
+            "id": "TRIGONOMETRIA-9-R-12",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones en formato de admisión",
+            "pregunta": "Según la gráfica de amplitud 14 y periodo 5π, ¿entre qué valores oscila la función?",
+            "alternativas": [
+              "[−28, 28]",
+              "[−14, 14]",
+              "[0, 14]",
+              "[−5, 5]"
+            ],
+            "respuesta": 1,
+            "solucion": "Una función sinusoidal sin traslado vertical y amplitud 14 tiene rango [−14, 14].",
+            "explicacion": "Una función sinusoidal sin traslado vertical y amplitud 14 tiene rango [−14, 14].",
+            "pasosMinimos": 4,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "cos",
+              "amplitud": 14,
+              "periodoPi": 5
+            }
+          },
+          {
+            "id": "TRIGONOMETRIA-9-R-13",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones en formato de admisión",
+            "pregunta": "Observe la gráfica de y=15sen(2πx/1). ¿Cuál es su amplitud?",
+            "alternativas": [
+              "15",
+              "16",
+              "1",
+              "30"
+            ],
+            "respuesta": 0,
+            "solucion": "En y=A·sen(Bx), la amplitud es |A|=15.",
+            "explicacion": "En y=A·sen(Bx), la amplitud es |A|=15.",
+            "pasosMinimos": 4,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "sen",
+              "amplitud": 15,
+              "periodoPi": 1
+            }
+          },
+          {
+            "id": "TRIGONOMETRIA-9-R-14",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones en formato de admisión",
+            "pregunta": "La función cos representada tiene amplitud 15 y completa un ciclo cada 1π unidades. ¿Cuál es su periodo?",
+            "alternativas": [
+              "2π",
+              "π/1",
+              "15π",
+              "1π"
+            ],
+            "respuesta": 3,
+            "solucion": "El periodo es la longitud horizontal de un ciclo completo: 1π.",
+            "explicacion": "El periodo es la longitud horizontal de un ciclo completo: 1π.",
+            "pasosMinimos": 4,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "cos",
+              "amplitud": 15,
+              "periodoPi": 1
+            }
+          },
+          {
+            "id": "TRIGONOMETRIA-9-R-15",
+            "universidadReferencia": "UNI",
+            "dificultad": "admision",
+            "tema": "Gráficas y transformaciones trigonométricas",
+            "subarea": "Matemática",
+            "competencia": "Integra condiciones en formato de admisión",
+            "pregunta": "Según la gráfica de amplitud 15 y periodo 1π, ¿entre qué valores oscila la función?",
+            "alternativas": [
+              "[−1, 1]",
+              "[−30, 30]",
+              "[−15, 15]",
+              "[0, 15]"
+            ],
+            "respuesta": 2,
+            "solucion": "Una función sinusoidal sin traslado vertical y amplitud 15 tiene rango [−15, 15].",
+            "explicacion": "Una función sinusoidal sin traslado vertical y amplitud 15 tiene rango [−15, 15].",
+            "pasosMinimos": 4,
+            "fuenteReferencia": "08 Transformaciones y 09 Funciones trigonométricas directas.pdf",
+            "alineacionUniversitaria": "Ejercicio original de UniPrep inspirado en la cobertura temática del material; no es pregunta oficial",
+            "figura": {
+              "tipo": "trigonometrica",
+              "funcion": "sen",
+              "amplitud": 15,
+              "periodoPi": 1
+            }
           }
         ]
       }
     }
   ],
-  "total": 280
+  "total": 405
 }

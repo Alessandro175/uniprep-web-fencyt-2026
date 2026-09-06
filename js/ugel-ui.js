@@ -1,5 +1,5 @@
 // =========================================================
-// UNIPREP 2 · EDICIÓN UGEL HARMONY 2026.20
+// UNIPREP 2 · EDICIÓN DAYLIGHT UNIVERSE 2026.23
 // Personalización visual integral, accesibilidad y lectura.
 // =========================================================
 (function () {
@@ -39,7 +39,11 @@
     {id:"grafito",nombre:"Grafito",preview:"radial-gradient(circle at 78% 18%,#a7b2c7 0 8%,transparent 30%),linear-gradient(145deg,#080a0e,#29364b)"},
     {id:"contraste",nombre:"Alto contraste",preview:"radial-gradient(circle at 78% 18%,#ffe25b 0 8%,transparent 30%),linear-gradient(145deg,#000,#161616)"},
     {id:"luz",nombre:"Cielo claro",preview:"radial-gradient(circle at 78% 18%,#8edcff 0 8%,transparent 30%),linear-gradient(145deg,#f8fbff,#dcecff)"},
-    {id:"papel",nombre:"Papel cálido",preview:"radial-gradient(circle at 78% 18%,#ffd37a 0 8%,transparent 30%),linear-gradient(145deg,#fffaf0,#f3e4c9)"}
+    {id:"papel",nombre:"Papel cálido",preview:"radial-gradient(circle at 78% 18%,#ffd37a 0 8%,transparent 30%),linear-gradient(145deg,#fffaf0,#f3e4c9)"},
+    {id:"menta",nombre:"Menta suave",preview:"radial-gradient(circle at 78% 18%,#66d9b3 0 8%,transparent 30%),linear-gradient(145deg,#f5fffb,#dff5ec)"},
+    {id:"lavanda",nombre:"Lavanda clara",preview:"radial-gradient(circle at 78% 18%,#a590ff 0 8%,transparent 30%),linear-gradient(145deg,#fcfaff,#e9e5ff)"},
+    {id:"amanecer",nombre:"Amanecer",preview:"radial-gradient(circle at 78% 18%,#ff9b7d 0 8%,transparent 30%),linear-gradient(145deg,#fffaf6,#ffe9df)"},
+    {id:"vibrante",nombre:"Academia vibrante",preview:"radial-gradient(circle at 78% 18%,#78e55d 0 8%,transparent 30%),linear-gradient(145deg,#f2f0ff,#dffaf1)"}
   ];
 
   const COMBINACIONES = [
@@ -48,7 +52,11 @@
     {id:"amazonia",nombre:"Amazonía",modo:"dark",preview:"linear-gradient(135deg,#0a3824,#164929)",valores:{fondo1:"#04130e",fondo2:"#0a2b1e",barra:"#051711",banner1:"#0a3824",banner2:"#164929",panel:"#0b2319",panel2:"#071912",acento:"#2dde9c",acento2:"#9bea64",texto:"#f2fff8",borde:"#3d765d"}},
     {id:"aurora",nombre:"Aurora",modo:"dark",preview:"linear-gradient(135deg,#481437,#472052)",valores:{fondo1:"#160917",fondo2:"#2d1028",barra:"#19091a",banner1:"#481437",banner2:"#472052",panel:"#261225",panel2:"#180c1a",acento:"#ff6fae",acento2:"#ffad68",texto:"#fff5fb",borde:"#8e557b"}},
     {id:"grafito",nombre:"Grafito",modo:"dark",preview:"linear-gradient(135deg,#202939,#18262d)",valores:{fondo1:"#07090d",fondo2:"#161c25",barra:"#080b10",banner1:"#202939",banner2:"#18262d",panel:"#151b24",panel2:"#0d1219",acento:"#a9b5c7",acento2:"#63d7e8",texto:"#f5f7fa",borde:"#556170"}},
-    {id:"cielo",nombre:"Cielo claro",modo:"light",preview:"linear-gradient(135deg,#e8ecff,#dff8f5)",valores:{fondo1:"#edf5ff",fondo2:"#f8fbff",barra:"#ffffff",banner1:"#e8ecff",banner2:"#dff8f5",panel:"#ffffff",panel2:"#edf2fa",acento:"#6657e8",acento2:"#078fc5",texto:"#17213a",borde:"#91a0b8"}}
+    {id:"cielo",nombre:"Cielo claro",modo:"light",preview:"linear-gradient(135deg,#eef4ff,#e6f7f6)",valores:{fondo1:"#f3f7ff",fondo2:"#edf8f7",barra:"#ffffff",banner1:"#eef0ff",banner2:"#e3f5f2",panel:"#ffffff",panel2:"#f2f5fa",acento:"#5c55d9",acento2:"#087f9f",texto:"#1b2940",borde:"#b3bfd0"}},
+    {id:"menta-clara",nombre:"Menta",modo:"light",preview:"linear-gradient(135deg,#effcf7,#dff4eb)",valores:{fondo1:"#f3fbf8",fondo2:"#eaf6f1",barra:"#ffffff",banner1:"#e8f8f1",banner2:"#dff1e9",panel:"#ffffff",panel2:"#edf5f1",acento:"#187b64",acento2:"#1686a0",texto:"#18342d",borde:"#afc9c0"}},
+    {id:"lavanda-clara",nombre:"Lavanda",modo:"light",preview:"linear-gradient(135deg,#f8f6ff,#eae6ff)",valores:{fondo1:"#faf9ff",fondo2:"#f0edff",barra:"#ffffff",banner1:"#f0edff",banner2:"#e8f3fb",panel:"#ffffff",panel2:"#f3f1fb",acento:"#6550c7",acento2:"#167d9d",texto:"#28233f",borde:"#c0b8d8"}},
+    {id:"amanecer-claro",nombre:"Amanecer",modo:"light",preview:"linear-gradient(135deg,#fff9f4,#ffe9df)",valores:{fondo1:"#fffaf7",fondo2:"#fff0e8",barra:"#ffffff",banner1:"#fff0e7",banner2:"#f8eef8",panel:"#ffffff",panel2:"#fbf2ed",acento:"#ad5261",acento2:"#99702b",texto:"#3c2928",borde:"#d5beb5"}},
+    {id:"academia-vibrante",nombre:"Academia",modo:"light",preview:"linear-gradient(135deg,#eeeaff,#dcf8ee)",valores:{fondo1:"#f3f1ff",fondo2:"#e8faf3",barra:"#ffffff",banner1:"#ebe7ff",banner2:"#d9f7ec",panel:"#ffffff",panel2:"#f1f4fb",acento:"#6653db",acento2:"#087d82",texto:"#18283b",borde:"#a8bdc7"}}
   ];
 
   let preferencias = cargarPreferencias();
@@ -201,13 +209,13 @@
 
     const acento = acentoLegibleEnClaro(p.acento);
     const acento2 = acentoLegibleEnClaro(p.acento2);
-    const fondo1 = mezclar("#f7f9fd", p.fondo1, .075);
-    const fondo2 = mezclar("#edf2f8", p.fondo2, .075);
-    const barra = mezclar("#fcfdff", p.barra, .06);
-    const banner1 = mezclar("#f0f2ff", p.banner1, .17);
-    const banner2 = mezclar("#eaf7f7", p.banner2, .17);
-    const panel = mezclar("#ffffff", p.panel, .045);
-    const panel2 = mezclar("#f2f6fa", p.panel2, .065);
+    const fondo1 = mezclar("#f8faff", mezclar(p.fondo1, acento, .18), .09);
+    const fondo2 = mezclar("#eef5f7", mezclar(p.fondo2, acento2, .18), .09);
+    const barra = mezclar("#ffffff", p.barra, .025);
+    const banner1 = mezclar("#ffffff", mezclar(p.banner1, acento, .38), .11);
+    const banner2 = mezclar("#ffffff", mezclar(p.banner2, acento2, .38), .11);
+    const panel = mezclar("#ffffff", p.panel, .018);
+    const panel2 = mezclar("#f3f6fa", mezclar(p.panel2, acento2, .08), .045);
     const texto = contraste(p.texto, panel) >= 6.5 ? p.texto : "#17233b";
     const borde = mezclar("#a9b6c9", p.borde, .18);
 
@@ -297,17 +305,21 @@
     document.body.dataset.reduceMotion = String(preferencias.reducirMovimiento);
     document.body.dataset.highContrast = String(preferencias.altoContraste);
     document.body.dataset.focusMode = String(preferencias.modoEnfoque);
-    document.body.dataset.hackerMode = String(preferencias.hyperdrive.hacker);
+    document.body.dataset.hackerMode = String(modoResuelto === "dark" && preferencias.hyperdrive.hacker);
     document.body.dataset.hyperCursor = String(preferencias.hyperdrive.cursor);
     document.body.dataset.hyperHud = String(preferencias.hyperdrive.hud);
     if (preferencias.tema === "custom") aplicarPaletaPersonalizada(modoResuelto);
     const colorTema = preferencias.tema === "custom" ? paletaParaModo(preferencias.paleta, modoResuelto).fondo1 :
       preferencias.tema === "amazonia" ? "#071812" : preferencias.tema === "oceano" ? "#061827" :
       preferencias.tema === "aurora" ? "#1b0a17" : preferencias.tema === "contraste" ? "#000000" :
-      preferencias.tema === "papel" ? "#fff8e9" : (modoResuelto === "light" || preferencias.tema === "luz") ? "#f4f8ff" : "#080c20";
+      preferencias.tema === "papel" ? "#fff8e9" : preferencias.tema === "menta" ? "#f3fbf8" :
+      preferencias.tema === "lavanda" ? "#faf9ff" : preferencias.tema === "amanecer" ? "#fffaf7" :
+      preferencias.tema === "vibrante" ? "#f3f7ff" :
+      (modoResuelto === "light" || preferencias.tema === "luz") ? "#f4f8ff" : "#080c20";
     document.querySelector('meta[name="theme-color"]')?.setAttribute("content", colorTema);
     actualizarControles();
     document.dispatchEvent(new CustomEvent("uniprep:hyperdrive-change", {detail:{...preferencias.hyperdrive}}));
+    document.dispatchEvent(new CustomEvent("uniprep:theme-change", {detail:{mode:modoResuelto, theme:preferencias.tema}}));
   }
 
   function escaparExpresion(valor) { return String(valor || "").replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); }
@@ -360,7 +372,7 @@
             <div class="ugel-builder-section"><div class="ugel-builder-title"><b>5. Imagen propia (opcional)</b><small>Se comprime y guarda para tu cuenta. Elige también dónde enfocarla.</small></div><div class="ugel-image-row"><label class="ugel-image-upload">＋ Elegir imagen<input type="file" accept="image/png,image/jpeg,image/webp" data-ugel-image hidden></label><button type="button" data-ugel-image-remove>Quitar imagen</button><span data-ugel-image-status>Sin imagen seleccionada</span></div><div class="ugel-position-row"><button type="button" data-ugel-position="top">Arriba</button><button type="button" data-ugel-position="center">Centro</button><button type="button" data-ugel-position="bottom">Abajo</button><button type="button" data-ugel-position="left">Izquierda</button><button type="button" data-ugel-position="right">Derecha</button></div></div>
             <div class="ugel-builder-footer"><button type="button" class="ugel-custom-reset" data-ugel-custom-reset>Restablecer solo mi paleta</button><button type="button" class="ugel-custom-apply" data-ugel-custom-apply>✓ Usar mi diseño</button></div>
           </section>
-          <div class="ugel-reading-settings"><section class="ugel-setting-card"><span class="ugel-setting-label">Tamaño de preguntas</span><div class="ugel-size-options"><button type="button" data-ugel-size="normal">A</button><button type="button" data-ugel-size="large">A+</button><button type="button" data-ugel-size="extra">A++</button></div><span class="ugel-setting-label ugel-spacing-label">Espaciado de lectura</span><div class="ugel-spacing-options"><button type="button" data-ugel-spacing="compacto">Compacto</button><button type="button" data-ugel-spacing="comodo">Cómodo</button><button type="button" data-ugel-spacing="amplio">Amplio</button></div></section><section class="ugel-setting-card"><span class="ugel-setting-label">Accesibilidad visual</span><div class="ugel-access-row"><span>Reducir animaciones</span><button class="ugel-switch" type="button" data-ugel-motion role="switch" aria-checked="false" aria-label="Reducir animaciones"></button></div><div class="ugel-access-row"><span>Contraste reforzado</span><button class="ugel-switch" type="button" data-ugel-contrast-toggle role="switch" aria-checked="false" aria-label="Reforzar contraste"></button></div><div class="ugel-access-row"><span>Modo enfoque</span><button class="ugel-switch" type="button" data-ugel-focus role="switch" aria-checked="false" aria-label="Ocultar distracciones visuales"></button></div></section><section class="ugel-setting-card ugel-hyperdrive-card"><span class="ugel-setting-label">Experiencia Hyperdrive</span><small>El modo Auto cuida la fluidez según la potencia de tu equipo.</small><div class="ugel-quality-options"><button type="button" data-ugel-quality="auto">Auto</button><button type="button" data-ugel-quality="lite">Ahorro</button><button type="button" data-ugel-quality="balanced">Fluido</button><button type="button" data-ugel-quality="ultra">Ultra</button></div><div class="ugel-access-row"><span>Modo Hacker</span><button class="ugel-switch" type="button" data-ugel-hacker role="switch" aria-checked="false" aria-label="Activar Modo Hacker"></button></div><div class="ugel-access-row"><span>Sonidos suaves</span><button class="ugel-switch" type="button" data-ugel-sound role="switch" aria-checked="false" aria-label="Activar sonidos suaves"></button></div><div class="ugel-access-row"><span>Panel de estado</span><button class="ugel-switch" type="button" data-ugel-hud role="switch" aria-checked="true" aria-label="Mostrar panel de estado Hyperdrive"></button></div><div class="ugel-access-row"><span>Luz interactiva</span><button class="ugel-switch" type="button" data-ugel-cursor role="switch" aria-checked="true" aria-label="Activar luz interactiva"></button></div></section></div>
+          <div class="ugel-reading-settings"><section class="ugel-setting-card"><span class="ugel-setting-label">Tamaño de preguntas</span><div class="ugel-size-options"><button type="button" data-ugel-size="normal">A</button><button type="button" data-ugel-size="large">A+</button><button type="button" data-ugel-size="extra">A++</button></div><span class="ugel-setting-label ugel-spacing-label">Espaciado de lectura</span><div class="ugel-spacing-options"><button type="button" data-ugel-spacing="compacto">Compacto</button><button type="button" data-ugel-spacing="comodo">Cómodo</button><button type="button" data-ugel-spacing="amplio">Amplio</button></div></section><section class="ugel-setting-card"><span class="ugel-setting-label">Accesibilidad visual</span><div class="ugel-access-row"><span>Reducir animaciones</span><button class="ugel-switch" type="button" data-ugel-motion role="switch" aria-checked="false" aria-label="Reducir animaciones"></button></div><div class="ugel-access-row"><span>Contraste reforzado</span><button class="ugel-switch" type="button" data-ugel-contrast-toggle role="switch" aria-checked="false" aria-label="Reforzar contraste"></button></div><div class="ugel-access-row"><span>Modo enfoque</span><button class="ugel-switch" type="button" data-ugel-focus role="switch" aria-checked="false" aria-label="Ocultar distracciones visuales"></button></div></section><section class="ugel-setting-card ugel-hyperdrive-card"><span class="ugel-setting-label">Rendimiento y efectos</span><small>El modo Auto cuida la fluidez según la potencia de tu equipo.</small><div class="ugel-quality-options"><button type="button" data-ugel-quality="auto">Auto</button><button type="button" data-ugel-quality="lite">Ahorro</button><button type="button" data-ugel-quality="balanced">Fluido</button><button type="button" data-ugel-quality="ultra">Ultra</button></div><div class="ugel-access-row"><span>Modo Hacker</span><button class="ugel-switch" type="button" data-ugel-hacker role="switch" aria-checked="false" aria-label="Activar Modo Hacker"></button></div><div class="ugel-access-row"><span>Sonidos suaves</span><button class="ugel-switch" type="button" data-ugel-sound role="switch" aria-checked="false" aria-label="Activar sonidos suaves"></button></div><div class="ugel-access-row"><span>Luz interactiva</span><button class="ugel-switch" type="button" data-ugel-cursor role="switch" aria-checked="true" aria-label="Activar luz interactiva"></button></div></section></div>
           <div class="ugel-personalizer-actions"><button class="ugel-reset-button" type="button" data-ugel-reset>Restablecer todo</button><button class="ugel-done-button" type="button" data-ugel-close>Guardar y cerrar</button></div>
         </div>
       </section>`;
@@ -372,7 +384,7 @@
     }));
     capa.querySelectorAll("[data-ugel-theme]").forEach(boton => boton.addEventListener("click", () => {
       preferencias.tema = boton.dataset.ugelTheme;
-      if (["luz", "papel"].includes(preferencias.tema)) preferencias.modo = "light";
+      if (["luz", "papel", "menta", "lavanda", "amanecer", "vibrante"].includes(preferencias.tema)) preferencias.modo = "light";
       if (preferencias.tema === "contraste") preferencias.altoContraste = true;
       guardarPreferencias(); aplicarPreferencias();
       mostrarToast(`Fondo «${TEMAS.find(tema => tema.id === preferencias.tema)?.nombre}» activado.`);
@@ -429,7 +441,12 @@
       preferencias.modoEnfoque = !preferencias.modoEnfoque; guardarPreferencias(); aplicarPreferencias();
     });
     capa.querySelectorAll("[data-ugel-quality]").forEach(boton => boton.addEventListener("click", () => actualizarHyperdrive({quality:boton.dataset.ugelQuality})));
-    capa.querySelector("[data-ugel-hacker]")?.addEventListener("click", () => actualizarHyperdrive({hacker:!preferencias.hyperdrive.hacker}));
+    capa.querySelector("[data-ugel-hacker]")?.addEventListener("click", () => {
+      const activar = !preferencias.hyperdrive.hacker;
+      if (activar && resolverModoColor() === "light") preferencias.modo = "dark";
+      actualizarHyperdrive({hacker:activar});
+      if (activar) mostrarToast("Modo Hacker activado junto con el modo oscuro para conservar la legibilidad.");
+    });
     capa.querySelector("[data-ugel-sound]")?.addEventListener("click", () => actualizarHyperdrive({sound:!preferencias.hyperdrive.sound}));
     capa.querySelector("[data-ugel-hud]")?.addEventListener("click", () => actualizarHyperdrive({hud:!preferencias.hyperdrive.hud}));
     capa.querySelector("[data-ugel-cursor]")?.addEventListener("click", () => actualizarHyperdrive({cursor:!preferencias.hyperdrive.cursor}));

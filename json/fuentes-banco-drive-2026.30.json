@@ -1,0 +1,72 @@
+{
+  "version": "2026.30",
+  "criterio": "Solo se incorporan contenidos con tema identificable y solución matemáticamente verificable. No se importan preguntas sin clave ni OCR ilegible.",
+  "fuentesRevisadas": [
+    {
+      "archivo": "Solucionario - 2do Parcial CEPRE-UNI (2024-II) Trigonometría.pdf",
+      "uso": "Referencia de exigencia, dominio de funciones, identidades y ecuaciones",
+      "estado": "aceptado"
+    },
+    {
+      "archivo": "MOVIMIENTO ARMONICO SIMPLE.pdf",
+      "uso": "Nuevo bloque de oscilaciones",
+      "estado": "aceptado"
+    },
+    {
+      "archivo": "GRAVITACION UNIVERSAL.pdf",
+      "uso": "Nuevo bloque de gravitación",
+      "estado": "aceptado"
+    },
+    {
+      "archivo": "ONDAS MECANICAS.pdf",
+      "uso": "Nuevo bloque de ondas",
+      "estado": "aceptado"
+    },
+    {
+      "archivo": "OPTICA 1, 2 y 3.pdf",
+      "uso": "Nuevo bloque de óptica",
+      "estado": "aceptado"
+    },
+    {
+      "archivo": "ELECTROSTATICA.pdf",
+      "uso": "Nuevo bloque de electrostática",
+      "estado": "aceptado"
+    },
+    {
+      "archivo": "ELECTRODINAMICA 1 y 2.pdf",
+      "uso": "Nuevo bloque de circuitos",
+      "estado": "aceptado"
+    },
+    {
+      "archivo": "ELECTROMAGNETISMO 1 y 2.pdf",
+      "uso": "Nuevo bloque de inducción",
+      "estado": "aceptado"
+    },
+    {
+      "archivo": "UNMSM Preguntas de Admisión RV por temas.pdf",
+      "uso": "Mapa de temas de habilidad verbal",
+      "estado": "aceptado como referencia; no copiado literalmente"
+    },
+    {
+      "archivo": "UNMSM Preguntas de Admisión Lenguaje por temas.pdf",
+      "uso": "Mapa de temas de Lenguaje",
+      "estado": "aceptado como referencia; no copiado literalmente"
+    },
+    {
+      "archivo": "Prácticas Calificadas CEPRE-UNI sin claves",
+      "uso": "Ninguno",
+      "estado": "descartado para evaluación automática"
+    },
+    {
+      "archivo": "Banco de preguntas y simulacros de exámenes de admisión.pdf",
+      "uso": "Ninguno",
+      "estado": "descartado: OCR no utilizable"
+    }
+  ],
+  "incorporacion": {
+    "curso": "Física",
+    "temasNuevos": 7,
+    "preguntasNuevas": 140,
+    "modelo": "preguntas originales, no copias textuales"
+  }
+}

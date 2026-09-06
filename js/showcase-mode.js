@@ -46,9 +46,9 @@
         </div>
         <div class="showcase-intro-kicker">Tu ingreso empieza aquí</div>
         <h1 class="showcase-intro-title">Uni<span>Prep</span></h1>
-        <p class="showcase-intro-subtitle">Convierte cada tema en una misión. Convierte cada misión en tu futuro.</p>
+        <p class="showcase-intro-subtitle">Una ruta clara para aprender, practicar y avanzar a tu ritmo.</p>
         <div class="showcase-intro-chips" aria-label="Funciones destacadas">
-          <span>Retos adaptativos</span><span>Simulacros reales</span><span>Progreso con XP</span><span>Ranking</span><span>Universidades del Perú</span>
+          <span>Ruta personalizada</span><span>Práctica explicada</span><span>Progreso real</span>
         </div>
         <div class="showcase-intro-loader" aria-hidden="true"><span id="showcase-intro-progress"></span></div>
         <div class="showcase-intro-loading-meta"><b id="showcase-intro-percent">0%</b><span>Una sola bienvenida. Después entrarás directamente.</span></div>
@@ -88,7 +88,7 @@
     document.body.classList.add("showcase-intro-open", "showcase-hyper");
     intro.querySelector(".showcase-intro-skip")?.addEventListener("click", () => closeIntro(intro));
     markIntroSeen();
-    const statuses = ["Preparando tu espacio de estudio", "Cargando tu ruta académica", "Conectando Tutor IA y Supabase", "Todo listo para comenzar"];
+    const statuses = ["Preparando tu espacio de estudio", "Ordenando tu ruta académica", "Cargando tus herramientas", "Todo listo para comenzar"];
     let value = 4;
     const startedAt = performance.now();
     const paint = () => {
@@ -103,11 +103,11 @@
     };
     paint();
     introProgressTimer = window.setInterval(() => {
-      value = reduceMotion ? Math.min(100, value + 28) : Math.min(100, Math.max(value + 1, Math.round((performance.now() - startedAt) / 4100 * 100)));
+      value = reduceMotion ? Math.min(100, value + 35) : Math.min(100, Math.max(value + 1, Math.round((performance.now() - startedAt) / 2600 * 100)));
       paint();
       if (value >= 100) window.clearInterval(introProgressTimer);
     }, reduceMotion ? 90 : 260);
-    introTimer = window.setTimeout(() => closeIntro(intro), reduceMotion ? 900 : 5200);
+    introTimer = window.setTimeout(() => closeIntro(intro), reduceMotion ? 760 : 3200);
   }
 
   function createAtmosphere() {
@@ -289,18 +289,18 @@
 
   function routeLabel(id) {
     const labels = {
-      home: "Inicio · misión activa",
-      cursos: "Mapa de cursos",
-      videoclase: "Aula multimedia",
-      ejercicios: "Centro de práctica",
-      formulas: "Formulario inteligente",
-      exams: "Simulacros",
+      home: "Tu ruta de hoy",
+      cursos: "Aprender",
+      videoclase: "Videoclase",
+      ejercicios: "Practicar",
+      formulas: "Fórmulas y repaso",
+      exams: "Comprueba tu avance",
       ranking: "Liga UniPrep",
-      agenda: "Plan de estudio",
+      agenda: "Organiza tu estudio",
       perfil: "Perfil del estudiante",
-      vocacional: "Ruta vocacional",
-      tutor: "Tutor con IA",
-      notificaciones: "Centro de avisos"
+      vocacional: "Descubre tu carrera",
+      tutor: "Tutor Uni",
+      notificaciones: "Notificaciones"
     };
     return labels[id] || "UniPrep · nueva misión";
   }

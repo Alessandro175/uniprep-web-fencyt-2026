@@ -86,7 +86,6 @@
     rv: {
       area: "Comunicación",
       temas: [
-        ["Semántica de la palabra", "Razonamiento léxico"],
         ["Sinonimia y antonimia contextual", "Razonamiento léxico"],
         ["Analogías verbales", "Razonamiento léxico"],
         ["Término excluido y series verbales", "Razonamiento léxico"],
@@ -109,6 +108,7 @@
         ["Comunicación y realidad lingüística", "Lenguaje"],
         ["Fonología de la lengua española", "Lenguaje"],
         ["Gramática: la palabra", "Lenguaje"],
+        ["Semántica de la palabra", "Semántica"],
         ["La oración gramatical", "Lenguaje"],
         ["Ortografía", "Lenguaje"]
       ]

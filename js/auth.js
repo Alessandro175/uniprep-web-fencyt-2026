@@ -201,7 +201,7 @@ function actualizarSeguridadPassword(
     {
       ancho: "0%",
       mensaje:
-        "Usa mínimo 6 caracteres.",
+        "Usa mínimo 8 caracteres.",
       fondo: "transparent"
     },
     {
@@ -289,7 +289,7 @@ function traducirErrorAuth(
       "password must be"
     )
   ) {
-    return "La contraseña debe tener al menos 6 caracteres.";
+    return "La contraseña debe tener al menos 8 caracteres.";
   }
 
   if (
@@ -327,6 +327,10 @@ function traducirErrorAuth(
     )
   ) {
     return "No se pudo conectar con Supabase. Revisa tu internet.";
+  }
+
+  if (error.includes("uniprep_timeout") || error.includes("tiempo de espera")) {
+    return "La conexión está tardando demasiado. Revisa internet y vuelve a intentarlo; el botón ya quedó disponible.";
   }
 
   if (
@@ -386,6 +390,19 @@ function cambiarEstadoBoton(
   }
 }
 
+function operacionAuthConLimite(operacion, tiempo = 18000) {
+  let temporizador;
+  const limite = new Promise((_, rechazar) => {
+    temporizador = window.setTimeout(() => {
+      const error = new Error("UNIPREP_TIMEOUT: tiempo de espera agotado");
+      error.code = "UNIPREP_TIMEOUT";
+      rechazar(error);
+    }, tiempo);
+  });
+  return Promise.race([Promise.resolve(operacion), limite])
+    .finally(() => window.clearTimeout(temporizador));
+}
+
 
 // =====================================================
 // ABRIR APLICACIÓN
@@ -404,8 +421,7 @@ async function abrirAplicacion() {
   }
 
   try {
-    const resultado =
-      await window.iniciarApp();
+    const resultado = await operacionAuthConLimite(window.iniciarApp(), 20000);
 
     return resultado === true;
 
@@ -651,7 +667,10 @@ document.addEventListener(
 
       cambiarEstadoBoton(boton, true, "Enviar enlace seguro", "Enviando...");
       try {
-        const {error} = await window.supabaseClient.auth.resetPasswordForEmail(correo, {redirectTo});
+        const {error} = await operacionAuthConLimite(
+          window.supabaseClient.auth.resetPasswordForEmail(correo, {redirectTo}),
+          18000
+        );
         if (error) {
           mostrarMensaje("recovery-request-message", traducirErrorAuth(error.message));
           return;
@@ -663,7 +682,7 @@ document.addEventListener(
         );
       } catch (error) {
         console.error("Error enviando la recuperación:", error);
-        mostrarMensaje("recovery-request-message", "No se pudo enviar el correo. Revisa tu conexión e inténtalo nuevamente.");
+        mostrarMensaje("recovery-request-message", traducirErrorAuth(error?.message || "No se pudo enviar el correo."));
       } finally {
         cambiarEstadoBoton(boton, false, "Enviar enlace seguro", "Enviando...");
       }
@@ -687,7 +706,10 @@ document.addEventListener(
 
       cambiarEstadoBoton(boton, true, "Guardar nueva contraseña", "Guardando...");
       try {
-        const {error} = await window.supabaseClient.auth.updateUser({password});
+        const {error} = await operacionAuthConLimite(
+          window.supabaseClient.auth.updateUser({password}),
+          18000
+        );
         if (error) {
           mostrarMensaje("recovery-update-message", traducirErrorAuth(error.message));
           return;
@@ -702,7 +724,7 @@ document.addEventListener(
         mostrarMensaje("login-error", "Contraseña actualizada. Ingresa con tu nueva contraseña.", "success");
       } catch (error) {
         console.error("Error actualizando la contraseña:", error);
-        mostrarMensaje("recovery-update-message", "No se pudo cambiar la contraseña. Solicita un enlace nuevo.");
+        mostrarMensaje("recovery-update-message", traducirErrorAuth(error?.message || "No se pudo cambiar la contraseña."));
       } finally {
         cambiarEstadoBoton(boton, false, "Guardar nueva contraseña", "Guardando...");
       }
@@ -802,10 +824,10 @@ document.addEventListener(
           return;
         }
 
-        if (password.length < 6) {
+        if (password.length < 8) {
           mostrarMensaje(
             "register-error",
-            "La contraseña debe tener al menos 6 caracteres."
+            "La contraseña debe tener al menos 8 caracteres."
           );
 
           return;
@@ -828,8 +850,8 @@ document.addEventListener(
         );
 
         try {
-          const { data, error } =
-            await window.supabaseClient
+          const { data, error } = await operacionAuthConLimite(
+            window.supabaseClient
               .auth
               .signUp({
                 email: correo,
@@ -847,7 +869,9 @@ document.addEventListener(
                     tutorial_version: "2026.12"
                   }
                 }
-              });
+              }),
+            20000
+          );
 
           if (error) {
             mostrarMensaje(
@@ -942,7 +966,7 @@ document.addEventListener(
 
           mostrarMensaje(
             "register-error",
-            "Ocurrió un error inesperado al crear la cuenta."
+            traducirErrorAuth(error?.message || "Ocurrió un error inesperado al crear la cuenta.")
           );
 
         } finally {
@@ -1013,10 +1037,10 @@ document.addEventListener(
           return;
         }
 
-        if (password.length < 6) {
+        if (password.length < 8) {
           mostrarMensaje(
             "login-error",
-            "La contraseña debe tener al menos 6 caracteres."
+            "La contraseña debe tener al menos 8 caracteres."
           );
 
           return;
@@ -1030,13 +1054,15 @@ document.addEventListener(
         );
 
         try {
-          const { data, error } =
-            await window.supabaseClient
+          const { data, error } = await operacionAuthConLimite(
+            window.supabaseClient
               .auth
               .signInWithPassword({
                 email: correo,
                 password
-              });
+              }),
+            18000
+          );
 
           if (error) {
             mostrarMensaje(
@@ -1088,7 +1114,7 @@ document.addEventListener(
 
           mostrarMensaje(
             "login-error",
-            "Ocurrió un error inesperado al iniciar sesión."
+            traducirErrorAuth(error?.message || "Ocurrió un error inesperado al iniciar sesión.")
           );
 
         } finally {
