@@ -10,4 +10,6 @@ La ruta UNI se alimenta de `json/syllabus-uni-2026-2.json` y no reutiliza las re
 
 Los bancos existentes continúan vinculados a 16 cursos. Cálculo, Actualidad, Lógica e Inglés muestran su temario UNI, pero quedan identificados como “banco en preparación” hasta crear preguntas específicas; no reciben preguntas prestadas de otras materias o universidades.
 
+Inglés incorpora como referencia complementaria las seis unidades del sílabo oficial ED131 English I. Este documento corresponde a un curso universitario de la UNI y no se presenta como temario oficial del examen de admisión.
+
 No se modificaron los temarios de UNMSM, UNAMAD, UNSAAC, UNSA, PUCP ni UCSM.

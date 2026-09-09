@@ -60,37 +60,114 @@
     });
   }
 
+  const ESTILOS_UNI = {
+    calculo:{icono:"∫",color:"#5B8CFF",descripcion:"Límites, derivadas, integrales y sus aplicaciones."},
+    actualidad:{icono:"📰",color:"#36C6A3",descripcion:"Hechos nacionales e internacionales verificados."},
+    logica:{icono:"⚙️",color:"#A678FF",descripcion:"Proposiciones, inferencias, tablas de verdad y silogismos."},
+    ingles:{icono:"🇬🇧",color:"#FF8B70",descripcion:"Gramática, vocabulario y comprensión básica."}
+  };
+
+  const DESCRIPCIONES_UNI_POR_CURSO = {
+    aritmetica:titulo=>`Estudia ${titulo.toLowerCase()} mediante definiciones, propiedades, algoritmos de cálculo y resolución de problemas numéricos aplicados.`,
+    algebra:titulo=>`Desarrolla ${titulo.toLowerCase()} usando lenguaje simbólico, equivalencias, operaciones algebraicas, representaciones gráficas y métodos de solución.`,
+    geometria:titulo=>`Aborda ${titulo.toLowerCase()} mediante definiciones, teoremas y construcciones para determinar relaciones, medidas, áreas o volúmenes.`,
+    trigonometria:titulo=>`Estudia ${titulo.toLowerCase()} relacionando ángulos, razones, identidades y funciones para resolver situaciones geométricas y analíticas.`,
+    calculo:titulo=>`Explica ${titulo.toLowerCase()} a partir del comportamiento de funciones y de procedimientos para analizar variación, acumulación y aplicaciones geométricas.`,
+    fisica:titulo=>`Analiza ${titulo.toLowerCase()} mediante magnitudes, leyes, modelos matemáticos y problemas que describen fenómenos del mundo físico.`,
+    quimica:titulo=>`Estudia ${titulo.toLowerCase()} considerando la composición, propiedades y transformaciones de la materia, su representación y sus aplicaciones.`,
+    rm:titulo=>`Entrena ${titulo.toLowerCase()} con estrategias de análisis, reconocimiento de patrones, organización de datos y solución lógica de problemas.`,
+    rv:titulo=>`Desarrolla ${titulo.toLowerCase()} para comprender relaciones entre palabras y textos, elegir expresiones precisas y organizar información coherente.`,
+    lenguaje:titulo=>`Estudia ${titulo.toLowerCase()} desde las reglas y estructuras del español para comprender, analizar y producir mensajes correctamente.`,
+    literatura:titulo=>`Examina ${titulo.toLowerCase()} mediante su contexto, autores, obras, géneros, recursos expresivos y aportes a la tradición literaria.`,
+    historia:titulo=>`Analiza ${titulo.toLowerCase()} identificando su contexto, causas, etapas, protagonistas, transformaciones y consecuencias históricas.`,
+    geografia:titulo=>`Estudia ${titulo.toLowerCase()} relacionando territorio, sociedad, ambiente, recursos y procesos espaciales del Perú y del mundo.`,
+    economia:titulo=>`Explica ${titulo.toLowerCase()} mediante conceptos, agentes, decisiones e indicadores que permiten comprender el funcionamiento económico.`,
+    civica:titulo=>`Aborda ${titulo.toLowerCase()} para comprender derechos, deberes, convivencia democrática, instituciones y participación ciudadana.`,
+    psicologia:titulo=>`Estudia ${titulo.toLowerCase()} considerando procesos mentales, bases biológicas, conducta, aprendizaje y relaciones sociales.`,
+    filosofia:titulo=>`Reflexiona sobre ${titulo.toLowerCase()} mediante problemas, conceptos, autores y argumentos relacionados con el conocimiento, los valores y la realidad.`,
+    logica:titulo=>`Desarrolla ${titulo.toLowerCase()} mediante proposiciones, simbolización, reglas de inferencia y evaluación de la validez de argumentos.`,
+    actualidad:titulo=>`Examina hechos recientes de ${titulo.toLowerCase()}, reconociendo actores, causas, consecuencias y la confiabilidad de las fuentes consultadas.`,
+    ingles:titulo=>`Desarrolla ${titulo} mediante vocabulario, estructuras gramaticales, comprensión de textos y producción oral y escrita en situaciones comunicativas.`
+  };
+
+  function descripcionTemaUni(cursoId, titulo) {
+    const crear = DESCRIPCIONES_UNI_POR_CURSO[cursoId];
+    return crear ? crear(String(titulo)) : `Explica en qué consiste ${String(titulo).toLowerCase()}, sus conceptos principales y sus aplicaciones dentro del curso.`;
+  }
+
+  function temaOficialUni(cursoOficial, cursoBase, titulo, indice) {
+    const temaBase = (cursoBase?.temas || []).find(tema => normalizar(tema?.titulo) === normalizar(titulo));
+    const detalle = cursoOficial?.detalles?.[titulo] || {};
+    const bloqueCalculo = cursoOficial.id === "calculo" ? (indice <= 10 ? "Cálculo diferencial" : "Cálculo integral") : "";
+    const minutos = 32 + ((indice * 7 + String(titulo).length) % 20);
+    return {
+      ...(temaBase || {}),
+      id:`uni-${cursoOficial.id}-${indice + 1}`,
+      titulo,
+      subarea:detalle.subarea || bloqueCalculo || `${cursoOficial.area} · Temario UNI`,
+      descripcion:detalle.descripcion || descripcionTemaUni(cursoOficial.id, titulo),
+      duracion:detalle.duracion || temaBase?.duracion || `${minutos} min`,
+      oficial:true,
+      fuente:cursoOficial.fuente || temarioUni.fuente,
+      puntos:detalle.puntos || temaBase?.puntos || [
+        `Fundamentos y propiedades de ${titulo}`,
+        "Procedimientos y casos frecuentes",
+        "Aplicación en problemas de admisión UNI"
+      ]
+    };
+  }
+
+  function construirCursoUni(cursoOficial, cursoBase = null) {
+    const estilo = ESTILOS_UNI[cursoOficial.id] || {icono:"📘",color:"#6C8CFF",descripcion:"Contenido exclusivo del temario UNI."};
+    const temas = (cursoOficial.temas || []).map((titulo, indice) => temaOficialUni(cursoOficial, cursoBase, titulo, indice));
+    return {
+      ...(cursoBase || {}),
+      id:cursoOficial.id,
+      nombre:cursoOficial.nombre,
+      area:cursoOficial.area,
+      icono:cursoBase?.icono || estilo.icono,
+      color:cursoBase?.color || estilo.color,
+      descripcion:cursoBase?.descripcion || estilo.descripcion,
+      temas,
+      temarioOficial:[...(cursoOficial.temas || [])],
+      fuenteTemario:cursoOficial.fuente || temarioUni.fuente,
+      etiquetaTemario:cursoOficial.etiquetaTemario || "Temario UNI 2026-2",
+      notaTemario:cursoOficial.nota || "",
+      preguntas:Number(cursoBase?.preguntas) || 0,
+      temasBase:cursoBase?.temas?.length || 0,
+      temarioPersonalizado:true,
+      // Los cursos sin banco también se pueden abrir para estudiar su temario.
+      // Las preguntas y videoclases se incorporarán después sin mezclar materias.
+      temarioSoloReferencia:false
+    };
+  }
+
   function obtenerCursoRuta(curso) {
-    if (!curso) return null;
-    const temas = filtrarTemas(curso.id, curso.temas || []);
+    const cursoId = typeof curso === "string" ? curso : curso?.id;
+    const cursoBase = typeof curso === "string" ? null : curso;
+    const oficial = siglaActual() === "UNI" ? temarioUni.cursos?.find(item => item.id === cursoId) : null;
+    if (oficial) return construirCursoUni(oficial, cursoBase);
+    if (!cursoBase) return null;
+    const temas = filtrarTemas(cursoBase.id, cursoBase.temas || []);
     const contarPreguntas = tema => Object.values(tema?.niveles || {})
       .reduce((total, nivel) => total + (Array.isArray(nivel) ? nivel.length : 0), 0);
-    const oficial = siglaActual() === "UNI" ? temarioUni.cursos?.find(item => item.id === curso.id) : null;
     return {
-      ...curso,
+      ...cursoBase,
       temas,
-      temarioOficial: oficial?.temas || null,
-      fuenteTemario: oficial ? temarioUni.fuente : null,
+      temarioOficial:null,
+      fuenteTemario:null,
       preguntas: temas.reduce((total, tema) => total + contarPreguntas(tema), 0),
-      temasBase: (curso.temas || []).length,
-      temarioPersonalizado: temas.length !== (curso.temas || []).length
+      temasBase:(cursoBase.temas || []).length,
+      temarioPersonalizado:temas.length !== (cursoBase.temas || []).length
     };
   }
 
   function obtenerCatalogoRuta(cursosBase) {
     const base = cursosBase || {};
     if (siglaActual() !== "UNI" || !temarioUni.cursos?.length) return Object.values(base).map(obtenerCursoRuta).filter(Boolean);
-    const estilos = {
-      calculo:{icono:"∫",color:"#5B8CFF",descripcion:"Límites, derivadas, integrales y sus aplicaciones."},
-      actualidad:{icono:"📰",color:"#36C6A3",descripcion:"Hechos nacionales e internacionales verificados."},
-      logica:{icono:"⚙️",color:"#A678FF",descripcion:"Proposiciones, inferencias, tablas de verdad y silogismos."},
-      ingles:{icono:"🇬🇧",color:"#FF8B70",descripcion:"Gramática, vocabulario y comprensión básica."}
-    };
     return temarioUni.cursos.map(oficial => {
       const existente = base[oficial.id];
-      if (existente) return {...obtenerCursoRuta(existente),nombre:oficial.nombre,area:oficial.area,temarioOficial:oficial.temas,fuenteTemario:temarioUni.fuente};
-      const estilo = estilos[oficial.id] || {icono:"📘",color:"#6C8CFF",descripcion:"Contenido exclusivo del temario UNI."};
-      return {id:oficial.id,nombre:oficial.nombre,area:oficial.area,...estilo,temas:[],temarioOficial:oficial.temas,fuenteTemario:temarioUni.fuente,preguntas:0,temasBase:0,temarioPersonalizado:true,temarioSoloReferencia:true};
+      return construirCursoUni(oficial, existente || null);
     });
   }
 

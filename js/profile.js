@@ -5,7 +5,7 @@
 (function () {
   "use strict";
 
-  const IDS_CURSOS = ["rm","aritmetica","algebra","geometria","trigonometria","fisica","quimica","biologia","medio_ambiente","anatomia","psicologia","rv","comprension_lectora","lenguaje","literatura","historia","historia_peru","geografia","filosofia","economia","civica"];
+  const IDS_CURSOS = ["rm","aritmetica","algebra","geometria","trigonometria","fisica","quimica","biologia","medio_ambiente","anatomia","psicologia","rv","comprension_lectora","lenguaje","literatura","historia","historia_peru","geografia","filosofia","economia","civica","calculo","logica","actualidad","ingles"];
   const CLAVE_FOTO = "uniprep_profile_photo_v1";
   const progresoInicial = Object.fromEntries(IDS_CURSOS.map(id => [id,0]));
 
@@ -195,7 +195,7 @@
       const completadas = actual.completadas + 1;
       const correctas = actual.correctas + (correcto ? 1 : 0);
       const total = actual.total + 1;
-      const metaCurso = Math.max(40,(window.CURSOS_PREUNI?.[cursoId]?.temas?.length || 1) * 40);
+      const metaCurso = Math.max(60,(window.CURSOS_PREUNI?.[cursoId]?.temas?.length || 1) * 60);
       const progreso = limitar(completadas / metaCurso * 100);
       const indiceTema = Math.max(0, window.CURSOS_PREUNI?.[cursoId]?.temas?.findIndex(t => t.titulo === tema) ?? actual.ultimoTema);
       const resultado = await window.guardarProgresoCurso(cursoId,{progress:progreso,completedExercises:completadas,correctAnswers:correctas,totalAnswers:total,lastTopicIndex:indiceTema});

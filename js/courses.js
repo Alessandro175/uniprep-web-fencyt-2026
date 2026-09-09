@@ -26,7 +26,11 @@
     geografia:{nombre:"Geografía",icono:"🗺️",color:"#4DB6FF",descripcion:"Territorio peruano, cartografía, ambiente y gestión de riesgos."},
     filosofia:{nombre:"Filosofía",icono:"💡",color:"#B794F6",descripcion:"Pensamiento filosófico, ética, conocimiento, lógica y argumentación."},
     economia:{nombre:"Economía",icono:"📈",color:"#72D47D",descripcion:"Producción, mercado, precios, moneda y desarrollo."},
-    civica:{nombre:"Educación Cívica",icono:"⚖️",color:"#F39B6D",descripcion:"Estado, democracia, ciudadanía, identidad y valores."}
+    civica:{nombre:"Cívica",icono:"⚖️",color:"#F39B6D",descripcion:"Desarrollo personal, ciudadanía, ética, Estado, democracia, derechos e identidad."},
+    calculo:{nombre:"Cálculo",icono:"∫",color:"#4FC3F7",descripcion:"Límites, continuidad, derivadas, integrales y aplicaciones.",bancoPreguntas:1200},
+    logica:{nombre:"Lógica",icono:"◇",color:"#A78BFA",descripcion:"Proposiciones, formalización, tablas de verdad e inferencias.",bancoPreguntas:180},
+    actualidad:{nombre:"Actualidad",icono:"🌐",color:"#34D399",descripcion:"Política, economía, ciencia, ambiente y verificación de hechos.",bancoPreguntas:360},
+    ingles:{nombre:"Inglés",icono:"EN",color:"#F59E0B",descripcion:"Comprensión y comunicación en inglés de nivel A2.",bancoPreguntas:360}
   };
 
   const TEMARIO = window.TEMARIO_UNAMAD || {};
@@ -34,7 +38,7 @@
     id,
     ...meta,
     area: TEMARIO[id]?.area || "Preuniversitario",
-    preguntas: (TEMARIO[id]?.temas?.length || 0) * 40,
+    preguntas: Number(meta.bancoPreguntas) || (TEMARIO[id]?.temas?.length || 0) * 60,
     temas: TEMARIO[id]?.temas || []
   }]));
 
@@ -84,7 +88,7 @@
   }
 
   function cursoParaRuta(cursoOId) {
-    const curso = typeof cursoOId === "string" ? CURSOS_PREUNI[cursoOId] : cursoOId;
+    const curso = typeof cursoOId === "string" ? (CURSOS_PREUNI[cursoOId] || cursoOId) : cursoOId;
     return window.obtenerCursoTemarioAdmision?.(curso) || curso;
   }
 
@@ -148,7 +152,7 @@
     const bloques = bloquesBase.map((bloque,indice)=>{
       const lista = bloque.cursos.map(id=>porId.get(id)).filter(Boolean);
       if (!lista.length) return "";
-      return `<section class="university-syllabus-block"><header><span>${esc(bloque.etiqueta || `BLOQUE ${indice+1}`)}</span><div><h3>${esc(bloque.nombre)}</h3><p>${esc(bloque.descripcion || "Cursos correspondientes a esta parte de la evaluación.")}</p></div></header><div class="university-syllabus-courses">${lista.map(curso=>{const temas=curso.temarioOficial || curso.temas.map(tema=>tema.titulo);return `<article class="university-syllabus-course" style="--course-color:${curso.color}"><header><span class="icon">${curso.icono}</span><div><h4>${esc(curso.nombre)}</h4><small>${temas.length} temas UNI · ${curso.preguntas || 0} preguntas vinculadas</small></div><span class="weight">${esc(etiquetaPesoRuta(curso.id))}</span></header><div class="university-topic-list">${temas.map((tema,temaIndice)=>`<div class="university-topic-reference"><b>${String(temaIndice+1).padStart(2,"0")} · ${esc(typeof tema==="string"?tema:tema.titulo)}</b><small>Temario UNI 2026-2</small></div>`).join("")}</div></article>`}).join("")}</div></section>`;
+      return `<section class="university-syllabus-block"><header><span>${esc(bloque.etiqueta || `BLOQUE ${indice+1}`)}</span><div><h3>${esc(bloque.nombre)}</h3><p>${esc(bloque.descripcion || "Cursos correspondientes a esta parte de la evaluación.")}</p></div></header><div class="university-syllabus-courses">${lista.map(curso=>{const temas=curso.temarioOficial || curso.temas.map(tema=>tema.titulo);return `<article class="university-syllabus-course" style="--course-color:${curso.color}"><header><span class="icon">${curso.icono}</span><div><h4>${esc(curso.nombre)}</h4><small>${temas.length} temas UNI · ${curso.preguntas || 0} preguntas vinculadas</small></div><span class="weight">${esc(etiquetaPesoRuta(curso.id))}</span></header>${curso.notaTemario?`<p class="university-course-source-note">${esc(curso.notaTemario)}</p>`:""}<div class="university-topic-list">${temas.map((tema,temaIndice)=>`<div class="university-topic-reference"><b>${String(temaIndice+1).padStart(2,"0")} · ${esc(typeof tema==="string"?tema:tema.titulo)}</b><small>${esc(curso.etiquetaTemario || "Temario UNI 2026-2")}</small></div>`).join("")}</div></article>`}).join("")}</div></section>`;
     }).join("");
     modal.innerHTML = `<section class="university-syllabus-dialog" role="dialog" aria-modal="true" aria-labelledby="university-syllabus-title"><header class="university-syllabus-head"><div><small>${esc(seleccion.universidadCorta)} · ${esc(seleccion.vigencia || "RUTA VIGENTE")}</small><h2 id="university-syllabus-title">${esc(seleccion.carrera)}</h2><p>${esc(seleccion.grupo)} · cursos y temas habilitados automáticamente</p></div><button type="button" onclick="cerrarTemarioUniversitario()" aria-label="Cerrar">×</button></header><div class="university-syllabus-proof"><div><b>${cursos.length}</b><span>cursos de la ruta</span></div><div><b>${totalTemas}</b><span>temas habilitados</span></div><div><b>${totalPreguntas.toLocaleString("es-PE")}</b><span>preguntas disponibles</span></div><div><b>${bloquesBase.length}</b><span>bloques de evaluación</span></div></div><div class="university-syllabus-note"><b>Cómo leer esta ruta:</b> ${esc(notaPeso)} Los videos son apoyo por tema y las preguntas son ejercicios de entrenamiento elaborados por UniPrep, no preguntas oficiales.${fuente?` <a href="${esc(fuente)}" target="_blank" rel="noopener">Consultar fuente institucional ↗</a>`:""}</div><div class="university-syllabus-blocks">${bloques}</div><footer class="university-syllabus-footer"><span>${esc(seleccion.notaMatriz || seleccion.avisoCarrera || "La ruta se actualiza al cambiar universidad o carrera.")}</span><button type="button" onclick="cerrarTemarioUniversitario();abrirPlanEstudios()">Crear plan con esta ruta</button></footer></section>`;
     modal.classList.add("open");
@@ -314,7 +318,7 @@
 
   function pintarCursoSeleccionado(curso, tema, indiceTema) {
     cambiarTexto("lesson-page-title", `${curso.nombre} — ${tema.titulo}`);
-    cambiarTexto("lesson-page-subtitle", `Tema ${indiceTema + 1} de ${curso.temas.length} · ${tema.subarea} · Banco alineado a tu ruta`);
+    cambiarTexto("lesson-page-subtitle", `Tema ${indiceTema + 1} de ${curso.temas.length} · ${tema.subarea} · Temario alineado a tu ruta`);
     cambiarTexto("lesson-video-title", tema.titulo);
     cambiarTexto("lesson-video-subtitle", tema.subarea);
     cambiarTexto("lesson-description", tema.descripcion);
@@ -363,7 +367,13 @@
       iframe.focus();
       return;
     }
-    mostrarToast("La videoclase aún no tiene enlace. La teoría, el Drive y el banco de práctica sí están disponibles.");
+    const busqueda = document.querySelector("#lesson-video-container .video-search-resource a");
+    if (busqueda) {
+      busqueda.click();
+      mostrarToast("Abriendo videoclases del mismo curso y tema.");
+      return;
+    }
+    mostrarToast("No se pudo abrir el recurso audiovisual. Revisa tu conexión e inténtalo nuevamente.");
   }
 
   function mostrarToast(mensaje) {
@@ -472,7 +482,7 @@
   window.cerrarTemarioUniversitario = cerrarTemarioUniversitario;
 
   const moduloAprendizaje = document.createElement("script");
-  moduloAprendizaje.src = "js/learning-content.js?v=2026.28.0";
+  moduloAprendizaje.src = "js/learning-content.js?v=2026.43.0";
   moduloAprendizaje.onload = () => {
     if (typeof window.inicializarModulosAprendizaje === "function") window.inicializarModulosAprendizaje();
     cargarUltimoCurso();

@@ -497,6 +497,13 @@
 
   function actualizarIndicadores() {
     const seleccion = obtenerSeleccion();
+    const contextoInicio = document.getElementById("dashboard-context");
+    if (contextoInicio) {
+      const anio = String(seleccion?.vigencia || "").match(/20\d{2}/)?.[0] || new Date().getFullYear();
+      contextoInicio.textContent = seleccion
+        ? `Tu preparación · ${seleccion.universidadCorta} ${anio}`
+        : "Tu preparación · configura tu universidad";
+    }
     const centro = document.querySelector(".courses-command-center");
     let banner = document.getElementById("admission-active-route");
     if (centro && !banner) {
@@ -516,9 +523,9 @@
     const kicker = document.querySelector(".courses-command-kicker");
     if (kicker) kicker.textContent = seleccion ? `RUTA ${seleccion.universidadCorta} ${seleccion.grupoId} · ${seleccion.vigencia || "ADMISIÓN"}` : "RUTA SEGÚN TU UNIVERSIDAD Y CARRERA";
     const estadisticas = document.querySelectorAll(".courses-command-stats b");
-    if (estadisticas[2]) estadisticas[2].textContent = seleccion?.cursos?.length || 21;
+    if (estadisticas[2]) estadisticas[2].textContent = seleccion?.cursos?.length || 25;
     const insignia = document.querySelector('.nav-item[onclick*="cursos"] .nav-badge');
-    if (insignia) insignia.textContent = seleccion?.cursos?.length || 21;
+    if (insignia) insignia.textContent = seleccion?.cursos?.length || 25;
   }
 
   async function iniciar() {

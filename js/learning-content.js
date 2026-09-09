@@ -93,8 +93,46 @@
     try{const [r,v]=await Promise.all([fetch("json/recursos-biblioteca.json",{cache:"no-store"}),fetch("json/videos-cursos.json",{cache:"no-store"})]);if(r.ok){const data=await r.json();recursosJSON=Array.isArray(data.recursos)?data.recursos:[]}if(v.ok){const data=await v.json();videosJSON=Array.isArray(data.videos)?data.videos:[]}}catch(error){console.warn("No se pudo cargar la configuración multimedia; se usarán los recursos locales.",error)}
   }
 
+  function normalizarTitulo(valor){
+    return String(valor||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").trim().toLowerCase();
+  }
+
+  function temaBancoRelacionado(banco, cursoId, temaCatalogo){
+    const temas=Array.isArray(banco?.temas)?banco.temas:[];
+    if(!temas.length)return null;
+    const titulo=normalizarTitulo(temaCatalogo?.titulo);
+    const exacto=temas.find(tema=>normalizarTitulo(tema.titulo)===titulo);
+    if(exacto)return exacto;
+    const vacias=new Set(["de","del","la","las","los","y","e","en","un","una","i","ii","iii"]);
+    const tokens=texto=>normalizarTitulo(texto).replace(/[^a-z0-9ñ]+/g," ").split(/\s+/).filter(x=>x.length>2&&!vacias.has(x)).map(x=>x.replace(/(?:es|os|as|s)$/,""));
+    const origen=tokens(titulo);
+    let mejor=null,puntaje=-1;
+    temas.forEach((tema,indice)=>{
+      const destino=tokens(tema.titulo);
+      const coincidencias=origen.reduce((n,palabra)=>n+(destino.some(otra=>palabra===otra||palabra.startsWith(otra)||otra.startsWith(palabra))?1:0),0);
+      const valor=coincidencias*10-(Math.abs(origen.length-destino.length));
+      if(valor>puntaje){puntaje=valor;mejor={tema,indice};}
+    });
+    if(puntaje>0)return mejor.tema;
+    const curso=cursoParaRuta(cursoId),indiceOficial=Math.max(0,curso?.temas?.findIndex(item=>normalizarTitulo(item.titulo)===titulo)??0);
+    const indiceAproximado=Math.min(temas.length-1,Math.floor(indiceOficial*temas.length/Math.max(1,curso?.temas?.length||temas.length)));
+    return temas[indiceAproximado]||temas[0];
+  }
+
+  function videosDelTema(courseId, temaIndice, tema){
+    const sigla=String(window.obtenerPerfilPreguntasAdmision?.()?.sigla||"GENERAL").toUpperCase();
+    return videosJSON.filter(video=>{
+      if(video.courseId!==courseId||!String(video.url||"").trim())return false;
+      const universidades=Array.isArray(video.universidades)?video.universidades.map(item=>String(item).toUpperCase()):[];
+      if(universidades.length&&!universidades.includes(sigla)&&!universidades.includes("TODAS"))return false;
+      if(sigla==="UNI")return normalizarTitulo(video.temaTitulo||video.titulo)===normalizarTitulo(tema?.titulo);
+      return Number(video.temaIndice)===Number(temaIndice);
+    });
+  }
+
   function obtenerVideoTema(courseId, temaIndice){
-    return videosJSON.find(item=>item.courseId===courseId&&Number(item.temaIndice)===Number(temaIndice)&&String(item.url||"").trim())||null;
+    const tema=cursoParaRuta(courseId)?.temas?.[Number(temaIndice)];
+    return videosDelTema(courseId,temaIndice,tema)[0]||null;
   }
 
   function reemplazarLogo() {
@@ -154,7 +192,8 @@
   function actualizarTarjetasNiveles(banco, cursoId, temaCatalogo) {
     const tarjetas=[...document.querySelectorAll('#videoclase [onclick*="ejercicios"]')].slice(0,4);
     const niveles=["basico","intermedio","avanzado","admision"];
-    const alineadas=preguntasBancoAlineadas(banco,cursoId).filter(p=>String(p.tema).toLowerCase()===String(temaCatalogo?.titulo||"").toLowerCase());
+    const temaBanco=temaBancoRelacionado(banco,cursoId,temaCatalogo);
+    const alineadas=preguntasBancoAlineadas(banco,cursoId).filter(p=>normalizarTitulo(p.tema)===normalizarTitulo(temaBanco?.titulo));
     tarjetas.forEach((tarjeta,indice)=>{
       const nivel=niveles[indice], cantidad=alineadas.filter(p=>p.nivel===nivel).length;
       tarjeta.onclick=()=>iniciarEvaluacionTema(nivel);
@@ -172,14 +211,14 @@
     if(cursoActual!==cursoId||temaActual!==indice)return;
     const cursoRuta=cursoParaRuta(cursoId);
     const temaCatalogo=cursoRuta?.temas?.[indice];
-    const temaJSON=bancoJSONActual?.temas?.find(t=>String(t.titulo).toLowerCase()===String(temaCatalogo?.titulo||"").toLowerCase());
+    const temaJSON=temaBancoRelacionado(bancoJSONActual,cursoId,temaCatalogo);
     const temaInterno=CONTENIDO[cursoId]?.find(t=>String(t.titulo).toLowerCase()===String(temaCatalogo?.titulo||"").toLowerCase());
     const tema=temaCatalogo||temaJSON||temaInterno;
     const teoria=document.getElementById("lesson-theory");
     const alineadas=preguntasBancoAlineadas(bancoJSONActual,cursoId);
     const total=alineadas.length;
-    const totalTema=alineadas.filter(p=>String(p.tema).toLowerCase()===String(temaCatalogo?.titulo||"").toLowerCase()).length;
-    if(teoria) teoria.innerHTML=tema?`<div class="card-title">📚 Tema de tu ruta académica</div><div class="official-topic-heading"><span>${esc(tema.subarea||cursoRuta?.area||"Preuniversitario")}</span><small>${esc(window.obtenerPerfilPreguntasAdmision?.()?.sigla||"RUTA")}</small></div><h3>${esc(tema.titulo)}</h3><p>${esc(tema.teoria||tema.descripcion||"Contenido incluido en tu ruta de preparación.")}</p><ul>${(tema.puntos||[]).map(p=>`<li>${esc(p)}</li>`).join("")}</ul><div class="official-topic-actions"><button class="btn btn-primary btn-sm" onclick="iniciarEvaluacionTema('todos')">Practicar ${totalTema} alineadas →</button><button class="btn btn-ghost btn-sm" onclick="go('biblioteca',null)">Abrir teoría en Drive</button></div>`:`<div class="card-title">Contenido en preparación</div><p>Este tema será incorporado próximamente.</p>`;
+    const totalTema=alineadas.filter(p=>normalizarTitulo(p.tema)===normalizarTitulo(temaJSON?.titulo)).length;
+    if(teoria) teoria.innerHTML=tema?`<div class="card-title">📚 Tema de tu ruta académica</div><div class="official-topic-heading"><span>${esc(tema.subarea||cursoRuta?.area||"Preuniversitario")}</span><small>${esc(window.obtenerPerfilPreguntasAdmision?.()?.sigla||"RUTA")}</small></div><h3>${esc(tema.titulo)}</h3><p><strong>¿En qué consiste?</strong> ${esc(tema.teoria||tema.descripcion||"Contenido incluido en tu ruta de preparación.")}</p><ul>${(tema.puntos||[]).map(p=>`<li>${esc(p)}</li>`).join("")}</ul><div class="official-topic-actions"><button class="btn btn-primary btn-sm" onclick="iniciarEvaluacionTema('todos')">Practicar ${totalTema} alineadas →</button><button class="btn btn-ghost btn-sm" onclick="go('biblioteca',null)">Abrir teoría en Drive</button></div>`:`<div class="card-title">Contenido en preparación</div><p>Este tema será incorporado próximamente.</p>`;
     txt("lesson-exercises",`📝 Este tema: ${totalTema} · Curso: ${total}`);
     actualizarTarjetasNiveles(bancoJSONActual,cursoId,temaCatalogo);
     renderizarVideo(cursoId,indice,tema);
@@ -187,12 +226,14 @@
 
   function renderizarVideo(cursoId,indice,tema,seleccion=0) {
     const box=document.getElementById("lesson-video-container"); if(!box) return;
-    const configs=videosJSON.filter(v=>v.courseId===cursoId&&Number(v.temaIndice)===Number(indice)&&String(v.url||"").trim());
+    const configs=videosDelTema(cursoId,indice,tema);
     if(!configs.length) {box.innerHTML=`<div class="video-bg"><div class="video-pending-icon">🎬</div><div class="video-title">${esc(tema?.titulo||"Video de la clase")}</div><div class="video-subtitle">Videoclase en preparación</div></div>`;return;}
     const posicion=Math.max(0,Math.min(configs.length-1,Number(seleccion)||0)),config=configs[posicion],url=String(config.url).trim();
-    const yt=convertirYoutube(url),drive=convertirDrive(url);
+    const yt=convertirYoutube(url),drive=convertirDrive(url),busqueda=convertirBusquedaYoutube(url);
     const selector=configs.length>1?`<div class="lesson-video-picker" role="group" aria-label="Videoclases del tema">${configs.map((v,i)=>`<button type="button" class="${i===posicion?"active":""}" onclick="seleccionarVideoTema('${esc(cursoId)}',${Number(indice)},${i})">${i+1}. ${esc(v.titulo||`Clase ${i+1}`)}</button>`).join("")}</div>`:"";
-    box.innerHTML=yt||drive?`<iframe src="${esc(yt||drive)}" title="${esc(config.titulo||"Video de clase")}" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>${selector}`:`<div class="video-bg"><div class="video-pending-icon">⚠️</div><div class="video-title">Enlace de video no compatible</div><div class="video-subtitle">Revisa json/videos-cursos.json</div></div>`;
+    if(yt||drive){box.innerHTML=`<iframe src="${esc(yt||drive)}" title="${esc(config.titulo||"Video de clase")}" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>${selector}`;return;}
+    if(busqueda){box.innerHTML=`<div class="video-search-resource"><span class="video-search-icon">▶</span><small>RECURSO AUDIOVISUAL DEL TEMA</small><h3>${esc(config.titulo||tema?.titulo||"Videoclase")}</h3><p>Abre una búsqueda preparada específicamente para <b>${esc(tema?.titulo||"este tema")}</b>. Los resultados pertenecen al mismo curso; elige la explicación que mejor se adapte a tu nivel.</p><a href="${esc(busqueda)}" target="_blank" rel="noopener noreferrer">Ver videoclases disponibles ↗</a><em>Recurso externo: la disponibilidad depende de YouTube.</em></div>${selector}`;return;}
+    box.innerHTML=`<div class="video-bg"><div class="video-pending-icon">⚠️</div><div class="video-title">Enlace de video no compatible</div><div class="video-subtitle">Revisa json/videos-cursos.json</div></div>`;
   }
 
   function seleccionarVideoTema(cursoId,indice,posicion){
@@ -216,17 +257,24 @@
       return /^[\w-]{6,}$/.test(id)?`https://www.youtube.com/embed/${id}${inicio?`?start=${inicio}`:""}`:"";
     }catch(_){return "";}
   }
+  function convertirBusquedaYoutube(url){
+    try{
+      const u=new URL(url),host=u.hostname.replace(/^www\./,"");
+      return (host==="youtube.com"||host==="m.youtube.com")&&u.pathname==="/results"&&u.searchParams.get("search_query")?u.href:"";
+    }catch(_){return "";}
+  }
   function convertirDrive(url){const m=url.match(/drive\.google\.com\/file\/d\/([^/]+)/);return m?`https://drive.google.com/file/d/${m[1]}/preview`:"";}
 
   async function iniciarEvaluacionTema(nivel) {
     if(!cursoActual)return alert("Selecciona primero un curso y un tema.");
     const temaCatalogo=cursoParaRuta(cursoActual)?.temas?.[temaActual];
+    bancoJSONActual=await cargarBancoCurso(cursoActual);
+    const temaBanco=temaBancoRelacionado(bancoJSONActual,cursoActual,temaCatalogo);
     if(typeof window.iniciarPracticaTemaNivel==="function"){
       const nivelElegido=nivel==="tema"?"todos":nivel;
-      return window.iniciarPracticaTemaNivel(cursoActual,temaCatalogo?.titulo||temaActual,nivelElegido,nivelElegido==="todos"?40:10);
+      return window.iniciarPracticaTemaNivel(cursoActual,temaBanco?.titulo||temaCatalogo?.titulo||temaActual,nivelElegido,nivelElegido==="todos"?60:15);
     }
-    bancoJSONActual=await cargarBancoCurso(cursoActual);
-    const temaJSON=bancoJSONActual?.temas?.find(t=>String(t.titulo).toLowerCase()===String(temaCatalogo?.titulo||"").toLowerCase()), temaInterno=CONTENIDO[cursoActual]?.[temaActual];
+    const temaJSON=temaBanco, temaInterno=CONTENIDO[cursoActual]?.[temaActual];
     let preguntas=[];
     if(temaJSON){
       const grupos=["tema","todos"].includes(nivel)?Object.values(temaJSON.niveles||{}):[temaJSON.niveles?.[nivel]||[]];

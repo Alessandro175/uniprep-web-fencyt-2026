@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  const TOTAL_PREGUNTAS = 7920;
+  const TOTAL_PREGUNTAS = 12660;
   const CLAVES = {
     errores: "uniprep_practice_errors_v1",
     favoritos: "uniprep_practice_favorites_v1",
@@ -29,7 +29,11 @@
     {id:"geografia",nombre:"Geografía",icono:"🗺️",color:"#4db6ff"},
     {id:"filosofia",nombre:"Filosofía",icono:"💡",color:"#b794f6"},
     {id:"economia",nombre:"Economía",icono:"📈",color:"#72d47d"},
-    {id:"civica",nombre:"Educación Cívica",icono:"⚖️",color:"#f39b6d"}
+    {id:"civica",nombre:"Cívica",icono:"⚖️",color:"#f39b6d"},
+    {id:"calculo",nombre:"Cálculo",icono:"∫",color:"#4fc3f7"},
+    {id:"logica",nombre:"Lógica",icono:"◇",color:"#a78bfa"},
+    {id:"actualidad",nombre:"Actualidad",icono:"🌐",color:"#34d399"},
+    {id:"ingles",nombre:"Inglés",icono:"EN",color:"#f59e0b"}
   ];
 
   const NIVELES = {
@@ -50,8 +54,8 @@
   function iniciar() {
     const badge = document.getElementById("practice-nav-badge");
     if (badge) {
-      badge.textContent = "7,920";
-      badge.title = "7,920 preguntas disponibles";
+      badge.textContent = "12,660";
+      badge.title = "12,660 preguntas disponibles";
     }
     renderizarInicio();
   }
@@ -96,8 +100,9 @@
 
   function totalPreguntasCurso(id) {
     const curso = window.obtenerCursoRuta?.(id) || window.CURSOS_PREUNI?.[id];
-    const porTema = universidadObjetivo() === "GENERAL" ? 40 : 10;
-    return (curso?.temas?.length || 0) * porTema;
+    const cantidadDeclarada = Number(window.CURSOS_PREUNI?.[id]?.bancoPreguntas) || 0;
+    if (cantidadDeclarada) return cantidadDeclarada;
+    return (curso?.temas?.length || 0) * 60;
   }
 
   function universidadObjetivo() {
@@ -390,7 +395,7 @@
     }
   }
 
-  async function iniciarPracticaTemaNivel(cursoId, temaReferencia, nivel="todos", cantidad=10) {
+  async function iniciarPracticaTemaNivel(cursoId, temaReferencia, nivel="todos", cantidad=15) {
     if (!cursoDisponible(cursoId)) {
       mostrarVacio("🎓","Curso fuera de tu grupo","Este banco no pertenece a tu ruta de admisión actual.");
       return;
@@ -504,8 +509,15 @@
   }
 
   function figuraPregunta(pregunta) {
-    const figura = pregunta?.figura;
+    const figura = pregunta?.figura || figuraAlgebraAutomatica(pregunta);
     if (!figura || typeof figura !== "object") return "";
+    const numero = (valor, respaldo = 0) => Number.isFinite(Number(valor)) ? Number(valor) : respaldo;
+    const texto = valor => escapar(String(valor ?? ""));
+    const envoltura = (clase, etiqueta, svg, pie = "") => `<div class="question-figure ${clase}" role="img" aria-label="${texto(etiqueta)}">${svg}${pie ? `<span>${texto(pie)}</span>` : ""}</div>`;
+    const svg = contenido => `<svg viewBox="0 0 320 210" aria-hidden="true">${contenido}</svg>`;
+    if (figura.tipo === "formula") {
+      return `<div class="question-figure formula-figure" role="img" aria-label="Expresión matemática"><small>EXPRESIÓN MATEMÁTICA</small><strong>${texto(figura.contenido)}</strong></div>`;
+    }
     if (figura.tipo === "reloj") {
       const hora = Math.max(0, Math.min(11, Number(figura.hora) || 0));
       const minuto = Math.max(0, Math.min(59, Number(figura.minuto) || 0));
@@ -517,16 +529,105 @@
     }
     if (figura.tipo === "trigonometrica") {
       const funcion = ["sen","cos"].includes(figura.funcion) ? figura.funcion : "sen";
-      const amplitud = Math.max(1, Math.min(3, Number(figura.amplitud) || 1));
-      const periodo = Math.max(1, Math.min(4, Number(figura.periodoPi) || 2));
+      const amplitud = Math.max(0.1, Math.min(99, Number(figura.amplitud) || 1));
+      const periodo = Math.max(0.25, Math.min(20, Number(figura.periodoPi) || 2));
       const points = Array.from({length:49},(_,i)=>{
-        const x=i/48*300, rad=i/48*periodo*Math.PI*2;
-        const y=70-(funcion==="sen"?Math.sin(rad):Math.cos(rad))*amplitud*18;
+        const x=24+i/48*272, rad=i/48*Math.PI*2;
+        const y=70-(funcion==="sen"?Math.sin(rad):Math.cos(rad))*48;
         return `${x.toFixed(1)},${y.toFixed(1)}`;
       }).join(" ");
-      return `<div class="question-figure trig-figure" role="img" aria-label="Gráfica de una función ${funcion}usoidal"><svg viewBox="0 0 300 140" aria-hidden="true"><path d="M0 70H300M20 8V132" class="axis"></path><polyline points="${points}" class="wave"></polyline></svg><span>Gráfica ${funcion}usoidal · amplitud ${amplitud}</span></div>`;
+      return `<div class="question-figure trig-figure" role="img" aria-label="Gráfica de una función ${funcion}usoidal con amplitud ${amplitud} y periodo ${periodo} pi"><svg viewBox="0 0 320 150" aria-hidden="true"><path d="M24 70H304M24 10V132" class="axis"></path><path d="M160 66V74M296 66V74" class="tick"></path><text x="7" y="25">${texto(amplitud)}</text><text x="3" y="123">−${texto(amplitud)}</text><text x="148" y="91">${texto(periodo/2)}π</text><text x="282" y="91">${texto(periodo)}π</text><polyline points="${points}" class="wave"></polyline></svg><span>y = ${amplitud}${funcion}(2πx/${periodo}π) · amplitud ${amplitud} · periodo ${periodo}π</span></div>`;
+    }
+    if (figura.tipo === "triangulo_bisectriz") {
+      const a=numero(figura.razonAB,3),b=numero(figura.razonAC,4),bc=numero(figura.base,14),dx=45+230*a/Math.max(1,a+b);
+      return envoltura("geometry-figure","Triángulo ABC con bisectriz AD",svg(`<path d="M45 175L155 25L275 175Z" class="shape"></path><path d="M155 25L${dx.toFixed(1)} 175" class="guide"></path><path d="M145 42A22 22 0 0 1 159 52M160 52A22 22 0 0 1 172 42" class="angle"></path><text x="150" y="18">A</text><text x="30" y="194">B</text><text x="278" y="194">C</text><text x="${(dx-4).toFixed(1)}" y="194">D</text><text x="72" y="88">${texto(a)}</text><text x="230" y="92">${texto(b)}</text><text x="128" y="165">BC = ${texto(bc)}</text>`),`AB : AC = ${a} : ${b}`);
+    }
+    if (figura.tipo === "triangulo_rectangulo") {
+      const c1=numero(figura.cateto1),c2=numero(figura.cateto2);
+      return envoltura("geometry-figure","Triángulo rectángulo con catetos indicados",svg(`<path d="M55 175H270L270 35Z" class="shape"></path><path d="M250 175V155H270" class="right-mark"></path><text x="145" y="198">${texto(c1)}</text><text x="278" y="110">${texto(c2)}</text><text x="37" y="190">A</text><text x="275" y="193">B</text><text x="275" y="31">C</text>`),`Catetos: ${c1} y ${c2}`);
+    }
+    if (figura.tipo === "triangulo_oblicuo") {
+      const l1=numero(figura.lado1),l2=numero(figura.lado2),ang=numero(figura.angulo,60);
+      return envoltura("geometry-figure","Triángulo con dos lados y ángulo comprendido",svg(`<path d="M55 175H275L130 38Z" class="shape"></path><path d="M78 175A28 28 0 0 1 74 155" class="angle"></path><text x="92" y="160">${texto(ang)}°</text><text x="93" y="102">${texto(l1)}</text><text x="174" y="198">${texto(l2)}</text><text x="40" y="194">A</text><text x="278" y="194">B</text><text x="124" y="30">C</text>`),`Lados ${l1} y ${l2} · ángulo comprendido ${ang}°`);
+    }
+    if (figura.tipo === "circulo_cuerda") {
+      const r=numero(figura.radio),d=numero(figura.distancia);
+      return envoltura("geometry-figure","Circunferencia, cuerda y distancia perpendicular al centro",svg(`<circle cx="160" cy="105" r="78" class="shape"></circle><path d="M220 55V155M160 105H220M160 105L202 42" class="guide"></path><path d="M207 105V92H220" class="right-mark"></path><circle cx="160" cy="105" r="4" class="point"></circle><text x="146" y="124">O</text><text x="178" y="99">d = ${texto(d)}</text><text x="169" y="68">r = ${texto(r)}</text>`),`Radio ${r} · distancia del centro a la cuerda ${d}`);
+    }
+    if (figura.tipo === "tangente_secante") {
+      const e=numero(figura.externo),i=numero(figura.interno);
+      return envoltura("geometry-figure","Tangente y secante trazadas desde un punto exterior",svg(`<circle cx="185" cy="105" r="68" class="shape"></circle><circle cx="42" cy="154" r="4" class="point"></circle><path d="M42 154L146 51M42 154L251 91" class="guide"></path><text x="27" y="178">P</text><text x="83" y="139">ext. ${texto(e)}</text><text x="170" y="116">int. ${texto(i)}</text>`),`Segmento externo ${e} · segmento interno ${i}`);
+    }
+    if (figura.tipo === "trapecio") {
+      const B=numero(figura.baseMayor),b=numero(figura.baseMenor),h=numero(figura.altura),m=numero(figura.mediana,(B+b)/2);
+      return envoltura("geometry-figure","Trapecio con bases, altura y mediana",svg(`<path d="M45 170H280L230 42H100Z" class="shape"></path><path d="M72 106H255M100 42V170" class="guide"></path><path d="M100 150H120V170" class="right-mark"></path><text x="145" y="194">B = ${texto(B)}</text><text x="145" y="34">b = ${texto(b)}</text><text x="154" y="98">m = ${texto(m)}</text><text x="105" y="112">h = ${texto(h)}</text>`),"Las medidas conservan las relaciones del enunciado");
+    }
+    if (figura.tipo === "poligono") {
+      const lados=Math.max(3,Math.min(20,Math.round(numero(figura.lados,5))));
+      const puntos=Array.from({length:lados},(_,i)=>{const a=-Math.PI/2+i*2*Math.PI/lados;return [160+78*Math.cos(a),105+78*Math.sin(a)]});
+      const vertices=puntos.map(p=>p.map(v=>v.toFixed(1)).join(",")).join(" ");
+      const diagonales=puntos.slice(2,Math.min(lados-1,7)).map(p=>`<path d="M${puntos[0][0].toFixed(1)} ${puntos[0][1].toFixed(1)}L${p[0].toFixed(1)} ${p[1].toFixed(1)}" class="guide"></path>`).join("");
+      return envoltura("geometry-figure","Polígono convexo de lados indicados",svg(`<polygon points="${vertices}" class="shape"></polygon>${diagonales}<text x="139" y="202">n = ${texto(lados)} lados</text>`),`Polígono convexo de ${lados} lados`);
+    }
+    if (figura.tipo === "movimiento_fisica") {
+      const valores=(figura.valores || []).slice(0,4).map(texto);
+      return envoltura("physics-figure","Esquema de movimiento rectilíneo con los datos del problema",svg(`<path d="M35 158H285" class="axis"></path><path d="M50 151L72 131H112L132 151Z" class="shape"></path><circle cx="77" cy="158" r="10" class="point"></circle><circle cx="112" cy="158" r="10" class="point"></circle><path d="M145 106H264M248 94L264 106L248 118" class="guide"></path><text x="166" y="92">${valores[0] || "movimiento"}</text><text x="168" y="135">${valores.slice(1).join(" · ")}</text>`),"Diagrama referencial; usa las magnitudes indicadas en el enunciado");
+    }
+    if (figura.tipo === "fuerzas_fisica") {
+      const valores=(figura.valores || []).slice(0,4).map(texto);
+      return envoltura("physics-figure","Diagrama de cuerpo libre de un bloque",svg(`<path d="M35 165H285" class="axis"></path><rect x="120" y="90" width="80" height="75" rx="6" class="shape"></rect><path d="M160 88V30M151 44L160 30L169 44M160 167V204M151 190L160 204L169 190M202 126H278M264 117L278 126L264 135M118 126H48M62 117L48 126L62 135" class="guide"></path><text x="126" y="120">${valores[0] || "m"}</text><text x="207" y="112">${valores[1] || "F"}</text><text x="55" y="112">fricción</text>`),valores.length?`Datos: ${valores.join(" · ")}`:"Identifica las fuerzas y sus sentidos");
+    }
+    if (figura.tipo === "onda_fisica") {
+      const valores=(figura.valores || []).slice(0,4).map(texto);
+      const pts=Array.from({length:49},(_,i)=>`${(24+i*5.7).toFixed(1)},${(105-42*Math.sin(i/48*Math.PI*4)).toFixed(1)}`).join(" ");
+      return envoltura("physics-figure","Representación de una onda",svg(`<path d="M22 105H300" class="axis"></path><polyline points="${pts}" class="wave"></polyline><path d="M92 45V165M230 45V165" class="guide"></path><text x="142" y="190">λ</text><text x="30" y="30">${valores.join(" · ")}</text>`),"Esquema de amplitud, longitud de onda y propagación");
+    }
+    if (figura.tipo === "circuito_fisica") {
+      const valores=(figura.valores || []).slice(0,4).map(texto);
+      return envoltura("physics-figure","Circuito eléctrico simple",svg(`<path d="M55 55H135M185 55H270V165H55V55" class="shape"></path><path d="M135 55L145 40L155 70L165 40L175 70L185 55" class="guide"></path><path d="M55 88H85M55 132H85M70 88V132" class="guide"></path><text x="140" y="30">R</text><text x="92" y="116">V</text><text x="112" y="195">${valores.join(" · ")}</text>`),"Circuito referencial con los valores del enunciado");
+    }
+    if (figura.tipo === "fluido_fisica") {
+      const valores=(figura.valores || []).slice(0,4).map(texto);
+      return envoltura("physics-figure","Recipiente con fluido y profundidad indicada",svg(`<path d="M75 35V180H250V35M75 82H250" class="shape"></path><path d="M88 93H237M88 112H237M88 131H237M88 150H237M88 169H237" class="guide"></path><path d="M270 82V180M260 94L270 82L280 94M260 168L270 180L280 168" class="guide"></path><text x="278" y="137">h</text><text x="103" y="68">${valores.join(" · ")}</text>`),"Esquema hidrostático referencial");
+    }
+    if (figura.tipo === "termica_fisica") {
+      const valores=(figura.valores || []).slice(0,4).map(texto);
+      return envoltura("physics-figure","Representación térmica del sistema",svg(`<rect x="72" y="70" width="176" height="105" rx="10" class="shape"></rect><path d="M115 70V35M160 70V25M205 70V35" class="guide"></path><path d="M105 48L115 35L125 48M150 38L160 25L170 38M195 48L205 35L215 48" class="guide"></path><text x="98" y="125">Q → sistema</text><text x="98" y="154">${valores.join(" · ")}</text>`),"Intercambio de energía y datos térmicos del problema");
+    }
+    if (figura.tipo === "cuadricula_rm") {
+      const filas=Math.max(1,Math.min(8,Math.round(numero(figura.filas,3)))), columnas=Math.max(1,Math.min(10,Math.round(numero(figura.columnas,4))));
+      const x=55,y=35,w=210,h=140, lines=[...Array(columnas+1)].map((_,i)=>`<path d="M${x+i*w/columnas} ${y}V${y+h}" class="guide"></path>`).join("")+[...Array(filas+1)].map((_,i)=>`<path d="M${x} ${y+i*h/filas}H${x+w}" class="guide"></path>`).join("");
+      return envoltura("reasoning-figure",`Cuadrícula de ${filas} por ${columnas}`,svg(lines),`${filas} filas × ${columnas} columnas`);
+    }
+    if (figura.tipo === "rectas_rm") {
+      const v=Math.max(1,Math.min(8,Math.round(numero(figura.verticales,3)))),h=Math.max(1,Math.min(8,Math.round(numero(figura.horizontales,4))));
+      const lines=[...Array(v)].map((_,i)=>`<path d="M${60+i*200/Math.max(1,v-1)} 30V180" class="guide"></path>`).join("")+[...Array(h)].map((_,i)=>`<path d="M40 ${45+i*120/Math.max(1,h-1)}H280" class="guide"></path>`).join("");
+      return envoltura("reasoning-figure","Familias de rectas verticales y horizontales",svg(lines),`${v} verticales · ${h} horizontales`);
+    }
+    if (["puntos_circulo_rm","asientos_circulares_rm"].includes(figura.tipo)) {
+      const n=Math.max(3,Math.min(12,Math.round(numero(figura.puntos ?? figura.personas,5))));
+      const dots=Array.from({length:n},(_,i)=>{const a=-Math.PI/2+i*2*Math.PI/n,x=160+75*Math.cos(a),y=105+75*Math.sin(a);return `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="7" class="point"></circle><text x="${(x-4).toFixed(1)}" y="${(y-12).toFixed(1)}">${i+1}</text>`}).join("");
+      return envoltura("reasoning-figure","Elementos distribuidos sobre una circunferencia",svg(`<circle cx="160" cy="105" r="75" class="shape"></circle>${dots}`),`${n} elementos en disposición circular`);
+    }
+    if (figura.tipo === "engranajes_rm") {
+      const n=Math.max(2,Math.min(5,Math.round(numero(figura.cantidad,3))));
+      const gears=Array.from({length:n},(_,i)=>`<circle cx="${75+i*58}" cy="108" r="31" class="shape"></circle><circle cx="${75+i*58}" cy="108" r="6" class="point"></circle><path d="M${75+i*58} 77V139M${44+i*58} 108H${106+i*58}" class="guide"></path>`).join("");
+      return envoltura("reasoning-figure","Sistema de engranajes o ruedas enlazadas",svg(gears),"Determina el sentido o la relación de giro");
+    }
+    if (figura.tipo === "venn_rm") {
+      const valores=(figura.valores || []).slice(0,4).map(texto);
+      return envoltura("reasoning-figure","Diagrama de conjuntos superpuestos",svg(`<circle cx="125" cy="108" r="68" class="shape"></circle><circle cx="195" cy="108" r="68" class="shape"></circle><text x="90" y="65">A</text><text x="218" y="65">B</text><text x="82" y="113">${valores[1] || "A"}</text><text x="150" y="113">${valores[3] || "A∩B"}</text><text x="218" y="113">${valores[2] || "B"}</text>`),valores.length?`Datos: ${valores.join(" · ")}`:"Organiza los datos antes de operar");
     }
     return "";
+  }
+
+  function figuraAlgebraAutomatica(pregunta) {
+    if (pregunta?.courseId !== "algebra") return null;
+    const enunciado = String(pregunta?.pregunta || "");
+    if (!/[=√²³⁴⁵⁶⁷⁸⁹]|\|[^|]+\||≤|≥/.test(enunciado)) return null;
+    const partes = enunciado.split(/\.\s+/).map(item=>item.trim()).filter(item=>/[=√²³⁴⁵⁶⁷⁸⁹]|\|[^|]+\||≤|≥/.test(item));
+    const contenido = (partes.sort((a,b)=>b.length-a.length)[0] || enunciado).replace(/^Tema [^.]+\.\s*/i, "").slice(0, 260);
+    return {tipo:"formula", contenido};
   }
 
   function enunciadoClaro(pregunta) {

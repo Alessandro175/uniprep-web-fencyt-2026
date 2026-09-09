@@ -101,10 +101,10 @@
   ];
 
   const WORLD_GROUPS = {
-    math:["rm","aritmetica","algebra","geometria","trigonometria"],
-    words:["rv","comprension_lectora","lenguaje","literatura"],
+    math:["rm","aritmetica","algebra","geometria","trigonometria","calculo"],
+    words:["rv","comprension_lectora","lenguaje","literatura","ingles"],
     science:["fisica","quimica","biologia","medio_ambiente","anatomia"],
-    society:["historia","historia_peru","geografia","economia","civica","filosofia","psicologia"]
+    society:["historia","historia_peru","geografia","economia","civica","filosofia","psicologia","logica","actualidad"]
   };
 
   const DEFAULT_STATE = Object.freeze({

@@ -85,7 +85,7 @@
     {icon:"✦",title:"Tutor Uni",what:"Responde consultas libres, analiza materiales y crea actividades; tiene respaldo local.",say:"La IA se activa únicamente cuando el alumno la solicita y la clave permanece protegida en el servidor.",demo:"tutor"},
     {icon:"★",title:"Ranking justo",what:"Compara resultados por día, semana, mes y región mediante puntajes normalizados.",say:"El objetivo es motivar sin comparar exámenes de distinta cantidad de preguntas de manera injusta.",demo:"ranking"},
     {icon:"◇",title:"Orientación vocacional",what:"Relaciona intereses con carreras y guarda el avance del test.",say:"No reemplaza a un orientador; ayuda al estudiante a explorar opciones con información organizada.",demo:"vocacional"},
-    {icon:"▦",title:"Biblioteca y cursos",what:"Reúne 21 cursos, temarios por universidad, fórmulas, videos y 7,920 preguntas.",say:"La ruta académica cambia según la universidad elegida para evitar estudiar temas sin prioridad.",demo:"cursos"},
+    {icon:"▦",title:"Biblioteca y cursos",what:"Reúne 25 cursos, temarios por universidad, fórmulas, videos y 12,660 preguntas.",say:"La ruta académica cambia según la universidad elegida para evitar estudiar temas sin prioridad.",demo:"cursos"},
     {icon:"◐",title:"Accesibilidad visual",what:"Permite modo claro, oscuro, automático, paletas, lectura y movimiento reducido.",say:"La personalización responde a comodidad y accesibilidad, no solo a decoración.",action:"appearance"},
     {icon:"✓",title:"Estado para exposición",what:"Comprueba interfaz, contenidos, cuentas, ranking, Tutor y PWA.",say:"Antes de presentar puedo verificar los servicios esenciales y copiar un informe técnico.",action:"health"}
   ];
